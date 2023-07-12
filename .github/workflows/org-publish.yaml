@@ -1,0 +1,2 @@
+- name: Org Roam Publish
+  uses: maker2413/OrgRoamPublish@v1.0.1

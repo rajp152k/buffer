@@ -2,51 +2,11 @@
 :ID:       1729
 :END:
 #+title: Index
-#+filetags: Transient Root
 
-* Semantics
-** Expected content and incentive
-I do read a lot and have a tendency to forget all that I've learned.
-This personal epistemological wiki serves the following (not an exhaustive list) purposes
- - collection of links and resources of all knowledge that I accumulate for quick overviews
- - philosophical perception of the underlying tool being used so as to really identify its utility
- - fodder for new projects and technical blogs
- - a reference for all content that I create
-** Meta-Data rules
-*** Time stamps
- - do not use time-stamps
- - this is mutable storage with an immutable edit history
-   - delegating the immutability part to git
-   - consequently : edit freely
-*** Tags
-Employing two classes of tags: exactly one tag from each class has to be used when initializing a node
-**** State
-These describe the core nature of a node (Expect large temporal inertia):
-     1. Root : any root node of a major epistemological prominence
-     2. Link : any node consolidating information from two or more nodes 
-	- usually will result in the ideation of a new root
-     3. Spec : is an epistemological specialization of an existing Root node
-**** Reliability
-These intend to capture the maturity of a particular node:
-     1. Volatile : All nodes start out this way - yet to be consolidated appropriately into the epistemological forest
-     2. Stable : Information in this node is well-researched and can be trusted - appropriate citations can be found in the node
-     3. Transient : has accumulated mass but loopholes may exist in what has been written down - This is pseudo-science territory
-     4. Archived : No longer relevant - usually will refer to tooling that actually exists and not an abstract concept
-*** Linkages
- - Everything need not be connected: avoid using unnecessary linkages
- - Prefer Intra-file development to Inter-file expansion
-*** External Media
- - Preferably should be esoteric content that isn't well indexed by search engines 
-   - blogs, links to research papers, etc
- - avoid Wikipedia excerpts (consider this implicit)
- - no images
- - no mathematical notation : refer them via names
-   - rendering latex is a luxury
-   - going for minimalism
- - Avoid Verbosity : delegate it to the internet if possible
-   - instead have commentary on resources that were referred
-* [[id:4269][Buffer]] 
- - This node represents ideas that are very premature and need some more thought to be incorporated into the tree
- - No rules apply: except - This is the only linkage this node shares with the Epistemological Forest
-   - Expecting several external linkages
- - shouldn't be taken seriously
+Hi, this is Raj. You've chanced upon my digital note-box (~Zettelkasten) maintained in org-roam. I've circled over a lot of tools to maintain an efficient over the past and have finally settled on a format that treats everything as text and allows me to spend more time with emacs. I find it difficult to keep track of all that I learn and this buffer intends to delegate the notion of remembering to a computer.
+
+I like building connections between domains that are seemingly distinct: I'll be keeping it simple and this note-box will act as an intermediary for the all the [[id:20230712T131112.909632][blogs]] that I intend to regularly push out henceforth. I believe it should be simpler for me to improve my writing skills if I have an informal setup - other than my [[eww:rajpatil.dev][main blog]] - where I experiment with varying styles and not worry about compatibility issues with my existing work.
+
+A major proportion of the nodes in this web will be in a transient phase at all times - completeness is not a goal for each session : this is the input buffer. More polished versions will be posted on the main blog once a node(set) matures and is worth sharing.
+
+I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able to keep track of how a node(set) evolves.

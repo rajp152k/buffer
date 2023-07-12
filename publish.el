@@ -73,7 +73,7 @@
 ;; Set html footer information
 (defun maker/footer ()
   (concat "This page was last updated: "
-          (or (org-collect-keyword-value "last_modified") "not defined")
+          (or (org-collect-keyword-value "tags") "not defined")
           ". "))
 
 ;; Add roam files to list of files to search IDs for

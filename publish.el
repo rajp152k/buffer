@@ -174,10 +174,10 @@
                       "")))))
              contents
              (format "</%s>\n" (nth 1 (assq 'content (plist-get info :html-divs))))
-             "<div class='postamble'>\n"
-             ;; Postamble.
-             (maker/footer)
-             "</div>\n"
+             ;"<div class='postamble'>\n"
+             ;;; Postamble.
+             ;;(maker/footer)
+             ;"</div>\n"
              "</div>\n"
              "</div>\n"
              "</div>\n"

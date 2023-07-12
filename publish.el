@@ -40,7 +40,7 @@
 (setq base-dir "/opt/OrgFiles")
 (setq images-dir (concat base-dir "/Images"))
 (setq notes-dir (concat base-dir "/Content"))
-(setq output-dir "/opt/OrgFiles/Website")
+(setq output-dir "/opt/OrgFiles/_site")
 (setq static-dir (concat base-dir "/Static"))
 (setq images-output-dir (concat output-dir "/images"))
 

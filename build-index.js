@@ -4,7 +4,7 @@ const lunr = require("lunr");
 const cheerio = require("cheerio");
 
 // Change these constants to suit your needs
-const HTML_FOLDER = "Website";
+const HTML_FOLDER = "_site";
 // Valid search fields: "title", "description", "keywords", "body"
 const SEARCH_FIELDS = ["title", "description", "keywords", "body"];
 const EXCLUDE_FILES = ["search.html"];

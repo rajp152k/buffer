@@ -26,6 +26,17 @@ jobs:
         uses: maker2413/OrgRoamPublish@v1.0.1
         with:
           publish_script: publish.el
+          
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Search Index
+        run: node build-index.js
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

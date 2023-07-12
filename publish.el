@@ -72,9 +72,8 @@
 
 ;; Set html footer information
 (defun maker/footer ()
-  (concat "This page was last updated: "
-          (or (org-collect-keyword-value "tags") "not defined")
-          ". "))
+  (concat (or (org-collect-keyword-value "tags") "")
+          ""))
 
 ;; Add roam files to list of files to search IDs for
 (setq org-id-extra-files (org-roam-list-files))
@@ -132,11 +131,11 @@
              "<form action='/'>\n"
              "<input type='submit' value='Home'>\n"
              "</form>\n"
-             "<form id='search' autocomplete='on' class='search-box' action=/search.html>\n"
-             "<label hidden for='search-input'></label>\n"
-             "<input type='text' id='search-input' name='query' placeholder='Type here to search'>\n"
-             "<input type='submit' value='search'>\n"
-             "</form>\n"
+             ;"<form id='search' autocomplete='on' class='search-box' action=/search.html>\n"
+             ;"<label hidden for='search-input'></label>\n"
+             ;"<input type='text' id='search-input' name='query' placeholder='Type here to search'>\n"
+             ;"<input type='submit' value='search'>\n"
+             ;"</form>\n"
              "</div>\n"
              "</header>\n"
              "<div class='notes-container'>\n"

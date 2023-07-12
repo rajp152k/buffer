@@ -71,7 +71,7 @@
 (defun maker/footer ()
   (concat "Tags:" (or (org-collect-keyword-value "filetags") "None")
           " | "
-	  "Copyright (C) " `(format-time-string "%Y")
+	  "Copyright (C) " (format-time-string "%Y")
 	  " by Raj Patil"))
 
 ;; Add roam files to list of files to search IDs for

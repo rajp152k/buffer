@@ -16,5 +16,5 @@ jobs:
       - name: Org Roam Publish
         uses: maker2413/OrgRoamPublish@v1.0.1
         with:
-          publish_script: /publish.el
+          publish_script: publish.el
       

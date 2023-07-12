@@ -10,3 +10,9 @@ I like building connections between domains that are seemingly distinct: I'll be
 A major proportion of the nodes in this web will be in a transient phase at all times - completeness is not a goal for each session : this is the input buffer. More polished versions will be posted on the main blog once a node(set) matures and is worth sharing.
 
 I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able to keep track of how a node(set) evolves.
+
+* 0x2118
+
+Here are some conventions that I follow to organize my work:
+ - [[id:20230712T211826.340837][Tagging]]
+ - [[id:20230712T132110.496747][Timestamps]]

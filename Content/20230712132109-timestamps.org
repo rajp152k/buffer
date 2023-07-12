@@ -4,5 +4,5 @@
 #+title: Timestamps
 
 * Personal Time Stamps
-
-to be populated ...
+** 0x2118
+I will be using hex counters (for the number of days I've been alive) to tag edits in these buffers. They allow me to monitor a buffers evolution in an explicit manner : a numerical difference of days is more intuitive to me than two dates that rely on an encoding that might not be relevant in the distant future.

@@ -18,8 +18,10 @@ jobs:
         with:
           publish_script: publish.el
       
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: './_site'
+          
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v2.0.3

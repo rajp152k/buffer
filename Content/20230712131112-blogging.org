@@ -1,8 +1,6 @@
 :PROPERTIES:
 :ID:       20230712T131112.909632
 :END:
-#+title: blogging
+#+title: BLogging Setup
 
-* Blogging Setup
-
- - TBP (To be populated)
+** 0x2117

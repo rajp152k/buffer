@@ -49,10 +49,7 @@
 (defun org-collect-keyword-value (key)
   "Get value of org property KEY of current buffer."
   (setq key-value (nth 1 (car (org-collect-keywords (list key)))))
-  (when key-value
-      (substring key-value
-                 1
-                 (- (length key-value) 1))))
+  (if key-value key-value))
 
 ;; buffer-file-shortname allows me to grab just the file name of the current buffer
 (defun buffer-file-shortname ()
@@ -72,8 +69,10 @@
 
 ;; Set html footer information
 (defun maker/footer ()
-  (concat (or (org-collect-keyword-value "tags") "")
-          ""))
+  (concat "Tags:" (or (org-collect-keyword-value "filetags") "None")
+          " | "
+	  "Copyright (C) " `(format-time-string "%Y")
+	  " by Raj Patil"))
 
 ;; Add roam files to list of files to search IDs for
 (setq org-id-extra-files (org-roam-list-files))

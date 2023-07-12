@@ -2,7 +2,6 @@
 :ID:       20230712T132110.496747
 :END:
 #+title: Timestamps
-#+filetags: tbp
 
 * Personal Time Stamps
 

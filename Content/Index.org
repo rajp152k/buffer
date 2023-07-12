@@ -4,7 +4,6 @@
 #+title: Index
 #+filetags: Transient Root
 
-
 * Semantics
 ** Expected content and incentive
 I do read a lot and have a tendency to forget all that I've learned.

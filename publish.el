@@ -76,8 +76,6 @@
           (or (org-collect-keyword-value "last_modified") "not defined")
           ". "))
 
-(defun )
-
 ;; Add roam files to list of files to search IDs for
 (setq org-id-extra-files (org-roam-list-files))
 

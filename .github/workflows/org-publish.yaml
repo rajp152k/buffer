@@ -14,3 +14,9 @@ jobs:
         
       - name: Org Roam Publish
         uses: maker2413/OrgRoamPublish@v1.0.1
+      
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2 

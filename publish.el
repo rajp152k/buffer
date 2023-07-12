@@ -74,10 +74,9 @@
 (defun maker/footer ()
   (concat "This page was last updated: "
           (or (org-collect-keyword-value "last_modified") "not defined")
-          ". "
-          (concat "<a href='https://github.com/maker2413/Notes/blob/master/Content/"
-                  (buffer-file-shortname)
-                  "'>Source</a>")))
+          ". "))
+
+(defun )
 
 ;; Add roam files to list of files to search IDs for
 (setq org-id-extra-files (org-roam-list-files))
@@ -120,10 +119,6 @@
          :components ("org-notes" "static" "images"))))
 
 ;; Overwrite default HTML output template
-;;
-;; I would ideally like to switch to using ox-slimhtml,
-;; but for the moment I don't see the ox-slimhtml package
-;; available without storing the elisp script in this repo
 (eval-after-load "ox-html"
   '(defun org-html-template (contents info)
      (concat (org-html-doctype info)
@@ -139,11 +134,11 @@
              "<form action='/'>\n"
              "<input type='submit' value='Home'>\n"
              "</form>\n"
-             ;;"<form id='search' autocomplete='off' class='search-box' action=/search.html>\n"
-             ;;"<label hidden for='search-input'></label>\n"
-             ;;"<input type='text' id='search-input' name='query' placeholder='Type here to search'>\n"
-             ;;"<input type='submit' value='search'>\n"
-             ;;"</form>\n"
+             "<form id='search' autocomplete='on' class='search-box' action=/search.html>\n"
+             "<label hidden for='search-input'></label>\n"
+             "<input type='text' id='search-input' name='query' placeholder='Type here to search'>\n"
+             "<input type='submit' value='search'>\n"
+             "</form>\n"
              "</div>\n"
              "</header>\n"
              "<div class='notes-container'>\n"
@@ -174,10 +169,10 @@
                       "")))))
              contents
              (format "</%s>\n" (nth 1 (assq 'content (plist-get info :html-divs))))
-             ;"<div class='postamble'>\n"
-             ;;; Postamble.
-             ;;(maker/footer)
-             ;"</div>\n"
+             "<div class='postamble'>\n"
+             ;; Postamble.
+             (maker/footer)
+             "</div>\n"
              "</div>\n"
              "</div>\n"
              "</div>\n"

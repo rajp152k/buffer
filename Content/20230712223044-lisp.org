@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       20230712T223044.319985
+:ROAM_ALIASES: "list processing"
+:END:
+#+title: lisp
+#+filetags: :lisp:
+
+* 0x2118
+
+AKA [[id:20230715T173339.005604][List]] Processing
+
+My first proper introduction to lisp was via [[https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html][SICP]] and I've been smitten since. I've felt the most natural programming in lisp. Even though I completed the exercises of SICP with a scheme ([[https://en.wikipedia.org/wiki/Racket_(programming_language)][racket]]), I've chosen to proceed with common lisp for the long term.
+
+[[id:20230712T224009.631876][Emacs]] has been something that I once spent 4 days on, migrating my workflows from vim. It is an operating system in itself and I spend most of my personal time in emacs.
+
+I'm still a novice and haven't built anything of consequence in lisp: I wish to change that soon and am actively looking for a modern project idea in lisp - could be building an emacs extension or writing something that stands alone.
+
+* Literature
+
+ - [x] Structure and Interpretation of Computer Programs
+ - [ ] Common Lisp: An introduction to symbolic computation
+ - [ ] Practical Common Lisp
+ - [ ] On Lisp
+ - [ ] Let over Lambda

@@ -1,8 +1,13 @@
 :PROPERTIES:
 :ID:       20230712T131112.909632
+:ROAM_ALIASES: writing
 :END:
-#+title: BLogging Setup
+#+title: Blogging Setup
 #+filetags: :transient:
+
+* 0x211C
+I'm thinking of developing a personalized writing system that will allow me to be disciplined, elevating myself from the stature of a hobbyist. For definite practice, I'm thinking of deciding on a topic at the start of a week, reading up and collating my notes until Saturday and posting the formal article on Sunday.
+My goal with this pursuit is to improve my command over the language and develop an original way with word. All communication boils down to being able to express yourself accurately without erroneous comprehension for the audience. That is a skill worth mastering. 
 
 * 0x2118
 ** Abstract
@@ -36,5 +41,5 @@ The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection o
 ** The Technicalities
   - The main blog is maintained in markdown and published via Hugo
   - The buffers are maintained in org-roam and published via ox-html
-
-
+    - credits: [[https://html.duckduckgo.com/html/?q=org-roam-publish][org-roam-publish]] (github 
+      

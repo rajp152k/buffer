@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       20230715T173339.005604
+:END:
+#+title: List
+
+* 0x211A 
+
+The principle data structure of the [[id:20230712T223044.319985][lisp]] programming language. As with any [[id:20230715T173535.681936][Data Structure]], it's built upon a primitive gluing functionality which is `cons` in lisp colloquial. 
+
+some basic functionalities associated with a list:
+ - peeping into () the top level glue (cons)
+   - car,cdr and variants
+ - manipulation
+   - reversing, appending, etc
+
+An intuitive enhancement in the complexity of a list can be represented by a list of lists (an association list aka table) : consisting of key value pairs.
+
+

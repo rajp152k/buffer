@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       20230712T224009.631876
+:END:
+#+title: Emacs
+#+filetags: :tool:
+
+* 0x2118
+
+The single greatest tool choice I've ever made in terms of editing efficiently (right along side vim : I use Evil GccEmacs 28 as of now)

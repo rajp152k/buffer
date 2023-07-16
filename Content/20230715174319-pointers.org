@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       20230715T174319.700414
+:END:
+#+title: pointers
+#+filetags: :programming:
+
+* 0x211A
+
+A respected triple star C programmer is what we should all strive to be by the end of this life...
+

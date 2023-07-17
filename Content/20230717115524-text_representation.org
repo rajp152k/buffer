@@ -28,8 +28,8 @@ A good representation would intuitively facilitate the above operations.
 
 * Specifics
 Most text representation schemes fall under the bucket of the [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][vector space model]] : they'll vectorize the samples under some priors to obtain a numerical representaion
-** Basic Vectorization approaches
-*** One hot encoding
+Some basic vectorization approaches
+1. One hot encoding
  - assuming independence between tokens and no notion of closeness/farness between tokens : only a discrete distinction
  - sparse and inefficient for large vocabulary size
  - a variable length representation:- not applicable when we need to map, say two different paragraphs, to the same vector space.
@@ -43,7 +43,8 @@ Most text representation schemes fall under the bucket of the [[id:9bb733a2-8540
 
      encoder.transform(test_sequence)
    #+end_src
-*** Bag of words
+
+2. Bag of words
  - union of the indicator vectors of the individual tokens
  - does not capture order or context
  - is of fixed length (len(vocab)) but still sparse if vocabulary is large and data points are small

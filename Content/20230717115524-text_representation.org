@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       3f69fc50-5e0b-4bbd-8909-ee777434a1f5
+:ROAM_ALIASES: "textual feature representation"
+:END:
+#+title: Text Representation
+#+filetags: :nlp:
+
+AKA Textual feature representation
+
+* Abstract 
+
+ - not as straightforward as representing images, videos, speech
+ - there is a malleable synthetic component to representation
+   - gives rise to several degrees of freedom/choices in terms of how one chooses represent samples
+ - an explicitly observable discrete (symbolic) component to the structure written language and maps to a vector space may not be that intuitive to the beginner at the get
+
+** Characteristics of a good representation?
+
+For any generic nlp task, processing a data point involves:
+ - breaking the data point into its atomic units: retrieving their independent semantics
+ - understanding their syntactics (grammar)
+ - understading the context
+ - finally, inferring the semantics of the data point as a whole from the above.
+
+A good representation would intuitively facilitate the above operations.
+
+* Specifics
+Most text representation schemes fall under the bucket of the [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][vector space model]]
+  
+* Relevant nodes
+** [[id:20230713T110240.846573][Representation Learning]]

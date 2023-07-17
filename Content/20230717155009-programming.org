@@ -1,0 +1,13 @@
+:PROPERTIES
+:ID:       252a620a-b629-410d-bb04-4476cf80a87a
+:END:
+#+title: Programming
+
+Solving a problem with a set of explicit steps (maybe deterministic or stochastic, but with clearly defined parameters).
+
+* Paradigm
+
+ - refers to the top-level stylistic approach used to design a solution.
+ - could be solution specific or be generically applicable.
+
+** [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Based Programming]]

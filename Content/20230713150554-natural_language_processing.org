@@ -2,9 +2,7 @@
 :ID:       20230713T150554.400026
 :ROAM_ALIASES: nlp
 :END:
-#+title: natural language processing
-
-* Natural Language Processing
+#+title: Natural Language Processing
 
 Natural language, unlike computer languages, are not completely structured; they may have rules but they also have eccentricities that may not be explicitly captured by rules/decisions but need more complex techniques to be employed: analyzing multiple patterns of a similar instance being one of them.
 
@@ -13,8 +11,6 @@ Solution approaches trickle down into  the following:
  - [[id:20230713T110040.814546][Deep Learning]]
  - [[id:20230713T113547.742751][Symbolic AI]] (~heuristics)
  - A mixture of the above
-   
-   
  
 * Literature
 ** Practical NLP (book)

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       618d0535-411d-4c36-b176-84413ec8bfc1
+:END:
+#+title: Concurrency
+#+filetags: :programming:
+
+
+* Bottlenecks
+
+Depending on the task being tackled, a process's performance may be
+ - IO bound
+ - Compute (CPU) bound
+   
+Different solutions are employed for different sorts of bottlenecks.
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d08a6ebd-a173-4c7d-bda7-6911db9eccbd
+:END:
+#+title: symbolic computation
+#+filetags: :programming:
+
+See [[id:20230712T223044.319985][lisp]]

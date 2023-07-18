@@ -16,3 +16,6 @@ I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able
 Here are some conventions that I follow to organize my work:
  - [[id:20230712T211826.340837][Tagging]]
  - [[id:20230712T132110.496747][Timestamps]]
+ - will be expressing math as [[id:20230712T223044.319985][S-expressions]] rather than latex
+   - the former flow fluidly off my fingers
+   - the latter I'll reserve when for publishing on the main blog: latex isn't exactly good while note taking - is a distraction.

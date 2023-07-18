@@ -30,38 +30,55 @@ A good representation would intuitively facilitate the above operations.
 Most text representation schemes fall under the bucket of the [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][vector space model]] : they'll vectorize the samples under some priors to obtain a numerical representaion
 Some basic vectorization approaches
 1. One hot encoding
- - assuming independence between tokens and no notion of closeness/farness between tokens : only a discrete distinction
- - sparse and inefficient for large vocabulary size
- - a variable length representation:- not applicable when we need to map, say two different paragraphs, to the same vector space.
-   #+begin_src python
-     from sklearn import OneHotEncoder
+   - assuming independence between tokens and no notion of closeness/farness between tokens : only a discrete distinction
+   - sparse and inefficient for large vocabulary size
+   - a variable length representation:- not applicable when we need to map, say two different paragraphs, to the same vector space.
+     #+begin_src python
+       from sklearn import OneHotEncoder
 
-     corpus = init_corpus()
+       corpus = init_corpus()
 
-     encoder = OneHotEncoder()
-     encoder.fit(corpus)
+       encoder = OneHotEncoder()
+       encoder.fit(corpus)
 
-     encoder.transform(test_sequence)
-   #+end_src
-
+       encoder.transform(test_sequence)
+     #+end_src
 2. Bag of words
- - union of the indicator vectors of the individual tokens
- - does not capture order or context
- - is of fixed length (len(vocab)) but still sparse if vocabulary is large and data points are small
- - frequency isn't captured usually : only existence ..
-   - might be useful in certain cases ([[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]])
-   #+begin_src python
-     from sklearn import CountVectorizer
+   - union of the indicator vectors of the individual tokens
+   - does not capture order or context
+   - is of fixed length (len(vocab)) but still sparse if vocabulary is large and data points are small
+   - frequency isn't captured usually : only existence ..
+     - might be useful in certain cases ([[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]])
+     #+begin_src python
+       from sklearn import CountVectorizer
 
-     corpus = init_corpus()
+       corpus = init_corpus()
 
-     # only record existence indicators
-     encoder = CountVectorizer(binary=True)
+       # only record existence indicators
+       encoder = CountVectorizer(binary=True)
 
-     encoder.fit(corpus)
+       encoder.fit(corpus)
 
-     encoder.transform(test_sequence)
-   #+end_src
+       encoder.transform(test_sequence)
+     #+end_src
+3. TF - IDF (term frequency - inverse document frequency)
+   - words that occur frequently across all documents of a corpus may not be important for most tasks.
+   - stop word removal does deal with this to an extent but that is not a statistical approach
+   - TF-IDF reports the corpus adjusted document frequency of a term : an implcit feature engineering step along the lines of dimensionality reduction.
+   - still can't capture closeness/farness between terms
    
+
+     #+begin_src lisp
+       (defun TF-IDF (term document)
+	 (let ((term-frequency #'(lambda ()
+				   (/ (number-of-occurences-of-t-in-d)
+				      (total-number-of-terms-in-d))))
+	       (inverse-document-frequency #'(lambda ()
+					       (logarithm :base e
+							  :of (/ (total-number-of-documents)
+								 (number-of-documents-that-have-t))))))
+	   (* (term-frequency) (inverse-document-frequency))))
+     #+end_src
+
 * Relevant nodes
 ** [[id:20230713T110240.846573][Representation Learning]]

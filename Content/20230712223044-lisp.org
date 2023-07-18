@@ -5,6 +5,10 @@
 #+title: lisp
 #+filetags: :lisp:
 
+* 0x211D
+
+ - very conducive to [[id:d08a6ebd-a173-4c7d-bda7-6911db9eccbd][symbolic computation]] and expression concepts in general
+
 * 0x2118
 
 AKA [[id:20230715T173339.005604][List]] Processing

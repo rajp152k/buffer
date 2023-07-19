@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       6efc5118-aa6d-43f7-bd46-5f0460819813
+:ROAM_ALIASES: "Notes in Lisp"
+:END:
+#+title: NIL
+
+* i.e. : Notes In Lisp
+
+** 0x211E
+
+I started off with this notion while being lazy regarding use latex in my notes (I'll mostly work with text-files and although I can render math them with a few chords and key-strokes, it takes me away from the process of noting being seemless and crude).
+
+Given I can directly use the built in (slime-)inferior-lisp process with Org-babel for cl/elisp, I have the expressive power to express anything that I need. This will handle math but will also allow me to express procedures in a more readable format than normal pseudocode. 
+
+I might develop a personal standard/protocol over time for uniformity and elegance. I can see myself having a representative s-expression for each node in the future that powers up what I can really do with this system. For now, I'll begin with basic math and functions while also trying to build a more "natural" representaion language in lisp. This might become a formal pursuit later on.

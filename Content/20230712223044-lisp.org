@@ -7,7 +7,7 @@
 
 * 0x211D
 
- - very conducive to [[id:d08a6ebd-a173-4c7d-bda7-6911db9eccbd][symbolic computation]] and expression concepts in general
+ - very conducive to [[id:d08a6ebd-a173-4c7d-bda7-6911db9eccbd][symbolic computation]] and [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][expressing concepts in general]]
 
 * 0x2118
 

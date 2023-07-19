@@ -8,7 +8,7 @@
 
 ** 0x211E
 
-I started off with this notion while being lazy regarding use latex in my notes (I'll mostly work with text-files and although I can render math them with a few chords and key-strokes, it takes me away from the process of noting being seemless and crude).
+I started off with this notion while being lazy regarding use latex in my notes (I'll mostly work with text-files and although I can render math in them with a few chords and key-strokes, it takes me away from the process of noting being seamless and crude).
 
 Given I can directly use the built in (slime-)inferior-lisp process with Org-babel for cl/elisp, I have the expressive power to express anything that I need. This will handle math but will also allow me to express procedures in a more readable format than normal pseudocode. 
 

@@ -19,3 +19,6 @@ Here are some conventions that I follow to organize my work:
  - will be expressing math as [[id:20230712T223044.319985][S-expressions]] rather than latex
    - the former flow fluidly off my fingers
    - the latter I'll reserve when for publishing on the main blog: latex isn't exactly good while note taking - is a distraction.
+   - my goal being encoding the concept (procedure/definition/relation) in a way that is more accessible to that of a programmer's mind
+   - I also choose to do so as it'll help me learn map concepts from different domains into a common symbolic representation (hmmmm ... : yeah...., math already does that - I guess I'm just being peevish)
+ - A top-down knowledge building style : the human mind doesn't remember what it knows. Trying to remember a specific latent knowledge node in this graph will be more efficient than building all the base nodes one by one until I reach a practical level of application. I will add atoms as and when I see fit : I might even insert most from memory.

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       20230718T223411.394444
+:END:
+#+title: flow
+#+filetags: :book:
+
+* Key takeaways
+
+ - map difficulty to efforts required for achieving the optimal performance state.
+ - life isn't inherently boring/exciting : gamification of its aspects is our responsibility.
+   - it's all relative ...
+
+* Literature
+
+- https://www.goodreads.com/book/show/66354.Flow
+

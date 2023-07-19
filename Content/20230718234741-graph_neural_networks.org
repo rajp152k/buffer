@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       20230718T234741.567442
+:END:
+#+title: Graph Neural Networks
+#+filetags: :ai:
+
+
+
+* Literature
+ - [ ] Scarselli, F., Gori, M., Ah Chung Tsoi, Hagenbuchner, M., & Monfardini, G. (2009). The Graph Neural Network Model. IEEE Transactions on Neural Networks, 20(1), 61–80. doi:10.1109/tnn.2008.2005605

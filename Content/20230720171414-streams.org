@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a8f1b278-6dd9-43fc-bef6-e3ed3847da87
+:ROAM_ALIASES: generator
+:END:
+#+title: streams
+
+most primitive data structure that can be implemented with the use of delay and force.

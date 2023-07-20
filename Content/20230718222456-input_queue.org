@@ -9,3 +9,22 @@ This buffer maintains a cache of technical papers/books/blogs/similar resources 
 
 I'll most likely begin with foundational papers in any domain and then explore depth if need be. will not be limiting myself to anything specific : anything goes - this is a new hobby.
 
+* sites
+** https://otherlife.co/
+** https://paperswelove.org/
+** https://news.ycombinator.com/
+
+* Books 
+** https://www.masteringemacs.org/book
+** [[https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/][Mastering Regular Expressions, 3rd Edition [Book]​]] 
+** http://www.paulgraham.com/hp.html
+
+* Papers
+** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
+** [[https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store][Dynamo: Amazon’s highly available key-value store - Amazon Science]] 
+** [[https://arxiv.org/abs/2003.02320][[2003.02320] Knowledge Graphs]]
+
+* Docs/tools/tuts
+** https://spacy.io/
+** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]
+** [[https://github.com/jesseduffield/lazydocker][GitHub - jesseduffield/lazydocker]]

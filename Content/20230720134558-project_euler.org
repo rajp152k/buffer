@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       1e88b1d9-e124-4cf7-987e-8d6a857dc3d3
+:END:
+#+title: Project-Euler
+#+filetags: :lisp:programming:
+
+* abstract
+
+ - Proceed with caution: you wouldn't like to spoil the fun asociated with solving a good problem
+* Problems
+
+** p1
+- https://projecteuler.net/problem=1
+
+  #+begin_src lisp
+    (defun divides (num divisor)
+      (= 0 (mod num divisor)))
+
+    (defun sol ()
+      (let ((accumulation 0))
+	(dotimes (i 1000)
+	  (when (or (divides i 3) (divides i 5))
+	    (setf accumulation (+ accumulation i))))
+	accumulation))
+
+    (sol)
+  #+end_src
+
+  #+RESULTS:
+  : 233168
+
+** p2
+- https://projecteuler.net/problem=2
+
+  #+begin_src lisp
+    (defvar *limit* 4000000)
+
+    (defun build-fib (accer)
+      (cond ((> (car accer) *limit*) accer)
+	    (t (build-fib (cons (+ (car accer) (cadr accer)) accer)))))
+
+    (reduce #'+ (remove-if-not #'evenp (build-fib '(1 0))))
+  #+end_src
+
+  #+RESULTS:
+  : 4613732
+
+** p3
+- https://projecteuler.net/problem=3
+
+  #+begin_src lisp
+    (defvar *number* 600851475143)
+
+    (defun divides (divisor number) (= 0 (mod number divisor)))
+
+    (defun largest-prime-factor (number)
+      (defvar limit (sqrt number))
+      (defun updater (current last-divisor left-number)
+	(cond ((> current limit) last-divisor)
+	      ((divides current left-number) (updater (+ 1 current) current (/ left-number current)))
+	      (t (updater (+ 1 current) last-divisor left-number))))
+      (updater 1 1 number))
+
+    (largest-prime-factor *number*)
+  #+end_src
+
+  #+RESULTS:
+  : 6857
+  
+** p4
+ - https://projecteuler.net/problem=4
+
+   #+begin_src lisp
+
+     
+   #+end_src
+  

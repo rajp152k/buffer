@@ -3,6 +3,10 @@
 :END:
 #+title: List
 
+* 0x211F
+
+All the contents of a normal list are evaluated when it is created: might not be ideal for longer procedures.[[id:a8f1b278-6dd9-43fc-bef6-e3ed3847da87][streams]]
+
 * 0x211A 
 
 The principle data structure of the [[id:20230712T223044.319985][lisp]] programming language. As with any [[id:20230715T173535.681936][Data Structure]], it's built upon a primitive gluing functionality which is `cons` in lisp colloquial. 

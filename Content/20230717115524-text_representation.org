@@ -28,7 +28,8 @@ A good representation would intuitively facilitate the above operations.
 
 * Specifics
 Most text representation schemes fall under the bucket of the [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][vector space model]] : they'll vectorize the samples under some priors to obtain a numerical representaion
-Some basic vectorization approaches
+Some basic vectorization approaches:
+
 1. One hot encoding
    - assuming independence between tokens and no notion of closeness/farness between tokens : only a discrete distinction
    - sparse and inefficient for large vocabulary size
@@ -43,7 +44,7 @@ Some basic vectorization approaches
 
        encoder.transform(test_sequence)
      #+end_src
-2. Bag of words
+2. Bag of words (subset of bag-of-ngrams)
    - union of the indicator vectors of the individual tokens
    - does not capture order or context
    - is of fixed length (len(vocab)) but still sparse if vocabulary is large and data points are small
@@ -66,7 +67,6 @@ Some basic vectorization approaches
    - stop word removal does deal with this to an extent but that is not a statistical approach
    - TF-IDF reports the corpus adjusted document frequency of a term : an implcit feature engineering step along the lines of dimensionality reduction.
    - still can't capture closeness/farness between terms
-   
 
      #+begin_src lisp
        (defun TF-IDF (term document)
@@ -79,6 +79,38 @@ Some basic vectorization approaches
 								 (number-of-documents-that-have-t))))))
 	   (* (term-frequency) (inverse-document-frequency))))
      #+end_src
+     
+The major disadvantage of the ones above is that they don't have an explicit guage for how semantically close two words/phrases(beyond unigrams) are. This leads to the usage of dense vector representations aka embeddings aka distributed representation : this calls for a black-box function that takes your n-gram and produces the mapped embedding - that's a job for [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]]
+
+1. Word embeddings (init by [[id:f4cc77c7-26a6-4930-9a05-b7014ce7b0f3][word2vec]])
+   - progress made towards capturing semantic differences/similarities between two tokens in a corpus
+   - allows for some intuitive vector math to understand relations between tokens. for instance, the following may be reasonable assumptions regarding the representations in the embedding space:
+
+#+begin_src lisp
+  (defun embbeder (token-chain)
+    (progn ...)
+    (return embedding))
+
+  (defun closep (a b &key (thresh defthresh)) ...)
+
+  (assert (closep (+ (embedding 'land) (embedding 'transport))
+		  (embedding 'car)))
+
+  (assert (closep (+ (- (embedding 'king) (embedding 'man))
+		     (embedding 'woman))
+		  (embedding 'queen))))
+    #+end_src
+
+  - exploring ~embedder~ further:
+    - it builds the ~embedding~ by looking at the distributional similarity (accepting distributional hypothesis) of the words i.e. its neighborhood, aka context.
+    - on a conceptual level: this is done by a vector space level [[id:fcfd6748-fbbc-49db-bd14-06fdcb253ead][fixed point iteration]] where each token embedding is intialized randomly and then improved upon with each iteration using that token's context in its occurences in the corpus.
+    - specifically, word2vec, uses a 2 layer [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][neural net]] for this.
+  - for pretrained word embeddings (which are form of key-value stores), refer [[id:34c47794-965d-4933-b93c-c740320f62c3][genism]]
+  - quick similarity searches can be done on a vector space by using [[id:2ec4a33e-479d-466b-b2b1-0a5925c0222c][cosine similarity]]
+
+  - for training your word embeddings, look into ~continuous bag of words~ and ~SkipGram~
+
+2. 
 
 * Relevant nodes
 ** [[id:20230713T110240.846573][Representation Learning]]

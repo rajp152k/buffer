@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       34c47794-965d-4933-b93c-c740320f62c3
+:END:
+#+title: genism
+#+filetags: :cache:
+
+ - [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
+

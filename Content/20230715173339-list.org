@@ -5,7 +5,7 @@
 
 * 0x211F
 
-All the contents of a normal list are evaluated when it is created: might not be ideal for longer procedures.[[id:a8f1b278-6dd9-43fc-bef6-e3ed3847da87][streams]]
+All the contents of a normal list are evaluated when it is created: might not be ideal for longer procedures. See [[id:a8f1b278-6dd9-43fc-bef6-e3ed3847da87][streams]], for use with delay and force
 
 * 0x211A 
 
@@ -18,5 +18,3 @@ some basic functionalities associated with a list:
    - reversing, appending, etc
 
 An intuitive enhancement in the complexity of a list can be represented by a list of lists (an association list aka table) : consisting of key value pairs.
-
-

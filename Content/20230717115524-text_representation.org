@@ -82,7 +82,7 @@ Some basic vectorization approaches:
      
 The major disadvantage of the ones above is that they don't have an explicit guage for how semantically close two words/phrases(beyond unigrams) are. This leads to the usage of dense vector representations aka embeddings aka distributed representation : this calls for a black-box function that takes your n-gram and produces the mapped embedding - that's a job for [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]]
 
-1. Word embeddings (init by [[id:f4cc77c7-26a6-4930-9a05-b7014ce7b0f3][word2vec]])
+4. Word embeddings (init by [[id:f4cc77c7-26a6-4930-9a05-b7014ce7b0f3][word2vec]])
    - progress made towards capturing semantic differences/similarities between two tokens in a corpus
    - allows for some intuitive vector math to understand relations between tokens. for instance, the following may be reasonable assumptions regarding the representations in the embedding space:
 
@@ -108,9 +108,11 @@ The major disadvantage of the ones above is that they don't have an explicit gua
   - for pretrained word embeddings (which are form of key-value stores), refer [[id:34c47794-965d-4933-b93c-c740320f62c3][genism]]
   - quick similarity searches can be done on a vector space by using [[id:2ec4a33e-479d-466b-b2b1-0a5925c0222c][cosine similarity]]
 
-  - for training your word embeddings, look into ~continuous bag of words~ and ~SkipGram~
+  - for training your word embeddings, look into [[id:0321ffe3-593c-4999-aa3f-3dcffba59ac1][continuous bag of words]] and  [[id:2e50711b-13ed-4d58-ab31-55ec20dc54f7][SkipGram]]
 
-2. 
+5. Scaling beyond words:
+   - most tasks require embedding paragraphs or even documents into a dense vector space : exploring this in a [[id:06c21d6f-fa59-46b2-a8b7-c54f5f62fc78][separate node]] 
+   - Also note that in addition to the individual short-comings of the above methods, none of them can handle the OOV (out of vocab) problem gracefully.
 
 * Relevant nodes
 ** [[id:20230713T110240.846573][Representation Learning]]

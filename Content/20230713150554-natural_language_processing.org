@@ -17,3 +17,8 @@ Solution approaches trickle down into  the following:
 *** Generics
 **** The NLP Pipeline 
 **** [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
+
+
+* Buffer
+** [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
+ - when fitting a corpus to an nlp pipeline, do take note of the percentage of words that are OOV(if too high, you could training your own embedder instead of a pretrained embedder)

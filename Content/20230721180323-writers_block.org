@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       5c4039a1-cd36-42c7-863b-9dd76c689ddf
+:END:
+#+title: writers-block
+#+filetags: :meta:writing:
+
+* 0x2120
+
+There are many ideas that pop up in my head but only a few make it into a blog post (which is how it should be). I thought this was a problem when I was 20 : so I started blogging in streams - incremental daily updates with the occasional longer post. That made it seem that the blog in itself is pretty much alive. Now though, that I've decided on keeping it concise on the new main blog - I'm at a loss for what I should write on. So.., I thought of creating this specific buffer that will allow me to write about not being able to write. This will probably be a stream with chronologically ordered entries for whenever I have the urge to write about something but still lack the core for a post idea. I could blog about my daily routine (working out, work, reading, sleeping, repeat) but that does not serve a major purpose and would be too lack-lustre for something that I sit on for a week. I could write about emacs but that would be too disorganized as of now as I use it for anything and everything and it's pretty much evolving all the time organic and I haven't spent too much time on it yet to be able to comment on it philosophically. I could force myself to pick up some esoteric epistemologyical idea and write something mediocre that is a shallow echo of some of the better essays out there. I could talks about my plans (which is something I did on my past) but I've realized that that isn't the best start towards ensuring their executions. I could pretend I've interesting ideas to write about and slap on lexically bloated meat on an ideologically insignificant skeleton of an idea : but that would be just that - a facade. or ... I could just go on about what I could do and not get anything done.
+
+Anyway, I have found a somewhat locally stable optimum in terms of balancing my health, work and personal pursuits. Writing (ranting) about not being able to write about something is a luxury I can afford again. My life is still boring, but not in an abnormal way anymore. I'm spending most of my time reading textbooks,papers and within emacs (no problem there at all) but there is still this generic dissatisfaction in terms of what I'm getting done through out the day : I haven't earned my sleep in a long time. I may have fallen asleep due to fatigue or boredom or other insignificant reasons, but I haven't experienced a sense of having "earned my sleep" in a long time.
+
+I was just discussing this with a colleague and he did resonate with this same feeling most of his days.
+
+This general sense of dissatisfaction with yourself is healthy I guess. One shouldn't really be always satisfied with what they're getting throughout the day - that is a recipe for complacency. One should still be able to look at it objectively and not dwell on it longer than necessary.
+
+There you go, I found something worth writing about. I guess I should do this everytime I'm experiencing a block: to clear out the chaos and write with clarity.
+
+So, I'll be posting about this sense of generic dissatisfaction with the "self" on around (0x2120 + 7).

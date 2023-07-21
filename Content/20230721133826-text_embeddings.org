@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       06c21d6f-fa59-46b2-a8b7-c54f5f62fc78
+:END:
+#+title: text-embeddings
+#+filetags: :nlp:
+
+See [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]].
+
+word2vec was a seminal segue into using dense vector spaces for representing tokens in a corpus. Some nlp tasks require embeddings for a larger-than-usual sequence and techniques to adapt singular maps are not quite obvious.
+* Baseline
+
+ - represent the sequence with sum/average of the individual token embeddings
+ - loses precious information such as ordering but might be sufficient for most tasks.
+
+* The OOV problem
+ - as an initial approach, OOV (out of vocab) tokens can be handled by assigning a defualt vector to them or skipping them altogether in the preprocessing phase.
+ - a more epistemologically sound approach would be to dive deeper in the morphology of the tokens and start with character-level ngrams for embeddings rather than whole words. (see [[https://github.com/facebookresearch/fastText/releases][Releases · facebookresearch/fastText · GitHub]] ) : also available via [[id:34c47794-965d-4933-b93c-c740320f62c3][genism]]
+   - this allows the  embedder to map suffixes, prefixes and other meaningful etymolgical sections of a word - combined later on to produce the words and in turn a larger texts representation: Thus resulting in better handling of OOV words.
+
+* Doc2Vec
+
+ - trains on sequences of processed paragraphs instead of words.
+   - w.r.t to what words are for SkipGram / CBOW when training word2vec
+ - allows retaining information regarding the order of sequence.
+ - also available via [[id:34c47794-965d-4933-b93c-c740320f62c3][genism]]
+
+* Interpretation
+
+ - other than being an input to further downstream training modules, visualizing embeddings for a corpus can provide important insights.
+ - exploring techniques for visualizing embeddings generically in  [[id:d43c8fb2-1279-40a0-a93c-6089916352c6][Vector Visualization]] : this is not usually as simple as analysing low-dimensional data and the vectors need to be pre-processed appriately.

@@ -4,7 +4,6 @@
 :END:
 #+title: Text Representation
 #+filetags: :nlp:
-
 Note: we aproach this step post [[id:e9d75f9d-f8bf-4125-beb0-8ca34166ce9e][data engineering]].  
 
 AKA Textual feature representation
@@ -79,10 +78,9 @@ Some basic vectorization approaches:
 								 (number-of-documents-that-have-t))))))
 	   (* (term-frequency) (inverse-document-frequency))))
      #+end_src
-     
-The major disadvantage of the ones above is that they don't have an explicit guage for how semantically close two words/phrases(beyond unigrams) are. This leads to the usage of dense vector representations aka embeddings aka distributed representation : this calls for a black-box function that takes your n-gram and produces the mapped embedding - that's a job for [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]]
-
+    
 4. Word embeddings (init by [[id:f4cc77c7-26a6-4930-9a05-b7014ce7b0f3][word2vec]])
+   - The major disadvantage of the ones above is that they don't have an explicit guage for how semantically close two words/phrases(beyond unigrams) are. This leads to the usage of dense vector representations aka embeddings aka distributed representation : this calls for a black-box function that takes your n-gram and produces the mapped embedding - that's a job for [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]]
    - progress made towards capturing semantic differences/similarities between two tokens in a corpus
    - allows for some intuitive vector math to understand relations between tokens. for instance, the following may be reasonable assumptions regarding the representations in the embedding space:
 
@@ -113,6 +111,11 @@ The major disadvantage of the ones above is that they don't have an explicit gua
 5. Scaling beyond words:
    - most tasks require embedding paragraphs or even documents into a dense vector space : exploring this in a [[id:06c21d6f-fa59-46b2-a8b7-c54f5f62fc78][separate node]] 
    - Also note that in addition to the individual short-comings of the above methods, none of them can handle the OOV (out of vocab) problem gracefully.
+
+
+1. HandCrafted Features:
+   - when significant domain specific knowledge is available beforehand, one can add manual manipulation processes before we use the features for better performance, than a generic representation pipeline
+   - this may be the case when the task at hand has specific requirements that may not be well captured for fitting a model, when only employing generic pipelines.
 
 * Relevant nodes
 ** [[id:20230713T110240.846573][Representation Learning]]

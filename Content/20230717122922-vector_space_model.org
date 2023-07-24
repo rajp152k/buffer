@@ -21,3 +21,5 @@ Some useful features of vector spaces that can employed in devising algorithms (
 :END:
 
 Visualizing vectors w.r.t each other in a set might provide important insights regarding the dataset (could be images, text, speech, etc) that they represent.
+
+** [[id:b7ef9ede-f335-4d40-983a-99a5b4011177][T-SNE]]

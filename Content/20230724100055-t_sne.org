@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       b7ef9ede-f335-4d40-983a-99a5b4011177
+:END:
+#+title: T-SNE
+#+filetags: :math:
+
+aka t-distributed stochastic neighboring embedding.
+
+ - used to visualize relatively high dimensional data within 2-3 dimensisons.
+ - can be used for semantic analysis of images, speech, text, etc when encoded into meaningful embeddings; for instance, see [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]].
+ - falls under the umbrella of [[id:ec4cd02f-e700-41ce-93df-484dfdf8d3eb][dimensionality reduction]] techniques. specifically, it is a non-linear dimensionality reduction technique.
+
+** Conceptual
+
+ - on a very high level, TSNE aims to map the closeness of two points in the high dimensional space into the low dimensional space.
+ - this is done by modelling the measure of closeness via a T-distribution.
+
+** Shortcomings of TSNE
+ - it is a parametrized method : two of them being ~persplexity~ (somewhat akin to suggesting the number of points in a localized cluster) and ~epsilon~ (learning rate of the algorithm). One needs to test out multiple configurations and no clear relations may be observable - even over gradual changes in the hyperparameters.
+ - as it's a non-linear map, one cannot take inter-cluster and intra-cluster sizes to be contenders for comparing the original distribution as local densities are brought up to the same level and there is no definitive uniform global transformation as in linear dimensionality reduction techniques.
+ - randomness (noise) may be inferred as a pattern that isn't inherently present - need to be wary of such emergences.
+ - shapes and patterns may represent the original distribution only within small ranges of perplexities. They may, however, always represent the overall layout of the original distribution : eg - two parallel lines may be mapped as slightly warped, not so parallel curvy lines that still look somewhat similar. Again, this is a result of the non-linear nature of the map.
+
+
+
+* References
+ - [[https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding][t-distributed stochastic neighbor embedding - Wikipedia]]
+ - Wattenberg, et al., "How to Use t-SNE Effectively", Distill, 2016. http://doi.org/10.23915/distill.00002
+ - implementation : sklearn.manifold.tsne
+
+* Also see
+ - [[id:848387f1-ec7a-4410-9ddd-40849472ef1d][Curse of Dimensionality]]

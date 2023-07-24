@@ -14,6 +14,9 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** https://paperswelove.org/
 ** https://news.ycombinator.com/
 ** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]
+
+* Blogs
+** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
 * Books 
 ** https://www.masteringemacs.org/book
 ** [[https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/][Mastering Regular Expressions, 3rd Edition [Book]​]] 
@@ -30,3 +33,7 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
+   
+
+* RevNotes
+** [[id:bd383ba2-37e9-412f-b245-919fa47831bc][Classification Evaluation Metrics]] : AUC - ROC

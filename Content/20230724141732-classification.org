@@ -26,11 +26,15 @@ To classify given data points into one or more known data classes.
 4. test and benchmark the model on the test set using the evaluation metric.
 5. deployment : on new data points with unknown categories
 
+* Algorithms
+** Naive Bayes
+ - naive usage of the bayes theorem.
+ - prediction is the class which has the highest likelihood given the current data point.
+ - the distribution to evaluate the above likelihood is built from the dataset.
 * Classification Evaluation Metrics
 :PROPERTIES:
 :ID:       bd383ba2-37e9-412f-b245-919fa47831bc
 :END:
-
 ** Primitive
 - Accuracy
 Percentage of correctly labelled data points
@@ -84,11 +88,16 @@ Summarizing the above for binary clasifiction
   (defvar f1-measure (harmonic-mean precision recall))
       #+end_src
     
-
-
 ** Not-so-primitive
  - Area under ROC curve
   [[https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc][Classification: ROC Curve and AUC]] 
-
+* Possible Problems
+** [[id:89c8e59e-e058-4edc-bd85-b4db9eb089a9][Class Imbalance]]
+** Feature Engineering
+ - too sparse representations (in case of text)
+ - un-normalized/ un-standardized numerical features
+ - too many linearly dependent numerical features that could be represented by a single amalgamation and help reduce the model complexity.
+** Hyperparameter Tuning
+ - model/algorithm dependent
 * Relevant Nodes
  - [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]

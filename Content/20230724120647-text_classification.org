@@ -9,8 +9,3 @@ see [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]]
 #+begin_center
 To classify given textual sequences into one or more known data classes.
 #+end_center
-
-* OverArching types
- - binary classification
- - multiclass classification
- - multilabel classification (multiple viable labels for a data point)

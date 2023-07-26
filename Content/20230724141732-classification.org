@@ -20,7 +20,7 @@ To classify given data points into one or more known data classes.
 :END:
 1. Obtain datum, label pairs that can be used for learning.
 2. split the dataset into train, validation (optional testing) parts and decide on the [[id:bd383ba2-37e9-412f-b245-919fa47831bc][evaluation metrics]] that will be employed
-3. pre-process the splits accordingly and proceed with the alternating training/validation phase. Degrees of freedom that can be explored
+3. pre-process the splits accordingly and proceed with alternating training/validation phase. Degrees of freedom that can be explored
    - improving feature engineering 
    - tuning the model hyperparameters
 4. test and benchmark the model on the test set using the evaluation metric.
@@ -78,10 +78,10 @@ Summarizing the above for binary clasifiction
 		      (length true-labels)))
 
   (defvar precision (/ true-positives
-		       (+ true-positives false-negatives)))
+		       (+ true-positives false-positives)))
 
   (defvar recall (/ true-positives
-		    (+ true-postives false-positives)))
+		    (+ true-postives false-negatives)))
 
   (defun harmonic-mean (a b) (/ (* 2 a b) (+ a b)))
 
@@ -92,12 +92,14 @@ Summarizing the above for binary clasifiction
  - Area under ROC curve
   [[https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc][Classification: ROC Curve and AUC]] 
 * Possible Problems
-** [[id:89c8e59e-e058-4edc-bd85-b4db9eb089a9][Class Imbalance]]
-** Feature Engineering
- - too sparse representations (in case of text)
- - un-normalized/ un-standardized numerical features
- - too many linearly dependent numerical features that could be represented by a single amalgamation and help reduce the model complexity.
-** Hyperparameter Tuning
- - model/algorithm dependent
+ -  [[id:89c8e59e-e058-4edc-bd85-b4db9eb089a9][Class Imbalance]]
+ -  Feature Engineering
+   - too sparse representations (in case of text)
+   - un-normalized/ un-standardized numerical features
+   - too many linearly dependent numerical features that could be represented by a single amalgamation and help reduce the model complexity.- - - 
+ -  Hyperparameter Tuning
+    - model/algorithm dependent
 * Relevant Nodes
  - [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
+   
+   

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       20230727T192932.286062
+:END:
+#+title: Youtube
+#+filetags: :meta:
+
+* History
+ - second youtube channel
+   - first -> to practice rhetoric
+   - did help with working out the kinks in my communication skills
+* Abstract
+ - writing a pretty good way to express yourself and show your work
+ - albeit.., still incomplete : videos complement the process of expression
+ - speaking into a camera, speaking from experiences, tricks you into thinking you're addressing a large audience - a pretty neat trick, I would say
+ - I'm starting again with a slightly formal approach : https://www.youtube.com/@rajp152k 
+* Settling into Niche
+   - Some topics that I'll explore initially:
+     - Emacs -> instructive/customization
+     - Common Lisp -> instructive
+     - Programming Language Theory (Racket)
+     - Book Reviews/follow-throughs (non-fiction/technical)
+     - Interesting Research from different domains
+     - Workflows, tools for relevant tasks
+     - the occasional philosophical rant
+* The Long Term Plan
+ - freedom of expression is a given
+   - being free enough to express is what we generally lack...
+ - targeting at least a video a week..

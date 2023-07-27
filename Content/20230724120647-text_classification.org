@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       f8d2207f-86d3-4501-a7bc-393fb53c52c1
+:END:
+#+title: Text Classification
+#+filetags: :task:nlp:
+
+see [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]]
+(this node collates notes specific to classification in [[id:20230713T150554.400026][nlp]]) 
+
+#+begin_center
+To classify given textual sequences into one or more known data classes.
+#+end_center
+
+** Primitives
+ - Lexicon based sentiment analysis
+   - see [[https://vadersentiment.readthedocs.io/en/latest/][VaderSentiment]] 
+ - Tradional [[id:20230713T110006.406161][Machine Learning]] based methods
+   - see [[id:31a028e3-f87a-4aae-85b7-04bc0c8a32af][Classifiers]]
+** text-classificaton pipeline
+ - similar to the [[id:b5bbb126-c808-468c-962d-8361aa8c8dd1][Generic Classification Pipeline]]
+   - for feature engineering see : [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][textual feature representation]]
+     

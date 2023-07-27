@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       6bee4bb1-c087-45fe-8cf8-16c84efdad35
+:END:
+#+title: todo
+#+filetags: :meta:
+
+A List of miscellaneous tasks that need a little time to be tended to properly and shouldn't require much effort
+
+* Work setup
+ - [ ] automate Eye-browse initial window config for 2 frames
+   - call make-frame and corresponding tagged window creators in init.el
+

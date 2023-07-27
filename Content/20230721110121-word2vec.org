@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f4cc77c7-26a6-4930-9a05-b7014ce7b0f3
+:END:
+#+title: word2vec
+#+filetags: :tbp:nlp:ai:
+

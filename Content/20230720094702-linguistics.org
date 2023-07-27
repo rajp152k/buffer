@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       e94b1ff3-ee62-417f-8d01-afb23ccd0c3b
+:END:
+#+title: linguistics
+#+filetags: :linguistics:
+
+* 0x211F
+
+I do plan on learning several languages. I dabbled a bit in latin and sanskrit before I got lazy enough to drop it all and get into [[id:20230712T223044.319985][lisp]].
+
+These set of nodes are meant to document similarities, differences and specifics of languages that I'm interested in
+
+* Proficiency levels
+rated as self-assigned 3-tuple : reading, writing, speech : from 0 to 10
+ - English: (8,7,7)
+ - Hindi: (3,2,6)
+ - Marathi: (3,2,5)
+ - French: (3,3,3)
+
+
+ 
+* Watch List
+
+ - Latin
+   - to dive into the latinate roots of english
+ - German
+   - to dive into the germanic roots of english and communication
+ - Mini
+   - an interesting initiative : https://minilanguage.com/
+   - could be a good toy-lang to dive into linguistics formally and not just be a dilettant.
+
+   

@@ -4,7 +4,6 @@
 #+title: Classification
 #+filetags: :task:ai:
 
-
 #+begin_center
 To classify given data points into one or more known data classes.
 #+end_center
@@ -26,11 +25,6 @@ To classify given data points into one or more known data classes.
 4. test and benchmark the model on the test set using the evaluation metric.
 5. deployment : on new data points with unknown categories
 
-* Algorithms
-** Naive Bayes
- - naive usage of the bayes theorem.
- - prediction is the class which has the highest likelihood given the current data point.
- - the distribution to evaluate the above likelihood is built from the dataset.
 * Classification Evaluation Metrics
 :PROPERTIES:
 :ID:       bd383ba2-37e9-412f-b245-919fa47831bc
@@ -87,19 +81,50 @@ Summarizing the above for binary clasifiction
 
   (defvar f1-measure (harmonic-mean precision recall))
       #+end_src
-    
+      
 ** Not-so-primitive
  - Area under ROC curve
   [[https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc][Classification: ROC Curve and AUC]] 
+* Classifiers
+:PROPERTIES:
+:ID:       31a028e3-f87a-4aae-85b7-04bc0c8a32af
+:END:
+** Types
+*** Generative Classifiers
+ - model probablility of observing a data point's feature set given the label and report the argmax
+*** Discriminative Classifiers
+ - model the joint probability distribution of the feature-label set report the one with the max probabilty 
+** Examples
+*** Naive Bayes
+ - naive usage of the bayes theorem.
+ - prediction is the class which has the highest likelihood given the current data point.
+ - the distribution to evaluate the above likelihood is built from the dataset.
+ - example of a generative classifier
+*** Logistic Regression
+ - example of discriminative classifier* Classification Evaluation Metrics
+ - slap on a logistic function on top of a regressor
+ - serves as a quick baseline (see [[id:8c6bce48-0cac-487c-8789-e08f22c00094][MVP]])
+*** Support Vector Machine
+ - tries finding a separation hyperplane post mapping(via a kernel function) data points to a higher dimensional space
+ - unlike logistic regression, can deal with non-linear boundaries
+ - can take longer to train
+*** Deep Learning based
+ - don't use a hammer when pliers get it done elegantly.
+ - The usage is reduced down to the formulation of the feature set and labels in a format that's compatible with deep learning algorithms
+    - see [[id:20230713T110040.814546][Deep Learning]]
+    - relevant architectures : CNNs, RNNs and more complex variants
+ - [[id:64c6a881-ef47-4973-a821-34e0cc085f34][Transfer Learning]] methods are increasingly more feasible today: finetuning a generically pretrained large neural network can produce good results fairly quickly.
 * Possible Problems
  -  [[id:89c8e59e-e058-4edc-bd85-b4db9eb089a9][Class Imbalance]]
  -  Feature Engineering
    - too sparse representations (in case of text)
    - un-normalized/ un-standardized numerical features
-   - too many linearly dependent numerical features that could be represented by a single amalgamation and help reduce the model complexity.- - - 
+   - too many linearly dependent numerical features that could be represented by a single amalgamation and help reduce the model complexity.
  -  Hyperparameter Tuning
     - model/algorithm dependent
 * Relevant Nodes
  - [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
    
    
+ 
+ 

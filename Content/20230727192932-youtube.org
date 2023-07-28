@@ -4,25 +4,51 @@
 #+title: Youtube
 #+filetags: :meta:
 
-* History
- - second youtube channel
-   - first -> to practice rhetoric
-   - did help with working out the kinks in my communication skills
-* Abstract
- - writing a pretty good way to express yourself and show your work
- - albeit.., still incomplete : videos complement the process of expression
- - speaking into a camera, speaking from experiences, tricks you into thinking you're addressing a large audience - a pretty neat trick, I would say
- - I'm starting again with a slightly formal approach : https://www.youtube.com/@rajp152k 
-* Settling into Niche
-   - Some topics that I'll explore initially:
-     - Emacs -> instructive/customization
-     - Common Lisp -> instructive
-     - Programming Language Theory (Racket)
-     - Book Reviews/follow-throughs (non-fiction/technical)
-     - Interesting Research from different domains
-     - Workflows, tools for relevant tasks
-     - the occasional philosophical rant
-* The Long Term Plan
- - freedom of expression is a given
-   - being free enough to express is what we generally lack...
- - targeting at least a video a week..
+* YT Init : Incentives and Plans
+** History
+- second youtube channel
+- first -> to practice rhetoric
+- did help with working out the kinks in my communication skills
+** Abstract
+- writing a pretty good way to express yourself and show your work
+- albeit.., still incomplete : videos complement the process of expression
+- speaking into a camera, speaking from experiences, tricks you into thinking you're addressing a large audience - a pretty neat trick, I would say
+- I'm starting again with a slightly formal approach : https://www.youtube.com/@rajp152k 
+** Settling into Niche
+- Some topics that I'll explore initially:
+    - Emacs -> instructive/customization
+    - Common Lisp -> instructive
+    - Programming Language Theory (Racket)
+    - Book Reviews/follow-throughs (non-fiction/technical)
+    - Interesting Research from different domains
+    - Workflows, tools for relevant tasks
+    - the occasional philosophical rant
+** The Long Term Plan
+- freedom of expression is a given
+- being free enough to express is what we generally lack...
+- targeting at least a video a week..
+
+* Videos
+An index of all the videos : published, in process, and prospective
+** Published
+** In Process
+** Prospective
+*** building a good relationship with text
+ - My text editing journey
+ - Vim, Emacs and VS code
+ - first : learning to touch type
+ - ditching the mouse
+ - customization : everything is data (text) (see [[id:20230728T053744.817854][homoiconicity]])
+   - variables, functions, hooks, representations...
+   - custom keymaps :- chords and strokes	
+   - implicitly encode semantics into the binds
+ - what is a good text editor?
+   - the one that gets the job done
+     - sed, for that matter on a remote server's docker container where don't even have vim installed
+       - to change a single line of text in a mis-represented data/config file (eg: mal-headered csv) : where you don't have any editor installed
+   - the one that lets you do it quickly
+   - the one that assists you to get better at it
+   - the one that makes you come back
+ - Recommendation
+   - Home: Evil Emacs
+   - Work : VS code with a vi extension

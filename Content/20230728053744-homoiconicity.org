@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20230728T053744.817854
+:END:
+#+title: homoiconicity
+#+filetags: :programming:
+
+Code is Data is Code ...
+

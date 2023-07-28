@@ -5,18 +5,22 @@
 #+filetags: :tool:
 
 * Stream 
+** 0x2127
+ - youtube video on navigating the text editing landscape
+   - on why one should not settle even in 2023
+ - starting with the skills necessary to efficiently edit text
+   - touch typing -> efficient navigation (vim) -> playing with the nuts and bolts (emacs)
+     - why not VS code?
 ** 0x211F
  - thinking of writing and emacs extension
    - visualizing my knowledge graph in an interactive manner
    - existing extensions do exist but it would be a good experience building it from scratch
    - will be proceeding formally and take it up as a proper initiative
-     
 ** 0x211E
 Started using smudge (spotify on emacs) : more time in emacs...
 Thinking of summarizing my init.el in a blog : been around 2-3 years since I last did that 
 ** 0x2118
 The single greatest tool choice I've ever made in terms of editing efficiently (right along side vim : I use Evil GccEmacs 28 as of now)
-
 * Literature
  - [ ] https://www.masteringemacs.org/
  - [ ] https://www.oreilly.com/library/view/writing-gnu-emacs/9781449395056/

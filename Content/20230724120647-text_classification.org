@@ -11,12 +11,27 @@ see [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]]
 To classify given textual sequences into one or more known data classes.
 #+end_center
 
-** Primitives
+* Primitives
  - Lexicon based sentiment analysis
    - see [[https://vadersentiment.readthedocs.io/en/latest/][VaderSentiment]] 
  - Tradional [[id:20230713T110006.406161][Machine Learning]] based methods
    - see [[id:31a028e3-f87a-4aae-85b7-04bc0c8a32af][Classifiers]]
-** text-classificaton pipeline
+* Text-Classificaton Pipeline
  - similar to the [[id:b5bbb126-c808-468c-962d-8361aa8c8dd1][Generic Classification Pipeline]]
    - for feature engineering see : [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][textual feature representation]]
      
+* Deep Learning Approaches
+:PROPERTIES:
+:ID:       4252684e-4148-442a-838c-d8c3e842be42
+:END:
+ - two base architectures used for tackling NLP tasks : CNNs and RNNs. The rest will be variants and/or major enhancements but these do capture the initial approaches towards the tasks
+ - in addition to the processing text for traditional machine learning pipelines, we might need to pad sequences to make tokenized sequences of the same length - these might call for attention_masks before further processing.
+   - transforming these to embeddings by references from an embedding matrix is what is done next before feeding this preprocessed input into the network
+** CNNs
+ - employ 1d CNNs post pre-processing.
+   - embed, convolve, pool ...
+   - slap on a linear layer + softmax (or other suitable collater) in the end for classification
+ - learns latent relations that contribute toward a class.
+** LSTMs (RNN variants)
+ - semantics of the sequence of the data do not have to be explicitly incorporated into the architecture but are a part of the temporality of the data flow itself.
+ - instead of multiple convolves and pools, we have a single RNN variant unit that process all of the sequence and the output is given then to a linear layer + any suitable collator for classification

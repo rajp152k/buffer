@@ -32,6 +32,7 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]
 ** [[https://github.com/jesseduffield/lazydocker][GitHub - jesseduffield/lazydocker]]
 ** [[https://radimrehurek.com/gensim/][Gensim: Topic modelling for humans]] 
+** [[https://prodi.gy/][Prodigy · Prodigy · An annotation tool for AI, Machine Learning & NLP]]
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]

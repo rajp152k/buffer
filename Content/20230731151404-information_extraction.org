@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       543414ce-fd12-470b-a38a-c61cfc10bfe4
+:END:
+#+title: Information Extraction
+#+filetags: :nlp:ai:
+
+ - see [[id:68c96f44-815a-4607-8149-ba49f3b5b00d][Practical NLP (book)]]
+ - extracting relevant information (structured query-response pair) from a given text (unstructured data)

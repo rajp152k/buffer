@@ -10,3 +10,6 @@ This node captures misc information regarding the large root that ML is.
  - no model is better at all problems than all other models
 * [[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]]
  - on why traditional machine learning methods are still relevant with [[id:20230713T110040.814546][Deep Learning]] on the rise.
+* [[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Interpretable ML]]
+ - ML models are generally a black box that are inexplicable representations of the data they are trained on.
+ - understanding how a model favors certain outputs for a set of input features is a domain in itself.

@@ -13,9 +13,7 @@ See [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]].
  - Evaluation metrics may also be mislead if some classes are under-represented : this calls for a family of class-balanced loss functions/metrics for fair consideration of all classification in the training/evaluation process.
 
 
-* Literature
+* Resources
 
  - [[https://pypi.org/project/imbalanced-learn/][imbalanced-learn · PyPI]]
-
-
  

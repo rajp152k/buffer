@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       398d134d-6193-409a-b3b5-9e7c7de86ce7
+:ROAM_ALIASES: Interpretability
+:END:
+#+title: Interpretable ML
+#+filetags: :tbp:ai:
+
+
+* Resources
+ - [[https://github.com/marcotcr/lime][GitHub - marcotcr/lime: Lime: Explaining the predictions of any machine learning classifier]]
+   

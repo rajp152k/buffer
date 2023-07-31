@@ -56,6 +56,12 @@
 	 - rather having a conversation with it
      - emacs :- freedom - an OS in itself
        - the point of this post is not to dive into the details of the tools themselves but to introduce their capabilities
-     - deserves a post in itself
+       - deserves a post in itself
+** filtering out the noise (News)
+ - striking a balance between being aware, living under a rock (this is where I am in my default state) and being distracted is subtle.
+ - delegate the work of finding quality posts to the community aka wisdom of the masses.
+ - platforms that you know won't auction off your attention to sponsors is something you should actively maintain
+    - see really simple syndication
 ** Conclusion
  - hope this post inspires you to look at your consumption/creation pipelines in a new light and sparks the same enthusiasm I harbor towards regularly sharpening the proverbial intellectual axe - do chop away : I'd be glad to read about your epistemological anvils and furnaces.
+   

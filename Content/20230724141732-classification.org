@@ -114,6 +114,7 @@ Summarizing the above for binary clasifiction
     - see [[id:20230713T110040.814546][Deep Learning]]
     - relevant architectures : CNNs, RNNs and more complex variants
  - [[id:64c6a881-ef47-4973-a821-34e0cc085f34][Transfer Learning]] methods are increasingly more feasible today: finetuning a generically pretrained large neural network can produce good results fairly quickly.
+   - see [[id:4252684e-4148-442a-838c-d8c3e842be42][Deep Learning in NLP]] in for specific info
 * Possible Problems
  -  [[id:89c8e59e-e058-4edc-bd85-b4db9eb089a9][Class Imbalance]]
  -  Feature Engineering

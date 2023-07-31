@@ -12,4 +12,3 @@
    - consciously defaulting on using the well-known variants henceforth.
  - I also tend to use a lot of passive voice :- sounds a little too artificial..
    - actively shifting to active voice henceforth and choosing the former only when really justified.
-     

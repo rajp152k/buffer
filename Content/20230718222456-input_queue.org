@@ -25,6 +25,8 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
 ** [[https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store][Dynamo: Amazon’s highly available key-value store - Amazon Science]] 
 ** [[https://arxiv.org/abs/2003.02320][[2003.02320] Knowledge Graphs]]
+** https://www.lrde.epita.fr/dload/papers/newton.16.monad.report.pdf
+
 * Docs/tools/tuts
 ** https://spacy.io/
 ** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       b00834e3-eae6-474f-98ab-01c0533533e8
+:END:
+#+title: lisp macros
+#+filetags: :lisp:
+
+* Abstract
+ - Macros are special functions that transform an input lisp form with custom semantics to valid lisp forms.
+ - This transformation is generally an expansion (I'm not aware of syntax contractions) and is addressed as a macro-expansion.
+ - they don't evaluate their args completely but transform them into lisp forms that can be evaluated.
+ - macro chaining is a thing : incf expands to setf which in turn uses the primitive setq.

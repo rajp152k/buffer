@@ -2,7 +2,7 @@
 :ID:       20230729T155803.588312
 :END:
 #+title: PICC: pragmatics of intellectual consumption and creation
-#+filetags: :blog:meta:
+#+filetags: :posted:blog:meta:
 
 * Collation buffer
 ** Level 0
@@ -64,4 +64,5 @@
     - see really simple syndication
 ** Conclusion
  - hope this post inspires you to look at your consumption/creation pipelines in a new light and sparks the same enthusiasm I harbor towards regularly sharpening the proverbial intellectual axe - do chop away : I'd be glad to read about your epistemological anvils and furnaces.
+   
    

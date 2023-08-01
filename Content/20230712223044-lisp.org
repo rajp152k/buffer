@@ -5,10 +5,10 @@
 #+title: lisp
 #+filetags: :lisp:
 
+* 0x212B
+ - beginning a formal study of [[id:b00834e3-eae6-474f-98ab-01c0533533e8][lisp macros]]
 * 0x211D
-
  - very conducive to [[id:d08a6ebd-a173-4c7d-bda7-6911db9eccbd][symbolic computation]] and [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][expressing concepts in general]]
-
 * 0x2118
 
 AKA [[id:20230715T173339.005604][List]] Processing

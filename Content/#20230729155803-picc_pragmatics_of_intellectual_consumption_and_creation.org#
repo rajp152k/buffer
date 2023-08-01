@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID:       20230729T155803.588312
+:END:
+#+title: PICC: pragmatics of intellectual consumption and creation
+#+filetags: :blog:meta:
+
+* Collation buffer
+** Level 0
+ - mastering your tool of expression and knowledge maintenance
+ - iterating on your efficiency : finding better local optima over time
+ - reading, writing : essential to any intellectual pursuits
+   - on the importance of reading and writing
+ - hard and soft skills around getting good with text
+   - speed reading and touch typing 
+ - aspects of an intellectual pursuit
+   - calling upon a malleable and ever-growing context for separate domains and to be able to switch on demand
+ - Interaction with your tools : efficiency and hiding the unnecessary details
+   - having the right set of tools that don't get in your way and allow to edit close to the speed of thought
+   - leveling it up to having a cohesive environment that allow you to maintain a uniform interaction experience.
+ - how your data is represented matters a lot : should be easily exportable to several convenient formats
+ - Having a process that allows you to capture thoughts conveniently without it being a burden in itself is a huge improvement
+
+** auxiliary
+ - personal journey relating to the different suggestions in the post
+* Post Structure
+** Introducing incentives
+ - meta post about creating and consuming stuff : important part of any intellectual career out there.
+** Why?
+ - why bother creating and consuming intellectual stuff?
+ - why do you need to proactively maintain a good consumption and creation pipeline?
+ - why bother finding better tools and not just settle for something that's good enough
+   - waxing and waning : improvement not a linear journey
+     - take 2 steps forward, step 1 back, consolidate, repeat.
+   - over several years, you're faster with lower efforts and your tools aren't the bottlenecks towards executing an idea
+** How?
+ - how to choose between several tools solving the same issue?
+ - how to maintain a balance between meta-improvements and actual project progress?
+** When?
+ - how not to fall for the trap of sophisticated procrastination?
+** What?
+ - touches upon the basic skills that'll put you above average if you explicitly invest effort initially
+   - overcharging your basic cognitive IO : speed reading and touch typing
+     - discuss ways to get going and maintain
+   - building an extensive knowledge base : has a vast cover and will allow you to explore boundaries of your current epistemological boundaries with relative ease than if you didn't have a system in place.
+ - special section for programmers:
+   - ditching the mouse
+   - actionable steps to getting good with editing text
+     - get used to the CLI
+     - know the basics in a worst case scenario:
+       - sed, awk, grep : if you want to quickly edit a config file in a minimal docker container without creating any more layers
+     - vi :- the philosophy of treating text as an artform
+     - customization :- bending the computer to your will
+       - let your tools inherit your personality
+       - while retaining one of its own
+       - you shouldn't be using the tool
+	 - rather having a conversation with it
+     - emacs :- freedom - an OS in itself
+       - the point of this post is not to dive into the details of the tools themselves but to introduce their capabilities
+       - deserves a post in itself
+** filtering out the noise (News)
+ - striking a balance between being aware, living under a rock (this is where I am in my default state) and being distracted is subtle.
+ - delegate the work of finding quality posts to the community aka wisdom of the masses.
+ - platforms that you know won't auction off your attention to sponsors is something you should actively maintain
+    - see really simple syndication
+** Conclusion
+ - hope this post inspires you to look at your consumption/creation pipelines in a new light and sparks the same enthusiasm I harbor towards regularly sharpening the proverbial intellectual axe - do chop away : I'd be glad to read about your epistemological anvils and furnaces.
+   
+   

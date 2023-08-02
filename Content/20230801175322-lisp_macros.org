@@ -4,8 +4,34 @@
 #+title: lisp macros
 #+filetags: :lisp:
 
-* Abstract
- - Macros are special functions that transform an input lisp form with custom semantics to valid lisp forms.
- - This transformation is generally an expansion (I'm not aware of syntax contractions) and is addressed as a macro-expansion.
- - they don't evaluate their args completely but transform them into lisp forms that can be evaluated.
- - macro chaining is a thing : incf expands to setf which in turn uses the primitive setq.
+* Misc
+- Macros are special functions that transform an input lisp form with custom semantics to valid lisp forms.
+- This transformation is generally an expansion (I'm not aware of syntax contractions) and is addressed as a macro-expansion.
+- they don't evaluate their args completely but transform them into lisp forms that can be evaluated.
+- macro chaining is a thing : incf expands to setf which in turn uses the primitive setq (this is implementation dependent : alternatives exist)
+- point of difference from functions:
+    - arguments of a function are evaluated and bindings are made to local variables
+    - a macro transforms symbols/list of symbols into a valid form with selective evaluation as needed -> one can control what is substituted after evaluation in the final form : see backquote and comma. 
+    - the output form of a macro is evaluated immediately.
+    - a functions output can be anything (need not be a form) and isn't evalutated
+    - note that special functions are the lowest level building blocks for control and structure, and are different than a function or a macro. eg: if, setq, let, block -> they can't be written above the implementation layer with a normal function/macro.
+- macro-destructuring can be used to dissasemble arguments into constituents in the unexpanded form itself.
+    - not possible for functions
+
+#+begin_src lisp
+  (defmacro print-pair ((a b))
+    `(format t "~&pair consituents : ~S ~S" ,a ,b))
+
+  (macroexpand '(print-pair (1 2)))
+#+end_src
+
+#+begin_src
+#+RESULTS:
+| FORMAT | T | ~&pair consituents : ~S ~S | 1 | 2 |
+#+end_src
+* Tools
+ - macroexpand and macroexpand-1 are pretty handy to inspect macro-forms
+* Relevant Major Nodes
+ - The [[id:78c1c4ab-91ba-40f3-804c-c4df7d4e0946][lisp compiler]]
+ - [[id:136d464a-aee0-4108-aa95-c412b5180823][lisp lambda lists]]
+   

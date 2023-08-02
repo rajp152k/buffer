@@ -5,6 +5,10 @@
 #+title: lisp
 #+filetags: :lisp:
 
+* 0x212C
+ - gensyms are internal temp variables that are guaranteed to have no name resolution conflicts -> one can't input them via a keyboard/conventional methods
+ - init with defvar, defparameter, defconstant -> dynamically scoped
+ - init with setf -> lexically scoped
 * 0x212B
  - beginning a formal study of [[id:b00834e3-eae6-474f-98ab-01c0533533e8][lisp macros]]
 * 0x211D
@@ -22,7 +26,12 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
 * Literature
 
  - [x] Structure and Interpretation of Computer Programs
- - [ ] Common Lisp: An introduction to symbolic computation
+ - [x] Common Lisp: An introduction to symbolic computation -> book review
  - [ ] Practical Common Lisp
  - [ ] On Lisp
  - [ ] Let over Lambda
+ - [ ] The Art of the MetaObject Protocol
+
+* Book reviews 
+
+ - for youtube and blog

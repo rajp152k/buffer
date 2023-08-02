@@ -4,6 +4,20 @@
 #+title: writers-block
 #+filetags: :meta:writing:
 
+* 0x212C
+
+I did  write about [[id:20230729T155803.588312][something]] : it just wasn't what I decided on in the last block dump on 0x2120. Currently, just getting into the groove of the flowing through the pipes I've setup. Just finished [[id:0b1a6c07-e166-45b3-9dfd-515892bac854][Common Lisp: An introduction to symbolic computation]] and will have a book review on youtube : considering the depth of book reviews I should maintain on the blog: should I get into agnostic details that apply to everyone or my experience with the book - probably the latter... BTW, I'm on twitter again : just to index what I publish - won't be following anyone, just posting links for future readers and viewers to know when something is out. Don't feel like writing about my life as of now : It's not that exciting but one good thing I grasped for good this week is the fact that the best anabolic on this planet is *drum roll...* water - am reading [[https://www.goodreads.com/book/show/6500848-never-let-go][Dan John's "Never Let Go"]] now that I'm getting back to being healthy.  
+
+I just noticed that I use "just" quite a lot. My "just" density in instances per session is just too high. I also won't be posting this kind of stuff. Feels good to have a braindump that no one will ever be reading completely - stuff could just lie hidden for decades: in a plain site.
+
+Anyway, I wish to build a heap of unique technical blogs that address something that isn't already documented and aren't just a "I found a way to do this slightly differently because I'm using a very different tool.., just cause..." but something that's philosophically grounded and well-thought about.
+
+Can't expect to hit the sweet spot right away but with practice and hope: I can begin to raise my expectations.
+
+Even the block rant is so unstructured this time : I'm not even circling to a particular topic that would be worth writing about. Life is back to a monotonous grind and yeah..., that's all there is to it right now : I don't even feel like complaining - I have the opportunity to grind after a long time and it low key feels good.
+
+I still don't hydrate as much I need to but I'm getting there (I just felt the thirst). Fleeting jots like this 
+
 * 0x2120
 
 There are many ideas that pop up in my head but only a few make it into a blog post (which is how it should be). I thought this was a problem when I was 20 : so I started blogging in streams - incremental daily updates with the occasional longer post. That made it seem that the blog in itself is pretty much alive. Now though, that I've decided on keeping it concise on the new main blog - I'm at a loss for what I should write on. So.., I thought of creating this specific buffer that will allow me to write about not being able to write. This will probably be a stream with chronologically ordered entries for whenever I have the urge to write about something but still lack the core for a post idea. I could blog about my daily routine (working out, work, reading, sleeping, repeat) but that does not serve a major purpose and would be too lack-lustre for something that I sit on for a week. I could write about emacs but that would be too disorganized as of now as I use it for anything and everything and it's pretty much evolving all the time organic and I haven't spent too much time on it yet to be able to comment on it philosophically. I could force myself to pick up some esoteric epistemologyical idea and write something mediocre that is a shallow echo of some of the better essays out there. I could talks about my plans (which is something I did on my past) but I've realized that that isn't the best start towards ensuring their executions. I could pretend I've interesting ideas to write about and slap on lexically bloated meat on an ideologically insignificant skeleton of an idea : but that would be just that - a facade. or ... I could just go on about what I could do and not get anything done.

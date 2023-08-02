@@ -33,5 +33,12 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
  - [ ] The Art of the MetaObject Protocol
 
 * Book reviews 
-
  - for youtube and blog
+** Structure and Interpretation of Computer Programs
+:PROPERTIES:
+:ID:       b7c7d398-161b-4712-8ace-46c419b1e128
+:END:
+** Common Lisp: An introduction to symbolic computation
+:PROPERTIES:
+:ID:       0b1a6c07-e166-45b3-9dfd-515892bac854
+:END:

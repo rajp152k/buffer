@@ -32,7 +32,7 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
  - [ ] Let over Lambda
  - [ ] The Art of the MetaObject Protocol
 
-* Book reviews 
+* Book refs
  - for youtube and blog
 ** Structure and Interpretation of Computer Programs
 :PROPERTIES:

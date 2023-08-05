@@ -4,6 +4,11 @@
 #+title: writers-block
 #+filetags: :meta:writing:
 
+* 0x212E
+
+Thinking of writing a book - just for the sake of experience :- the process of planning, editing, figuring out the pitfalls and publishing.
+Will stick to a niche initially that I think I can elaborate upon but not something too generic : pushing such projects (I scrapped one a year ago) down the line when I'm grooving through the whole process after writing multiple books. As for the initial book that I wish to write - will keep it restricted to something practical and something not too eccentric. The plan is to build my systems while working on a project and getting the meta-hyperparameters of the process optimized.
+
 * 0x212C
 
 I did  write about [[id:20230729T155803.588312][something]] : it just wasn't what I decided on in the last block dump on 0x2120. Currently, just getting into the groove of the flowing through the pipes I've setup. Just finished [[id:0b1a6c07-e166-45b3-9dfd-515892bac854][Common Lisp: An introduction to symbolic computation]] and will have a book review on youtube : considering the depth of book reviews I should maintain on the blog: should I get into agnostic details that apply to everyone or my experience with the book - probably the latter... BTW, I'm on twitter again : just to index what I publish - won't be following anyone, just posting links for future readers and viewers to know when something is out. Don't feel like writing about my life as of now : It's not that exciting but one good thing I grasped for good this week is the fact that the best anabolic on this planet is *drum roll...* water - am reading [[https://www.goodreads.com/book/show/6500848-never-let-go][Dan John's "Never Let Go"]] now that I'm getting back to being healthy.  
@@ -16,7 +21,7 @@ Can't expect to hit the sweet spot right away but with practice and hope: I can 
 
 Even the block rant is so unstructured this time : I'm not even circling to a particular topic that would be worth writing about. Life is back to a monotonous grind and yeah..., that's all there is to it right now : I don't even feel like complaining - I have the opportunity to grind after a long time and it low key feels good.
 
-I still don't hydrate as much I need to but I'm getting there (I just felt the thirst). Fleeting jots like this 
+I still don't hydrate as much I need to but I'm getting there (I just felt the thirst).
 
 * 0x2120
 

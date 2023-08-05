@@ -33,6 +33,7 @@ An index of all the videos : published, in process, and prospective
 ** Published
 ** In Process
 ** Prospective
+*** generic ideas : introduction to new data science libraries
 *** building a good relationship with text
  - My text editing journey
  - Vim, Emacs and VS code

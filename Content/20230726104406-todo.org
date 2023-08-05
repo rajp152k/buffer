@@ -9,4 +9,5 @@ A List of miscellaneous tasks that need a little time to be tended to properly a
 * Work setup
  - [ ] automate Eye-browse initial window config for 2 frames
    - call make-frame and corresponding tagged window creators in init.el
+ - [ ] cache quick nodes somewhere in the index for quick reference (also so that I don't forget they exist)
 

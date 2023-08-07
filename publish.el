@@ -39,7 +39,7 @@
 
 ;; Set Defaults
 (setq base-dir "/opt/OrgFiles")
-(setq images-dir (concat base-dir "/Images"))
+(setq images-dir (concat base-dir "/Content/images"))
 (setq notes-dir (concat base-dir "/Content"))
 (setq output-dir "/opt/OrgFiles/_site")
 (setq static-dir (concat base-dir "/Static"))

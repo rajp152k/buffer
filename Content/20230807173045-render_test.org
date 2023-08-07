@@ -16,7 +16,7 @@ testing how different elements are displayed.
 
 * Mermaid.js flow diags
 
-#+begin_src mermaid :file render_test.png
+#+begin_src mermaid :file images/render_test.png
   graph TD
     A[Enter Chart Definition] --> B(Preview)
     B --> C{decide}
@@ -27,18 +27,21 @@ testing how different elements are displayed.
     F --> B
 #+end_src
 
-[[file:render_test.png]]
+#+RESULTS:
+[[./images/render_test.png]]
+
 * Quotes
 
 #+begin_quote
- - Test Quote.
- - Raj Patil
+Test Quote.
+Raj Patil
 #+end_quote
 
 * Verse
 #+begin_verse
 A test verse, this is.
 this is a test verse.
-Yeah, it is.
+Yeah .., it is.
 A test verse.
 #+end_verse
+

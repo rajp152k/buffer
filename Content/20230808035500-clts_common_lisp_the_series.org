@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       20230808T035500.251803
+:END:
+#+title: CLTS: common lisp-the series
+#+filetags: :yt:lisp:
+
+* Abstract : V 0.0
+
+An end to end series on common-lisp. From env setup, covering the basics until language native complexities (macros) and being able to adapt styles from other languages/specific domains (monads, static types, quantum computation etc): End with interop with other languages and how one can use lisp in common-place projects (dialects, transpilation, etc).
+
+While definining the series structure, following a top down approach initially for deducing what all needs to be covered. Will fill in the crevices later on.
+
+* Types
+
+The series will be a splice between the different following phases - even at the video of a single level.
+
+** Meta Phase
+ - about tools, and environment setup
+
+** Theoretical Phase
+ - covers introduction and philosophical discussion on various tools and concepts
+
+** Practical Phase
+ - a practical component that discusses the technical aspects of the language (separate from the Meta Phase)
+
+* Structure
+** Introduction and Env Setup
+ - intro to common lisp : history
+ - why consider a lisp? -> articles, etc.
+ - env setup : recommend -> emacs, slime
+   - alternatives : lem
+ - helping build the third/fourth generation of lisp programmers
+ - incentive on why learn lisp
+ - refer compilation speed ups while being able to enjoy an interpreted langauge
+ - from the perspective of a beginner
+** Basics
+ - getting comfortable with the repl
+ - variables, data types and basic operations
+ - conditionals (special operators) (if, when, unless, cond, etc)
+ - iteration and recursion
+ - function
+ - IO : format, read, yes-or-no-p -> quick coverage
+** Data Structures
+ - the primitive glue in lisp: cons
+   - good exercise : implement cons, car, cdr with functions
+ - arrays, vectors, sequences
+ - hash tables and associative arrays
+ - def-struct and defer CLOS into the future
+** Object Oriented Programming
+ - CLOS
+ - all that goes along with the basic OOP
+** Error handling / debugging 
+ - condition system
+ - debugging tools
+** Practical component and self-study
+ - build something in lisp
+** Advanced Topics
+ - macros
+ - performance optimization
+ - multithreading and concurrency
+ - interop with other languages
+** Conclusion
+ - final thoughts
+ - books, resources, recommendations

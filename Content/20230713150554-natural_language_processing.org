@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       20230713T150554.400026
-:ROAM_ALIASES: nlp
+:ROAM_ALIASES: NLP
 :END:
 #+title: Natural Language Processing
 
@@ -12,7 +12,7 @@ Solution approaches trickle down into  the following:
  - [[id:20230713T113547.742751][Symbolic AI]] (~heuristics)
  - A mixture of the above
  
-* Literature
+* Sentinel Refs
 ** Practical NLP (book)
 :PROPERTIES:
 :ID:       68c96f44-815a-4607-8149-ba49f3b5b00d

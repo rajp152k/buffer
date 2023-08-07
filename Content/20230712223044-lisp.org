@@ -23,17 +23,14 @@ My first proper introduction to lisp was via [[https://mitp-content-server.mit.e
 
 I'm still a novice and haven't built anything of consequence in lisp: I wish to change that soon and am actively looking for a modern project idea in lisp - could be building an emacs extension or writing something that stands alone.
 
-* Literature
-
+* Literature Queue
  - [x] Structure and Interpretation of Computer Programs
  - [x] Common Lisp: An introduction to symbolic computation -> book review
  - [ ] Practical Common Lisp
  - [ ] On Lisp
  - [ ] Let over Lambda
  - [ ] The Art of the MetaObject Protocol
-
-* Book refs
- - for youtube and blog
+* Sentinel refs
 ** Structure and Interpretation of Computer Programs
 :PROPERTIES:
 :ID:       b7c7d398-161b-4712-8ace-46c419b1e128
@@ -41,4 +38,8 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
 ** Common Lisp: An introduction to symbolic computation
 :PROPERTIES:
 :ID:       0b1a6c07-e166-45b3-9dfd-515892bac854
+:END:
+** Practical Common Lisp
+:PROPERTIES:
+:ID:       2c00e44f-d40d-4386-b756-dda7f1a2da12
 :END:

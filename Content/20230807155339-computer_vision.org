@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b
+:END:
+#+title: Computer Vision
+#+filetags: :cv:ai:
+
+To be populated
+

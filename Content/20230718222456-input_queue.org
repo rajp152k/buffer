@@ -9,18 +9,28 @@ This buffer maintains a cache of technical papers/books/blogs/similar resources 
 
 I'll most likely begin with foundational papers in any domain and then explore depth if need be. will not be limiting myself to anything specific : anything goes - this is a new hobby.
 
-* Sites
-** https://otherlife.co/
-** https://paperswelove.org/
+* Crowd sourcing
 ** https://news.ycombinator.com/
-** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]
 
 * Blogs
+** https://otherlife.co/
+** https://paperswelove.org/
+** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]
+** https://sive.rs/
+
+* Blog posts
 ** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
+** https://simonwillison.net/2023/Aug/3/weird-world-of-llms/
+** https://mitpress.mit.edu/mit-presss-direct-to-open-d2o-achieves-second-year-goal-opens-access-to-eighty-two-new-books-in-2023/
+
+* Podcasts
+** https://corecursive.com/lisp-in-space-with-ron-garret/
+
 * Books 
 ** https://www.masteringemacs.org/book
 ** [[https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/][Mastering Regular Expressions, 3rd Edition [Book]​]] 
 ** http://www.paulgraham.com/hp.html
+
 * Papers
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
 ** [[https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store][Dynamo: Amazon’s highly available key-value store - Amazon Science]] 
@@ -33,6 +43,7 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://github.com/jesseduffield/lazydocker][GitHub - jesseduffield/lazydocker]]
 ** [[https://radimrehurek.com/gensim/][Gensim: Topic modelling for humans]] 
 ** [[https://prodi.gy/][Prodigy · Prodigy · An annotation tool for AI, Machine Learning & NLP]]
+** https://jupyter-ai.readthedocs.io/en/latest/
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]

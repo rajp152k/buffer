@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       86953a5e-a978-4f40-8bac-121e01891bdc
+:END:
+#+title: Render Test
+#+filetags: :meta:
+
+testing how different elements are displayed. 
+
+
+* Tables
+
+| A | B | C |
+|---+---+---|
+| 1 | 2 | 3 |
+| X | Y | Z |
+
+* Mermaid.js flow diags
+
+#+begin_src mermaid :file render_test.png
+  graph TD
+    A[Enter Chart Definition] --> B(Preview)
+    B --> C{decide}
+    C --> D[Keep]
+    C --> E[Edit Definition]
+    E --> B
+    D --> F[Save Image and Code]
+    F --> B
+#+end_src
+
+[[file:render_test.png]]
+* Quotes
+
+#+begin_quote
+ - Test Quote.
+ - Raj Patil
+#+end_quote
+
+* Verse
+#+begin_verse
+A test verse, this is.
+this is a test verse.
+Yeah, it is.
+A test verse.
+#+end_verse

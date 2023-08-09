@@ -397,6 +397,8 @@ Documenting my init.el :- will annotate soon, just dumping as of now
    "t a" #'org-roam-tag-add
    "t d" #'org-roam-tag-remove
    "r" #'org-roam-buffer-toggle
+   "o c" #'org-id-get-create
+   "o s" #'org-id-store-link
    "a a" #'org-roam-alias-add
    "a d" #'org-roam-alias-remove)
   (add-to-list 'display-buffer-alist

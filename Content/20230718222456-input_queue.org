@@ -27,9 +27,11 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** https://corecursive.com/lisp-in-space-with-ron-garret/
 
 * Books 
+** 
 ** https://www.masteringemacs.org/book
 ** [[https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/][Mastering Regular Expressions, 3rd Edition [Book]​]] 
 ** http://www.paulgraham.com/hp.html
+** https://course.fast.ai/Resources/book.html
 
 * Papers
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
@@ -47,7 +49,10 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
-   
 
-* RevNotes
-** [[id:bd383ba2-37e9-412f-b245-919fa47831bc][Classification Evaluation Metrics]] : AUC - ROC
+
+* Questions
+** How to sleep when seated, without losing spinal orientation?
+ - i.e. with a straight spine.
+ - If I could fit in a 15 min nap in this posture, life would be great.
+ - I'm not talking about meditation.

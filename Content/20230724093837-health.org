@@ -3,7 +3,18 @@
 :END:
 #+title: health
 
+* Misc
+** Sleep
+ - sleeping when seated is something that I'd like to learn
+   - a 15 min nap with good posture would be great when at work.
+   - not talking about meditation
+ - whenver I get into REM though, the spine relaxes and the head free falls if my neck is unsupported (which is how I work).
+   - https://homelyville.com/how-to-sleep-sitting-in-chair/
+ - this could be a good candidate for how quickly one gets into  REM phase -> just start a timer and try sleeping.
+   - you start dreaming, your head falls ahead and you snap awake with a chuckle.
+ - buddhist monks are said to be able to do so but I'm not sure if they are a fair comparison given their dream yoga practices.
 * book logs
 
  - [x] [[https://www.goodreads.com/book/show/48890486-breath][Breath : James Nestor]]
  - [ ] [[https://www.goodreads.com/en/book/show/6500848-never-let-go][Never Let Go: A Philosophy of Lifting, Living and Learning by Dan John]]
+   

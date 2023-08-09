@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4d58e957-2281-4bd5-82b9-1d12e7edfc74
+:END:
+#+title: Conditional Random Fields
+#+filetags: :tbp:ai:
+

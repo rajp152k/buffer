@@ -24,3 +24,7 @@ The single greatest tool choice I've ever made in terms of editing efficiently (
 * Literature
  - [ ] https://www.masteringemacs.org/
  - [ ] https://www.oreilly.com/library/view/writing-gnu-emacs/9781449395056/
+
+* Refs
+
+ - my [[id:20230809T095308.040286][init.el]]

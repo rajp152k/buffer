@@ -5,6 +5,10 @@
 #+title: lisp
 #+filetags: :lisp:
 
+* 0x2132
+starting a new youtube common lisp series:-
+ - will be building up the technical base for the channel
+ - a rough structure is mentioned in [[id:20230808T035500.251803][CLTS: common lisp-the series]]
 * 0x212C
  - gensyms are internal temp variables that are guaranteed to have no name resolution conflicts -> one can't input them via a keyboard/conventional methods
  - init with defvar, defparameter, defconstant -> dynamically scoped

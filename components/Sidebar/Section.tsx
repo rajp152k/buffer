@@ -52,7 +52,7 @@ export const Section = (props: SectionProps) => {
                 //mr={1}
                 size="xs"
                 variant="subtle"
-                icon={<IoEllipseoutline />}
+                icon={<IoEllipseOutline />}
                 onClick={() => setOpen(!open)}
                 height={2}
                 width={2}

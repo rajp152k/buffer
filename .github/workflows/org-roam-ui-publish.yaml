@@ -26,9 +26,12 @@ jobs:
         
 #       - name: Export
 #         run: yarn run export
+      - name: modify exec permissions
+        run: chmod +x ./standalone/build-standalone-server.sh
 
       - name: build files
         run: ./standalone/build-standalone-server.sh ./Content
+        shell: bash
       
       - name: add nojekyll
         run: touch ./out/.nojekyll

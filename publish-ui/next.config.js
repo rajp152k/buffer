@@ -1,15 +1,9 @@
-//const fs = require('fs')
-//
-//const withPlugins = require('next-compose-plugins')
-//
-//const d3packages = fs.readdirSync('node_modules').filter((name) => name.startsWith('d3-'))
-//const withTM = require('next-transpile-modules')(d3packages)
+const fs = require('fs')
 
+const withPlugins = require('next-compose-plugins')
 
-import fs from 'fs';
-import withPlugins from 'next-compose-plugins';
 const d3packages = fs.readdirSync('node_modules').filter((name) => name.startsWith('d3-'))
-import withTM from 'next-transpile-modules';
+const withTM = require('next-transpile-modules')(d3packages)
 
 module.exports = withPlugins([withTM], {
   distDir: 'build',

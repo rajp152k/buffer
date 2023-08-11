@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          path: ./buffer/
 
       - name: Install Emacs
         uses: purcell/setup-emacs@master
@@ -17,7 +19,7 @@ jobs:
           version: 28.2
 
       - name: install org-roam-ui and export notes
-        run: emacs -batch --script ./install_publish.el
+        run: emacs -batch --script ./buffer/install_publish.el
         
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -26,18 +28,18 @@ jobs:
           cache: yarn
 
       - name: modify exec permissions
-        run: chmod +x ./publish-ui/standalone/build-standalone-server.sh
+        run: chmod +x ./buffer/publish-ui/standalone/build-standalone-server.sh
 
       - name: build files
         run: ./build-standalone-server.sh ./org-roam-ui-export
         shell: bash
-        working-directory: ./publish-ui/standalone
+        working-directory: ./buffer/publish-ui/standalone
       
       - name: add nojekyll
-        run: touch ./publish-ui/out/.nojekyll
+        run: touch ./buffer/publish-ui/out/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./publish-ui/out
+          publish_dir: ./buffer/publish-ui/out

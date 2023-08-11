@@ -1,5 +1,5 @@
 import { OrgRoamNode } from '../../api'
-import { NodeObject } from 'force-graph'
+import { NodeObject } from 'react-force-graph'
 import { initialVisuals } from '../config'
 import { LinksByNodeId } from '../../pages'
 import wrap from 'word-wrap'

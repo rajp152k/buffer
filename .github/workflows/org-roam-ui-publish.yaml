@@ -19,15 +19,15 @@ jobs:
           cache: yarn
 
       - name: Install Dependencies
-        run: yarn
+        run: yarn install
         working-directory: ./publish-ui
         
       - name: Build
-        run: yarn build
+        run: yarn run build
         working-directory: ./publish-ui
         
       - name: Export
-        run: yarn export
+        run: yarn run export
         working-directory: ./publish-ui
         
       - name: add nojekyll

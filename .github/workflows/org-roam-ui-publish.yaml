@@ -31,7 +31,7 @@ jobs:
         working-directory: ./publish-ui
         
       - name: add nojekyll
-        run: touch out/.nojekyll
+        run: touch ./publish-ui/out/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

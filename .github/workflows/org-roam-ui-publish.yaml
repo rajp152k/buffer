@@ -30,7 +30,7 @@ jobs:
         run: chmod +x ./standalone/build-standalone-server.sh
 
       - name: build files
-        run: ./standalone/build-standalone-server.sh ./Content
+        run: ./build-standalone-server.sh ./Content
         shell: bash
         working-directory: ./standalone
       

@@ -5,12 +5,25 @@ on:
       - org-roam-ui
       
 jobs:
-  build-deploy:
+  export-notes:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
+  export-build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Emacs
+        uses: purcell/setup-emacs@master
+        with:
+          version: 28.2
+
+      - name: install org-roam-ui and export notes
+        run: emacs -Q --script ./install_publish.el
         
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -18,27 +31,19 @@ jobs:
           node-version: '16.x'
           cache: yarn
 
-#       - name: Install Dependencies
-#         run: yarn install
-        
-#       - name: Build
-#         run: yarn run build
-        
-#       - name: Export
-#         run: yarn run export
       - name: modify exec permissions
-        run: chmod +x ./standalone/build-standalone-server.sh
+        run: chmod +x ./publish-ui/standalone/build-standalone-server.sh
 
       - name: build files
-        run: ./build-standalone-server.sh ./Content
+        run: ./build-standalone-server.sh ./org-roam-ui-export
         shell: bash
-        working-directory: ./standalone
+        working-directory: ./publish-ui/standalone
       
       - name: add nojekyll
-        run: touch ./out/.nojekyll
+        run: touch ./publish-ui/out/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: out
+          publish_dir: ./publish-ui/out

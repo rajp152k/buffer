@@ -18,15 +18,18 @@ jobs:
           node-version: '16.x'
           cache: yarn
 
-      - name: Install Dependencies
-        run: yarn install
+#       - name: Install Dependencies
+#         run: yarn install
         
-      - name: Build
-        run: yarn run build
+#       - name: Build
+#         run: yarn run build
         
-      - name: Export
-        run: yarn run export
-        
+#       - name: Export
+#         run: yarn run export
+
+      - name: build files
+        run: ./standalone/build-standalone-server.sh ./Content
+      
       - name: add nojekyll
         run: touch ./out/.nojekyll
 

@@ -12,4 +12,4 @@ module.exports = withPlugins([withTM], {
     loader: 'custom',
   },
     experimental: { esmExternals: "loose" },
-}
+})

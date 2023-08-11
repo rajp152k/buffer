@@ -4,6 +4,7 @@ import { VscCircleFilled, VscCircleLarge } from 'react-icons/vsc'
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import { NoteContext } from '../../util/NoteContext'
 
+
 export interface SectionProps {
   children: any
   className: string

@@ -5,12 +5,6 @@ on:
       - org-roam-ui
       
 jobs:
-  export-notes:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
   export-build-deploy:
     runs-on: ubuntu-latest
     steps:

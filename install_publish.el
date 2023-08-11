@@ -24,7 +24,7 @@
   (setq org-roam-v2-ack t)
   :custom
   ;; Roam Notes directory
-  (org-roam-directory "/Content")
+  (org-roam-directory "./notes")
   :config
   (org-roam-setup))
 

@@ -20,12 +20,10 @@
 (use-package org-roam
   :straight t
   :init
-  ;; Disable v2 warning message
   (setq org-roam-v2-ack t)
-  :custom
-  ;; Roam Notes directory
-  (org-roam-directory "./notes")
   :config
+  (setq org-roam-directory "./notes")
+  (setq org-roam-file-extensions '("org"))
   (org-roam-setup))
 
 

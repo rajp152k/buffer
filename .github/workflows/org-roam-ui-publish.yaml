@@ -2,7 +2,7 @@ name: org roam ui publish
 on:
   push:
     branches:
-      - main
+      - master
       
 jobs:
   build-deploy:

@@ -19,7 +19,8 @@ jobs:
           version: 28.2
 
       - name: install org-roam-ui and export notes
-        run: emacs -batch --script ./buffer/install_publish.el
+        run: emacs -batch --script ./install_publish.el
+        working-directory: ./buffer
         
       - name: Setup Node
         uses: actions/setup-node@v3

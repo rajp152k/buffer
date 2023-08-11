@@ -1,6 +1,6 @@
 import { Box, Flex, IconButton } from '@chakra-ui/react'
 import React, { ReactChild, useContext, useEffect, useState } from 'react'
-import { IoEllipse, IoElliseOutline } from 'react-icons/io5'
+import { IoEllipse, IoEllipseOutline } from 'react-icons/io5'
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import { NoteContext } from '../../util/NoteContext'
 
@@ -52,7 +52,7 @@ export const Section = (props: SectionProps) => {
                 //mr={1}
                 size="xs"
                 variant="subtle"
-                icon={<IoElliseoutline />}
+                icon={<IoEllipseoutline />}
                 onClick={() => setOpen(!open)}
                 height={2}
                 width={2}

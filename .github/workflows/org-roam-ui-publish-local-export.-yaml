@@ -1,8 +1,8 @@
-name: org roam ui publish
+name: org roam ui publish with local export
 on:
   push:
     branches:
-      - org-roam-ui
+      - local-export
       
 jobs:
   export-build-deploy:
@@ -13,15 +13,6 @@ jobs:
         with:
           path: ./buffer/
 
-      - name: Install Emacs
-        uses: purcell/setup-emacs@master
-        with:
-          version: 28.2
-
-      - name: install org-roam-ui and export notes
-        run: emacs -batch --script ./install_publish.el
-        working-directory: ./buffer
-        
       - name: Setup Node
         uses: actions/setup-node@v3
         with:

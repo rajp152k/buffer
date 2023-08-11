@@ -11,4 +11,5 @@ module.exports = withPlugins([withTM], {
     domains: ['localhost'],
     loader: 'custom',
   },
-})
+    experimental: { esmExternals: "loose" },
+}

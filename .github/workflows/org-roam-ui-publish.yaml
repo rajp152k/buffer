@@ -17,25 +17,23 @@ jobs:
         with:
           node-version: '16.x'
           cache: yarn
+          working-directory: ./publish.ui
 
-      - name: Open workspace
-        run: cd publish-ui
-          
       - name: Install Dependencies
         run: yarn
+        working-directory: ./publish-ui
         
       - name: Build
         run: yarn build
+        working-directory: ./publish-ui
         
       - name: Export
         run: yarn export
+        working-directory: ./publish-ui
         
       - name: add nojekyll
         run: touch out/.nojekyll
 
-      - name: Return to root
-        run: cd ..
-        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

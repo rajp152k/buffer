@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       1729
+:END:
+#+title: Index
+
+Hi, this is Raj. You've chanced upon my digital note-box (~Zettelkasten) maintained in org-roam. I've circled over a lot of tools to maintain an efficient system in the past and have finally settled on a format that treats everything as text and allows me to spend more time within emacs. I find it difficult to keep track of all that I learn and this dump delegates the notion of remembering to a computer.
+
+I like building connections between domains that are seemingly distinct: I'll be keeping it simple and this note-box will act as an intermediary for the all the [[id:20230712T131112.909632][blogs]] that I intend to regularly push out henceforth. I believe it should be simpler for me to improve my writing skills if I have an informal setup - other than my [[https://rajpatil.dev][main blog]] - where I experiment with varying styles and do not worry about compatibility issues with my existing work.
+
+A major proportion of the nodes in this web will be in a transient phase at all times - completeness is not a goal for each session : this is the input buffer. More polished versions will be posted on the main blog once a node(set) matures and is worth sharing.
+
+I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able to keep track of how a node(set) evolves.
+
+* 0x2118
+
+Here are some conventions that I follow to organize my work:
+ - [[id:20230712T211826.340837][Tagging]]
+ - [[id:20230712T132110.496747][Timestamps]]
+ - will be expressing math as [[id:20230712T223044.319985][S-expressions]] rather than latex
+   - the former flow fluidly off my fingers
+   - the latter I'll reserve when for publishing on the main blog: latex isn't exactly good while note taking - is a distraction.
+   - my goal being encoding the concept (procedure/definition/relation) in a way that is more accessible to that of a programmer's mind
+   - I also choose to do so as it'll help me learn map concepts from different domains into a common symbolic representation (hmmmm ... : yeah...., math already does that - I guess I'm just being peevish)
+ - A top-down knowledge building style : the human mind doesn't remember what it knows. Trying to remember a specific latent knowledge node in this graph will be more efficient than building all the base nodes one by one until I reach a practical level of application. I will add atoms as and when I see fit : I might even insert most from memory.
+ - each major node has its own idea buffer to keep note of specific ideas that I haven't organized yet.
+ - at any given point of time, several emtpy nodes may exist : I'm not trying to be exhaustive right away when exploring a domain. This is supposed to be an eternal work in progress. However, to indicate that I intend to work on a node later on and it's not just an empty atom, I've placed ~:tbp:~ (to be populated) tags on such nodes.

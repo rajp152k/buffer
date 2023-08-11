@@ -1,7 +1,3 @@
-(require 'server)
-(unless (server-running-p)
- (server-start))
-
 (defvar bootstrap-version)
 (let ((bootstrap-file
        (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
@@ -28,7 +24,7 @@
   :config
   (setq org-roam-directory "./notes")
   (setq org-roam-file-extensions '("org"))
-  (org-roam-setup))
+  (org-roam-db-autosync-mode))
 
 
 (use-package org-roam-ui

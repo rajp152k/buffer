@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       20230713T150554.400026
+:ROAM_ALIASES: NLP
+:END:
+#+title: Natural Language Processing
+
+Natural language, unlike computer languages, are not completely structured; they may have rules but they also have eccentricities that may not be explicitly captured by rules/decisions but need more complex techniques to be employed: analyzing multiple patterns of a similar instance being one of them.
+
+Solution approaches trickle down into  the following:
+ - [[id:20230713T110006.406161][Machine Learning]]
+ - [[id:20230713T110040.814546][Deep Learning]]
+ - [[id:20230713T113547.742751][Symbolic AI]] (~heuristics)
+ - A mixture of the above
+ 
+* Sentinel Refs
+** Practical NLP (book)
+:PROPERTIES:
+:ID:       68c96f44-815a-4607-8149-ba49f3b5b00d
+:END:
+*** Generics
+**** The NLP Pipeline 
+**** [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
+**** [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
+**** [[id:543414ce-fd12-470b-a38a-c61cfc10bfe4][Information Extraction]]
+
+* Buffer
+** [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
+ - when fitting a corpus to an nlp pipeline, do take note of the percentage of words that are OOV(if too high, you could training your own embedder instead of a pretrained embedder)

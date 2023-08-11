@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       20230715T180212.260696
+:END:
+#+title: Mutability
+#+filetags: :trait:
+
+* 0x211A
+
+The ability to be changed. If denied, we refer the said entity to be immutable.
+Different styles of programming arise when one chooses a mutable/immutable representation to work with.
+
+This in turn gives rise to the notion of a State.

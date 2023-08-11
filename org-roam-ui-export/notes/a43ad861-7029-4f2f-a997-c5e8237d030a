@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       a43ad861-7029-4f2f-a997-c5e8237d030a
+:END:
+#+title: Knowledge Graphs
+#+filetags: :ai:
+
+
+* Abstract
+
+Based on the idea of using [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][Graphs]] to represent structured [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]].
+
+* Literature
+** [[https://arxiv.org/abs/2003.02320][[2003.02320] Knowledge Graphs]]
+

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       6fcff7e0-75bc-420b-8962-3c2e1ef99734
+:END:
+#+title: Pipeline
+#+filetags: :meta:
+
+The generalization of a process in the context of a specific domain, into definitive steps.
+
+* Generic tips
+ - During development of a project in a certain context, even before the pipeline formally begins, try to come up with an [[id:8c6bce48-0cac-487c-8789-e08f22c00094][MVP]].
+   - helps in observing the data flow prototypically.
+   - even having a sentinel processor where complicated compute is to be placed, might help in straightening out data-flow related squiggles.
+
+* Accumulating all instances
+ - [[id:b5bbb126-c808-468c-962d-8361aa8c8dd1][Generic Classification Pipeline]]
+ - [[id:c20845f9-d217-4a73-956a-4aebde564c59][Generic IE Pipeline]]

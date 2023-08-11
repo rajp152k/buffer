@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       20230718T234741.567442
+:ROAM_ALIASES: GNN
+:END:
+#+title: Graph Neural Networks
+#+filetags: :ai:
+
+* Abstract
+
+Graphs are a natural way to model several real-life data objects (chemical compounds, circuits, image segmentation, etc). Methods prior to this involved lossy numerical representations that resulted in inputs that did not completely describe the data point as needed. The major contribution of GNNs are directed towards representing Graph objects completely in a way that can be fed into models for algorithmic consumption. The math is can be adapted to specific needs and requirements can be generically summarized as follows:
+ - a parametrized function to compute the usable input state
+ - a parametrized function to map these input states to relevant targets
+   - requirements will differ according to different downstream tasks
+ - a suitable loss function to back-propogate on the above parameters
+
+Convergence is conditioned upon the input state mappers (first bullet) reaching a fixed point after multiple iterations.
+
+Architectural variations may be accomodated into engineering the input state mapper differently for different classes of input graphs.
+
+* Literature
+ - [x] Scarselli, F., Gori, M., Ah Chung Tsoi, Hagenbuchner, M., & Monfardini, G. (2009). The Graph Neural Network Model. IEEE Transactions on Neural Networks, 20(1), 61–80. doi:10.1109/tnn.2008.2005605

@@ -1,0 +1,30 @@
+* Classifiers
+:PROPERTIES:
+:ID:       31a028e3-f87a-4aae-85b7-04bc0c8a32af
+:END:
+** Types
+*** Generative Classifiers
+ - model probablility of observing a data point's feature set given the label and report the argmax
+*** Discriminative Classifiers
+ - model the joint probability distribution of the feature-label set report the one with the max probabilty 
+** Examples
+*** Naive Bayes
+ - naive usage of the bayes theorem.
+ - prediction is the class which has the highest likelihood given the current data point.
+ - the distribution to evaluate the above likelihood is built from the dataset.
+ - example of a generative classifier
+*** Logistic Regression
+ - example of discriminative classifier* Classification Evaluation Metrics
+ - slap on a logistic function on top of a regressor
+ - serves as a quick baseline (see [[id:8c6bce48-0cac-487c-8789-e08f22c00094][MVP]])
+*** Support Vector Machine
+ - tries finding a separation hyperplane post mapping(via a kernel function) data points to a higher dimensional space
+ - unlike logistic regression, can deal with non-linear boundaries
+ - can take longer to train
+*** Deep Learning based
+ - don't use a hammer when pliers get it done elegantly.
+ - The usage is reduced down to the formulation of the feature set and labels in a format that's compatible with deep learning algorithms
+    - see [[id:20230713T110040.814546][Deep Learning]]
+    - relevant architectures : CNNs, RNNs and more complex variants
+ - [[id:64c6a881-ef47-4973-a821-34e0cc085f34][Transfer Learning]] methods are increasingly more feasible today: finetuning a generically pretrained large neural network can produce good results fairly quickly.
+   - see [[id:4252684e-4148-442a-838c-d8c3e842be42][Deep Learning in NLP]] in for specific info

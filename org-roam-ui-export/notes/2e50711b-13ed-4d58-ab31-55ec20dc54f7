@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2e50711b-13ed-4d58-ab31-55ec20dc54f7
+:END:
+#+title: SkipGram
+#+filetags: :nlp:
+
+ - very similary in usage to [[id:0321ffe3-593c-4999-aa3f-3dcffba59ac1][continuous bag of words]]
+ - one important difference : predicts context given word, cbow does it the other way around

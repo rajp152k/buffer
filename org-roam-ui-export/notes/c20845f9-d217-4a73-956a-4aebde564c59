@@ -1,0 +1,18 @@
+* Generic IE Pipeline
+:PROPERTIES:
+:ID:       c20845f9-d217-4a73-956a-4aebde564c59
+:END:
+Numeric bullets signify a step in the pipeline and indents signify what task they contribute to. This will be directed and acyclic.
+
+1. Raw text
+2. Word Tokenization
+   -> [[id:898ce1bb-cbe9-4358-97b8-f5f2bc3f8d83][Key Phrase Extraction (KPE)]]
+3. Part of Speech Tagging
+   -> [[id:898ce1bb-cbe9-4358-97b8-f5f2bc3f8d83][Key Phrase Extraction (KPE)]]
+   -> [[id:71a53540-e823-49a2-9049-b286ee265e62][Named Entity Recognition (NER)]]
+4. Syntactic Parsing
+   -> [[id:01cef446-e7e0-48f6-af7b-d0478e689cf2][Named Entity Disambiguation and Linking]]
+5. Coreference Resolution
+   -> [[id:01cef446-e7e0-48f6-af7b-d0478e689cf2][Named Entity Disambiguation and Linking]]
+   -> [[id:2f0bed79-b0cd-4c70-88a2-d219ab174db9][Relation Extraction]]
+   -> [[id:8731f087-2ee8-4b2e-98c8-de52c78dc399][Temporal Information Ixtraction]] (events/durations)

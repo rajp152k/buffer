@@ -23,7 +23,7 @@ jobs:
         run: chmod +x ./buffer/publish-ui/standalone/build-standalone-server.sh
 
       - name: build files
-        run: ./build-standalone-server.sh ./org-roam-ui-export
+        run: ./build-standalone-server.sh ../../org-roam-ui-export
         shell: bash
         working-directory: ./buffer/publish-ui/standalone
       

@@ -1,0 +1,131 @@
+:PROPERTIES:
+:ID:       0fb8c9c4-f491-4d40-b6b7-a6a331316c01
+:END:
+#+title: Classification
+#+filetags: :task:ai:
+
+#+begin_center
+To classify given data points into one or more known data classes.
+#+end_center
+
+* OverArching types
+- binary classification
+- multiclass classification
+- multilabel classification (multiple viable labels for a data point)
+
+* Generic Classification Pipeline
+:PROPERTIES:
+:ID:       b5bbb126-c808-468c-962d-8361aa8c8dd1
+:END:
+1. Obtain datum, label pairs that can be used for learning.
+2. split the dataset into train, validation (optional testing) parts and decide on the [[id:bd383ba2-37e9-412f-b245-919fa47831bc][evaluation metrics]] that will be employed
+3. pre-process the splits accordingly and proceed with alternating training/validation phase. Degrees of freedom that can be explored
+   - improving feature engineering 
+   - tuning the model hyperparameters
+4. test and benchmark the model on the test set using the evaluation metric.
+5. deployment : on new data points with unknown categories
+
+* Classification Evaluation Metrics
+:PROPERTIES:
+:ID:       bd383ba2-37e9-412f-b245-919fa47831bc
+:END:
+** Primitive
+- Accuracy
+Percentage of correctly labelled data points
+- Precision
+How many positive predictions were actually positive?
+- Recall
+How many positives were predicted out of all the actual positives?
+- F1-score/measure
+Harmonic mean of Precision and Recall
+
+Summarizing the above for binary clasifiction
+#+begin_src lisp
+  (defun data-generator ...)
+  (defvar true-labels ...) ;; 1 - positive ; 0 - negative
+
+  (defvar pred-labels (model (data-generator)))
+
+  (defun count-match (true-label pred-label trues preds)
+    (sum (map (lambda (actual prediction)
+		(cond ((and (= actual true-label)
+			    (= prediction pred-label))
+		       1)
+		      (t 0)))
+	      trues
+	      preds)))
+
+  (defun counter (lambda (true-label pred-label)
+		   (count-match true-label pred-label
+				true-labels pred-labels)))
+
+  (defvar true-positives (counter 1 1))
+  (defvar true-negatives (counter 0 0))
+  (defvar false-positives (counter 0 1))
+  (defvar false-negatives (counter 1 0))
+
+  (assert (= (+ true-positives true-negatives
+		false-positives false-negatves)
+	     (length true-labels)))
+
+  (defvar accuracy (/ (+ true-positives true-negatives)
+		      (length true-labels)))
+
+  (defvar precision (/ true-positives
+		       (+ true-positives false-positives)))
+
+  (defvar recall (/ true-positives
+		    (+ true-postives false-negatives)))
+
+  (defun harmonic-mean (a b) (/ (* 2 a b) (+ a b)))
+
+  (defvar f1-measure (harmonic-mean precision recall))
+      #+end_src
+      
+** Not-so-primitive
+ - Area under ROC curve
+  [[https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc][Classification: ROC Curve and AUC]] 
+* Classifiers
+:PROPERTIES:
+:ID:       31a028e3-f87a-4aae-85b7-04bc0c8a32af
+:END:
+** Types
+*** Generative Classifiers
+ - model probablility of observing a data point's feature set given the label and report the argmax
+*** Discriminative Classifiers
+ - model the joint probability distribution of the feature-label set report the one with the max probabilty 
+** Examples
+*** Naive Bayes
+ - naive usage of the bayes theorem.
+ - prediction is the class which has the highest likelihood given the current data point.
+ - the distribution to evaluate the above likelihood is built from the dataset.
+ - example of a generative classifier
+*** Logistic Regression
+ - example of discriminative classifier* Classification Evaluation Metrics
+ - slap on a logistic function on top of a regressor
+ - serves as a quick baseline (see [[id:8c6bce48-0cac-487c-8789-e08f22c00094][MVP]])
+*** Support Vector Machine
+ - tries finding a separation hyperplane post mapping(via a kernel function) data points to a higher dimensional space
+ - unlike logistic regression, can deal with non-linear boundaries
+ - can take longer to train
+*** Deep Learning based
+ - don't use a hammer when pliers get it done elegantly.
+ - The usage is reduced down to the formulation of the feature set and labels in a format that's compatible with deep learning algorithms
+    - see [[id:20230713T110040.814546][Deep Learning]]
+    - relevant architectures : CNNs, RNNs and more complex variants
+ - [[id:64c6a881-ef47-4973-a821-34e0cc085f34][Transfer Learning]] methods are increasingly more feasible today: finetuning a generically pretrained large neural network can produce good results fairly quickly.
+   - see [[id:4252684e-4148-442a-838c-d8c3e842be42][Deep Learning in NLP]] in for specific info
+* Possible Problems
+ -  [[id:89c8e59e-e058-4edc-bd85-b4db9eb089a9][Class Imbalance]]
+ -  Feature Engineering
+   - too sparse representations (in case of text)
+   - un-normalized/ un-standardized numerical features
+   - too many linearly dependent numerical features that could be represented by a single amalgamation and help reduce the model complexity.
+ -  Hyperparameter Tuning
+    - model/algorithm dependent
+* Relevant Nodes
+ - [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
+   
+   
+ 
+ 

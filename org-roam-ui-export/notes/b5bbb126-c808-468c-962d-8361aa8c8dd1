@@ -1,0 +1,12 @@
+* Generic Classification Pipeline
+:PROPERTIES:
+:ID:       b5bbb126-c808-468c-962d-8361aa8c8dd1
+:END:
+1. Obtain datum, label pairs that can be used for learning.
+2. split the dataset into train, validation (optional testing) parts and decide on the [[id:bd383ba2-37e9-412f-b245-919fa47831bc][evaluation metrics]] that will be employed
+3. pre-process the splits accordingly and proceed with alternating training/validation phase. Degrees of freedom that can be explored
+   - improving feature engineering 
+   - tuning the model hyperparameters
+4. test and benchmark the model on the test set using the evaluation metric.
+5. deployment : on new data points with unknown categories
+

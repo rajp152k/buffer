@@ -1,0 +1,20 @@
+** Key Phrase Extraction (KPE)
+:PROPERTIES:
+:ID:       898ce1bb-cbe9-4358-97b8-f5f2bc3f8d83
+:END:
+*** Misc
+ - representing the gist of the text with concise phrases
+ - can be use for searching, summarizing, tagging...
+ - tackled with both [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][supervised]] and [[id:fded2ca7-e60a-4c83-842f-bc60f1ea5260][unsupervised]] learning
+   - supervised approaches require labelled corpora (text-keyphrase pairs) and can use both [[id:20230713T110006.406161][ML]] / [[id:20230713T110040.814546][DL]] 
+   - unsupervised approaches are preferable when manual effort isn't preferable
+     - they're domain agnostic and therefore more popular as a starting point (see [[id:8c6bce48-0cac-487c-8789-e08f22c00094][MVP]])
+*** Approach
+ - in most unsupervised approaches : phrases/words are represented by nodes in a graph with weights signifying their importance. Keyphrases are then identified by analysing their connected with the rest of the graph. The algorithm may then report top-n such nodes.
+   - choosing what phrases form the nodes is a source of another degree of freedom when implementing the algorithms.
+ - see [[id:3fba4bcf-cf1d-491e-b847-71b08c86080f][Textacy]] (built upon [[id:68e44f89-7d87-4ac6-9c00-f6ba3c38257d][Spacy]])-> implements TextRank and SGRank
+ - see [[id:34c47794-965d-4933-b93c-c740320f62c3][genism]] -> implements TextRank
+**** Practical
+ - naive usage of the graph based algorithms will be too slow for large documents in production and requires some hard coded intelligence to deal with such cases (eg: checking for key phrases only at the top and bottom of the document (one would expect the introduction/conclusion to be a good representation of the documents intent))
+ - post processing is necessary for noise-free results (prepositions, subsets of other results, etc).
+ - The algorithm may be explicitly tweaked as another way to deal with the above problem.

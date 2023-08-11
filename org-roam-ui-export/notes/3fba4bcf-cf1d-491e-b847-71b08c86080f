@@ -1,0 +1,7 @@
+** TextaCy
+:PROPERTIES:
+:ID:       3fba4bcf-cf1d-491e-b847-71b08c86080f
+:END:
+ - built on top of [[id:68e44f89-7d87-4ac6-9c00-f6ba3c38257d][Spacy]] for more specific nlp tasks
+   -> see [[id:543414ce-fd12-470b-a38a-c61cfc10bfe4][Information Extraction]] for instance
+

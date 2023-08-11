@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       20230712T223044.319985
+:ROAM_ALIASES: "list processing"
+:END:
+#+title: lisp
+#+filetags: :lisp:
+
+* 0x2132
+starting a new youtube common lisp series:-
+ - will be building up the technical base for the channel
+ - a rough structure is mentioned in [[id:20230808T035500.251803][CLTS: common lisp-the series]]
+* 0x212C
+ - gensyms are internal temp variables that are guaranteed to have no name resolution conflicts -> one can't input them via a keyboard/conventional methods
+ - init with defvar, defparameter, defconstant -> dynamically scoped
+ - init with setf -> lexically scoped
+* 0x212B
+ - beginning a formal study of [[id:b00834e3-eae6-474f-98ab-01c0533533e8][lisp macros]]
+* 0x211D
+ - very conducive to [[id:d08a6ebd-a173-4c7d-bda7-6911db9eccbd][symbolic computation]] and [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][expressing concepts in general]]
+* 0x2118
+
+AKA [[id:20230715T173339.005604][List]] Processing
+
+My first proper introduction to lisp was via [[https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html][SICP]] and I've been smitten since. I've felt the most natural programming in lisp. Even though I completed the exercises of SICP with a scheme ([[https://en.wikipedia.org/wiki/Racket_(programming_language)][racket]]), I've chosen to proceed with common lisp for the long term.
+
+[[id:20230712T224009.631876][Emacs]] has been something that I once spent 4 days on, migrating my workflows from vim. It is an operating system in itself and I spend most of my personal time in emacs.
+
+I'm still a novice and haven't built anything of consequence in lisp: I wish to change that soon and am actively looking for a modern project idea in lisp - could be building an emacs extension or writing something that stands alone.
+
+* Literature Queue
+ - [x] Structure and Interpretation of Computer Programs
+ - [x] Common Lisp: An introduction to symbolic computation -> book review
+ - [ ] Practical Common Lisp
+ - [ ] On Lisp
+ - [ ] Let over Lambda
+ - [ ] The Art of the MetaObject Protocol
+* Sentinel refs
+** Structure and Interpretation of Computer Programs
+:PROPERTIES:
+:ID:       b7c7d398-161b-4712-8ace-46c419b1e128
+:END:
+** Common Lisp: An introduction to symbolic computation
+:PROPERTIES:
+:ID:       0b1a6c07-e166-45b3-9dfd-515892bac854
+:END:
+** Practical Common Lisp
+:PROPERTIES:
+:ID:       2c00e44f-d40d-4386-b756-dda7f1a2da12
+:END:

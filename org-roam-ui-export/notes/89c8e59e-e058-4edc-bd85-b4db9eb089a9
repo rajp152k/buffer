@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       89c8e59e-e058-4edc-bd85-b4db9eb089a9
+:END:
+#+title: Class Imbalance
+#+filetags: :problem:ai:
+
+See [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]].
+
+* Abstract
+ - refers to the imbalance of the number of instances for each class in a data set
+ - problems may arise in different stages of the [[id:b5bbb126-c808-468c-962d-8361aa8c8dd1][pipeline]] if a dataset is imbalanced and extra care may need to be taken for normal execution
+ - may result in insufficient data to learn the characteristics of a specific class and distributionally non-conforming validation/training sets if one does not use stratification when splitting datasets.
+ - Evaluation metrics may also be mislead if some classes are under-represented : this calls for a family of class-balanced loss functions/metrics for fair consideration of all classification in the training/evaluation process.
+
+
+* Resources
+
+ - [[https://pypi.org/project/imbalanced-learn/][imbalanced-learn · PyPI]]
+ 

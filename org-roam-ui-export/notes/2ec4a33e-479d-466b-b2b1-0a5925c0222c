@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2ec4a33e-479d-466b-b2b1-0a5925c0222c
+:END:
+#+title: cosine similarity
+#+filetags: :math:
+
+ - is a measure of closeness of two vectors.
+ - a common use case is lifting a collection of real life [[id:b8178e96-18bd-43da-915b-11909971a316][datum]] objects into a dense vector space and being able to comment on their semantic closeness/farness using the notions of vector similarity.
+

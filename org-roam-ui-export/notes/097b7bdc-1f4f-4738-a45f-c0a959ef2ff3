@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       097b7bdc-1f4f-4738-a45f-c0a959ef2ff3
+:END:
+#+title: Python GIL
+#+filetags: :python:
+
+The python global interpreter lock:
+ - python processes can be concurrent but do not exhibit true parallelism
+

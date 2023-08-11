@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       78c1c4ab-91ba-40f3-804c-c4df7d4e0946
+:END:
+#+title: lisp compiler
+#+filetags: :lisp:
+
+ - compiles lisp forms into machine language
+ - speed up of 10-100x than the REPL way
+ - with reference to  [[id:b00834e3-eae6-474f-98ab-01c0533533e8][macro-expansion]], they shouldn't have side effects as they may be evaluated at different instances dependent on the implementations.
+
+* Structuring a File
+ - use defvar,defparameter,defconstant for global declarations to suppress warnings that the compiler may raise other wise -> preferably at the top of the file
+ - any macro defs should precede their references in functions or other macros.
+ - redefinitions raise warnings
+ - refrain from redefining built-ins

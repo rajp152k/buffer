@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       20230712T131112.909632
+:ROAM_ALIASES: writing
+:END:
+#+title: Blogging Setup
+#+filetags: :transient:
+
+* 0x2129
+ - [[id:20230730T172240.071698][writing-patterns]]
+ - initializing a new node to observe my writing style and its short-comings/opportunities to improve on.
+ - would just be a collection of high level patterns that I tend to over-use/rely on unnecessarily and could use some explicit auditing.
+* 0x211C
+I'm thinking of developing a personalized writing system that will allow me to be disciplined, elevating myself from the stature of a hobbyist. For definite practice, I'm thinking of deciding on a topic at the start of a week, reading up and collating my notes until Saturday and posting the formal article on Sunday.
+My goal with this pursuit is to improve my command over the language and develop an original way with word. All communication boils down to being able to express yourself accurately without erroneous comprehension for the audience. That is a skill worth mastering. 
+
+* 0x2118
+** Abstract
+*** The Process of Writing
+
+Maintaining a good writing pipeline is essential to automate the process of generating content. In my past endeavours, the process involved the phases of :
+ - planning
+ - drafting
+ - editing
+ - posting
+
+This linear process fails to capture how a writer might really think when formulating prose. One would like having convenient access to past works for relevant links and editing is not really a one-and-done job but an iterative process...
+
+Moreover, this makes blogging a versioned process, rather than a living, breathing organism that closely follows your thoughts, symbolically waxing and waning over time, simultaneously growing as a whole.
+
+This also makes you believe that each post is an independent project in itself and discourages linkages with existing works.
+
+I intend to improve upon this process with this setup of decoupling my notes and what I publish.
+
+*** The Incentive to Write 
+
+I have two major objectives (implicitly interdependent) associated with my online presence on the main [[https://rajpatil.dev][blog]] and the [[https://buffer.rajpatil.dev][buffer]]:
+ - To write for myself
+ - To write for others
+
+Both are important aspects towards being good writer and need to be independently catered to so as to not deter my proficiency in the other.
+   
+The [[id:20230712T211919.917191][buffer]]s will be a personal brain dump where I won't care about formalizing my notes and any other necessities of published works.They will be shorter and linked to other buffers.
+The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection of multiple inter-related buffers into one serialized output : a snapshot of the living, breathing organism that I intend the buffers to evolve into.
+   
+** The Technicalities
+  - The main blog is maintained in markdown and published via Hugo
+  - The buffers are maintained in org-roam and published via ox-html
+    - credits: [[https://html.duckduckgo.com/html/?q=org-roam-publish][org-roam-publish]] (github 
+      

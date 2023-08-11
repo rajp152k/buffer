@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       136d464a-aee0-4108-aa95-c412b5180823
+:END:
+#+title: lisp lambda lists
+#+filetags: :lisp:
+
+Follow certain rules to incorporate control over the arguments to functions and input symbols for macros
+See:
+ - &rest
+ - &optional
+ - &key
+ - &body
+

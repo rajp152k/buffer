@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       20230712T211919.917191
+:END:
+#+title: buffer
+#+filetags: :meta:
+
+* 0x2118
+Refers to a single entry on this blog. I borrow the terminology from text-editors. The nodes in this note-web are one-one mapped to my content buffers (actually files when unloaded)
+

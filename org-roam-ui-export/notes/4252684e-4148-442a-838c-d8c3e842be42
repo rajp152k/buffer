@@ -1,0 +1,15 @@
+* Deep Learning Approaches
+:PROPERTIES:
+:ID:       4252684e-4148-442a-838c-d8c3e842be42
+:END:
+ - two base architectures used for tackling NLP tasks : CNNs and RNNs. The rest will be variants and/or major enhancements but these do capture the initial approaches towards the tasks
+ - in addition to the processing text for traditional machine learning pipelines, we might need to pad sequences to make tokenized sequences of the same length - these might call for attention_masks before further processing.
+   - transforming these to embeddings by references from an embedding matrix is what is done next before feeding this preprocessed input into the network
+** CNNs
+ - employ 1d CNNs post pre-processing.
+   - embed, convolve, pool ...
+   - slap on a linear layer + softmax (or other suitable collater) in the end for classification
+ - learns latent relations that contribute toward a class.
+** LSTMs (RNN variants)
+ - semantics of the sequence of the data do not have to be explicitly incorporated into the architecture but are a part of the temporality of the data flow itself.
+ - instead of multiple convolves and pools, we have a single RNN variant unit that process all of the sequence and the output is given then to a linear layer + any suitable collator for classification

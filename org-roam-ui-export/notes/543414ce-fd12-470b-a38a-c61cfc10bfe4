@@ -1,0 +1,92 @@
+:PROPERTIES:
+:ID:       543414ce-fd12-470b-a38a-c61cfc10bfe4
+:ROAM_ALIASES: IE
+:END:
+#+title: Information Extraction
+#+filetags: :nlp:ai:
+
+see [[id:68c96f44-815a-4607-8149-ba49f3b5b00d][Practical NLP (book)]]
+
+* Misc
+ - extracting relevant information (structured query-response pair) from a given text (unstructured data)
+ - is a relatively complex task than classification and requires further preprocessing/more complicated representations (part of speech tagging for instance) than just getting away with treating text as tokens.
+ - a different pipeline may need to be employed dependent on how the knowledge base is structured - queryable knowledge bases have to be treated differently than a collection of documents without much metadata.
+* Applications
+ - Tagging news and other content -> topic recognization by search engines for quick displays.
+ - Chatbots -> understanding references to entities in a conversation, and understanding their nature (location, person, etc) to be able to respond appropriately.
+ - Social media monitoring : evolution of an event related to specific topic aka crowd sourcing potential news.
+ - processing structured documents (forms and receipts) : [[id:e86025e5-e316-4c83-88a4-a2a341e72550][OCR]] + [[id:20230713T150554.400026][NLP]]
+* Tasks in IE
+The simpler ones can be categorized into the below. Complex combinations of the following/spinoffs thereoff will be explored in dedicated nodes.
+** Key Phrase Extraction (KPE)
+:PROPERTIES:
+:ID:       898ce1bb-cbe9-4358-97b8-f5f2bc3f8d83
+:END:
+*** Misc
+ - representing the gist of the text with concise phrases
+ - can be use for searching, summarizing, tagging...
+ - tackled with both [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][supervised]] and [[id:fded2ca7-e60a-4c83-842f-bc60f1ea5260][unsupervised]] learning
+   - supervised approaches require labelled corpora (text-keyphrase pairs) and can use both [[id:20230713T110006.406161][ML]] / [[id:20230713T110040.814546][DL]] 
+   - unsupervised approaches are preferable when manual effort isn't preferable
+     - they're domain agnostic and therefore more popular as a starting point (see [[id:8c6bce48-0cac-487c-8789-e08f22c00094][MVP]])
+*** Approach
+ - in most unsupervised approaches : phrases/words are represented by nodes in a graph with weights signifying their importance. Keyphrases are then identified by analysing their connected with the rest of the graph. The algorithm may then report top-n such nodes.
+   - choosing what phrases form the nodes is a source of another degree of freedom when implementing the algorithms.
+ - see [[id:3fba4bcf-cf1d-491e-b847-71b08c86080f][Textacy]] (built upon [[id:68e44f89-7d87-4ac6-9c00-f6ba3c38257d][Spacy]])-> implements TextRank and SGRank
+ - see [[id:34c47794-965d-4933-b93c-c740320f62c3][genism]] -> implements TextRank
+**** Practical
+ - naive usage of the graph based algorithms will be too slow for large documents in production and requires some hard coded intelligence to deal with such cases (eg: checking for key phrases only at the top and bottom of the document (one would expect the introduction/conclusion to be a good representation of the documents intent))
+ - post processing is necessary for noise-free results (prepositions, subsets of other results, etc).
+ - The algorithm may be explicitly tweaked as another way to deal with the above problem.
+** Named Entity Recognition (NER)
+:PROPERTIES:
+:ID:       71a53540-e823-49a2-9049-b286ee265e62
+:END:
+*** Misc
+ - identifying named entities in a document without explicitly given info for the same -> "where was Anakin Skywalker born?".
+   - The algorithm has to figure out that Anakin is a fictitious character, and extract the name of the ficitious place where he was born (Tatooine).
+ - entities can be names of persons, locations, organizations ... context specific strings like monetary figures, law numbers etc.
+ - NER is also a major precursor to the tasks that follow in this buffer
+*** Approaches
+ - straight-forward way -> maintain a large collection of type-entity pairs -> termed as a gazetteer. The problem is reduced to that of a lookup : this is a good starting point if the collection is large.
+   - basically turns into the maintenance of a data structure (search, insert, deletion etc..) and choosing a representation for specific cases (aliases, for instance)
+ - The next step is rule-based NER -> operates by storing common patterns based on word tokens and part of speech tagging. see [[https://stanfordnlp.github.io/CoreNLP/ner.html][Named Entity Recognition | CoreNLP]] and [[id:68e44f89-7d87-4ac6-9c00-f6ba3c38257d][SpaCy]]'s [[https://spacy.io/api/entityruler/][EntityRuler · spaCy API Documentation]]
+ - Practically, ML models are preferable over hard-coded intelligence.
+   - a decision has to be made for each word for whether it is an entity (similar to a [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]] problem for each word -> a sequence annotation/labelling problem -> context is important for each word and one can't classify them independently -> first and last names for instance, or words only indistinguishable via context (river bank, investment bank)).
+ - architecturally speaking, [[id:4d58e957-2281-4bd5-82b9-1d12e7edfc74][Conditional Random Fields]] are popular sequence classifier choices.
+ - exploring [[id:68457d7a-c72a-4ef5-90cf-79ad14867a39][Sequence Classification]] completely in another node.
+   
+** Named Entity Disambiguation and Linking
+:PROPERTIES:
+:ID:       01cef446-e7e0-48f6-af7b-d0478e689cf2
+:END:
+** Relation Extraction
+:PROPERTIES:
+:ID:       2f0bed79-b0cd-4c70-88a2-d219ab174db9
+:END:
+** Temporal Information Extraction
+:PROPERTIES:
+:ID:       8731f087-2ee8-4b2e-98c8-de52c78dc399
+:END:
+** Template Filling
+:PROPERTIES:
+:ID:       bb81b6bd-8384-43c8-b935-204d2115e64e
+:END:
+* Generic IE Pipeline
+:PROPERTIES:
+:ID:       c20845f9-d217-4a73-956a-4aebde564c59
+:END:
+Numeric bullets signify a step in the pipeline and indents signify what task they contribute to. This will be directed and acyclic.
+
+1. Raw text
+2. Word Tokenization
+   -> [[id:898ce1bb-cbe9-4358-97b8-f5f2bc3f8d83][Key Phrase Extraction (KPE)]]
+3. Part of Speech Tagging
+   -> [[id:898ce1bb-cbe9-4358-97b8-f5f2bc3f8d83][Key Phrase Extraction (KPE)]]
+   -> [[id:71a53540-e823-49a2-9049-b286ee265e62][Named Entity Recognition (NER)]]
+4. Syntactic Parsing
+   -> [[id:01cef446-e7e0-48f6-af7b-d0478e689cf2][Named Entity Disambiguation and Linking]]
+5. Coreference Resolution
+   -> [[id:01cef446-e7e0-48f6-af7b-d0478e689cf2][Named Entity Disambiguation and Linking]]
+   -> [[id:2f0bed79-b0cd-4c70-88a2-d219ab174db9][Relation Extraction]]
+   -> [[id:8731f087-2ee8-4b2e-98c8-de52c78dc399][Temporal Information Ixtraction]] (events/durations)

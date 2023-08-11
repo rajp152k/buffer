@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       20230712T211826.340837
+:END:
+#+title: tagging
+#+filetags: :meta:
+
+* 0x2118
+
+Tags are meant to serve as keywords that indicate - at a high level - what a [[id:20230712T211919.917191][buffer]] is about, what phase it is in, and how prominent it is in terms of closeness to a root [[id:20230712T212419.175018][domain]].

@@ -1,0 +1,121 @@
+:PROPERTIES:
+:ID:       3f69fc50-5e0b-4bbd-8909-ee777434a1f5
+:ROAM_ALIASES: "textual feature representation"
+:END:
+#+title: Text Representation
+#+filetags: :nlp:
+Note: we aproach this step post [[id:e9d75f9d-f8bf-4125-beb0-8ca34166ce9e][data engineering]].  
+
+AKA Textual feature representation
+
+* Abstract 
+
+ - not as straightforward as representing images, videos, speech
+ - there is a malleable synthetic component to representation
+   - gives rise to several degrees of freedom/choices in terms of how one chooses represent samples
+ - an explicitly observable discrete (symbolic) component to the structure written language and maps to a vector space may not be that intuitive to the beginner at the get
+
+** Characteristics of a good representation?
+
+For any generic nlp task, processing a data point involves:
+ - breaking the data point into its atomic units: retrieving their independent semantics
+ - understanding their syntactics (grammar)
+ - understading the context
+ - finally, inferring the semantics of the data point as a whole from the above.
+
+A good representation would intuitively facilitate the above operations.
+
+* Specifics
+Most text representation schemes fall under the bucket of the [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][vector space model]] : they'll vectorize the samples under some priors to obtain a numerical representaion
+Some basic vectorization approaches:
+
+1. One hot encoding
+   - assuming independence between tokens and no notion of closeness/farness between tokens : only a discrete distinction
+   - sparse and inefficient for large vocabulary size
+   - a variable length representation:- not applicable when we need to map, say two different paragraphs, to the same vector space.
+     #+begin_src python
+       from sklearn import OneHotEncoder
+
+       corpus = init_corpus()
+
+       encoder = OneHotEncoder()
+       encoder.fit(corpus)
+
+       encoder.transform(test_sequence)
+     #+end_src
+2. Bag of words (subset of bag-of-ngrams)
+   - union of the indicator vectors of the individual tokens
+   - does not capture order or context
+   - is of fixed length (len(vocab)) but still sparse if vocabulary is large and data points are small
+   - frequency isn't captured usually : only existence ..
+     - might be useful in certain cases ([[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]])
+     #+begin_src python
+       from sklearn import CountVectorizer
+
+       corpus = init_corpus()
+
+       # only record existence indicators
+       encoder = CountVectorizer(binary=True)
+
+       encoder.fit(corpus)
+
+       encoder.transform(test_sequence)
+     #+end_src
+3. TF - IDF (term frequency - inverse document frequency)
+   - words that occur frequently across all documents of a corpus may not be important for most tasks.
+   - stop word removal does deal with this to an extent but that is not a statistical approach
+   - TF-IDF reports the corpus adjusted document frequency of a term : an implcit feature engineering step along the lines of dimensionality reduction.
+   - still can't capture closeness/farness between terms
+
+     #+begin_src lisp
+       (defun TF-IDF (term document)
+	 (let ((term-frequency #'(lambda ()
+				   (/ (number-of-occurences-of-t-in-d)
+				      (total-number-of-terms-in-d))))
+	       (inverse-document-frequency #'(lambda ()
+					       (logarithm :base e
+							  :of (/ (total-number-of-documents)
+								 (number-of-documents-that-have-t))))))
+	   (* (term-frequency) (inverse-document-frequency))))
+     #+end_src
+    
+4. Word embeddings (init by [[id:f4cc77c7-26a6-4930-9a05-b7014ce7b0f3][word2vec]])
+   - The major disadvantage of the ones above is that they don't have an explicit guage for how semantically close two words/phrases(beyond unigrams) are. This leads to the usage of dense vector representations aka embeddings aka distributed representation : this calls for a black-box function that takes your n-gram and produces the mapped embedding - that's a job for [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]]
+   - progress made towards capturing semantic differences/similarities between two tokens in a corpus
+   - allows for some intuitive vector math to understand relations between tokens. for instance, the following may be reasonable assumptions regarding the representations in the embedding space:
+
+#+begin_src lisp
+  (defun embbeder (token-chain)
+    (progn ...)
+    (return embedding))
+
+  (defun closep (a b &key (thresh defthresh)) ...)
+
+  (assert (closep (+ (embedding 'land) (embedding 'transport))
+		  (embedding 'car)))
+
+  (assert (closep (+ (- (embedding 'king) (embedding 'man))
+		     (embedding 'woman))
+		  (embedding 'queen))))
+    #+end_src
+
+  - exploring ~embedder~ further:
+    - it builds the ~embedding~ by looking at the distributional similarity (accepting distributional hypothesis) of the words i.e. its neighborhood, aka context.
+    - on a conceptual level: this is done by a vector space level [[id:fcfd6748-fbbc-49db-bd14-06fdcb253ead][fixed point iteration]] where each token embedding is intialized randomly and then improved upon with each iteration using that token's context in its occurences in the corpus.
+    - specifically, word2vec, uses a 2 layer [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][neural net]] for this.
+  - for pretrained word embeddings (which are form of key-value stores), refer [[id:34c47794-965d-4933-b93c-c740320f62c3][genism]]
+  - quick similarity searches can be done on a vector space by using [[id:2ec4a33e-479d-466b-b2b1-0a5925c0222c][cosine similarity]]
+
+  - for training your word embeddings, look into [[id:0321ffe3-593c-4999-aa3f-3dcffba59ac1][continuous bag of words]] and  [[id:2e50711b-13ed-4d58-ab31-55ec20dc54f7][SkipGram]]
+
+5. Scaling beyond words:
+   - most tasks require embedding paragraphs or even documents into a dense vector space : exploring this in a [[id:06c21d6f-fa59-46b2-a8b7-c54f5f62fc78][separate node]] 
+   - Also note that in addition to the individual short-comings of the above methods, none of them can handle the OOV (out of vocab) problem gracefully.
+
+
+1. HandCrafted Features:
+   - when significant domain specific knowledge is available beforehand, one can add manual manipulation processes before we use the features for better performance, than a generic representation pipeline
+   - this may be the case when the task at hand has specific requirements that may not be well captured for fitting a model, when only employing generic pipelines.
+
+* Relevant nodes
+** [[id:20230713T110240.846573][Representation Learning]]

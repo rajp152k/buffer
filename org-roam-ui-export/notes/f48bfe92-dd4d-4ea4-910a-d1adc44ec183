@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       f48bfe92-dd4d-4ea4-910a-d1adc44ec183
+:END:
+#+title: Multiprocessing
+#+filetags: :programming:
+
+See [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]],[[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]],[[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][Asynchronous Programming]]
+
+
+* Bottlenecks
+
+Depending on the task being tackled, a process's performance may be
+ - IO bound
+ - Compute (CPU) bound
+   
+Different solutions are employed for different sorts of bottlenecks.

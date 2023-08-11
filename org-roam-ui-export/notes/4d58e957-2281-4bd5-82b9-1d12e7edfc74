@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       4d58e957-2281-4bd5-82b9-1d12e7edfc74
+:ROAM_ALIASES: CRF
+:END:
+#+title: Conditional Random Fields
+#+filetags: :tbp:ai:
+
+* tools
+ - see [[id:e0963cc2-1c67-4d07-8541-606611e93f83][sklearn]]'s [[https://sklearn-crfsuite.readthedocs.io/en/latest/][sklearn-crfsuite — sklearn-crfsuite 0.3 documentation]] 

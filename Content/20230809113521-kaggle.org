@@ -3,6 +3,5 @@
 :END:
 #+title: kaggle
 #+filetags: :tools:
-
 An index for any content hosted on the platform that I reference here.
 

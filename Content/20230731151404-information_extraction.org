@@ -46,7 +46,7 @@ The simpler ones can be categorized into the below. Complex combinations of the 
  - identifying named entities in a document without explicitly given info for the same -> "where was Anakin Skywalker born?".
    - The algorithm has to figure out that Anakin is a fictitious character, and extract the name of the ficitious place where he was born (Tatooine).
  - entities can be names of persons, locations, organizations ... context specific strings like monetary figures, law numbers etc.
- - NER is also a major precursor to the following tasks in IE and NLP
+ - NER is also a major precursor to the tasks that follow in this buffer
 *** Approaches
  - straight-forward way -> maintain a large collection of type-entity pairs -> termed as a gazetteer. The problem is reduced to that of a lookup : this is a good starting point if the collection is large.
    - basically turns into the maintenance of a data structure (search, insert, deletion etc..) and choosing a representation for specific cases (aliases, for instance)

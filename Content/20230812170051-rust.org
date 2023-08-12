@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       20230812T170051.977772
+:END:
+#+title: Rust
+#+filetags: :rust:
+
+* Stream
+Just a casual comment stream...
+** 0x2137
+ - basic functionalities from the standard library are brought in every rust program by default and collectively termed as the prelude.
+   - checkout https://doc.rust-lang.org/stable/std/prelude/index.html
+ - anything outside of the prelude must be brought in explicitly with the ~use~ statement
+   - for instance, to read user input, one can ~use std::io;~ followed by ~io::stdin().readline()~ in the program.
+** 0x2136
+ - I couldn't find an appropriate end-to-end solution to publish my org-roam-notes with a graphical interface.
+ - rust has been on my learning list for a long time. 
+ - I first learned about WASM (web assembly) at the end of 2020 but never got around building something on the web with it.
+ - this is a good opportunity to learn about rust and wasm (will be using yew) while building something that I'll actually be able to use.
+ - The first step is to complete [[id:20230812T171410.113610][the rust book]].
+   #+begin_src rust
+     fn main() {
+     println!("hello world")
+     }
+   #+end_src
+ - will setup a [[id:20230812T200515.697950][literate programming]] setup soon for rust..
+
+* Resources
+
+** Emacs setup
+ - [[https://robert.kra.hn/posts/rust-emacs-setup/][Configuring Emacs for Rust development | Robert Krahn]]
+** The Book (rust)
+:PROPERTIES:
+:ID:       20230812T171410.113610
+:END:
+
+** formatter : rustfmt
+ - https://github.com/rust-lang/rustfmt
+
+** package manager : cargo
+ - https://github.com/rust-lang/cargo

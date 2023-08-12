@@ -4,12 +4,11 @@
 #+title: todo
 #+filetags: :meta:
 
-A List of miscellaneous tasks that need a little time to be tended to properly and shouldn't require much effort
+A List of miscellaneous tasks that need a little time to be tended to properly and shouldn't require much effort.
+These will be related to this buffer of nodes and not something from projects not referred in here.
 
 * Work setup
- - [ ] automate Eye-browse initial window config for 2 frames
-   - call make-frame and corresponding tagged window creators in init.el
  - [ ] cache quick nodes somewhere in the index for quick reference (also so that I don't forget they exist)
- - [ ] create a now page for my blog that is separate from my about page : i like the idea :- inspiration - https://nownownow.com/about
+ - [ ] delve into [[id:20230812T200515.697950][literate programming]]
 
 

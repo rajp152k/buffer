@@ -74,6 +74,17 @@
 	  "Copyright (C) " (format-time-string "%Y")
 	  " by Raj Patil"))
 
+(defun add-analytics-tracker (analytics-id)
+  (format "<!-- Google tag (gtag.js) -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=%s'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '%s');
+</script>" analytics-id analytics-id))
+
 ;; Add roam files to list of files to search IDs for
 (setq org-id-extra-files (org-roam-list-files))
 
@@ -123,6 +134,7 @@
              (org-html--build-meta-info info)
              (org-html--build-head info)
              (org-html--build-mathjax-config info)
+	     (add-analytics-tracker "G-4FV7P8X8H6")
              "</head>\n"
              "<body>\n"
              "<header>\n"

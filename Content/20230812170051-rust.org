@@ -11,6 +11,15 @@ Just a casual comment stream...
    - checkout https://doc.rust-lang.org/stable/std/prelude/index.html
  - anything outside of the prelude must be brought in explicitly with the ~use~ statement
    - for instance, to read user input, one can ~use std::io;~ followed by ~io::stdin().readline()~ in the program.
+ - variables are immutable by default... : that some healthy practice...
+ - references exist so that's nice, have a little experience programming in modern C++ and I did enjoy specifying every specific type back in the day.
+ - so, piping is inbuilt into rust's syntax and there's a pretty natural way to do it...
+ - something like ~(A (B (C)))~ in lisp would be written as ~C().B().A()~ in rust -> fairly convenient
+   - encourages are bottom up way of thinking which is more natural to some than a top down approach.
+ - there's terminology to refer to the formal mathematics of a program's execution -> variants, states ..
+   - so far, so good -> I could see myself learning rust for good.
+     
+     
 ** 0x2136
  - I couldn't find an appropriate end-to-end solution to publish my org-roam-notes with a graphical interface.
  - rust has been on my learning list for a long time. 

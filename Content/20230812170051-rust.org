@@ -18,7 +18,37 @@ Just a casual comment stream...
    - encourages are bottom up way of thinking which is more natural to some than a top down approach.
  - there's terminology to refer to the formal mathematics of a program's execution -> variants, states ..
    - so far, so good -> I could see myself learning rust for good.
-     
+ - there's pythonic format format strings but with distinction for variables and results of an expression
+   - don't quite understand this design choice: 
+
+     #+begin_src rust :wrap src
+       let x = 1;
+       println!("{x} is inside, but {} isn't", x + 1);
+     #+end_src
+
+     #+begin_src
+     1 is inside, but 2 isn't
+     #+end_src
+
+     #+begin_src rust :wrap src
+       let x = 1;
+       println!("{x+1} should throw an error");
+     #+end_src
+
+ #+begin_src 
+	error: invalid format string: expected `'}'`, found `'+'`
+	--> src/main.rs:4:13
+	|
+	4 | println!("{x+1} should throw an error");
+	|           - ^ expected `}` in format string
+	|           |
+	|           because of this opening brace
+	|
+	= note: if you intended to print `{`, you can escape it using `{{`
+
+	error: could not compile `cargokGzHoR` (bin "cargokGzHoR") due to previous error
+#+end_src
+
      
 ** 0x2136
  - I couldn't find an appropriate end-to-end solution to publish my org-roam-notes with a graphical interface.

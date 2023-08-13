@@ -12,7 +12,7 @@ Just a casual comment stream...
  - anything outside of the prelude must be brought in explicitly with the ~use~ statement
    - for instance, to read user input, one can ~use std::io;~ followed by ~io::stdin().readline()~ in the program.
  - variables are immutable by default... : that some healthy practice...
- - references exist so that's nice, have a little experience programming in modern C++ and I did enjoy specifying every specific type back in the day.
+ - references exist so that's nice, have a little experience programming in modern C++ and I did enjoy specifying every specific detail back in the day with all the type modifiers that I could remember, even for the simplest and most obvious lambdas.
  - so, piping is inbuilt into rust's syntax and there's a pretty natural way to do it...
  - something like ~(A (B (C)))~ in lisp would be written as ~C().B().A()~ in rust -> fairly convenient
    - encourages are bottom up way of thinking which is more natural to some than a top down approach.
@@ -21,13 +21,17 @@ Just a casual comment stream...
  - there's pythonic format format strings but with distinction for variables and results of an expression
    - don't quite understand this design choice: 
 
+-----
+
      #+begin_src rust :exports both
        let x = 1;
        println!("{x} is inside, but {} isn't", x + 1);
      #+end_src
 
      #+RESULTS:
-     : 1 is inside, but 2 isn't
+     result: 1 is inside, but 2 isn't
+
+     -----
 
      #+begin_src rust :exports both
        let x = 1;
@@ -35,10 +39,49 @@ Just a casual comment stream...
      #+end_src
 
      #+RESULTS:
-     : error: Could not compile `cargokGzHoR`.
+     result: error: Could not compile `cargokGzHoR`.
 
+     ------
 
+ - crates is how one delivers ..
+   - 2 kinds:
+     - binary  : executable
+     - library : to be used in other programs
+   - need to add crates as depencies in the cargo.toml
+     - with semantic versioning (aka semver)
+ - project level lock files after first cargo run seem good.
+   - cargo update to specifically update the lock...
+ - match seems to be a more restrictive cond block of rust
+ - the naming convention sure does seem to be cool - started seeing some turbo fishes and shadowing when casting stuff.
+ - working with a compiler again is somehow a little refreshing in a different way.
+   - lisp does it in a playful iterative manner while the rust compiler has been a fairly disciplined experience so far -> the error messages are pretty explicit and helpful right away.
+ - There's variables (mutable and immutable) and then there's constants...
+   - constants require a type declaration right away and can't be intialized by runtime expressions but constant expressions.
+ - even immutables declared with let can be shadowed : interesting ...
 
+   -------------
+   #+begin_src rust :exports both
+     let x = 1;
+     let x = x + 2;
+     println!("this is a valid shadowing");
+   #+end_src
+
+   #+RESULTS:
+   result : this is a valid shadowing
+
+   --------------
+
+   #+begin_src rust :exports both
+     let x = 1;
+     x = 3;
+     println!("this isn't a valid shadowing");
+   #+end_src
+
+   #+RESULTS:
+   result: error: Could not compile `cargozW6ZIA`.
+ 
+
+ --------------
      
 ** 0x2136
  - I couldn't find an appropriate end-to-end solution to publish my org-roam-notes with a graphical interface.
@@ -67,3 +110,6 @@ Just a casual comment stream...
 
 ** package manager : cargo
  - https://github.com/rust-lang/cargo
+
+** https://crates.io
+ - crate distribution and hosting

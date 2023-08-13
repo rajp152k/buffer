@@ -21,25 +21,21 @@ Just a casual comment stream...
  - there's pythonic format format strings but with distinction for variables and results of an expression
    - don't quite understand this design choice: 
 
-     #+begin_src rust :wrap src
+     #+begin_src rust :exports both
        let x = 1;
        println!("{x} is inside, but {} isn't", x + 1);
      #+end_src
 
      #+RESULTS:
-     #+begin_src
-     1 is inside, but 2 isn't
-     #+end_src
+     : 1 is inside, but 2 isn't
 
-     #+begin_src rust :wrap src
+     #+begin_src rust :exports both
        let x = 1;
        println!("{x+1} should throw an error");
      #+end_src
 
      #+RESULTS:
-     #+begin_src 
      : error: Could not compile `cargokGzHoR`.
-     #+end_src
 
 
 

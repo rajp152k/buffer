@@ -6,6 +6,9 @@
 
 * Stream
 Just a casual comment stream...
+
+** 0x2138
+ - coding with LSP after a long time (slime is what i use for lisp) -> having common keybinds for all my polyglot-ic pursuits did excite me a lot 2 years ago
 ** 0x2137
  - basic functionalities from the standard library are brought in every rust program by default and collectively termed as the prelude.
    - checkout https://doc.rust-lang.org/stable/std/prelude/index.html

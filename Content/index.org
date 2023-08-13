@@ -11,6 +11,17 @@ A major proportion of the nodes in this web will be in a transient phase at all 
 
 I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able to keep track of how a node(set) evolves.
 
+* 0x2138
+
+ - the [[id:20230812T200515.697950][literate programming]] setup is live and working well with the publishing script.
+ - I have it setup for rust, common lisp and elisp for now
+ - mermaid-cli also works for flowcharts locally but need to figure out the publishing process for it to be rendered properly on the online buffer.
+ - making notes is second nature to me now -> whenever I'm studying/want to start a new project, I don't have to think much in terms of how I'll document the process. The snowball is rolling.
+ - Noticing an significant decrease in the pre-thought of remembering stuff before I get start with a domain. Now that it is delegated to something with the memory of a steel trap, all that I learn is a few keystrokes away.
+   - surprisingly, I have a mental parallel of this web that I implicitly call upon when remebering stuff -> that is an unexpected and beautiful side-effect...
+ - Errors may creep in aynwehr -> I do'nt particurlayl edti what I wirte here and  all is typed in a single pass, along with my thoughts.
+   - this might result in needlessly long structures that could be better organized. Of course, I don't do this for the main blog. The buffer is not something that I maintain for perfectionism, but for maintaining a playful approach towards my studies.
+     
 * 0x2118
 
 Here are some conventions that I follow to organize my work:

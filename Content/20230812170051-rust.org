@@ -80,8 +80,39 @@ Just a casual comment stream...
    #+RESULTS:
    result: error: Could not compile `cargozW6ZIA`.
  
+ --------------
+
+ - there's times when shadowing is preffered than using mutable stuff
+   - can't assign a different type to a mutable but can shadow an immutable with some other type (string to u32 for instance)
+ - scoping works as one would expect it to ...
+
+   ---------------
+
+ #+begin_src rust :exports both
+   let x = "   ";
+   let x = 3;
+   println!("this is valid")
+ #+end_src
+
+ #+RESULTS:
+ result: this is valid
+-------
+ #+begin_src rust :exports both
+   let mut x = 3;
+   x = "   ";
+   println!("this won't compile")
+ #+end_src
+
+ #+RESULTS:
+ result: error: Could not compile `cargolTneyq`.
 
  --------------
+
+  - programming with a statically typed lang after a long time
+    - the compiler needs to know types of all variables at compile time.
+
+  - as previously mentioned, I like the lingo
+    - I'm not type-casting, I'm performing turbo-fishy parses ...
      
 ** 0x2136
  - I couldn't find an appropriate end-to-end solution to publish my org-roam-notes with a graphical interface.

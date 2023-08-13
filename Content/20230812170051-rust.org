@@ -26,6 +26,7 @@ Just a casual comment stream...
        println!("{x} is inside, but {} isn't", x + 1);
      #+end_src
 
+     #+RESULTS:
      #+begin_src
      1 is inside, but 2 isn't
      #+end_src
@@ -35,19 +36,12 @@ Just a casual comment stream...
        println!("{x+1} should throw an error");
      #+end_src
 
- #+begin_src 
-	error: invalid format string: expected `'}'`, found `'+'`
-	--> src/main.rs:4:13
-	|
-	4 | println!("{x+1} should throw an error");
-	|           - ^ expected `}` in format string
-	|           |
-	|           because of this opening brace
-	|
-	= note: if you intended to print `{`, you can escape it using `{{`
+     #+RESULTS:
+     #+begin_src 
+     : error: Could not compile `cargokGzHoR`.
+     #+end_src
 
-	error: could not compile `cargokGzHoR` (bin "cargokGzHoR") due to previous error
-#+end_src
+
 
      
 ** 0x2136

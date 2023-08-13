@@ -15,7 +15,7 @@ I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able
 
  - the [[id:20230812T200515.697950][literate programming]] setup is live and working well with the publishing script.
  - I have it setup for rust, common lisp and elisp for now
- - mermaid-cli also works for flowcharts locally but need to figure out the publishing process for it to be rendered properly on the online buffer.
+ - mermaid-cli also works for flowcharts locally but need to figure out the publishing process for it to be rendered properly on the online buffer -> UPDATE (2 mins after I pushed this) : just needed to put in an ~exports: both~ in the src blocks..
  - making notes is second nature to me now -> whenever I'm studying/want to start a new project, I don't have to think much in terms of how I'll document the process. The snowball is rolling.
  - Noticing an significant decrease in the pre-thought of remembering stuff before I get start with a domain. Now that it is delegated to something with the memory of a steel trap, all that I learn is a few keystrokes away.
    - surprisingly, I have a mental parallel of this web that I implicitly call upon when remebering stuff -> that is an unexpected and beautiful side-effect...

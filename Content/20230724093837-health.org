@@ -30,6 +30,3 @@
 
  - [x] [[https://www.goodreads.com/book/show/48890486-breath][Breath : James Nestor]]
  - [x] [[https://www.goodreads.com/en/book/show/6500848-never-let-go][Never Let Go: A Philosophy of Lifting, Living and Learning by Dan John]]
-   
-   
- 

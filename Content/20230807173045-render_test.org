@@ -16,7 +16,7 @@ testing how different elements are displayed.
 
 * Mermaid.js flow diags
 
-#+begin_src mermaid :file images/render_test.png
+#+begin_src mermaid :file images/render_test.png :exports both
   graph TD
     A[Enter Chart Definition] --> B(Preview)
     B --> C{decide}

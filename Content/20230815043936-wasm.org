@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       20230815T043936.366117
+:ROAM_ALIASES: "Web Assembly"
+:END:
+#+title: wasm
+#+filetags: :tbp:web:
+
+
+

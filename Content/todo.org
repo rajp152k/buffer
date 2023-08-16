@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       6bee4bb1-c087-45fe-8cf8-16c84efdad35
+:END:
+#+title: todo
+#+filetags: :meta:
+
+Only for tasks that are relevant to my intellectual pipelines. (youtube, blogs and projects)
+
+* Work setup
+ - [ ] cache quick nodes somewhere in the index for quick reference (also so that I don't forget they exist)
+ - [ ] delve into [[id:20230812T200515.697950][literate programming]]

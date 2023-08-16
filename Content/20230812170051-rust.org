@@ -1,0 +1,172 @@
+:PROPERTIES:
+:ID:       20230812T170051.977772
+:END:
+#+title: Rust
+#+filetags: :rust:
+
+* Stream
+Just a casual comment stream...
+
+** 0x2139
+ - tried the [[id:20230815T043844.199660][yew]] framework ..  
+ - towards the custom org-roam-ui project
+ - parameters are placeholders for concrete arguments
+   - people may use them interchangably : do account for that in conversations.
+ - parameter type declarations go after the place-holding variables
+ - has a distinction between statements (only used for side-effects) and expressions (have a determinable value) -> ending stuff with a semicolon makes a difference
+   - can be used for returning values from functions without using the return keyword.
+   - augment the function signature by a ~->~ to denote return types.
+ - scoping blocks are a pretty neat way to handle temporaries.
+ - an analog to ~`()~ in lisp is the unit type in rust denoted by ~()~
+ - comments are after ~//~
+ - documentation comments are a different thing altogether and the format depends on the tool
+ - control flow : basics would be ~match~ and ~if~;
+   - nothing peculiar that needs to be highlighted.
+ - controllers expect an explicit bool : there are no assumptions regarding integers, arrays, vectors and their truthiness/falsehood.
+   - starting to see why people say "if it compiles, it runs"
+ - controllers are expressions .. : can be used in conjunction with let
+     
+
+** 0x2138
+ - coding with LSP after a long time (slime is what i use for lisp) -> having common keybinds for all my polyglot-ic pursuits did excite me a lot 2 years ago
+** 0x2137
+ - basic functionalities from the standard library are brought in every rust program by default and collectively termed as the prelude.
+   - checkout https://doc.rust-lang.org/stable/std/prelude/index.html
+ - anything outside of the prelude must be brought in explicitly with the ~use~ statement
+   - for instance, to read user input, one can ~use std::io;~ followed by ~io::stdin().readline()~ in the program.
+ - variables are immutable by default... : that some healthy practice...
+ - references exist so that's nice, have a little experience programming in modern C++ and I did enjoy specifying every specific detail back in the day with all the type modifiers that I could remember, even for the simplest and most obvious lambdas.
+ - so, piping is inbuilt into rust's syntax and there's a pretty natural way to do it...
+ - something like ~(A (B (C)))~ in lisp would be written as ~C().B().A()~ in rust -> fairly convenient
+   - encourages are bottom up way of thinking which is more natural to some than a top down approach.
+ - there's terminology to refer to the formal mathematics of a program's execution -> variants, states ..
+   - so far, so good -> I could see myself learning rust for good.
+ - there's pythonic format format strings but with distinction for variables and results of an expression
+   - don't quite understand this design choice: 
+
+-----
+
+     #+begin_src rust :exports both
+       let x = 1;
+       println!("{x} is inside, but {} isn't", x + 1);
+     #+end_src
+
+     #+RESULTS:
+     result: 1 is inside, but 2 isn't
+
+     -----
+
+     #+begin_src rust :exports both
+       let x = 1;
+       println!("{x+1} should throw an error");
+     #+end_src
+
+     #+RESULTS:
+     result: error: Could not compile `cargokGzHoR`.
+
+     ------
+
+ - crates is how one delivers ..
+   - 2 kinds:
+     - binary  : executable
+     - library : to be used in other programs
+   - need to add crates as depencies in the cargo.toml
+     - with semantic versioning (aka semver)
+ - project level lock files after first cargo run seem good.
+   - cargo update to specifically update the lock...
+ - match seems to be a more restrictive cond block of rust
+ - the naming convention sure does seem to be cool - started seeing some turbo fishes and shadowing when casting stuff.
+ - working with a compiler again is somehow a little refreshing in a different way.
+   - lisp does it in a playful iterative manner while the rust compiler has been a fairly disciplined experience so far -> the error messages are pretty explicit and helpful right away.
+ - There's variables (mutable and immutable) and then there's constants...
+   - constants require a type declaration right away and can't be intialized by runtime expressions but constant expressions.
+ - even immutables declared with let can be shadowed : interesting ...
+
+   -------------
+   #+begin_src rust :exports both
+     let x = 1;
+     let x = x + 2;
+     println!("this is a valid shadowing");
+   #+end_src
+
+   #+RESULTS:
+   result : this is a valid shadowing
+
+   --------------
+
+   #+begin_src rust :exports both
+     let x = 1;
+     x = 3;
+     println!("this isn't a valid shadowing");
+   #+end_src
+
+   #+RESULTS:
+   result: error: Could not compile `cargozW6ZIA`.
+ 
+ --------------
+
+ - there's times when shadowing is preffered than using mutable stuff
+   - can't assign a different type to a mutable but can shadow an immutable with some other type (string to u32 for instance)
+ - scoping works as one would expect it to ...
+
+   ---------------
+
+ #+begin_src rust :exports both
+   let x = "   ";
+   let x = 3;
+   println!("this is valid")
+ #+end_src
+
+ #+RESULTS:
+ result: this is valid
+-------
+ #+begin_src rust :exports both
+   let mut x = 3;
+   x = "   ";
+   println!("this won't compile")
+ #+end_src
+
+ #+RESULTS:
+ result: error: Could not compile `cargolTneyq`.
+
+ --------------
+
+  - programming with a statically typed lang after a long time
+    - the compiler needs to know types of all variables at compile time.
+
+  - as previously mentioned, I like the lingo
+    - I'm not type-casting, I'm performing turbo-fishy parses ...
+     
+** 0x2136
+ - I couldn't find an appropriate end-to-end solution to publish my org-roam-notes with a graphical interface.
+ - rust has been on my learning list for a long time. 
+ - I first learned about WASM (web assembly) at the end of 2020 but never got around building something on the web with it.
+ - this is a good opportunity to learn about rust and wasm (will be using yew) while building something that I'll actually be able to use.
+ - The first step is to complete [[id:20230812T171410.113610][the rust book]].
+   #+begin_src rust
+     fn main() {
+     println!("hello world")
+     }
+   #+end_src
+ - will setup a [[id:20230812T200515.697950][literate programming]] setup soon for rust..
+
+* Projects
+** [[id:20230815T044212.558049][org-roam-publish]]
+
+* Resources
+
+** Emacs setup
+ - [[https://robert.kra.hn/posts/rust-emacs-setup/][Configuring Emacs for Rust development | Robert Krahn]]
+** The Book (rust)
+:PROPERTIES:
+:ID:       20230812T171410.113610
+:END:
+
+** formatter : rustfmt
+ - https://github.com/rust-lang/rustfmt
+
+** package manager : cargo
+ - https://github.com/rust-lang/cargo
+
+** https://crates.io
+ - crate distribution and hosting

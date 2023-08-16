@@ -4,11 +4,8 @@
 #+title: todo
 #+filetags: :meta:
 
-A List of miscellaneous tasks that need a little time to be tended to properly and shouldn't require much effort.
-These will be related to this buffer of nodes and not something from projects not referred in here.
+Only for tasks that are relevant to my intellectual pipelines. (youtube, blogs and projects)
 
 * Work setup
  - [ ] cache quick nodes somewhere in the index for quick reference (also so that I don't forget they exist)
  - [ ] delve into [[id:20230812T200515.697950][literate programming]]
-
-

@@ -3,7 +3,20 @@
 :END:
 #+title: health
 
-* Misc
+* Generic Aspects
+** Boredom
+ - having a healthy relationship with boredom is important to achieve anything..
+ - I am getting there slowly :- testing one's potentials with boredom and doing stuff even when it isn't exciting is what I believe is the difference between being passionate about something and also being a pro at it.
+** Relaxing
+ - given that I'm a research engineer by day, aspiring writer, actively work towards my fitness goal every dawn, I recently asked myself a question that I didn't have the answer to: How do I relax?
+ - I do read but that's just too much text for a day : I already read a lot for my work and towards my personal goals throughout the day in breaks and in dedicated sessions.
+ - reading again to relax just doesn't feel right.
+ - walking is something that does help me unwind but I don't particularly like to walk after a long day at work. I usually don't just walk and have a podcast/playlist running along side :- that is just more content shoved into an already intellectually-overloaded day.
+ - music is something that I've been planning on getting into for a long time : I bought a keyboard around a year and a half ago. But, I haven't gotten around to actually dedicating practice sessions before I can get started playing without the stress of progress.
+ - Socializing is good and all but not a long term solution: not a resilient approach to managing one's stress levels.
+ - I have been meditating regularly for > 2 weeks now but that is not something that I do to relax and is more directed towards my goals of lucidity and practicing dream yoga.
+ - I do not, at present (0x213A), have any hobby that I can get into, forgetting about my day and .., just relax..
+ - Streaming stuff may make me forget about the day but it isn't exactly relaxing/healthy and is just a numbing agent 
 ** Sleep
  - sleeping when seated is something that I'd like to learn
    - a 15 min nap with good posture would be great when at work.
@@ -16,5 +29,7 @@
 * book logs
 
  - [x] [[https://www.goodreads.com/book/show/48890486-breath][Breath : James Nestor]]
- - [ ] [[https://www.goodreads.com/en/book/show/6500848-never-let-go][Never Let Go: A Philosophy of Lifting, Living and Learning by Dan John]]
+ - [x] [[https://www.goodreads.com/en/book/show/6500848-never-let-go][Never Let Go: A Philosophy of Lifting, Living and Learning by Dan John]]
    
+   
+ 

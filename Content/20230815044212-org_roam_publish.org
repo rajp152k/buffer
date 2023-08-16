@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       20230815T044212.558049
+:END:
+#+title: org-roam-publish
+#+filetags: :project:
+
+Publishing name : Undecided
+
+* Abstract
+
+ - an emacs independent knowledge-graph processor and visualizer for org-files.
+ - to be built in rust with wasm as compilation target for the web application.
+

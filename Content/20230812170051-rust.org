@@ -7,6 +7,26 @@
 * Stream
 Just a casual comment stream...
 
+** 0x2139
+ - tried the [[id:20230815T043844.199660][yew]] framework ..  
+ - towards the custom org-roam-ui project
+ - parameters are placeholders for concrete arguments
+   - people may use them interchangably : do account for that in conversations.
+ - parameter type declarations go after the place-holding variables
+ - has a distinction between statements (only used for side-effects) and expressions (have a determinable value) -> ending stuff with a semicolon makes a difference
+   - can be used for returning values from functions without using the return keyword.
+   - augment the function signature by a ~->~ to denote return types.
+ - scoping blocks are a pretty neat way to handle temporaries.
+ - an analog to ~`()~ in lisp is the unit type in rust denoted by ~()~
+ - comments are after ~//~
+ - documentation comments are a different thing altogether and the format depends on the tool
+ - control flow : basics would be ~match~ and ~if~;
+   - nothing peculiar that needs to be highlighted.
+ - controllers expect an explicit bool : there are no assumptions regarding integers, arrays, vectors and their truthiness/falsehood.
+   - starting to see why people say "if it compiles, it runs"
+ - controllers are expressions .. : can be used in conjunction with let
+     
+
 ** 0x2138
  - coding with LSP after a long time (slime is what i use for lisp) -> having common keybinds for all my polyglot-ic pursuits did excite me a lot 2 years ago
 ** 0x2137
@@ -129,6 +149,9 @@ Just a casual comment stream...
      }
    #+end_src
  - will setup a [[id:20230812T200515.697950][literate programming]] setup soon for rust..
+
+* Projects
+** [[id:20230815T044212.558049][org-roam-publish]]
 
 * Resources
 

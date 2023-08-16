@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20230815T043844.199660
+:END:
+#+title: yew
+#+filetags: :rust:
+
+ - towards building web applications in [[id:20230812T170051.977772][rust]] with [[id:20230815T043936.366117][wasm]] as compilation target
+

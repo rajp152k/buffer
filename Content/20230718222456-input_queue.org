@@ -14,9 +14,9 @@ I'll most likely begin with foundational papers in any domain and then explore d
 
 * Blogs
 ** https://otherlife.co/
-** https://paperswelove.org/
 ** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]
 ** https://sive.rs/
+** https://jeremykun.com/
 
 * Blog posts
 ** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
@@ -27,11 +27,12 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** https://corecursive.com/lisp-in-space-with-ron-garret/
 
 * Books 
-** 
 ** https://www.masteringemacs.org/book
 ** [[https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/][Mastering Regular Expressions, 3rd Edition [Book]​]] 
 ** http://www.paulgraham.com/hp.html
 ** https://course.fast.ai/Resources/book.html
+** https://pimbook.org/
+** [[https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/][Probabilistic Machine Learning]]
 
 * Papers
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
@@ -46,11 +47,13 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://radimrehurek.com/gensim/][Gensim: Topic modelling for humans]] 
 ** [[https://prodi.gy/][Prodigy · Prodigy · An annotation tool for AI, Machine Learning & NLP]]
 ** https://jupyter-ai.readthedocs.io/en/latest/
+** https://seed-rs.org/
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
 
-
+* Topics
+** Compression algorithms
 * Questions
 ** How to sleep when seated, without losing spinal orientation?
  - i.e. with a straight spine.

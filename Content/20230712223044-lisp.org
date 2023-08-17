@@ -47,3 +47,8 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
 :PROPERTIES:
 :ID:       2c00e44f-d40d-4386-b756-dda7f1a2da12
 :END:
+
+** The Common Lisp Cookbook
+:PROPERTIES:
+:ID:       c83e86d8-6453-48ad-9778-4c83435f4e9d
+:END:

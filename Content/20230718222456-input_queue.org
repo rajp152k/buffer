@@ -33,6 +33,8 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** https://course.fast.ai/Resources/book.html
 ** https://pimbook.org/
 ** [[https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/][Probabilistic Machine Learning]]
+** Peopleware : Productive projects and teams
+ - https://www.goodreads.com/en/book/show/67825
 
 * Papers
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
@@ -48,14 +50,20 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://prodi.gy/][Prodigy · Prodigy · An annotation tool for AI, Machine Learning & NLP]]
 ** https://jupyter-ai.readthedocs.io/en/latest/
 ** https://seed-rs.org/
+** https://lunrjs.com/
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
 
-* Topics
-** Compression algorithms
+** languages
+ - https://www.perl.org/ : aka the duct tape of the internet
 * Questions
+:PROPERTIES:
+:ID:       451c1560-cb53-4ead-89ec-af127f743b44
+:END:
 ** How to sleep when seated, without losing spinal orientation?
  - i.e. with a straight spine.
  - If I could fit in a 15 min nap in this posture, life would be great.
  - I'm not talking about meditation.
+* Topics
+** Compression algorithms

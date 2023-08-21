@@ -6,6 +6,52 @@
 #+filetags: :lisp:
 
 * Comment Stream
+** 0x213F
+- starting C3 : a simple database
+- plists : dictionaries built upon lists (the worst hash table possible)
+  - every even element is a symbol (a key)
+
+    --------
+#+begin_src lisp :exports both
+  `(,(setf plis (list :a 1 :b 2 :c 3))
+     ,(getf plis :a)
+     ,(getf plis :b))
+#+end_src
+
+#+RESULTS:
+| (:A 1 :B 2 :C 3) | 1 | 2 |
+-----
+
+- note that there are no separate constructors for a plist : it's just a list with different contents 
+- ~getf~ to access the values associated with a key
+- is a way to store a record for our *db*
+
+-----
+#+begin_src lisp
+  (defun make-cd (title artist rating ripped)
+    (list :title title
+	  :artist artist
+	  :rating rating
+	  :ripped ripped))
+
+  (make-cd 'Stayin-alive 'Bees-Gees '? NIL)
+#+end_src
+
+#+RESULTS:
+| :TITLE | STAYIN-ALIVE | :ARTIST | BEES-GEES | :RATING | 32 | :RIPPED | 
+
+-------
+
+- the global var db can hold all the cds
+- do note that this is a special variable with dynamic scoping that the author does not refer to in this case.
+
+#+begin_src lisp
+  (defvar *db* nil)
+  (let ((cd (make-cd .. .. .. ..)))
+    )
+
+#+end_src
+
 ** 0x213C
  - started my first formal pass of [[id:2c00e44f-d40d-4386-b756-dda7f1a2da12][Practical Common Lisp]]
  - done with [[id:0b1a6c07-e166-45b3-9dfd-515892bac854][Common Lisp: A gentle introduction to symbolic computation]]

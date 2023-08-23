@@ -119,17 +119,17 @@ Extraction`"))
 J(("`Temporal
  Information
  Extraction`"))
-A --> B
-B --> C
-C --> D
-D --> E
-B --> F
-C --> F
-C --> G
-D --> H
-E --> H
-E --> I
-E --> J
+A ==> B
+B ==> C
+C ==> D
+D ==> E
+B -.-> F
+C -.-> F
+C -.-> G
+D -.-> H
+E -.-> H
+E -.-> I
+E -.-> J
 #+end_src
 
    #+RESULTS:

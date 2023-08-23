@@ -15,6 +15,7 @@ testing how different elements are displayed.
 | X | Y | Z |
 
 * Mermaid.js flow diags
+A self-serving tutorial on mermaid can be found [[id:617ab23f-058a-48c8-872f-c71c6d78c68b][here]]
 
 #+begin_src mermaid :file images/render_test.png :exports both
   graph TD

@@ -47,9 +47,7 @@
 
 #+begin_src lisp
   (defvar *db* nil)
-  (let ((cd (make-cd .. .. .. ..)))
-    )
-
+  (let ((cd (make-cd .. .. .. ..))))
 #+end_src
 
 ** 0x213C

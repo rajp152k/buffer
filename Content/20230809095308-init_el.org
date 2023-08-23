@@ -325,7 +325,7 @@ Documenting my init.el :- will annotate soon, just dumping as of now
   ;; '((python . t)))
   ;;(mermaid . t)))
 
-  ;(setq org-babel-python-command "/home/rajp152k/miniconda3/bin/python")
+					  ;(setq org-babel-python-command "/home/rajp152k/miniconda3/bin/python")
 
   ;;(use-package ob-mermaid
   ;;  :straight t
@@ -386,6 +386,14 @@ Documenting my init.el :- will annotate soon, just dumping as of now
     (setq org-roam-directory (file-truename "/mnt/c/Users/Raj Patil/source/org/braindump/Content/"))
     (setq org-roam-file-extensions '("org"))
     (org-roam-db-autosync-mode)
+    (defun org-roam-tag-list ()
+      (interactive)
+      (let ((tag-list (org-roam-db-query
+		       [:select :distinct [tag]
+				:from tags])))
+	(switch-to-buffer "*scratch*")
+	(dolist (tag tag-list)
+	  (insert (concat (car tag) "\n")))))
     (general-define-key
      :prefix "C-M-o"
      "f" #'org-roam-node-find
@@ -397,6 +405,7 @@ Documenting my init.el :- will annotate soon, just dumping as of now
      "d s" #'org-roam-db-sync
      "t a" #'org-roam-tag-add
      "t d" #'org-roam-tag-remove
+     "t l" #'org-roam-tag-list
      "r" #'org-roam-buffer-toggle
      "o c" #'org-id-get-create
      "o s" #'org-id-store-link
@@ -517,9 +526,9 @@ Documenting my init.el :- will annotate soon, just dumping as of now
 
   ;;(use-package lsp-racket
   ;;  :straight 'lsp-racket)
-		;;:type git
-		;;:host github
-		;;:repo "mullikine/lsp-racket-el"))
+  ;;:type git
+  ;;:host github
+  ;;:repo "mullikine/lsp-racket-el"))
 
   ;;(use-package dap-mode
   ;;  :straight t)

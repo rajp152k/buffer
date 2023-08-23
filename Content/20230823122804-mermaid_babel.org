@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       617ab23f-058a-48c8-872f-c71c6d78c68b
+:END:
+#+title: mermaid-babel
+#+filetags: :tool:
+
+A self serving tutorial on mermaid.js with (org-babel) for completeness.
+
+* Practice
+#+begin_src mermaid :file images/mermaid_0.png :exports both
+  graph TD
+   A[Enter Chart Definition] --> B(Preview)
+   B --> C{Save}
+   C --> |Yes| F[Save Image and Code]
+   C --> |No| B
+   F --> H{Quit}
+   H --> |Yes| G[Terminate process]
+   H --> |No| B
+#+end_src
+
+#+RESULTS:
+[[file:images/mermaid_0.png]]
+
+ - Toggle view with (kbd "C-c C-x C-v") in org-mode

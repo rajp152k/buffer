@@ -89,4 +89,48 @@ Numeric bullets signify a step in the pipeline and indents signify what task the
 5. Coreference Resolution
    -> [[id:01cef446-e7e0-48f6-af7b-d0478e689cf2][Named Entity Disambiguation and Linking]]
    -> [[id:2f0bed79-b0cd-4c70-88a2-d219ab174db9][Relation Extraction]]
-   -> [[id:8731f087-2ee8-4b2e-98c8-de52c78dc399][Temporal Information Ixtraction]] (events/durations)
+   -> [[id:8731f087-2ee8-4b2e-98c8-de52c78dc399][Temporal Information Extraction]] (events/durations)
+
+#+CAPTION: Generic Information Extraction Pipeline with tasks
+#+begin_src mermaid :exports results :file images/generic_ie_pipeline.png
+flowchart LR
+A["`**Raw
+ Text**`"]
+B["`**Word
+ Tokenization**`"]
+C["`**Part of
+ Speech Tagging**`"]
+D["`**Syntactic
+ Parsing**`"]
+E["`**Coreference
+ Resolution**`"]
+F(("`Key
+ Phrase
+ Extraction`"))
+G(("`Named
+Entity
+Recognition`"))
+H(("`Named
+ Entity
+ Disambiguation
+and Linking`"))
+I(("`Relation
+Extraction`"))
+J(("`Temporal
+ Information
+ Extraction`"))
+A --> B
+B --> C
+C --> D
+D --> E
+B --> F
+C --> F
+C --> G
+D --> H
+E --> H
+E --> I
+E --> J
+#+end_src
+
+   #+RESULTS:
+   [[file:images/generic_ie_pipeline.png]]

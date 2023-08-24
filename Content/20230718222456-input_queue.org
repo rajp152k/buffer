@@ -4,41 +4,36 @@
 #+title: input-queue
 
 I like reading technical books and am planning to expand my coverage to include foundational papers of some subjects that I find interesting: with the intention of understanding how subjects today interweave.
-
 This buffer maintains a cache of technical papers/books/blogs/similar resources I'd like to go through. This is also an exercise in building up my reading efficiency for technical texts. I'm pretty quick with generic public domain non-fiction now and would like to up the ante: to maintain the effort I require to achieve [[id:20230718T223411.394444][flow]] (Mihaly Csikszentmihalyi).
-
 I'll most likely begin with foundational papers in any domain and then explore depth if need be. will not be limiting myself to anything specific : anything goes - this is a new hobby.
-
 * Crowd sourcing
 ** https://news.ycombinator.com/
-
 * Blogs
 ** https://otherlife.co/
-** https://paperswelove.org/
 ** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]
 ** https://sive.rs/
-
+** https://jeremykun.com/
 * Blog posts
 ** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
 ** https://simonwillison.net/2023/Aug/3/weird-world-of-llms/
 ** https://mitpress.mit.edu/mit-presss-direct-to-open-d2o-achieves-second-year-goal-opens-access-to-eighty-two-new-books-in-2023/
-
 * Podcasts
 ** https://corecursive.com/lisp-in-space-with-ron-garret/
-
 * Books 
-** 
 ** https://www.masteringemacs.org/book
 ** [[https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/][Mastering Regular Expressions, 3rd Edition [Book]​]] 
 ** http://www.paulgraham.com/hp.html
 ** https://course.fast.ai/Resources/book.html
-
+** https://pimbook.org/
+** [[https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/][Probabilistic Machine Learning]]
+** Peopleware : Productive projects and teams
+ - https://www.goodreads.com/en/book/show/67825
+** [[https://mitpress.mit.edu/9780262028967/structure-and-interpretation-of-classical-mechanics/][Structure and Interpretation of Classical Mechanics]]
 * Papers
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
 ** [[https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store][Dynamo: Amazon’s highly available key-value store - Amazon Science]] 
 ** [[https://arxiv.org/abs/2003.02320][[2003.02320] Knowledge Graphs]]
 ** https://www.lrde.epita.fr/dload/papers/newton.16.monad.report.pdf
-
 * Docs/tools/tuts
 ** https://spacy.io/
 ** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]
@@ -46,12 +41,16 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://radimrehurek.com/gensim/][Gensim: Topic modelling for humans]] 
 ** [[https://prodi.gy/][Prodigy · Prodigy · An annotation tool for AI, Machine Learning & NLP]]
 ** https://jupyter-ai.readthedocs.io/en/latest/
+** https://seed-rs.org/
+** https://lunrjs.com/
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
-
+** languages
+ - https://www.perl.org/ : aka the duct tape of the internet
 * Questions
-** How to sleep when seated, without losing spinal orientation?
- - i.e. with a straight spine.
- - If I could fit in a 15 min nap in this posture, life would be great.
- - I'm not talking about meditation.
+:PROPERTIES:
+:ID:       451c1560-cb53-4ead-89ec-af127f743b44
+:END:
+* Topics
+** Compression algorithms

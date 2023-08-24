@@ -40,3 +40,9 @@ I plan on accumulating and assimilating all that I learn from various domains in
 :END:
  - a visualizer by explosion.ai
  - used during [[id:71a53540-e823-49a2-9049-b286ee265e62][Named Entity Recognition (NER)]]
+
+** sklearn
+:PROPERTIES:
+:ID:       e0963cc2-1c67-4d07-8541-606611e93f83
+:END:
+ - traditional ML algos and preprocessing utilities

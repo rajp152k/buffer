@@ -5,19 +5,104 @@
 #+title: lisp
 #+filetags: :lisp:
 
-* 0x2132
+* Comment Stream
+** 0x213F
+- starting C3 : a simple database
+- plists : dictionaries built upon lists (the worst hash table possible)
+  - every even element is a symbol (a key)
+
+    --------
+#+begin_src lisp :exports both
+  `(,(setf plis (list :a 1 :b 2 :c 3))
+     ,(getf plis :a)
+     ,(getf plis :b))
+#+end_src
+
+#+RESULTS:
+| (:A 1 :B 2 :C 3) | 1 | 2 |
+-----
+
+- note that there are no separate constructors for a plist : it's just a list with different contents 
+- ~getf~ to access the values associated with a key
+- is a way to store a record for our *db*
+
+-----
+#+begin_src lisp
+  (defun make-cd (title artist rating ripped)
+    (list :title title
+	  :artist artist
+	  :rating rating
+	  :ripped ripped))
+
+  (make-cd 'Stayin-alive 'Bees-Gees '? NIL)
+#+end_src
+
+#+RESULTS:
+| :TITLE | STAYIN-ALIVE | :ARTIST | BEES-GEES | :RATING | 32 | :RIPPED | 
+
+-------
+
+- the global var db can hold all the cds
+- do note that this is a special variable with dynamic scoping that the author does not refer to in this case.
+
+#+begin_src lisp
+  (defvar *db* nil)
+  (let ((cd (make-cd .. .. .. ..))))
+#+end_src
+
+** 0x213C
+ - started my first formal pass of [[id:2c00e44f-d40d-4386-b756-dda7f1a2da12][Practical Common Lisp]]
+ - done with [[id:0b1a6c07-e166-45b3-9dfd-515892bac854][Common Lisp: A gentle introduction to symbolic computation]]
+ - will be actively noting down in this pass : did not with the latter - only solved involved excercises and was a quick skim.
+ - Peter touts a flowy language design for lisp due to its dynamic typing and condition system to handle errors : I'm yet to explore the latter..
+ - paradigmatic changes can be absorbed without altering the base language.
+ - btw, let's get over with something very important before we proceed.
+
+   ------
+
+   #+begin_src lisp :exports both
+     'Hello-world
+   #+end_src
+
+   #+RESULTS:
+   : HELLO-WORLD
+
+   --------
+
+ - alright, lets go..
+ - C2 : a tour of the repl
+ - a debugger right out of the box is nice
+   - no core dumps / stack traces
+ - loading source into the lisp process involves two basic steps :
+   1. compile the source into a ~.fasl~ 
+   2. load the ~.fasl~ into the process
+  - during interactive development, compile-defun should suffice
+  - for a complete file, compile-and-load should be accessible in whatever environment you choose to use
+    --------
+ - do notice the structure of a fasl for the following program:
+
+ #+begin_src lisp
+   (defun hello-world ()
+     (format t "~&~S" 'hello-world))
+ #+end_src
+
+ - it seems to be mixture of byte code and the interpretable literals that make up the program.
+ - some explicit inbuilts like declare, block, format can also be observed.
+ - note that a ~.fasl~ in itself isn't an executable and needs an implementation (sbcl in this case) to go along with it -> (literally speaking, it is a "FASt Loadable")
+   
+** 0x2132
 starting a new youtube common lisp series:-
  - will be building up the technical base for the channel
  - a rough structure is mentioned in [[id:20230808T035500.251803][CLTS: common lisp-the series]]
-* 0x212C
+** 0x212C
  - gensyms are internal temp variables that are guaranteed to have no name resolution conflicts -> one can't input them via a keyboard/conventional methods
  - init with defvar, defparameter, defconstant -> dynamically scoped
  - init with setf -> lexically scoped
-* 0x212B
+** 0x212B
  - beginning a formal study of [[id:b00834e3-eae6-474f-98ab-01c0533533e8][lisp macros]]
-* 0x211D
+** 0x211D
  - very conducive to [[id:d08a6ebd-a173-4c7d-bda7-6911db9eccbd][symbolic computation]] and [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][expressing concepts in general]]
-* 0x2118
+** 0x2118
 
 AKA [[id:20230715T173339.005604][List]] Processing
 
@@ -30,20 +115,27 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
 * Literature Queue
  - [x] Structure and Interpretation of Computer Programs
  - [x] Common Lisp: An introduction to symbolic computation -> book review
- - [ ] Practical Common Lisp
+ - [ ... ] Practical Common Lisp
  - [ ] On Lisp
  - [ ] Let over Lambda
  - [ ] The Art of the MetaObject Protocol
+ - [ ] Professional Automated Trading : Theory and Practice
 * Sentinel refs
 ** Structure and Interpretation of Computer Programs
 :PROPERTIES:
 :ID:       b7c7d398-161b-4712-8ace-46c419b1e128
 :END:
-** Common Lisp: An introduction to symbolic computation
+** Common Lisp: A gentle introduction to symbolic computation
 :PROPERTIES:
 :ID:       0b1a6c07-e166-45b3-9dfd-515892bac854
 :END:
 ** Practical Common Lisp
 :PROPERTIES:
 :ID:       2c00e44f-d40d-4386-b756-dda7f1a2da12
+:END:
+ - Beginning formal pass of practical common lisp 0x213C.
+ - now that org-babel is setup, the comment stream should be more lively
+** The Common Lisp Cookbook
+:PROPERTIES:
+:ID:       c83e86d8-6453-48ad-9778-4c83435f4e9d
 :END:

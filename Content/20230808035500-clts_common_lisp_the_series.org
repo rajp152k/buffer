@@ -62,3 +62,8 @@ The series will be a splice between the different following phases - even at the
 ** Conclusion
  - final thoughts
  - books, resources, recommendations
+
+* Output 
+** CLTS 0
+ - youtube : https://youtu.be/jLonMxrVPbY
+ - blog :

@@ -50,7 +50,6 @@ I'll most likely begin with foundational papers in any domain and then explore d
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
 
-
 * Questions
 ** How to sleep when seated, without losing spinal orientation?
  - i.e. with a straight spine.

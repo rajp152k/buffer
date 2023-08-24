@@ -3,8 +3,16 @@
 :END:
 #+title: output-queue
 
-A quick index of all the content (books, videos, blogs) that I produce. A parallel to the [[id:20230718T222456.978981][input-queue]] and will be populated as an when nodes are mature enough to be published. I'll also be tracking stages for major nodes and be monitoring progress here.
+A quick index of all the content (books, videos, blogs) that I produce. A parallel to the [[id:20230718T222456.978981][input-queue]] and will be populated as an when nodes are mature enough to be published. 
 
 * Books
 * Blogs
+ - https://rajpatil.dev/post/clts/clts-0/
+ - https://rajpatil.dev/post/rip-bram-moolenar/
+ - https://rajpatil.dev/post/my-emacs-config-0x213b/
+ - https://rajpatil.dev/post/cl-aitsc/
+ - https://rajpatil.dev/post/picc/
+ - https://rajpatil.dev/post/writing-setup/
 * Videos
+- https://youtu.be/jLonMxrVPbY 
+- https://youtu.be/A7CKctbouJs

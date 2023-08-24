@@ -1,21 +1,39 @@
 :PROPERTIES:
 :ID:       20230712T131112.909632
-:ROAM_ALIASES: writing
 :END:
-#+title: Blogging Setup
+#+title: Writing
 #+filetags: :transient:
 
-* 0x2129
+* Comment stream
+** 0x2141
+ - setting up a new content creation pipeline video and blog that covers how I note ideas from end to end.
+   - the tool-agnostic part is already covered in 0x2118 below.
+   - Will be quickly highlighting the tooling and the technical process in a video and then blog about references and links.
+ - practical aspects :
+   - begin with the buffer
+     - contains all my notes
+       - for writing
+       - what I study
+       - for youtube
+     - daily increments
+       - input and output queue.
+   - main blog
+     - hugo
+     - write in markdown
+     - publish with github pages
+   - youtube
+     - the normal process
+       - youtube and blog go hand in hand
+** 0x2129
  - [[id:20230730T172240.071698][writing-patterns]]
  - initializing a new node to observe my writing style and its short-comings/opportunities to improve on.
  - would just be a collection of high level patterns that I tend to over-use/rely on unnecessarily and could use some explicit auditing.
-* 0x211C
+** 0x211C
 I'm thinking of developing a personalized writing system that will allow me to be disciplined, elevating myself from the stature of a hobbyist. For definite practice, I'm thinking of deciding on a topic at the start of a week, reading up and collating my notes until Saturday and posting the formal article on Sunday.
 My goal with this pursuit is to improve my command over the language and develop an original way with word. All communication boils down to being able to express yourself accurately without erroneous comprehension for the audience. That is a skill worth mastering. 
-
-* 0x2118
-** Abstract
-*** The Process of Writing
+** 0x2118
+*** Abstract
+**** The Process of Writing
 
 Maintaining a good writing pipeline is essential to automate the process of generating content. In my past endeavours, the process involved the phases of :
  - planning
@@ -31,7 +49,7 @@ This also makes you believe that each post is an independent project in itself a
 
 I intend to improve upon this process with this setup of decoupling my notes and what I publish.
 
-*** The Incentive to Write 
+**** The Incentive to Write 
 
 I have two major objectives (implicitly interdependent) associated with my online presence on the main [[https://rajpatil.dev][blog]] and the [[https://buffer.rajpatil.dev][buffer]]:
  - To write for myself
@@ -42,7 +60,48 @@ Both are important aspects towards being good writer and need to be independentl
 The [[id:20230712T211919.917191][buffer]]s will be a personal brain dump where I won't care about formalizing my notes and any other necessities of published works.They will be shorter and linked to other buffers.
 The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection of multiple inter-related buffers into one serialized output : a snapshot of the living, breathing organism that I intend the buffers to evolve into.
    
-** The Technicalities
+*** The Technicalities
   - The main blog is maintained in markdown and published via Hugo
   - The buffers are maintained in org-roam and published via ox-html
     - credits: https://github.com/maker2413/OrgRoamPublish
+
+
+* Production
+An index of all that I write about, published, work in progress and prospective.
+
+** Published
+
+|------------+-----------------------------------------------------------+----------------------------------------------------------------|
+| time index | Production                                                | link                                                           |
+|------------+-----------------------------------------------------------+----------------------------------------------------------------|
+|     0x2141 | My Creation and Publishing Pipeline                       | https://rajpatil.dev/post/my-creation-and-publishing-pipeline/ |
+|     0x213F | Common Lisp: The Series - 0 : Introduction                | https://rajpatil.dev/post/clts/clts-0/                         |
+|     0x213B | RIP, Bram Moolenar                                        | https://rajpatil.dev/post/rip-bram-moolenar/                   |
+|     0x213B | My Emacs Configuration                                    | https://rajpatil.dev/post/my-emacs-config-0x213b/              |
+|     0x213A | Common Lisp - Gentle Introduction to Symbolic Computation | https://rajpatil.dev/post/cl-aitsc/                            |
+|     0x212B | PICC: pragmatics of intellectual consumption and creation | https://rajpatil.dev/post/picc/                                |
+|     0x211B | Here we go again...                                       | https://rajpatil.dev/post/writing-setup/                       |
+|------------+-----------------------------------------------------------+----------------------------------------------------------------|
+
+** Work in Progress
+*** Who are you?
+ - was reading my old blog the other day and I just recollected a whole bunch of memories based on who I was as a person.
+ - Life isn't a markov process.
+   - the future isn't only dependent on your present.
+   - it depends on how you interact with your environment.
+     - in my case : that was reading my old blogs and watching my old videos
+     - I'm essentially carrying my past self's thoughts and wisdom into the present when I create any content.
+   - My present state which is not just my accessible memories anymore but my blog, my videos and humans that know me and my past and can sustain a conversation about it keeps on growing
+   - Creating is an act of making your present state more comprehensive : by accumulating your past into a large stream of actions, logs, decisions.
+ - You (assuming you can be represented by an artificially intelligent algorithm) are bound to consolidate your life better to better decide for your future decisions if you have more data accessible to you.
+ - this data can be:
+   - generic or specific
+   - statistical or rule-based
+ - Generic data can only take you so far.
+ - Unless you put in the effort to know who "you" really are, your "algorithms" will only generate generic advice and probably won't yield the best possible results.
+ - creating content is a form of capturing snapshots of your past present states that can be studied on demand later on to more accurately represent your path to the present.
+ - Now, the past, isn't actually changable even if you change the way you think about it.
+   - there's the objective past (questionable what's objective) (an event that's one and done) and then there's your perspective about it (that is a stream that you carry on for life (I'm not accounting for forgetting right now if you journal, blog, create any sort of sensible content as it is easily accessible : (example : I could remember what stage of Life I was in based on the book that I was reading then : Once I saw the book : All memories fell into context like dominoes))).
+   - you can only alter your perspective about the past in the present moment of the stream but never change your previous thoughts in the stream.
+   - There is no mental time machine allowing you to manipulate your past memories : you simply partially overwrite stuff but never alter it's state in the past...
+** Prospective

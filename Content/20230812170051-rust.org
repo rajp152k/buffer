@@ -7,6 +7,18 @@
 * Stream
 Just a casual comment stream...
 
+** 0x2142
+ - the rsty stack
+   - https://www.youtube.com/watch?v=luOgEhLE2sg&ab_channel=Let'sGetRusty
+   - rocket
+   - surreal db
+   - tauri
+   - yew
+ - saw a video from TechLead yesterday on how to become a millionaire (as a millionaire) :- he says
+   - a lot of people get ideas but never execute them............
+   - yeah.........
+   - gotta do this.....
+
 ** 0x2139
  - tried the [[id:20230815T043844.199660][yew]] framework ..  
  - towards the custom org-roam-ui project

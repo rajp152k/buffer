@@ -4,17 +4,21 @@
 #+title: Youtube
 #+filetags: :meta:
 
-* YT Init : Incentives and Plans
-** History
+* Comment Stream
+** 0x2143
+ - initializing an iteration on my creation process
+ - will be recording all feedback and relevant 
+** (0x2122) YT Init : Incentives and Plans
+*** History
 - second youtube channel
 - first -> to practice rhetoric
 - did help with working out the kinks in my communication skills
-** Abstract
+*** Abstract
 - writing a pretty good way to express yourself and show your work
 - albeit.., still incomplete : videos complement the process of expression
 - speaking into a camera, speaking from experiences, tricks you into thinking you're addressing a large audience - a pretty neat trick, I would say
 - I'm starting again with a slightly formal approach : https://www.youtube.com/@rajp152k 
-** Settling into Niche
+*** Settling into a Niche
 - Some topics that I'll explore initially:
     - Emacs -> instructive/customization
     - Common Lisp -> instructive
@@ -23,16 +27,31 @@
     - Interesting Research from different domains
     - Workflows, tools for relevant tasks
     - the occasional philosophical rant
-** The Long Term Plan
+*** The Long Term Plan
 - freedom of expression is a given
 - being free enough to express is what we generally lack...
 - targeting at least a video a week..
 
-* Videos
-An index of all the videos : published, in process, and prospective
+* Production
+An index of all the videos : published, work in progress, and prospective
 ** Published
-** In Process
-** Prospective
+
+|------------+---------------------------------------------------+------------------------------|
+| time index | Production                                        | link                         |
+|------------+---------------------------------------------------+------------------------------|
+|     0x2141 | My Creation and Publishing Pipeline               | https://youtu.be/dKU_mNaEo1g |
+|     0x213E | Common Lisp : The Series - Introduction (CL-TS 0) | https://youtu.be/jLonMxrVPbY |
+|     0x2122 | YT init: Incentives and Plans                     | https://youtu.be/A7CKctbouJs |
+|------------+---------------------------------------------------+------------------------------|
+
+** Work in Progress
+** Prospectives
+*** initialize a consolidators playlist
+ - discusses results, feedback, plans and improvements since the last consolidator
+ - Preferably : a weekly process published every saturday discussing the progress over the week
+ - the qualitative and the quantitative
+   - qualitative discusses my delivery, content, how consumers resond etc.
+   - quantitative discusses consumer metrics, meta-data about the videos (length, etc) that are relevant to the qualitative aspect
 *** generic ideas : introduction to new data science libraries
 *** building a good relationship with text
  - My text editing journey
@@ -53,3 +72,5 @@ An index of all the videos : published, in process, and prospective
  - Recommendation
    - Home: Evil Emacs
    - Work : VS code with a vi extension
+     
+     

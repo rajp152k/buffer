@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a23297c0-8d18-41c1-83ed-6ac68ad68606
+:END:
+#+title: Distant Supervision
+#+filetags: :nlp:
+

@@ -19,7 +19,7 @@ While definining the series structure, following a top down approach initially f
 
 - the initial and final state encompass the input and output respectively
 
-
+  
 *** What is source code then?
 
 - the computer understands binary code 

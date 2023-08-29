@@ -36,13 +36,14 @@
 An index of all the videos : published, work in progress, and prospective
 ** Published
 
-|------------+---------------------------------------------------+------------------------------|
-| time index | Production                                        | link                         |
-|------------+---------------------------------------------------+------------------------------|
-|     0x2141 | My Creation and Publishing Pipeline               | https://youtu.be/dKU_mNaEo1g |
-|     0x213E | Common Lisp : The Series - Introduction (CL-TS 0) | https://youtu.be/jLonMxrVPbY |
-|     0x2122 | YT init: Incentives and Plans                     | https://youtu.be/A7CKctbouJs |
-|------------+---------------------------------------------------+------------------------------|
+|------------+-------------------------------------------------------------+------------------------------+----------|
+| time index | Production                                                  | link                         | playlist |
+|------------+-------------------------------------------------------------+------------------------------+----------|
+|     0x2147 | Common Lisp : The Series - Representing Programs (CLTS 0.1) | https://youtu.be/SuI2ns1D9Es | CLTS     |
+|     0x2141 | My Creation and Publishing Pipeline                         | https://youtu.be/dKU_mNaEo1g | Tooling  |
+|     0x213E | Common Lisp : The Series - Introduction (CL-TS 0)           | https://youtu.be/jLonMxrVPbY | CLTS     |
+|     0x2122 | YT init: Incentives and Plans                               | https://youtu.be/A7CKctbouJs | General  |
+|------------+-------------------------------------------------------------+------------------------------+----------|
 
 ** Work in Progress
 ** Prospectives

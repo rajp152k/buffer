@@ -35,7 +35,7 @@
 
 - will be writing it in the brain dump in different notes 
 
-* Structure 
+* Structure and Content 
 ** Introduction
 *** Who is this book for
 **** reading experience
@@ -44,6 +44,9 @@
 - voracious readers who wish to pump their egos
 *** Personal reading journey
 Began at 19 with a technical inclination and hardly ready a book other than something that my curriculum demanded. Over 3 years, read 13 , 41 and 54 books respectively ranging from ....
+ - My background with reading books -> initial philosophical blog
+ - University was the first time I had time to spare for pursuing hobbies in a balanced manner with independence.
+ - I only used to read technically
 ** Abstract
 *** Why Read
 **** An intricate and comparatively (to photos, videos, etc) potent index into your past :- your time now, in hindsight, will seem denser.

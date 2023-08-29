@@ -56,22 +56,63 @@ The simpler ones can be categorized into the below. Complex combinations of the 
  - architecturally speaking, [[id:4d58e957-2281-4bd5-82b9-1d12e7edfc74][Conditional Random Fields]] are popular sequence classifier choices.
  - exploring [[id:68457d7a-c72a-4ef5-90cf-79ad14867a39][Sequence Classification]] completely in another node.
    
-** Named Entity Disambiguation and Linking
+** Named Entity Disambiguation and Linking (NED and NEL)
 :PROPERTIES:
 :ID:       01cef446-e7e0-48f6-af7b-d0478e689cf2
 :END:
+*** Misc
+- consider : "Lincoln drives a lincoln aviator and lives on lincoln way"
+  - all three mentions of lincoln are different and should be tagged to different entities -> say their wikipedia pages
+- also relies on context like NER.
+  - might also need coreference resolution to resolve and link multiple references to the same entity. (eg: intial full-name, pronouns, titles, etc for a human referred in multiple ways in a passage)
+- NEL is a prerequisite for further tasks in the NLP pipeline as shown in the flowchart below in this buffer
+*** Approaches
+- is typically modelled as a supervised ML problem and evaluated in terms of [[id:bd383ba2-37e9-412f-b245-919fa47831bc][Classification Evaluation Metrics]] like precision, recall and f1-scores.
+- off-the-shelf APIs are the way to go if specialized domains aren't needed and one doesn't wish to develop an inhouse solution.
+- when incorporating in existing solutions, domain specific oddities won't be captured when using readily available services
 ** Relation Extraction
 :PROPERTIES:
 :ID:       2f0bed79-b0cd-4c70-88a2-d219ab174db9
 :END:
+*** Misc
+ - NEL will be a prerequisite to Relation Extraction
+ - objective is to produce 3-tuples in the format of ~(entity 1, relationship tag, entity 2)~ : for instance ~(Steve Jobs, Former CEO, Apple Inc)~ is potentially useful relation that could be extracted from the (corpus for the task) book "Steve Jobs by Walter Isaacson".
+ - it's an important step towards building a knowledge base which can further be employed to improve search and solve question-answering tasks.
+*** Approaches
+ - handwritten patterns (regex) are a basic start
+   - accurate when the format is known for sure but won't be able to cover all kinds of relations within a generic corpus
+ - from an ML perspective : Relation extraction can be formulated as supervised classification problem. The dataset is a collection of predefined relations, similar to classification categories.
+   - the task is then reduced to identifying if (binary classification) and how(multiclass classification) two entities are related.
+ - see [[id:a23297c0-8d18-41c1-83ed-6ac68ad68606][Distant Supervision]]
+ - Unsupervised Relation extraction (aka open IE) aims to extract relations without relying on existing training data or a list of relations: the relations may be in the form of ~(verb, argument 1, argument 2,...)~.
+   - for instance :- ~(published, Albert Einstein, The theory of relativity, in 1915)~ -> this can be further broken down into 3 relations with only two of the arguments in each.
+ - again, off-the-shelf APIs are preferred if a domain specific solution isn't needed -> see Watson API for RE
 ** Temporal Information Extraction
 :PROPERTIES:
 :ID:       8731f087-2ee8-4b2e-98c8-de52c78dc399
 :END:
+ - extracting date and time info from text
+ - converting to a standard format for further use (calendars, meet schedulers, etc)
+   - referred as "Temporal IE and normalization" altogether
+ - see library : python Duckling
+** Event Extraction
+:PROPERTIES:
+:ID:       faaf9ec9-d118-483d-8851-a159c778fd7e
+:END:
+ - treated as a supervised learning problem in NLP literature.
+ - contemporary approaches use sequence tagging and multilevel classifiers.
+ - identify events over time, chain them, link them and so on ..
 ** Template Filling
 :PROPERTIES:
 :ID:       bb81b6bd-8384-43c8-b935-204d2115e64e
 :END:
+ - extracting entities from a common template the occurs several times
+ - Linking entities to build an an entity graph
+ - templates to be filled are pre-determined
+ - modelled as two stage, supervised task (similar to relation extraction)
+   - is a template present in a given sentence?
+   - what are the candidates for that template in that sentence?
+
 * Generic IE Pipeline
 :PROPERTIES:
 :ID:       c20845f9-d217-4a73-956a-4aebde564c59
@@ -118,6 +159,7 @@ I(("`Relation
 Extraction`"))
 J(("`Temporal
  Information
+ and Event
  Extraction`"))
 A ==> B
 B ==> C

@@ -46,3 +46,10 @@ I plan on accumulating and assimilating all that I learn from various domains in
 :ID:       e0963cc2-1c67-4d07-8541-606611e93f83
 :END:
  - traditional ML algos and preprocessing utilities
+** Duckling
+:PROPERTIES:
+:ID:       29ceffad-9287-4976-8ca6-820fac45e763
+:END:
+ - Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings.  
+ - https://github.com/facebook/duckling
+   - is a haskell lib but has wrappers in other languages.

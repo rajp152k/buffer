@@ -17,8 +17,8 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
 ** https://simonwillison.net/2023/Aug/3/weird-world-of-llms/
 ** https://mitpress.mit.edu/mit-presss-direct-to-open-d2o-achieves-second-year-goal-opens-access-to-eighty-two-new-books-in-2023/
-** [[https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start][How to sabotage your salary negotiation efforts before you even start]] 
-** 
+** [[https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start][How to sabotage your salary negotiation efforts before you even start]]
+** https://questdb.io/blog/concurrent-lockfree-datastructure-design-walkthrough/
 * Podcasts
 ** https://corecursive.com/lisp-in-space-with-ron-garret/
 * Books 
@@ -36,6 +36,7 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store][Dynamo: Amazon’s highly available key-value store - Amazon Science]] 
 ** [[https://arxiv.org/abs/2003.02320][[2003.02320] Knowledge Graphs]]
 ** https://www.lrde.epita.fr/dload/papers/newton.16.monad.report.pdf
+** https://applied-langua.ge/~hayley/swcl-gc.pdf
 * Docs/tools/tuts
 ** https://spacy.io/
 ** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]
@@ -46,6 +47,7 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** https://seed-rs.org/
 ** https://lunrjs.com/
 ** https://github.com/norvig/pytudes
+** https://www.math.uci.edu/~rvershyn/teaching/hdp/hdp.html
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]

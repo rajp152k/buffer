@@ -5,6 +5,12 @@
 #+filetags: :transient:
 
 * Comment stream
+** 0x2147
+ - writing a book -> [[id:20230827T153308.339339][The Definitive Guide to Books]] 
+ - should be a good experience when starting out
+ - there has to be a first someday
+ - will be completing it in this dump itself and plan on finding out what it takes to actually write a book
+ - estimated it to take around 90 hours of work.
 ** 0x2141
  - setting up a new content creation pipeline video and blog that covers how I note ideas from end to end.
    - the tool-agnostic part is already covered in 0x2118 below.
@@ -68,20 +74,20 @@ The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection o
 
 * Production
 An index of all that I write about, published, work in progress and prospective.
-
 ** Published
 
-|------------+-----------------------------------------------------------+----------------------------------------------------------------|
-| time index | Production                                                | link                                                           |
-|------------+-----------------------------------------------------------+----------------------------------------------------------------|
-|     0x2141 | My Creation and Publishing Pipeline                       | https://rajpatil.dev/post/my-creation-and-publishing-pipeline/ |
-|     0x213F | Common Lisp: The Series - 0 : Introduction                | https://rajpatil.dev/post/clts/clts-0/                         |
-|     0x213B | RIP, Bram Moolenar                                        | https://rajpatil.dev/post/rip-bram-moolenar/                   |
-|     0x213B | My Emacs Configuration                                    | https://rajpatil.dev/post/my-emacs-config-0x213b/              |
-|     0x213A | Common Lisp - Gentle Introduction to Symbolic Computation | https://rajpatil.dev/post/cl-aitsc/                            |
-|     0x212B | PICC: pragmatics of intellectual consumption and creation | https://rajpatil.dev/post/picc/                                |
-|     0x211B | Here we go again...                                       | https://rajpatil.dev/post/writing-setup/                       |
-|------------+-----------------------------------------------------------+----------------------------------------------------------------|
+|------------+-----------------------------------------------------------+----------------------------------------------------------------+----------|
+| time index | Production                                                | link                                                           | Category |
+|------------+-----------------------------------------------------------+----------------------------------------------------------------+----------|
+|     0x2147 | Common Lisp : The Series - 0.1 : Representing Programs    | https://rajpatil.dev/post/clts/clts-0.1/                       | CLTS     |
+|     0x2141 | My Creation and Publishing Pipeline                       | https://rajpatil.dev/post/my-creation-and-publishing-pipeline/ | Writing  |
+|     0x213F | Common Lisp: The Series - 0 : Introduction                | https://rajpatil.dev/post/clts/clts-0/                         | CLTS     |
+|     0x213B | RIP, Bram Moolenar                                        | https://rajpatil.dev/post/rip-bram-moolenar/                   | Tribute  |
+|     0x213B | My Emacs Configuration                                    | https://rajpatil.dev/post/my-emacs-config-0x213b/              | Configs  |
+|     0x213A | Common Lisp - Gentle Introduction to Symbolic Computation | https://rajpatil.dev/post/cl-aitsc/                            | Book     |
+|     0x212B | PICC: pragmatics of intellectual consumption and creation | https://rajpatil.dev/post/picc/                                | Skills   |
+|     0x211B | Here we go again...                                       | https://rajpatil.dev/post/writing-setup/                       | Writing  |
+|------------+-----------------------------------------------------------+----------------------------------------------------------------+----------|
 
 ** Work in Progress
 *** Who are you?
@@ -117,4 +123,3 @@ An index of all that I write about, published, work in progress and prospective.
  - if you're a physics aficionado like I am, consider observing your surroundings and coming up with mental mathematical models to represent reality.
 
 *** Why text is awesome (for logicians.) and semantically discrete images is what you should limit yourself to
-*** 

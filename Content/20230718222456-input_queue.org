@@ -17,6 +17,8 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
 ** https://simonwillison.net/2023/Aug/3/weird-world-of-llms/
 ** https://mitpress.mit.edu/mit-presss-direct-to-open-d2o-achieves-second-year-goal-opens-access-to-eighty-two-new-books-in-2023/
+** [[https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start][How to sabotage your salary negotiation efforts before you even start]] 
+** 
 * Podcasts
 ** https://corecursive.com/lisp-in-space-with-ron-garret/
 * Books 
@@ -43,6 +45,7 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** https://jupyter-ai.readthedocs.io/en/latest/
 ** https://seed-rs.org/
 ** https://lunrjs.com/
+** https://github.com/norvig/pytudes
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]

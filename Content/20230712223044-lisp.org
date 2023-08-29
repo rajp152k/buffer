@@ -6,6 +6,55 @@
 #+filetags: :lisp:
 
 * Comment Stream
+** 0x2142
+ - just noticed that streams are inefficient when reading chapters across days.
+ - using scratch for continuous evaluations and will dump the corresponding code at once whenever I'm done with a particular section
+ - that way, I won't need to address similar notions twice over multiple days
+ - the objective isn't to build good notes but be practical...
+ - alright, just flew off a tangent and spent some time on symbol <-> interop to generate code in a parametric manner
+ - still a little too rough around the edges -> I bet I might be conceptually messing it up somewhere and a better way exists.., but I got a generic function definer working that can generate getters from a list...
+ - cool xp, dumping the code below..:
+
+#+begin_src lisp 
+  (defvar *db* nil)
+  (defvar *indicator-list* (list 'title 'artist 'rating 'ripped))
+
+  (defun make-record (title artist rating ripped)
+    (list :title title
+	  :artist artist
+	  :rating rating
+	  :ripped ripped))
+
+  (defvar test-record (make-record "sentinel title"
+				   "sentinel artist"
+				   "sentinel rating"
+				   "sentinel ripped"))
+  (defun add-record (cd)
+    (push cd *db*))
+
+  (defun generate-getters (indicator-list)
+    (defun build-key (symbol)
+      (read-from-string (concatenate 'string
+				     ":"
+				     (string symbol))))
+    (eval
+     (let ((defuns (mapcar
+		    #'(lambda (indicator)
+			(let ((func-name
+				(read-from-string
+				 (concatenate 'string
+					      "get-"
+					      (string indicator)))))
+			  `(defun ,func-name (record-plist)
+			     (getf record-plist ,(build-key indicator)))))
+		    indicator-list)))
+       `(progn ,@defuns))))
+
+  (generate-getters *indicator-list*)
+#+end_src
+
+
+ 
 ** 0x213F
 - starting C3 : a simple database
 - plists : dictionaries built upon lists (the worst hash table possible)
@@ -49,7 +98,6 @@
   (defvar *db* nil)
   (let ((cd (make-cd .. .. .. ..))))
 #+end_src
-
 ** 0x213C
  - started my first formal pass of [[id:2c00e44f-d40d-4386-b756-dda7f1a2da12][Practical Common Lisp]]
  - done with [[id:0b1a6c07-e166-45b3-9dfd-515892bac854][Common Lisp: A gentle introduction to symbolic computation]]

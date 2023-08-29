@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       20230827T153308.339339
+:END:
+#+title: The Definitive Guide to Books
+#+filetags: :book:
+
+* Planning stream
+** 0x2146
+ - started my morning with 20 mins of mental warm up, listening to a relevant podcast, while juggling and some pushups and squats sprinkled in ...
+   - am definitely awake without my daily caffeine cognitive kick-starter; yet to see how my workouts will be given this is the first day of going caffeine free.
+** 0x2141
+- was thinking of a blog post on how to go about choosing your next book but this is a great opportunity to write a book on everything that is to figure out about books. Given that my best reading spree resulted in consuming 100+ diverse books over a span of two years. I can elaborate pretty well upon how reading can change your life for the better forever change the way you operate.
+- Planning for this to be "the" guide for humans that want to read diversely -> From Dante's Divine Comedy to Da-vinci's codices ..
+- some basic tissue paper math, for the number of hours I need to invest..
+
+  ------------
+  
+#+begin_src lisp  :exports both
+  (let ((words-per-line 15)
+        (lines-per-page 20)
+        (expected-pages 200)
+        (expected-words-per-hour 500)
+        (excess-frac 1.5)
+        (self-confidence 2))
+    (/ (* words-per-line lines-per-page expected-pages excess-frac)
+       (* expected-words-per-hour self-confidence)))
+#+end_src
+
+#+RESULTS:
+: 90.0
+
+... hours of effort needed.
+
+-------------
+
+- will be writing it in the brain dump in different notes 
+
+* Structure 
+** Introduction
+*** Who is this book for
+**** reading experience
+- ones who wish to start reading
+- monolithic readers
+- voracious readers who wish to pump their egos
+*** Personal reading journey
+Began at 19 with a technical inclination and hardly ready a book other than something that my curriculum demanded. Over 3 years, read 13 , 41 and 54 books respectively ranging from ....
+** Abstract
+*** Why Read
+**** An intricate and comparatively (to photos, videos, etc) potent index into your past :- your time now, in hindsight, will seem denser.
+- depending on what phase of life you read a book in, revisiting your reviews later on will help you recall smaller details that no other media can compare to...
+- stack that into a stream of timestamped reviews and you have a backdoor to your memories so powerful that you can recite the evolution of your intellectual state over that period of time.
+**** Cognitive Benefits
+- can formulate yourself effectively and conversations won't fizzle out because you will be relevant.
+**** Social Benefits 
+- Access to eccentric and interesting communities
+- sustaining a conversation : you may rightfully begin hating small talk
+** Pragmatics
+*** what should you read : the joy of reading diversely
+*** choosing your next book
+*** making the habit stick
+*** making reading a part of your life
+*** fixating on techniques and tools
+*** Consolidating what you read : reviews, blogs, videos.
+** Writing Books
+*** Journals
+*** Blogs
+*** Books

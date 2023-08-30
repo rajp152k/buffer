@@ -59,7 +59,7 @@ An index of all the videos : published, work in progress, and prospective
  - Vim, Emacs and VS code
  - first : learning to touch type
  - ditching the mouse
- - customization : everything is data (text) (see [[id:20230728T053744.817854][homoiconicity]])
+ - customization : everything is data (text)
    - variables, functions, hooks, representations...
    - custom keymaps :- chords and strokes	
    - implicitly encode semantics into the binds

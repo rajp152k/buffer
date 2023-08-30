@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       67812842-bd33-4927-a693-fdf02721b019
+:END:
+#+title: Mixture of Experts
+#+filetags: :ai:
+
+* Stream
+** 0x2148
+Read about GPT4 being a mixture of experts. Will explore further soon
+
+* Resources
+- https://en.wikipedia.org/wiki/Mixture_of_experts
+

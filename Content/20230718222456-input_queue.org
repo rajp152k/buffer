@@ -19,6 +19,7 @@ I'll most likely begin with foundational papers in any domain and then explore d
 ** https://mitpress.mit.edu/mit-presss-direct-to-open-d2o-achieves-second-year-goal-opens-access-to-eighty-two-new-books-in-2023/
 ** [[https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start][How to sabotage your salary negotiation efforts before you even start]]
 ** https://questdb.io/blog/concurrent-lockfree-datastructure-design-walkthrough/
+** http://matpalm.com/blog/cool_machine_learning_books/
 * Podcasts
 ** https://corecursive.com/lisp-in-space-with-ron-garret/
 * Books 

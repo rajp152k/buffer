@@ -19,6 +19,7 @@ I plan on accumulating and assimilating all that I learn from various domains in
 ** [[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Interpretable ML]]
  - ML models are generally a black box that are inexplicable representations of the data they are trained on.
  - understanding how a model favors certain outputs for a set of input features is a domain in itself.
+** [[id:67812842-bd33-4927-a693-fdf02721b019][Mixture of Expert]]
 
 
 * Sentinels 

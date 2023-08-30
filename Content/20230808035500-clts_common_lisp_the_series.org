@@ -79,7 +79,7 @@ While definining the series structure, following a top down approach initially f
 
   - ( operator ... operands ...)
 
-- natural segue into representing code as data (aka homo-iconicity)
+- natural segue into representing code as data (aka [[id:20230728T053744.817854][homoiconicity]])
 
   - as nested lists :-> hence the name ..
     - LISt Processing

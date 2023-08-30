@@ -5,6 +5,12 @@
 #+filetags: :transient:
 
 * Comment stream
+** 0x2148
+ - elaborating on the book that I mentioned yesterday, found this interesting strategy on writing a book
+   - to publish it in atomic parts with each fundamental idea being a blog post.
+   - this way I get intermittent feedback instead of a final review and don't have to deal with the stress of not producing any output.
+   - over time, as my style develops, I could even reiterate over old blogs and compile them into the book, refactored and freshened up a little.
+ - inspiration : derek sivers and seth godin
 ** 0x2147
  - writing a book -> [[id:20230827T153308.339339][The Definitive Guide to Books]] 
  - should be a good experience when starting out

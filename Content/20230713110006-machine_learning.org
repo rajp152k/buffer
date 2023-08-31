@@ -4,7 +4,7 @@
 #+title: Machine Learning
 #+filetags: :root:transient:
 
-This node captures misc info[[id:20230713T110006.406161][Machine Learning]]rmation regarding the large root that ML is.
+This node captures misc information regarding the large root that ML is.
 I plan on accumulating and assimilating all that I learn from various domains in a uniform manner here. It'll be notebooks from completed [[id:f275e17f-307e-4e2b-a67b-6511774d0a3d][kaggle]] competitions, blogs, papers, courses, anything that's worth goes in. I don't plan on incorporating complete book walkthroughs in here - I'll reference them and won't be mapping what I read verbatim. [[id:9539ffd2-433b-4cac-babc-0d45990a4642][Wikipedia]] is a good quick reference so will be referencing that too rather than typing what's within convenient reach.
 
 * Competition Analysis Indexes
@@ -28,13 +28,14 @@ I plan on accumulating and assimilating all that I learn from various domains in
 :ID:       68e44f89-7d87-4ac6-9c00-f6ba3c38257d
 :END:
  - Industrial grade NLP tooling
+ - exploring the library with [[id:a1670dc7-c7fc-45a6-8e95-1f4a6ddeb7e6][Spacy 101]]
 ** TextaCy
 :PROPERTIES:
 :ID:       3fba4bcf-cf1d-491e-b847-71b08c86080f
 :END:
  - built on top of [[id:68e44f89-7d87-4ac6-9c00-f6ba3c38257d][Spacy]] for more specific nlp tasks
    -> see [[id:543414ce-fd12-470b-a38a-c61cfc10bfe4][Information Extraction]] for instance
-
+   
 ** DisplaCy
 :PROPERTIES:
 :ID:       a784e58a-e9f9-438c-b93d-d1995a2fb184
@@ -47,6 +48,7 @@ I plan on accumulating and assimilating all that I learn from various domains in
 :ID:       e0963cc2-1c67-4d07-8541-606611e93f83
 :END:
  - traditional ML algos and preprocessing utilities
+
 ** Duckling
 :PROPERTIES:
 :ID:       29ceffad-9287-4976-8ca6-820fac45e763
@@ -54,3 +56,4 @@ I plan on accumulating and assimilating all that I learn from various domains in
  - Language, engine, and tooling for expressing, testing, and evaluating composable language rules on input strings.  
  - https://github.com/facebook/duckling
    - is a haskell lib but has wrappers in other languages.
+     

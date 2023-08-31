@@ -4,6 +4,8 @@
 :END:
 #+title: Natural Language Processing
 
+disambiguation : see [[id:f4afa637-d7d3-40ef-91a6-722c17d73c3c][Natural Language Understanding]]
+
 Natural language, unlike computer languages, are not completely structured; they may have rules but they also have eccentricities that may not be explicitly captured by rules/decisions but need more complex techniques to be employed: analyzing multiple patterns of a similar instance being one of them.
 
 Solution approaches trickle down into  the following:
@@ -23,6 +25,3 @@ Solution approaches trickle down into  the following:
 **** [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
 **** [[id:543414ce-fd12-470b-a38a-c61cfc10bfe4][Information Extraction]]
 
-* Buffer
-** [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
- - when fitting a corpus to an nlp pipeline, do take note of the percentage of words that are OOV(if too high, you could training your own embedder instead of a pretrained embedder)

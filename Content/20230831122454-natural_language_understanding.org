@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       f4afa637-d7d3-40ef-91a6-722c17d73c3c
+:ROAM_ALIASES: NLU
+:END:
+#+title: Natural Language Understanding
+#+filetags: :nlu:ai:
+
+NLU aims to fill in the gap between natural and machine language. This involves learning language syntax, context, patterns, definitions, sentiment and intent.
+Note that the focus of [[id:20230713T150554.400026][NLP]] is to represent natural language in a machine readable format.
+

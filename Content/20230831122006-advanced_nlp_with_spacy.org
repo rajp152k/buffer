@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6a8eaa08-5a8e-4696-b699-367fefb1d95b
+:END:
+#+title: Advanced NLP with spaCy
+#+filetags: :tool:nlp:ai:
+
+notes when following the course :https://course.spacy.io/en/.
+see [[id:a1670dc7-c7fc-45a6-8e95-1f4a6ddeb7e6][Spacy 101]] before this.
+

@@ -1,0 +1,83 @@
+:PROPERTIES:
+:ID:       a1670dc7-c7fc-45a6-8e95-1f4a6ddeb7e6
+:END:
+#+title: Spacy 101
+#+filetags: :tool:nlp:ai:
+
+notes when following the tutorial https://spacy.io/usage/spacy-101.
+The tooling itself ([[id:68e44f89-7d87-4ac6-9c00-f6ba3c38257d][SpaCy]]) is referred throughout this zettelkasten as a sentinel subtree in the machine learning head. Once this has been processed, will also be processing https://course.spacy.io/en/ ([[id:6a8eaa08-5a8e-4696-b699-367fefb1d95b][Advanced NLP with spaCy]]) into these notes 
+
+* Overview
+** Features available
+|-----------------------------+-------------------------------------------------------|
+| Task/Utilisation            | Existing Relevant Node                                |
+|-----------------------------+-------------------------------------------------------|
+| Tokenization                | [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]                                   |
+| Part of Speech Tagging      | [[id:543414ce-fd12-470b-a38a-c61cfc10bfe4][Information Extraction]]                                |
+| Dependency Parsing          | [[id:543414ce-fd12-470b-a38a-c61cfc10bfe4][Information Extraction]]                                |
+| Lemmatization               | [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]                                   |
+| Sentence Boundary Detection | ---                                                   |
+| Named Entity Recognition    | [[id:71a53540-e823-49a2-9049-b286ee265e62][Named Entity Recognition (NER)]]                        |
+| Entity Linking              | [[id:01cef446-e7e0-48f6-af7b-d0478e689cf2][Named Entity Disambiguation and Linking (NED and NEL)]] |
+| Similarity                  | see [[id:2ec4a33e-479d-466b-b2b1-0a5925c0222c][cosine similarity]] for one approach                |
+| Text Classification         | [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]                                   |
+| Training                    | ---                                                   |
+| Serialization               | [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]                                         |
+|-----------------------------+-------------------------------------------------------|
+
+** Linguistic annotations
+ - variety of tooling to gain insights into the grammatical structure of text being analysed.
+   - word types (part of speech), further categorization eg:- nouns into subjects and objects. same words differentiated via their POS ("google" being a verb or a noun...)
+
+** Trained pipeline
+Most of the features work independently but some require loading "trained pipelines". They're composed of the following:
+ - binary weights for part of speech tagger, dependency parser, and NER
+ - lexical entries : words and their attributes (spelling, length)
+ - data files: lemmatization and lookup tables
+ - word vectors: see [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
+ - configs: metadata to load the pipeline with appropriate configuration
+   
+*** Loading a pipeline
+
+ - trained pipelines are loaded as ~Language~ objects
+ - on the first call, the pipeline will be downloaded and installed
+ - these ~Language~ objects are usually named as ~nlp~
+ - when passing text through a pipeline, we receive a processed ~Doc~ object
+
+#+begin_src python
+  import spacy
+  nlp = spacy.load('en_core_web_sm')
+  doc = nlp("the quick brown fox jumped over the lazy dog")
+  for token in doc:
+     print(token.text, token.pos_, token.dep_)
+#+end_src
+
+ - some convenient characteristics of a ~Doc~ object
+   - is an iterable of tokens
+   - each token has the attributes .text , .pos_ (part of speech) , and .dep_ (dependency relation)
+   - no information is lost and all text (whitespace, unique characters) will still be accessible in the doc object
+   - see https://spacy.io/api/token
+
+
+
+ 
+ 
+* Elaborating
+** Tokenization
+ - see [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]]
+ - segmenting text into words, punctuation and other similar discrete structures
+ - this needs to be done smartly and based on context :- each period isn't a full stop ("U.S.A" for instance should be one token without any punctuations)
+ - a trained pipeline (Language object usually addressed as nlp) when applied to a text, produces an iterable of tokens. 
+ - first step is splitting with whitespace, after which the splits are processed from left to right with the following checks:
+   1. check if it is an exception
+      - "don't" => "do" and "n't"
+      - "U.K." stays the same
+   2. check or splittable suffixes, prefixes and infixes
+      - commas, periods, hyphens or quotes are candidates for such splits
+      - anti-clockwise => "anti" and "clockwise"
+ - each language needs its own set of extensive hard coded data and exception rules that need to be loaded when using that particular trained pipeline.
+ - for further details and customization options, see :
+   - https://spacy.io/usage/linguistic-features#language-data
+   - https://spacy.io/usage/linguistic-features#tokenization
+** Part of speech tags and dependencies
+ - post tokenization, a ~Doc~ can be parsed and tagged.

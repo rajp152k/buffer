@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       86de7485-e9c0-4b7f-9f11-adb8229afdf4
+:END:
+#+title: Serialization
+#+filetags: :tbp:tool:programming:
+
+Backing up objects (models, data structures in memory, etc) is an important aspect of large scale projects.
+
+Exploring formats and approaches soon (node to be populated ...)
+

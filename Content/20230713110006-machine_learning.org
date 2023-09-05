@@ -57,3 +57,12 @@ I plan on accumulating and assimilating all that I learn from various domains in
  - https://github.com/facebook/duckling
    - is a haskell lib but has wrappers in other languages.
      
+
+** sense2vec
+:PROPERTIES:
+:ID:       7b44cf3d-8c05-49b4-b3ef-c17ba8ff4183
+:END:
+ - more sensible vector representations for spans of tokens than simply averaging them
+ - see:
+    - https://github.com/explosion/sense2vec
+    - https://explosion.ai/blog/sense2vec-reloaded

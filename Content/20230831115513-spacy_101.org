@@ -295,4 +295,41 @@ The major nodes in the flowchart above are referred to as container objects. her
 | Token     | an atom in the vocab (word, punctuation, whitespace, etc.)     |
 
 *** Processing Pipelines
+ - collation of multiple pipeline components that are called in order in the Doc object.
+ - the tokenizer is separate from this and is run before them all
+ - a pipeline can be added via ~Language.add_pipe~ by supplying the statistical model and/or trained weights. Alternatively, supplying rule-based modifications to the Doc is also possible.
+ - what follows is an overview of some components that can be added via spaCy
 
+
+| Name               | Description                                                                             |
+|--------------------+-----------------------------------------------------------------------------------------|
+| AttributeRuler     | set token attributes using matcher rules                                                |
+| DependencyParser   | predict synctactic dependencies                                                         |
+| EditTreeLemmatizer | predict base forms of the tokens                                                        |
+| EntityLinker       | disambiguation for named entities (into nodes) in a knowledge base                      |
+| EntityRecognizer   | predict named entities                                                                  |
+| EntityRuler        | add entity spans to the doc using token based rules or extract phrase matches           |
+| Lemmatizer         | determine base forms using rules and lookups                                            |
+| Morphologizer      | predict morphological features and coarse-grained POS tags                              |
+| SentenceRecognizer | predict sentence boundaries                                                             |
+| Sentencizer        | implement rule-based sentence boundary detection, without the DependencyParser          |
+| Tagger             | predict POS tags                                                                        |
+| TextCategorizer    | predict categories and labels over the whole documnent                                  |
+| Tok2Vec            | apply a token to vector model and set its outputs                                       |
+| TrainablePipe      | base class from which all trainable pipeline components inherit                         |
+| Transformer        | use a transformer and set its outputs                                                   |
+| [[https://spacy.io/api/pipeline-functions][other functions]]    | apply custom functions to Doc in a pipeline :- convenience and uniformity of processing |
+
+*** Matchers
+
+Pattern matching for Doc objects :- used to find and extract information. They operate on Docs, yielding access to matched tokens in context.
+
+| Name              | Description                                                         |
+|-------------------+---------------------------------------------------------------------|
+| DependencyMatcher | match sequences based on dependency trees using [[id:39b76234-e972-4145-9d7a-707a04bab95e][SemGrexPattern]]      |
+| Matcher           | match sequences of tokens, based on pattern rules, similar to regex |
+| PhraseMatcher     | match sequences of tokens based on phrases                          |
+
+*** Misc
+
+checkout other relevant classes [[https://spacy.io/usage/spacy-101#architecture-other][in other classes]]

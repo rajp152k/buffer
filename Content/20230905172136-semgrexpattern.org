@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       39b76234-e972-4145-9d7a-707a04bab95e
+:END:
+#+title: SemGrexPattern
+#+filetags: :nlp:tool:java:
+
+
+first encountered during [[id:a1670dc7-c7fc-45a6-8e95-1f4a6ddeb7e6][Spacy 101]] in the context of pattern matching for dependency graphs.
+[[https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/semgraph/semgrex/SemgrexPattern.html][SemGrex JavaDoc]]
+
+

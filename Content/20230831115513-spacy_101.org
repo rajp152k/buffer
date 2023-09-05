@@ -81,3 +81,61 @@ Most of the features work independently but some require loading "trained pipeli
    - https://spacy.io/usage/linguistic-features#tokenization
 ** Part of speech tags and dependencies
  - post tokenization, a ~Doc~ can be parsed and tagged.
+   - the statistical models come into play at this stage.
+ - linguistic annotations are available as attributes of token objects.
+   - strings are hashed for efficiency, so defaults are integers:
+     - ~tok.pos~ : integer hash of part of speech tag
+     - ~tok.pos_~ : the part of speech tag (string)
+     - ~tok.dep~ : integer hash of the dependency tag
+     - ~tok.dep_~ : the dependency tag as string
+   - conventions for attributes:
+     - base word is the integer hash
+     - _ appended yields the string tag
+   - a summary of the attributes of a token is as follows:
+     - text : the original text
+     - Lemma : base form of the word
+     - POS : simple part of speech tags in the format mentioned https://universaldependencies.org/u/pos/
+     - Tag : detailed part-of-speech tags
+     - Dep : syntactic dependency -> relation between tokens
+     - shape : capitalization, punctuation and digits (eg: Apple -> Xxxxx, U.K. -> X.X., 3 -> d)
+     - is alpha : predicate on the token being composed of only alphanumeric characters
+     - is stop : predicate on the token being a stop word
+ - spacy.explain("...") can be used to fetch short descriptions of tags and labels
+ - extra tooling : for visualizations see [[id:a784e58a-e9f9-438c-b93d-d1995a2fb184][DisplaCy]]
+
+** Named Entities
+ - a named real world object...
+   - person, country, product, book title, etc..
+ - a doc object is an iterable of tokens by default
+ - an iterable of entities can be fetched via ~doc.ents~:
+
+#+begin_src python
+  import spacy
+
+  # downloading and loading the languge object
+  nlp = spacy.load("en_core_web_sm") 
+
+  # creating the document object
+  doc = nlp("the quick brown fox jumped over the lazy dog")
+
+  for ent in doc.ents:
+    print(ent.text, ent.start_char, ent.end_char, ent.label_)
+#+end_src
+
+ - again, the [[id:a784e58a-e9f9-438c-b93d-d1995a2fb184][DisplaCy]] visualizer 
+ - for a theoretical outlook, see [[id:71a53540-e823-49a2-9049-b286ee265e62][Named Entity Recognition (NER)]]
+
+** Word Vectors (embeddings) and Similarity
+ - see [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]] and specifically [[id:06c21d6f-fa59-46b2-a8b7-c54f5f62fc78][text-embeddings]]
+ - note that small trained pipelines like "en_core_web_sm" (ending in "sm") don't ship with word-vectors
+   - instead, use the variant ending in "lg" : "en_core_web_lg"
+ - given the pipeline ships with vectors, normal objects like ~token~, ~doc~ and ~span~ now have a ~vector~ attribute that defaults to the average of their token vectors.
+#+begin_src python
+  import spacy
+  nlp = spacy.load("en_core_web_lg")
+
+  doc = nlp("the quick brown fox jumps over the lazy dog")
+
+  for token in doc:
+    print(token.text, token.has_vector, token.vector_norm, token.is_oov)
+#+end_src

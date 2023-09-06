@@ -433,12 +433,12 @@ read more on saving and loading [[https://spacy.io/usage/saving-loading#models][
 
 | Name                                           | Desc.                                                                                           |
 |------------------------------------------------+-------------------------------------------------------------------------------------------------|
-| Stop words (stop_words.py)                     | list of most common words in a language that one would benefit from when filtered out           |
-| Tokenizer exceptions (tokenizer_exceptions.py) | special-case rules for tokenization (contractions and abbreviations for instance..)             |
+| Stop words (stop/_words.py)                     | list of most common words in a language that one would benefit from when filtered out           |
+| Tokenizer exceptions (tokenizer/_exceptions.py) | special-case rules for tokenization (contractions and abbreviations for instance..)             |
 | Punctuation rules (punctuation.py)             | regex for splitting tokens (for punctuations, prefixes, suffixes, and infixes)                  |
-| Character classes (char_classes.py)            | character set to be used in regex                                                               |
-| Lexical attributes (lex_attrs.py)              | custom functions to add lexical info ("like_num" for instance to detect "seven", "ten", etc)    |
-| Syntax iterators (syntax_iterators.py)         | functions to compute views of a Doc object based on syntax. used only for [[https://spacy.io/usage/linguistic-features#noun-chunks][noun-chunks]] as of now |
+| Character classes (char/_classes.py)            | character set to be used in regex                                                               |
+| Lexical attributes (lex/_attrs.py)              | custom functions to add lexical info ("like/_num" for instance to detect "seven", "ten", etc)    |
+| Syntax iterators (syntax/_iterators.py)         | functions to compute views of a Doc object based on syntax. used only for [[https://spacy.io/usage/linguistic-features#noun-chunks][noun-chunks]] as of now |
 | Lemmatizer (lemmatizer.py, spacy-lookups-data) | custom lemmatizer implementation and lemmatization tables                                       |
 
 * Conclusion

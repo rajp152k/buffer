@@ -333,3 +333,115 @@ Pattern matching for Doc objects :- used to find and extract information. They o
 *** Misc
 
 checkout other relevant classes [[https://spacy.io/usage/spacy-101#architecture-other][in other classes]]
+
+** Vocabs, Hashes and Lexemes
+
+ - The default preference is to have a single storage of a unique token in the vocab where it is referred to by multiple documents.
+ - strings are encoded to hash values
+ - this also applies to meta-data (tag-strings like "VERB" or "ORG" (entity type)) :- they're also hashed
+ - All internal communication (for the spaCy lib) is carried out via hashes
+
+*** Summarizing Relevant Lingo
+
+| Object      | Description                                                                                        |
+|-------------+----------------------------------------------------------------------------------------------------|
+| Token       | word, punctuation, etc in context (includes attributes, tags and dependencies                      |
+| Lexeme      | word type, without context (includes word shape and flags (for data type (lowercase, digit, etc))) |
+| Doc         | a processed containement of tokens (therefore, also carries context)                               |
+| Vocab       | a collection of lexemes                                                                            |
+| StringStore | a bidirectional mapping b/w hashes and strings                            |
+
+Do note the storage units in the flowchart below with their internal maps
+
+#+begin_src mermaid :file images/spacy101_doc_vocab_stringstore.png :exports results
+graph TD
+subgraph Doc
+doc1("storage via tokens 
+    (context is maintained here)")
+end 
+subgraph Vocab
+vocab1(storage via lexemes)
+end
+subgraph String_Store
+stringStore1(storage via hashes)
+end
+Doc --> |tokens refer to lexemes in | Vocab
+Vocab --> |lexemes are dereferences by hashes in| String_Store
+#+end_src
+
+#+RESULTS:
+[[file:images/spacy101_doc_vocab_stringstore.png]]
+   
+#+begin_src python
+  import spacy
+  nlp = spacy.load("en_core_web_sm")
+  doc = nlp("I don't drink coffee")
+  print(doc.vocab.strings["coffee"])  # 3197928453018144401
+  print(doc.vocab.strings[3197928453018144401])  # 'coffee'
+#+end_src
+
+Note that the same attribute of vocab is referred to lookup strings and hashes.
+
+The only point of maintaining context is the doc object via relations between tokens.
+
+*** Attributes of a Lexeme
+
+#+begin_src python
+  import spacy
+
+  nlp = spacy.load("en_core_web_sm")
+  doc = nlp("I don't drink coffee")
+  for word in doc:
+      lexeme = doc.vocab[word.text]
+      print(lexeme.text, # original text
+       lexeme.orth,      # hash value
+       lexeme.shape_,    # abstract word shape
+       lexeme.prefix_,   # default - first letter of word string
+       lexeme.suffix_,   # default - last three letters of word string
+       lexeme.is_alpha,  # predicate on existence of alphabetic characters
+       lexeme.is_digit,  # predicate on existence of digits
+       lexeme.is_title,  # predicate on the lexeme being in title case
+       lexeme.lang_)     # language of the lexeme
+#+end_src
+
+** Serialization
+ - to save stuff, see [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
+ - spacy offers inbuilt functionality for the same, via [[https://docs.python.org/3/library/pickle.html][pickle]]
+   - pretty convenient, check [[https://dill.readthedocs.io/en/latest/][dill]] for advanced functionalities
+ - All container classes (Language, Doc, Vocab, StringStore) expose this functionality via the following
+
+| Method      | returns | instance              |
+|-------------+---------+-----------------------|
+| .to_bytes   | bytes   | data = nlp.to_bytes() |
+| .from_bytes | object  | nlp.from_bytes(data)  |
+| .to_disk    | -       | nlp.to_disk("path")   |
+| .from_disk  | object  | nlp.from_disk("path") |
+
+read more on saving and loading [[https://spacy.io/usage/saving-loading#models][here]]
+** Training
+ - most pipeline components that spacy uses are statistical (weight based).
+   - rule based pipes can also be incorporated but not focusing on that right now
+ - these weights are decided upon post training that model
+   - that requires training data (pairs of text instances and corresponding labels)
+   - on generic details for training various components, see [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][Text Representation]] and [[id:543414ce-fd12-470b-a38a-c61cfc10bfe4][Information Extraction]]
+ - A generic treaty on training models is explored in the node : [[id:17d3a745-72b6-4cf7-a0a2-ed5ff69830bf][Training Loop]]
+ - for specific info on how to train models in spacy, see [[https://spacy.io/usage/training][this page]]
+
+** Language data
+ - shared and specific language data are stored in their respective directories when working with multiple languages
+ - some relevant lingo to this store is as follows
+
+| Name                                           | Desc.                                                                                           |
+|------------------------------------------------+-------------------------------------------------------------------------------------------------|
+| Stop words (stop_words.py)                     | list of most common words in a language that one would benefit from when filtered out           |
+| Tokenizer exceptions (tokenizer_exceptions.py) | special-case rules for tokenization (contractions and abbreviations for instance..)             |
+| Punctuation rules (punctuation.py)             | regex for splitting tokens (for punctuations, prefixes, suffixes, and infixes)                  |
+| Character classes (char_classes.py)            | character set to be used in regex                                                               |
+| Lexical attributes (lex_attrs.py)              | custom functions to add lexical info ("like_num" for instance to detect "seven", "ten", etc)    |
+| Syntax iterators (syntax_iterators.py)         | functions to compute views of a Doc object based on syntax. used only for [[https://spacy.io/usage/linguistic-features#noun-chunks][noun-chunks]] as of now |
+| Lemmatizer (lemmatizer.py, spacy-lookups-data) | custom lemmatizer implementation and lemmatization tables                                       |
+
+* Conclusion
+ - this should serve as a quick index into what spacy can be used for and how.
+ - it also houses relevant links to internal and external nodes that may be used to explore the same with greater depth.
+ - further objectives include some practical exploration and populating [[id:6a8eaa08-5a8e-4696-b699-367fefb1d95b][Advanced NLP with spaCy]] simultaneously

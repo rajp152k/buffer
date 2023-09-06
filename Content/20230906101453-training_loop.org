@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       17d3a745-72b6-4cf7-a0a2-ed5ff69830bf
+:END:
+#+title: Training Loop
+#+filetags: :tbp:ai:
+
+A node maintaining indexes into details of a generic AI training loop.
+to be populated ...
+

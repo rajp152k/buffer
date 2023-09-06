@@ -410,12 +410,12 @@ The only point of maintaining context is the doc object via relations between to
    - pretty convenient, check [[https://dill.readthedocs.io/en/latest/][dill]] for advanced functionalities
  - All container classes (Language, Doc, Vocab, StringStore) expose this functionality via the following
 
-| Method      | returns | instance              |
-|-------------+---------+-----------------------|
-| .to_bytes   | bytes   | data = nlp.to_bytes() |
-| .from_bytes | object  | nlp.from_bytes(data)  |
-| .to_disk    | -       | nlp.to_disk("path")   |
-| .from_disk  | object  | nlp.from_disk("path") |
+| Method       | returns | instance               |
+|--------------+---------+------------------------|
+| .to\_bytes   | bytes   | data = nlp.to\_bytes() |
+| .from\_bytes | object  | nlp.from\_bytes(data)  |
+| .to\_disk    | -       | nlp.to\_disk("path")   |
+| .from\_disk  | object  | nlp.from\_disk("path") |
 
 read more on saving and loading [[https://spacy.io/usage/saving-loading#models][here]]
 ** Training

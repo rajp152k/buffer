@@ -412,10 +412,10 @@ The only point of maintaining context is the doc object via relations between to
 
 | Method       | returns | instance               |
 |--------------+---------+------------------------|
-| .to\_bytes   | bytes   | data = nlp.to\_bytes() |
-| .from\_bytes | object  | nlp.from\_bytes(data)  |
-| .to\_disk    | -       | nlp.to\_disk("path")   |
-| .from\_disk  | object  | nlp.from\_disk("path") |
+| .to/_bytes   | bytes   | data = nlp.to/_bytes() |
+| .from/_bytes | object  | nlp.from/_bytes(data)  |
+| .to/_disk    | -       | nlp.to/_disk("path")   |
+| .from/_disk  | object  | nlp.from/_disk("path") |
 
 read more on saving and loading [[https://spacy.io/usage/saving-loading#models][here]]
 ** Training

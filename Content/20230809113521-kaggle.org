@@ -3,5 +3,12 @@
 :END:
 #+title: kaggle
 #+filetags: :tools:
-An index for any content hosted on the platform that I reference here.
 
+A stream for any content hosted on kaggle that I reference in this dump.
+
+* Stream
+** 0x214F
+ - planning on exploring some NLP challenges on kaggle that have already been solved
+ - will be reading top notebooks and collating wisdom for quite a while
+ - of course will still be participating...
+ - need to acquire some insight and experience before I actually have a chance at winning

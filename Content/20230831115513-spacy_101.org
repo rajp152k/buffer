@@ -431,15 +431,15 @@ read more on saving and loading [[https://spacy.io/usage/saving-loading#models][
  - shared and specific language data are stored in their respective directories when working with multiple languages
  - some relevant lingo to this store is as follows
 
-| Name                                           | Desc.                                                                                           |
-|------------------------------------------------+-------------------------------------------------------------------------------------------------|
+| Name                                            | Desc.                                                                                           |
+|-------------------------------------------------+-------------------------------------------------------------------------------------------------|
 | Stop words (stop/_words.py)                     | list of most common words in a language that one would benefit from when filtered out           |
 | Tokenizer exceptions (tokenizer/_exceptions.py) | special-case rules for tokenization (contractions and abbreviations for instance..)             |
-| Punctuation rules (punctuation.py)             | regex for splitting tokens (for punctuations, prefixes, suffixes, and infixes)                  |
+| Punctuation rules (punctuation.py)              | regex for splitting tokens (for punctuations, prefixes, suffixes, and infixes)                  |
 | Character classes (char/_classes.py)            | character set to be used in regex                                                               |
-| Lexical attributes (lex/_attrs.py)              | custom functions to add lexical info ("like/_num" for instance to detect "seven", "ten", etc)    |
+| Lexical attributes (lex/_attrs.py)              | custom functions to add lexical info ("like/_num" for instance to detect "seven", "ten", etc)   |
 | Syntax iterators (syntax/_iterators.py)         | functions to compute views of a Doc object based on syntax. used only for [[https://spacy.io/usage/linguistic-features#noun-chunks][noun-chunks]] as of now |
-| Lemmatizer (lemmatizer.py, spacy-lookups-data) | custom lemmatizer implementation and lemmatization tables                                       |
+| Lemmatizer (lemmatizer.py, spacy-lookups-data)  | custom lemmatizer implementation and lemmatization tables                                       |
 
 * Conclusion
  - this should serve as a quick index into what spacy can be used for and how.

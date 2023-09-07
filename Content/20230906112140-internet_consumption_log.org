@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       ab47b014-ba85-4e68-8e61-6af7126dae1f
+:END:
+#+title: internet-consumption-log
+#+filetags: :meta:
+
+A stream of articles, interviews, not-so-easily-indexable content that I consume that I would like to have a record of.
+
+* Stream
+** 0x214F
+ - https://medium.com/kaggle-blog/zero-to-grandmaster-in-a-year-a-winners-interview-with-limerobot-18ddb3a1aae1
+ - https://corecursive.com/lisp-in-space-with-ron-garret/
+   

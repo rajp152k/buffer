@@ -11,3 +11,17 @@ See:
  - &key
  - &body
 
+
+** &key
+
+#+begin_src lisp :exports both
+  (defun foo (&key a b c)
+    (list a b c))
+
+  (foo :a "c" :b "a" :c "b")
+  #+end_src
+
+  #+RESULTS:
+  | c | a | b |
+
+ - if keyworded arg not provided, set to NIL

@@ -29,6 +29,11 @@
 #+RESULTS:
 | FORMAT | T | ~&pair consituents : ~S ~S | 1 | 2 |
 #+end_src
+* Difference between a macro and a function
+ - all macros run at compile time :- they won't be an overhead at run time
+ - do note the difference between a function and a macro
+   - they might result in the same final evaluation but the overhead for a macro is taken care of at compile time.
+   - a function producing an evaluable expression will be tending to this overhead at run time.
 * Tools
  - macroexpand and macroexpand-1 are pretty handy to inspect macro-forms
 * Relevant Major Nodes

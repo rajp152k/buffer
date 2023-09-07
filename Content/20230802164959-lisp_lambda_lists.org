@@ -4,16 +4,71 @@
 #+title: lisp lambda lists
 #+filetags: :lisp:
 
-Follow certain rules to incorporate control over the arguments to functions and input symbols for macros
+Rules to assert control over the arguments to functions and input symbols for macros
 See:
  - &rest
  - &optional
  - &key
  - &body
 
+** &rest
+ - accumulate an arbitary number of arguments into a list
+
+#+begin_src lisp :exports both
+  (defun foo (&rest restlist)
+    restlist)
+
+  (list (foo 1 2 3 4  5 6)
+	(foo 1 2 3)
+	(foo))
+#+end_src
+
+#+RESULTS:
+| (1 2 3 4 5 6) | (1 2 3) | NIL |
+
+** &optional
+ - used to signify optional arguments.
+ - default values can also be provided just as in &key-worded arguments
+ - the only differences between this and &key:
+   - need to insert arguments in order for &optional but that isn't necessary for &key arguments that can be inserted in any order with the relevant :keyword
+
+#+begin_src lisp :exports both
+  (defun foo (&optional (a 1))
+    a)
+
+  (list (foo 3) (foo))
+#+end_src
+
+#+RESULTS:
+| 3 | 1 |
+
+ - initial regular parameters can also be referred in the optional arg list 
+
+#+begin_src lisp :exports both
+  (defun foo (a &optional (b a))
+  (list a b))
+
+  (list (foo 1) (foo 1 2))
+#+end_src
+
+#+RESULTS:
+| 1 | 1 |
+| 1 | 2 |
+
+ - a passage predicate similar to that in &key can be employed
+
+#+begin_src lisp :exports both
+  (defun foo (&optional (a 1 a-p))
+    (list a a-p))
+
+  (list (foo 3) (foo))
+#+end_src
+
+#+RESULTS:
+| 3 | T   |
+| 1 | NIL |
 
 ** &key
-
 #+begin_src lisp :exports both
   (defun foo (&key a b c)
     (list a b c))
@@ -25,3 +80,32 @@ See:
   | c | a | b |
 
  - if keyworded arg not provided, set to NIL
+ - preferably provide a default if there is a possibility of NIL being a reasonable argument to the lambda
+
+#+begin_src lisp :exports both
+  (defun foo (&key (a 0) b)
+    `(,a ,b))
+
+  (list (foo) (foo :a 1) (foo :a 2 :b 3))
+#+end_src
+
+#+RESULTS:
+| 0 | NIL |
+| 1 | NIL |
+| 2 | 3   |
+
+ - a more explicit approach could be binding the predicate on the passage of a variable to a supplied-p associated to each variable.
+
+   
+#+begin_src lisp :exports both
+  (defun foo (&key (a 0 a-p) (b 1 b-p))
+    `(,a ,a-p ,b ,b-p))
+
+  (list (foo) (foo :a 1) (foo :b 0) (foo :a 1 :b 0))
+#+end_src
+
+#+RESULTS:
+| 0 | NIL | 1 | NIL |
+| 1 | T   | 1 | NIL |
+| 0 | NIL | 0 | T   |
+| 1 | T   | 0 | T   |

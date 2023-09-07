@@ -6,6 +6,43 @@
 #+filetags: :lisp:
 
 * Comment Stream
+** 0x2150
+ - updated keyworded args for [[id:136d464a-aee0-4108-aa95-c412b5180823][lisp lambda lists]]
+   - based on the above knowledge, creating a general selector to for a list of records ( a db )
+   - this is to be used in conjunction with a filter (remove-if-not in cl)
+#+begin_src lisp
+  (defvar *db* '()) ;populate *db* with records
+  (defvar *fields* '(title artist rating ripped)) 
+
+  (defun where (&key (title nil title-p)
+		  (artist nil artist-p)
+		  (rating nil rating-p)
+		  (ripped nil ripped-p))
+    #'(lambda (record)
+	(and (if title-p (equal (getf cd :title)
+				title))
+	     (if artist-p (equal (getf cd :artist)
+				 artist))
+	     (if rating-p (equal (getf cd :rating)
+				 rating))
+	     (if ripped-p (equal (getf cd :ripped)
+				 ripped)))))
+
+#+end_src
+
+ - note that we don't need a passage predicate for variables when you're not dealing with booleans (title, artist and rating in this case) 
+   - staying pedagogical anyway though.
+ - this similarly could be extended to updating particular records based on a selector function as above
+ - the author's talking a little about macros now ...
+   - shifting relevant commentary to [[id:b00834e3-eae6-474f-98ab-01c0533533e8][lisp macros]]
+ - done with C3, entering a more formal phase of the book
+ - few naming conventions
+   - surround global vars in *
+   - surround constant vars in +
+   - start low level functions with %
+     - %% for even lower level functions
+ - recalling again that special operators can't be emulated via functions or macros ("if" for instance)
+
 ** 0x214F
  - exploring format directives
    - ~(format <stream> <format string with directives> <symbols>)~
@@ -45,7 +82,6 @@
 ----------
 
  - the author calls for a quick refresher of keyword parameters -> see [[id:136d464a-aee0-4108-aa95-c412b5180823][lisp lambda lists]]
-
 
 ** 0x2142
  - just noticed that streams are inefficient when reading chapters across days.
@@ -92,6 +128,8 @@
 
   (generate-getters *indicator-list*)
 #+end_src
+
+ - do note that ,@ is a list splicer that elevates all the elements in a list to be elements in the parent where it is invoked (in a backquoted list)
 
 ** 0x213F
 - starting C3 : a simple database

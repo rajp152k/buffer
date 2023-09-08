@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       20230908T054510.505181
+:END:
+#+title: SICP-why-what-how
+#+filetags: :blog:yt:lisp:
+
+* Plan
+* Blog 
+* Youtube

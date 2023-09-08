@@ -211,6 +211,10 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
 :PROPERTIES:
 :ID:       b7c7d398-161b-4712-8ace-46c419b1e128
 :END:
+ - setting up a guide to getting started with SICP
+   - planning a youtube video and blog
+ - Titled : [[id:20230908T054510.505181][SICP (expanded) : what, why and how]]?
+
 ** Common Lisp: A gentle introduction to symbolic computation
 :PROPERTIES:
 :ID:       0b1a6c07-e166-45b3-9dfd-515892bac854

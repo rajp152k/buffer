@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       322ac854-7baf-41e2-8895-c33b2ef08f91
+:END:
+#+title: Semi-Supervised Learning
+#+filetags: :ml:
+
+
+A combination of [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]] and [[id:fded2ca7-e60a-4c83-842f-bc60f1ea5260][Unsupervised Learning]].
+The dataset has labelled and unlabelled instances.
+The objective is decided by the supervised learning task.

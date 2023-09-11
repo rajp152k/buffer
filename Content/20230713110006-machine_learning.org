@@ -10,7 +10,6 @@ I plan on accumulating and assimilating all that I learn from various domains in
 * Competition Analysis Indexes
 ** https://www.kaggle.com/competitions/icr-identify-age-related-conditions
 
-
 * Misc nodes
 ** No Free Lunch
  - no model is better at all problems than all other models
@@ -20,7 +19,6 @@ I plan on accumulating and assimilating all that I learn from various domains in
  - ML models are generally a black box that are inexplicable representations of the data they are trained on.
  - understanding how a model favors certain outputs for a set of input features is a domain in itself.
 ** [[id:67812842-bd33-4927-a693-fdf02721b019][Mixture of Expert]]
-
 
 * Sentinels 
 ** SpaCy
@@ -57,7 +55,6 @@ I plan on accumulating and assimilating all that I learn from various domains in
  - https://github.com/facebook/duckling
    - is a haskell lib but has wrappers in other languages.
      
-
 ** sense2vec
 :PROPERTIES:
 :ID:       7b44cf3d-8c05-49b4-b3ef-c17ba8ff4183
@@ -66,3 +63,16 @@ I plan on accumulating and assimilating all that I learn from various domains in
  - see:
     - https://github.com/explosion/sense2vec
     - https://explosion.ai/blog/sense2vec-reloaded
+      
+** The Hundred Page Machine Learning Book
+:PROPERTIES:
+:ID:       523db378-6e64-41a3-8890-ad782c67b5e9
+:END:
+ - supposedly a dense ref into most stuff that I need to know about ML
+   - reading and documenting densly into nodes of this web
+ - this is a sentinel ref for those nodes to refer as an index
+ - notes from this book are rooted in the node : [[id:33882050-cc96-447b-9022-bcbb1757af9d][the100pagemlbook]]
+
+   | start                  | end |
+   |------------------------+-----|
+   | [2023-09-11 Mon 11:00] | --- |

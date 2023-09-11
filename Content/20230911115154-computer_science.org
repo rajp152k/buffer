@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6f9a4752-aa66-42cf-9b88-2e4fa2091511
+:END:
+#+title: Computer Science
+#+filetags: :tbp:cs:
+

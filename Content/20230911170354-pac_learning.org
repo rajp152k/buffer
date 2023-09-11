@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       7eadb2fb-1568-441b-a97a-99bd4ab7be0a
+:END:
+#+title: PAC Learning
+#+filetags: :tbp:ml:ai:
+
+"Probably Approximately Correct Learning"
+
+* Resources
+ - [[https://en.wikipedia.org/wiki/Probably_approximately_correct_learning][Wikipedia]]

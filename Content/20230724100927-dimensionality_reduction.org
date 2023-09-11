@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ec4cd02f-e700-41ce-93df-484dfdf8d3eb
 :END:
-#+title: dimensionality reduction
-#+filetags: :math:
+#+title: Dimensionality Reduction
+#+filetags: :tbp:math:
 

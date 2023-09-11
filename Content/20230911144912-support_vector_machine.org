@@ -1,0 +1,88 @@
+:PROPERTIES:
+:ID:       b278fc18-a6cf-4e41-b015-502dbad9f056
+:END:
+#+title: Support Vector Machine
+#+filetags: :ml:ai:
+
+Note : this is a form of a [[id:7edf45ab-513a-4fb7-84c8-ab2c07070bcc][Statistical Model]] and a classical example for [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]]
+
+* Pedagogical Representation build up
+
+An SVM algorithm
+ - envisions each feature vector as a point in a high-dimensional space
+ - separates (in the context of classification) these points via a hyperplane (called a decision boundary)
+   - which can be symbolically expressed as follows
+
+#+begin_src lisp 
+  (defmacro assert-equation (label expression)
+    ...) ; tags and equates a symbolic expression to 0
+
+  (assert-equation 'svm-hyperplane
+		   '(- (dot-product w x)
+		     b)) 
+  ;; w is the weight vector
+  ;; b is the bias for the decision
+  ;; x is the feature vector
+
+  (defun fetch-eqn-expr-value (tag inputs)
+    ...)
+
+  (defun sign (expr)
+    ...) ;return sign of value of expression
+
+  (defun prediction-label (inputs)
+    (sign (fetch-eqn-expr-value 'svm-hyperplane
+				inputs)))
+#+end_src
+
+- the goal of the learning algorithm is to find an optimal value of w and b - w* and b* that minimize the associated [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]] function.
+
+- finding optimal values for an expresssion is studied in the domain of [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][Optimization]]
+
+- we'd also like to have an associated margin with the decision boundary and make it as wide as possible.
+  - a large margin aids in better generalization 
+
+- a rudimentary approach to building a margin is using +1 and -1 as thresholds for decision rather than only using the sign.
+
+- maximizing the margin ( 2 / L2 norm of w ) is synonymous to minimizing the norm of w subject to the series of decision assertions of the training data
+
+#+begin_src lisp
+  (defmacro constraint-assert (...)
+    ...)
+
+  (defmacro for-all (...)
+    ...)
+
+  (defvar svm-constraint
+    (for-all i in (range N) ; N - num training samples
+	     (constraint-assert
+	      (>= (* (y i)
+		     (- (dot-product w
+				     (x i))
+			b))
+		  1))))
+  #+end_src
+
+The problem can then be symbolically summarized as
+
+#+begin_src lisp
+  (defmacro optimize (task-tag
+		      parameters
+		      objective
+		      constraint)
+    ...)
+
+  (optimize 'minimize
+	    '(w b)
+	    (l2-norm w)
+	    svm-constraint)
+#+end_src
+
+
+
+* Customization
+
+ - it may not always be possible to draw a suitable hyperplane between two classes
+   - one can employ [[id:4183bb54-4a2b-4d14-8804-ba12cbe0b2b7][Kernels]] in such a case 
+   - superficially speaking, they are maps between hyperspaces that one uses to mathematically elaborate upon certain properties of the original distrubution
+ - an identity kernel leads to the simplest form of a linear SVM.

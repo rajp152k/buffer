@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7b9be887-8c39-4a37-8217-f0e21a6cb64e
+:END:
+#+title: Optimization
+#+filetags: :tbp:math:
+

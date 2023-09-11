@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       33882050-cc96-447b-9022-bcbb1757af9d
+:END:
+#+title: the100pagemlbook
+#+filetags: :book:ml:ai:
+
+The parent reference sentinel for this book is rooted as [[id:523db378-6e64-41a3-8890-ad782c67b5e9][The Hundred Page Machine Learning Book]] under the major machine learning node.
+I populate this node with the intention to index into other major nodes of the field and fill in some holes that are generic and require a book  for and end to end coverage cause tending to them in a non-project oriented scenario isn't worth the time.
+
+* Introduction
+** What is ML?
+ - subdomain of [[id:6f9a4752-aa66-42cf-9b88-2e4fa2091511][Computer Science]]
+   - building algorithms that rely on a collection of instances about a phenomenon to solve tasks related to it. 
+   - these instances can be sourced in multiple ways:
+     - from nature
+     - from another algorithm
+     - synthesized according to human behaviour
+ - a very basic breakdown for the process of machine learning is broken down as :
+   1. Gather a dataset
+   2. algorithmically build a statistical model based on that dataset
+** Types of ML
+ - [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]]
+ - [[id:322ac854-7baf-41e2-8895-c33b2ef08f91][Semi-Supervised Learning]]
+ - [[id:fded2ca7-e60a-4c83-842f-bc60f1ea5260][Unsupervised Learning]]
+ - [[id:9cac188e-8229-4c7a-9cb4-eeb5e81f8010][Reinforcement Learning]]
+** PAC learning
+ - on learnability and understanding relationship between model error, training set size, model building time and the mathematical formulation of the model
+ - this is an index; explored in depth in a dedicated node
+   - [[id:7eadb2fb-1568-441b-a97a-99bd4ab7be0a][PAC learning]]

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       9cac188e-8229-4c7a-9cb4-eeb5e81f8010
+:END:
+#+title: Reinforcement Learning
+#+filetags: :tbp:ai:
+
+* Abstract
+
+The machine (in the context of [[id:20230713T110006.406161][Machine Learning]]) lives in an environment and can interpret it's state in the form of a feature vector.
+
+The machine can execute actions in these states and there are associated rewards with these actions which also alter the state.
+
+The objective of a reinforcement learning algorithm is to learn a policy function, that, given the environment state, outputs an optimal (to maximize rewards) action to execute in that state.
+
+The action is optimal if it maximizes the expected average reward.
+

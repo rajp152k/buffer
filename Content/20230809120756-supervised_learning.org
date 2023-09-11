@@ -2,5 +2,19 @@
 :ID:       90bcd50c-a360-4fd2-a5f2-356a6c7035cd
 :END:
 #+title: Supervised Learning
-#+filetags: :tbp:ai:
+#+filetags: :ai:
+
+* Abstract
+The major point of differentitiation initiates from how the relevant dataset is structured.
+** Dataset 
+ - a collection of labelled examples
+   - feature vectors
+   - associated ground truths
+** Objective
+ - use the dataset to [[id:17d3a745-72b6-4cf7-a0a2-ed5ff69830bf][train]] a model
+ - the model should then be able to process the input into a useful metric that allows one to deduce the associated label for that feature vector
+
+
+
+ 
 

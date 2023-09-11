@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       20230712T131112.909632
+:ROAM_ALIASES: blog
 :END:
 #+title: Writing
 #+filetags: :transient:
@@ -83,8 +84,12 @@ An index of all that I write about, published, work in progress and prospective.
 ** Published
 
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+----------|
-| time index | Production                                                | link                                                           | Category |
+| time index | Production code name                                      | link                                                           | Category |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+----------|
+|     0x214F | Reading an Author                                         | https://rajpatil.dev/post/reading-an-author/                   | Anecdote |
+|     0x214F | Refactoring Old Works                                     | https://rajpatil.dev/post/refactoring-old-works/               | Writing  |
+|     0x214C | The Definitive Guide to Books                             | https://rajpatil.dev/post/the-definitive-guide-to-books/       | Writing  |
+|     0x2147 | Practical Natural Language Processing : C1 - 5            | [[https://rajpatil.dev/post/practical-nlp-c1-5/]]                  | Book     |
 |     0x2147 | Common Lisp : The Series - 0.1 : Representing Programs    | https://rajpatil.dev/post/clts/clts-0.1/                       | CLTS     |
 |     0x2141 | My Creation and Publishing Pipeline                       | https://rajpatil.dev/post/my-creation-and-publishing-pipeline/ | Writing  |
 |     0x213F | Common Lisp: The Series - 0 : Introduction                | https://rajpatil.dev/post/clts/clts-0/                         | CLTS     |

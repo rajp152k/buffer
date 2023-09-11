@@ -37,8 +37,9 @@ An index of all the videos : published, work in progress, and prospective
 ** Published
 
 |------------+-------------------------------------------------------------+------------------------------+----------|
-| time index | Production                                                  | link                         | playlist |
+| time index | Production Code Name                                        | link                         | playlist |
 |------------+-------------------------------------------------------------+------------------------------+----------|
+|     0x214a | The Definitive Guide to Books                               | https://youtu.be/sJqdliSqmRy | Plans    |
 |     0x2147 | Common Lisp : The Series - Representing Programs (CLTS 0.1) | https://youtu.be/SuI2ns1D9Es | CLTS     |
 |     0x2141 | My Creation and Publishing Pipeline                         | https://youtu.be/dKU_mNaEo1g | Tooling  |
 |     0x213E | Common Lisp : The Series - Introduction (CL-TS 0)           | https://youtu.be/jLonMxrVPbY | CLTS     |

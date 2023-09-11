@@ -11,8 +11,10 @@ A major proportion of the nodes in this web will be in a transient phase at all 
 
 I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able to keep track of how a node(set) evolves.
 
-* 0x2138
-
+* Stream
+** 0x2154
+ - an explicit :wip: tag denotes that I'm actively working on that node (different from :transient:)
+** 0x2138
  - the [[id:20230812T200515.697950][literate programming]] setup is live and working well with the publishing script.
  - I have it setup for rust, common lisp and elisp for now
  - mermaid-cli also works for flowcharts locally but need to figure out the publishing process for it to be rendered properly on the online buffer -> UPDATE (2 mins after I pushed this) : just needed to put in an ~exports: both~ in the src blocks..
@@ -22,7 +24,7 @@ I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able
  - Errors may creep in aynwehr -> I do'nt particurlayl edti what I wirte here and  all is typed in a single pass, along with my thoughts.
    - this might result in needlessly long structures that could be better organized. Of course, I don't do this for the main blog. The buffer is not something that I maintain for perfectionism, but for maintaining a playful approach towards my studies.
      
-* 0x2118
+** 0x2118
 
 Here are some conventions that I follow to organize my work:
  - [[id:20230712T211826.340837][Tagging]]
@@ -35,3 +37,41 @@ Here are some conventions that I follow to organize my work:
  - A top-down knowledge building style : the human mind doesn't remember what it knows. Trying to remember a specific latent knowledge node in this graph will be more efficient than building all the base nodes one by one until I reach a practical level of application. I will add atoms as and when I see fit : I might even insert most from memory.
  - each major node has its own idea buffer to keep note of specific ideas that I haven't organized yet.
  - at any given point of time, several emtpy nodes may exist : I'm not trying to be exhaustive right away when exploring a domain. This is supposed to be an eternal work in progress. However, to indicate that I intend to work on a node later on and it's not just an empty atom, I've placed ~:tbp:~ (to be populated) tags on such nodes.
+
+* Tag list
+ - meta
+ - tool
+ - tbp
+ - ai
+ - programming
+ - trait
+ - nlp
+ - math
+ - data
+ - idealogy
+ - python
+ - book
+ - linguistics
+ - representation
+ - lisp
+ - cache
+ - atomic
+ - task
+ - problem
+ - posted
+ - blog
+ - skills
+ - cv
+ - root
+ - rust
+ - web
+ - project
+ - yt
+ - nlu
+ - java
+ - tools
+ - cs
+ - transient
+ - ml
+ - writing
+ - wip

@@ -68,3 +68,7 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 *** Journals
 *** Blogs
 *** Books
+
+* Associated Blogs 
+
+ - [ ] [[id:a3fbb4b6-50dc-4479-99bc-9c5a899b4cae][Be a sneaky reader]]

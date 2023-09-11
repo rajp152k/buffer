@@ -4,6 +4,11 @@
 #+title: writers-block
 #+filetags: :meta:writing:
 
+* 0x2154
+I do have several ideas lined up for execution but most of them are part of a large series. I guess I am enchanted by novelty and haven't built up the discipline to work on truly longer works yet (long blogs written down in one chain of thought don't count). I'm thinking of writing about the idea of being a sneaky reader. Structured around reading several books at a time to suit your mood at a particular time of the day  and yeah.. I 'll head on to write about that now...
+
+This wasn't really a writer's block I guess..
+
 * 0x213A
 
 Have overhauled the website to smoothen out its rough edges and now it does look like a personal blog that isn't just another template picked up without customization from one of those static site generators. Haven't pushed out any content for more than two weeks now though. The brain dump is being updated regularly but there's nothing being published. I do have my habits in place and writing pipelines in place but a node set doesn't seem to have matured. I think of writing about a particular topic but turns out I don't have enough raw thoughts on the topic for it to be worth publishing. There's also this eternal generic dread in terms of my mental energy and haven't achieved that [[id:20230718T223411.394444][flow-state]] that I used to experience when writing during the last semester of my college. I used to have a stack of ideas waiting to be processed that I could go on about without much thought and generate descent content. Life was good then, generating prose and structuring my thoughts didn't take much time : I could write on distinct topics daily and there was this generic sense of satisfaction. I guess losing that sense of satisfaction is an achievement in itself : that does signify that I tried something different and didn't shy away from some exploration. I guess I could get started with book reviews to get the ball rolling.

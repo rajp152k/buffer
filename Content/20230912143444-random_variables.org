@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7e1c9ba8-d8e8-43e3-bb83-0e8c4ea1442e
+:END:
+#+title: Random Variables
+#+filetags: :tbp:prob:stat:math:
+

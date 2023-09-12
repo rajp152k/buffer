@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c1a12380-9aad-4969-8b6a-cfceebfa984f
+:END:
+#+title: Sets
+#+filetags: :math:
+
+An unordered collection of different objects of similar overarching type. This is a foundational notion for several formal branches of mathematics and whichever fields draw from it.
+

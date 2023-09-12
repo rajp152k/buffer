@@ -27,3 +27,78 @@ I populate this node with the intention to index into other major nodes of the f
  - on learnability and understanding relationship between model error, training set size, model building time and the mathematical formulation of the model
  - this is an index; explored in depth in a dedicated node
    - [[id:7eadb2fb-1568-441b-a97a-99bd4ab7be0a][PAC learning]]
+* Notations and Definitions
+ - well, I won't be focusing on the notation cause I'm proceeding with symbolic representations via s-expressions
+ - still indexing the important definitions though
+** Scalars, Vectors and Sets 
+ - [[id:7517a8cb-763d-40fd-8355-ad7ff8aca8e8][Scalar]]
+ - [[id:691ea9d3-1311-49be-b198-f9b10dac441d][Vector]]
+ - [[id:c1a12380-9aad-4969-8b6a-cfceebfa984f][Sets]]
+
+** Math as S-expressions
+ - I won't be using mathmatical notation in these notes cause of the reasons listed here [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][NIL]] and somewhere in the [[id:1729][Index]].
+ - I find it convenient to just build up an abstraction when needed
+
+** [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][Functions]]
+ - mathematically speaking : a relation that maps elements from the domain [[id:c1a12380-9aad-4969-8b6a-cfceebfa984f][set]] to the codomain set (aka range), with some constraints on the nature of this map.
+ - manipulation of the various parameters in the above dfeinition (types of the sets, nature of the mapping, etc) gives rise to different classes of functions.
+** Max and Arg Max
+ - The former refers to the maximum element in a set
+   - this requires the notion of comparison to be defined over that set
+
+ - The latter refers to an optimal element in a set that pushes the value of a function to its optimal value (max) 
+
+ - Note that both are functions and have relevant counterparts as min and arg min
+** Derivatives and Gradient
+ - a complete treatment will be present in [[id:b9a1ec54-7977-418f-9181-8c4ff0254aed][Matrix Calculus]]
+** [[id:7e1c9ba8-d8e8-43e3-bb83-0e8c4ea1442e][Random Variables]] 
+ - helps capture the notion of probability into mathematical expressions
+   - can be discrete and continuous
+ - [[id:91b6fb5d-6447-43fe-8412-2054bb79979a][Probability]] is a large epistemological root in itself and will be explored independently
+ - a few important terms relevant to a random variable that will be referred to going forward:
+   - probability mass distribution, probability density
+   - expectation
+   - variance, covariance
+
+ - these will be conceptualized programmatically going forward
+   
+   
+** [[id:aa2716de-6052-42e9-bfb7-1483a768c1e4][Unbiased Estimator]]
+ - if the expectation of the estimator random variable is equal to the statistic being estimated, it's termed as an unbiased estimator of that statistic.
+ - for instance, sample mean is an unbiased estimator of the mean statistic of a random variable
+
+** Bayes' Rule (aka Bayes' Theorem)
+ - denotes equivalence of the probability of a joint event broken down into its conditionals and respective singulars
+
+#+begin_src lisp
+  (defmacro P (event)
+    ...) ; probabilty of a given event
+
+  (defmacro and (X-sample Y-sample)
+    ...) ;conceptualizes the event (X-sample and Y-sample)
+  (defmacro given (X-sample Y-sample)
+    ...) ; conceptualizes the event (X-sample, given Y-sample)
+
+  (defmacro sample (rand-var instance)
+    ...) ; denotes the event that instance was sampled from rand-var
+
+  (defmacro declare-randvar (tag ...)
+    ...) ; declare a random variable with associated info
+
+  ;;Bayes' rule then is:
+
+  (declare-randvar X ...)
+  (declare-randvar Y ...)
+
+  (let ((X=x (sample X x))
+	(Y=y (sample Y y)))
+    (assert-mathematical-equal
+     (P (and X=x
+	     Y=y))
+     (* (P (given X=x
+		  Y=y))
+	(P Y=y))
+     (* (P (given Y=y
+		  X=x))
+	(P X=x))))
+#+end_src

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7517a8cb-763d-40fd-8355-ad7ff8aca8e8
+:END:
+#+title: Scalar
+#+filetags: :math:
+
+A single numerical value, only having a magnitude and no sense of direction.
+Also see [[id:691ea9d3-1311-49be-b198-f9b10dac441d][Vectors]]

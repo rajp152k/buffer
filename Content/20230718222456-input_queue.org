@@ -38,6 +38,7 @@ I'd also like maintaining a log of all relevant articles/interviews/not-so-easil
 ** [[https://arxiv.org/abs/2003.02320][[2003.02320] Knowledge Graphs]]
 ** https://www.lrde.epita.fr/dload/papers/newton.16.monad.report.pdf
 ** https://applied-langua.ge/~hayley/swcl-gc.pdf
+** https://explained.ai/matrix-calculus/
 * Docs/tools/tuts
 ** https://spacy.io/
 ** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]

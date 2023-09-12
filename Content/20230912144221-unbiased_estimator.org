@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       aa2716de-6052-42e9-bfb7-1483a768c1e4
+:END:
+#+title: Unbiased Estimator
+#+filetags: :tbp:stat:prob:math:
+

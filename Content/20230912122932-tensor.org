@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       e894d26e-ef45-4225-8478-380164f75883
+:END:
+#+title: Tensor
+#+filetags: :math:
+
+An ordered collection of [[id:691ea9d3-1311-49be-b198-f9b10dac441d][Vector]]s in multiple orientations.
+
+The dimension of a tensor would be the symbolic cartesian product of the dimension of its constituent vector orientations.
+ - this is probably framed incorrectly, but I get the point...

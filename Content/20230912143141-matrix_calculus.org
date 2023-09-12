@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b9a1ec54-7977-418f-9181-8c4ff0254aed
+:END:
+#+title: Matrix Calculus
+#+filetags: :tbp:math:
+
+* Resources
+ - https://explained.ai/matrix-calculus/
+

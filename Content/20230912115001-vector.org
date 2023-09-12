@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       691ea9d3-1311-49be-b198-f9b10dac441d
+:END:
+#+title: Vector
+#+filetags: :math:
+
+* Abstract
+An ordered collection of [[id:7517a8cb-763d-40fd-8355-ad7ff8aca8e8][Scalars]] : the ordered nature of this collection attributes the direction to vectors.
+
+The size of this collection is the dimension of the vector : a vector generalizes into a [[id:e894d26e-ef45-4225-8478-380164f75883][Tensor]].
+
+Accessing a particular element of a tensor is termed as indexing into it.
+
+* Operations
+ - vector-vector addition
+ - scalar-vector multiplication
+ - dot product
+ - cross product
+ - matrix vector multiplication
+   - this is an oriented collection of dot-products
+
+ - a more detailed expansion on the relevant math for vectors (and matrices and tensors) will be populated in here from the paper : [[https://explained.ai/matrix-calculus/][The Matrix Calculus you need for Deep Learning]]

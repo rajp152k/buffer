@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a31671c6-12ea-4fc9-93cb-73d29fd508a6
+:END:
+#+title: Functions
+#+filetags: :tbp:math:

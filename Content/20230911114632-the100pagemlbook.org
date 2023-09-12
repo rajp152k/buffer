@@ -62,7 +62,6 @@ I populate this node with the intention to index into other major nodes of the f
 
  - these will be conceptualized programmatically going forward
    
-   
 ** [[id:aa2716de-6052-42e9-bfb7-1483a768c1e4][Unbiased Estimator]]
  - if the expectation of the estimator random variable is equal to the statistic being estimated, it's termed as an unbiased estimator of that statistic.
  - for instance, sample mean is an unbiased estimator of the mean statistic of a random variable
@@ -102,3 +101,14 @@ I populate this node with the intention to index into other major nodes of the f
 		  X=x))
 	(P X=x))))
 #+end_src
+
+** [[id:74fbb1e0-a63f-48b1-8b3f-072270a0a1b1][Parameter Estimation]]
+ - to be explored in depth in the main node
+** [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]] vs [[id:93082142-64cf-45b2-9878-f3a96f596ccf][Regression]] 
+** Model-Based vs Instance Based Learning
+ - Model Based : use training data to build a model with learned parameters - see [[id:b278fc18-a6cf-4e41-b015-502dbad9f056][Support Vector Machine]]
+ - Instance Based : use the whole dataset as a model (no intermediate parameters) -  see [[id:b8194cd8-57bc-4f4a-9862-baa8d5599033][k-Nearest Neighbors]]
+** Shallow vs [[id:20230713T110040.814546][Deep Learning]]
+ - Shallow learning : model parameters are learned directly from features of training samples
+ - Deep Learning uses optimization techniques for a loss function and it's more of a black box than the shallow learning alternative
+   

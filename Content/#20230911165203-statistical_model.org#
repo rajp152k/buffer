@@ -13,7 +13,7 @@ see [[id:20230713T110006.406161][Machine Learning]]
  - The speed of inference
 
  A practical trade-off with accuracy could be made to optimize the above.
-
+ 
 * Overarching types
 To be elaborated upon...
 ** Parametric model

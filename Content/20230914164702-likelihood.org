@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ae0af6d2-9e89-4491-a34b-ad8aacb6f0f3
+:END:
+#+title: Likelihood
+#+filetags: :tbp:math:
+

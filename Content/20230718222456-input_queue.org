@@ -50,6 +50,7 @@ I'd also like maintaining a log of all relevant articles/interviews/not-so-easil
 ** https://lunrjs.com/
 ** https://github.com/norvig/pytudes
 ** https://www.math.uci.edu/~rvershyn/teaching/hdp/hdp.html
+** [[http://xahlee.info/js/svg.html][svg - xah lee tutorial]]
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]

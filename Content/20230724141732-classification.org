@@ -125,7 +125,6 @@ Summarizing the above for binary clasifiction
     - model/algorithm dependent
 * Relevant Nodes
  - [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
-   
-   
+ - [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]]
  
- 
+

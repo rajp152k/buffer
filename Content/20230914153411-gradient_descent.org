@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a4761c32-806d-4a7f-ba18-27136a3de1fc
+:END:
+#+title: Gradient Descent
+#+filetags: :tbp:ml:ai:
+

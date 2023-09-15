@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       a2c424a5-d412-496c-abcb-1fd216548a02
+:END:
+#+title: Decision Trees
+#+filetags: :ml:ai:
+
+An acyclic directed [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][graph]] that can be used to make decisions.
+At each branching node, a specific check is applied on the features:-
+ - based on a binary decision: either the left or the right child is chosen for further decisions
+
+* Learning 
+
+Out of the several [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][optimization]] criterion applicable to decision trees, highlighting the ID3 learning algorithm. 
+
+The optimization criterion for ID3 is given as the average log [[id:ae0af6d2-9e89-4491-a34b-ad8aacb6f0f3][Likelihood]]
+
+#+begin_src lisp
+  (defun predict-id3 (input)
+    ...); the decision tree prediction
+
+  (defun log-likelihood (input label)
+    (let (prediction (predict-id3 input))
+      (+ (* label
+	    (log prediction))
+	 (* (- 1 label)
+	    (log (- 1 prediction))))))
+
+  (defun log-overall-likelihood (inputs labels)
+    (reduce #'add
+	    (mapcar #'log-likelihood
+		    inputs
+		    labels)
+	    :initial-value 0))
+#+end_src
+
+Contrary to the case of [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]], where one builds a [[id:5784ce3d-9b1a-4740-8f21-978f64ee7a22][Parametric model]], the ID3 is a [[id:f8ed9d28-324b-4657-84e4-29cf735a782f][non-parametric approach]]
+
+

@@ -2,5 +2,111 @@
 :ID:       93082142-64cf-45b2-9878-f3a96f596ccf
 :END:
 #+title: Regression
-#+filetags: :tbp:ml:ai:
+#+filetags: :ml:ai:
 
+* Pedagogical
+** Linear Regression
+:PROPERTIES:
+:ID:       4459e764-2e05-4941-ba61-06b9bb2b9e08
+:END:
+ - the prediction is an affine combination of the input feature vector.
+   - the model is described by the set of parameters:
+     - the weights vector
+     - the bias scalar
+   - the predictor is formulated as:
+#+begin_src lisp
+  (defun predict (&key input-vector)
+    (let ((w (fetch-weight-vector))
+	  (b (fetch-bias)))
+      (+ (dot-product w input-vector)
+	 b)))
+#+end_src
+
+ - The [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]] function for this model is expressed as:
+
+#+begin_src lisp
+  (defun mse-loss (inputs labels)
+    "mean squared error, given lists of inputs and
+  corresponding labels"
+    (/ (sum (mapcar #'(lambda (input label)
+			(square (- (predict input)
+				   label)))
+		    inputs
+		    labels))
+       N))
+#+end_src
+
+ - this can also be termed as the cost-function.
+ - the average of the penalties (squared error in this case) over the dataset is termed as the empirical risk.   
+ - Linear models rarely [[id:e99cd94a-70d1-4f27-a2a0-ab7b37be040b][overfit]] : they're the simplest models one could use - see [[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]]
+
+ - a point of convenience about a loss function is that it should be differentiable : the square of the differnece is preferable to the absolute value due to this reason.
+   - this allows  one to employ [[id:b9a1ec54-7977-418f-9181-8c4ff0254aed][matrix calculus]] to potentially arrive to closed form solutions.
+   - condensing the above, that would be equating the [[id:b9a1ec54-7977-418f-9181-8c4ff0254aed][nabla]]'d loss to zero.
+
+** Logistic Regression
+:PROPERTIES:
+:ID:       91729987-32db-482a-bc1b-91469579413b
+:END:
+- maps linear regression to a 0-1 scale, suited to the task of binary classification via the sigmoid function
+
+#+begin_src lisp
+  (defun sigmoid (x)
+    (let ((e (eulers-number desired-precision)))
+      (/ 1 (+ 1
+	      (power e (- x))))))
+
+  (defun linear-regression (x)
+    ...) ; see previous section's predictor
+
+  (defun logistic-regression (x)
+    (sigmoid (linear-regression x)))
+#+end_src
+
+- the loss this time is negative-log-likelihood : the optimization criterion we're using is "maximum likelihood"
+- the likelihood for a positive sample is the result of the predictor
+  - "1 - that" would be the likelihood of a negative sample
+- given the labels are binary (1s and 0s) units, the likelihood when observing a dataset, based on this model would be:
+
+#+begin_src lisp
+  (defun likelihood (input label)
+    (let ((prediction (logistic-regression input)))
+      (* (power prediction
+		label)
+	 (power (- 1 prediction)
+		(- 1 label))))) 
+
+  (defun overall-likelihood (inputs labels)
+    (reduce #'multiply
+	    (mapcar #'likelihood
+		    inputs
+		    labels)
+	    :initial-value 1))
+#+end_src
+
+- do note that this is simply the mathematical representation of the concept and not how one actually goes about the computation.
+  - because we wish to differentiate the likelihood, we map it via a convenient monotonic function (exponentiation is expensive) that doesn't change the characteristics of the loss's maximas and minimas.
+- hence the logarithm.
+
+  #+begin_src lisp
+    (defun log-likelihood (input label)
+      (let (prediction (logistic-regression input))
+	(+ (* label
+	      (log prediction))
+	   (* (- 1 label)
+	      (log (- 1 prediction))))))
+
+    (defun log-overall-likelihood (inputs labels)
+      (reduce #'add
+	      (mapcar #'log-likelihood
+		      inputs
+		      labels)
+	      :initial-value 0))
+	#+end_src
+
+  - [[id:ae0af6d2-9e89-4491-a34b-ad8aacb6f0f3][Likelihood]] is explored further in its own node.
+
+  - matrix calculus alone isn't sufficient in this and there's no convenient closed-form solution
+
+  - more generic optimization techniques like [[id:a4761c32-806d-4a7f-ba18-27136a3de1fc][Gradient Descent]] are required 
+  

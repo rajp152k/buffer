@@ -112,3 +112,9 @@ I populate this node with the intention to index into other major nodes of the f
  - Shallow learning : model parameters are learned directly from features of training samples
  - Deep Learning uses optimization techniques for a loss function and it's more of a black box than the shallow learning alternative
    
+
+
+* Fundamental Algorithms
+** [[id:4459e764-2e05-4941-ba61-06b9bb2b9e08][Linear Regression]]
+** [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]]
+** [[id:a2c424a5-d412-496c-abcb-1fd216548a02][Decision Trees]]

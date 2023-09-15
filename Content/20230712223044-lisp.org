@@ -27,7 +27,6 @@
 				 rating))
 	     (if ripped-p (equal (getf cd :ripped)
 				 ripped)))))
-
 #+end_src
 
  - note that we don't need a passage predicate for variables when you're not dealing with booleans (title, artist and rating in this case) 

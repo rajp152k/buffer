@@ -35,4 +35,3 @@ The optimization criterion for ID3 is given as the average log [[id:ae0af6d2-9e8
 
 Contrary to the case of [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]], where one builds a [[id:5784ce3d-9b1a-4740-8f21-978f64ee7a22][Parametric model]], the ID3 is a [[id:f8ed9d28-324b-4657-84e4-29cf735a782f][non-parametric approach]]
 
-

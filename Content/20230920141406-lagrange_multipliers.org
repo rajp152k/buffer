@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       aa85206f-1cf6-4c13-801e-b94797adcab1
+:END:
+#+title: Lagrange multipliers
+#+filetags: :tbp:ml:math:
+

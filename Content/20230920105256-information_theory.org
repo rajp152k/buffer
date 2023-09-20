@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6777b4fa-7046-4553-b2e1-3bb60953a498
+:END:
+#+title: Information Theory
+#+filetags: :tbp:math:
+
+Rooted in [[id:91b6fb5d-6447-43fe-8412-2054bb79979a][Probability]]: still a major node
+
+Yet to be populated, will be refactored soon
+
+* Core Nodes
+** Entropy
+:PROPERTIES:
+:ID:       b35790f3-7502-4175-acf7-dac894bd2a5c
+:END:
+
+** Gini Impurity
+:PROPERTIES:
+:ID:       50143067-a871-4963-a752-9de8cd327d9c
+:END:

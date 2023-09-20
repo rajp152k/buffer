@@ -74,15 +74,39 @@ The problem can then be symbolically summarized as
 
   (optimize 'minimize
 	    '(w b)
-	    (l2-norm w)
+	    '(l2-norm w)
 	    svm-constraint)
 #+end_src
 
-
-
 * Customization
+** Noisy Data
+ - in cases of linearly inseparable data, we employ an additional hinge loss denoted as:
 
+#+begin_src lisp
+  (defun svm-hinge-loss (input label)
+    (max 0 (1 - (* label
+		   (- (dot-product w
+				   input)
+		      b)))))
+#+end_src
+
+ - this is zero in case of a correct classification and proportionally positive if a sample lies on the incorrect side of the hyperplane.
+ - the overall "soft-margin" (initially "hard-margin" without the hinge-loss) svm objective now is 
+#+begin_src lisp
+  '(+ (* c (square (l2-norm w)))
+    (average (mapcar #'svm-hinge-loss
+	      inputs
+	      labels)))
+#+end_src
+
+ - where c is hyperparameter that helps controls the importance we wish to give to the hinge-loss
+   - it therefore regulates the trade-off between minimizing empirical risk (fitting to training data well) and generalizing well (better classifiying future inquiries)
+
+** Kernel Trick
  - it may not always be possible to draw a suitable hyperplane between two classes
-   - one can employ [[id:4183bb54-4a2b-4d14-8804-ba12cbe0b2b7][Kernels]] in such a case 
+   - one can employ kernels in such a case 
    - superficially speaking, they are maps between hyperspaces that one uses to mathematically elaborate upon certain properties of the original distrubution
  - an identity kernel leads to the simplest form of a linear SVM.
+ - note that explicitly mapping all points to the hyperspace could quickly become very inefficient.
+   - This can be avoided by using the method of [[id:aa85206f-1cf6-4c13-801e-b94797adcab1][Lagrange multipliers]] which is further explored in the domain of [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][Optimization]]
+ - exploring different types and characteristics of [[id:4183bb54-4a2b-4d14-8804-ba12cbe0b2b7][Kernels]] in its own node.

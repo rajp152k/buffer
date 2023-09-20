@@ -4,13 +4,12 @@
 #+title: Decision Trees
 #+filetags: :ml:ai:
 
-An acyclic directed [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][graph]] that can be used to make decisions.
+An acyclic directed [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][graph]] that's used to make decisions.
 At each branching node, a specific check is applied on the features:-
  - based on a binary decision: either the left or the right child is chosen for further decisions
 
-* Learning 
-
-Out of the several [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][optimization]] criterion applicable to decision trees, highlighting the ID3 learning algorithm. 
+** Iterative Dichotomiser 3
+Out of the several [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][optimization]] criterion applicable to decision trees, highlighting the ID3 (iterative dichotomiser 3) learning algorithm : other options include CART and C4.5
 
 The optimization criterion for ID3 is given as the average log [[id:ae0af6d2-9e89-4491-a34b-ad8aacb6f0f3][Likelihood]]
 
@@ -35,3 +34,93 @@ The optimization criterion for ID3 is given as the average log [[id:ae0af6d2-9e8
 
 Contrary to the case of [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]], where one builds a [[id:5784ce3d-9b1a-4740-8f21-978f64ee7a22][Parametric model]], the ID3 is a [[id:f8ed9d28-324b-4657-84e4-29cf735a782f][non-parametric approach]]
 
+An important aspect of deciding the splitting criterion in a decision tree algorithm is based on the notion of [[id:b35790f3-7502-4175-acf7-dac894bd2a5c][Entropy]].
+
+Concisely speaking, the splitting criterion for a node is based on choosing the feature and decision criterion towards maximising [[id:6777b4fa-7046-4553-b2e1-3bb60953a498][information gain]] (reducing uncertainty) which is calculated using entropy or [[id:50143067-a871-4963-a752-9de8cd327d9c][Gini Impurity]].
+- Entropy meaures the impurity or randomness in a dataset
+- Information gain measures the reduction in entropy achieved by splitting the dataset based on a particular attribute.
+
+Stopping criteria for a split decision are as follows:
+ - all examples in the parent belong to a single class 
+ - an attribute to split upon can't be found
+ - entropy decrease is less than a threshold epsilon (set experimentally)
+ - max depth d has been achieved (set experimentally)
+
+Symbolically summarizing the splitting procedure
+
+#+begin_src lisp
+  (defun build-split-criterion (feature split-point)
+    (...)
+    (pack-criterion splitting-attribute
+		    specific-split-point))
+
+  (defun build-splits (parent-node splitting-criterion)
+    (...)
+    (list left-split right-split)) 
+
+  (defun set-positive-probability (set) ; for binary classification
+    "chance of the label in a set being positive (1)"
+    (mean (fetch-labels set))); as 0s and 1s
+
+  (defun set-entropy (set) ; for binary classification
+    (let* ((p (split-positive-probability set))
+	   (q (- 1 p))) ;split-negative-probability
+      (- (+ (* p (log p))
+	    (* q (log q))))))
+
+  (defun split-entropy (parent-node feature split-point)
+    (defun normalize-entropy (split)
+      (* (/ (cardinality split)
+	    (cardinality parent-node))
+	 (set-entropy split)))
+    (let* ((splits (build-splits
+		    parent-node
+		    (build-split-criterion feature
+					   split-point)))
+	   (left-split (car splits))
+	   (right-split (cadr splits)))
+      (+ (normalize-entropy left-split)
+	 (normalize-entropy right-split))));basically a weighted average
+
+  ;; the objective is then to choose a split such that the above is minimized
+
+  (defmacro minimize (parameters objective)
+    "internally has access to a searching mechanism over parameters"
+    '(let ...
+      ...
+      (list optimal-split-feature
+       optimal-split-point)));macro as parameters need to be literally captured in objective
+
+  (defun optimal-split-parent (parent)
+    (let ((solution (minimize '(feature split-point)
+			      (split-entropy parent))))
+      solution));solution is a list of feature and corresponding split point
+
+  (defun stop-check (parent)
+    ...)
+#+end_src
+
+Now that all the helpers have been expressed, the principal recursor looks as follows:
+
+#+begin_src lisp
+  (defvar *decision-tree* nil)
+
+  (defun build-subtree (parent)
+    (when (stop-check parent)
+      (return-from build-subtree
+	(generate-leaf (adapt-set parent))))
+    (let* ((optimal-split-info (optimal-split-parent parent))
+	   (optimal-feature (car optimal-split-info))
+	   (optimal-split-point (cadr optimal-split-info)))
+      (generate-split
+       parent
+       (mapcar #'build-subtree
+	       (build-splits parent
+			     (build-split-criterion))))))
+
+  (setf *decision-tree* (build-subtree dataset))
+#+end_src
+
+Note that the split decision at each point is local in ID3 (a greedy approach). This doesn't guarantee optimality. [[id:56be53d0-9544-42b4-83b8-a9237d6108c4][Backtracking]] may be employed during the search at the cost of the procedure running longer.
+
+Do note that this algorithm then approximately maximises average log-likelihood.

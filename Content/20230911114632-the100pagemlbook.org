@@ -116,3 +116,4 @@ I populate this node with the intention to index into other major nodes of the f
 ** [[id:4459e764-2e05-4941-ba61-06b9bb2b9e08][Linear Regression]]
 ** [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]]
 ** [[id:a2c424a5-d412-496c-abcb-1fd216548a02][Decision Trees]]
+** [[id:b8194cd8-57bc-4f4a-9862-baa8d5599033][k-Nearest Neighbors]]

@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       c4058b62-7997-4c35-a852-63075e2be4c4
+:END:
+#+title: Prompt Engineering
+#+filetags: :wip:skills:
+
+Reading up on Generative AI to shift from googling to gaining information via more accurate prompts. Should help me as a content creator: from a writing perspective, I'd refrain from using a lot of it when it comes to my blogs and a youtube script. It'll definitely leverage it when I need to some factual fillers but staying away from its stylistic suggestions. Will explore art and design as well later on.
+
+Reading the book [[id:4b3a86b9-0bff-4762-9cc7-4df87999593d][...]] (see below) ; what follows is a collection of ideas I find useful from the book.
+
+* The art of prompt engineering with ChatGPT by Nathan Hunter
+:PROPERTIES:
+:ID:       4b3a86b9-0bff-4762-9cc7-4df87999593d
+:END:
+** Iteration
+Follow ups to provide more context to a query can yield good results
+   1. you may deliberately start with an open query and narrow it down later on as you receive more info
+   2. refining already complex queries with minor changes to perfect an output also works
+
+Employ the former strat when you're exploring novel ideas and the latter when you wish to dial down on something that you yourself cannot express accurately but can verify a good solution when you see one.
+ 
+Feedback can be categorized into these categories:
+*** Qualitative 
+ - request specific changes (usually stylistic) and regeneration 
+ - specific positive feedback to retain certain aspects in regenerations 
+ - ask for elaborations (addition)
+ - ask for independtly generated variants 
+*** Quantitive 
+ - request for longer or shorter responses
+ - condensing long form text into concise titles/hooks (could personally use this for my blogs and youtube)
+** Roleplay
+

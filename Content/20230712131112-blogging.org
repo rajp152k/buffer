@@ -6,6 +6,9 @@
 #+filetags: :transient:
 
 * Comment stream
+** 0x215D
+ - reading a book on prompt engineering to actively improve my content creation process
+   - had a pretty productive chat as follows : https://chat.openai.com/share/6896002b-08bc-4e85-af48-82bbffc4f5cd
 ** 0x2148
  - elaborating on the book that I mentioned yesterday, found this interesting strategy on writing a book
    - to publish it in atomic parts with each fundamental idea being a blog post.

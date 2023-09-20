@@ -2,5 +2,5 @@
 :ID:       b8194cd8-57bc-4f4a-9862-baa8d5599033
 :END:
 #+title: k-Nearest Neighbors
-#+filetags: :tbp:ml:ai:
+#+filetags: :ml:ai:
 

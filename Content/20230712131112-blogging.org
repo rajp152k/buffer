@@ -88,6 +88,7 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+----------|
 | time index | Production code name                                      | link                                                           | Category |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+----------|
+|     0x215E | Prompt crafting distilled                                 | https://rajpatil.dev/post/dense-guide-prompt-engineering/      | Skills   |
 |     0x215E | I have a Writing Tutor now ...                            | https://rajpatil.dev/post/better-writer/                       | Writing  |
 |     0x214F | Reading an Author                                         | https://rajpatil.dev/post/reading-an-author/                   | Anecdote |
 |     0x214F | Refactoring Old Works                                     | https://rajpatil.dev/post/refactoring-old-works/               | Writing  |

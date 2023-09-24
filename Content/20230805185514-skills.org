@@ -6,8 +6,9 @@
 
 Life is boring if you're boring. This node keeps track of auxiliary skills (don't take too long to learn/progress with daily) that I would like to add to my repertoire.
 
-* Misc 
-
 * The List
-** Juggling
-** Flipping food (omelets)
+ - Juggling
+ - Flipping food (omelets)
+ - Being kind without trying hard
+ - Identifying constellations
+ - conducting casual interviews

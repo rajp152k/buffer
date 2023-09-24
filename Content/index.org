@@ -12,6 +12,9 @@ A major proportion of the nodes in this web will be in a transient phase at all 
 I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able to keep track of how a node(set) evolves.
 
 * Stream
+** 0x215F
+ - need to have a pruning session sometime - a lot of unnecessary nodes that could be better restructured as sub-trees.
+ - some nodes are just plain useless and are an itch I scratched gone itchier.
 ** 0x2154
  - an explicit :wip: tag denotes that I'm actively working on that node (different from :transient:)
 ** 0x2138

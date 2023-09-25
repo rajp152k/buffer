@@ -2,14 +2,38 @@
 :ID:       20230908T054510.505181
 :END:
 #+title: SICP-how-what-why?
-#+filetags: :blog:yt:lisp:
+#+filetags: :wip:blog:yt:lisp:
 
-* Plan
+* Core
  - practicing structure and intent with this post
  - formal introduction to how one can go about SICP
-   - definitive : looking for competitive qualitative advantage
+   - definitive : looking for competitive qualitative advantage with this
+     - should be the best overview about getting into SICP out there
  - accessible to anyone and of professional quality     
    - wish to practice meta-skills and level up the production 
-
+** Meta 
+*** Title possibilities
+ - The wizard book: unleashing computer sorcery for all
+** Content
+ parting the content in two pieces:
+   - the youtube video has a catchy factor and will work on attracting audiences
+   - the blog will cover all the technical details that I know about from experience and will gain traction from the video
+     
 * Blog 
 * Youtube
+** Entry and Exits
+*** Introduction
+ - quick intro to the video
+ - short introduction to what I do on the channel
+   - think if you want the call to action in the beginning
+ - layout the structure of the video with timestamps in gist
+
+*** Conclusion
+ - call to actions again
+   - short introduction to what I do on the channel
+     - think if you want the call to action in the beginning
+
+     
+** Core 
+*** Sec 1 : of science and sorcery
+*** Sec 2 : the chi of your technical arsenel

@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       20230925T094832.763061
+:END:
+#+title: GTD-starter-kit
+#+filetags: :tools:
+
+* Book Notes
+** Book recommendations: Steps to follow:
+1. Gather all that you need to: Collation into a processing buffer
+   - physical gathering
+   - electronic gathering
+     - notion, obsidian : too much : strat --> setup frame first, import gradually later on
+   - mental scraping:
+     - residues from things that you feel you need to do
+2. Processing the buffer
+   - top first : no preferences
+   - follow the GTD Algorithm : no favourites
+   - Only decision making : only decide the next step and immediately organize
+   - The Processing Algo:
+     1) No action now
+     2) Action required
+	- mostly the most immediate physical action that needs to be taken
+	- If expected time < 2 mins : do it
+	- else if you're not in the know for the optimal action : research or deligate
+	- else schedule
+3. Organizing requirements:
+   1) Projects list 
+   2) Project support material : hierarchical context and narrow down
+   3) Calendared actions and information 
+   4) Next actions list 
+   5) "waiting for" list 
+   6) Reference Material 
+   7) "Someday/Maybe" List 
+4. Reviews:
+   - weekly reviews to keep the system healthy
+* Template
+** Algorithm
+ [[./images/gtd-workflow.gif]]
+
+** Org base 
+*** INQ
+*** NA
+*** Projects
+*** Tickler
+*** Events
+*** Consolidate
+** Recommendations
+ - go through org-mode manual 

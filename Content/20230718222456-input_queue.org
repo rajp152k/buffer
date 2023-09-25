@@ -1,6 +1,7 @@
 :PROPERTIES:
 :ID:       20230718T222456.978981
-:END: #+title: input-queue
+:END:
+#+title: input-queue
 
 I like reading technical books and am planning to expand my coverage to include foundational papers of some subjects that I find interesting: with the intention of understanding how subjects today interweave.
 This buffer maintains a cache of technical papers/books/blogs/similar resources I'd like to go through. This is also an exercise in building up my reading efficiency for technical texts. I'm pretty quick with generic public domain non-fiction now and would like to up the ante: to maintain the effort I require to achieve [[id:20230718T223411.394444][flow]] (Mihaly Csikszentmihalyi).

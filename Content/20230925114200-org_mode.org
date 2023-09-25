@@ -2,6 +2,47 @@
 :ID:       be1c795a-add6-4122-add5-ead5f45fbab2
 :END:
 #+title: Org-mode
-#+filetags: :skills:tools:
+#+filetags: :wip:skills:tools:
 
 An org-mode manual pass condensing the important shortcuts and custom configurations for quick future reviews.
+
+The core philosophy behind the tool is structuring the files as a hierarchical tree. Further specific features that are explored below make it more complete in terms of its capabilities regarding handling information.
+
+I'll personally use org-mode for my [[id:20230925T094832.763061][GTD-setup]] and my [[id:1729][note-taking zettelkasten]]
+
+I refrain from using timestamps in the latter but do so in the former for the org-agenda and calendar functionality.
+
+[[id:20230812T200515.697950][Literate programming]] is another powerful concept conveniently realizable via org-mode that is essential for any pedagogical content creator.
+
+* Basics
+
+Some functionality that I use with high frequency
+
+| functionality | keystroke | description                                    |
+|---------------+-----------+------------------------------------------------|
+| capture       | "C-c c"   | quick templated entry into your capture buffer |
+| store-link    | "C-c l"   | cache links for future convenient use          |
+| insert-link   | "C-c C-l" | insert links from cache with typecasting       |
+| agenda        | "C-c a"   | agenda view for schedulable todos and events   |
+
+my GTD-oriented capture templates are as follows:
+
+#+begin_src elisp
+  (setq org-capture-templates
+	'(("n" "Next Action" entry (file+headline   "f:/personal/GTD/GTD_HQ.org" "NA")
+	   "* TODO %?\n  %i\n  %a")
+	  ("e" "Event" entry (file+headline  "f:/personal/GTD/GTD_HQ.org" "Events")
+	   "* %?\nSCHEDULED: %T\n  %i")
+	  ("i" "IN" entry (file+headline "f:/personal/GTD/GTD_HQ.org"  "INQ")
+	   "* %?\nEntered on %U\n  %i\n  %a")
+	  ("c" "consolidate" entry (file+headline "f:/personal/GTD/GTD_HQ.org" "Consolidate")
+	   "* %?\nEntered on %U\n  %i\n  %a")
+	  ("t" "Tickler" entry (file+headline "f:/personal/GTD/GTD_HQ.org" "Tickler")
+	   "* %?\nDEFER THOUGHT TO: %T\n %i")))
+#+end_src
+
+Given the hierarchical structure of org files, folding, narrowing and widening is a staple way to manage your attention when navigating a file.
+
+Folding a subtree is bound to be toggled by ~<TAB>~ and a global fold/unfold toggle can be triggered by ~<SHIFT>-<TAB>~.
+
+Narrowing is disabled by default to avoid confusion for beginners and can be activated by placing ~(put 'narrow-to-region 'disabled nil)~ in your ~init.el~

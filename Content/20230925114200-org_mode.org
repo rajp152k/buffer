@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       be1c795a-add6-4122-add5-ead5f45fbab2
+:END:
+#+title: Org-mode
+#+filetags: :skills:tools:
+
+An org-mode manual pass condensing the important shortcuts and custom configurations for quick future reviews.

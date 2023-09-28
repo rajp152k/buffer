@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       5ca10a46-d9b8-4a6b-8aab-34ec17d55049
+:END:
+#+title: Feature Engineering
+#+filetags: :ml:ai:
+
+ - preparing the dataset to be used for the learning algorithm
+ - the goal is to convert the data in to features with high-predictive power and make them usable in the first place
+
+Some common feature engineering processes are:
+** One Hot Encoding
+ - converting categoricals into separate booleans
+** Binning (Bucketting)
+ - converting a continuous feature into multiple exclusive boolean buckets (based on value ranges)
+   - 0 to 10, 10 to 20, and so on... , for instance.
+** Normalization
+ - converting varying numerical ranges into a standard (-1 to 1 or 0 to 1).
+ - aids learning algorithms computationally (avoid precision and overflow discrepancies)
+
+#+begin_src lisp
+  (defun normalize (numerical-data-vector)
+    (let* ((min (minimum numerical-data-vector))
+	   (max (maximum numerical-data-vector))
+	   (span (- max min)))
+      (mapcar #'(lambda (feature)
+		  (/ (- feature min)
+		     span))
+	      numerical-data-vector)))
+#+end_src
+
+** Standardization
+ - aka z-score normalization
+ - rescaling features so that they have the properties of a standard [[id:2f44701c-e3e4-4b02-a899-e91e747db41a][normal distribution]] (zero mean, unit variance)
+
+#+begin_src lisp
+  (defun standardize (numerical-data-vector)
+    (let* ((mu (mean numerical-data-vector))
+	   (sigma (sqrt (variance numerical-data-vector))))
+      (mapcar #'(lambda (feature)
+		  (/ (- feature mu)
+		     sigma))
+	      numerical-data-vector)))
+#+end_src
+
+** Dealing with Missing Features
+Possible approaches:
+ - removing examples with missing features
+ - using a learning algorithm that can deal with missing data
+ - data imputation techniques
+** Data Imputation Techniques
+ - replace by mean, median or other similar statistic
+ - something outside the normal range to indicate imputation (-1 in a normal 2-5 range for instance)
+ - something according to the range and not a statistic (0 for -1 to 1 for instance)
+
+A more advanced approach is modelling the imputation as a regression problem before proceeding with the actual task. In this case all the other features are used to predict the missing feature.
+
+In cases of a large dataset, one can introduce an extra indicator feature to signify missing data and then place a value of choice.
+  
+ - test more than 1 technique and proceed with what suits best
+   

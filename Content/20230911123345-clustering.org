@@ -4,3 +4,16 @@
 #+title: Clustering
 #+filetags: :tbp:ml:ai:
 
+
+To be populated ...
+
+* Loss 
+
+The nature of a clustering can be evaluated via multiple perspectives and their combinations. This leads to several loss functions that are losely based on the two major criteria:
+ - larger Inter cluster distance is better
+ - small Intra-cluser diameter is better
+
+Some advanced metrics may even consider considering the shape of the clusters but I won't be exploring that here.
+
+checkout [[https://scikit-learn.org/stable/modules/clustering.html#clustering-performance-evaluation][scikit learn clustering docs]] to know more about evaluating clustering performance.
+

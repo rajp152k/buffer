@@ -126,7 +126,6 @@ An index of all that I write about, published, work in progress and prospective.
    - there's the objective past (questionable what's objective) (an event that's one and done) and then there's your perspective about it (that is a stream that you carry on for life (I'm not accounting for forgetting right now if you journal, blog, create any sort of sensible content as it is easily accessible : (example : I could remember what stage of Life I was in based on the book that I was reading then : Once I saw the book : All memories fell into context like dominoes))).
    - you can only alter your perspective about the past in the present moment of the stream but never change your previous thoughts in the stream.
    - There is no mental time machine allowing you to manipulate your past memories : you simply partially overwrite stuff but never alter it's state in the past...
-
  - thinking of how I could structure these posts : the future also plays a part in making decisions - there is some level of certainty associated with the future if you chalk out your actions and have realistic expectations out of them.
    - being in a definite caloric deficit while following an recordable resistance training protocol will yield results that will be within a certain definite range around your expectations when you set out with the goal.
 ** Prospective
@@ -137,5 +136,4 @@ An index of all that I write about, published, work in progress and prospective.
  - meditative walks
  - mental games -> structuring an article mentally given a writing prompt is a pretty complex and satisfying mental game
  - if you're a physics aficionado like I am, consider observing your surroundings and coming up with mental mathematical models to represent reality.
-
 *** Why text is awesome (for logicians.) and semantically discrete images is what you should limit yourself to

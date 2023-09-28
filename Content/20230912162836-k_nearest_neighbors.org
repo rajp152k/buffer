@@ -1,6 +1,17 @@
-:PROPERTIES:
-:ID:       b8194cd8-57bc-4f4a-9862-baa8d5599033
-:END:
-#+title: k-Nearest Neighbors
-#+filetags: :ml:ai:
+ai:
+
+An instance of a [[id:f8ed9d28-324b-4657-84e4-29cf735a782f][non parameteric learning algorithm]]. It doesn't distill the training data into parameters but the data is retained as a part of the algorithm.
+
+* Basics
+
+When fed a new feature vector, it's clustered into the nearest existing group subject to a closeness criterion summarized as:
+ - fetch the k-nearest existing feature vectors to the new vector
+ - classify the new one into the cluster holding majority in the k fetches in case of classification
+ - average the k fetches numerical label in case of regression to tag the new vector
+
+The closeness criterion most commonly used is the L2-norm (euclidean distance).
+A popular alternative is [[id:2ec4a33e-479d-466b-b2b1-0a5925c0222c][cosine similarity]] when you'd like to capture the notion of an angle between two vectors. 
+Some other criteria that can be considered : Chebychev distance, Mahalanobis distance and Hamming Distance.
+
+The hyperparameters of the algorithm then can be defined to be the choice of the nearness criterion and the value of k.
 

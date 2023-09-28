@@ -2,5 +2,37 @@
 :ID:       a4761c32-806d-4a7f-ba18-27136a3de1fc
 :END:
 #+title: Gradient Descent
-#+filetags: :tbp:ml:ai:
+#+filetags: :ml:ai:
+
+ - an iterative [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][optimization]] algorithm used to minimize a function (see [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]]).
+ - speaking briefly:
+   1. we start at a random point on the parameter-space vs loss contour
+   2. then we step down the hyper-hill, trying to avoid getting stuck in local hyper-troughs, repeating until we can report convergence when we reach a satisfactory (usually) hyper-valley
+      - note that we actually can't see the hyper-hill and need to calculate the loss everytime we step somewhere, akin to hiking in the dark.
+   3. the parameter-space step size is controllable via a hyper-parameter -> the learning rate
+
+ - when working with a convex optimization criterion, we're sure to find a global minimum. Whereas a settlement might be necessary with complex contours.
+
+
+** Impovements
+
+*** Stochastic Gradient Descent (SGD)
+:PROPERTIES:
+:ID:       e419c0a9-9753-48f1-82c4-f2004cc2e29c
+:END:
+Computing the actual loss for all of the training data can be very slow and doing so using stochastically selected smaller batches leads to the idea of stochastic gradient descent.
+*** Adagrad
+This scales the learning rate individually for each parameter (ADAptive GRADient descent) according to the history of gradients.
+ - the learning rate is smaller for large gradients and larger for smaller gradients as a consequence.
+*** Momentum
+Accelerate SGD by retaining a sense of past gradients to impart some inertia to the optimizatio process
+ - helps deals with oscillations and move more meaningfully
+
+*** RMSProp (Root Mean Square Propagation):
+RMSProp (like Adagrad) adapts the learning rate for each parameter based on the past gradients, helping to stabilize and speed up the training process.
+ - note that RMSprop is an improvement over Adagrad and deals with the diminishing learning rate issue.
+ - read more at [[https://en.wikipedia.org/wiki/Stochastic_gradient_descent][this wikipedia page]]
+
+*** Adam (Adaptive Moment Estimation):
+Adam combines the benefits of momentum and RMSProp, using both past gradients and their magnitudes to adjust learning rates, making it a versatile and efficient optimization algorithm.
 

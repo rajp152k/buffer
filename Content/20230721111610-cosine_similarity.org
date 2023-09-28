@@ -7,3 +7,18 @@
  - is a measure of closeness of two vectors.
  - a common use case is lifting a collection of real life [[id:b8178e96-18bd-43da-915b-11909971a316][datum]] objects into a dense vector space and being able to comment on their semantic closeness/farness using the notions of vector similarity.
 
+#+begin_src lisp
+  (defun dot-product (vec-a vec-b)
+    (assert (= (len vec-a) (len vec-b)))
+    (reduce #'+
+	    (mapcar #'* vec-a vec-b)
+	    0))
+
+  (defun l2-norm (vec)
+    (sqrt (reduce #'+ (mapcar #'square vec) 0)))
+
+  (defun cosine-similarity (vec-a vec-b)
+    (/ (dot-product vec-a vec-b)
+       (* (l2-norm vec-a)
+	  (l2-norm vec-b))))
+#+end_src

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2f44701c-e3e4-4b02-a899-e91e747db41a
+:END:
+#+title: Normal Distribution
+#+filetags: :tbp:math:
+

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c3e62ed9-31d6-4ceb-ad82-c4d0e9b48c77
+:END:
+#+title: Algorithm Selection
+#+filetags: :ml:ai:
+
+* Factors to consider
+

@@ -2,7 +2,7 @@
 :ID:       be1c795a-add6-4122-add5-ead5f45fbab2
 :END:
 #+title: Org-mode
-#+filetags: :wip:skills:tools:
+#+filetags: :skills:tools:
 
 An org-mode manual pass condensing the important shortcuts and custom configurations for quick future reviews.
 
@@ -13,6 +13,8 @@ I'll personally use org-mode for my [[id:20230925T094832.763061][GTD-setup]] and
 I refrain from using timestamps in the latter but do so in the former for the org-agenda and calendar functionality.
 
 [[id:20230812T200515.697950][Literate programming]] is another powerful concept conveniently realizable via org-mode that is essential for any pedagogical content creator.
+
+I'm covering a pretty minimal subset of all the capabilities of org-mode that I use frequently (exclusive to org-roam)
 
 * Basics
 
@@ -28,17 +30,18 @@ Some functionality that I use with high frequency
 my GTD-oriented capture templates are as follows:
 
 #+begin_src elisp
-  (setq org-capture-templates
-	'(("n" "Next Action" entry (file+headline   "f:/personal/GTD/GTD_HQ.org" "NA")
-	   "* TODO %?\n  %i\n  %a")
-	  ("e" "Event" entry (file+headline  "f:/personal/GTD/GTD_HQ.org" "Events")
-	   "* %?\nSCHEDULED: %T\n  %i")
-	  ("i" "IN" entry (file+headline "f:/personal/GTD/GTD_HQ.org"  "INQ")
-	   "* %?\nEntered on %U\n  %i\n  %a")
-	  ("c" "consolidate" entry (file+headline "f:/personal/GTD/GTD_HQ.org" "Consolidate")
-	   "* %?\nEntered on %U\n  %i\n  %a")
-	  ("t" "Tickler" entry (file+headline "f:/personal/GTD/GTD_HQ.org" "Tickler")
-	   "* %?\nDEFER THOUGHT TO: %T\n %i")))
+  (let ((base-gtd-path "<your base GTD file path>"))
+    (setq org-capture-templates
+	  '(("n" "Next Action" entry (file+headline   base-gtd-path "NA")
+	     "* TODO %?\n  %i\n  %a")
+	    ("e" "Event" entry (file+headline  base-gtd-path "Events")
+	     "* %?\nSCHEDULED: %T\n  %i")
+	    ("i" "IN" entry (file+headline base-gtd-path  "INQ")
+	     "* %?\nEntered on %U\n  %i\n  %a")
+	    ("c" "consolidate" entry (file+headline base-gtd-path "Consolidate")
+	     "* %?\nEntered on %U\n  %i\n  %a")
+	    ("t" "Tickler" entry (file+headline base-gtd-path "Tickler")
+	     "* %?\nDEFER THOUGHT TO: %T\n %i"))))
 #+end_src
 
 Given the hierarchical structure of org files, folding, narrowing and widening is a staple way to manage your attention when navigating a file.
@@ -46,3 +49,32 @@ Given the hierarchical structure of org files, folding, narrowing and widening i
 Folding a subtree is bound to be toggled by ~<TAB>~ and a global fold/unfold toggle can be triggered by ~<SHIFT>-<TAB>~.
 
 Narrowing is disabled by default to avoid confusion for beginners and can be activated by placing ~(put 'narrow-to-region 'disabled nil)~ in your ~init.el~
+
+I use evil emacs and to narrow the buffer to a particular region, simply select region via visual mode (or complete subtree with a ~<SHIFT-v>~ when collapsed) and stroke out ~C-x C-n C-n~. To widen the buffer to the original contents, stroke out ~C-x C-n C-w~.
+
+Leave out not more than one line between consecutive subtrees so that the tree's neat when collapsed.
+
+
+* Agenda
+
+I find ~C-c a n~ to be sufficient for my [[id:20230925T094832.763061][GTD setup]]. I also use org-clock to monitor the time dedicated to particular tasks and a simple ~<TAB>~ in the respective agenda line leads you to the exact place of description of that task.
+
+#+begin_src elisp
+  (general-define-key
+   :prefix "C-c"
+   "C-x C-i" #'org-clock-in
+   "C-x C-o" #'org-clock-out
+   "C-x C-g" #'org-clock-goto)
+#+end_src
+
+Org-calendar and timing is feature explored in its own subtree.
+
+Controlling other aspects of your GTD setup within the agenda buffer is convenient:
+ - ~<SHIFT>-<left,right>~ : helps reschedule items a day before or after
+ - ~<SHIFT>-<up,down>~ : helps change priorities for tasks quickly
+ - hitting ~t~ (I use evil bindings) over a task toggles its ~TODO~ status
+
+One can set deadlines and schedules for a task subtree in a buffer convenienly with ~C-c C-d~ and ~C-c C-s~ : this pops up a calendar buffer for a date to be chosen. Inserting inactive timestamps is also possible via ~C-c C-!~. Once inserted, timestamps and ranges can be manipulated intuitively with ~<SHIFT>~ + Arrow keys.
+
+Setting recurring events can be done by suffixing the timestamp with ~+<quantifier><unit of time>~ (~+1w/d/m~ for instance). More complicated frequencies can be captured programatically as one liners : to capture recurrence on weekdays, one would use ~<%%(memq (calendar-day-of-week date) '(1 2 3 4 5))>~
+

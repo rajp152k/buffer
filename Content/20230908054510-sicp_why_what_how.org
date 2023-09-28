@@ -20,6 +20,7 @@
    - the blog will cover all the technical details that I know about from experience and will gain traction from the video
      
 * Blog 
+Will be dealing with the technical aspect here, mapped to each of the session in the core of the video sub-tree.
 * Youtube
 ** Entry and Exits
 *** Introduction
@@ -33,7 +34,9 @@
    - short introduction to what I do on the channel
      - think if you want the call to action in the beginning
 
-     
 ** Core 
-*** Sec 1 : of science and sorcery
-*** Sec 2 : the chi of your technical arsenel
+*** Sec 1 : Of Science and Sorcery
+*** Sec 2 : the Chi of your technical arsenal
+*** Sec 3 : Industrial Sorcery
+*** Sec 4 : The Apprenticeship
+*** Sec 5 : Colleagues and Conclaves 

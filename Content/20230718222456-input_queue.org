@@ -14,6 +14,8 @@ I'd also like maintaining a log of all relevant articles/interviews/not-so-easil
 ** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]
 ** https://sive.rs/
 ** https://jeremykun.com/
+** https://www.inspiredpython.com/
+** https://realpython.com/
 * Blog posts
 ** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
 ** https://simonwillison.net/2023/Aug/3/weird-world-of-llms/

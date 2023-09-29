@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       952707ab-a089-46da-8bb2-98cfdcbce7ef
+:END:
+#+title: incremental learning algorithms
+#+filetags: :tbp:ml:ai:
+

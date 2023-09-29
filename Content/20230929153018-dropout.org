@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0b7bc8b1-42e5-45d7-b7a0-d449db7895c4
+:END:
+#+title: Dropout
+#+filetags: :tbp:nn:ml:ai:
+

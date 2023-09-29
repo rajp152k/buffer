@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       2f33e97a-c064-4680-9951-9fdab284eb89
+:END:
+#+title: Regularization
+#+filetags: :ml:ai:
+
+** Purpose
+Prevent overfitting by adding a penalty to the model's complexity.
+** Techniques
+Common forms of regularization include L1 (Lasso) and L2 (Ridge) regularization, which add penalties based on the absolute and squared values of model parameters, respectively.
+*** L1(Lasso)
+ -  leads to a sparse model with most parameters set to zero due to the nature of the penalty's contour with respect to the parameters.
+ - can be used as a feature selector then: to find out which features are essential and increasing model [[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Interpretability]]
+*** L2(Ridge)
+ - promotes lower moduli of parameters.
+*** Elastic Net
+ - combination of L1 and L2
+
+*** [[id:f4c27962-ac4f-4255-a2d9-dcfe9d382daa][Batch Norm]]
+*** [[id:0b7bc8b1-42e5-45d7-b7a0-d449db7895c4][Dropout]]
+*** [[id:3b9a83ab-92b8-4547-8eaa-77ab36db57b8][Data Augmentation]]
+** Effect
+Regularization encourages the model to have smaller parameter values, reducing its complexity and preventing it from fitting noise in the training data.
+** Bias-Variance Trade-off
+It introduces a trade-off between fitting the training data well and having a simpler model that generalizes better to new, unseen data.
+** Lambda (Hyperparameter)
+The strength of regularization is controlled by a hyperparameter (lambda or alpha) that can be tuned to achieve the desired balance between bias and variance.
+** Benefits
+It helps improve model stability, reduce overfitting, and make models more robust in real-world scenarios.

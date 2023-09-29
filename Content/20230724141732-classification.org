@@ -32,6 +32,7 @@ To classify given data points into one or more known data classes.
 ** Primitive
 - Accuracy
 Percentage of correctly labelled data points
+ - weighted accuracy according to classes of importance is a viable modification
 - Precision
 How many positive predictions were actually positive?
 - Recall
@@ -83,8 +84,26 @@ Summarizing the above for binary clasifiction
       #+end_src
       
 ** Not-so-primitive
- - Area under ROC curve
+*** Area under ROC curve
   [[https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc][Classification: ROC Curve and AUC]] 
+**** ROC Curve (Receiver Operating Characteristic)
+- X and Y Axes: The ROC curve is a plot with the False Positive Rate (FPR) on the X-axis and the True Positive Rate (TPR) on the Y-axis.
+  - False Positive Rate (FPR): It's the ratio of false positives (incorrectly classified as positive) to the total number of actual negatives.
+  - True Positive Rate (TPR): It's the ratio of true positives (correctly classified as positive) to the total number of actual positives.
+
+- Thresholds: The ROC curve is created by varying the classification threshold of a binary classifier. At different threshold values, the model classifies data as positive or negative.
+
+- Curve Shape: The curve starts at the bottom-left corner (0,0) and goes towards the top-right corner (1,1). A diagonal line (the "random guess" line) would represent a model that's no better than random guessing.
+
+- Performance: A model's performance is determined by how far its ROC curve is from the random guess line. The closer it is to the top-left corner, the better the model's ability to distinguish between classes.
+
+**** AUC (Area Under the Curve)
+- AUC Value: The AUC is a single number that quantifies the overall performance of the model based on the ROC curve. It's the area under the ROC curve.
+- Interpretation: AUC values range from 0 to 1. A model with an AUC of 0.5 represents random guessing (no discrimination), while a model with an AUC of 1.0 represents perfect discrimination.
+- High AUC: A higher AUC indicates that the model is good at distinguishing between the two classes. It suggests that, on average, the model ranks positive examples higher than negative examples.
+
+**** Summary
+The ROC curve is a graphical representation of a model's ability to classify data, showing the trade-off between false positives and true positives at different thresholds. The AUC summarizes this performance in a single number, with a higher AUC indicating better discrimination ability. It's a common tool for evaluating the performance of binary classification models. 
 * Classifiers
 :PROPERTIES:
 :ID:       31a028e3-f87a-4aae-85b7-04bc0c8a32af

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f4c27962-ac4f-4255-a2d9-dcfe9d382daa
+:END:
+#+title: Batch Norm
+#+filetags: :tbp:nn:ml:ai:
+

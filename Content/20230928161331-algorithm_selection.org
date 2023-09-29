@@ -4,5 +4,26 @@
 #+title: Algorithm Selection
 #+filetags: :ml:ai:
 
+for a quick overview, have a look at the [[https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html][scikit learn estimator cheatsheet]].
+You may even use a validation set to test out algorithms quickly before fitting to a large training set.
 * Factors to consider
-
+** [[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Interpretability]]
+ - does the model need to be intellectually accessible to a non-technical audience (predictions in medical imaging for instance)?
+ - if only accuracy matters, one may not mind black boxes.
+** In-memory vs Out-of-memory
+ - can the dataset be completely loaded at once in the RAM : allows for a greater choice between algorithms
+ - Otherwise, need to use an [[id:952707ab-a089-46da-8bb2-98cfdcbce7ef][incremental learning algorithms]], that can improve model by adding data gradually
+** Number of features and examples
+ - neural nets and suitable ensembles when dealing with a large amount of features.
+ - traditional models for limited amount of features and speed -> see [[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]]
+** Categorical vs numerical features
+ - what kind of data do we have, one of the two or a mix of both.
+ - the algorithm and relevant [[id:5ca10a46-d9b8-4a6b-8aab-34ec17d55049][feature engineering]] techniques should be able to handle the data appropriately
+** Nonlinearity of the data
+ - again, look into [[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]]..
+   - if implicitly linearly separable data can be observed, [[id:b278fc18-a6cf-4e41-b015-502dbad9f056][Support Vector Machine]] with the [[id:4183bb54-4a2b-4d14-8804-ba12cbe0b2b7][kernel trick]] might be preferable
+ - if no such simple mathematical separation can be identified, one may rely on [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][neural nets]] and [[id:05507b9a-ab6b-45cb-92b4-d71b574c5b7b][Ensemble Algorithms]]
+** Training speed
+ - neural nets will be slower than a traditional solution
+** Prediction speed
+ - Live high throughput requirements or daily batch-processing jobs: both cases call for different approaches to minimize overall tradeoffs. 

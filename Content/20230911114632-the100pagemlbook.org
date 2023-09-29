@@ -126,3 +126,66 @@ Any learning algorithm is centered around certain basics:
 * Basic Practice 
 ** [[id:5ca10a46-d9b8-4a6b-8aab-34ec17d55049][Feature Engineering]]
 ** [[id:c3e62ed9-31d6-4ceb-ad82-c4d0e9b48c77][Algorithm Selection]]
+** Three sets
+ - training set
+ - validation set
+ - testing set
+
+Keeping the validation and test set the same size is the common practice. A usual split for a traditional situation would be 70%:15%:15%.
+With big data though, it's reasonable to go for 95%:2.5%:2.5%.
+
+briefly speaking, the individual purposes are as follows:
+ - fitting the algorithm on the training set
+ - checking performance intermittently on the validation set and making considerable hyperparametric choices like which algorithm to use and tuning the particular algorithm.
+ - evaluating performance on the test set.
+** Underfitting and Overfitting
+*** Bias (Underfitting)
+:PROPERTIES:
+:ID:       9b9f920e-31a4-40b8-b051-fc01b5e4a4ac
+:END:
+Bias refers to the error introduced by approximating a real-world problem, which may be complex, by a simplified model. A model with high bias pays little attention to the training data and oversimplifies the problem. This leads to underfitting, where the model doesn't capture the underlying patterns in the data and performs poorly on both the training and unseen data. In simpler terms, a high-bias model is too simple to represent the data.
+
+*** Variance (Overfitting)
+:PROPERTIES:
+:ID:       a5c9934b-ff07-48da-bcc7-86c0894f783f
+:END:
+Variance, on the other hand, refers to the error introduced due to the model's sensitivity to small fluctuations or noise in the training data. A model with high variance is overly complex and captures noise in the training data rather than the underlying patterns. This leads to overfitting, where the model performs very well on the training data but poorly on unseen data because it has essentially memorized the training data and doesn't generalize well.
+
+*** Summary
+- High bias (underfitting) results from a model that is too simple and doesn't fit the data well.
+- High variance (overfitting) results from a model that is too complex and fits the training data too closely.
+
+The goal in machine learning is to strike a balance between bias and variance, finding a model that is complex enough to capture the essential patterns in the data but not so complex that it overfits and fails to generalize to new, unseen data. This balance is crucial for building models that perform well in real-world scenarios. Techniques like cross-validation and regularization are often used to help find this balance.
+
+** [[id:2f33e97a-c064-4680-9951-9fdab284eb89][Regularization]]
+** Model Performance assesment
+already covered before in [[id:bd383ba2-37e9-412f-b245-919fa47831bc][Classification Evaluation Metrics]]
+For regression, using a loss function is the most basic choice to rate performance.
+To compare the metric obtained, we need a ..
+*** Baseline
+ - to compare any metric, consider building a baseline model for the task at hand
+   - for regression this can be as simple as building a mean-model, for instance (one that predicts the average of all, for all)
+   - for classification, you could predict the mode or build a simple model.
+
+** Hyperparameter Tuning
+ - if choices are low, perform a grid search over a validation set.
+   - for numerical hyperparameters with large ranges, perform multiple searches:
+     1. first with a large span using a logarithmic scale
+     2. then use linear scales when you get an idea about what ranges are worth paying attention to
+
+
+This can be time consuming and other efficient techniques like random search and [[id:60d8aa20-8b45-4216-9211-c47354d421bf][Bayesian Hyperparameter Optimization]] exist.
+     
+
+** [[id:121fd726-d347-4eab-b434-4b9f22a713fa][Cross validation]]
+ - when the dataset isn't large enough to carve form a separate validation set, consider k-fold cross validation:
+   1. partition the dataset into k folds
+   2. at each fitting iteration:
+      - fit on k-1 folds
+      - validate on one
+      - change the validation fold for the next iteration
+   3. for reporting the final validation metric, use an average of the k computations
+
+
+Finally, once fit on all these fold combinations, the model performance is ready to be evaluated on the test set.
+     

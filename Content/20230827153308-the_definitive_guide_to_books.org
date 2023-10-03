@@ -5,6 +5,9 @@
 #+filetags: :book:
 
 * Planning stream
+** 0x216A
+indexing a blog entry into the book's content: https://rajpatil.dev/post/most-important-book/
+ - goes in the latter half of the book (on writing books)
 ** 0x2146
  - started my morning with 20 mins of mental warm up, listening to a relevant podcast, while juggling and some pushups and squats sprinkled in ...
    - am definitely awake without my daily caffeine cognitive kick-starter; yet to see how my workouts will be given this is the first day of going caffeine free.
@@ -71,4 +74,5 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 
 * Associated Blogs 
 
- - [ ] [[id:a3fbb4b6-50dc-4479-99bc-9c5a899b4cae][Be a sneaky reader]]
+ - [X] https://rajpatil.dev/post/most-important-book/                 
+ - [ ] Being a sneaky reader

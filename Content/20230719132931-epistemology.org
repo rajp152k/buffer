@@ -2,18 +2,28 @@
 :ID:       aa78d0bb-76c6-414c-9660-445100742232
 :END:
 #+title: Epistemology
-#+filetags: :meta:
+#+filetags: :root:meta:
 
-* 0x2128
+* Stream
+** 0x216A
+ - Delving into the idea of Epistemological [[id:74cd7bc4-ea48-4c5e-a946-ea4125a6b618][Cartography]].
+ - Cartography usually refers mapping landscapes and terrains physically. I find the idea of mapping the abstract knowledge landscape.
+ - might allow me to do some interesting things
+   - abstractly map journeys between domains
+   - define closeness and interrelatedness between domains
+ - it might just have to be a math in itself
+ - the physical world we experience is 4 dimensional (time + location): but I can explicitly see that I'll need to work in an indefinite number of abstract dimensions when working with an epistemological landscape.
+ - I think the idea is mature enough to create it's own node : see [[id:e702ab85-cc45-480b-955b-0ef620690b52][Epistemological Cartography]]
+** 0x2128
 
  - an important aspect of maintaining a malleable context for multiple domains is how you interact with your knowledge systems and how you consume information around you.
    - blog post on  [[id:20230729T155803.588312][pragmatics of intellectual consumption and creation]] (PICC)
 
-* 0x211E
+** 0x211E
  - I index this personally as the philosophical theory of knowledge (which is vague).
  - Diving deeper so that I can start to formalize this via some representation ([[id:6efc5118-aa6d-43f7-bd46-5f0460819813][NIL]]) in my works.
 
 * Literature
-
 ** Articles
  - https://plato.stanford.edu/entries/epistemology/
+   

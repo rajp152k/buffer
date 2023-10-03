@@ -6,6 +6,11 @@
 #+filetags: :transient:
 
 * Comment stream
+** 0x216A
+ - on a post shower, night walk with music, was able to brain storm several core bloggable prompts
+ - hadn't been able to do so in a long time and definitely felt satisfied by the end of it
+ - I was missing my small paper notes and realized that I've got to get used to the phone and get over my peeve against complex instruments for writing.
+ - will still be using the work in progress subnode here to capture these prompts in batches
 ** 0x215D
  - reading a book on prompt engineering to actively improve my content creation process
    - had a pretty productive chat as follows : https://chat.openai.com/share/6896002b-08bc-4e85-af48-82bbffc4f5cd
@@ -108,4 +113,33 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
 
 ** Work in Progress
-*** Why text is awesome (for logicians.) and semantically discrete images is what you should limit yourself to
+** Prompts
+*** A child's curiosity and an adult's resolve 
+*** Factoring uncertainty
+*** Energy levels 101
+*** No time to kill
+*** Write it down
+*** are you angry enough?
+*** no one really cares
+*** prepare for the marathon
+*** anticipating unexpected intellectual leaps
+*** The labrynth of limitations
+*** phases of a writer
+*** Care enough to be selectively ignorant
+*** solitude, society and originality
+*** Epistemological cartography
+*** Don't have role models but target specific characteristics
+*** Video Games, Lucidity and L-theanine
+*** Epistemological Voraciousness
+*** Ingredients of Originality
+*** Feigning humility
+*** On the boundaries of madness and brilliance
+*** Embrace abstracted Complexity : simplicity is overrated
+*** Can you defend your beliefs?
+*** Introductory Self hypnosis
+*** Pity kills tenacity
+*** Tactics, principles and strategy
+*** when to pluck low hanging fruits
+*** Convergence
+*** Barefoot hiking - literally ground yourself.
+*** The joy of creating connections

@@ -87,6 +87,8 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
 | time index | Production code name                                      | link                                                           | Category  |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
+|     0x2168 | The Most Important book you'll ever read                  | https://rajpatil.dev/post/most-important-book/                 | Writing   |
+|     0x2166 | Engineering a(n) (Ergogenic) Nootropic Stack              | https://rajpatil.dev/post/nootropics-init/                     | Nutrition |
 |     0x215E | Prompt crafting distilled                                 | https://rajpatil.dev/post/dense-guide-prompt-engineering/      | Skills    |
 |     0x215E | I have a Writing Tutor now ...                            | https://rajpatil.dev/post/better-writer/                       | Writing   |
 |     0x215B | Do you really wanna be a Polymath?                        | https://rajpatil.dev/post/aefraisk/                            | Polymathy |
@@ -106,34 +108,4 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
 
 ** Work in Progress
-*** Who are you?
- - was reading my old blog the other day and I just recollected a whole bunch of memories based on who I was as a person.
- - Life isn't a markov process.
-   - the future isn't only dependent on your present.
-   - it depends on how you interact with your environment.
-     - in my case : that was reading my old blogs and watching my old videos
-     - I'm essentially carrying my past self's thoughts and wisdom into the present when I create any content.
-   - My present state which is not just my accessible memories anymore but my blog, my videos and humans that know me and my past and can sustain a conversation about it keeps on growing
-   - Creating is an act of making your present state more comprehensive : by accumulating your past into a large stream of actions, logs, decisions.
- - You (assuming you can be represented by an artificially intelligent algorithm) are bound to consolidate your life better to better decide for your future decisions if you have more data accessible to you.
- - this data can be:
-   - generic or specific
-   - statistical or rule-based
- - Generic data can only take you so far.
- - Unless you put in the effort to know who "you" really are, your "algorithms" will only generate generic advice and probably won't yield the best possible results.
- - creating content is a form of capturing snapshots of your past present states that can be studied on demand later on to more accurately represent your path to the present.
- - Now, the past, isn't actually changable even if you change the way you think about it.
-   - there's the objective past (questionable what's objective) (an event that's one and done) and then there's your perspective about it (that is a stream that you carry on for life (I'm not accounting for forgetting right now if you journal, blog, create any sort of sensible content as it is easily accessible : (example : I could remember what stage of Life I was in based on the book that I was reading then : Once I saw the book : All memories fell into context like dominoes))).
-   - you can only alter your perspective about the past in the present moment of the stream but never change your previous thoughts in the stream.
-   - There is no mental time machine allowing you to manipulate your past memories : you simply partially overwrite stuff but never alter it's state in the past...
- - thinking of how I could structure these posts : the future also plays a part in making decisions - there is some level of certainty associated with the future if you chalk out your actions and have realistic expectations out of them.
-   - being in a definite caloric deficit while following an recordable resistance training protocol will yield results that will be within a certain definite range around your expectations when you set out with the goal.
-** Prospective
-*** Filler skills
- - juggling
- - miscellaneous push ups throughout breaks
- - reading
- - meditative walks
- - mental games -> structuring an article mentally given a writing prompt is a pretty complex and satisfying mental game
- - if you're a physics aficionado like I am, consider observing your surroundings and coming up with mental mathematical models to represent reality.
 *** Why text is awesome (for logicians.) and semantically discrete images is what you should limit yourself to

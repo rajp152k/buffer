@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       f70bec51-ce7d-404e-aa37-223f64f07691
+:END:
+#+title: Recurrent Neural Networks
+#+filetags: :nn:ml:ai:
+
+ - Used to label, classify or generate seqences.
+   - a sequence is a collection of objects and different than a set in the sense that the order of the objects matters.
+ - this, therefore has a natural application to text processing, and consequently, speech processing as well.
+
+
+This isn't a simple feed forward network as it contains loops.
+
+** Crux
+
+Each unit in a layer has it's own memory state, and takes in two inputs:
+ - outputs from the previous layers
+ - outputs from the same layer from the previous time step
+
+.. to produce a vector of outputs for this layer at the current timestep.
+
+The order of the sequence is captured via temporally spacing the processing of the tokens in the sequence.
+
+Variants of the above result in different ways to process sequences.
+
+** Shortcomings
+
+The notion of "context" of a token is weaker in a a normal RNN in that one can only see what came before that token in that token.
+ - one way to address this is work bidirectionally with the sequence so as to capture forward and backward glances.
+
+RNNs also lose ability to capture their dependency relations over long sequences.
+ - Gated RNNs : Long Short Term Memory (LSTM) networks and Gated Recurrent Units (GRU) are current practical instances of RNNs in use today. They can store information about tokens for future use.
+This enforces an unnecessary bias on the model that closely related tokens will affect each other more which might not be the cases in all applications : take the presence of different signifiers of arguments followed by the relevant clauses in the English language later on in the sequence (although, however, but, etc).
+ - one way to address this is to introduce [[id:ea67fa6d-6bc9-44fb-98a2-63bc9f95f8ea][attention modules]] that allow the processing of a token to factor in all the other tokens in a sequence at a time without any sequential dependency assumptions.

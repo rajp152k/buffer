@@ -2,5 +2,23 @@
 :ID:       20230713T110040.814546
 :END:
 #+title: Deep Learning
-#+filetags: :tbp:
+#+filetags: :ml:ai:
+
+** What does it mean to go deep?
+Reference to working with [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]] with more than two intermediate layers.
+Some staple problems one experiences during back-propogation as we deepen our networks are:
+**** exploding gradients
+These are easier to deal with as one still has the notion of direction retained although the magnitudes are large.
+Techniques such as gradient clipping and [[id:2f33e97a-c064-4680-9951-9fdab284eb89][Regularization]] should help with this.
+**** vanishing gradients
+When backpropogating, when employing the chain rule, the corresponding gradients for the earlier parameters may diminish in magnitude due to the nature of the intermediate layers' gradients' natures. The tanh has gradients between 0 and 1 for instance, backpropogating n layers back - this will result in exponentially diminishing layers, reulting in virtually no learning for the initial layers.
+Some common techniques used to deal with this issue are:
+ - ReLU activations are more robust against diminishing gradients
+ - Skip connections, like in [[id:325569c7-0b2f-478c-8792-e63702d4b1b6][Residual Neural Networks]], also helps deal with the issue by skipping layers
+
+
+
+*** Present situation
+The above issues with deep networks have been addressed satisfactorily and networks with 100s of hidden layers (a non output and non input layer) can be successfully trained.
+
 

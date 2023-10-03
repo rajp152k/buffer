@@ -2,5 +2,45 @@
 :ID:       bc56a36d-6b62-4e9c-b540-00528d72b3b5
 :END:
 #+title: Neural Networks
-#+filetags: :tbp:ai:
+#+filetags: :ai:
 
+* Abstract
+A neural network is basically a mathematical function that maps input features to desired results that can be used for a desired task.
+
+The mapping can be composed of several primary layers that result in a final nested function or a composition.
+
+These layers are of different nature and serve different purposes to help build a comprehensible latent map of the input features that can be output into a valuable result.
+
+Based on the output and provided labels, one can engineer a loss function relevant to our requirements. The loss function can then be minimized by tweaking the function parameters by optimization algorithms (see [[id:a4761c32-806d-4a7f-ba18-27136a3de1fc][Gradient Descent]] and [[id:b9a1ec54-7977-418f-9181-8c4ff0254aed][Matrix Calculus]]).
+
+All that is really happening is we're modelling a function based on sample inputs and outputs in the case of [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]].
+
+Studying neural networks can then be broken down into analysing behaviours of consituent layers that make it up, the nature of the gradients, for instance, being one such factor one can consider during their analysis. 
+
+Variants of a neural network can be engineered by manipulating these layers. For instance:
+ - placing a logistic layer in the end yields a classifier
+ - placing a linear layer in the end yields a regressor
+
+Any form of output (mixtures of categorical and numerical format - images, bounding boxes, segmentation marks and labels, video tags, etc) can be than captured by a neural network.
+
+One important characteristic that should be captured by these layers is that they should be able to capture the notion of non-linearity in some way. Otherwise, the complete model will also be unable to model non-linear functions - which is usually the case for most real life applications.
+
+A basic way of introducing non-linearities is having non-linear activation functions like:
+
+#+begin_src lisp
+  (defun relu (input)
+    (if (< input 0) 0 input))
+
+  (defun tanh (input)
+    (let* ((ez (power e input))
+	   (e-z (/ 1 ez)))
+      (/ (- ez e-z)
+	 (+ ez e-z))))
+#+end_src
+
+For a deeper analysis of the calculus needed during the operations of neural network, check out [[id:b9a1ec54-7977-418f-9181-8c4ff0254aed][Matrix Calculus]]
+
+* Different kinds of neural networks
+This node serves as an index into various major classes of neural networks mentioned in this brain dump. all of them have been tagged with :nn:.
+** [[id:26f0b76d-c430-484c-832e-e1917800b43c][Convolutional Neural Networks]]
+** [[id:f70bec51-ce7d-404e-aa37-223f64f07691][Recurrent Neural Networks]]

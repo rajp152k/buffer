@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       26f0b76d-c430-484c-832e-e1917800b43c
+:END:
+#+title: Convolutional Neural Networks
+#+filetags: :nn:ml:ai:
+
+** Abstract
+The number of parameters grow very quickly when adding a layer to Multilayer perceptrons. When dealing with high dimensional data, convolutions help capture relations between large spans of the input features over the course of a few hidden layers with comparitively significantly lesser amount of parameters.
+
+They've been successfully employed on image and text applications.
+** How do CNNs capture large spatial relevances?
+For the case of computer vision, only looking at closely grouped pixels will likely not yield any important deductions. Being able to view larger spans over the input for better semantic information is important then.
+
+The trick lies in analysing patches hierarchically:
+ - transform the original image, patch-wise into patches.
+ - transform the patches further, patch-wise into patches.
+ - proceed until satisfaction.
+
+Based on the nature of the transformations, one can detect various patterns with a relatively smaller number of parameters than using fully connected layers.
+
+The deeper one goes into the layers, the larger the span of a particular activation in a patch - this is how one may capture large spatial relations.
+** Defining convolution
+
+The sum of the element wise multiplication  between a patch and a filter (captures the transformation), added with a per-filter bias is called convolution. The more the patch resembles the filter, the higher its activation will be. 
+
+#+begin_src lisp
+  (defun convolve (filter patch)
+    (+ (get-bias filter)
+       (sum (mapcar #'*
+		    (get-weights filter)
+		    (listify patch)))))
+  ;; a ReLU is also used upon this when placing the activation in the next layer's patches.
+#+end_src
+
+One complete complete convolutional layer's operation for a filter, is then to convolve the filter with all possible patches and place the results in a new resultant patch keeping intact their spatial relations.
+
+Each layer has multiple filters to detect different patterns.
+
+We usually work with multiple parallel patches at once from the next layer onwards due to the existence of multiple filters producing multiple outputs for the same input patch. This is addressed as a volume and the latter convolutions are performed on these volumes to produce another final patch corresponding to one filter again.
+
+We start out with 3 initial channels for colored inputs and 1 for grayscale images.

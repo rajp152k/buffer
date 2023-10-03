@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       325569c7-0b2f-478c-8792-e63702d4b1b6
+:END:
+#+title: Residual Neural Networks
+#+filetags: :nn:ml:ai:
+

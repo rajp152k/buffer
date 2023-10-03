@@ -42,6 +42,7 @@ I'd also like maintaining a log of all relevant articles/interviews/not-so-easil
 ** https://applied-langua.ge/~hayley/swcl-gc.pdf
 ** https://explained.ai/matrix-calculus/
 * Docs/tools/tuts
+** http://regextutorials.com/
 ** https://spacy.io/
 ** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]
 ** [[https://github.com/jesseduffield/lazydocker][GitHub - jesseduffield/lazydocker]]

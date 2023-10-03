@@ -12,6 +12,13 @@ A major proportion of the nodes in this web will be in a transient phase at all 
 I will be [[id:20230712T132110.496747][timestamping]] the notes so as to be able to keep track of how a node(set) evolves.
 
 * Stream
+** 0x216A
+ - will be cleaning up nodes soon, probably today evening
+ - do need a proper place to index the status of some major trees
+   - mostly divided in sections like WIP, matured and so on..
+ - experiencing stable levels of focus in sessions and the L-tyrosine and good sleep cycles seem to be doing their job well.
+ - did chalk out several ideas yesterday on a techno post shower night walk
+   - a lot of them are actionable and can be used in the kind of content I'd like to create
 ** 0x215F
  - need to have a pruning session sometime - a lot of unnecessary nodes that could be better restructured as sub-trees.
  - some nodes are just plain useless and are an itch I scratched gone itchier.
@@ -55,7 +62,6 @@ Here are some conventions that I follow to organize my work:
  - python
  - book
  - linguistics
- - representation
  - lisp
  - cache
  - atomic
@@ -63,7 +69,6 @@ Here are some conventions that I follow to organize my work:
  - problem
  - posted
  - blog
- - skills
  - cv
  - root
  - rust
@@ -76,6 +81,9 @@ Here are some conventions that I follow to organize my work:
  - cs
  - transient
  - ml
- - writing
+ - stat
+ - prob
  - wip
-   
+ - skills
+ - writing
+ - nn

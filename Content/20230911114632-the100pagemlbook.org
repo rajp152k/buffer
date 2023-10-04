@@ -189,3 +189,7 @@ This can be time consuming and other efficient techniques like random search and
 Finally, once fit on all these fold combinations, the model performance is ready to be evaluated on the test set.
      
 * [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]] and [[id:20230713T110040.814546][Deep Learning]]
+* Problems and Solutions
+** [[id:01cf36c5-7696-4cf7-a63c-a304d0f698b0][Kernel Regression]]
+** [[id:058a18f5-1bf4-4185-a67c-3fd6116d9129][One-class classification]]
+

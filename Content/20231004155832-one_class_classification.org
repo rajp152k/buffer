@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       058a18f5-1bf4-4185-a67c-3fd6116d9129
+:ROAM_ALIASES: "Class Modeling" "Unary Classification"
+:END:
+#+title: One-class classification
+#+filetags: :ml:ai:
+
+ - tries to identify objects of a specific class among all objects
+   - using only a training set composed of that one class
+ - note that a normal [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]] problem has access to all classes in the training set.

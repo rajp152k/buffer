@@ -1,4 +1,8 @@
-ai:
+:PROPERTIES:
+:ID:       b8194cd8-57bc-4f4a-9862-baa8d5599033
+:END:
+#+title: k-Nearest Neighbors
+#+filetags: :ml:ai:
 
 An instance of a [[id:f8ed9d28-324b-4657-84e4-29cf735a782f][non parameteric learning algorithm]]. It doesn't distill the training data into parameters but the data is retained as a part of the algorithm.
 

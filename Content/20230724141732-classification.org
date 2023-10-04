@@ -12,7 +12,6 @@ To classify given data points into one or more known data classes.
 - binary classification
 - multiclass classification
 - multilabel classification (multiple viable labels for a data point)
-
 * Generic Classification Pipeline
 :PROPERTIES:
 :ID:       b5bbb126-c808-468c-962d-8361aa8c8dd1
@@ -145,5 +144,9 @@ The ROC curve is a graphical representation of a model's ability to classify dat
 * Relevant Nodes
  - [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
  - [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]]
+ - [[id:058a18f5-1bf4-4185-a67c-3fd6116d9129][One-class classification]]
  
+
+
+
 

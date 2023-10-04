@@ -110,3 +110,53 @@
 
   - more generic optimization techniques like [[id:a4761c32-806d-4a7f-ba18-27136a3de1fc][Gradient Descent]] are required 
   
+* Misc
+** Kernel Regression
+:PROPERTIES:
+:ID:       01cf36c5-7696-4cf7-a63c-a304d0f698b0
+:END:
+ - [[id:f8ed9d28-324b-4657-84e4-29cf735a782f][Non-parametric model]]
+ - briefly speaking,
+   - the idea is to estimate the value of the function being modelled at a point using a weighted average of the function's values at surrounding known input output pairs.
+   - the weights are decided by a kernel of our choice that has the following primary nature:
+     - values closer to the center (the point being estimated) have larger weights
+     - values farther away have lower weights
+     - preferably engineer a differentiable kernel to avoid a jerky regression curve output.
+ - given that this is a non-parametric model, the weights are based on the dataset we already have: 
+
+#+begin_src lisp
+  (defun kernel (input)
+    ...);;suitable kernel function)
+
+  (defun distance (input index)
+    (/ (- (fetch-feature index) input)
+       b));b is a hyperparameter
+
+  (defun generate-weight (input index)
+    (* (length dataset)
+       (/ (kernel (distance input index))
+	  (reduce #'+
+		  (mapcar #'(lambda (index); different index
+			      (kernel (distance input index)))
+			  (range (length dataset)))
+		  0))))
+
+  (defun func (input);;modelling function
+    (/ (reduce #'+
+	       (mapcar #'(lambda (index)
+			   (* (fetch-label index)
+			      (generate-weight input index)))
+		       (range (length dataset)))
+	       0)
+       (length dataset)))
+#+end_src
+
+the kernel should satisfy some basic requirements as above. The most frequenctly used is the [[id:2f44701c-e3e4-4b02-a899-e91e747db41a][Guassian kernel]]
+
+#+begin_src lisp
+  (defun kernel (input)
+    (* (/ 1 (sqrt (* 2 pi)))
+       (exp (/ (- (square input)) 2))))
+#+end_src
+
+b is a hyperparameter that dictates the fit of the regression curve and can be chosen using a validation set. A higher value of b results in a larger span of receiving influence for the central point being analysed : that is the curve will be smoother and one can expect a regularized and good fit. Lowering b results in emphasizing local points more and will result in a more wavy curve that varies drastically depending on the surrounding points from the center - this may lead to an overfit.

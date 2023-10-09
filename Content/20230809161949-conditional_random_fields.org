@@ -3,7 +3,12 @@
 :ROAM_ALIASES: CRF
 :END:
 #+title: Conditional Random Fields
-#+filetags: :tbp:ai:
+#+filetags: :ml:ai:
 
-* tools
+ - bidrectional deep gated [[id:f70bec51-ce7d-404e-aa37-223f64f07691][Recurrent Neural Networks]] outperform CRFs in sequence labelling tasks
+ - especially for larger datasets, the neural network approach is preferred
+ - CRFs are also slower to train
+ - read more at : [[https://en.wikipedia.org/wiki/Conditional_random_field]]
+
+* Tools
  - see [[id:e0963cc2-1c67-4d07-8541-606611e93f83][sklearn]]'s [[https://sklearn-crfsuite.readthedocs.io/en/latest/][sklearn-crfsuite — sklearn-crfsuite 0.3 documentation]] 

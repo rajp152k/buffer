@@ -72,7 +72,3 @@ I plan on accumulating and assimilating all that I learn from various domains in
    - reading and documenting densly into nodes of this web
  - this is a sentinel ref for those nodes to refer as an index
  - notes from this book are rooted in the node : [[id:33882050-cc96-447b-9022-bcbb1757af9d][the100pagemlbook]]
-
-   | start                  | end |
-   |------------------------+-----|
-   | [2023-09-11 Mon 11:00] | --- |

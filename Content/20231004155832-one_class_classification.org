@@ -8,3 +8,14 @@
  - tries to identify objects of a specific class among all objects
    - using only a training set composed of that one class
  - note that a normal [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]] problem has access to all classes in the training set.
+ - applications in outlier-detection, anomaly detection and novelty detection
+ - several one class algorithms :
+   - one-class Guassian
+     - assume data came from a guassian distribution -> maximize [[id:ae0af6d2-9e89-4491-a34b-ad8aacb6f0f3][likelihood]]
+   - one-class k-means
+     - have thresholds to decide if new feature vector similar to existing samples
+   - one-class kNN
+     - similar process to that of k-means
+   - one-class SVM
+     - either tries to seperate all training examples from the origin and maximize distance from the hyperplane to the origin
+     - or tries to obtain a spherical boundary around the data by minimizing the volume of this hypersphere

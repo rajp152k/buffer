@@ -44,3 +44,4 @@ For a deeper analysis of the calculus needed during the operations of neural net
 This node serves as an index into various major classes of neural networks mentioned in this brain dump. all of them have been tagged with :nn:.
 ** [[id:26f0b76d-c430-484c-832e-e1917800b43c][Convolutional Neural Networks]]
 ** [[id:f70bec51-ce7d-404e-aa37-223f64f07691][Recurrent Neural Networks]]
+** [[id:bff6a881-a5f7-4e20-af5a-1a952b193591][Siamese Neural Networks]]

@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       ea38c632-0acc-48d3-8515-d4e944f7d554
+:END:
+#+title: Ladder Network
+#+filetags: :tbp:ml:ai:
+
+An upgrade over a [[id:51a80c2d-9d25-48a1-9e1c-665299c2173c][Denoising Autoencoder]].
+
+ - The encoder and decoder have the same number of layers.
+ - The softmaxed bottleneck is used for the predictions.
+
+The overall [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]] function is built up of several individual components:
+ - for each corresponding layer pair of encoder(from start) and decoder(from end), one cost expression penalizes the squared difference between these (Euclidean distance).
+ - one component for the actual label prediction from the softmaxed bottleneck using a negative log-likelihood cost function.
+ - the final combination is a linear combination of the above with the coefficients of the layer components being hyperparameters.
+   - these hyperparameters help control the tradeoff between the classification and the encoding-decoding quality.
+
+ - In addition to jittering the input with guassian noise, each intermediate layer of the encoder is corrupted with guassian noise as well.
+   - this is only done during training and not when inferring a feature vector's prediction
+
+

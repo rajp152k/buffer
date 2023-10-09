@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       e6951ff4-ffda-48fa-813d-43bed131846b
+:END:
+#+title: Active Learning
+#+filetags: :ml:ai:
+
+
+An important [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]] paradigm employed when obtaining labeled examples directly is costly.
+
+** Strategy
+Out of the multiple strategies of active learning, exploring 2
+*** Data density and uncertainty based
+ 1. post obtaining a current model trained on the labelled examples..
+ 2. for each unlabeled feature vector x, generate a confidence score as follows:
+    - ~density(x)*uncertainty(x)~
+    - ~density~ reflects how many examples surround x in its close neighborhood
+      - can be obtained by averaging distance from the k nearest neighbors (k being a hyperparameter).
+    - ~uncertainty~ reflects how uncertain the prediction of the current model is for x. (obtained by prediction probabilities of x in case of classification)
+      - in the case of [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][binary classification]], the closer it is to 0.5, the more uncertain the prediction is
+      - in the case of [[id:b278fc18-a6cf-4e41-b015-502dbad9f056][Support Vector Machine]], the closer the examples is to the decision boundary, the more uncertain the prediction is.
+      - In the case of [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][multiclass classification]], [[id:b35790f3-7502-4175-acf7-dac894bd2a5c][Entropy]] can be used as a measure of uncertainty :- read up here : https://en.wikipedia.org/wiki/Entropy_(information_theory)
+ 3. Once importances are obtained for all unlabeled feature vectors, a domain expert is asked to annotate the ones with the highest importances. 
+ 4. add these newly annotated examples to the training set
+ 5. until a stopping criterion (max requests per annotation session for instance) has been achieved continue updating training set and finally build the model.
+ 6. repeat the cycle according to desired frequencies 
+*** Support vector based
+ 1. build an SVM model using labelled data
+ 2. ask the expert to annotate unlabeled examples that lie closest to the hyperplane separating the two classes ([[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][binary classifiation]])
+
+** Resources
+ - read more here: https://en.wikipedia.org/wiki/Active_learning_(machine_learning)

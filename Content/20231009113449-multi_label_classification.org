@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       59154949-1de9-4019-b031-39db6f1a1a89
+:END:
+#+title: Multi-Label Classification
+#+filetags: :ml:ai:
+
+ - each feature vector has multiple prediction labels associated with it.
+   - classification isn't exclusive, it's about identifying the applicable labels than comparing them.
+ - this can be targeted using the one-verses-rest strategy.
+   - with a new threshold hyperparameter
+     - if the probability for a class exceeds that threshold, we add this label to the overall label set for that feature vector
+   - repeated for each label out of all possible labels
+ - [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]] can target this naturally by using a binary cross entropy [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]] function for each possible label
+   - the loss then is the average for all these losses for each label associated with a sigmoid activation in the output layer.
+ - In some cases, it might be possible to separate the label into cartesian products of mutually exclusively applicable labels
+   - check this example for the same
+
+  | Combination number | label: set 1 | label: set 2 | actual label set        |
+  |--------------------+--------------+--------------+-------------------------|
+  |                  1 | photo        | portrait     | {"photo","portrait"}    |
+  |                  2 | photo        | paysage      | {"photo","paysage"}     |
+  |                  3 | photo        | other        | {"photo","other"}       |
+  |                  4 | painting     | portrait     | {"painting","portrait"} |
+  |                  5 | painting     | paysage      | {"painting","paysage"}  |
+  |                  6 | painting     | other        | {"painting","other"}    |

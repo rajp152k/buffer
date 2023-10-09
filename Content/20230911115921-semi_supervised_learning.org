@@ -8,3 +8,8 @@
 A combination of [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]] and [[id:fded2ca7-e60a-4c83-842f-bc60f1ea5260][Unsupervised Learning]].
 The dataset has labelled and unlabelled instances.
 The objective is decided by the supervised learning task.
+The learning variant in this case is to leverage the large number of unlabeled examples to improve model performane without asking an expert for additional labeled examples
+
+* Relevant Nodes
+** [[id:ea38c632-0acc-48d3-8515-d4e944f7d554][Ladder Network]]
+** [[id:81985887-7ea1-4b4d-b8b9-f2437e887af7][AutoEncoder]]

@@ -145,8 +145,10 @@ The ROC curve is a graphical representation of a model's ability to classify dat
  - [[id:f8d2207f-86d3-4501-a7bc-393fb53c52c1][Text Classification]]
  - [[id:91729987-32db-482a-bc1b-91469579413b][Logistic Regression]]
  - [[id:058a18f5-1bf4-4185-a67c-3fd6116d9129][One-class classification]]
+ - [[id:59154949-1de9-4019-b031-39db6f1a1a89][Multi-Label Classification]]
  
 
 
 
 
+ 

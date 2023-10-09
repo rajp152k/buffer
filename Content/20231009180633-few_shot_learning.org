@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       a91e1ded-6bd8-489a-8276-d4893da40be5
+:END:
+#+title: Few Shot Learning
+#+filetags: :ml:ai:
+
+A paradigm of [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]].
+
+* One-Shot Learning
+:PROPERTIES:
+:ID:       bb638a91-c9b5-4150-b51f-3ecaed26837f
+:END:
+ - building a performant model given only a single instance
+ - mostly used for facial recognition (identifying if another photo is of the same person or is different altogether)
+ - One way to tackle this is proceed with [[id:bff6a881-a5f7-4e20-af5a-1a952b193591][Siamese Neural Networks]]
+ - note that the "one shot" refers to the inference time usage of only one example to produce results whereas the training phase might still call for a larger datset.
+
+* Zero-Shot Learning
+:PROPERTIES:
+:ID:       3bfe1fcd-bd56-495e-8015-a38981fccf0c
+:END:
+ - training a model to assign labels to objects (images usually) but the labels might not be present in the training data.
+ - a trick is to represent the labels as well with embeddings so that a notion of familiarity with other already seen labels is captured.
+   - moving on from a categorical label to a full blown vector that's later remapped to the necessary labels.
+ - for instance : the label pairs (orange, banana) and (orange, red) will be closer in the vector space (pair entity 1 and 2 with each other) than something like (batman, barbie).
+ - so assigning a new label can be reduced to forwarding the input down into an embedding and then looking up a label-embedding bidirectional dictionary for the closest match to report as a viable label.
+ - for instance, if the model had access to zebras during training, the strip identification filters in a CNN might help classify a tiger seen for the first time.

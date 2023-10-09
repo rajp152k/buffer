@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       82956af5-5f60-48a3-964b-b07e72652356
+:END:
+#+title: Seq2Seq
+#+filetags: :ml:ai:
+
+Of all [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Network]] approaches for this problem, a common denominator is the formulation of an encoder and a decoder: resulting in the alias "encoder-decoder networks"
+
+* Encoder(Seq2Seq)
+:PROPERTIES:
+:ID:       e415b18d-43fd-4f62-b235-dc6607631340
+:END:
+ - maps sequential input to an embedding 
+   - serves as a machine-usable representation of the input sequence
+ - may be a CNN, RNN, or some other architecture
+* Decoder(Seq2Seq)
+:PROPERTIES:
+:ID:       d1051a53-3ffb-47ac-a768-8898923cb57c
+:END:
+ - maps the embedding to the desired output sequence
+
+
+* Misc
+ - incorporating [[id:ea67fa6d-6bc9-44fb-98a2-63bc9f95f8ea][Attention]] modules into the encoder-decoder networks results in better performance
+   - implemented by an additional set of parameters that combine some information from the encoder and the current state vector of the decoder to generate the label
+   - results in better context consideration than bidirectional and gated RNN variants.
+
+     
+

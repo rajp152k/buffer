@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       bff6a881-a5f7-4e20-af5a-1a952b193591
+:END:
+#+title: Siamese Neural Networks
+#+filetags: :nn:ml:ai:
+
+ - useful in the case of [[id:a91e1ded-6bd8-489a-8276-d4893da40be5][Few Shot Learning]].
+ - can be built by any kind of [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][neural network]] : the difference arises in the way we engineer the loss function
+ - specifically, we use a .. (specifying into [[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][Computer Vision]] applications)
+** Triplet Loss Function
+:PROPERTIES:
+:ID:       c4534321-7029-48f5-8400-6cf3e2860f17
+:END:
+
+Starting out with three images:
+- A : anchor
+- P : positive
+- N : negative
+
+  .. such that A and P are two different pictures of the same person while N is a picture of another person.
+
+Given that we have a model f that produces an embedding given an image as input the triplet loss is defined as :
+
+#+begin_src lisp
+  (defun f (input-image)
+    (...));returns embedding
+
+  (defun L2-norm-squared (a b)
+    (...));euclidean distance between two vectors
+
+  ;;A,P,N are images as defined above
+
+  (defun triplet-loss (A P N)
+    (max (+ (- (L2-norm-squared (f A) (f P))
+	       (L2-norm-squared (f A) (f N)))
+	    alpha)
+	 0))
+#+end_src
+
+Intuitively speaking, this loss encourages embedding of P and A to be closer while that of N and A to be farther away.
+alpha is a positive hyperparameter that if increased, encourages the model to increase the distinction between the first two terms in the triplet loss.
+A lower alpha allows for a more lenient model.
+
+The overall cost function is the average of all such triplet losses.
+
+Post back-propogation post forwards on a dataset's all such triplets (note that one shot doesn't imply training on only one sample but inference with respect to a single instance), we have a Siamese neural network.
+
+To use it, given two pictures P1 and P2, if the euclidean distance between their forwards is  less than a threshold (a hyperparameter), we mark the pair as being of the same person.
+
+It's called one shot cause you need only one picture for a specific comparison (the training phase still needed a larger dataset though).

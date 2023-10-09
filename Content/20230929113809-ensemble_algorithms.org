@@ -2,5 +2,43 @@
 :ID:       05507b9a-ab6b-45cb-92b4-d71b574c5b7b
 :END:
 #+title: Ensemble Algorithms
-#+filetags: :tbp:ml:ai:
+#+filetags: :ml:ai:
 
+ - instead of learning one super-accurate model, focus on training a large number of low-accuracy models (voters) and then comibining predictions by these weaker models to obtain a high accuracy meta-model
+ - low-accuracy models are generally modelled by weak learning algorithms : they're faster to train and during inference.
+   - each does at least slightly better than random guessing then one can obtain a high accuracy model by combining a large number of such weaker models.
+ - weighted voting is a possibility
+* Paradigms
+** Bagging
+ - using multiple weak models (trained on slightly tweaked training data) 
+** Boosting
+ - 
+* Some commonly used algorithms:
+** Random Forest
+:PROPERTIES:
+:ID:       1792272b-d084-4327-8ed5-16cc71d80c6e
+:END:
+ - under the bagging paradigm of ensemble learning
+ - weaker models are decision trees.
+ - read more at : [[https://en.wikipedia.org/wiki/Random_forest]]
+ - the final model helps reduce variance (low overfitting)
+** Gradient Boosting
+:PROPERTIES:
+:ID:       a6abf03f-ba80-41d1-aa53-0696fd781d5c
+:END:
+ - essentially stacking models instead of using them independently
+ - a rough outline of the procedure (for [[id:93082142-64cf-45b2-9878-f3a96f596ccf][Regression]]):
+   1. build a model (say f0) and generate predictions
+   2. identify residuals (difference between predictions and actuals) for each feature vector
+   3. train a new model(say f1) for this set of feature vectors and residuals
+   4. set the new predictor as (f0 + alpha*f1)
+      - alpha is a hyperparameter (learning rate)
+   5. repeat with this new predictor as the new f0 until residuals have been reduced satisfactorily
+ - boosting reduces bias (helps target underfitting issues) rather than work on variance (bagging helps with that)
+ - boosting is prone to overfitting
+   - this can be controlled by tuning the base models power (depth in trees, degree of polynomial in linear regression, etc) and the number of subsequent iterations
+ - read more here: https://en.wikipedia.org/wiki/Gradient_boosting
+ - classification can be adapted to gradient boosting by modelling it as a logistic regression problem.
+ - the modifiable predictor will be the exponent of the natural number in this case, before we wrap it with a sigmoid 
+ - more powerful than random forests and slower due to the sequential nature of building the model
+ - consider reading more: https://en.wikipedia.org/wiki/Gradient_boosting

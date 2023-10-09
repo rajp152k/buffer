@@ -192,4 +192,15 @@ Finally, once fit on all these fold combinations, the model performance is ready
 * Problems and Solutions
 ** [[id:01cf36c5-7696-4cf7-a63c-a304d0f698b0][Kernel Regression]]
 ** [[id:058a18f5-1bf4-4185-a67c-3fd6116d9129][One-class classification]]
+** [[id:59154949-1de9-4019-b031-39db6f1a1a89][Multi-Label Classification]]
+** [[id:05507b9a-ab6b-45cb-92b4-d71b574c5b7b][Ensemble Algorithms]] 
+** Learning to label sequences
+ - already explored [[id:f70bec51-ce7d-404e-aa37-223f64f07691][Recurrent Neural Networks]] for sequence labelling
+ - looking into [[id:4d58e957-2281-4bd5-82b9-1d12e7edfc74][Conditional Random Fields]] now
 
+** Sequence to Sequence ([[id:82956af5-5f60-48a3-964b-b07e72652356][seq2seq]]) Learning
+** [[id:e6951ff4-ffda-48fa-813d-43bed131846b][Active Learning]]
+** [[id:322ac854-7baf-41e2-8895-c33b2ef08f91][Semi-Supervised Learning]]
+** [[id:a91e1ded-6bd8-489a-8276-d4893da40be5][Few Shot Learning]]
+
+     

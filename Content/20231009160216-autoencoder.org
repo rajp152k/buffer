@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       81985887-7ea1-4b4d-b8b9-f2437e887af7
+:END:
+#+title: AutoEncoder
+#+filetags: :ml:ai:
+
+An encoder-decoder architecture trained to reconstruct its input (hence the word auto (self)) passing via an intermediate embedding stage before the decoder maps it to the reconstruction.
+
+ - A direct, non-reducing pipe (no characteristic hourglass) will result in no important condensed representation of the input being learned and is not of much use.
+   - a bottleneck layer in the middle at the end of the encoder is important
+   - note that this bottleneck layer should still be complex enough to be able to capture the semantic differences in the input distribution completely
+     - for instance, 10 units for encoding the MNIST dataset (0-9 handwritten digits) is sufficient but going lower will result in unecessary semantic overlaps
+
+
+The [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]] for the case of:
+ - [[id:93082142-64cf-45b2-9878-f3a96f596ccf][regression]] : mean squared error between input and reconstruction
+ - classification : binary cross entropy loss between input and output binary vector
+
+
+** Denoising Autoencoder
+:PROPERTIES:
+:ID:       51a80c2d-9d25-48a1-9e1c-665299c2173c
+:END:
+A denoising autoencoder jitters the input with [[id:2f44701c-e3e4-4b02-a899-e91e747db41a][guassian]] noise and tries constructing the clean (denoised) variant of the noisy input by trying to map it to the original clean input.

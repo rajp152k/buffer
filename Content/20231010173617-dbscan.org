@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       8cd5139d-af3c-4e73-a810-f401e2563d3a
+:END:
+#+title: DBSCAN
+#+filetags: :ml:ai:
+
+* Basics
+ - is a density based algorithm compared to its centroid based counterparts.
+ - instead of having number of clusters as the hyperparameter, we have two hyperparameters now:
+   - epsilon
+   - n
+* Algorithm
+ - breifly describing the algorithm:
+   1. pick an unassigned sample randomly and assign it to new cluster
+   2. count how many samples from this one are at a distance less than epsilon
+   3. if this count is greater than n, all of these are assigned to the present cluster as well
+   4. repeat this check for each member of cluster A. if the above conditions are satisfied (more than n in less than epsilon), the present cluster is updated with these new additions as well
+   5. repeat step 4 until convergence of the present cluster
+   6. when no new additions to the present cluster can be made, start building a new cluster from step 1. Terminate procedure when no unassigned clusters remain
+
+* Misc
+  - DBSCAN can build arbitarily shaped clusters whereas others algorithms are bound to generate hyperspheres.
+  - a major drawback is that tuning for two hyperparameters is much harder than tuning for one.
+    - moreover, a fixed epsilon cannot account for clusters with different densities (they're still clusters)
+  
+* HDBSCAN
+:PROPERTIES:
+:ID:       ee0394d0-16c6-4565-a920-c4b443657ce1
+:END:
+
+ - removes the need to decide on epsilon and functions with only one hyperparameter (n - the minimum number of samples to put in a cluster).
+   - tuning is easier.
+ - fast implementations are present and can serve as a quick baseline for a clustering task.
+ - read more here: https://en.wikipedia.org/wiki/DBSCAN#Extensions

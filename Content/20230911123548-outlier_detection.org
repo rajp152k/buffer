@@ -1,6 +1,11 @@
 :PROPERTIES:
 :ID:       a9f08fcf-c62d-40c0-a7fb-53d7f827b5ea
+:ROAM_ALIASES: "Anomaly Detection"
 :END:
 #+title: Outlier Detection
 #+filetags: :tbp:ml:ai:
 
+ - detecting data points that are different from the typical example in the dataset
+ - one strategy is testing with an autoencoder trained on the dataset:
+    - reconstruction won't be possible if the input is an outlier
+ - read more here :  https://en.wikipedia.org/wiki/Anomaly_detection

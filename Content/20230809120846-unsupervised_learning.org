@@ -5,16 +5,19 @@
 #+filetags: :ai:
 
 
+* Basics
 The major point of differentitiation initiates from how the relevant dataset is structured.
-
 ** Dataset
-
  - a collection of unlabelled examples (only feature vectors)
-
 ** Objective
-
  - [[id:17d3a745-72b6-4cf7-a0a2-ed5ff69830bf][train]] a model using the dataset such that it transforms feature vectors into practical representations 
  - these representations are task dependent
    - [[id:d9f0b0b5-3cdf-499c-9c78-ceda036fdb58][Clustering]] : a categorical cluster label
    - [[id:ec4cd02f-e700-41ce-93df-484dfdf8d3eb][Dimensionality Reduction]] : a semantically useful condensed vector
    - [[id:a9f08fcf-c62d-40c0-a7fb-53d7f827b5ea][Outlier Detection]] : an indicator as to how different a feature vector is from the usual instance in the dataset
+
+* Unsupervised Learning Tasks
+** [[id:d45cbd1d-5884-4f81-bdfd-7fb35cd102c2][Density Estimation]]
+** [[id:d9f0b0b5-3cdf-499c-9c78-ceda036fdb58][Clustering]]
+** [[id:ec4cd02f-e700-41ce-93df-484dfdf8d3eb][Dimensionality Reduction]] 
+** [[id:a9f08fcf-c62d-40c0-a7fb-53d7f827b5ea][Outlier Detection]]

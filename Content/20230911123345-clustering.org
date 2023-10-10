@@ -2,13 +2,13 @@
 :ID:       d9f0b0b5-3cdf-499c-9c78-ceda036fdb58
 :END:
 #+title: Clustering
-#+filetags: :tbp:ml:ai:
+#+filetags: :ml:ai:
 
-
-To be populated ...
-
-* Loss 
-
+* Basics
+ - learning to assign a label to examples by leveraging an unlabeled dataset
+ - due to the unlabelled nature of the problem, evaluation strategies are important
+   - performance usually depends a whole lot more on the underlying distribution from which the data was sampled
+** Evaluation
 The nature of a clustering can be evaluated via multiple perspectives and their combinations. This leads to several loss functions that are losely based on the two major criteria:
  - larger Inter cluster distance is better
  - small Intra-cluser diameter is better
@@ -16,4 +16,33 @@ The nature of a clustering can be evaluated via multiple perspectives and their 
 Some advanced metrics may even consider considering the shape of the clusters but I won't be exploring that here.
 
 checkout [[https://scikit-learn.org/stable/modules/clustering.html#clustering-performance-evaluation][scikit learn clustering docs]] to know more about evaluating clustering performance.
-
+** Determining number of clusters
+ - easier for less than 4 dimension, need a strategy for higher dimensions
+*** Prediction of strength
+ - split the data into training and test set
+ - fix number of clusters
+ - run clustering algorithm on training and test set
+ - clustering regions for these two results can be formed now
+ - build a comembership matrix for the two as follows :
+   - rows and cols being total number of points in test set
+   - for each cell, mark as 1 if those data points  to the same cluster in the training clustering results
+ - if k (number of clusters) is reasonable this comembership matrix should be in close alignment with the test clustering results
+ - read more here : https://gwalther.su.domains/predictionstrength.pdf
+*** Gap statistic
+ - https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set#The_gap_statistics
+*** Elbow method
+ - https://en.wikipedia.org/wiki/Determining_the_number_of_clusters_in_a_data_set#Elbow_method
+* Algorithms 
+** Hard clustering models
+ - definite assignment of a cluster to each label
+*** [[id:252ff960-932e-4e2e-80aa-abeea1f08ce8][k-Means]]
+*** [[id:8cd5139d-af3c-4e73-a810-f401e2563d3a][DBSCAN]]
+** Soft clustering models
+ - Membership scores for clusters rather than hard labels
+*** [[id:e38e459c-3710-490b-a923-f8b82bf5725a][Guassian Mixture Models]]
+*** [[id:ee0394d0-16c6-4565-a920-c4b443657ce1][HDBSCAN]]
+*** Spectral Clustering
+ - https://en.wikipedia.org/wiki/Spectral_clustering
+** Malleable
+*** Hierarchical Clustering
+ - https://en.wikipedia.org/wiki/Hierarchical_clustering

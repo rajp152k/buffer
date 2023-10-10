@@ -202,5 +202,109 @@ Finally, once fit on all these fold combinations, the model performance is ready
 ** [[id:e6951ff4-ffda-48fa-813d-43bed131846b][Active Learning]]
 ** [[id:322ac854-7baf-41e2-8895-c33b2ef08f91][Semi-Supervised Learning]]
 ** [[id:a91e1ded-6bd8-489a-8276-d4893da40be5][Few Shot Learning]]
+* Advanced Practice
+** Handling Imbalanced Datasets
+ - most practical datasets might under-represent some classes 
+ - see [[id:89c8e59e-e058-4edc-bd85-b4db9eb089a9][Class Imbalance]] for a basic coverage
+** Combining Models
+:PROPERTIES:
+:ID:       a4d189cd-dba9-40a4-bac4-0afddc1383c3
+:END:
+Elaborating further upon the basics from [[id:05507b9a-ab6b-45cb-92b4-d71b574c5b7b][Ensemble Algorithms]].
 
-     
+Three basic ways to combine models:
+1. (weighted) averaging
+   - naturally works for regression
+   - adaptable to classification when working with prediction probabilities
+2. majority vote
+   - applicable to classification
+   - report the label with most votes
+     - different tie breaker strategies possible
+3. stacking
+   - building a meta model that takes output of base models as input
+   - have to create a new dataset from the outputs of the base models to train the meta-model
+   - tuning hyperparameters via cross-validation is recommended.
+
+Every time, do verify if the ensemble model performs better using the validation set.
+
+Do note that one benefits the most from an ensemble approach when using several "uncorrelated" models.
+Combining different versions of similar approaches (SVMs with several different kernel for instance or versions of decision trees for instance) may not result in a performance boost.
+
+** Training Neural Networks
+ - check out SOTA before choosing architecture for a task 
+ - tuning the networks hyperparameters and sizes (number of layers, etc) based on its behaviour over the validation and training set (check if the network is complex enough, if it overfits and the need to regularize)
+   - a stepped approach towards intermittently increasing the size and regularizing to check if the model fits to the training and validation set both (model being complex enough and no overfitting respectively)
+
+** Advanced Regularization
+ - elaborated upon the basics in [[id:2f33e97a-c064-4680-9951-9fdab284eb89][Regularization]]
+** Handling Multiple Inputs
+ - most practical problems demand working with multimodal data.
+   - for instance, a pair of image and possible caption being input with the output being an indicator variable verifying if the caption matches the picture
+ - [[id:a4d189cd-dba9-40a4-bac4-0afddc1383c3][Combining Models]] as stated before in this node can be used to deal with the different modalities.
+ - another common approach is to vectorize and concatenate all the modalities to form a longer tensor that can then be normally processed by a model
+ - neural networks are more flexible:
+   - extract embeddings for the image and text from a [[id:26f0b76d-c430-484c-832e-e1917800b43c][CNN]] and [[id:f70bec51-ce7d-404e-aa37-223f64f07691][RNN]] base respectively, concatenate them and proceed with a fully connected approach later on according to our output demands (classification or regression for starters)
+ - averaging embeddings is also a possibility if the nature of the inputs is the same, before we proceed towards the final part of the network.
+   
+** Handling Multiple Outputs
+ - other than the multilabel classification problem, producing multimodal outputs can also be a necessity
+ - for instance, one wants to detect if an object exists in an image along with the bounding box for it and also return a label for the same.
+   - the overall output for such a case will be an image + a vector of coordinates + a one-hot encoded label
+   - to deal with this one can employ an encoder subnetwork that encodes the image into an embedding.
+   - this subnetwork can have a ReLU on the last layer (good choice for detecting positive reals) to detect coordinates and this can use the mean squared error between this output and the desired coordinate vector
+   - the second subnetwork takes this same embedding as input and predicts probabilities for each label with a final softmax to do so
+   - the loss for this can be the usual negative log likelihood (aka cross entropy loss)
+   - the final loss function for optimization can be set to a convex combination of the two with the choice to tune the underlying hyperparameter.
+
+** [[id:64c6a881-ef47-4973-a821-34e0cc085f34][Transfer Learning]]
+** Algorithmic Efficiency
+ - use linear algebra optimized operations and avoid loops
+ - use the laziest data structure that'll do for the problem (sets instead of lists if the order doesn't matter, for instance)
+ - avoid writing custom methods if tested popular libraries exist
+ - employ code profiling to find out bottlenecks in your code
+
+* [[id:fded2ca7-e60a-4c83-842f-bc60f1ea5260][Unsupervised Learning]]
+* Other Forms of Learning
+** Metric Learning
+ - algorithmic choices : Euclidean vs Manhattan for distance, for instance - can affect performance
+ - engineering metrics based on custom needs is also possible
+   - weighing dimension differently for instance is a basic approach
+ - do keep in mind that distance based metrics need to satisfy certain rules though:
+   1. non-negativity : ~d(a,b) >= 0~
+   2. triangle-inequality : ~d(a,b) <= d(a,c) + d(c,b)~
+   3. symmetry : ~d(a,b) == d(b,a)~
+
+ - read more here: https://en.wikipedia.org/wiki/Similarity_learning#Metric_learning
+
+** Learning to Rank 
+ - [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]] problem
+ - application : search engine results 
+ - given a dataset of documents and rank labels, goal is to model a ranking function that produces ranks, given the document
+ - 3 basic approaches to solve this problem:
+   1. point wise
+   2. pair wise
+   3. list wise
+ - read more here: https://en.wikipedia.org/wiki/Learning_to_rank
+
+** Learning to Recommend
+ - application: building recommendation systems
+   - two basic approaches:
+     1. content based filtering
+	- based on a single users consumption
+     2. collaborative filtering
+	- takes into account multiple users based on common likes, dislikes when recommending something
+ - read more here: https://en.wikipedia.org/wiki/Recommender_system
+
+** Self-Supervised Learning
+ - check out [[id:3f69fc50-5e0b-4bbd-8909-ee777434a1f5][textual feature representation]]
+ - read more here : https://en.wikipedia.org/wiki/Self-supervised_learning
+
+* Conclusions
+Nodes that weren't covered in the book and noted as worth exploring by the author later on:
+ - [[id:499357ff-8512-456c-9ca2-c73c09af941c][Topic Modeling]]
+ - [[id:c56bc1b1-3f21-41a3-bc61-838b432348fe][Guassian Processes]]
+ - [[id:2b3c32e7-29c0-4c09-875e-6296d622b497][Generalized Linear Models]]
+ - [[id:78062adb-4e8e-4492-9731-6aa6c0fdde9e][Probabilistic Graphical Models]]
+ - [[id:780717a9-3e5c-425b-b247-6bdfa52a12c0][Markov Chain Monte Carlo Algos]]
+ - [[id:fa44b319-fd2e-4e78-bc26-947ae086539a][Genetic Algorithms]]
+ - [[id:9cac188e-8229-4c7a-9cb4-eeb5e81f8010][Reinforcement Learning]]

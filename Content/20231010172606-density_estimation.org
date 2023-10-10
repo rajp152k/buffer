@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       d45cbd1d-5884-4f81-bdfd-7fb35cd102c2
+:END:
+#+title: Density Estimation
+#+filetags: :ml:ai:
+
+- problem of modeling the [[id:91b6fb5d-6447-43fe-8412-2054bb79979a][probability density function]] function of the unknown porbability distribution from which the dataset has been drawn.
+- proceeding with a non-parametric model because assumptions regarding the underlying distribution might not necessarily be true.
+  - see [[id:01cf36c5-7696-4cf7-a63c-a304d0f698b0][Kernel Regression]] for a non-parametric model's example
+
+Building up a pedagogical one-dimensional case:
+
+for the inputs being sampled from an unknown pdf f, denoting the kernel model by f-hat ...
+
+#+begin_src lisp
+  (defun kernel (input)
+    ...);;suitable kernel function)
+
+  (defun distance (input index)
+    (/ (- input (fetch-feature index))
+       b));b is a hyperparameter
+
+  (defun f-hat (input);; the kernel model of f
+    (/ (reduce #'+
+	       (mapcar #'(lambda (index)
+			   (kernel (distance input index)))
+		       (range (length dataset)))
+	       0)
+       (* (length dataset)
+	  b)))
+#+end_src
+
+- b is a hyperparameter that controls the trade-off between the bias and the variance
+- the kernel can be any suitable function of choice but proceeding with the Guassian kernel here:
+
+#+begin_src lisp
+  (defun guassian-kernel (input)
+    "zero mean, unit variance guassian kernel"
+    (/ (exponent (- (/ (square input)
+		       2)))
+       (sqrt (* 2 pi))))
+#+end_src
+
+- we look for such a value of b that closes off the difference between the real latent f and f-hat.
+- A reasonable choice for this is the mean integrated square error because we are dealing with a continuous and not a discrete domain this time. formulating:
+
+#+begin_src lisp
+  (defun expectation (rand-var)
+    ...);returns expectation (pdf weighted mean) of a random variable
+
+  (defun integrate (limits ;;  range or set
+		    variable ;; integrated w.r.t. this
+		    integrand) ;; expression to integrate
+    ;; this will be a computational approximation if possible
+    ;; i.e a large summation ultimately
+    ;; otherwise another variable to be
+    ;; passed on for further usage
+    (...))
+
+  (defun MISE (b) ;; mean integrated square error
+    (expectation (integrate
+		  (set-of-reals)
+		  (x)
+		  (square (- (f-hat x) ;; kernel model 
+			     (f x))))));; real latent pdf 
+#+end_src
+
+Do note that this could also be done for a probability mass function with some tweaks to the loss function: due to the discrete case of the function being modelled this time.
+We'll be having the usual Mean squared error in this case.
+
+If b is too small, we weigh the closer samples a little to heavily leading to an overfit and wiggly estimator. If b is too large, all samples weigh in a little too much for a local approximation leading to a flatter estimation.
+
+To find the appropriate b, tune using the validation set.
+
+read up more on MISE(b) here : https://en.wikipedia.org/wiki/Mean_integrated_squared_error
+
+(haven't covered further simplification here : expand square, substitute unbiased estimators, and .......)

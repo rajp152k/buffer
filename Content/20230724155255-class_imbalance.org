@@ -11,9 +11,20 @@ See [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]].
  - problems may arise in different stages of the [[id:b5bbb126-c808-468c-962d-8361aa8c8dd1][pipeline]] if a dataset is imbalanced and extra care may need to be taken for normal execution
  - may result in insufficient data to learn the characteristics of a specific class and distributionally non-conforming validation/training sets if one does not use stratification when splitting datasets.
  - Evaluation metrics may also be mislead if some classes are under-represented : this calls for a family of class-balanced loss functions/metrics for fair consideration of all classification in the training/evaluation process.
-
+* Solutions
+One may deal with the issue by augmenting the training data or the algorithm itself 
+** Algorithm Oriented
+ - weighing the rarer class more heavily during training can compensate for the under-representation
+  - some algorithms inherently handle minorities better than the others (random forests and gradient boosting) and may serve as good quick baselines 
+** Data set oriented solutions
+*** Oversampling
+ - replicating the data points from the minority class with/without some minor tweaks 
+   - two common oversampling methods:
+     1. [[https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis#SMOTE][Synthetic minority oversampling technique (SMOTE)]]
+     2. [[https://en.wikipedia.org/wiki/Oversampling_and_undersampling_in_data_analysis#ADASYN][Adaptive synthetic sampling method (ADASYN)]]
+*** Undersampling
+ - proceeding with only a randomly selected subset of the over-represented classes to balance out the dataset in case one doesn't want duplication
 
 * Resources
-
  - [[https://pypi.org/project/imbalanced-learn/][imbalanced-learn · PyPI]]
  

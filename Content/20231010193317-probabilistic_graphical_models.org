@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       78062adb-4e8e-4492-9731-6aa6c0fdde9e
+:END:
+#+title: Probabilistic Graphical Models
+#+filetags: :tbp:ml:ai:
+

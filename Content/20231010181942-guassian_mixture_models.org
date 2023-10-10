@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       e38e459c-3710-490b-a923-f8b82bf5725a
+:END:
+#+title: Guassian Mixture Models
+#+filetags: :tbp:ml:ai:
+
+* Relevant Nodes
+
+ - [[id:06ff695f-5031-4add-ac0f-6c3afdb3f179][Expectation Maximization]]
+ - [[id:ae0af6d2-9e89-4491-a34b-ad8aacb6f0f3][Maximum Likelihood]]
+ - [[id:2f44701c-e3e4-4b02-a899-e91e747db41a][Normal Distribution]]
+
+

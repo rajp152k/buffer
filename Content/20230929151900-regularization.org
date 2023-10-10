@@ -4,6 +4,7 @@
 #+title: Regularization
 #+filetags: :ml:ai:
 
+* Basics
 ** Purpose
 Prevent overfitting by adding a penalty to the model's complexity.
 ** Techniques
@@ -27,3 +28,35 @@ It introduces a trade-off between fitting the training data well and having a si
 The strength of regularization is controlled by a hyperparameter (lambda or alpha) that can be tuned to achieve the desired balance between bias and variance.
 ** Benefits
 It helps improve model stability, reduce overfitting, and make models more robust in real-world scenarios.
+
+* Specific to [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]]
+** Dropout
+:PROPERTIES:
+:ID:       f44fd8bf-e28d-4426-a282-7813eb172cc4
+:END:
+ - exclude a certain percentage (or with certain probability) of the neurons (switch them off) during training during each iteration
+ - the higher that hyperparameter, the more regularizing effect we introduce.
+ - this can be achieved using a dropout layer
+** BatchNorm
+:PROPERTIES:
+:ID:       b66652b4-7dbd-4441-b73a-045d780a429c
+:END:
+ - standardizing outputs of each layer before units of the subsequent layer receive them as input
+ - results in faster and more stable training
+ - not specifically a regularization technique but often exhibits regularization effects
+ - no particular harm if you use it : should always use it as a rule of thumb
+ - implemented as a batchNorm layer between two computational layers.
+** Data Augmentation
+ - usually with images
+ - involves creating synthetic examples by applying various transformations on the original:
+   - slight zoom in/out
+   - rotating
+   - flipping
+   - darkening
+   - and so on
+** Early Stopping
+:PROPERTIES:
+:ID:       a46256b8-1ea5-4679-92af-4e1c5ed095f9
+:END:
+ - overfits due to prolonged training can result in lower validation performance
+ - a common practice is to have checkpoints every certain number of epochs and store the best model so far based on validation performance

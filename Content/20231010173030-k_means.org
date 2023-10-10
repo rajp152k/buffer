@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       252ff960-932e-4e2e-80aa-abeea1f08ce8
+:END:
+#+title: k-Means
+#+filetags: :ml:ai:
+
+Describing the algorithm breifly:
+1. choose k (hyperparameter) : the number of clusters/classes
+2. randomly put k centroids in the hyperspace
+3. compute distance (euclidean usually) of each sample to each cetroid
+4. assign closest centroid to each example
+5. for each centroid group, compute the new centroid
+6. repeat from 3 until convergence, i.e. centroids are stable and don't change anymore
+
+
+Do note that different initializations can result in different final results for the algorithm.
+Choosing the number of clusters (k) is more about making an educated guess than a science although some heuristics do exist for the same.

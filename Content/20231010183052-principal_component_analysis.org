@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       dfdad686-71df-41b7-bdcc-b859f6cdc1ae
+:ROAM_ALIASES: PCA
+:END:
+#+title: Principal Component Analysis
+#+filetags: :tbp:math:ai:

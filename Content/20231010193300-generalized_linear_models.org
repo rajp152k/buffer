@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2b3c32e7-29c0-4c09-875e-6296d622b497
+:END:
+#+title: Generalized Linear Models
+#+filetags: :tbp:ml:ai:
+

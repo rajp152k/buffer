@@ -16,7 +16,6 @@ The [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]] for the case of:
  - [[id:93082142-64cf-45b2-9878-f3a96f596ccf][regression]] : mean squared error between input and reconstruction
  - classification : binary cross entropy loss between input and output binary vector
 
-
 ** Denoising Autoencoder
 :PROPERTIES:
 :ID:       51a80c2d-9d25-48a1-9e1c-665299c2173c

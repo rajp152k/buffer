@@ -2,5 +2,13 @@
 :ID:       ec4cd02f-e700-41ce-93df-484dfdf8d3eb
 :END:
 #+title: Dimensionality Reduction
-#+filetags: :tbp:math:
+#+filetags: :math:
 
+ - given the increasingly available powerful compute, working with higher amount of dimensions is that big of an issue as it used to be initially
+ - mostly used for data visualization purposes these days and for more traditional shallow methods
+
+* Algorithms
+** [[id:dfdad686-71df-41b7-bdcc-b859f6cdc1ae][Principal Component Analysis]]
+** Uniform Manifold Approximation and Projection (UMAP)
+ - https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction
+** [[id:81985887-7ea1-4b4d-b8b9-f2437e887af7][AutoEncoders]]

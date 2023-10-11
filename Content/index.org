@@ -15,6 +15,23 @@
 ** [[id:20230727T192932.286062][Youtube]]
  - log of all videos along with plans and indices into drafts
 * Stream
+** 0x2173
+ - so, I'm finally done pruning some nodes that weren't serving any purpose.
+ - I've also stabilized in my org-mode GTD workflow and find checking tasks off to a be oddly rewarding.
+ - It's much better than doing what's more important at the moment.
+ - Also working on creating deadlines for me and sticking to them.
+ - planning for relaxation is something that I've started doing recently and not caring about work for a definite chunk of the day is worth it.
+ - I do seem to have accumulated some writing inertia and considering my brain dump, the main blog and actual work, I've been experiencing fatigued fingers at the end of my workday, almost daily.
+ - Also getting back to elevating my typing speed after 5 years.
+ - I practiced then and reached upto 100 wpm without punctuations, capitals and numbers.
+ - I've sustained it and typing is never a bottleneck
+ - Now, I'm adding punctuations, capitals and numbers to my practice sessions (15 mins daily) and am targeting around 150 wpm
+   - that is around 12.5 cps (characters per second) - shifting the unit cause this has a nice ring to it.
+   - as expected, my speed with all the additions now is around 5 cps
+   - deliberately working with harder lessons (unexpected combinations as well) : akin to living with ankle, wrist and torso loads.
+ - I think I might start meditating again.
+   - I go through cycles of enchantment and boredom in terms of my views for the same but I've noticed it does really help with focus.
+   - I usually fit in a 10 min session post workout, pre breakfast and find that my day is more structured and I'm able to get more done on these days.
 ** 0x2172
  - finally getting around to organizing stuff a little and laying some ground rules
 ** 0x216A

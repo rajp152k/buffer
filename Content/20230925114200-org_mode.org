@@ -2,7 +2,10 @@
 :ID:       be1c795a-add6-4122-add5-ead5f45fbab2
 :END:
 #+title: Org-mode
-#+filetags: :skills:tools:
+#+filetags: :emacs:skills:tools:
+
+
+see [[id:20230712T224009.631876][Emacs]]: the software that runs org-mode.
 
 An org-mode manual pass condensing the important shortcuts and custom configurations for quick future reviews.
 

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       72e5e672-da30-4fda-9efb-6258a1712f8f
+:END:
+#+title: Tramp-Emacs
+#+filetags: :emacs:tools:
+
+* Abstract
+
+ - working with remote servers via emacs.
+ - indexing some basic info that I use to have a simple setup:
+   - editing
+   - file management
+   - env management
+ - still use tmux to start persistent sessions though.
+
+* Custom functions
+
+#+begin_src elisp
+(defun open-remote-file-system ()
+  (interactive)
+  (find-file "/ssh:root@172.16.21.155#5522:/root"))
+
+(general-define-key :prefix "C-s"
+		    "r" #'open-remote-file-system)
+#+end_src

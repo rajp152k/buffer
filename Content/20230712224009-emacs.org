@@ -2,7 +2,7 @@
 :ID:       20230712T224009.631876
 :END:
 #+title: Emacs
-#+filetags: :tool:
+#+filetags: :emacs:tool:
 
 * Stream 
 ** 0x2127
@@ -26,5 +26,7 @@ The single greatest tool choice I've ever made in terms of editing efficiently (
  - [ ] https://www.oreilly.com/library/view/writing-gnu-emacs/9781449395056/
 
 * Refs
-
  - my [[id:20230809T095308.040286][init.el]]
+* Utilities
+** [[id:be1c795a-add6-4122-add5-ead5f45fbab2][Org-mode]]
+** [[id:72e5e672-da30-4fda-9efb-6258a1712f8f][Tramp]]

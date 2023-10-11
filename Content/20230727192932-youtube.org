@@ -74,5 +74,3 @@ An index of all the videos : published, work in progress, and prospective
  - Recommendation
    - Home: Evil Emacs
    - Work : VS code with a vi extension
-     
-     

@@ -92,6 +92,7 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
 | time index | Production code name                                      | link                                                           | Category  |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
+|     0x2171 | The Hundred Page Machine Learning Book                    | https://rajpatil.dev/post/100pagemlbook/                       | Book      |
 |     0x2168 | The Most Important book you'll ever read                  | https://rajpatil.dev/post/most-important-book/                 | Writing   |
 |     0x2166 | Engineering a(n) (Ergogenic) Nootropic Stack              | https://rajpatil.dev/post/nootropics-init/                     | Nutrition |
 |     0x215E | Prompt crafting distilled                                 | https://rajpatil.dev/post/dense-guide-prompt-engineering/      | Skills    |

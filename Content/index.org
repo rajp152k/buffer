@@ -67,7 +67,7 @@ Here are some conventions that I follow to organize my work:
  - each major node has its own idea buffer to keep note of specific ideas that I haven't organized yet.
  - at any given point of time, several emtpy nodes may exist : I'm not trying to be exhaustive right away when exploring a domain. This is supposed to be an eternal work in progress. However, to indicate that I intend to work on a node later on and it's not just an empty atom, I've placed ~:tbp:~ (to be populated) tags on such nodes.
 
-* Tag list
+ Tag list
 Tags are meant to serve as keywords that indicate - at a high level - what a [[id:20230712T211919.917191][buffer]] is about, what phase it is in, and how prominent it is in terms of closeness to a root [[id:20230712T212419.175018][domain]].
 
 ** Current tags

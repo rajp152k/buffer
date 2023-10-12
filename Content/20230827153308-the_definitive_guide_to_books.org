@@ -40,16 +40,17 @@ indexing a blog entry into the book's content: https://rajpatil.dev/post/most-im
 
 * Structure and Content 
 ** Introduction
-*** Who is this book for
-**** reading experience
-- ones who wish to start reading
-- monolithic readers
-- voracious readers who wish to pump their egos
-*** Personal reading journey
+*** Why am I writing this book?
+**** Personal reading journey
 Began at 19 with a technical inclination and hardly ready a book other than something that my curriculum demanded. Over 3 years, read 13 , 41 and 54 books respectively ranging from ....
  - My background with reading books -> initial philosophical blog
  - University was the first time I had time to spare for pursuing hobbies in a balanced manner with independence.
  - I only used to read technically
+*** Who is this book for?
+**** reading experience
+- ones who wish to start reading
+- monolithic readers
+- voracious readers who wish to pump their egos
 ** Abstract
 *** Why Read
 **** An intricate and comparatively (to photos, videos, etc) potent index into your past :- your time now, in hindsight, will seem denser.
@@ -57,22 +58,38 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 - stack that into a stream of timestamped reviews and you have a backdoor to your memories so powerful that you can recite the evolution of your intellectual state over that period of time.
 **** Cognitive Benefits
 - can formulate yourself effectively and conversations won't fizzle out because you will be relevant.
+**** Emotional and Intellectual Maturity
 **** Social Benefits 
 - Access to eccentric and interesting communities
 - sustaining a conversation : you may rightfully begin hating small talk
 ** Pragmatics
-*** what should you read : the joy of reading diversely
-*** choosing your next book
-*** making the habit stick
-*** making reading a part of your life
-*** fixating on techniques and tools
-*** Consolidating what you read : reviews, blogs, videos.
-** Writing Books
-*** Journals
-*** Blogs
-*** Books
-
-* Associated Blogs 
-
- - [X] https://rajpatil.dev/post/most-important-book/                 
+*** Associated blogs
  - [ ] Being a sneaky reader
+ - [X] https://rajpatil.dev/post/writing-setup/
+ - [X] https://rajpatil.dev/post/picc/
+*** what should you read : the joy of reading diversely
+*** Choosing your next book
+*** Making reading a part of your life
+*** Making the habit stick
+*** Fixating on techniques and tools
+*** Consolidating what you read : reviews, blogs, videos.
+*** That One Book...
+ - The one that hits all the right sweet spots right.
+   - you find it at the right phase of your life just when you needed to get into that particular thing and needed inspiration for that one particular thing
+ - Leonardo Da Vinci's Biography for Walter Isaacson did it for me
+*** Overcoming Reading Slumps
+** Writing Books
+*** Associated blogs
+ - [ ] words as weapons 
+ - [X] https://rajpatil.dev/post/my-creation-and-publishing-pipeline/
+ - [X] https://rajpatil.dev/post/most-important-book/                 
+ - [X] https://rajpatil.dev/post/better-writer/
+ - [X] https://rajpatil.dev/post/dense-guide-prompt-engineering/
+*** Stepping stones
+*** Choosing your topic
+*** Why write?
+** Conclusion
+ - books are not the way to explore the universe
+ - they're definitely a ticket to the insights that'll help you do so
+
+

@@ -1,0 +1,133 @@
+:PROPERTIES:
+:ID:       bc7003b2-ba42-4693-8189-9d3645b7b369
+:END:
+#+title: .vimrc
+#+filetags: :vim:
+
+tool rooted at [[id:8bc9d1c6-da56-4db9-a904-8f052e6836cb][Vim]]
+
+#+begin_src vimscript
+" CORE {{{
+set relativenumber number
+set nocompatible
+set hidden
+set path+=$PWD/**
+set undofile
+set undodir=~/.vim/undo
+set nrformats+=alpha
+set ignorecase smartcase
+set wrapscan
+set foldmethod=marker
+filetype plugin indent on
+" }}}
+" Plugins {{{
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
+Plug 'frazrepo/vim-rainbow'
+Plug 'junegunn/vim-peekaboo'
+Plug 'simnalamburt/vim-mundo'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'itchyny/lightline.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'mattn/vim-lsp-settings'
+call plug#end()
+" }}}
+" Vimrc edits {{{
+nnoremap <silent> <Leader>e :edit ~/.vimrc<CR>
+nnoremap <silent> <Leader>s :source ~/.vimrc<CR>
+" }}}
+"Netrw {{{
+let g:netrw_keepdir = 0
+nnoremap <silent> <Leader>d :edit .<CR>
+" }}}
+"Searching {{{
+set hlsearch
+nnoremap <esc><esc> :nohlsearch<CR><esc>
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>f :Rg<CR>
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+" }}}
+"Rainbow {{{
+let g:rainbow_active = 1
+" }}}
+"Mundo {{{
+nnoremap <leader>m :MundoToggle<CR>
+" }}}
+"Python {{{
+if executable('pylsp')
+    au User lsp_setup call lsp#register_server({
+    \ 'name': 'pylsp',
+    \ 'cmd': {server_info->['pylsp']},
+    \ 'allowlist': ['python'],
+    \ })
+endif
+
+function! SetupPythonSettings()
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+    set textwidth=79
+    set expandtab
+    set autoindent
+    set fileformat=unix
+    set encoding=utf-8
+endfunction
+
+au BufNewFile,BufRead *.py call SetupPythonSettings()
+
+"}}}
+" LSP {{{
+function! s:on_lsp_buffer_enabled() abort
+setlocal omnifunc=lsp#complete
+setlocal signcolumn=yes
+if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
+nmap <buffer> gd <plug>(lsp-definition)
+nmap <buffer> gs <plug>(lsp-document-symbol-search)
+nmap <buffer> gS <plug>(lsp-workspace-symbol-search)
+nmap <buffer> gr <plug>(lsp-references)
+nmap <buffer> gi <plug>(lsp-implementation)
+nmap <buffer> gt <plug>(lsp-type-definition)
+nmap <buffer> <leader>rn <plug>(lsp-rename)
+nmap <buffer> [g <plug>(lsp-previous-diagnostic)
+nmap <buffer> ]g <plug>(lsp-next-diagnostic)
+nmap <buffer> K <plug>(lsp-hover)
+nnoremap <buffer> <expr><c-f> lsp#scroll(+4)
+nnoremap <buffer> <expr><c-d> lsp#scroll(-4)
+
+let g:lsp_format_sync_timeout = 1000
+autocmd! BufWritePre *.rs,*.go call execute('LspDocumentFormatSync')
+endfunction
+
+augroup lsp_install
+     au!
+     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
+set foldmethod=expr
+  \ foldexpr=lsp#ui#vim#folding#foldexpr()
+  \ foldtext=lsp#ui#vim#folding#foldtext()
+
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+
+imap <c-space> <Plug>(asyncomplete_force_refresh)
+" }}}
+" Solarized {{{
+syntax enable
+set background=dark
+colorscheme solarized
+" }}}
+"Statusline{{{
+set laststatus=2
+set noshowmode
+let g:lightline = {
+            \ 'colorscheme': 'solarized',
+            \ }
+"}}}
+#+end_src

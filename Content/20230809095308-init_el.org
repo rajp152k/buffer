@@ -2,6 +2,7 @@
 :ID:       20230809T095308.040286
 :END:
 #+title: init.el
+#+filetags: :emacs:
 
 Documenting my init.el :- will annotate soon, just dumping as of now
 

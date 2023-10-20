@@ -200,4 +200,5 @@
  - [ ] [[https://learnvim.irian.to/][Learn vim the smart way]]
  - [ ] [[https://learnvimscriptthehardway.stevelosh.com/][Learn vimscript the hard way]]
 * Refs
+ - [[id:bc7003b2-ba42-4693-8189-9d3645b7b369][.vimrc]]
 * Utilities

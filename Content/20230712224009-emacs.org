@@ -5,6 +5,14 @@
 #+filetags: :emacs:tool:
 
 * Stream 
+** 0x2178
+ - I already use vim bindings in emacs but I do miss the command line
+ - have decided to go minimal for my work and retain emacs for personal projects and writing
+ - reading up on the unix philosophy and aiming to become a true shell ninja.
+ - knowing about Unix operating system does excite me and do hope to learn a lot more
+ - I'll definitely never give up emacs but a basic awareness of the operating system with the utilities of a CLI do encourage me to get good at both ecosystems
+ - starting a similar [[id:8bc9d1c6-da56-4db9-a904-8f052e6836cb][Vim]] stream to log all my works, I'll be keeping the vimrc simple this time and not be using a lot of external plugins but rely on the vanilla features of vim
+ - already excited about getting back to a dark green terminal screen..
 ** 0x2127
  - youtube video on navigating the text editing landscape
    - on why one should not settle even in 2023
@@ -24,7 +32,6 @@ The single greatest tool choice I've ever made in terms of editing efficiently (
 * Literature
  - [ ] https://www.masteringemacs.org/
  - [ ] https://www.oreilly.com/library/view/writing-gnu-emacs/9781449395056/
-
 * Refs
  - my [[id:20230809T095308.040286][init.el]]
 * Utilities

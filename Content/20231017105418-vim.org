@@ -1,0 +1,203 @@
+:PROPERTIES:
+:ID:       8bc9d1c6-da56-4db9-a904-8f052e6836cb
+:END:
+#+title: Vim
+#+filetags: :vim:tool:
+
+* Stream
+** 0x217B
+ - learning vimscript in a dedicated manner for the first time
+   - look into [[https://learnvim.irian.to/vimscript/vimscript_basic_data_types][sections starting from here]]
+ - the idea of truthy and falsy is decided by numbers and coercing the rest into them
+   - 0 is falsy, everything else is truthy
+   - strings with first character as a non-zero number coerces into that non zero number
+   - all other strings (with 0 as first char or no number at first char (later doesn't matter)) are all coerced into 0 and will be falsy
+ - done with a first full pass of a pedagogical text on vim
+ - I do know much more than before but also realize how much more there is to know
+** 0x217A
+ - search is pretty important
+   - read more [[https://learnvim.irian.to/basics/search_and_substitute][here]]
+ - repeat previous search by hitting ~//~
+ - checkout magic syntax sometime soon : "\v"
+ - handy reference for search character shortcodes
+#+begin_src
+\d    Digit [0-9]
+\D    Non-digit [^0-9]
+\s    Whitespace character (space and tab)
+\S    Non-whitespace character (everything except space and tab)
+\w    Word character [0-9A-Za-z_]
+\l    Lowercase alphas [a-z]
+\u    Uppercase character [A-Z]
+#+end_src
+ - use \zs, \ze to define start and end of a match in vim search and substitution
+ - non greedy {-} and greedy * matching is important
+ - args and argdo are convenient methods for multifile replacements
+ - can aslo be done with macros and :wnext
+ - the global command is pretty important
+   - read more [[https://learnvim.irian.to/basics/the_global_command][here]]
+ - the antimatch command for is :v/antimatch/command
+ - normal command executes the following keystrokes in normal mode
+   - to insert semicolons on all non empty lines:
+     - :g/./normal A;
+ - the global command is particularly useful when executing macros line wise based on matches
+ - nested global commands are useful for multiple filters
+ - can aslo mix antifilters
+   - :g/match/v/antimatch/command for instance
+   - the first match is applied on the complete file and the second antimatch filter is applied on the filtered matches
+ - when using substitute with the global command : we need to use two delimiters:
+   - :g@one@s+const+let+g
+ - just found out about the origins of the grep command and I'm amazed:
+   - https://learnvim.irian.to/basics/the_global_command#the-default-command
+ - the move (m) and copy (t) commands are handy when used with the global command
+ - external commands are pretty important
+   - read about them [[https://learnvim.irian.to/basics/external_commands][here]]
+ - :r is the read command, reads into buffer whatever you put after it
+   - can be a file path
+   - or the STDOUT of an external command to be executed
+ - :w to send out contents of the buffer to a command's STDIN
+ - as a rule of thumb, always place a space between both :r and :w
+ - both can take a specific range/address to work on only that particular line/range
+ - :2r ! will read into the second line
+ - :2w ! will send out the contents of the second line
+   - :w! is force saving the file and not what we intend to do
+ - without r and w before, ! acts as filtering command
+   - read up on important utils in the UNIX ecosystem to be able to fully exploit external commands
+ - ! also acts a normal mode filter operator pending command
+   - normal !jtr '[a-z]' '[A-Z]' will transform the current and the line below from lower case to upper case letters
+** 0x2179
+ - column navigation with ~n|~ : drops one to the nth column
+ - when doing one character searches : , to go back, ; to go forward 
+ - "(" and ")" for sentence navigation, "{" and "}" for paragraph navigation
+ - % for match navigation : jumping between opening and cloing parenthesis
+ - n% drops you down to the nth percent point of the file -> 50% for binary searching bugs the hard way I guess
+ - H,M,L to move to high, middle and low of the current window : doesn't move the buffer in any way
+   - gg and G are alternatives for the case of buffer
+ - scrolling, with CTRL and prefix
+   - F/B : whole screen up or down
+   - U/D : half screen up or down
+   - E/Y : a line up and down
+ - rather than just moving the cursor, sliding the buffer itself can be acheived by:
+   - zt : slide current line to top of window
+   - zz : slide current line to middle of window
+   - zb : slide current line to bottom of window
+ - * to search word at point forward, # for the same backward
+   - use g* for matching partial searches as well
+   - same goes for g#
+ - setting marks is a convenient way to navigate between frequent points
+   - m(alphabet) to set the mark named by that alphabet at that point
+   - `(alphabet) to go that exact mark
+   - '(alphabet) to go to the line of that mark
+ - lowercase alphabets are buffer local marks : can have the same letter for different letters
+ - uppercase alphabaet are global marks : only one for each session and share the namespace accross multiple buffers
+ - some default mark operations:
+   - '' : last line before jump
+   - `` : last char point before jump -> convenient to go back after jumping
+   - `[ : beginning of last changed/yanked text
+   - `] : end of previously changed/yanked text
+   - `< : beginning of last visual selection
+   - `> : end of last visual selection
+   - `0 : last edited file when exiting vim
+ - some useful jumps other than the ones already seen:
+   - [[ : jump to next section
+   - ]] : jump to previous section
+ - other than the normal insert ops, find these to be useful:
+   - gi : get into insert mode at the last mark you ended inserting text
+   - gI : insert text at the start of the current line
+ - numbered insert operations are new to me:
+   - 10i : will repeat 10 times whatever was inserted in the that initial insert session
+   - works with other insertion commands as well
+ - storing text in registers for future use is convenient
+   - a basic way to store in registers is prefix a yanking action with "(alphabet)
+   - so something like ~"ayiw~ will store a word object in the "a" register
+   - to use what's stored in the register, use: ~Ctrl-R a~ in insert mode or just ~"ap~ in normal mode
+ - a minimal autocompletion can be triggered in normal vim (not evil emacs) in insert mode using:
+   - ~CTRL-X CTRL-L~ : insert a whole line
+   - ~CTRL-X CTRL-N~ : insert a text from current file
+   - ~CTRL-X CTRL-I~ : insert a text from included files
+   - ~CTRL-X CTRL-F~ : insert a file name
+ - instead of remebmbering a lot of these extra commands, I'd rather prefer zipping back to and from normal mode
+   - there is a convenient way to do this : pressing ~CTRL-O~ puts you in insert-sub-normal mode allowing you to perform one normal mode command before you're put back into insert mode again
+ - just recalled a handy dot command : repeats the last change 
+   - when using forards and motions, use ";" as that is a separate action in itself and not the part of the change actually changing the buffer
+ - learn about [[https://learnvim.irian.to/basics/registers][vim registers here]]
+   - pretty important for efficient editing
+ - the expression register is pretty handy for some convenient changes:
+   - ~"=~, drops you into the exec line to enter an expression like 1 + 1
+   - hit enter to drop you back into the buffer
+   - finally hit p to put the result into the buffer
+   - overall : ~"=1+1<enter>p~
+ - to insert values into the expressions from other registers, use @(register name)
+ - for instance if "a has 1 stored in it, ~"=@a + @a<enter>p~ still yields 2
+   - ~"_dd~, this won't disturb the last p argument
+ - the last search pattern is stored in ~"/~
+ - to check current register contents : hit ~:registers~ or look into vim-peekaboo
+ - macros and registers use the same variables and can overwrite each other
+ - pasting a macro sequence through its register later on results in the key sequence being put in the buffer
+ - there's no need to clear registers because they'll be overwritten when using that name again
+   - if you really need to do so, record an empty macro in the register using ~q(register name)q~.
+ - learn about [[https://learnvim.irian.to/basics/macros][vim macros here]]
+   - pretty important for efficient editing
+ - recursive macros are amazing : don't need to numerically command the executions
+   - do empty it on the first usage
+   - you can also edit a macro like normal text by treating it as contents of a register and yanking the final requirement into it
+     - even editing existing macros by putting them out as registers helps debug stuff
+   - I'm blown away
+ - creating undo checkpoints in insert mode with "CTRL-G" is useful
+ - vim keeps a tree of your changes and I'm pleasantly surprised
+ - using vim-mundo : it is insane
+   - :earlier ns : allows you to go back n seconds in the editing process with the tree intact
+   - again..., insane
+     - can do for 10 s(econds), 10 m(inutes), 10 h(ours), 10 d(ays)
+   - similarly for :later
+   - if only number : then that's steps
+ - decrementing and incrementing numbers is handy
+   - CTRL-X and CTRL-A respectively
+     - with g prepended
+
+** 0x2178
+ - starting to use vanilla vim with tmux again for work purposes and already too excited to be working with dark green terminals and type away very quickly again.
+ - time to become a true shell ninja
+ - [[id:20230712T224009.631876][chords and keystrokes]] are fine and amazing but just good old speeding through problems with the speed of your thought and the feel of a pure CLI is unbeatable as well.
+ - learned about command passage when opening a file with vim: can be used to execute quick text editing commands even before you open the file
+
+#+begin_src bash
+  # both perform a substitution
+  -> vim +%s/their/there/g file.txt #the + syntax
+  -> vim -c %s/their/there/g file.txt #the -c syntax
+
+  # these can be stacked to pass multiple commands
+  -> vim -c %s/their/there/g %s/teh/the/g file.txt
+#+end_src
+
+ - learned about jumping back to old marks :- ~Ctrl-O~
+ - to jump back in that order, use :- ~Ctrl-I~
+   - thinking of this combo as popping out of vs diving in to the newer buffers
+ - to jump to the last edited buffer, use : ~Ctrl-^~
+   - ~Ctrl-I~ will lead back to the previously edited files indefinitely
+   - ~Ctrl-^~ will ping pong between two most recently buffers
+ - rather than ~:sp~ or ~:vs~, use ~C-w s~ and ~C-w v~
+ - vim has its own internal grep accessible as ~vim~ : short for vimgrep
+
+#+begin_src vimscript
+  :vim /jekyll/ app/controllers/**/*.rb
+#+end_src
+ - see ~:h quickfix~ to learn about the quickfix window
+ - use ~:copen~ after you've used ~:vimgrep..~ or similar commands to get an index into all matches
+
+ - setting up fzf + rg as searching mechanism
+ - refer [[https://learnvim.irian.to/basics/searching_files#fzf-syntax][this basic fzf syntax]] page
+
+ - read the about the filter commmand (!)
+   - I'd been unknowingly using this before in ~r!date~
+   - inserts the commands output into the buffer
+ - also learn [[id:1a3f6658-a0fd-46d9-8294-3856359595ea][awk]] sometime
+ - piping with filters can allow for some extremely convenient edits
+ - ~gu~ and ~gU~ to convert to small and capital case respectively
+   - ~gUaw~ will capitalize a complete word-object
+ - ~nG~ to go to the nth line number -> ~23G~ takes you to the 23rd line
+ 
+* Literature
+ - [ ] [[https://learnvim.irian.to/][Learn vim the smart way]]
+ - [ ] [[https://learnvimscriptthehardway.stevelosh.com/][Learn vimscript the hard way]]
+* Refs
+* Utilities

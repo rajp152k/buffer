@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1a3f6658-a0fd-46d9-8294-3856359595ea
+:END:
+#+title: awk
+#+filetags: :tool:
+

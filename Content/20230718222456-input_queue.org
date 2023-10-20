@@ -23,6 +23,7 @@ I'd also like maintaining a log of all relevant articles/interviews/not-so-easil
 ** [[https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start][How to sabotage your salary negotiation efforts before you even start]]
 ** https://questdb.io/blog/concurrent-lockfree-datastructure-design-walkthrough/
 ** http://matpalm.com/blog/cool_machine_learning_books/
+** https://in.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience
 * Podcasts
 * Books 
 ** https://www.masteringemacs.org/book
@@ -54,10 +55,12 @@ I'd also like maintaining a log of all relevant articles/interviews/not-so-easil
 ** https://github.com/norvig/pytudes
 ** https://www.math.uci.edu/~rvershyn/teaching/hdp/hdp.html
 ** [[http://xahlee.info/js/svg.html][svg - xah lee tutorial]]
+** SQL
+*** [[https://datalemur.com/sql-tutorial?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience][sql tutorial for data science]]
+*** https://www.metabase.com/learn/sql-questions/sql-best-practices?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
 ** languages
  - https://www.perl.org/ : aka the duct tape of the internet
 * Topics
-** Compression algorithms

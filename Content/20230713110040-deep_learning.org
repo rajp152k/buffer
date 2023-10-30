@@ -4,6 +4,7 @@
 #+title: Deep Learning
 #+filetags: :ml:ai:
 
+* Base
 ** What does it mean to go deep?
 Reference to working with [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]] with more than two intermediate layers.
 Some staple problems one experiences during back-propogation as we deepen our networks are:
@@ -17,8 +18,55 @@ Some common techniques used to deal with this issue are:
  - Skip connections, like in [[id:325569c7-0b2f-478c-8792-e63702d4b1b6][Residual Neural Networks]], also helps deal with the issue by skipping layers
 
 
-
 *** Present situation
 The above issues with deep networks have been addressed satisfactorily and networks with 100s of hidden layers (a non output and non input layer) can be successfully trained.
 
+** Applications of DL
+*** [[id:20230713T150554.400026][NLP]]
+ - QnA
+ - Speech recog
+ - summarization
+ - classifying docs
+*** [[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][Computer Vision]]
+ - Satellite and Drone Imagery Interpretation
+ - Face Recognition
+ - Image Captioning
+ - Reading Traffic Signs
+ - autonomous driving
+*** [[id:f36c3afa-b266-42da-9fdd-fa12fbee4147][Medicine]]
+ - Anomaly detection (in radiology, CT, MRI and X-ray for instance)
+ - detecting features in pathology slides
+ - measuring features in ultrasounds
+ - diagnosing diabetic retinopathy
+*** [[id:20230809T042424.883127][Biology]]
+ - Folding, classifying, ... proteins
+ - genomic tasks
+ - cell classification
+ - analysing protein/protein interaction
+*** Image Generation
+ - colorization
+ - upscaling resolution
+ - denoising
+ - stylistic adaptation
+*** Recommendation Systems
+ - web search
+ - product recommendations
+ - landing page layouts
+*** [[id:a765de0f-c74c-4753-9aa4-363654301e52][Games]]
+ - Chess
+ - Go
+ - complex RTS
+*** [[id:f1ec552e-a7c4-47ae-9dd2-a23733d1da92][Robotics]]
+ - handling objects that are challenging to locate (shiny, unusual texture etc)
 
+* References
+*** DL for Coders : fastai + pytorch
+:PROPERTIES:
+:ID:       c6e31908-5622-4e17-9ccd-6b4e71f53ff1
+:END:
+- https://course.fast.ai/Resources/book.html
+- upgrading skills : specializing further in fast ai and pytorch
+- will populate notes in here in accordance with what I learn there
+- will also be coding along in python in org-babel cells for comprehensive pass of the book
+     
+     

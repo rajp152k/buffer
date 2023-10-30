@@ -4,6 +4,9 @@
 #+title: Neural Networks
 #+filetags: :ai:
 
+* Inspiration
+ - mimicking the behaviour of neural circuits by activation and threshold functions : see [[https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf][A Logical calculus of the ideas immanent in nervous activity]]
+ - 
 * Abstract
 A neural network is basically a mathematical function that maps input features to desired results that can be used for a desired task.
 

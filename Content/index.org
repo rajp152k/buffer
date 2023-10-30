@@ -70,7 +70,7 @@ Here are some conventions that I follow to organize my work:
  Tag list
 Tags are meant to serve as keywords that indicate - at a high level - what a [[id:20230712T211919.917191][buffer]] is about, what phase it is in, and how prominent it is in terms of closeness to a root [[id:20230712T212419.175018][domain]].
 
-** Current tags
+* Current tags
 **Last Updated** : 0x2172
 
  - meta

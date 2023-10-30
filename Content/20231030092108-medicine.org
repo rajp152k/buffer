@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f36c3afa-b266-42da-9fdd-fa12fbee4147
+:END:
+#+title: Medicine
+#+filetags: :tbp:
+

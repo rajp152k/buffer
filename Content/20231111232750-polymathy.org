@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       20231111T232750.075460
+:END:
+#+title: Polymathy
+#+filetags: :skills:
+
+I've read quite a bit about being a modern renaissance man and I've decided I'm going to pursue several domains to keep my life interesting.
+
+* The Intellectual Super-Villain's Reading List
+
+Reading diversely is an integral part of such an endeavor. Given my Anti-Hero (I'm not a super-villain.., yet.) inclinations.. I'm creating a reading list that keeps my exploration directed and disciplined in terms of what I'd like to know.
+
+The following are collations I intend to assimilate into my epistemological arsenal. 
+
+Note that these should be treated as foundational reads. Always supplement with core textbooks from a specialist later down the lane.
+Without conveying importance by the order, consider reading:
+
+** [12%] The list
+- [ ] Leonardo Da Vinci's Codices
+- [ ] Metaphysics (Aristotle)
+- [ ] Philosophiae Naturalis Principia Mathematica (Newton)
+- [ ] My Inventions (Nikola Tesla)
+- [ ] The Structure of Scientific Revolutions (Thoman S. Kuhn)       
+- [ ] Critique of Pure Reason (Kant)
+- [ ] Biology (Campbell and Reese)
+- [ ] Behave: the biology of humans at our best and worst (Robert Sapolsky)
+- [ ] The Story of Earth: The First 4.5 Billion Years, from Stardust to Living Planet (Robert M. Hazen)
+- [X] The Structure and Interpretation of Computer Programs
+- [ ] The Structure and Interpretations of Classical Mechanics
+- [ ] Thinking in Systems: A Primer (Donella H. Meadows)
+- [ ] The Evolution of Cooperation (Robert Axelrod)
+- [X] The Infinite Game (Simon Sinek)
+- [ ] Naked Economics: Undressing the Dismal Science (Charles Wheelan)
+- [ ] Economy and Society (Max Weber)
+- [ ] The Sociological Imagination (C. Wright Mills)
+- [ ] Deschooling Society (Ivan Ilych)
+- [ ] The storm before the storm (Mike Duncan)
+- [ ] Mortal Republic (Edward J. Watts)
+- [ ] Meditations (Marcus Aurelius)
+- [X] Thus Spoke Zarathustra (Nietzsche)
+- [ ] The Letters of Vincent Van Goh
+- [ ] The Power of Myth (Joseph Campbell & Bill Moyers)
+

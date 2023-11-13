@@ -15,7 +15,7 @@ The following are collations I intend to assimilate into my epistemological arse
 Note that these should be treated as foundational reads. Always supplement with core textbooks from a specialist later down the lane.
 Without conveying importance by the order, consider reading:
 
-** [12%] The list
+** [16%] The list (wip)
 - [ ] Leonardo Da Vinci's Codices
 - [ ] Metaphysics (Aristotle)
 - [ ] Philosophiae Naturalis Principia Mathematica (Newton)
@@ -40,4 +40,29 @@ Without conveying importance by the order, consider reading:
 - [X] Thus Spoke Zarathustra (Nietzsche)
 - [ ] The Letters of Vincent Van Goh
 - [ ] The Power of Myth (Joseph Campbell & Bill Moyers)
-
+- [X] The Art of War (Sun Tzu)
+- [ ] On War (Carl von Clausewitz)
+- [ ] Crime and Punishment (Fyodor Dostoevsky)
+- [ ] Notes from Underground (Fyodor Dostoevsky)
+- [ ] The Complete Sherlock Holmes  (Arthur Conan Doyle)
+- [ ] The Prince (Niccolo Machiavelli)
+- [ ] Godel, Escher, Bach: An Eternal Golden Braid (Douglas Hofstader)
+- [ ] The Feynman Lectures on Physics (Richard P. Feynman)
+- [ ] The Demon-Haunted World: Science as a Candle in the Dark (Carl Sagan)
+- [ ] The SAS survival handbook (John Wiseman)
+- [ ] The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography (Simon Singh)
+- [ ] The Gift of Fear (Gavin De Becker)
+- [ ] The Dangerous Book for Boys (Conn and Hal Iggulden)
+- [ ] The hitchhikers guide to the galaxy (Douglas Adams)
+- [ ] Good Omens (Neil Gaiman and Terry Pratchett)
+- [ ] Me talk pretty one day (David Sedaris)
+- [ ] Superforecasting: The Art and Science of Prediction (Philip E. Tetlock and Dan M. Gardner)
+- [ ] The Art of Always Being Right: The 38 Subtle Ways to Win an Argument (Arthur Schopenhauer)
+- [ ] The Rebel (Albert Camus)
+- [ ] The Stranger (Albert Camus)
+- [ ] Game Theory: Analysis of Conflict (Roger B. Myerson)
+- [ ] Game Theory and the Social Contract: Just Playing (Ken Binmore)
+- [ ] Hacking: The Art of Exploitation (Jon Erickson)
+- [ ] Steppenwolf (Herman Hesse)
+- [ ] Siddhartha (Hermann Hesse)
+- [ ] Discworld Series (Terry Pratchett)

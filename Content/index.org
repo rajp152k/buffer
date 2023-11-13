@@ -10,6 +10,7 @@
 ** [[id:20230718T222456.978981][input-queue]]
  - an index of resources that I want to consume sometime down the lane
  - anytime I feel like I wish to learn something, I visit this node and populated the buffer accordingly as I learn new skills and accumulate info
+** [[id:20231112T080937.669416][projects]]
 ** [[id:20230712T131112.909632][blog]]
  - log of all blogs that  I write down and relevant notes for future works
 ** [[id:20230727T192932.286062][Youtube]]

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       20231112T081124.213227
+:END:
+#+title: What-would-X-read?
+#+filetags: :project:
+
+* Abstract
+
+ - I try finding good reading lists by first judging a fictional entities character and then consider what they would read to become that person.
+ - A book enlistment that suggests what your favorite super-villain does sound very interesting and should be an interesting toy project.
+ - A corpus of books is of-course needed for the same and could be a domain specific search engine in the long term
+ - for starters, can be a youtube series that I run.

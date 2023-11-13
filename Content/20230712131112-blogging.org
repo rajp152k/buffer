@@ -92,6 +92,10 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
 | time index | Production code name                                      | link                                                           | Category  |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
+|     0x2194 | Solitude, Society, Originality                            | https://rajpatil.dev/post/solitude-society-originality/        | Polymathy |
+|     0x2180 | Consumption Update                                        | https://rajpatil.dev/post/consumption-update/                  | Update    |
+|     0x217b | Learn Vim the Smart Way                                   | https://rajpatil.dev/post/learn-vim-the-smart-way/             | Book      |
+|     0x2177 | Micro-Essays                                              | https://rajpatil.dev/post/micro-essays/                        | Writing   |
 |     0x2171 | The Hundred Page Machine Learning Book                    | https://rajpatil.dev/post/100pagemlbook/                       | Book      |
 |     0x2168 | The Most Important book you'll ever read                  | https://rajpatil.dev/post/most-important-book/                 | Writing   |
 |     0x2166 | Engineering a(n) (Ergogenic) Nootropic Stack              | https://rajpatil.dev/post/nootropics-init/                     | Nutrition |
@@ -142,7 +146,6 @@ An index of all that I write about, published, work in progress and prospective.
 *** The labrynth of limitations
 *** phases of a writer
 *** Care enough to be selectively ignorant
-*** solitude, society and originality
 *** Epistemological cartography
 *** Don't have role models but target specific characteristics
 *** Video Games, Lucidity and L-theanine
@@ -154,7 +157,6 @@ An index of all that I write about, published, work in progress and prospective.
 *** Embrace abstracted Complexity : simplicity is overrated
 *** Can you defend your beliefs?
 *** Introductory Self hypnosis
-*** Pity kills tenacity
 *** Tactics, principles and strategy
 *** when to pluck low hanging fruits
 *** Convergence

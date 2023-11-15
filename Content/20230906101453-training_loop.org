@@ -2,8 +2,32 @@
 :ID:       17d3a745-72b6-4cf7-a0a2-ed5ff69830bf
 :END:
 #+title: Training Loop
-#+filetags: :tbp:ai:
+#+filetags: :ai:
 
-A node maintaining indexes into details of a generic AI training loop.
-to be populated ...
+* Basics
+A basic training loop can be summarized by the following steps:
 
+Considering a [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][supervised]] [[id:20230713T110040.814546][deep learning]] setting for pedagogical purposes.
+
+Assuming we have the model, the data and weight updating mechanism setup along with [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][performance tracking metrics]], it goes as ...
+
+1. initialize weights, setup dataloaders, hyperparams and other initial strategies
+2. for each batch in the training data loader
+   - run inference on the batch
+   - compute the loss for the batch
+   - backpropogate on the loss to obtain gradients for updates
+   - update the weights according to the chosen strategy
+3. for all data in the validation data loader 
+   - run inference
+   - computer aggregate performance
+   - may use this to test out upon hyperparams or other manually chosen strategies
+4. This is one epoch, repeat 2 and 3 for as many epochs as needed:
+   - concepts like early stopping, not overfitting and convergence need to be taken into account here
+5. Test the model on a previously unseen test set to gauge the performance of the algorithm with your manual choices.
+
+* Learning Rate
+
+An important aspect of the weight updating mechanisms is the extent to which you choose to do so and how you, if you choose to, vary it over an epoch or the complete training cycle. Accumulating some strategies in this section with external resources.
+
+** One cycle policy
+ - [[https://www.deepspeed.ai/tutorials/one-cycle/]]

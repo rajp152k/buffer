@@ -7,10 +7,11 @@
 This node captures misc information regarding the large root that ML is.
 I plan on accumulating and assimilating all that I learn from various domains in a uniform manner here. It'll be notebooks from completed [[id:f275e17f-307e-4e2b-a67b-6511774d0a3d][kaggle]] competitions, blogs, papers, courses, anything that's worth goes in. I don't plan on incorporating complete book walkthroughs in here - I'll reference them and won't be mapping what I read verbatim. [[id:9539ffd2-433b-4cac-babc-0d45990a4642][Wikipedia]] is a good quick reference so will be referencing that too rather than typing what's within convenient reach.
 
-* Competition Analysis Indexes
-** https://www.kaggle.com/competitions/icr-identify-age-related-conditions
-
 * Misc nodes
+** Production
+*** The Drive Train Approach
+ - first encountered in [[id:c6e31908-5622-4e17-9ccd-6b4e71f53ff1][DL for Coders : fastai + pytorch]]
+ - https://www.oreilly.com/radar/drivetrain-approach-data-products/
 ** No Free Lunch
  - no model is better at all problems than all other models
 ** [[id:51c4a1c3-9289-4f09-bb95-1585b750f328][Occam's Razor]]
@@ -19,7 +20,9 @@ I plan on accumulating and assimilating all that I learn from various domains in
  - ML models are generally a black box that are inexplicable representations of the data they are trained on.
  - understanding how a model favors certain outputs for a set of input features is a domain in itself.
 ** [[id:67812842-bd33-4927-a693-fdf02721b019][Mixture of Expert]]
-
+** Universal Approximation Theorem
+ - any mathematical function can be modelled with the desired level of accuracy given the right architecture and enough training
+ - is a foundational theorem responsible for [[id:20230713T110040.814546][Deep Learning]]'s rise
 * Sentinels 
 ** SpaCy
 :PROPERTIES:

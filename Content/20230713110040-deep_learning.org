@@ -59,6 +59,7 @@ The above issues with deep networks have been addressed satisfactorily and netwo
 *** [[id:f1ec552e-a7c4-47ae-9dd2-a23733d1da92][Robotics]]
  - handling objects that are challenging to locate (shiny, unusual texture etc)
 
+** [[id:17d3a745-72b6-4cf7-a0a2-ed5ff69830bf][Training Loop]]
 * References
 *** DL for Coders : fastai + pytorch
 :PROPERTIES:

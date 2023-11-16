@@ -4,7 +4,41 @@
 #+title: Bits2Nats
 #+filetags: :transient:
 
+* Ideation Research Sources
+ - Reddit
+   - [[https://www.reddit.com/r/MachineLearning/][r/ML]]
+   - [[https://www.reddit.com/r/deeplearning/][r/DL]]
+   - [[https://www.reddit.com/r/datascience/][r/DS]]
+ - personal blogs
+   - https://karpathy.ai/
+   - https://lilianweng.github.io/
+   - https://machinelearningmastery.com/
+ - orgs
+   - https://www.fast.ai/
+   - https://medium.com/kaggle-blog
+   - https://towardsdatascience.com/
 * Comment Stream
+** 0x2196
+ - realizing that to really write something useful, I'll have to start reading on what has already been written and find gaps in the market.
+ - there are several kinds of blogs that already exist:
+   - tutorials
+   - exploration and elaboration of specific topics : enumerations over a certain topic, with comparisons if possible
+   - extremely niche blogs that address a very specific issue
+   - project blogs :- pretty rare
+ - planning on exploring a little in the beginning and checking out what works and what doesn't
+ - will be putting in a healthy amount of research and thought and into the works here.
+ - should serve as an online index into interesting insights for something that hasn't been logged before
+ - planning on keeping stuff more descriptive and really aid in someone's understanding
+   - as if I was teaching my immediate past self, the one that hasn't yet encountered the said concept
+ - will ofcourse need to stay a little more in touch with what's happening around the world in the domain of AI and will need to read a lot more than usual.
+ - will also have to maintain the health of the technical details of the braind dump in here.
+   - the final writing will only be sourced from the notes here.
+ - initially, should try on just getting started and exploring smaller more niche topics that aren't covered by text books and may not be available readily
+   - could blog about problems I'd faced in my own work.
+ - avoid writing on exremely foundational content initially...
+ - keep it practical and interactive if possible : using quarto rendered jupyter notebooks so could find a solution for interactive plots in there.
+ - don't write formally deliberately if there isn't anything to write about: don't try and force content
+   - doesn't mean I won't log my informal progress and findings in this zettelkasten
 * Production
 An index of all that I write about, published, work in progress and prospective.
 ** Published
@@ -12,6 +46,9 @@ An index of all that I write about, published, work in progress and prospective.
 | time index | Production code name                                      | link                                                           | Category  |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
-
 ** Work in Progress
-** Prompts
+*** [[id:20231114T134147.421836][RLxATC]] 
+ - RL : CV + Deep Q learning (off of my head) to be applied to ATC
+ - a series of blog posts covering the basics and there onwards.
+** Potentials
+*** Imbalanced Datasets

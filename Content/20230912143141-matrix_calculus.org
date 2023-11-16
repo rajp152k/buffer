@@ -4,6 +4,8 @@
 #+title: Matrix Calculus
 #+filetags: :tbp:math:
 
+Builds on top of [[id:44a34e4b-98ec-4b7a-ae29-df0b103e792c][Linear Algebra]]
+
 * Resources
  - https://explained.ai/matrix-calculus/
 

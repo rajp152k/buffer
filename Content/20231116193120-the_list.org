@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       e8c0b214-fa70-4462-8d44-ae0282d14981
+:END:
+#+title: The List
+#+filetags: :book:
+
+I'm on my way to be a formidable anti-hero. This is a work in progress...
+I guess I could use a little organization.
+
+** [7%] The list
+- [ ] Leonardo Da Vinci's Codices
+- [ ] Metaphysics (Aristotle)
+- [ ] Philosophiae Naturalis Principia Mathematica (Newton)
+- [ ] My Inventions (Nikola Tesla)
+- [ ] The Structure of Scientific Revolutions (Thoman S. Kuhn)       
+- [ ] Critique of Pure Reason (Kant)
+- [ ] Biology (Campbell and Reese)
+- [ ] Behave: the biology of humans at our best and worst (Robert Sapolsky)
+- [ ] The Story of Earth: The First 4.5 Billion Years, from Stardust to Living Planet (Robert M. Hazen)
+- [X] The Structure and Interpretation of Computer Programs
+- [ ] The Structure and Interpretations of Classical Mechanics
+- [ ] Thinking in Systems: A Primer (Donella H. Meadows)
+- [ ] The Evolution of Cooperation (Robert Axelrod)
+- [X] The Infinite Game (Simon Sinek)
+- [ ] Naked Economics: Undressing the Dismal Science (Charles Wheelan)
+- [ ] Economy and Society (Max Weber)
+- [ ] The Sociological Imagination (C. Wright Mills)
+- [ ] Deschooling Society (Ivan Ilych)
+- [ ] The storm before the storm (Mike Duncan)
+- [ ] Mortal Republic (Edward J. Watts)
+- [ ] Meditations (Marcus Aurelius)
+- [X] Thus Spoke Zarathustra (Nietzsche)
+- [ ] The Letters of Vincent Van Goh
+- [ ] The Power of Myth (Joseph Campbell & Bill Moyers)
+- [X] The Art of War (Sun Tzu)
+- [ ] On War (Carl von Clausewitz)
+- [ ] Crime and Punishment (Fyodor Dostoevsky)
+- [ ] Notes from Underground (Fyodor Dostoevsky)
+- [ ] The Complete Sherlock Holmes  (Arthur Conan Doyle)
+- [ ] The Prince (Niccolo Machiavelli)
+- [ ] Godel, Escher, Bach: An Eternal Golden Braid (Douglas Hofstader)
+- [ ] The Feynman Lectures on Physics (Richard P. Feynman)
+- [ ] The Demon-Haunted World: Science as a Candle in the Dark (Carl Sagan)
+- [ ] The SAS survival handbook (John Wiseman)
+- [ ] The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography (Simon Singh)
+- [ ] The Gift of Fear (Gavin De Becker)
+- [ ] The Dangerous Book for Boys (Conn and Hal Iggulden)
+- [ ] The hitchhikers guide to the galaxy (Douglas Adams)
+- [ ] Good Omens (Neil Gaiman and Terry Pratchett)
+- [ ] Me talk pretty one day (David Sedaris)
+- [ ] Superforecasting: The Art and Science of Prediction (Philip E. Tetlock and Dan M. Gardner)
+- [ ] The Art of Always Being Right: The 38 Subtle Ways to Win an Argument (Arthur Schopenhauer)
+- [ ] The Rebel (Albert Camus)
+- [ ] The Stranger (Albert Camus)
+- [ ] Game Theory: Analysis of Conflict (Roger B. Myerson)
+- [ ] Game Theory and the Social Contract: Just Playing (Ken Binmore)
+- [ ] Hacking: The Art of Exploitation (Jon Erickson)
+- [ ] Steppenwolf (Herman Hesse)
+- [ ] Siddhartha (Hermann Hesse)
+- [ ] Discworld Series (Terry Pratchett)
+- [ ] The Evolution of Knowledge (Jurgen Renn)

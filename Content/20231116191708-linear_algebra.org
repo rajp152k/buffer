@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       44a34e4b-98ec-4b7a-ae29-df0b103e792c
+:END:
+#+title: Linear Algebra
+#+filetags: :math:
+
+Is a subdomain of [[id:412f3aa9-2b5f-4e78-9b4e-1adfa34bfe01][Algebra]].

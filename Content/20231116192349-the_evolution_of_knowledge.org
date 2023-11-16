@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       825d36cc-4e03-48e5-bca8-0845e51090af
+:END:
+#+title: The Meta-Subject
+#+filetags: :meta:
+
+Check out this seeding read to get started and what the lay of the land is for forming novel terminologies: https://press.princeton.edu/books/hardcover/9780691171982/the-evolution-of-knowledge
+
+I think I'm the right guy to map out the root of knowledge as it exists today. Thinking of going back to how vernacular stuff propogated and how research is conducted today...
+
+Would be a long timeline of branches that probably originate from one root that leads to what we know about the world today.
+
+There'll be a lot of definitions that I'll need to build up to describe subjects and their domains...
+
+The Meta-Subject. I could really draw from some data representation concepts to really build this behemoth of a book. Could be my life's work.
+The Subjects that tries collecting all subjects under one umbrella and view all of knowledge from a flexible and non-restraining but structured hierarchical framework.
+
+All starts with learning the roots of all knowledge and backtracking to the beginnings of recorded usage of knowledge before I can start building up a tree.
+I'll definitely need a data structure for the same that I can improve upon over time.
+
+I'll be proceeding with common lisp.

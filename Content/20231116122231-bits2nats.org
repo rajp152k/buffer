@@ -12,6 +12,7 @@
    - exploration and elaboration of specific topics : enumerations over a certain topic, with comparisons if possible
    - extremely niche blogs that address a very specific issue
    - project blogs :- pretty rare
+   - paper reviews : I can start with a foundational papers series
  - planning on exploring a little in the beginning and checking out what works and what doesn't
  - will be putting in a healthy amount of research and thought and into the works here.
  - should serve as an online index into interesting insights for something that hasn't been logged before

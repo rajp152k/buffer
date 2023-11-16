@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       412f3aa9-2b5f-4e78-9b4e-1adfa34bfe01
+:END:
+#+title: Algebra
+#+filetags: :math:
+
+checkout https://en.wikipedia.org/wiki/History_of_algebra to get an idea of how way back this stuff goes...

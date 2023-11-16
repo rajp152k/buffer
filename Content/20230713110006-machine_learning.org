@@ -6,7 +6,6 @@
 
 This node captures misc information regarding the large root that ML is.
 I plan on accumulating and assimilating all that I learn from various domains in a uniform manner here. It'll be notebooks from completed [[id:f275e17f-307e-4e2b-a67b-6511774d0a3d][kaggle]] competitions, blogs, papers, courses, anything that's worth goes in. I don't plan on incorporating complete book walkthroughs in here - I'll reference them and won't be mapping what I read verbatim. [[id:9539ffd2-433b-4cac-babc-0d45990a4642][Wikipedia]] is a good quick reference so will be referencing that too rather than typing what's within convenient reach.
-
 * Misc nodes
 ** Production
 *** The Drive Train Approach
@@ -24,6 +23,41 @@ I plan on accumulating and assimilating all that I learn from various domains in
  - any mathematical function can be modelled with the desired level of accuracy given the right architecture and enough training
  - is a foundational theorem responsible for [[id:20230713T110040.814546][Deep Learning]]'s rise
 ** [[id:abe10062-2d23-47ce-8e5c-4cc4789605d2][Collaborative Filtering]]
+* Foundational Papers
+A series oriented towards summarizing some important foundational reads in the machine learning community. I'll be formally writing about the same on [[id:a452786b-9ccc-4883-885b-d501be95e510][Bits2Nats]] once I incorporate them into the zettelkasten here. Do note that these are papers and not textbooks - won't be summarizing textbooks - if that wasn't obvious.
+* Foundational Texts
+A collection of foundational textbooks I'd like to read and incorporate into the notes here slowly over a long duration of time. Reading them all at once might not be the best strategy - Although I'm imagining now, the burnout from too much technical reads packed close together is quite real.
+Do note that I'm collating the foundational texts of [[id:20230713T110040.814546][Deep Learning]] and [[id:9cac188e-8229-4c7a-9cb4-eeb5e81f8010][Reinforcement Learning]] here as well.
+** Pattern Recognition and Machine Learning(book)
+:PROPERTIES:
+:ID:       74a1ea98-51ab-4872-96de-f5c721e0227c
+:END:
+ - https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+** Introduction to Statistical Learning(book)
+:PROPERTIES:
+:ID:       d6a263a3-8401-45ec-beb9-6ef1aaa0bf97
+:END:
+  - https://www.statlearning.com/
+** Elements of Statistical Learning(book)
+:PROPERTIES:
+:ID:       bf3bbc04-83b9-4d4d-b528-a84ac00cc39c
+:END:
+ - https://link.springer.com/book/10.1007/978-0-387-84858-7
+** AI: A Modern Approach(book)
+:PROPERTIES:
+:ID:       45e4eee4-59fb-4bce-bd1c-38bdf44e193a
+:END:
+ - https://aima.cs.berkeley.edu/
+** Deep Learning(book)
+:PROPERTIES:
+:ID:       d1027b2e-e0e2-4fda-ba93-3591a835d012
+:END:
+ - https://www.deeplearningbook.org/
+** RL : An Intro (Sutton and Barto) (book)
+:PROPERTIES:
+:ID:       2a088520-9b09-46c1-85c2-86a675afab95
+:END:
+ - http://incompleteideas.net/book/the-book-2nd.html
 * Sentinels 
 ** SpaCy
 :PROPERTIES:

@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       abe10062-2d23-47ce-8e5c-4cc4789605d2
+:END:
+#+title: Collaborative Filtering
+#+filetags: :ai:
+
+Think recommendation engines:
+ - books
+ - movies
+ - and the likes
+
+Casually speaking, One basic principle that this can be modelled is associating users with stuff they like with other users with stuff they liked and recommending stuff that one liked that the other hasn't consumed yet ...
+
+Mathematically speaking...
+To model what about the item is actually being liked and what the users are actually liking about the item, we can use the concept of latent factors. These (not necessarily categorizable by humans) vectors are used to denote a user and an item.
+
+Then we can score the the match between the user and an item using a similarity score like a simple dot product (for the vectors being standardized between -1 and 1).
+
+We can choose an MSE loss for these dot products to be close to the actual scores of the items by users. This loss can be optimized by [[id:e419c0a9-9753-48f1-82c4-f2004cc2e29c][Stochastic Gradient Descent (SGD)]], in turn updating the embeddings of the users and the items to be close to what is necessary for close predictions of scores to that of the dataset.
+
+Do remember to slap on a sigmoid on the dot product scores to map it to your desired ratings.
+
+To further model the innate goodness and suckiness of an item, and the innate mood of a user, use a bias for both the user and the item that is added to the dot product (before the sigmoid).
+
+** Resources
+ - check out : https://docs.fast.ai/collab.html
+ - check out : https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)

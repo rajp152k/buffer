@@ -2,5 +2,48 @@
 :ID:       3b9a83ab-92b8-4547-8eaa-77ab36db57b8
 :END:
 #+title: Data Augmentation
-#+filetags: :tbp:ml:ai:
-
+#+filetags: :ml:ai:
+A collection of data augmentation strategies. Some might be specific to [[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][Computer Vision]], but consider applicability post adaptation of the strategy as a thought exercise...
+** Protoypal datasets
+Whenever training a model from scratch, it isn't necessary to conduct all experiments on the given dataset right away. Consider creating a prototypal dataset that retains the major characteristics of the original dataset and allows for a lower experiment duration allowing for more iterations.
+Once we are done testing out some hypotheses on the toy dataset, proceed with the tests on the original dataset.
+Don't prefer testing out novel ideas directly on a larger dataset where the time to feedback is too large.
+** Presizing
+ - Data Augmentation during batch transform involve several processes that might lead to a lower quality image even at the same resolution.
+   - this occurs due to the transforms needed interpolation computations that might not exactly preserve quality.
+ - A simple trick to deal with this is before the transforms are applied, apply a large presizing image transform (larger than the final resizing).
+   - also combine all the augmentation transforms into one to be applied on a whole batch on the GPU instead of performing them as item transforms calling for multiple interpolation computations. 
+ - This should help achieve the desired transforms without much qualitative loss.
+ - read more in Chapter 5 of [[id:c6e31908-5622-4e17-9ccd-6b4e71f53ff1][DL for Coders : fastai + pytorch]]
+** Normalizing
+ - Normalizing to the same stats that the base model was trained with is important when using transfer learning
+ - but it's also important to normalize batches when training from scratch
+   - whenever using fundamental pretrained models, do look for the normalization stats as well. Without them, the model sees tensor distributions that it wasn't trained on (very far away from what it was intended for (not just a transfer learning scenario))
+** Progressive Resizing
+ - from C7 of [[id:c6e31908-5622-4e17-9ccd-6b4e71f53ff1][DL for Coders : fastai + pytorch]]
+ - the initial layers of a model learn coarse features (edges, corners etc) whereas later layers might learn to identify finer ones (patterns, explicit features from the dataset)..
+ - training on lower res images for a few cycles followed by progressively increasing resolution of images each cycle (fit first, fine_tune on later cycles when described through the perspective of a deep learning library and not transfer learning).
+ - initial cycles should be faster to train and tune the initial layers
+ - later cycles can focus on learning the finer features in layers down the model
+ - is a data augmentation strategy
+ - might not be useful when transfer learning when pretraining dataset was of similar image sizes though : as the weights have already been iterated upon enough; do try out when the transfer of task is related to generalizing to images of different sizes
+** Test Time Augmentation 
+ - instead of a single center crop (or similar transforms) that affect the contents of the image, crop at multiple locations, process them and average or sensibly ensemble the individual predictions
+** Mixup
+ - train on linear combination of 2 images and their one-hot encoded corresponding targets
+ - train with tradition cross entropy loss as before
+ - intends to make data augmentation an independent process from the domain specific expertise of the dataset
+ - checkout https://arxiv.org/abs/1710.09412
+   - do read up on the issues addressed and further caused as well
+     - low likelihood of overfitting
+     - new targets will not always be binary now : observe and comment on effects of the same
+ - reserve for use when can train for a large number of epochs
+** Label Smoothing
+  - involves moving away from the one-hot encoded targets
+  - deals with overfitting issues
+  - is a way to avoid with overconfidence with predictions
+  - check out : https://arxiv.org/abs/1512.00567
+  - all 0s are set to eps/N and the 1 is set to 1-eps+(eps/N)
+    - they do add to 1
+    - eps is a hyperparameter (usually 0.1)
+    - N is total number of classes

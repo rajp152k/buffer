@@ -5,6 +5,7 @@
 #+title: Writing
 #+filetags: :transient:
 
+check out the ML blog index at [[id:a452786b-9ccc-4883-885b-d501be95e510][Bits2Nats]]
 * Comment stream
 ** 0x216A
  - on a post shower, night walk with music, was able to brain storm several core bloggable prompts

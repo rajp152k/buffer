@@ -14,6 +14,8 @@ Common forms of regularization include L1 (Lasso) and L2 (Ridge) regularization,
  - can be used as a feature selector then: to find out which features are essential and increasing model [[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Interpretability]]
 *** L2(Ridge)
  - promotes lower moduli of parameters.
+ - aka weight decay
+   - derivative of L2 norm is a linear absolute term that is subtracted from gradients during [[id:e419c0a9-9753-48f1-82c4-f2004cc2e29c][Stochastic Gradient Descent (SGD)]]
 *** Elastic Net
  - combination of L1 and L2
 

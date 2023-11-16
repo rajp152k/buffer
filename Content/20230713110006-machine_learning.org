@@ -23,6 +23,7 @@ I plan on accumulating and assimilating all that I learn from various domains in
 ** Universal Approximation Theorem
  - any mathematical function can be modelled with the desired level of accuracy given the right architecture and enough training
  - is a foundational theorem responsible for [[id:20230713T110040.814546][Deep Learning]]'s rise
+** [[id:abe10062-2d23-47ce-8e5c-4cc4789605d2][Collaborative Filtering]]
 * Sentinels 
 ** SpaCy
 :PROPERTIES:

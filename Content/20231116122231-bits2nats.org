@@ -4,19 +4,6 @@
 #+title: Bits2Nats
 #+filetags: :transient:
 
-* Ideation Research Sources
- - Reddit
-   - [[https://www.reddit.com/r/MachineLearning/][r/ML]]
-   - [[https://www.reddit.com/r/deeplearning/][r/DL]]
-   - [[https://www.reddit.com/r/datascience/][r/DS]]
- - personal blogs
-   - https://karpathy.ai/
-   - https://lilianweng.github.io/
-   - https://machinelearningmastery.com/
- - orgs
-   - https://www.fast.ai/
-   - https://medium.com/kaggle-blog
-   - https://towardsdatascience.com/
 * Comment Stream
 ** 0x2196
  - realizing that to really write something useful, I'll have to start reading on what has already been written and find gaps in the market.
@@ -39,13 +26,14 @@
  - keep it practical and interactive if possible : using quarto rendered jupyter notebooks so could find a solution for interactive plots in there.
  - don't write formally deliberately if there isn't anything to write about: don't try and force content
    - doesn't mean I won't log my informal progress and findings in this zettelkasten
+ - alright, I'm going on a noting spree where I'll be populating and connecting nodes in here to see what I can learn and what I'll benefit most from writing about
 * Production
 An index of all that I write about, published, work in progress and prospective.
 ** Published
-|------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
-| time index | Production code name                                      | link                                                           | Category  |
-|------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
-|------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
+|------------+----------------------+------+----------|
+| time index | Production code name | link | Category |
+|------------+----------------------+------+----------|
+|------------+----------------------+------+----------|
 ** Work in Progress
 *** [[id:20231114T134147.421836][RLxATC]] 
  - RL : CV + Deep Q learning (off of my head) to be applied to ATC

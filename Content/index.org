@@ -16,6 +16,13 @@
 ** [[id:20230727T192932.286062][Youtube]]
  - log of all videos along with plans and indices into drafts
 * Stream
+** 0x2196
+ - will be actively populating and pruning the zettelkasten a little more often henceforth.
+ - really dialling down into the writer's persona : let's find out what's on my mind and is any of it really worth anything...
+ - It will be a mix of writing and research and throwing pointed questions toward the internet to build a more intricate knowledge network over time.
+   - I'm hoping this will help me generate a lot of ideas for writing : for AI, lisp and epistemology in general
+   - I find a formal reading of a textbook to be a completely different than what I'm going to do for a while.
+ - LFG....
 ** 0x2195
  - contrary to conventional advice, I'm trying to read less than I usually do. On the contrary, I'll be writing more often and be spending more time with my own abstract concoctions. I have noticed that when I'm on a lean intellectual intake or even abstractually(this isn't a word) fasting, I'm creating a lot more and much more original stuff that isn't your run of the mill wanna be writer. Irrespective of the meta-qualitative-aspects of the excerpts and videos I pump out, the sense of satisfaction that I experience when I publish is much more important than the robotic feeling when I produce conventional chunks.
  - I will however be continuing to read works that call for an action and will help me in my immediate pursuits - be that fitness or technical domain expertise.

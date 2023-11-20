@@ -10,6 +10,9 @@
 Some common feature engineering processes are:
 ** One Hot Encoding
  - converting categoricals into separate booleans
+** Entity Embeddings
+ - one hot encodings might not be the best option when some relevances do exist between the categorical variables being considered.
+ - see https://arxiv.org/pdf/1604.06737.pdf
 ** Binning (Bucketting)
  - converting a continuous feature into multiple exclusive boolean buckets (based on value ranges)
    - 0 to 10, 10 to 20, and so on... , for instance.

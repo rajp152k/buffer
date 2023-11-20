@@ -4,7 +4,7 @@
 #+title: Collaborative Filtering
 #+filetags: :ai:
 
-Think recommendation engines:
+Think [[id:fdda0e0d-1624-4d4c-b630-a1f56b246d90][recommendation engines]]:
  - books
  - movies
  - and the likes

@@ -5,6 +5,9 @@
 #+filetags: :vim:tool:
 
 * Stream
+** 0x219B
+ - I shifted to [[id:afc3d6ba-9d59-4212-a417-71721200e938][NeoVim]]
+   - checkout [[id:fdbc2e71-ec1f-40b4-82c3-290634126675][init.vim]]
 ** 0x217B
  - learning vimscript in a dedicated manner for the first time
    - look into [[https://learnvim.irian.to/vimscript/vimscript_basic_data_types][sections starting from here]]

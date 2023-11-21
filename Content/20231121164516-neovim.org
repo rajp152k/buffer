@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       afc3d6ba-9d59-4212-a417-71721200e938
+:END:
+#+title: NeoVim
+#+filetags: :tool:vim:
+
+* Stream
+** 0x219B
+ - alright, I work in neovim + tmux and I write and research in [[id:20230712T224009.631876][Emacs]]
+ - feels like a healthy middle ground between speed and extensibility.
+ - checkout the [[id:fdbc2e71-ec1f-40b4-82c3-290634126675][init.vim+lua]]
+ - well, I've got a functional polyglot oriented setup ready with Mason and its fast
+ - Now all my writing, organization and Lisp happens in emacs
+   - all the code in nvim
+   - doesn't feel that odd : just like speaking two languages with a common linguistic root (evil..).
+   - the mindset that I'm in when using the two is quite different
+

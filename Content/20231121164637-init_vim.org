@@ -45,7 +45,6 @@ nnoremap <esc><esc> :nohlsearch<CR><esc>
 nnoremap <silent> <leader>ff :FZF<CR>
 nnoremap <silent> <leader>fh :FZF~<CR>
 nnoremap <silent> <leader>fa :Rg<CR>
-nnoremap <silent> <leader>fd :FZF<CR>
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 " }}}
 "}}}
@@ -56,7 +55,6 @@ Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
 Plug 'frazrepo/vim-rainbow'
 Plug 'junegunn/vim-peekaboo'
 Plug 'simnalamburt/vim-mundo'
-Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
@@ -71,9 +69,23 @@ Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
 Plug 'EdenEast/nightfox.nvim'
+Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+Plug 'tpope/vim-eunuch'
 call plug#end()
 "}}}
 "{{{ Plug-Config
+"{{{ LSP-zero
+nnoremap <leader>lf :LspZeroFormat<CR>
+nnoremap <leader>li :LspInfo<CR>
+nnoremap <leader>lr :LspRestart<CR>
+nnoremap <leader>l1 :LspStart<CR>
+nnoremap <leader>l0 :LspStop<CR>
+"}}}
+"{{{ codeium
+nnoremap <leader>cd :CodeiumDisable<CR>
+nnoremap <leader>ce :CodeiumEnable<CR>
+imap <script><silent><nowait><expr> <C-g> codeium#Accept()
+"}}}
 "{{{ Mason
 nnoremap <leader>pm :Mason<CR>
 "}}}
@@ -94,65 +106,73 @@ let g:lightline = {
 colorscheme carbonfox
 "}}}
 "}}}
+"{{{ Au Bufs
+"{{{ Python
+augroup PythonFolding
+    autocmd!
+    autocmd FileType python setlocal foldmethod=indent foldlevel=1
+augroup END
+"}}}
+"}}}
 "{{{ Lua require
 lua require("init")
 "}}}
 #+end_src
 ** init.lua
 #+begin_src lua
--- INIT.LUA
+  -- INIT.LUA
 
 -- {{{ NVIM-CMP
 local cmp = require 'cmp'
 
 cmp.setup({
-  snippet = {
-    -- REQUIRED - you must specify a snippet engine
-    expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body)
-    end,
-  },
-  window = {
-    completion = cmp.config.window.bordered(),
-    documentation = cmp.config.window.bordered(),
-  },
-  mapping = cmp.mapping.preset.insert({
-    ['<C-p>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-n>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete(),
-    ['<C-e>'] = cmp.mapping.abort(),
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
-  }),
-  sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'vsnip' },
-  }, {
-    { name = 'buffer' },
-  })
+        snippet = {
+                -- REQUIRED - you must specify a snippet engine
+                expand = function(args)
+                        vim.fn["vsnip#anonymous"](args.body)
+                end,
+        },
+        window = {
+                completion = cmp.config.window.bordered(),
+                documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+                ['<C-p>'] = cmp.mapping.scroll_docs(-4),
+                ['<C-n>'] = cmp.mapping.scroll_docs(4),
+                ['<C-Space>'] = cmp.mapping.complete(),
+                ['<C-e>'] = cmp.mapping.abort(),
+                ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+                { name = 'nvim_lsp' },
+                { name = 'vsnip' },
+        }, {
+                { name = 'buffer' },
+        })
 })
 
 cmp.setup.filetype('gitcommit', {
-  sources = cmp.config.sources({
-    { name = 'git' },
-  }, {
-    { name = 'buffer' },
-  })
+        sources = cmp.config.sources({
+                { name = 'git' },
+        }, {
+                { name = 'buffer' },
+        })
 })
 
 cmp.setup.cmdline({ '/', '?' }, {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = 'buffer' }
-  }
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = {
+                { name = 'buffer' }
+        }
 })
 
 cmp.setup.cmdline(':', {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources({
-    { name = 'path' }
-  }, {
-    { name = 'cmdline' }
-  })
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+                { name = 'path' }
+        }, {
+                { name = 'cmdline' }
+        })
 })
 
 -- }}}
@@ -160,35 +180,35 @@ cmp.setup.cmdline(':', {
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-  -- see :help lsp-zero-keybindings
-  -- to learn the available actions
-  lsp_zero.default_keymaps({ buffer = bufnr })
+        -- see :help lsp-zero-keybindings
+        -- to learn the available actions
+        lsp_zero.default_keymaps({ buffer = bufnr })
 end)
-lsp_zero.format_on_save({
-  format_opts = {
-    async = false,
-    timeout_ms = 10000,
-  },
-  servers = {
-    ['pylsp'] = { 'python' },
-    ['vimls'] = { 'vimscript' },
-    ['lua_ls'] = { 'lua' },
-  }
-})
+-- lsp_zero.format_on_save({
+--   format_opts = {
+--     async = false,
+--     timeout_ms = 10000,
+--   },
+--   servers = {
+--     ['pylsp'] = { 'python' },
+--     ['vimls'] = { 'vimscript' },
+--     ['lua_ls'] = { 'lua' },
+--   }
+-- })
 lsp_zero.set_sign_icons({
-  error = '✘',
-  warn = '▲',
-  hint = '⚑',
-  info = '»'
+        error = '✘',
+        warn = '▲',
+        hint = '⚑',
+        info = '»'
 })
 -- }}}
 -- {{{ Mason
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = { "pylsp", "vimls", "lua_ls" },
-  handlers = {
-    lsp_zero.default_setup,
-  },
+        ensure_installed = { "pylsp", "vimls", "lua_ls" },
+        handlers = {
+                lsp_zero.default_setup,
+        },
 })
 -- }}}
 #+end_src

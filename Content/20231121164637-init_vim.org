@@ -10,7 +10,7 @@ I'm a one file man so will probably be folding a lot of code
 * Configs
 ** init.vim
 #+begin_src vimscript
-" INIT.VIM
+  " INIT.VIM
 
 "{{{ Base
 set relativenumber number
@@ -30,7 +30,8 @@ nnoremap <leader>d :Ex<CR>
 "{{{ init.vim
 nnoremap <silent> <Leader>ev :edit /root/.config/nvim/init.vim<CR>
 nnoremap <silent> <Leader>el :edit /root/.config/nvim/lua/init.lua<CR>
-nnoremap <silent> <Leader>es :source /root/.config/nvim/init.vim<CR>
+nnoremap <silent> <Leader>esv :source /root/.config/nvim/init.vim<CR>
+nnoremap <silent> <Leader>esl :source /root/.config/nvim/lua/init.lua<CR>
 "}}}
 "{{{ Tabs
 nnoremap <leader>te :tabe<CR>
@@ -39,7 +40,7 @@ nnoremap <leader>tn :tabn<CR>
 nnoremap <leader>tp :tabp<CR>
 nnoremap <leader>t :<C-U>tabnext <C-R>=input("Enter tab number: ")<CR><CR>
 "}}}
-"Searching {{{
+"Searching {{{ 
 set hlsearch
 nnoremap <esc><esc> :nohlsearch<CR><esc>
 nnoremap <silent> <leader>ff :FZF<CR>
@@ -71,9 +72,16 @@ Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
 Plug 'EdenEast/nightfox.nvim'
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 Plug 'tpope/vim-eunuch'
+Plug 'Vigemus/iron.nvim'
 call plug#end()
 "}}}
 "{{{ Plug-Config
+"{{{ iron
+nnoremap <leader>rs :IronRepl<CR>
+nnoremap <leader>rr :IronRestart<CR>
+nnoremap <leader>rf :IronFocus<CR>
+nnoremap <leader>rh :IronHide<CR>
+"}}}
 "{{{ LSP-zero
 nnoremap <leader>lf :LspZeroFormat<CR>
 nnoremap <leader>li :LspInfo<CR>
@@ -90,11 +98,11 @@ imap <script><silent><nowait><expr> <C-g> codeium#Accept()
 nnoremap <leader>pm :Mason<CR>
 "}}}
 "{{{ Rainbow
-let g:rainbow_active = 1
+let g:rainbow_active = 1 
 "}}}
 "{{{ Mundo
 nnoremap <leader>m :MundoToggle<CR>
-" }}}
+" }}} 
 "Statusline{{{
 set laststatus=2
 set noshowmode
@@ -126,53 +134,53 @@ lua require("init")
 local cmp = require 'cmp'
 
 cmp.setup({
-        snippet = {
-                -- REQUIRED - you must specify a snippet engine
-                expand = function(args)
-                        vim.fn["vsnip#anonymous"](args.body)
-                end,
-        },
-        window = {
-                completion = cmp.config.window.bordered(),
-                documentation = cmp.config.window.bordered(),
-        },
-        mapping = cmp.mapping.preset.insert({
-                ['<C-p>'] = cmp.mapping.scroll_docs(-4),
-                ['<C-n>'] = cmp.mapping.scroll_docs(4),
-                ['<C-Space>'] = cmp.mapping.complete(),
-                ['<C-e>'] = cmp.mapping.abort(),
-                ['<CR>'] = cmp.mapping.confirm({ select = true }),
-        }),
-        sources = cmp.config.sources({
-                { name = 'nvim_lsp' },
-                { name = 'vsnip' },
-        }, {
-                { name = 'buffer' },
-        })
+	snippet = {
+		-- REQUIRED - you must specify a snippet engine
+		expand = function(args)
+			vim.fn["vsnip#anonymous"](args.body)
+		end,
+	},
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	},
+	mapping = cmp.mapping.preset.insert({
+		['<C-p>'] = cmp.mapping.scroll_docs(-4),
+		['<C-n>'] = cmp.mapping.scroll_docs(4),
+		['<C-Space>'] = cmp.mapping.complete(),
+		['<C-e>'] = cmp.mapping.abort(),
+		['<CR>'] = cmp.mapping.confirm({ select = true }),
+	}),
+	sources = cmp.config.sources({
+		{ name = 'nvim_lsp' },
+		{ name = 'vsnip' },
+	}, {
+		{ name = 'buffer' },
+	})
 })
 
 cmp.setup.filetype('gitcommit', {
-        sources = cmp.config.sources({
-                { name = 'git' },
-        }, {
-                { name = 'buffer' },
-        })
+	sources = cmp.config.sources({
+		{ name = 'git' },
+	}, {
+		{ name = 'buffer' },
+	})
 })
 
 cmp.setup.cmdline({ '/', '?' }, {
-        mapping = cmp.mapping.preset.cmdline(),
-        sources = {
-                { name = 'buffer' }
-        }
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = {
+		{ name = 'buffer' }
+	}
 })
 
 cmp.setup.cmdline(':', {
-        mapping = cmp.mapping.preset.cmdline(),
-        sources = cmp.config.sources({
-                { name = 'path' }
-        }, {
-                { name = 'cmdline' }
-        })
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = 'path' }
+	}, {
+		{ name = 'cmdline' }
+	})
 })
 
 -- }}}
@@ -180,9 +188,9 @@ cmp.setup.cmdline(':', {
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-        -- see :help lsp-zero-keybindings
-        -- to learn the available actions
-        lsp_zero.default_keymaps({ buffer = bufnr })
+	-- see :help lsp-zero-keybindings
+	-- to learn the available actions
+	lsp_zero.default_keymaps({ buffer = bufnr })
 end)
 -- lsp_zero.format_on_save({
 --   format_opts = {
@@ -196,20 +204,57 @@ end)
 --   }
 -- })
 lsp_zero.set_sign_icons({
-        error = '✘',
-        warn = '▲',
-        hint = '⚑',
-        info = '»'
+	error = '✘',
+	warn = '▲',
+	hint = '⚑',
+	info = '»'
 })
 -- }}}
 -- {{{ Mason
 require('mason').setup({})
 require('mason-lspconfig').setup({
-        ensure_installed = { "pylsp", "vimls", "lua_ls" },
-        handlers = {
-                lsp_zero.default_setup,
-        },
+	ensure_installed = { "pylsp", "vimls", "lua_ls" },
+	handlers = {
+		lsp_zero.default_setup,
+	},
 })
 -- }}}
-#+end_src
+-- {{{ IRON.NVIM
+local iron = require("iron.core")
 
+iron.setup {
+	config = {
+
+		highlight_last = "IronLastSent",
+		scratch_repl = false,
+		visibility = require("iron.visibility").single,
+		close_window_on_exit = true,
+		repl_definition = {
+			sh = { command = { "bash" } },
+			python = require("iron.fts.python").ipython,
+			lua = { command = { "lua" } }
+		},
+		repl_open_cmd = require('iron.view').right(60),
+	},
+	keymaps = {
+		send_motion = "<leader>sm",
+		visual_send = "<leader>sv",
+		send_file = "<leader>sf",
+		send_line = "<leader>sl",
+		send_until_cursor = "<leader>su",
+		send_mark = "<leader>sm",
+		mark_motion = "<leader>mc",
+		mark_visual = "<leader>mc",
+		remove_mark = "<leader>md",
+		cr = "<leader>s<cr>",
+		interrupt = "<leader>s<leader>",
+		exit = "<leader>sq",
+		clear = "<leader>cl",
+	},
+	highlight = {
+		italic = true
+	},
+	ignore_blank_lines = true
+}
+-- }}}
+#+end_src

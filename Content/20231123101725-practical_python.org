@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       b52011dd-6806-47a0-b3e1-0de20e51ad0b
+:END:
+#+title: Practical (python)
+#+filetags: :python:
+
+Practical Aspects of programming in python that I collate from various resources
+
+* Blogs
+** Best Practices
+ - https://dagster.io/blog/python-project-best-practices

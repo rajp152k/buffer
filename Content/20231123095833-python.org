@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       985a470b-7184-4f9f-8b16-fe7b90bccebe
+:END:
+#+title: Python
+#+filetags: :python:
+
+* Stream
+** 0x219D
+ - checking out some resources for some good programming practices in python : collating them under:[[id:b52011dd-6806-47a0-b3e1-0de20e51ad0b][ Practical (python)]] 
+** Init
+ - some programming languages force the programmer to think like they're building with lego blocks.
+ - some enquire (or enforce) enlightenment before one can start coding elegantly
+ - some induce mania
+ - some are crisp and structured and just ...., yeah, they just are.
+ - python can be everything depending on who you are(I'm guessing).
+   - worth mastering.
+ - I'm going the careless children way.
+   - here's the parent doing it's job before it was created:
+     - [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]
+     - [[id:097b7bdc-1f4f-4738-a45f-c0a959ef2ff3][Python GIL]]
+       

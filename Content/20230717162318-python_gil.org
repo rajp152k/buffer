@@ -6,4 +6,3 @@
 
 The python global interpreter lock:
  - python processes can be concurrent but do not exhibit true parallelism
-

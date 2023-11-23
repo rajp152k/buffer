@@ -10,12 +10,25 @@
 ** [[id:20230718T222456.978981][input-queue]]
  - an index of resources that I want to consume sometime down the lane
  - anytime I feel like I wish to learn something, I visit this node and populated the buffer accordingly as I learn new skills and accumulate info
-** [[id:20231112T080937.669416][projects]]
+** [[id:20231112T080937.669416][Projects]]
+ - a cache for ideas that may never see the light of day again.
+   - or they just might...
 ** [[id:20230712T131112.909632][blog]]
  - log of all blogs that  I write down and relevant notes for future works
 ** [[id:20230727T192932.286062][Youtube]]
  - log of all videos along with plans and indices into drafts
 * Stream
+** 0x219D
+ - careless parenting:
+   - henceforth, In these nodes, I'll refrain from making the parent refer the child nodes.
+   - the child will be pointing back to the root node instead.
+   - that isn't ideal for textual navigation but is sufficient and when using a Graph like Org-roam-ui to visualize the nodes
+   - this calls for some pruning : will need to schedule quite a session to actually enforce these regulations so that the network isn't unnecessarily crowded with two way links.
+ - Now that I've shifted to neovim for work, only all of my writing and note-taking happens in emacs (+ lisp) so I guess I'm slowly learning to set healthy boundaries in my relationships now.
+ - I changed my mind:
+   - only the parent logs abstract comments about the child and the child doesn't refer the parent explicitly with "rooted at ..." unnecessary appendices
+   - will need to prune the sh*t (I don't know why I'm censoring) out of this someday now.
+   - careless children are the way to go.
 ** 0x2196
  - will be actively populating and pruning the zettelkasten a little more often henceforth.
  - really dialling down into the writer's persona : let's find out what's on my mind and is any of it really worth anything...

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       8afb9d29-252b-4f17-ad42-700444fe4464
+:END:
+#+title: Processing
+#+filetags: :meta:
+
+* Misc
+
+The act of [[id:c9d0326a-4861-412c-a784-879449ca2810][transforming]] inputs into outputs
+
+* Forks
+** Processing (Mind)
+:PROPERTIES:
+:ID:       68c0b7d5-eb6b-404c-9b74-72acbb1de09e
+:END:
+ - Seems inseparaable from the idea of [[id:401e1c2b-fc54-4bee-9a38-d084b8904693][Memory (Mind)]]
+   - can't particularly envision the code being separate from the idea of data.
+   - this is unfair on my part as the two above are concepts rooted in computers.
+** Processing (Computers)
+:PROPERTIES:
+:ID:       16076aac-42e7-4631-b808-6e6e840c2188
+:END:
+ - Can be separated easily from the notion of [[id:40a85632-284f-44f5-a86d-dc287fac1587][Memory (Computers)]], because these terms are more adapted to this particular domain

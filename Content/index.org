@@ -18,6 +18,19 @@
 ** [[id:20230727T192932.286062][Youtube]]
  - log of all videos along with plans and indices into drafts
 * Stream
+** 0x21A3
+ - getting into the idea of intellectually rambling on the internet
+ - I explore something of immediate intrigue and try to update the current state of the dump according to what I consume.
+ - a few blurry rules that'll help me not [[id:f3347380-f482-4077-a89b-a3ff059b4af6][hallucinate]] more than I can handle:
+   - no resource links to be inserted during such sessions -> wikipedia is a cheatcode only to be used for factual notes
+   - all that is inserted needs to be typed in
+   - be precise: prune freely, add carefully.
+   - verbosity is to be reserved for streams such as this
+   - no work related stuff : explore something from a completely different domain
+   - a question can serve as a seed for the session but refrain from using the internet right away. Only do so to refine your thought.
+ - for today's session, I'm considering talking about meditation: have been regular for 2 weeks for atleast 20 mins a day - somedays are 40 mins long.
+   - and I have some interesting thoughts about the "mind" and the nature of the "I".
+   - minimizing prior assumptions that aren't well rooted in experiences, off I go ...
 ** 0x219D
  - careless parenting:
    - henceforth, In these nodes, I'll refrain from making the parent refer the child nodes.

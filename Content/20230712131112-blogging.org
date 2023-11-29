@@ -7,14 +7,18 @@
 
 check out the ML blog index at [[id:a452786b-9ccc-4883-885b-d501be95e510][Bits2Nats]]
 * Comment stream
+** 0x21A3 
+ - I thought I'd reached 0x2200, but I forgot stuff is in hex here.
+ - have been able to bring a healthy level of monotony in my routines (read smooth highways without speed bumps and ditches)
+ - writing in Emacs and coding in Neovim so that's working pretty well.
+ - forcing a routine on writing henceforth: not just something I do according to my whims but something that is a disciplined endeavour henceforth.
 ** 0x216A
  - on a post shower, night walk with music, was able to brain storm several core bloggable prompts
  - hadn't been able to do so in a long time and definitely felt satisfied by the end of it
  - I was missing my small paper notes and realized that I've got to get used to the phone and get over my peeve against complex instruments for writing.
  - will still be using the work in progress subnode here to capture these prompts in batches
 ** 0x215D
- - reading a book on prompt engineering to actively improve my content creation process
-   - had a pretty productive chat as follows : https://chat.openai.com/share/6896002b-08bc-4e85-af48-82bbffc4f5cd
+- reading a book on prompt engineering to actively improve my content creation process - had a pretty productive chat as follows : https://chat.openai.com/share/6896002b-08bc-4e85-af48-82bbffc4f5cd
 ** 0x2148
  - elaborating on the book that I mentioned yesterday, found this interesting strategy on writing a book
    - to publish it in atomic parts with each fundamental idea being a blog post.

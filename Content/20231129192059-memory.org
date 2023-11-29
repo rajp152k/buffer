@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       447f9fb3-1d21-4dff-8c38-bfd15b3e7767
+:END:
+#+title: Memory
+#+filetags: :meta:
+
+* Misc
+
+As of now, I've wondered, more than a couple of times, on the origination of the notion and what fork of the same (mentioned below) do I relate to more naturally: Storage is somewhat of a static
+
+* Forks
+** Memory (Mind)
+:PROPERTIES:
+:ID:       401e1c2b-fc54-4bee-9a38-d084b8904693
+:END:
+ - This is a more fluid concept that should be fully dealt with in a completely different [[id:fef55c48-87a6-4828-a298-4326264fc0e5][Mind]]-node altogether.
+ - There does seem to be a notion inseparability with the aspect of [[id:68c0b7d5-eb6b-404c-9b74-72acbb1de09e][Processing (Mind)]] when it comes to the mind.
+   - not so for the case of the computer.
+** Memory (Computers)
+:PROPERTIES:
+:ID:       40a85632-284f-44f5-a86d-dc287fac1587
+:END:
+ - As stated above, computers have a distinct 

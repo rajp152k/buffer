@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       37016af8-9d02-4ddb-b33a-bcfcd6eacb5d
+:END:
+#+title: Advent of Code 2023
+#+filetags: :project:
+
+
+* --- Day 1: Trebuchet?! ---
+** Problem 1 : https://adventofcode.com/2023/day/1
+#+begin_src lisp
+(defun fetch-parse-line (line)
+  (let ((numerals (remove-if-not #'(lambda (i) i)
+				 (mapcar #'digit-char-p
+					 (coerce line 'list)))))
+    (cond ((eq numerals '()) 0)
+	  ((eq (length numerals) 1) (+ (* (car numerals) 10)
+				       (car numerals)))
+	  (t (+ (* 10 (car numerals))
+		(car (last numerals)))))))
+
+(defun solve (file-name)
+  (with-open-file (stream file-name)
+    (do ((acc 0 (+ acc (fetch-parse-line (read-line stream)))))
+	((not (listen stream)) acc))))
+
+(solve "./corrup_calib.txt")
+#+end_src
+
+** Problem 2 : https://adventofcode.com/2023/day/1#part2
+
+ - can reuse the code, just have to parse and insert spelled-out digits as numerals before hand
+
+#+begin_src lisp
+(load "c:/Users/raj.patil/quicklisp/setup.lisp")
+(ql:quickload "cl-ppcre")
+
+(defun transform (replacements line)
+  (dolist (replacement replacements line)
+    (setf line (funcall replacement line))))
+
+(defun process-line (line)
+  (let ((numerals (remove-if-not #'(lambda (i) i)
+				 (mapcar #'digit-char-p
+					 (coerce line 'list)))))
+    (cond ((eq numerals '()) 0)
+	  ((eq (length numerals) 1) (+ (* (car numerals) 10)
+				       (car numerals)))
+	  (t (+ (* 10 (car numerals))
+		(car (last numerals)))))))
+
+(defun parse-line (line)
+  (let ((replaces '(("zero" . "z0e")
+		    ("one" . "o1e")
+		    ("two" . "t2o")
+		    ("three" . "t3e")
+		    ("four" . "f4r")
+		    ("five" . "f5e")
+		    ("six" . "s6x")
+		    ("seven" . "s7n")
+		    ("eight" . "e8t")
+		    ("nine" . "n9e"))))
+    (process-line
+     (transform (mapcar #'(lambda (substitution)
+			    #'(lambda (l) (cl-ppcre:regex-replace-all
+					   (car substitution)
+					   l
+					   (cdr substitution))))
+			 replaces)
+		line))))
+
+(defun solve (file-name)
+  (with-open-file (stream file-name)
+    (format t
+	    "~%Sum: ~S"
+	    (do ((acc 0 (+ acc (parse-line (read-line stream)))))
+		((not (listen stream)) acc)))))
+
+(solve "./corrup_calib.txt")
+#+end_src
+
+ - definitely an eventful first day
+ - if you don't maintain the trailing and leading character: you miss out on replaces like "twoneighthreeight" being "21838"
+ - inserting extra sentinel characters to maintain an implicit invariant (existence of other spelled out numerals) is something that isn't obvious at a first glance.
+   

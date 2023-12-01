@@ -4,6 +4,7 @@
 #+title: Decision Trees
 #+filetags: :ml:ai:
 
+* Basics
 An acyclic directed [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][graph]] that's used to make decisions.
 At each branching node, a specific check is applied on the features:-
  - based on a binary decision: either the left or the right child is chosen for further decisions
@@ -124,3 +125,8 @@ Now that all the helpers have been expressed, the principal recursor looks as fo
 Note that the split decision at each point is local in ID3 (a greedy approach). This doesn't guarantee optimality. [[id:56be53d0-9544-42b4-83b8-a9237d6108c4][Backtracking]] may be employed during the search at the cost of the procedure running longer.
 
 Do note that this algorithm then approximately maximises average log-likelihood.
+
+* Systematic Issues
+** Extrapolation Errors
+ - when dealing with points that are too far off the range of the data that the tree was trained with, due to the nature of the prediction strategy (averaging/ensembling), the tree isn't able to extrapolate well.
+

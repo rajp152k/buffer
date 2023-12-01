@@ -4,10 +4,17 @@
 #+title: Mind
 #+filetags: :pseudoscience:
 
-* Misc
- - Well...., uhh..., 
- - yeah, well...
- - tough nut.
- - Gonna crack'em all...
- - some day.
-   
+* Abstract
+The mind seems to be a pretty elusive concept and I'm not quite sure what definitively binds such a concept. I'm also not quite sure exactly how this relates to the physical manifestation that the [[id:a1a6a525-9e69-4eda-9085-2fff9ef5d152][Brain]] is. It could be an older concept (etymologically speaking) given its spiritual and theological probably go temporally deeper down the surface (present) than that of when the brain was first scientifically observed.
+
+I don't think dissection was a concept that existed before the notion of the mind. Ergo, humans imagined the idea of the self being captured by something that could be abstractly captured by the notion of the mind.
+
+On a side note, I wonder exactly why does one choose to wonder about such abstractions given that they do not result in explicit tangible gains. A quick follow-up would be the idea of intellectually pushing frontiers and the satisfaction that brings: I have experienced the joy of finding something out by thought experiments and unassisted hypothesizing in this age of information overload a few times in my life and can definitely understand how the chase for such a high could motivate this pursuit.
+
+[[id:1a9834c1-b8a9-4840-a88c-109f0d870f68][Correctness]] in such cases is so murky though. How does one verify if they're on the right track and if they are on it, how does one track [[id:3b03d3cd-5ca7-48fe-b537-bc2c90574142][progress]] along the way.
+
+Personally, staying on a task without indicators of success/corrective signals that assist in course correction seems to be a futile attempt.
+
+Not considering the scientific phase that lead to anatomically exploring the brain, considering what the mind "is" seems to be, albeit very ambitious, a shaky pursuit.
+
+Now that we have formulated finer concepts like the idea of neurotransmitters passing through neurons and are able to connect structures of these compounds to the [[id:15b18b45-6d24-47fc-824c-7af28180b384][Emotions]] and physical [[id:f8e56017-9046-4693-b92a-6f7c4944d56c][Symptoms]] that we experience (oxytocin, cortisol, norepinephrine, etc), one can finally start to blend boundaries between the physical mechanisms that makes an organism and the seemingly inexplicable behaviours we exhibit.

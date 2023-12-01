@@ -6,6 +6,9 @@
 
 A stream logging update in my work setup :- hardware, software and any other auxiliaries.
 
+* 0x21A6
+ - using emacs for writing + programming lisp
+ - neovim for programming and remote stuff.
 * 0x212E
 
  - have shifted to using gray-scale filters for all my screens (all monitors, phone and the kindle(by default))

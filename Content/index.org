@@ -3,6 +3,13 @@
 :END:
 #+title: Index
 
+* Global Disclaimer
+What I compile in these notes isn't meant to be a factual state of the art but how I currently perceive whatever I've partially captured in them.
+
+Expect [[id:be99b67e-e454-4f19-ade7-4c3faf10ce07][paradoxes]], inaccuracies, [[id:d3617afa-85ce-4ac8-bdc3-19fe587c1956][pseudoscience]] and some occasional epiphanies. It's mostly rambling but that is necessary for the rare insight that brings calm to the chaotic combination of concepts that are a prerequisite for a fertile [[id:fef55c48-87a6-4828-a298-4326264fc0e5][Mind]].
+
+I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059b4af6][hallucinating]] so that I can churn up [[id:5a68c46a-85bf-49f1-a589-5a6116f839fb][reality]] a little to chance upon the silver linings that help one push abstract boundaries.
+
 * Endpoints
 ** [[id:1729][Index]]
  - notes down some basic rules about the braindump's usage
@@ -151,7 +158,7 @@ Tags are meant to serve as keywords that indicate - at a high level - what a [[i
  - problem
  - emacs
 
-* Misc
+* Who am I?
 
 Hi, this is Raj. You've chanced upon my digital note-box (~Zettelkasten) maintained in org-roam. I've circled over a lot of tools to maintain an efficient system in the past and have finally settled on a format that treats everything as text and allows me to spend more time within emacs. I find it difficult to keep track of all that I learn and this dump delegates the notion of remembering to a computer.
 

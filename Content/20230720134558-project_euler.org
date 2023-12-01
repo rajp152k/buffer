@@ -86,7 +86,6 @@
 	  :initial-value '()))
 
 (funcall #'max (remove-if-not #'palindrome-p (cartesian-product-combine *limits* *limits* #'*)))
-     
    #+end_src
   
 ** p5
@@ -111,6 +110,9 @@
 (evenly-divisible (range 1 20))
 #+end_src
 
+#+RESULTS:
+: 232792560
+
 ** p6
 - https://projecteuler.net/problem=6
 - alright.., less talk more walk...
@@ -129,6 +131,9 @@
 
 (sol-upto 100)
 #+end_src
+
+#+RESULTS:
+: 25164150
 
 ** p7
 - https://projecteuler.net/problem=7
@@ -149,6 +154,9 @@
 
 (nth 10000 (sieve-of-eratosthenes 1000000))
 #+end_src
+
+#+RESULTS:
+: 104743
 
 ** p8
 - https://projecteuler.net/problem=8
@@ -185,6 +193,9 @@
   (max-product 13 *number*)
 #+end_src
 
+#+RESULTS:
+: 23514624000
+
 ** p9
 - https://projecteuler.net/problem=9
 
@@ -198,6 +209,9 @@
 		    (format t "~&found triplet ~s,~s,~s with prod ~s"
 			    i j (- 1000 i j) (* i j (- 1000 i j))))))
 #+end_src
+
+#+RESULTS:
+: NIL
 
 ** p10
 - https://projecteuler.net/problem=10
@@ -309,6 +323,9 @@
 
 #+end_src
 
+#+RESULTS:
+: 70600674
+
 ** p12
  - https://projecteuler.net/problem=12
 
@@ -345,6 +362,9 @@
 (sol-triangle-num 500)
 #+end_src
 
+#+RESULTS:
+: 76576500
+
 ** p13
 - https://projecteuler.net/problem=13
 #+begin_src lisp
@@ -352,7 +372,8 @@
 
   (defun sol ()
     (apply #'+ (mapcar #'(lambda (number) (parse-integer (subseq (format nil "~a" number) 0 13) ))
-  		     ,*numbers*)))
+		     ,*numbers*)))
+  (sol)
 
   ;9*50 = 450 : max influence of two to three more place values
   ;series goes as 450 + 45 + 4.5 + ...
@@ -360,3 +381,6 @@
   ;check from 0 to 12
   ;this being a lisp, I could just add it all
 #+end_src
+
+#+RESULTS:
+: 553737623039036

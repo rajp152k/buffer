@@ -5,8 +5,11 @@
 #+title: Writing
 #+filetags: :transient:
 
-check out the ML blog index at [[id:a452786b-9ccc-4883-885b-d501be95e510][Bits2Nats]]
 * Comment stream
+** 0x21A6
+ - I'm considering being more concise
+ - Being verbose is a style that I exhibit naturally but I have noticed that my words are the most impactful when I'm concise and only type after considerable thought.
+ - both have their times of prominence but I don't think I practice the former enough due to the skewed nature of the effort I put in this dump versus the original blog.
 ** 0x21A3 
  - I thought I'd reached 0x2200, but I forgot stuff is in hex here.
  - have been able to bring a healthy level of monotony in my routines (read smooth highways without speed bumps and ditches)

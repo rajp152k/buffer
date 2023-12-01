@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       15b18b45-6d24-47fc-824c-7af28180b384
+:END:
+#+title: Emotions
+#+filetags: :meta:
+

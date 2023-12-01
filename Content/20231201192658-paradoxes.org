@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       be99b67e-e454-4f19-ade7-4c3faf10ce07
+:END:
+#+title: Paradoxes
+#+filetags: :meta:
+

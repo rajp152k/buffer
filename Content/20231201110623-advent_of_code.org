@@ -150,4 +150,219 @@
     	((not (listen stream)) acc))))
 #+end_src
 
-sdf
+* --- Day 3: Gear Ratios ---
+ - https://adventofcode.com/2023/day/3 
+ - I'm already having dreams about s-expressions
+ - can't imagine my state by we reach christmas
+#+begin_src lisp
+;;load board into array ;;have virtual padding
+;; :- function that returns a dot when out of bounds
+;;for each symbol check surroundings (8 of them)
+;;mark indices for processing where a number occurs
+;;when processing an index, mark all the indices where the number extends
+;;report accumulation
+
+(defun load-board (file-name)
+  (with-open-file (stream file-name)
+    (do ((board '() (cons (coerce (read-line stream) 'list)
+			  board)))
+	((not (listen stream)) (reverse board)))))
+
+(defvar *repr* (load-board "./board.txt"))
+(defvar *rows* (length *repr*))
+(defvar *cols* (length (car *repr*)))
+
+(defun paref (i j array &key (sentinel #\.))
+  "sentinel padded bget"
+  (let ((rows (array-dimension array 0))
+	(cols (array-dimension array 1)))
+   (labels ((out-index (index bound) (or (< index 0)
+					(>= index bound)))
+	   (orow (row-num) (out-index row-num rows))
+	   (ocol (col-num) (out-index col-num cols)))
+     (if (or (orow i)
+	     (ocol j))
+	 sentinel
+	 (aref array i j)))))
+
+(defun symbol-p (char)
+  (and (not (digit-char-p char) )
+       (not (char= char #\.) )))
+
+(defvar *board* (make-array `(,*rows*
+			      ,*cols*)
+			    :initial-contents *repr*))
+
+(defun proc-setf (i j array val)
+  (let ((rows (array-dimension array 0))
+	(cols (array-dimension array 1)))
+    (labels ((out-index (index bound) (or (< index 0)
+					  (>= index bound)))
+	     (orow (row-num) (out-index row-num rows))
+	     (ocol (col-num) (out-index col-num cols))
+	     (validator (i j) (digit-char-p (paref i j *board*))))
+      (when (and (not (or (orow i)
+			  (ocol j)))
+		 (validator i j))
+	(setf (aref array i j) val)))))
+
+(defun mark-check-local (i j check-mask)
+  (let ((marks `((,(- i 1)  ,(- j 1))
+		 (,(- i 1)  ,j)
+		 (,(- i 1)  ,(+ j 1))
+		 (,i  ,(- j 1))
+		 (,i  ,(+ j 1))
+		 (,(+ i 1)  ,(- j 1))
+		 (,(+ i 1)  ,j)
+		 (,(+ i 1)  ,(+ j 1)))))
+    (mapcar #'(lambda (mark)
+		(proc-setf (car mark)
+			   (cadr mark)
+			   check-mask
+			   T))
+	    marks)))
+
+(defun make-check-mask (board)
+  (let* ((rlen (array-dimension board 0))
+	 (clen (array-dimension board 1))
+	 (base-mask (make-array `(,rlen
+				  ,clen)
+				:initial-element nil)))
+    (do ((i 0 (+ 1 i)))
+	((= i rlen) base-mask)
+      (do ((j 0 (+ 1 j)))
+	  ((= j clen))
+	(when (symbol-p (paref i j board))
+	  (mark-check-local i j base-mask))))))
+
+(defvar *check-mask* (make-check-mask *board*))
+
+(defun get-row (board row)
+  (loop for i from 0 to (- (array-dimension board 1) 1)
+	collect (aref board row i)))
+
+(defun process-row (row)
+  (let ((brow (get-row *board* row))
+	(crow (get-row *check-mask* row)))
+    (do ((i 0)
+	 (acc 0))
+	((>= i *cols*) acc)
+      (if (nth i crow)
+	  (let ((lefts (do ((l (- i 1) (- l 1))
+			    (left '() (cons (nth l brow) left)))
+			   ((or (< l 0) (not (digit-char-p (nth l brow))))
+			    left)))
+		(rights (do ((r (+ i 1) (+ r 1))
+			     (right '() (cons (nth r brow) right)))
+			    ((or (= r *cols*) (not (digit-char-p (nth r brow))))
+			     (reverse right)))))
+	    (incf acc (parse-integer (coerce (append lefts
+						     (list (nth i brow))
+						     rights)
+					     'string)))
+	    (incf i (+ (length rights) 1)))
+	  (incf i 1)))))
+
+(defun process-board ()
+  (apply #'+ (loop for row from 0 to (- *rows* 1)
+		   collect (process-row row))))
+
+(process-board)
+
+;;each number needs to identified by an id
+;;populate an id mask that stores number locations
+;;when checking surrounding ids of a gear,
+;;  report multiplication if exactly 2 unique detected
+
+(defvar *val-hash* (make-hash-table))
+
+(defmacro gethashf (k)
+  "fetch hash"
+  `(gethash ,k *val-hash*))
+
+(defmacro sethashf (k v)
+  "set hash form"
+  `(setf (gethashf ,k) ,v))
+
+(defvar *id-loc* (make-array `(,*rows*
+			       ,*cols*)
+			     :initial-element 0))
+
+(defun update-id-locs (id indices)
+  (dolist (index indices)
+    (setf (aref *id-loc* (car index) (cdr index)) id)))
+
+(defparameter *id-ctr* 0)
+
+(defun mark-numbers (row)
+  (let ((brow (get-row *board* row))
+	(crow (get-row *check-mask* row)))
+    (do ((i 0))
+	((>= i *cols*) *id-loc*)
+      (if (nth i crow)
+	  (let* ((lefts (do ((l (- i 1) (- l 1))
+			     (left '() (cons (nth l brow) left)))
+			    ((or (< l 0) (not (digit-char-p (nth l brow))))
+			     left)))
+		 (rights (do ((r (+ i 1) (+ r 1))
+			      (right '() (cons (nth r brow) right)))
+			     ((or (= r *cols*) (not (digit-char-p (nth r brow))))
+			      (reverse right))))
+		 (val (parse-integer (coerce (append lefts
+						     (list (nth i brow))
+						     rights)
+					     'string)))
+		 (mark-indices (mapcar #'(lambda (col)
+					   (cons row col))
+				       (loop for index
+					     from (- i (length lefts))
+					       to (+ i (length rights))
+					     collect index))))
+	    (incf *id-ctr*)
+	    (sethashf *id-ctr* val)
+	    (update-id-locs *id-ctr* mark-indices)
+	    (incf i (+ (length rights) 1)))
+	  (incf i 1)))))
+
+(defun mark-board-ids ()
+  (loop for r from 0 to (- *rows* 1)
+	do (mark-numbers r)))
+
+(mark-board-ids)
+
+(defun compute-gear-ratios ()
+  (labels ((fetch-marks (i j)
+	     `((,(- i 1) . ,(- j 1))
+	       (,(- i 1) . ,j)
+	       (,(- i 1) . ,(+ j 1))
+	       (,i . ,(- j 1))
+	       (,i . ,(+ j 1))
+	       (,(+ i 1) . ,(- j 1))
+	       (,(+ i 1) . ,j)
+	       (,(+ i 1) . ,(+ j 1)))))
+    (apply #'+
+	   (loop for i
+		 from 0 to
+			(- *rows* 1)
+		 append (loop for j
+			      from 0 to
+				     (- *cols* 1)
+			      collect
+			      (if (char= (aref *board* i j)
+					 #\*)
+				  (let ((ids (remove-if #'zerop (remove-duplicates
+								 (mapcar #'(lambda (mark)
+									     (paref (car mark)
+										    (cdr mark)
+										    *id-loc*
+										    :sentinel 0))
+									 (fetch-marks i j))))))
+				    (if (= (length ids) 2)
+					(apply #'* (mapcar #'(lambda (id)
+							       (gethashf id))
+							   ids))
+					0))
+				  0))))))
+
+(compute-gear-ratios)
+#+end_src

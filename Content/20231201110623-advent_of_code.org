@@ -149,3 +149,5 @@
       (do ((acc 0 (+ acc (parse-line-part-2 (read-line stream) ))))
     	((not (listen stream)) acc))))
 #+end_src
+
+sdf

@@ -72,7 +72,7 @@
   (concat "Tags:" (or (org-collect-keyword-value "filetags") "None")
           " | "
 	  "Copyright (C) " (format-time-string "%Y")
-	  " by Raj Patil"))
+	  "rajp152k"))
 
 (defun add-analytics-tracker (analytics-id)
   (format "<!-- Google tag (gtag.js) -->
@@ -140,10 +140,13 @@
              "<header>\n"
              "<div class='navigation'>\n"
              "<form action='/'>\n"
-             "<input type='submit' value='Root Node'>\n"
+             "<input type='submit' value='Index'>\n"
              "</form>\n"
              "<form action='/sitemap'>\n"
-             "<input type='submit' value='Index'>\n"
+             "<input type='submit' value='NodeList'>\n"
+             "</form>\n"
+             "<form action='https://rajpatil.dev'>\n"
+             "<input type='submit' value='RootSite'>\n"
              "</form>\n"
              ;"<form id='search' autocomplete='on' class='search-box' action=/search.html>\n"
              ;"<label hidden for='search-input'></label>\n"

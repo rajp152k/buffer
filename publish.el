@@ -71,7 +71,7 @@
 (defun maker/footer ()
   (concat "Tags:" (or (org-collect-keyword-value "filetags") "None")
           " | "
-	  "Copyright (C) " (format-time-string "%Y")
+	  "Copyright (C) | " (format-time-string "%Y")
 	  "rajp152k"))
 
 (defun add-analytics-tracker (analytics-id)

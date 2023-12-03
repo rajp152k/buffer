@@ -2,7 +2,7 @@ html, body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-flow: column;
-  background: #dfdfdf;
+  background-image: url("./matrix.gif");
   width: 100%;
   height: 100%;
   margin: 0;
@@ -21,18 +21,17 @@ header {
   border-bottom: 5px solid #4fff00;
   padding-bottom: 1px;
   padding-left: 1px;
-  text-align: center;
 }
 
 .postamble {
   border-top: 2px solid black;
   border-right: 2px solid black;
   border-left: 2px solid black;
-  background-color: #535353;
+  background-color: #000000;
   position: absolute;
   text-indent: 6px;
-  width: 621px;
-  bottom: 0;
+  width: fit-content;
+  top: 0;
 }
 
 .navigation > * {
@@ -107,6 +106,11 @@ img:hover {
   transform: scale(1.8);
 }
 
-div.navigation{
-    background: ;
+input[type="submit"] {
+    border-color: #4ff000;
+    padding: revert-layer;
+    clip-path: padding-box;
+    font-size: x-large;
+    color: #4fff00 ;
+    background: #000000;
 }

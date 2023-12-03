@@ -69,10 +69,7 @@
 
 ;; Set html footer information
 (defun maker/footer ()
-  (concat "Tags:" (or (org-collect-keyword-value "filetags") "None")
-          " | "
-	  "Copyright (C) | " (format-time-string "%Y")
-	  "rajp152k"))
+  (concat "Tags:" (or (org-collect-keyword-value "filetags") "none")))
 
 (defun add-analytics-tracker (analytics-id)
   (format "<!-- Google tag (gtag.js) -->

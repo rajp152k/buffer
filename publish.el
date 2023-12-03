@@ -88,7 +88,7 @@
 ;; Define the publishing project
 (setq org-publish-project-alist
       ;; org-notes is used for the actual org files
-      `(("org-notes"
+      `(("buffer.rajpatil.dev"
          :auto-sitemap t
          :base-directory ,notes-dir
          :base-extension "org"
@@ -100,7 +100,7 @@
          :html-validation-link nil
          :publishing-directory ,output-dir
          :publishing-function org-html-publish-to-html
-         :section-numbers nil
+         :section-numbers t
          :recursive t
          :with-author nil
          :with-toc t)
@@ -120,7 +120,7 @@
          :recursive t)
         ;; publish all above
         ("website"
-         :components ("org-notes" "static" "images"))))
+         :components ("buffer.rajpatil.dev" "static" "images"))))
 
 ;; Overwrite default HTML output template
 (eval-after-load "ox-html"

@@ -103,7 +103,7 @@
          :section-numbers nil
          :recursive t
          :with-author nil
-         :with-toc nil)
+         :with-toc t)
         ;; static is used for the static assets in "Static"
         ("static"
          :base-directory ,static-dir

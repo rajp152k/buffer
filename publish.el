@@ -90,7 +90,7 @@
       ;; org-notes is used for the actual org files
       `(("buffer.rajpatil.dev"
          :auto-sitemap t
-	 :sitemap-title "buffer.rajpatil.dev :: sitemap"
+	 :sitemap-title "Site Map"
 	 :sitemap-ignore-case t
 	 :sitemap-sort-files anti-chronologically
 	 :sitemap-file-entry-format  "%t-%d"
@@ -143,6 +143,9 @@
              "<body>\n"
              "<header>\n"
              "<div class='navigation'>\n"
+	     "<div class='header-title'>\n"
+	     (format "buffer.rajpatil.dev :: ")
+	     "</div>\n"
              "<form action='/'>\n"
              "<input type='submit' value='Index'>\n"
              "</form>\n"

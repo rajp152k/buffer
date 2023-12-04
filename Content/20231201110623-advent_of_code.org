@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       37016af8-9d02-4ddb-b33a-bcfcd6eacb5d
+:ROAM_ALIASES: AOC2023
 :END:
 #+title: Advent of Code 2023
 #+filetags: :project:
@@ -83,7 +84,6 @@
  - inserting extra sentinel characters to maintain an implicit invariant (existence of other spelled out numerals) is something that isn't obvious at a first glance.
    
    
-
 * --- Day 2: Cube Conundrum ---
 -  https://adventofcode.com/2023/day/2
 
@@ -365,4 +365,96 @@
 				  0))))))
 
 (compute-gear-ratios)
+#+end_src
+
+* --- Day 4: Scratchcards ---
+ - https://adventofcode.com/2023/day/4
+
+** part 1 
+#+begin_src lisp
+;; compute set intersection
+;; return conditioned expt of 2
+;; accumulate
+
+(load "~/quicklisp/setup.lisp")
+(ql:quickload :split-sequence)
+
+(defmacro ssq (char sequence)
+  `(split-sequence:split-sequence ,char ,sequence))
+
+(defun listify (str)
+  (format t "%~S" str)
+  (mapcar #'(lambda (num) (read-from-string num))
+	  (remove-if #'(lambda (str) (string= "" str))
+		     (ssq #\Space (string-trim " " str)) )))
+
+(defun parse-card (card)
+  (let* ((numbers (string-trim " " (cadr (ssq #\: (string-trim '(#\return) card)))))
+	 (winning (listify (car (ssq #\| numbers))))
+	 (present (listify (cadr (ssq #\| numbers))))
+	 (wins (intersection winning present)))
+    (if wins
+	(expt 2 (- (length wins) 1))
+	0)))
+
+(defun solve (file-name)
+  (with-open-file (stream file-name)
+    (do ((acc 0 (+ acc (parse-card (read-line stream)))))
+	((not (listen stream)) acc))))
+#+end_src
+
+** part 2
+
+#+begin_src lisp
+;; maintain frequency array for all cards
+;; init by 1
+;; for card i, incf freq of next (number of wins @ i) by freq of i 
+;; take care of overflows
+;; report final frequency sum
+
+(load "~/quicklisp/setup.lisp")
+(ql:quickload :split-sequence)
+
+(defmacro ssq (char sequence)
+  `(split-sequence:split-sequence ,char ,sequence))
+
+(defun listify (str)
+  (mapcar #'(lambda (num) (read-from-string num))
+	  (remove-if #'(lambda (str) (string= "" str))
+		     (ssq #\Space (string-trim " " str)))))
+
+(defun parse-card (card)
+  (let* ((numbers (string-trim " " (cadr (ssq #\: (string-trim '(#\return) card)))))
+	 (winning (listify (car (ssq #\| numbers))))
+	 (present (listify (cadr (ssq #\| numbers)))))
+    (length (intersection winning present))))
+
+(defun paref (array id)
+  (unless (null id)
+    (aref array id)))
+
+(defun solve (file-name)
+  (with-open-file (stream file-name)
+    (let* ((owins (do ((only-wins '() (cons (parse-card (read-line stream))
+					   only-wins)))
+		     ((not (listen stream)) (reverse only-wins))))
+	   (wins (mapcar #'(lambda (id win)
+				(cons id win))
+			    (loop for i from 1 to (length owins)
+				  collect i)
+			    owins))
+	   (freqs (progn
+		   (make-array (+ (length wins) 1)
+			      :initial-element 1) )))
+      (do* ((head wins (cdr head))
+	    (id (caar head) (caar head))
+	    (id-wins (cdar head) (cdar head))
+	    (id-copies (paref freqs id) (paref freqs id)))
+	   ((null head) (- (reduce #'+ freqs) 1))
+	(unless (zerop id-wins)
+	 (loop for i from (+ id 1) to (+ id id-wins)
+	      do
+		 (when  (>= i  (length freqs))
+		   (return))
+		 (incf (aref freqs i) id-copies)))))))
 #+end_src

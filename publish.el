@@ -93,7 +93,7 @@
 	 :sitemap-title "buffer.rajpatil.dev :: sitemap"
 	 :sitemap-ignore-case t
 	 :sitemap-sort-files anti-chronologically
-	 :sitemap-file-entry-format  "%t :: %d"
+	 :sitemap-file-entry-format  "%t-%d"
          :base-directory ,notes-dir
          :base-extension "org"
          :html-doctype "html5"

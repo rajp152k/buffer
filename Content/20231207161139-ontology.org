@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       66e2d59a-8c72-4fed-b6e9-3b1aea8394b0
+:END:
+#+title: Ontology
+#+filetags: :meta:
+
+* Resources
+ - [[https://en.wikipedia.org/wiki/Ontology][Ontology - Wikipedia]]
+

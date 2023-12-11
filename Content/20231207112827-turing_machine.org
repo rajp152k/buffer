@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a12cdc53-b9bf-4d0a-8e12-347ab2584d40
+:END:
+#+title: Turing Machine
+#+filetags: :computer:
+

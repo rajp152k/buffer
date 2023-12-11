@@ -90,6 +90,10 @@
       ;; org-notes is used for the actual org files
       `(("buffer.rajpatil.dev"
          :auto-sitemap t
+	 :sitemap-title "Site Map"
+	 :sitemap-ignore-case t
+	 :sitemap-sort-files anti-chronologically
+	 :sitemap-file-entry-format  "%t-%d"
          :base-directory ,notes-dir
          :base-extension "org"
          :html-doctype "html5"
@@ -98,12 +102,15 @@
          :html-head-include-scripts nil
          :html-table-use-header-tags-for-first-column t
          :html-validation-link nil
+	 :html-allow-name-attribute-in-anchors t
          :publishing-directory ,output-dir
          :publishing-function org-html-publish-to-html
          :section-numbers t
          :recursive t
          :with-author nil
-         :with-toc t)
+         :with-toc t
+	 :with-date t
+	 :with-footnotes t)
         ;; static is used for the static assets in "Static"
         ("static"
          :base-directory ,static-dir
@@ -136,6 +143,9 @@
              "<body>\n"
              "<header>\n"
              "<div class='navigation'>\n"
+	     "<div class='header-title'>\n"
+	     (format "buffer.rajpatil.dev :: ")
+	     "</div>\n"
              "<form action='/'>\n"
              "<input type='submit' value='Index'>\n"
              "</form>\n"

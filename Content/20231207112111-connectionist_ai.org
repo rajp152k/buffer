@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       269b1dfd-6854-42e7-9c8d-82cda0c8f329
+:ROAM_ALIASES: Connectionism
+:END:
+#+title: Connectionist AI
+#+filetags: :ai:
+
+- [[https://www.britannica.com/technology/connectionism-artificial-intelligence][Definition : Britannica]]
+   - As put by McCulloh somewhere: this is about treating the brain like a [[id:a12cdc53-b9bf-4d0a-8e12-347ab2584d40][Turing Machine]]
+
+* Shortcomings
+ - need to much data
+ - neural networks are blackboxes (modelled by not so inferable tensor operations).
+   - reasoning for a decision isn't that obvious nor explainable as it would be with a [[id:20230713T113547.742751][symbolic approach]].

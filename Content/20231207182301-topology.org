@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       6bb5e976-0619-4a6e-8c6b-adb39d5dcc8c
+:END:
+#+title: Topology
+#+filetags: :math:
+
+ - study of properties of [[id:d341bdfc-e935-4088-8432-449102e8b9bf][geometric]] objects that are preserved under continuous deformations
+   - A coffee mug and a donut are the same.
+   - A human and a Polar bear are topologically the same as well - ignore organs, but the rest .. a little ...
+

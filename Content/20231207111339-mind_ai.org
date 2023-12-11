@@ -1,0 +1,129 @@
+:PROPERTIES:
+:ID:       ff08bbeb-e202-40d1-99ff-3da643e2a8a5
+:END:
+#+title: Mind AI
+#+filetags: :AI:org:
+
+
+See [[id:20230713T113547.742751][Symbolic AI]] for the initial incentive to explore their work.
+
+Reading their Technical whitepaper and building up a base of prerequisite knowledge to understand what's up.
+
+All generic knowledge goes into their respective nodes and this one only serves as an index into what they are up to.
+
+* Whitepaper Notes
+ - [[https://s3-us-west-2.amazonaws.com/mindwebresources/MindAI_General_Whitepaper.pdf][whitepaper : mind ai]]
+** Introduction
+ - Mentions the prevalence of neural networks, introducie concept of [[id:269b1dfd-6854-42e7-9c8d-82cda0c8f329][Connectionist AI]] : As put by McCulloh somewhere: this is about treating the brain like a Turing Machine
+ - while I can see how one can go about applying a symbolic approach in the domain of [[id:20230713T150554.400026][NLP]], I need to explore the opportunities in the domain of [[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][CV]].
+ - Introduced to a new logical unit of reasoning : termed as the [[id:6f0efd94-dc08-45cc-add2-87a1bbd0ac8c][canonical]].
+   - claim full transperency
+   - allows debugging specific mistakes in the understanding pipeline
+  
+** Theory of Information
+ - a new paradigm to represent knowledge has been discussed:
+   - using [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][NIL]] to represent the symbolic initiations
+
+#+begin_src lisp
+  (defmacro define (a b)
+    "mathematically introduce the form a as b"
+    (...))
+
+  (defmacro delta (a)
+    "represent the change in a concept"
+    (...))
+
+  (defmacro def-assert (forms)
+    "a collection of assertions"
+    (...))
+
+  (defmacro def-concept (atom descr)
+    "introduce an atomic concept with a description"
+    (...))
+
+  (defvar *concepts*
+    '(potential
+      information
+      measurement
+      state
+      meaning
+      ...))
+
+  (loop for concept in *concepts*
+	do (def-concept concept "..."))
+
+  (def-assert
+      (define information (change potential))
+      (define measurement (change information)))
+#+end_src
+
+ - a functionally representable way of reasoning is discussed, further moving t actually defining a [[id:6f0efd94-dc08-45cc-add2-87a1bbd0ac8c][canonical]] form in the next section
+** Canonical form
+ - based on a graph, check [[id:6f0efd94-dc08-45cc-add2-87a1bbd0ac8c][Canonicals (Mind AI)]]
+ - interpreting a canonical with the concepts explored above, it can be summarized as :
+   1. the position is captured between the primary and the context
+   2. the measure is captured between the context and the resultant
+   3. the meaning is captured between the primary and the resultant
+ - i.e. with info about the primary's position in the context and applying suitable measures on the context, on can obtain the meaning captured between the primary and the resultant.
+ - the notion of querying a node or a link is represented by a ? at the respective position
+** Conversion to canonicals
+ - in the context of [[id:20230713T150554.400026][NLP]], the input is POS tagged before being transformed into the canonicals
+   - A tree like structure when parsing (s-expressions) allows for convenient heirarchical transformation into the relevant canonicals
+** Upper [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][Ontology]]
+ - fundamental ideas are incorporated into the system by a set of predicates
+   - collectevily termed as upper/uppermost ontology
+** Compartmentalization
+ - Ontology (softly translate as comprehension rules) can be sectioned off into global, local, user-wise and session-wise rules..
+** Contextualization and Ontology Versioning
+ - versioned knowledge rather than deletion : by marking ontologies as deprecated.
+ - helps follow the evolution of reasoning with time.
+*** [[id:76c36ff7-9f4c-4f42-a4e0-8fc1c2dc5973][Logical Reasoning]]
+ - Operations and Structure of a canonical can be used to model the 3 logical reasoning embodiments.
+
+* Conceptual Captures
+ - partitioned concepts from the whitepaper that would be aided by minor elaborations
+** Symbolic representation Index
+
+| symbol | interpretation   | actualization |
+|--------+------------------+---------------|
+| ?      | query, potential | "some"        |
+| {}     | none, nil        | "not"         |
+| }{     | all, any         | "is"          |
+| <>     | bind             | "has"         |
+| ><     | open             | "goes"        |
+
+** Canonicals (Mind AI)
+:PROPERTIES:
+:ID:       6f0efd94-dc08-45cc-add2-87a1bbd0ac8c
+:END:
+ - based on a simple directed [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][graph]] : composed of 3 nodes and 3 links
+   
+#+begin_src lisp
+  (defmacro make-node (node-tag node-info)
+    (...))
+
+  (defmacro make-link (link-tag from-node to-node)
+    (...))
+
+  (defun make-canonical (canonical-tag)
+    (let ((primary (make-node 'primary (...)))
+	  (context (make-node 'context (...)))
+	  (resultant (make-node 'resultant (...)))
+	  (<> (make-link 'bind primary context))
+	  (>< (make-link 'open context resultant))
+	  (}{ (make-link 'all primary resultant)))
+      #'(lambda (message)
+	  "A LOL (let-over-lambda): protected state exposed by functional access points "
+	  (cond ((...) (...))
+		((...) (...))
+		((...) (...))
+		((...) (...))))))
+
+#+end_src
+
+ - The notion of reasoning is now idiomatically capturable by the above [[id:6fb71d75-135d-46a4-9069-70646d0f268d][LOL]].
+ - note that nodes and the links are contextually [[id:20230728T053744.817854][homoiconic]].
+   - a canonical can be transformed into another pseudo-similar canonical where the nodes become links and vice-versa.
+ - it is possible to substitute nodes and links with canonicals themeselves and further represent more complex reasoning objects.
+ - This is termed by them as an "augmented network"
+   

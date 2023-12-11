@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       37016af8-9d02-4ddb-b33a-bcfcd6eacb5d
+:ROAM_ALIASES: AOC2023
 :END:
 #+title: Advent of Code 2023
 #+filetags: :project:
@@ -83,7 +84,6 @@
  - inserting extra sentinel characters to maintain an implicit invariant (existence of other spelled out numerals) is something that isn't obvious at a first glance.
    
    
-
 * --- Day 2: Cube Conundrum ---
 -  https://adventofcode.com/2023/day/2
 
@@ -365,4 +365,229 @@
 				  0))))))
 
 (compute-gear-ratios)
+#+end_src
+
+* --- Day 4: Scratchcards ---
+ - https://adventofcode.com/2023/day/4
+
+** part 1 
+#+begin_src lisp
+;; compute set intersection
+;; return conditioned expt of 2
+;; accumulate
+
+(load "~/quicklisp/setup.lisp")
+(ql:quickload :split-sequence)
+
+(defmacro ssq (char sequence)
+  `(split-sequence:split-sequence ,char ,sequence))
+
+(defun listify (str)
+  (format t "%~S" str)
+  (mapcar #'(lambda (num) (read-from-string num))
+	  (remove-if #'(lambda (str) (string= "" str))
+		     (ssq #\Space (string-trim " " str)) )))
+
+(defun parse-card (card)
+  (let* ((numbers (string-trim " " (cadr (ssq #\: (string-trim '(#\return) card)))))
+	 (winning (listify (car (ssq #\| numbers))))
+	 (present (listify (cadr (ssq #\| numbers))))
+	 (wins (intersection winning present)))
+    (if wins
+	(expt 2 (- (length wins) 1))
+	0)))
+
+(defun solve (file-name)
+  (with-open-file (stream file-name)
+    (do ((acc 0 (+ acc (parse-card (read-line stream)))))
+	((not (listen stream)) acc))))
+#+end_src
+
+** part 2
+
+#+begin_src lisp
+;; maintain frequency array for all cards
+;; init by 1
+;; for card i, incf freq of next (number of wins @ i) by freq of i 
+;; take care of overflows
+;; report final frequency sum
+
+(load "~/quicklisp/setup.lisp")
+(ql:quickload :split-sequence)
+
+(defmacro ssq (char sequence)
+  `(split-sequence:split-sequence ,char ,sequence))
+
+(defun listify (str)
+  (mapcar #'(lambda (num) (read-from-string num))
+	  (remove-if #'(lambda (str) (string= "" str))
+		     (ssq #\Space (string-trim " " str)))))
+
+(defun parse-card (card)
+  (let* ((numbers (string-trim " " (cadr (ssq #\: (string-trim '(#\return) card)))))
+	 (winning (listify (car (ssq #\| numbers))))
+	 (present (listify (cadr (ssq #\| numbers)))))
+    (length (intersection winning present))))
+
+(defun paref (array id)
+  (unless (null id)
+    (aref array id)))
+
+(defun solve (file-name)
+  (with-open-file (stream file-name)
+    (let* ((owins (do ((only-wins '() (cons (parse-card (read-line stream))
+					   only-wins)))
+		     ((not (listen stream)) (reverse only-wins))))
+	   (wins (mapcar #'(lambda (id win)
+				(cons id win))
+			    (loop for i from 1 to (length owins)
+				  collect i)
+			    owins))
+	   (freqs (progn
+		   (make-array (+ (length wins) 1)
+			      :initial-element 1) )))
+      (do* ((head wins (cdr head))
+	    (id (caar head) (caar head))
+	    (id-wins (cdar head) (cdar head))
+	    (id-copies (paref freqs id) (paref freqs id)))
+	   ((null head) (- (reduce #'+ freqs) 1))
+	(unless (zerop id-wins)
+	 (loop for i from (+ id 1) to (+ id id-wins)
+	      do
+		 (when  (>= i  (length freqs))
+		   (return))
+		 (incf (aref freqs i) id-copies)))))))
+#+end_src
+
+* --- Day 5: If You Give A Seed A Fertilizer ---
+ - https://adventofcode.com/2023/day/5
+
+#+begin_src lisp
+(load "~/quicklisp/setup.lisp")
+(ql:quickload :cl-ppcre)
+
+(defmacro ssq (str sequence)
+  `(cl-ppcre:split ,str ,sequence))
+
+(defun read-and-parse-file (file-name)
+  (with-open-file (stream file-name)
+    (ssq (coerce '(#\Return #\Return) 'string)
+	 (apply #'concatenate 'string
+		(loop for line = (read-line stream nil)
+		      while line
+		      collect line)))))
+
+(defvar *from-chain* '(seed soil fertilizer water light temperature humidity))
+
+(defparameter *lambda-hash* (make-hash-table))
+
+(defun smap (map-line)
+  (let* ((spec (ssq " " map-line))
+	 (sst (read-from-string (second spec)))
+	 (dst (read-from-string (first spec)))
+	 (rl (read-from-string (third spec))))
+    #'(lambda (smap-request)
+	(if (<= sst smap-request (+ sst rl -1))
+	    (+ dst (- smap-request sst))
+	    nil))))
+
+(defun compile-smaps (smap-list)
+  (let ((smappers smap-list))
+    #'(lambda (map-request)
+	(dolist (smapper smappers map-request)
+	  (let ((smapped (funcall smapper map-request)))
+	    (if smapped
+		(return smapped)))))))
+
+(defun build-map (from to mapper)
+  (labels ((fetch-from () from)
+	   (fetch-to () to)
+	   (call (input) (funcall mapper input)))
+    #'(lambda (message &optional input)
+	(cond ((eq message 'from) (fetch-from))
+	      ((eq message 'to) (fetch-to))
+	      ((eq message 'call) (call input))
+	      (t (error "invalid message received"))))))
+
+(defun parse-map-spec (map-spec)
+  (let* ((title (car (ssq " " map-spec)))
+	 (a (read-from-string (car (ssq "-to-" title))))
+	 (b (read-from-string (cadr (ssq "-to-" title))))
+	 (smaps (mapcar #'smap (cdr (ssq #\Return map-spec)))))
+    (build-map a b (compile-smaps smaps))))
+
+(defun range (start len)
+  (loop for i from start below (+ start len) 
+	collect i))
+
+(defun parse-seed-spec (seed-spec)
+  (do* ((key-head seed-spec (cdr value-head))
+	(value-head (cdr key-head) (cdr key-head))
+	(seeds '() ))
+       ((null key-head) seeds)
+    (setf seeds (append (range (car key-head) (car value-head))
+			seeds) )))
+
+(defun parse-spec-brute (file-name)
+  (let* ((info (read-and-parse-file file-name))
+	 (seeds (parse-seed-spec
+		 (mapcar #'read-from-string
+			 (ssq " " (cadr (ssq ": " (car info)))))))
+	 (maps (mapcar #'parse-map-spec (cdr info))))
+    (dolist (map maps)
+      (setf (gethash (funcall map 'from) *lambda-hash*) map))
+    seeds))
+
+(defun soil-to-loc (soil-number)
+  (let ((mappers (mapcar #'(lambda (from-sym)
+			     (gethash from-sym *lambda-hash*))
+			 *from-chain*))
+	(passed soil-number))
+    (loop for func in mappers
+	  do (setf passed (funcall func 'call passed)))
+    passed))
+
+(defun solve-brute (file-name)
+  (clrhash *lambda-hash*)
+  (apply #'min (mapcar #'soil-to-loc
+		       (parse-spec-brute file-name))))
+
+;; Optimization 1
+;; report min soil number for a range
+;; final report min of mins
+;; do not build seed-range list on the get go
+
+(defun parse-seed-spec-opt-1 (seed-spec)
+  (do* ((key-head seed-spec (cdr value-head))
+	(value-head (cdr key-head) (cdr key-head))
+	(seeds '()))
+       ((null key-head) (reverse seeds))
+    (setf seeds (cons  (cons (car key-head)
+			     (car value-head))
+		       seeds))))
+
+(defun parse-spec-opt-1 (file-name)
+  (let* ((info (read-and-parse-file file-name))
+	 (seed-ranges (parse-seed-spec-opt-1
+		       (mapcar #'read-from-string
+			       (ssq " " (cadr (ssq ": " (car info)))))))
+	 (maps (mapcar #'parse-map-spec (cdr info))))
+    (dolist (map maps)
+      (setf (gethash (funcall map 'from) *lambda-hash*) map))
+    seed-ranges))
+
+(defun min-range-soil-to-loc (range-info)
+  (let* ((start (car range-info))
+	 (len (cdr range-info))
+	 (local-min (apply #'min (mapcar #'soil-to-loc (range start len)))))
+    (format t "~%local-min for ~S : ~S" range-info local-min)
+    (force-output)
+    local-min))
+
+(defun solve-opt-1 (file-name)
+  (clrhash *lambda-hash*)
+  (let ((seed-ranges (parse-spec-opt-1 file-name)))
+    (format t "~%final min: ~S"
+	    (apply #'min (mapcar #'min-range-soil-to-loc
+			 seed-ranges)))))
 #+end_src

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       76c36ff7-9f4c-4f42-a4e0-8fc1c2dc5973
+:END:
+#+title: Logical Reasoning
+#+filetags: :logic:meta:
+
+Exploring this in the context of [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][Ontology]] and [[id:20230713T113547.742751][Symbolic AI]].
+
+* The 3 Logical Reasoning Embodiments
+ - resources : [[https://www.butte.edu/departments/cas/tipsheets/thinking/reasoning.html][Deductive, Inductive and Abductive Reasoning - TIP Sheet - Butte College]]
+
+** Deductive
+ - given a set of assertions, to be able to deduce a conclusion with certainty
+ - math is deductive
+ - this isn't ampliative : no increase in human knowledge
+** Inductive
+ - given specific observations, generate a generalized conclusion that is likely, but may not certainly be, true.
+ - is ampliative : can help predict patterns that otherwise wouldn't be noticed - increases human knowledge
+** Abductive
+ - given an incomplete set of information, try to come up with the most likely conclusion - this is, often, incomplete.
+ - Most creativity can be captured by Abductive thinking and this also contributes the most to human knowledge : Abductive reasoning followed by verification/rejection via experiments.
+ - think about the thought of devising a thought-experiment...
+

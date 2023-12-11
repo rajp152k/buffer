@@ -2,5 +2,16 @@
 :ID:       20230713T113547.742751
 :END:
 #+title: Symbolic AI
-#+filetags: :ai:tbp:
+#+filetags: :ai:
 
+Usual statistical stuff tries to represent that comes to natural intelligence without math, with the help of copious quantities of numbers. I don't need implicitly to crunch numbers to verify if I'm seeing a dog or a cat.
+
+We do model the world in terms of binary representations but bits are ultimately accumulations and lack there-off of electrons in certain positions.
+
+This might give rise to a hammer and nail tunnel vision.
+
+While the former has been fairly successful, I'd like to explore the symbolic aspects (qualitative) of intelligence and pattern recognition.
+
+[[id:e94b1ff3-ee62-417f-8d01-afb23ccd0c3b][linguistics]] is a nice entry point for the same and I'm starting my journey formally from here.
+
+Starting my journey from the technical whitepaper by (https://www.mind.ai/)  [[id:ff08bbeb-e202-40d1-99ff-3da643e2a8a5][Mind AI]] and exploring further using supplementary needs whenever needed.

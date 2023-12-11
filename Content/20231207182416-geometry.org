@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d341bdfc-e935-4088-8432-449102e8b9bf
+:END:
+#+title: geometry
+#+filetags: :math:
+

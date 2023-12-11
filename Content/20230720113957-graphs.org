@@ -4,3 +4,4 @@
 #+title: Graphs
 #+filetags: :tbp:math:
 
+A mathematical protocal used to represent suitable abstractions using nodes and links. Forks thereoff arise with variations in properties of these nodes and links.

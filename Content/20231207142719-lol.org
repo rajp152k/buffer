@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       6fb71d75-135d-46a4-9069-70646d0f268d
+:ROAM_ALIASES: "Let Over Lambda"
+:END:
+#+title: LOL
+#+filetags: :programming:
+
+#+begin_src lisp
+  (let ((...))
+    #'(lambda (...)
+	...))
+#+end_src
+

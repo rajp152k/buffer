@@ -1,8 +1,12 @@
 :PROPERTIES:
 :ID:       2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b
+:ROAM_ALIASES: CV
 :END:
 #+title: Computer Vision
 #+filetags: :cv:ai:
 
-To be populated
 
+* Abstract
+
+ - So far, I'm aware of the use of [[id:269b1dfd-6854-42e7-9c8d-82cda0c8f329][Connectionism]] in here but not quite sure how one would go about applying [[id:20230713T113547.742751][Symbolic AI]] in here.
+   

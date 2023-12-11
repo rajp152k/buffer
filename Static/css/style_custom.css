@@ -1,8 +1,15 @@
+:root {
+    --black : #0c0c0c;
+    --white : #f9f9f9;
+    --higlight : #0f0;
+}
+
+
 html, body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-flow: column;
-  background-color: #000000;
+  background-color: var(--black);
   width: 100%;
   height: 100%;
   margin: 0;
@@ -17,17 +24,17 @@ iframe {
 }
 
 header {
-  background-color: #000000;
-  border-bottom: 5px solid #4fff00;
+  background-color: var(--black);
+  border-bottom: 5px solid var(--highlight);
   padding-bottom: 1px;
   padding-left: 1px;
 }
 
 .postamble {
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  background-color: #000000;
+  border-top: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+  background-color: var(--black);
   position: absolute;
   text-indent: 6px;
   width: fit-content;
@@ -54,9 +61,9 @@ header {
 }
 
 .note {
-  background: #000000;
-  color: #4fff00;
-  border-left: 0px solid rgba(0, 0, 0, 0.05);
+  background: var(--black);
+  color: var(--white);
+  border-left: 0px solid var(--black);
   box-sizing: border-box;
   display: inline-block;
   height: 100% !important;
@@ -75,12 +82,12 @@ header {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--highlight);
   font-style: italic;
 }
 
 a.active {
-  background-color: rgba(10, 132, 255, 0.15);
+  background-color: var(--highlight);
 }
 
 a:hover {
@@ -103,15 +110,15 @@ img {
 }
 
 input[type="submit"] {
-    border-color: #4ff000;
+    border-color: var(--white);
     padding: revert-layer;
     clip-path: padding-box;
     font-size: x-large;
-    color: #4fff00 ;
-    background: #000000;
+    color: var(--white)  ;
+    background: var(--black) ;
 }
 
 input[type="submit"]:hover {
-    background-color: #4fff00;
-    color: #000000;
+    background-color: var(--white) ;
+    color: var(--black) ;
 }

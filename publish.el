@@ -92,7 +92,6 @@
          :auto-sitemap t
 	 :sitemap-title "Site Map"
 	 :sitemap-ignore-case t
-	 :sitemap-sort-files anti-chronologically
 	 :sitemap-file-entry-format  "%t-%d"
          :base-directory ,notes-dir
          :base-extension "org"

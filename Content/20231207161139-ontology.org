@@ -4,6 +4,19 @@
 #+title: Ontology
 #+filetags: :meta:
 
+* Notes
+ - when comparing to a [[id:66486965-5f98-440c-ac54-a29544887fc9][Knowledge Base]], an ontology pertains to abstracter classes, whereas the former refers to specific instances of such classes.
+ - in approaches concerning [[id:20230713T113547.742751][Symbolic AI]], both these are practically used together.
+ - there are several abstract properties and relations that can be defined between these classes in an ontology.
+   - the Knowledge base may draw upon these general concepts or have stored facts that are used when answering a query.
 * Resources
  - [[https://en.wikipedia.org/wiki/Ontology][Ontology - Wikipedia]]
+ - [[https://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html][What is an ontology and why we need it]]
+* Specializations
+** O-Topology
+:PROPERTIES:
+:ID:       c53f306a-7a42-41a1-a93d-f2a4691bb265
+:END:
+ - consider populating inductive knowledge in here from
+   -  https://academic.oup.com/bioinformatics/article/39/4/btad169/7100342
 

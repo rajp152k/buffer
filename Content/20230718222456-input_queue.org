@@ -70,4 +70,7 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
  - [[https://www.mongodb.com/][MongoDB]]
 ** languages
  - https://www.perl.org/ : aka the duct tape of the internet
-* Topics
+* High priority
+ - Fast API and relevant stuff
+ - Pydantic
+ - build, test, deploy cycle : CI/CD

@@ -14,7 +14,7 @@ All generic knowledge goes into their respective nodes and this one only serves 
 * Whitepaper Notes
  - [[https://s3-us-west-2.amazonaws.com/mindwebresources/MindAI_General_Whitepaper.pdf][whitepaper : mind ai]]
 ** Introduction
- - Mentions the prevalence of neural networks, introducie concept of [[id:269b1dfd-6854-42e7-9c8d-82cda0c8f329][Connectionist AI]] : As put by McCulloh somewhere: this is about treating the brain like a Turing Machine
+ - Mentions the prevalence of neural networks, duces concept of [[id:269b1dfd-6854-42e7-9c8d-82cda0c8f329][Connectionist AI]] : As put by McCulloh somewhere: this is about treating the brain like a Turing Machine
  - while I can see how one can go about applying a symbolic approach in the domain of [[id:20230713T150554.400026][NLP]], I need to explore the opportunities in the domain of [[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][CV]].
  - Introduced to a new logical unit of reasoning : termed as the [[id:6f0efd94-dc08-45cc-add2-87a1bbd0ac8c][canonical]].
    - claim full transperency
@@ -57,7 +57,7 @@ All generic knowledge goes into their respective nodes and this one only serves 
       (define measurement (change information)))
 #+end_src
 
- - a functionally representable way of reasoning is discussed, further moving t actually defining a [[id:6f0efd94-dc08-45cc-add2-87a1bbd0ac8c][canonical]] form in the next section
+ - a functionally representable way of reasoning is discussed, further moving to actually defining a [[id:6f0efd94-dc08-45cc-add2-87a1bbd0ac8c][canonical]] form in the next section
 ** Canonical form
  - based on a graph, check [[id:6f0efd94-dc08-45cc-add2-87a1bbd0ac8c][Canonicals (Mind AI)]]
  - interpreting a canonical with the concepts explored above, it can be summarized as :
@@ -71,7 +71,7 @@ All generic knowledge goes into their respective nodes and this one only serves 
    - A tree like structure when parsing (s-expressions) allows for convenient heirarchical transformation into the relevant canonicals
 ** Upper [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][Ontology]]
  - fundamental ideas are incorporated into the system by a set of predicates
-   - collectevily termed as upper/uppermost ontology
+   - collectively termed as upper/uppermost ontology
 ** Compartmentalization
  - Ontology (softly translate as comprehension rules) can be sectioned off into global, local, user-wise and session-wise rules..
 ** Contextualization and Ontology Versioning
@@ -79,7 +79,40 @@ All generic knowledge goes into their respective nodes and this one only serves 
  - helps follow the evolution of reasoning with time.
 *** [[id:76c36ff7-9f4c-4f42-a4e0-8fc1c2dc5973][Logical Reasoning]]
  - Operations and Structure of a canonical can be used to model the 3 logical reasoning embodiments.
-
+** Ontological Topology
+ - aka O-topology
+ - two expressions are stated to be equal in case of semantic similarity.
+   - The cat is in the box
+   - The box emboxes the cat  
+ - trying to be a little ambitious:
+   - The cat maybe alive
+   - The cat maybe dead
+ - the above probably aren't emotionally similar
+ - introduced to their idea of acheiving critical mass by allowing capturing canonical similarities using various approaches
+   - critical mass is acheived when the engine is satisfactorily able to handle any abstract text : termed as the model having "learned how to learn"
+ - [[id:c53f306a-7a42-41a1-a93d-f2a4691bb265][O-topology]] is also invoked upon to deal with issues with purely [[id:20230713T113547.742751][Symbolic AI]]
+ - now, as discussed previously, because network is augmentable (see transforming canonicals) and calls upon o-topology to deal with the brittleness of purely symbolic AI, the authors term the approach as augmented topological network.
+** [[id:76c36ff7-9f4c-4f42-a4e0-8fc1c2dc5973][The 3 logical embodiments]]
+ - The authors now describe how one would go about conducting deduction, induction and abduction using the canonical
+ - a point worth noting : neural networks build upon the idea of the neuron : a bottom up , function follows form approach. Whereas augmented topological networks (what these canonicals are used in) model the notion of reason in a top-down form follows function manner.
+** Known, Unknowns and Disambiguation
+ - discusses how the canonical deals with ambiguities, ontologically transforms queries to those that explicitly apply to a canonical (by apply : I mean pattern similarity).
+ - also reiterate the idea of learning essentially being comprehending, completing, comparing and augmenting patterns. Learning how to learn can itself be modeled as a pattern.
+** Natural Language Generation
+ - when inputs are parsed and processed into canonical, the natural language's properties are observed (a pattern) and results can be produced when needed accordingly.
+** Transparency of Operations ([[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Interpretability]])
+ - given the discrete nature of it's reasoning process, explainability boils down to following the nodes and links that were traversed when processing the query.
+ - this path can be explicitly debugged to weed out any errors in the reasoning process.
+** Critical Mass
+- towards bettering its learning patterns and more when having built a large enough nucleus of canonicals.
+  - all unknowns boiled down to lacking relevant assertions or relevant principles needed to answer a query.
+    - stated to be an intractible problem that can be dealt with any time.
+- proceeds into meta-theoretics
+** Meta Theoretics
+ - On the final goal of such an engine
+   - to build upon theories by comprehending theories of theories to conduct personal research to fill in gaps and more...
+     - hypothesizing and experimenting for rejection/verification...
+ - they elaborate on what the idea of acheiving intelligence actually means to them.
 * Conceptual Captures
  - partitioned concepts from the whitepaper that would be aided by minor elaborations
 ** Symbolic representation Index
@@ -127,3 +160,6 @@ All generic knowledge goes into their respective nodes and this one only serves 
  - it is possible to substitute nodes and links with canonicals themeselves and further represent more complex reasoning objects.
  - This is termed by them as an "augmented network"
    
+   
+ 
+ 

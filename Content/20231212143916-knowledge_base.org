@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       66486965-5f98-440c-ac54-a29544887fc9
+:END:
+#+title: Knowledge Base
+#+filetags: :ai:meta:
+

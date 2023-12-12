@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20231212T082000.168442
+:END:
+#+title: Meta-Programming
+#+filetags: :programming:
+

@@ -100,6 +100,7 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
 | time index | Production code name                                      | link                                                           | Category  |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
+|     0x21B0 | Hunt, Feast, Repeat                                       | https://rajpatil.dev/post/hunt-feast-repeat/                   | Polymathy |
 |     0x2194 | Solitude, Society, Originality                            | https://rajpatil.dev/post/solitude-society-originality/        | Polymathy |
 |     0x2180 | Consumption Update                                        | https://rajpatil.dev/post/consumption-update/                  | Update    |
 |     0x217b | Learn Vim the Smart Way                                   | https://rajpatil.dev/post/learn-vim-the-smart-way/             | Book      |
@@ -171,3 +172,6 @@ An index of all that I write about, published, work in progress and prospective.
 *** Barefoot hiking - literally ground yourself.
 *** The joy of creating connections
 *** Music, Meditation, Walks and Water
+*** How to nurture your curiosity nurtured throughout adulting and beyond
+*** Embracing the Suck: boredom, adulthood and expectations from your days
+*** Cyber Transparency : How much is enough or too much : is there an optimal amount?

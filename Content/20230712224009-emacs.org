@@ -5,6 +5,8 @@
 #+filetags: :emacs:tool:
 
 * Stream 
+** 0x21B0
+ - will be altering the work space and the required mindset that allows me to run emacs as a client with an ever-running daemon
 ** 0x2178
  - I already use vim bindings in emacs but I do miss the command line
  - have decided to go minimal for my work and retain emacs for personal projects and writing

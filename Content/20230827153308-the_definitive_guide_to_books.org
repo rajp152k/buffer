@@ -52,6 +52,7 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 - monolithic readers
 - voracious readers who wish to pump their egos
 ** Abstract
+*** Associated blogs
 *** Why Read
 **** An intricate and comparatively (to photos, videos, etc) potent index into your past :- your time now, in hindsight, will seem denser.
 - depending on what phase of life you read a book in, revisiting your reviews later on will help you recall smaller details that no other media can compare to...
@@ -65,9 +66,11 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 ** Pragmatics
 *** Associated blogs
  - [ ] Being a sneaky reader
+ - [X] https://rajpatil.dev/post/hunt-feast-repeat/
  - [X] https://rajpatil.dev/post/writing-setup/
  - [X] https://rajpatil.dev/post/picc/
 *** what should you read : the joy of reading diversely
+ - On idea hunts and ideation feasts
 *** Choosing your next book
 *** Making reading a part of your life
 *** Making the habit stick
@@ -91,5 +94,3 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 ** Conclusion
  - books are not the way to explore the universe
  - they're definitely a ticket to the insights that'll help you do so
-
-

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20231212T081907.908301
+:END:
+#+title: Functional Programming
+#+filetags: :programming:
+

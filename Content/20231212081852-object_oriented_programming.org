@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       20231212T081851.998455
+:ROAM_ALIASES: OOP
+:END:
+#+title: Object Oriented Programming
+#+filetags: :programming:
+
+* Stream
+** 0x21B0
+ - Was reading practical common lisp some time ago and the chapter on OOP referenced to the idea of OOP being implemented in different ways in different programming languages.
+ - caching directions to explore this idea with depth later on:
+   - see implementation architecture of OOP in:
+     1. Simula (origins)
+     2. Python/Java (Pure)
+     3. JavaScript (Prototypical)
+     4. Common Lisp (CLOS)
+     5. C++ (I don't really know the exact details: read more)

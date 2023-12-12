@@ -14,9 +14,15 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 ** [[id:1729][Index]]
  - notes down some basic rules about the braindump's usage
  - stream of generic comments pertaining to the overall logs
+** [[id:20230815T212630.336328][questions]]
+** [[id:7382d50f-a0aa-4370-baa9-83bb39ccbe1a][resonant-with]]
+ - an collection of ideas that I'm resonant with and would like to cache to remind myself of again, sometime down the lane.
 ** [[id:20230718T222456.978981][input-queue]]
  - an index of resources that I want to consume sometime down the lane
  - anytime I feel like I wish to learn something, I visit this node and populated the buffer accordingly as I learn new skills and accumulate info
+** [[id:296b118e-ff24-4423-b343-eb5160102095][work-setup]]
+ - a stream of updates pertaining to my physical and cyber work environment
+   - might even include updates for mindset changes tending to how I approach work.
 ** [[id:20231112T080937.669416][Projects]]
  - a cache for ideas that may never see the light of day again.
    - or they just might...

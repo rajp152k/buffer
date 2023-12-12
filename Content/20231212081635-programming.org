@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       20231212T081635.633143
+:END:
+#+title: Programming
+#+filetags: :root:programming:
+
+Reference Collating Node
+
+* Abstract
+ - [[id:6f9a4752-aa66-42cf-9b88-2e4fa2091511][Computer Science]]
+
+* Major Forks/Flavors
+ - [[id:20231212T081851.998455][Object Oriented Programming]]
+ - [[id:20231212T081907.908301][Functional Programming]]
+ - [[id:20231212T082000.168442][Meta-Programming]]
+
+* Minor Forks/Flavors
+ - [[id:20230812T200515.697950][literate programming]]
+ - [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Based Programming]]
+ - [[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][Asynchronous Programming]]
+

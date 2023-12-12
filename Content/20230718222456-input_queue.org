@@ -7,6 +7,12 @@ I like reading technical books and am planning to expand my coverage to include 
 This buffer maintains a cache of technical papers/books/blogs/similar resources I'd like to go through. This is also an exercise in building up my reading efficiency for technical texts. I'm pretty quick with generic public domain non-fiction now and would like to up the ante: to maintain the effort I require to achieve [[id:20230718T223411.394444][flow]] (Mihaly Csikszentmihalyi).
 I'll most likely begin with foundational papers in any domain and then explore depth if need be. will not be limiting myself to anything specific : anything goes - this is a new hobby.
 I'd also like maintaining a log of all relevant articles/interviews/not-so-easily-indexable content that I've consumed [[id:ab47b014-ba85-4e68-8e61-6af7126dae1f][here]].
+* Deferred Internal Index
+Refraining from linking nodes as these are meta-informative and don't really point to populated nodes.
+These are meant to be navigated with org-roam emacs and accessing them is convenient as is with helm-completion
+
+ - stream node ~0x21B0~ of ~OOP~ root node
+ - stream node ~0x21B0~ of ~Emacs~ tool node
 * Crowd sourcing
 ** https://news.ycombinator.com/
 * Blogs

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       20231212T084350.640179
+:END:
+#+title: reading
+#+filetags: :skills:root:
+
+Helps tap into the reliable intellectual storage that the written word is.
+
+* Prominent Nodes
+ - [[id:e8c0b214-fa70-4462-8d44-ae0282d14981][The List]]
+

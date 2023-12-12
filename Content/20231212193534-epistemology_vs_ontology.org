@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       50440804-3ada-476c-b7c6-502076e770a2
+:END:
+#+title: Epistemology vs Ontology
+#+filetags: :diff:
+
+diffing [[id:aa78d0bb-76c6-414c-9660-445100742232][Epistemology]] and [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][Ontology]].
+
+Epistemology has a larger cover pertaining to the actualization of reality based on the observer and the object being observed. Ontology on the other hand is concerned about what absolutely exists and how it can be studied/known about.
+
+Objectivist Epistemology has a high similiarity ([[id:e6c6918c-25bd-47f4-830a-4221452885e8][intersection over union]]) Ontology than the whole of Epistemology has with Ontology.
+
+This formulation allows me to state that:
+#+begin_src 
+IOU(objetivist epistemology, ontology) > IOU(epistemology, ontology)
+#+end_src

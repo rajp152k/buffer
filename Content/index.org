@@ -31,6 +31,11 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 ** [[id:20230727T192932.286062][Youtube]]
  - log of all videos along with plans and indices into drafts
 * Stream
+** 0x21B1
+ - when discussing domains and talking about their overlap, I can qualitatitively judge the closeness of two domains by a metric I picked from my days when I worked in the domain of semantic Segmentation.
+ - enter : [[id:e6c6918c-25bd-47f4-830a-4221452885e8][Intersection Over Union]]
+ - I'm feeling pretty confident about introducing abstract, partially ordered relations between domains:
+   - is a step towards building the [[id:825d36cc-4e03-48e5-bca8-0845e51090af][The Meta-Subject]] 
 ** 0x21A3
  - getting into the idea of intellectually rambling on the internet
  - I explore something of immediate intrigue and try to update the current state of the dump according to what I consume.

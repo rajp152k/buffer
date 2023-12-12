@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       e6c6918c-25bd-47f4-830a-4221452885e8
+:ROAM_ALIASES: IOU
+:END:
+#+title: Intersection Over Union
+#+filetags: :metric:tool:diff:
+
+Qualitatively present the overlap of two domains.
+
+Math and Physics have a high overlap and are very large domains in on themeselves. I need some control over how I express the closeness of two domains and be able to compare pairs with each other. Even a partial ordering is useful. 
+
+So qualitatively defining the closeness of domains based on their intersection divided by their union.
+
+In this case, the IOU between Calculus and it's applicability to Physics should be much higher than it is for good old wholesome Mathematics and Physics as a lot of abstract branches like number theory don't have an outright obvious application to physics.
+

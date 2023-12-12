@@ -4,6 +4,7 @@
 #+title: The Meta-Subject
 #+filetags: :meta:
 
+* Abstract Node Seed
 Check out this seeding read to get started and what the lay of the land is for forming novel terminologies: https://press.princeton.edu/books/hardcover/9780691171982/the-evolution-of-knowledge
 
 I think I'm the right guy to map out the root of knowledge as it exists today. Thinking of going back to how vernacular stuff propogated and how research is conducted today...
@@ -19,3 +20,12 @@ All starts with learning the roots of all knowledge and backtracking to the begi
 I'll definitely need a data structure for the same that I can improve upon over time.
 
 I'll be proceeding with common lisp.
+
+* Experimental Notions
+I'm testing these out in this brain dump and will be incorporating these into a formal theory upon accumulating multiple successful applications.
+** The Idea of diffing domains
+ - when trying to explain the difference between epistemology and ontology, I came up with the idea of qualitatlively applying [[id:e6c6918c-25bd-47f4-830a-4221452885e8][IOU]].
+ - now I can say that
+#+begin_src 
+IOU(objetivist epistemology, ontology) > IOU(epistemology, ontology)
+#+end_src

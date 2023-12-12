@@ -4,7 +4,25 @@
 #+title: Epistemology
 #+filetags: :root:meta:
 
+* Abstract
+The philosophical theory of knowledge: concerned aspects
+ - what constitutes a knowledge claim
+ - how can knowledge be acquired or produced
+ - how the extent of knowledge's transferability can be assessed
+** Types
+*** Objectivist
+ - a true reality (the object) outside the observer (the subject) exists and is not dependent on the existence and state of the observer
+   - this can be said to be most closely related to [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][Ontology]]
+*** Constructionist
+ - the objects interpretation is dependent on the subject's interaction with reality and objective reality doesn't exist independently
+*** Subjectivist
+ - all reality is dependent on the perception of the subject and can be mended according to the subject's experiences
 * Stream
+** 0x21B0
+ - formally exploring more of epistemology henceforth
+   - looked up the [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][ontological]] approaches towards artificial intelligence and intrigued enough to build a base of prerequisites.
+   - check out this casual read that may aid intuitive comprehension :
+     - https://i2insights.org/2017/05/02/philosophy-for-interdisciplinarity/
 ** 0x216A
  - Delving into the idea of Epistemological [[id:74cd7bc4-ea48-4c5e-a946-ea4125a6b618][Cartography]].
  - Cartography usually refers mapping landscapes and terrains physically. I find the idea of mapping the abstract knowledge landscape.
@@ -15,14 +33,11 @@
  - the physical world we experience is 4 dimensional (time + location): but I can explicitly see that I'll need to work in an indefinite number of abstract dimensions when working with an epistemological landscape.
  - I think the idea is mature enough to create it's own node : see [[id:e702ab85-cc45-480b-955b-0ef620690b52][Epistemological Cartography]]
 ** 0x2128
-
  - an important aspect of maintaining a malleable context for multiple domains is how you interact with your knowledge systems and how you consume information around you.
    - blog post on  [[id:20230729T155803.588312][pragmatics of intellectual consumption and creation]] (PICC)
-
 ** 0x211E
  - I index this personally as the philosophical theory of knowledge (which is vague).
  - Diving deeper so that I can start to formalize this via some representation ([[id:6efc5118-aa6d-43f7-bd46-5f0460819813][NIL]]) in my works.
-
 * Literature
 ** Articles
  - https://plato.stanford.edu/entries/epistemology/

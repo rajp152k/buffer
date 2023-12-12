@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5ca2fb28-813a-49e0-b283-d866c07f0b5d
+:END:
+#+title: Aesthetics
+#+filetags: :root:meta:
+
+The theory of taste and beauty.

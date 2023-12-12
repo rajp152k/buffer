@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       92b436af-0294-4968-ad90-c042ddb889c3
+:END:
+#+title: Axiology
+#+filetags: :meta:root:
+
+The study of value: Theory on nature of value - what's worth it and how good/bad something is in a context.
+ - subsumes [[id:6d388392-d79b-4f44-84cf-fdc985b6d144][Ethics]] and [[id:5ca2fb28-813a-49e0-b283-d866c07f0b5d][Aesthetics]].
+
+* Resources
+ - https://i2insights.org/2018/05/22/axiology-and-interdisciplinarity/

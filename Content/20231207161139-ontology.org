@@ -4,6 +4,8 @@
 #+title: Ontology
 #+filetags: :meta:
 
+The study of being: concerned with what actually exists in the world about which one can acquire knowledge.
+
 * Notes
  - when comparing to a [[id:66486965-5f98-440c-ac54-a29544887fc9][Knowledge Base]], an ontology pertains to abstracter classes, whereas the former refers to specific instances of such classes.
  - in approaches concerning [[id:20230713T113547.742751][Symbolic AI]], both these are practically used together.

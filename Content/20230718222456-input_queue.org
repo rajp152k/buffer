@@ -16,6 +16,8 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
  - complete first resource of ~Axiology~ meta root node and populate all relevances
 * Crowd sourcing
 ** https://news.ycombinator.com/
+** http://wiki.c2.com/
+** https://www.cliki.net/
 * Blogs
 ** https://otherlife.co/
 ** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]

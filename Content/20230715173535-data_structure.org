@@ -2,8 +2,12 @@
 :ID:       20230715T173535.681936
 :END:
 #+title: Data Structure
+#+filetags: :programming:data:
 
-* 0x211A
+* Stream
+** 0x21B1
+ - Doing a quick overview of [[id:2f67eca9-5076-4895-828f-de3655444ee2][data storage methodologies]]
+** 0x211A
 
 A way of representing data in memory: The most primitive notion of a data structure arises from the ability to glue objects together according to one's preferred semantics, the variation in which gives rise to all the representations that can exist.
 
@@ -11,5 +15,5 @@ This glue can be at a physical level (adjacent registers) or be achieved with se
 
 Closely related to a data structure, is its behavior under various operations (insert, delete, search,...). It is an abstraction of data that is exposed by these behaviors allowing one to manipulate it.
 
-**  [[id:20230715T180212.260696][Mutability]]
+***  [[id:20230715T180212.260696][Mutability]]
 This affects how one implements the said representation and the details of the abstraction (generation/return of references, copies, etc).

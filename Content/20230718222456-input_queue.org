@@ -35,6 +35,10 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** https://in.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience
 * Podcasts
 * Books 
+** https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture?ref=rae_3
+** https://www.goodreads.com/book/show/120532868-machine-learning-system-design-interview
+** https://www.goodreads.com/book/show/54109255-system-design-interview-an-insider-s-guide
+** https://huyenchip.com/ml-interviews-book/
 ** https://www.masteringemacs.org/book
 ** [[https://www.oreilly.com/library/view/mastering-regular-expressions/0596528124/][Mastering Regular Expressions, 3rd Edition [Book]​]] 
 ** http://www.paulgraham.com/hp.html
@@ -77,3 +81,5 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
  - Fast API and relevant stuff
  - Pydantic
  - build, test, deploy cycle : CI/CD
+ - Htmx
+ - system design interview

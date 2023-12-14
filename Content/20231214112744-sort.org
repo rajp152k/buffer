@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       8568d841-5467-4a50-ae64-15ad24937828
+:END:
+#+title: Sort
+#+filetags: :programming:
+
+Ordering things (from a totally ordered set) using comparisons.
+Is a fundamental algorithmic tool that is a basis for many complex procedures
+
+* Variants
+
+** [[id:6bb5e976-0619-4a6e-8c6b-adb39d5dcc8c][Topological]] Sort
+:PROPERTIES:
+:ID:       78d16b5e-1893-4057-bc22-b2c9a3ca7ed6
+:END:
+ - check out [[id:d07976cd-5194-484e-82ab-8c55e064eeb1][Directed Acyclic Graphs]]
+   - several practical applications wherein a lot of processes can be modelled and worked on using the two concepts above
+

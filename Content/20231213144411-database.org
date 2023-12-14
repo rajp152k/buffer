@@ -4,3 +4,10 @@
 #+title: DataBase
 #+filetags: :programming:data:
 
+Towards managing [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] stores
+
+* Sentinels
+** Entity Relation Diagrams
+:PROPERTIES:
+:ID:       a96b0e92-16c9-4a8c-863d-f0303efd0fa2
+:END:

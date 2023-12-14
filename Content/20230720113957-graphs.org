@@ -5,3 +5,29 @@
 #+filetags: :tbp:math:
 
 A mathematical protocal used to represent suitable abstractions using nodes and links. Forks thereoff arise with variations in properties of these nodes and links.
+
+* Basic Components
+ - Nodes : a representative point for an entity
+ - Edges : a connection with optional properties between entities
+* Prominent Variants
+** Directed Acyclic Graph
+:PROPERTIES:
+:ID:       d07976cd-5194-484e-82ab-8c55e064eeb1
+:END:
+ - directed edges, no cycles
+ - many applications
+ - check out [[id:78d16b5e-1893-4057-bc22-b2c9a3ca7ed6][Topological Sort]] for a practical application
+* Forks/Deviants
+** [[id:20230718T234741.567442][Graph Neural Networks]]
+* Practical Instances
+** [[id:11847f5f-5337-425b-bacb-575f77690a4b][Systems]]
+ - A lot of practical components acheiving minor tasks, when compiled into one functioning that works towards certain defined objectives, can be modelled as a graph.
+   - exploring this representation application with minor details further in the ~system~ node.
+** [[id:b3f9cd0d-d403-48ce-918d-2dd0d341c783][Networks]]
+ - captures the notion of a collection of components that communicate/relay certain entities via connections with each other.
+   - computer networks are an immediate obvious examples.
+** Schedule Generation for Distributed [[id:8afb9d29-252b-4f17-ad42-700444fe4464][Processes]] 
+ - when trying to parallelize computations with dependents from several components, one can model the computation sites and temporal dependency links as a [[id:d07976cd-5194-484e-82ab-8c55e064eeb1][Directed Acyclic Graph]] and apply [[id:78d16b5e-1893-4057-bc22-b2c9a3ca7ed6][Topological Sort]] to generate computation schedules.
+ - checkout [[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]] for a more fundamental treatment of the above.
+
+** [[id:a96b0e92-16c9-4a8c-863d-f0303efd0fa2][Entity Relation Diagrams]]

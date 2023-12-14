@@ -97,34 +97,35 @@ The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection o
 * Production
 An index of all that I write about, published, work in progress and prospective.
 ** Published
-|------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
-| time index | Production code name                                      | link                                                           | Category  |
-|------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
-|     0x21B0 | Hunt, Feast, Repeat                                       | https://rajpatil.dev/post/hunt-feast-repeat/                   | Polymathy |
-|     0x2194 | Solitude, Society, Originality                            | https://rajpatil.dev/post/solitude-society-originality/        | Polymathy |
-|     0x2180 | Consumption Update                                        | https://rajpatil.dev/post/consumption-update/                  | Update    |
-|     0x217b | Learn Vim the Smart Way                                   | https://rajpatil.dev/post/learn-vim-the-smart-way/             | Book      |
-|     0x2177 | Micro-Essays                                              | https://rajpatil.dev/post/micro-essays/                        | Writing   |
-|     0x2171 | The Hundred Page Machine Learning Book                    | https://rajpatil.dev/post/100pagemlbook/                       | Book      |
-|     0x2168 | The Most Important book you'll ever read                  | https://rajpatil.dev/post/most-important-book/                 | Writing   |
-|     0x2166 | Engineering a(n) (Ergogenic) Nootropic Stack              | https://rajpatil.dev/post/nootropics-init/                     | Nutrition |
-|     0x215E | Prompt crafting distilled                                 | https://rajpatil.dev/post/dense-guide-prompt-engineering/      | Skills    |
-|     0x215E | I have a Writing Tutor now ...                            | https://rajpatil.dev/post/better-writer/                       | Writing   |
-|     0x215B | Do you really wanna be a Polymath?                        | https://rajpatil.dev/post/aefraisk/                            | Polymathy |
-|     0x215B | The Polymathic Gamble                                     | https://rajpatil.dev/post/polymathy/                           | Polymathy |
-|     0x214F | Reading an Author                                         | https://rajpatil.dev/post/reading-an-author/                   | Anecdote  |
-|     0x214F | Refactoring Old Works                                     | https://rajpatil.dev/post/refactoring-old-works/               | Writing   |
-|     0x214C | The Definitive Guide to Books                             | https://rajpatil.dev/post/the-definitive-guide-to-books/       | Writing   |
-|     0x2147 | Practical Natural Language Processing : C1 - 5            | [[https://rajpatil.dev/post/practical-nlp-c1-5/]]                  | Book      |
-|     0x2147 | Common Lisp : The Series - 0.1 : Representing Programs    | https://rajpatil.dev/post/clts/clts-0.1/                       | CLTS      |
-|     0x2141 | My Creation and Publishing Pipeline                       | https://rajpatil.dev/post/my-creation-and-publishing-pipeline/ | Writing   |
-|     0x213F | Common Lisp: The Series - 0 : Introduction                | https://rajpatil.dev/post/clts/clts-0/                         | CLTS      |
-|     0x213B | RIP, Bram Moolenar                                        | https://rajpatil.dev/post/rip-bram-moolenar/                   | Tribute   |
-|     0x213B | My Emacs Configuration                                    | https://rajpatil.dev/post/my-emacs-config-0x213b/              | Configs   |
-|     0x213A | Common Lisp - Gentle Introduction to Symbolic Computation | https://rajpatil.dev/post/cl-aitsc/                            | Book      |
-|     0x212B | PICC: pragmatics of intellectual consumption and creation | https://rajpatil.dev/post/picc/                                | Skills    |
-|     0x211B | Here we go again...                                       | https://rajpatil.dev/post/writing-setup/                       | Writing   |
-|------------+-----------------------------------------------------------+----------------------------------------------------------------+-----------|
+|------------+-----------------------------------------------------------+----------------------------------------------------------------+--------------|
+| time index | Production code name                                      | link                                                           | Category     |
+|------------+-----------------------------------------------------------+----------------------------------------------------------------+--------------|
+|     0x21B2 | Understanding Reality and Imparting meaning               | https://rajpatil.dev/post/understand-v-impart/                 | Epistemology |
+|     0x21B0 | Hunt, Feast, Repeat                                       | https://rajpatil.dev/post/hunt-feast-repeat/                   | Polymathy    |
+|     0x2194 | Solitude, Society, Originality                            | https://rajpatil.dev/post/solitude-society-originality/        | Polymathy    |
+|     0x2180 | Consumption Update                                        | https://rajpatil.dev/post/consumption-update/                  | Update       |
+|     0x217b | Learn Vim the Smart Way                                   | https://rajpatil.dev/post/learn-vim-the-smart-way/             | Book         |
+|     0x2177 | Micro-Essays                                              | https://rajpatil.dev/post/micro-essays/                        | Writing      |
+|     0x2171 | The Hundred Page Machine Learning Book                    | https://rajpatil.dev/post/100pagemlbook/                       | Book         |
+|     0x2168 | The Most Important book you'll ever read                  | https://rajpatil.dev/post/most-important-book/                 | Writing      |
+|     0x2166 | Engineering a(n) (Ergogenic) Nootropic Stack              | https://rajpatil.dev/post/nootropics-init/                     | Nutrition    |
+|     0x215E | Prompt crafting distilled                                 | https://rajpatil.dev/post/dense-guide-prompt-engineering/      | Skills       |
+|     0x215E | I have a Writing Tutor now ...                            | https://rajpatil.dev/post/better-writer/                       | Writing      |
+|     0x215B | Do you really wanna be a Polymath?                        | https://rajpatil.dev/post/aefraisk/                            | Polymathy    |
+|     0x215B | The Polymathic Gamble                                     | https://rajpatil.dev/post/polymathy/                           | Polymathy    |
+|     0x214F | Reading an Author                                         | https://rajpatil.dev/post/reading-an-author/                   | Anecdote     |
+|     0x214F | Refactoring Old Works                                     | https://rajpatil.dev/post/refactoring-old-works/               | Writing      |
+|     0x214C | The Definitive Guide to Books                             | https://rajpatil.dev/post/the-definitive-guide-to-books/       | Writing      |
+|     0x2147 | Practical Natural Language Processing : C1 - 5            | [[https://rajpatil.dev/post/practical-nlp-c1-5/]]                  | Book         |
+|     0x2147 | Common Lisp : The Series - 0.1 : Representing Programs    | https://rajpatil.dev/post/clts/clts-0.1/                       | CLTS         |
+|     0x2141 | My Creation and Publishing Pipeline                       | https://rajpatil.dev/post/my-creation-and-publishing-pipeline/ | Writing      |
+|     0x213F | Common Lisp: The Series - 0 : Introduction                | https://rajpatil.dev/post/clts/clts-0/                         | CLTS         |
+|     0x213B | RIP, Bram Moolenar                                        | https://rajpatil.dev/post/rip-bram-moolenar/                   | Tribute      |
+|     0x213B | My Emacs Configuration                                    | https://rajpatil.dev/post/my-emacs-config-0x213b/              | Configs      |
+|     0x213A | Common Lisp - Gentle Introduction to Symbolic Computation | https://rajpatil.dev/post/cl-aitsc/                            | Book         |
+|     0x212B | PICC: pragmatics of intellectual consumption and creation | https://rajpatil.dev/post/picc/                                | Skills       |
+|     0x211B | Here we go again...                                       | https://rajpatil.dev/post/writing-setup/                       | Writing      |
+|------------+-----------------------------------------------------------+----------------------------------------------------------------+--------------|
 
 ** Work in Progress
 ** Prompts
@@ -175,4 +176,3 @@ An index of all that I write about, published, work in progress and prospective.
 *** How to nurture your curiosity nurtured throughout adulting and beyond
 *** Embracing the Suck: boredom, adulthood and expectations from your days
 *** Cyber Transparency : How much is enough or too much : is there an optimal amount?
-*** Understanding something vs Imparting meaning

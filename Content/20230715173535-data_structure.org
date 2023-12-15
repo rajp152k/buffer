@@ -5,6 +5,9 @@
 #+filetags: :programming:data:
 
 * Stream
+** 0x21B3
+ - checkout [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
+ - the right approach persistence does affect and applications health
 ** 0x21B1
  - Doing a quick overview of [[id:2f67eca9-5076-4895-828f-de3655444ee2][data storage methodologies]]
 ** 0x211A

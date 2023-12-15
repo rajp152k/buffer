@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       287a65a1-5d6d-4442-abc8-e017dca6529a
+:ROAM_ALIASES: Types
+:END:
+#+title: Type Theory
+#+filetags: :Categories:math:meta:
+
+A precedent read for this would be [[id:c1a12380-9aad-4969-8b6a-cfceebfa984f][Set Theory.]]
+A postcedent read for this would be [[id:696aad07-94b4-4bd6-9168-77225cf35a38][Proof Theory.]]
+
+It might be beneficial to structure entities into relevant categories when it comes to ordering knowledge. Types are prevalent in everyday life as well.
+
+* Formal
+To be populated
+* Practical
+** Schema
+:PROPERTIES:
+:ID:       e47e785a-60dc-4ee6-b0b3-7cd2fd75c863
+:END:
+ - a type specification for records when it comes to working with [[id:2f67eca9-5076-4895-828f-de3655444ee2][a DataBase]]
+ - also used more casually when talking about the representation specification of [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][serialized data]]
+   
+* Resources
+ - https://www.cs.ru.nl/~herman/onderwijs/provingwithCA/paper-lncs.pdf

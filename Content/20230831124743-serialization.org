@@ -4,7 +4,11 @@
 #+title: Serialization
 #+filetags: :tbp:tool:programming:
 
-Backing up objects (models, data structures in memory, etc) is an important aspect of large scale projects.
+* Abstract
 
-Exploring formats and approaches soon (node to be populated ...)
+Backing up objects (models, data structures in memory, etc) is an important aspect of large scale projects. Also relevant in the context of Computer [[id:b3f9cd0d-d403-48ce-918d-2dd0d341c783][Network]]s. [[id:92342b8b-1c09-4e1f-9799-66d060678c31][Encryption]] is another factor to be considered when tramsmitting sensitive data over tappable lines.
 
+Storage and Retreival of a serialized entity usually needs an accompanying 
+
+* Resources
+ - https://realpython.com/python-serialize-data/

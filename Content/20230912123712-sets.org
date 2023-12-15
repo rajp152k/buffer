@@ -1,4 +1,0 @@
-:PROPERTIES:
-:ID:       0c556b97-590d-4b5a-b007-2cfab40bca48
-:END:
-#+title: Sets

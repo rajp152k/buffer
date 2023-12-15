@@ -5,8 +5,8 @@
 #+filetags: :python:
 
 * Stream
-** 0x219D
- - checking out some resources for some good programming practices in python : collating them under:[[id:b52011dd-6806-47a0-b3e1-0de20e51ad0b][ Practical (python)]] 
+** 0x21B3
+Exploring [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
 ** Init
  - some programming languages force the programmer to think like they're building with lego blocks.
  - some enquire (or enforce) enlightenment before one can start coding elegantly

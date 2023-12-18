@@ -5,6 +5,11 @@
 #+filetags: :programming:data:
 
 * Stream
+** 0x21B6
+ - initializing the first dedicated population phase
+   - need a stable base for all specializations 
+   - will be proceeding in python
+   - accompanied by a parallel phase for [[id:f9c89977-5a4b-4c21-b340-56b204cfb35d][Algorithms]]
 ** 0x21B3
  - checkout [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
  - the right approach persistence does affect and applications health

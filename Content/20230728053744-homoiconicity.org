@@ -6,3 +6,6 @@
 
 Code is Data is Code ...
 
+Speaking on a more wholistic scale:
+[[id:20230715T173535.681936][Data structures]] and [[id:f9c89977-5a4b-4c21-b340-56b204cfb35d][Algorithms]] can be interpreted as varying representations of a similar source practicality.
+

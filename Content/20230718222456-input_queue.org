@@ -14,6 +14,8 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
  - stream node ~0x21B0~ of ~OOP~ root node
  - stream node ~0x21B0~ of ~Emacs~ tool node
  - complete first resource of ~Axiology~ meta root node and populate all relevances
+ - fill in the basics of the ~Search~ node and initialize a project for your brain dump where you write a basic search engine for the same : i'm inclined towards a browser-based grep solution.
+   - building an index is what I do for the main blog using lunr.js, but I'd like to experiment a little on the main site.
 * Crowd sourcing
 ** https://news.ycombinator.com/
 ** http://wiki.c2.com/
@@ -32,7 +34,7 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** [[https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start][How to sabotage your salary negotiation efforts before you even start]]
 ** https://questdb.io/blog/concurrent-lockfree-datastructure-design-walkthrough/
 ** http://matpalm.com/blog/cool_machine_learning_books/
-** https://in.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience
+** https://0x65.dev/blog/2019-12-06/building-a-search-engine-from-scratch.html
 * Podcasts
 * Books 
 ** https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture?ref=rae_3
@@ -48,6 +50,8 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** Peopleware : Productive projects and teams
  - https://www.goodreads.com/en/book/show/67825
 ** [[https://mitpress.mit.edu/9780262028967/structure-and-interpretation-of-classical-mechanics/][Structure and Interpretation of Classical Mechanics]]
+* Courses
+ - https://web.stanford.edu/class/cs168/index.html
 * Papers
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
 ** [[https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store][Dynamo: Amazon’s highly available key-value store - Amazon Science]] 
@@ -71,15 +75,16 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** https://voila.readthedocs.io/en/stable/
 ** SQL
 *** [[https://datalemur.com/sql-tutorial?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience][sql tutorial for data science]]
-*** https://www.metabase.com/learn/sql-questions/sql-best-practices?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
 ** languages
  - https://www.perl.org/ : aka the duct tape of the internet
-* High priority
+* moderate priority
  - Fast API and relevant stuff
  - Pydantic
  - build, test, deploy cycle : CI/CD
  - Htmx
  - system design interview
+ - personal space on the web to run containers
+   

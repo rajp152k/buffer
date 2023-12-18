@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       f9c89977-5a4b-4c21-b340-56b204cfb35d
+:END:
+#+title: Algorithms
+#+filetags: :programming:
+
+
+* Stream
+** 0x21B6
+ - initializing the first dedicated population phase
+   - need a stable base for all specializations 
+   - will be proceeding in python
+   - accompanied by a parallel phase for [[id:20230715T173535.681936][Data Structure]]

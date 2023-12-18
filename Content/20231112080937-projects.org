@@ -10,6 +10,8 @@ A root maintaining indices into prominent project roots that I cache for future 
 ** [[id:20230815T044212.558049][Org-roam-publish]]
 ** [[id:20231112T081124.213227][What-would-x-read?]]
 ** [[id:20231114T134147.421836][RLxATC]]
+** Search
 * Competitive
 ** [[id:1e88b1d9-e124-4cf7-987e-8d6a857dc3d3][Project-Euler]]
 ** [[id:37016af8-9d02-4ddb-b33a-bcfcd6eacb5d][Advent of Code 2023]]
+* Recorded

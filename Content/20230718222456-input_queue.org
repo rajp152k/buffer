@@ -20,13 +20,6 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** https://news.ycombinator.com/
 ** http://wiki.c2.com/
 ** https://www.cliki.net/
-* Blogs
-** https://otherlife.co/
-** [[https://www.evalapply.org/posts/cold-restart-total-outage/index.html][evalapply.org]]
-** https://sive.rs/
-** https://jeremykun.com/
-** https://www.inspiredpython.com/
-** https://realpython.com/
 * Blog posts
 ** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
 ** https://simonwillison.net/2023/Aug/3/weird-world-of-llms/
@@ -35,8 +28,8 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** https://questdb.io/blog/concurrent-lockfree-datastructure-design-walkthrough/
 ** http://matpalm.com/blog/cool_machine_learning_books/
 ** https://0x65.dev/blog/2019-12-06/building-a-search-engine-from-scratch.html
-* Podcasts
 * Books 
+** https://tgvaughan.github.io/sicm/toc.html
 ** https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture?ref=rae_3
 ** https://www.goodreads.com/book/show/120532868-machine-learning-system-design-interview
 ** https://www.goodreads.com/book/show/54109255-system-design-interview-an-insider-s-guide
@@ -80,11 +73,3 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
  - [[https://www.mongodb.com/][MongoDB]]
 ** languages
  - https://www.perl.org/ : aka the duct tape of the internet
-* moderate priority
- - Fast API and relevant stuff
- - Pydantic
- - build, test, deploy cycle : CI/CD
- - Htmx
- - system design interview
- - personal space on the web to run containers
-   

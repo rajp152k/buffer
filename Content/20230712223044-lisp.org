@@ -34,6 +34,8 @@ Maxwell's equations of Software (~Alan Kay in some Interview~)
 	(#t       (apply (car e) (evlis (cdr e) a) a))))
 #+end_src
 * Comment Stream
+** 0x21B7
+ - finishing off practical common lisp
 ** 0x2150
  - updated keyworded args for [[id:136d464a-aee0-4108-aa95-c412b5180823][lisp lambda lists]]
    - based on the above knowledge, creating a general selector to for a list of records ( a db )

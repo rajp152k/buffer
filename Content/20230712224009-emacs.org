@@ -5,6 +5,8 @@
 #+filetags: :emacs:tool:
 
 * Stream 
+** 0x21BD
+ - studying how org-lists work : might try to extend the features with something useful of my own
 ** 0x21B0
  - will be altering the work space and the required mindset that allows me to run emacs as a client with an ever-running daemon
 ** 0x2178

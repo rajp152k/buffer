@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       edbaeabc-cfc7-4761-afce-96effb077282
+:ROAM_ALIASES: Past
+:END:
+#+title: History
+#+filetags: :meta:
+
+Generally speaking, maintaining records about the past is a good practice in for accurate replication of successful past procedures and correcting mistakes.
+
+This may give rise to some interesting domains : Mathematical history for instance, gives way for Financial Accounting and one can then, by induction, comprehend that studying past records qualitatively and quantitatively can give rise to more generic domains like Economics.
+
+The intention of the above was to signify the importance of the past when trying to generalize knowledge from what has already occured (past) into what generally occurs ([[id:cf6c80eb-55ef-4167-9806-a3daff013361][patterns]]).
+
+Proper records in any domain can give rise to very interesting sub-domains and applications.
+
+I won't be calling upon the history node in here when talking about specific domains but as a parting example: the notion of maintaining a proper history in the context of software engineering gives rise to the useful utility that version control is.
+
+This application of generic domains on a more specific one to give rise to a sensible sub-domain that I haven't explicitly explored as of yet and will explore with depth soon.

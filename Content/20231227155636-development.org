@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       5c2039f5-0c44-4926-b2d7-a8bf471923ac
+:END:
+#+title: Software Engineering
+#+filetags: :meta:programming:
+
+* Misc Concepts
+** Application Dependencies
+ - conceptual generalizable example in the case of python
+   - https://www.fullstackpython.com/application-dependencies.html
+
+** [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Version Control]]
+* Practical Aspects
+** Environments
+ - Development 
+ - Testing
+ - Production
+
+* Methodologies
+** The Twelve Factor App
+ - https://12factor.net/
+
+* Article Cache

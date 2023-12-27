@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       19f2beb8-015a-46b8-8b09-4f66d82992d8
+:END:
+#+title: Economics
+#+filetags: :meta:
+
+In a crude sense, a generalized domain that arises when abstracting History out of [[id:f0351d3e-c550-4c1b-88f2-8aaf0edaf8d0][Financial Accounting]].
+

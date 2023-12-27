@@ -34,6 +34,27 @@ Maxwell's equations of Software (~Alan Kay in some Interview~)
 	(#t       (apply (car e) (evlis (cdr e) a) a))))
 #+end_src
 * Comment Stream
+** 0x21BF
+- rotatef acts as a generalized swapper
+#+begin_src lisp :exports both
+  (let ((a 'x)
+	(b 'y)
+	(c 'z))
+    (rotatef a b c)
+    `(,a ,b ,c))
+#+end_src
+
+#+RESULTS:
+| Y | Z | X |
+
+ - "multiple-value-bind" helps catch multiple returns from a form and execute a body under these binds
+ - to return multiple values use the "values" function
+
+ - reading about utiliTies and noticed proclaiming inlines being a common idiom when working with them
+
+#+begin_src lisp
+  (proclaim '(inline <relatively smaller utilities>))
+#+end_src
 ** 0x21BE
  - all those accumulation to force tail recursions need to surely be optimized
  - mix these in with type declarations, and one might surpass the speed of c.

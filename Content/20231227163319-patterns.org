@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cf6c80eb-55ef-4167-9806-a3daff013361
+:END:
+#+title: Patterns
+#+filetags: :meta:
+

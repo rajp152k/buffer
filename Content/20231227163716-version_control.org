@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       038e3720-0307-41d8-bcb1-e77b75a161df
+:END:
+#+title: Version Control
+#+filetags: :meta:
+
+Is an extremely useful concept that arises upon the application of the notion of a [[id:edbaeabc-cfc7-4761-afce-96effb077282][History]] on the specific domain of software engineering.
+
+This should be the founding initializer of any coding or non-technical project that one starts out with. For the benefits of maintaining records are incomparable.
+
+* Tools
+** Git
+** Mercurial
+
+* Philosophies
+ - resources : https://notes.burke.libbey.me/metarepo/
+** Monorepo
+ - all code in one repo : monolithic
+** Multirepo
+ - the larger application is split into multiple microservices and no single repository stores all the code.
+
+* Resources
+ - https://twobithistory.org/2018/07/07/cvs.html
+ - https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control

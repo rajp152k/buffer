@@ -4,3 +4,5 @@
 #+title: Network
 #+filetags: :meta:
 
+* Practical
+** [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Networks]]

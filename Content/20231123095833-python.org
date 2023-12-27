@@ -5,6 +5,14 @@
 #+filetags: :python:
 
 * Stream
+** 0x21BF
+ - starting an open source book to  densen the sparsed out knowledge of python I've accumulated over the years.
+ - although work in AI, feel like I should have more than a working knowledge of the practical aspects of programming and development in general.
+   - will be completing [[https://www.fullstackpython.com/][full stack]] python over the coming days
+ - diff b/w [[https://caremad.io/posts/2013/07/setup-vs-requirement/][setup.py vs requirements.txt]]
+ - instead of separately using pip and venv, checkout [[https://pipenv.pypa.io/en/latest/][pipenv]]
+   - conda and mamba are fine, but personally feel like they're a little too slow for my patience levels.
+     - broke micromamba once and then just shifted to using venv, no regrets there: segmentation faults are scarier when dealing with python than when working with C.
 ** 0x21B3
 Exploring [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
 ** Init

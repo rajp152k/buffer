@@ -16,6 +16,8 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
  - complete first resource of ~Axiology~ meta root node and populate all relevances
  - fill in the basics of the ~Search~ node and initialize a project for your brain dump where you write a basic search engine for the same : i'm inclined towards a browser-based grep solution.
    - building an index is what I do for the main blog using lunr.js, but I'd like to experiment a little on the main site.
+* Utilities Index
+ - https://github.com/cjbarber/ToolsOfTheTrade
 * Crowd sourcing
 ** https://news.ycombinator.com/
 ** http://wiki.c2.com/

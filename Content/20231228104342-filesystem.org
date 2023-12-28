@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ea72d66a-8192-4cb2-a7be-b05ee928f814
+:END:
+#+title: filesystem
+#+filetags: :programming:
+

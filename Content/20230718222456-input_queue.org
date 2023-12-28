@@ -31,6 +31,7 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** http://matpalm.com/blog/cool_machine_learning_books/
 ** https://0x65.dev/blog/2019-12-06/building-a-search-engine-from-scratch.html
 * Books 
+** https://nick-black.com/dankwiki/index.php/Book_list_for_streetfighting_computer_scientists
 ** https://tgvaughan.github.io/sicm/toc.html
 ** https://www.goodreads.com/book/show/44144493-fundamentals-of-software-architecture?ref=rae_3
 ** https://www.goodreads.com/book/show/120532868-machine-learning-system-design-interview

@@ -5,6 +5,9 @@
 #+filetags: :python:
 
 * Stream
+** 0x21C0
+ - continuing the fullstack python marathon
+   - delving into databases and web frameworks today
 ** 0x21BF
  - starting an open source book to  densen the sparsed out knowledge of python I've accumulated over the years.
  - although work in AI, feel like I should have more than a working knowledge of the practical aspects of programming and development in general.

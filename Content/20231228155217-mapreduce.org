@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       2cc32697-c4ce-41b8-987a-2a44a09f78c3
+:END:
+#+title: MapReduce
+#+filetags: :programming:data:
+
+checkout https://en.wikipedia.org/wiki/MapReduce
+
+One may first unknowingly employ it when working with [[id:2f67eca9-5076-4895-828f-de3655444ee2][databases]].
+
+Abstracts away the looping over [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][Big Data]] and helps with [[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]]

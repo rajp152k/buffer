@@ -4,10 +4,55 @@
 #+title: DataBase
 #+filetags: :programming:data:
 
-Towards managing [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] stores
+Towards managing [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] stores.
 
+Speaking formally, databases represent another layer of abstraction over a computer system's [[id:ea72d66a-8192-4cb2-a7be-b05ee928f814][filesystem]] that intend to provide convenient endpoints for tasks (like templated insertion, deletion, searches, etc) that would be performed with higher frequencies : they facilitate structured storage, pushing for reliability and efficiency.
+
+* Types
+** Relational Databases (RDBMS)
+*** Tools
+**** PostGres 
+ - RDBMS
+ - Open Source with all the bells and whistles 
+   - the recommended choice
+**** MySQL
+ - RDBMS
+ - open source without all the bells and whistles
+   - batteries included though
+**** SQLite
+:PROPERTIES:
+:ID:       8538c0e3-8173-4eae-a602-2b9198e2251a
+:END:
+ - RDBMS : single file
+ - open source : spartanish 
+ - has its moments : https://www.sqlite.org/whentouse.html
+*** Extensions 
+**** Object Relational Mappers
+ - Coms with the database without sql queries : language specific
+   - read up for the [[https://www.fullstackpython.com/object-relational-mappers-orms.html][case of python]]
+** NoSQL Databases
+** Graph Databases
+** Document Stores
+** Key-Value Stores
+** Columnar Databases
+** In-Memory Databases
+** Time-Series Databases
+** NewSQL Databases
+
+* Auxiliary features
+** Data Replication
+- one master, multiple read-only slaves (different than sharding)
+** Semi-structured storage opportunities
+ - JSON type in RDBMS for instance
+** Sharding
+ - horizontal scaling for multiple read/write instances
+   - introduces delays for maintenance of data consistency
+** Monitoring
+ - Profiling processes, analysing frequency of certain queries, etc, help with better structuring the templates (index, schema, etc) to push for performance
+ - 
 * Sentinels
 ** Entity Relation Diagrams
 :PROPERTIES:
 :ID:       a96b0e92-16c9-4a8c-863d-f0303efd0fa2
 :END:
+

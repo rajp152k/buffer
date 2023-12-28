@@ -2,12 +2,27 @@
 :ID:       20230815T044212.558049
 :END:
 #+title: org-roam-publish
-#+filetags: :project:
+#+filetags: :wip:project:
 
 Publishing name : Undecided
 
 * Abstract
-
  - an emacs independent knowledge-graph processor and visualizer for org-files.
  - to be built in rust with wasm as compilation target for the web application.
+* Pragmatics
+** Org roam db
+ - all the data is indexed in a single [[id:8538c0e3-8173-4eae-a602-2b9198e2251a][sqlitedb]] file stored in .emacs.d as org-roam.db : checkout https://sqlitebrowser.org/dl/ for a convenient GUI
+ - any language that you decide to use must pickup elements and draw them (links, tags, nodes, file pointers, etc) from this db
+ - any continuous integration action will need access to this db in the repository : size shouldn't be an issue anytime in the future
+ - with 322 nodes in 256 files and 814 links, its sized at around 514 KB as of now.
+ - won't be needing git LFS but should still look into it.
+** Content
+ - this is where the actual content lies (in org files)
+ - will need to convert these to static pages using org-export
+** Inputs
+ - will need to take in the root directory where all the org files are hosted and use a substitute when picking up files from the org-roam db
 
+* Tooling
+ - considering proceeding with python to produce the actual site.
+   - https://github.com/plotly/dash-cytoscape
+   - with the inbuilt sqlite

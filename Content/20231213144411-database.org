@@ -8,7 +8,7 @@ Towards managing [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] stores.
 
 Speaking formally, databases represent another layer of abstraction over a computer system's [[id:ea72d66a-8192-4cb2-a7be-b05ee928f814][filesystem]] that intend to provide convenient endpoints for tasks (like templated insertion, deletion, searches, etc) that would be performed with higher frequencies : they facilitate structured storage, pushing for reliability and efficiency.
 
-* Types
+* Types (Need Not be Mutually Exclusive)
 ** Relational Databases (RDBMS)
 *** Tools
 **** PostGres 
@@ -30,15 +30,49 @@ Speaking formally, databases represent another layer of abstraction over a compu
 **** Object Relational Mappers
  - Coms with the database without sql queries : language specific
    - read up for the [[https://www.fullstackpython.com/object-relational-mappers-orms.html][case of python]]
-** NoSQL Databases
-** Graph Databases
+ - some issues do arise:
+   - [[https://agiledata.org/essays/impedanceMismatch.html][Impedence mismatch]]
+   - performance issues
+ - Personally, I'd rather write raw SQL : see [[https://www.w3schools.com/sql/sql_stored_procedures.asp][stored procedures]]
+ - still, checkout [[https://www.fullstackpython.com/sqlalchemy.html][sqlAlchemy]]
+** [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][Graph]] Databases
+ - three storage aspects
+   - Node
+   - Edge
+   - Property
+*** Tools
+**** Neo4j
+:PROPERTIES:
+:ID:       96ea3a8e-4288-4c80-9eb9-37a5e449fbed
+:END:
+**** Cayley
+**** Titan
+*** Resources
+ - https://neo4j.com/blog/graph-search-algorithm-basics/
+ - https://go.neo4j.com/rs/710-RRC-335/images/Definitive-Guide-Graph-Databases-for-RDBMS-Developer.pdf
 ** Document Stores
+*** Tools
+ - semi structured representation for nested data (json,bson,etc)
+**** MongoDB
+**** Riak
+**** Apache CouchDB
 ** Key-Value Stores
+ - underlying data stucture being the [[id:235113d9-983a-4782-a4e8-d027ba52d82b][HashMap]]
+*** Tools
+**** Redis
+ - in memory 
+ - good for caching, queuing, and storing session data and requests
+ - check out : https://realpython.com/python-redis/
+**** Memcached
 ** Columnar Databases
+ - builds on key-value pairs
+ - each pair a row in a store while each column family is similar to a table in the relational model.
+*** Tools
+**** Apache Cassandra
+**** Apache HBase
 ** In-Memory Databases
 ** Time-Series Databases
 ** NewSQL Databases
-
 * Auxiliary features
 ** Data Replication
 - one master, multiple read-only slaves (different than sharding)

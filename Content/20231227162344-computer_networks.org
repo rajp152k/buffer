@@ -2,3 +2,7 @@
 :ID:       a4e712e1-a233-4173-91fa-4e145bd68769
 :END:
 #+title: Computer Networks
+#+filetags: :programming:
+
+* Practical
+** [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]]

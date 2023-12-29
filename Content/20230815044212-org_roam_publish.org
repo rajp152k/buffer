@@ -26,3 +26,6 @@ Publishing name : Undecided
  - considering proceeding with python to produce the actual site.
    - https://github.com/plotly/dash-cytoscape
    - with the inbuilt sqlite
+ - given that tooling might already exist to plot [[id:96ea3a8e-4288-4c80-9eb9-37a5e449fbed][Neo4j]] databases,
+   consider porting the sqlite db to neo4j and using existing utilties.
+ - checkout : https://www.fullstackpython.com/neo4j.html

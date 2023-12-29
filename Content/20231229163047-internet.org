@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       24f4040a-7c18-416a-8460-e69280d437bf
+:END:
+#+title: Internet
+#+filetags: :programming:
+
+A practical and extremely useful manifestation of a [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Network]].
+Building on the internet will be explored under the subgraph around [[id:0a4948e7-6963-4f00-8e6b-4c9ea1291a3f][Web Dev]].
+
+This node covers the what more than the whys and the hows.
+
+Communication is what the internet was made for, [[id:d62399b2-10b5-4d6c-94ed-42daefd459fe][E-mail]] is another set of tooling and infrastructure that is worth studying for the pedagogical value of such an exercise : this allows to read up on [[id:092f6faf-b5d3-4ff0-9c01-5cdc801dc059][SMTP]] as a useful instance of the application layer protocol
+
+* Resources
+ - https://thesquareplanet.com/blog/how-the-internet-works/

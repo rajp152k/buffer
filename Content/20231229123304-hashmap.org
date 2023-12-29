@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       235113d9-983a-4782-a4e8-d027ba52d82b
+:END:
+#+title: HashMap
+#+filetags: :programming:data:
+
+A [[id:20230715T173535.681936][Data Structure]] that is stores values indexable with hashed keys.

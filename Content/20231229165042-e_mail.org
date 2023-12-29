@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       d62399b2-10b5-4d6c-94ed-42daefd459fe
+:END:
+#+title: Email
+#+filetags: :tool:
+
+Understanding such foundational tech should help with understanding fundamentals of electronic communication.
+
+* SMTP
+:PROPERTIES:
+:ID:       092f6faf-b5d3-4ff0-9c01-5cdc801dc059
+:END:

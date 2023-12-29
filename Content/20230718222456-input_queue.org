@@ -56,6 +56,7 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** https://applied-langua.ge/~hayley/swcl-gc.pdf
 ** https://explained.ai/matrix-calculus/
 * Docs/tools/tuts
+** https://cstack.github.io/db_tutorial/
 ** http://regextutorials.com/
 ** https://spacy.io/
 ** [[https://github.com/dabeaz-course/python-mastery][GitHub - dabeaz-course/python-mastery: Advanced Python Mastery]]
@@ -70,9 +71,11 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** [[http://xahlee.info/js/svg.html][svg - xah lee tutorial]]
 ** https://voila.readthedocs.io/en/stable/
 ** SQL
+*** https://charlesleifer.com/blog/going-fast-with-sqlite-and-python/
 *** [[https://datalemur.com/sql-tutorial?utm_source=datapragmatist&utm_medium=newsletter&utm_campaign=comprehensive-guide-to-r-squared-sql-learning-and-apple-interviews-experience][sql tutorial for data science]]
 ** DBs
  - [[https://redis.io/][Redis]]
  - [[https://www.mongodb.com/][MongoDB]]
 ** languages
  - https://www.perl.org/ : aka the duct tape of the internet
+   

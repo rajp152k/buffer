@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b78a9ef2-6f3d-43c1-bfed-9ce57050d3da
+:END:
+#+title: WebHooks
+#+filetags: :web:
+
+
+* Resources
+ - https://zapier.com/blog/what-are-webhooks/ 

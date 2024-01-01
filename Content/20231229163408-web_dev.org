@@ -29,3 +29,5 @@ As a result, will be diving deep into the principles of web development as well 
 ** [[id:20240101T082526.905943][Static Site Generators]]
 ** [[id:f631ba6f-8622-4bcf-ae0d-8ed7cd4a0798][WebSockets]]
 ** [[id:a0d99b5b-0b57-4f66-8171-03d76929dc89][WebRTC]]
+** [[id:b78a9ef2-6f3d-43c1-bfed-9ce57050d3da][WebHooks]]
+** [[id:bf1a5d71-d05c-4948-bf72-7991a1ed676c][WebServer]]

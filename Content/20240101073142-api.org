@@ -5,3 +5,10 @@
 #+title: API
 #+filetags: :programming:
 
+Application programming interfaces (APIs) provide machine-readable data transfer and signaling between applications.
+
+* Practical
+ - https://github.com/public-apis/public-apis
+* Resources
+ - https://www.fullstackpython.com/application-programming-interfaces.html
+ - https://zapier.com/resources/guides/apis

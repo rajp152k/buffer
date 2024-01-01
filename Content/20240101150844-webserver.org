@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       bf1a5d71-d05c-4948-bf72-7991a1ed676c
+:END:
+#+title: WebServer
+#+filetags: :web:
+
+* Resources
+
+ - https://en.wikipedia.org/wiki/Web_server

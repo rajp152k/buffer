@@ -13,9 +13,8 @@
 * Practical Aspects
 ** Environments
  - Development 
- - Testing
+ - [[id:17d78466-2fcc-47aa-af20-9b74d94c96bb][Testing]]
  - Production
-
 * Methodologies
 ** The Twelve Factor App
  - https://12factor.net/

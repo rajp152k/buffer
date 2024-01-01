@@ -6,3 +6,8 @@
 
 * Practical
 ** [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]]
+
+* Resources
+ - https://www.computer-networking.info/
+ - https://datatracker.ietf.org/doc/html/rfc1180 
+ - https://github.com/saminiir/level-ip

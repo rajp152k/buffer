@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f631ba6f-8622-4bcf-ae0d-8ed7cd4a0798
+:END:
+#+title: Web Sockets
+#+filetags: :web:
+
+* Resources
+ - https://www.fullstackpython.com/websockets.html
+

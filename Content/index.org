@@ -127,7 +127,6 @@ Tags are meant to serve as keywords that indicate - at a high level - what a [[i
 
 * Current tags
 **Last Updated** : 0x2172
-
  - meta
  - tbp
  - ai
@@ -168,3 +167,4 @@ Tags are meant to serve as keywords that indicate - at a high level - what a [[i
  - transient
  - problem
  - emacs
+   

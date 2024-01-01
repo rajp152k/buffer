@@ -6,7 +6,6 @@
 
 testing how different elements are displayed. 
 
-
 * Tables
 
 | A | B | C |

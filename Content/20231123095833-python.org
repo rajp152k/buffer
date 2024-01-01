@@ -8,6 +8,11 @@
 ** 0x21C4
  - read a little about task queuing, checkout:
     - https://www.fullstackpython.com/task-queues.html
+ - exploring testing in python, first line of defense against bugs should be, in the case of python, using Type hints.
+   - read up : https://realpython.com/python-testing/
+     - also see https://hypothesis.readthedocs.io/en/latest/quickstart.html for test-case generation
+ - also, in the case of browser applications, look into [[id:91a97717-c7d8-49d6-a127-64b3dc8833de][Selenium]]
+ - read up on creating mock tests : https://realpython.com/python-mock-library/
 ** 0x21C3
  - reached the frameworks section and the book seems to be a little out-dated (django or flask)
  - instead, proceeding with FastAPI

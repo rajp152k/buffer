@@ -19,13 +19,13 @@ As a result, will be diving deep into the principles of web development as well 
   2. Repitition   
   3. Alignment
   4. Proximity
-
 * Sentinel Refs
 ** [[id:20240101T073142.439145][Application Programming Interface]]
 ** Template Engine
  - takes in a templates string
  - returns HTML
  - checkout : https://www.fullstackpython.com/template-engines.html
-
 ** [[id:20240101T080742.007188][Task Queuing]]
 ** [[id:20240101T082526.905943][Static Site Generators]]
+** [[id:f631ba6f-8622-4bcf-ae0d-8ed7cd4a0798][WebSockets]]
+** [[id:a0d99b5b-0b57-4f66-8171-03d76929dc89][WebRTC]]

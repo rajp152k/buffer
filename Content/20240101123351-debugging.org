@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       155f01c1-68e6-43ee-95e2-7a5bb6a70368
+:END:
+#+title: Debugging
+#+filetags: :tool:programming:
+
+* Resources
+ - https://jvns.ca/debugging-zine.pdf

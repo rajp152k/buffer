@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       20240101T082526.905943
+:END:
+#+title: Static Site Generators
+#+filetags: :programming:web:
+
+Write in a simpler markup language and let the generator produce the static site.
+May be coupled with external an [[id:20240101T082613.161914][Web Server Gateway Interface]] for dynamic output and the static content will be served by a separate [[id:20240101T082700.953774][Content Delivery Network]]
+

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240101T074056.003771
+:END:
+#+title: Javascript
+#+filetags: :programming:
+

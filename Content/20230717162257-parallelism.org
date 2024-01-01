@@ -2,5 +2,5 @@
 :ID:       c307ed4a-77d8-4f69-8995-94c9da4c0768
 :END:
 #+title: Parallelism
-#+filetags: :tbp:programming:
+#+filetags: :programming:
 

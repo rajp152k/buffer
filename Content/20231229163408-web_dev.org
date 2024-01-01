@@ -4,3 +4,28 @@
 #+title: Web Dev
 #+filetags: :programming:
 
+Web development is the umbrella term for conceptualizing, creating, deploying and operating web applications and application programming interfaces for the Web.
+
+Personally, I'm getting into it when trying to build data science applications and after much thinking about: will be proceeding with FastAPI + HTMX.
+
+As a result, will be diving deep into the principles of web development as well and tackle some skill issues that havne't been dealt with for quite some time. 
+
+* Content
+- content and basic layout handled by [[id:20240101T074205.827335][HTML]]
+* Web Design
+- [[id:20240101T074042.866747][CSS]] and [[id:20240101T074056.003771][Javascript]]
+- start out philosophically (while an amateur) with the C.R.A.P principle:
+  1. Contrast
+  2. Repitition   
+  3. Alignment
+  4. Proximity
+
+* Sentinel Refs
+** [[id:20240101T073142.439145][Application Programming Interface]]
+** Template Engine
+ - takes in a templates string
+ - returns HTML
+ - checkout : https://www.fullstackpython.com/template-engines.html
+
+** [[id:20240101T080742.007188][Task Queuing]]
+** [[id:20240101T082526.905943][Static Site Generators]]

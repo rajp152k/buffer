@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       20240101T080742.007188
+:END:
+#+title: Task Queuing
+#+filetags: :programming:
+
+Being able to handle multiple requests efficiently is an important aspect of scaling an application to handle multiple users.
+
+Checkout [[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][Asynchronous Programming]] and [[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]] for a theoretical
+
+* Instantial
+- [[id:985a470b-7184-4f9f-8b16-fe7b90bccebe][Python]]
+    - https://www.fullstackpython.com/task-queues.html
+

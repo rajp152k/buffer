@@ -4,5 +4,6 @@
 #+title: Asynchronous Programming
 #+filetags: :programming:
 
-practical component explored in [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]
+* Instantial
+ - [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]
 

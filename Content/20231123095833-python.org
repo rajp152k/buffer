@@ -5,6 +5,14 @@
 #+filetags: :python:
 
 * Stream
+** 0x21C4
+ - read a little about task queuing, checkout:
+    - https://www.fullstackpython.com/task-queues.html
+** 0x21C3
+ - reached the frameworks section and the book seems to be a little out-dated (django or flask)
+ - instead, proceeding with FastAPI
+ - for the frontend, again rather than react or other similar alternatives, will proceed with htmx.
+ - will be strengthening the web development aspect for once.
 ** 0x21C0
  - continuing the fullstack python marathon
    - delving into databases and web frameworks today

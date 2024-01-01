@@ -6,7 +6,21 @@
 
 Understanding such foundational tech should help with understanding fundamentals of electronic communication.
 
-* SMTP
+* Sentinel Refs
+** POP3
+:PROPERTIES:
+:ID:       20231230T070051.231818
+:END:
+** IMAP
+:PROPERTIES:
+:ID:       20231230T070048.719433
+:END:
+** SMTP
 :PROPERTIES:
 :ID:       092f6faf-b5d3-4ff0-9c01-5cdc801dc059
 :END:
+
+* Resources
+ - https://www.howtogeek.com/99423/email-whats-the-difference-in-pop3-imap-and-exchange/
+ - https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol
+ - https://en.wikipedia.org/wiki/Post_Office_Protocol

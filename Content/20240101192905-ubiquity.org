@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       578218e8-630e-4790-b1dd-13b8f4e4630e
+:END:
+#+title: Ubiquity
+#+filetags: :meta:
+
+Given the timeline that one is born in, several great ideas may be taken for granted.
+
+Notions like [[id:549c09af-11c0-4d71-98ea-44ac8db76ca9][Electricity]], [[id:9ad4eb80-8a65-4708-8cbe-8647cf918ab2][Heat]], [[id:f643219f-3e04-4e95-879f-d932d29029e1][Gravity]] are omnipresent and ubiquitous but, speaking perceptually, they're also very rare if one doesn't take the time to increase their awareness about such concepts.
+
+Existential Ubiquity leads to Perceptual Rarity. We might also casually shun the effort than went into establishing such foundational principles that surround us.
+
+

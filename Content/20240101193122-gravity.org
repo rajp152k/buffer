@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f643219f-3e04-4e95-879f-d932d29029e1
+:END:
+#+title: Gravity
+#+filetags: :physics:
+

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       69d908d1-7a4d-46ea-8a01-cb02e67e9a2b
+:END:
+#+title: Crowd Psychology
+#+filetags: :society:psych:
+
+* Resources
+ - https://en.wikipedia.org/wiki/The_Crowd:_A_Study_of_the_Popular_Mind
+

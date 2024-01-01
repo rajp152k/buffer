@@ -4,8 +4,12 @@
 #+title: Occam's Razor
 #+filetags: :idealogy:
 
+* Abstract
+ - recently, I've been embracing the idea that a simple black-box isn't necessarily better than an equally performant transparent utility that exposes hooks into the tools intermediates and allows the user to explore/exploit other aspects of the tooling.
+ - to summarize, I'd say the notions of complexity and simplicity can't be captured on a uni-dimensional scale where emphasizing one means sacrificing the other but they're instead orthogonal explorations that allow for independent tuning across different perspectives...
+
+* Practical
 Given two equivalently performant solutions, employ the simpler one.
 
  - Arises in the context of model complexity: [[id:20230713T110006.406161][Machine Learning]] and [[id:20230713T110040.814546][Deep Learning]]
    - a deep approach might not always be the right choice if one can do away with statistical methods/algorithms
-

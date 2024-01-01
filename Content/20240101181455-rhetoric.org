@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       a55de908-bb7c-4727-b711-3cca55aff0fd
+:END:
+#+title: Rhetoric
+#+filetags: :meta:
+
+The art of persuasion.
+* Stream
+** 0x21C4
+An interesting way to practice rhetoric would be to deliberately position yourself in logically tough spots in an argument and trying to defend yourself by attacks from the metaphorically higher ground.
+
+A modern day realization of this concept might be termed as playing "the devil's advocate".
+
+Being able to defend oneself in such simulations should definitely help with developing a sense of rhetorical grit when it comes to your daily arguments with yourself.
+ - continuing the thought in 0x21C4 Stream sub node of the [[id:9fae06f7-57f1-4f01-a811-543615e55bc6][Virtue]] node.
+
+* Resources
+ - https://en.wikipedia.org/wiki/Rhetoric

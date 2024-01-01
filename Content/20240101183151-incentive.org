@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       ab264138-da63-4e59-b124-db1833a66c9b
+:END:
+#+title: Incentive
+#+filetags: :meta:
+
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Incentive

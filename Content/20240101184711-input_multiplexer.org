@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       ce22c37f-7bc7-43db-9ee4-79ae714cbb2d
+:END:
+#+title: Input Multiplexer
+#+filetags: :electronics:programming:project:
+
+ - an input device multiplexer that allows one to control multiple computers from the same input device.
+ - might consider writing a device driver in a USB drive that might need an intermediate device that conditionally directs (i.e. multiplexes) input from a device based on the device mode chosen by the user.

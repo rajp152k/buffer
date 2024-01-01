@@ -11,6 +11,7 @@ A root maintaining indices into prominent project roots that I cache for future 
 ** [[id:20231112T081124.213227][What-would-x-read?]]
 ** [[id:20231114T134147.421836][RLxATC]]
 ** Search
+** [[id:ce22c37f-7bc7-43db-9ee4-79ae714cbb2d][Input Multiplexer]]
 * Competitive
 ** [[id:1e88b1d9-e124-4cf7-987e-8d6a857dc3d3][Project-Euler]]
 ** [[id:37016af8-9d02-4ddb-b33a-bcfcd6eacb5d][Advent of Code 2023]]

@@ -21,3 +21,7 @@ Exploring this in the context of [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][Onto
  - Most creativity can be captured by Abductive thinking and this also contributes the most to human knowledge : Abductive reasoning followed by verification/rejection via experiments.
  - think about the thought of devising a thought-experiment...
 
+
+* Pragmatic
+ - This is something that can and should be developed
+   - checkout [[id:a55de908-bb7c-4727-b711-3cca55aff0fd][Rhetoric]]

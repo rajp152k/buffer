@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       20240102T075840.227424
+:END:
+#+title: Surreal-Org-Roam
+#+filetags: :project:
+
+Project Name : Undecided
+
+The current org-roam implementation uses an embedded relational db (sqlite) and forces the notion of a knowledge graph into a relational schema.
+
+[[id:20240102T075938.096388][SurrealDB]] seems to be a good alternative to the embedded sqlite db. Graph DBs should intuitively be more suited towards building a knowledge graph.
+
+A graphical perspective should also allow for links being first class citizens. Moreover, this can also allow one to expose a querying interface in emacs that will be more abstract in terms of allowing what can actually be done with graphs rather than the limitation of simply following a hyperlink.

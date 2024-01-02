@@ -29,3 +29,5 @@ Publishing name : Undecided
  - given that tooling might already exist to plot [[id:96ea3a8e-4288-4c80-9eb9-37a5e449fbed][Neo4j]] databases,
    consider porting the sqlite db to neo4j and using existing utilties.
  - checkout : https://www.fullstackpython.com/neo4j.html
+ - I was looking into [[id:20240102T075938.096388][SurrealDB]] the other day and feel like I should consider a complete re-write of the database endpoint of the org-roam package and replace the currently used embedded sqlite db.
+   - checkout [[id:20240102T075840.227424][Surreal-Org-Roam]]

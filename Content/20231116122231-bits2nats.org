@@ -5,6 +5,11 @@
 #+filetags: :transient:
 
 * Comment Stream
+** 0x21C8
+ - been some time since I built the blog but haven't put out any content
+   - should dive into the neurosymbolic AI perspective to really get stuff done.
+   - literature sweeps and blogs might help me get the lay of the land
+ - comparative reviews may help with actually may help attract audience.
 ** 0x2196
  - realizing that to really write something useful, I'll have to start reading on what has already been written and find gaps in the market.
  - there are several kinds of blogs that already exist:

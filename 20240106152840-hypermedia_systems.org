@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20240106T152840.141743
+:END:
+#+title: Hypermedia Systems
+#+filetags: :book:
+
+* Resources
+ - https://hypermedia.systems

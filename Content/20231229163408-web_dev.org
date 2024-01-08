@@ -10,6 +10,8 @@ Personally, I'm getting into it when trying to build data science applications a
 
 As a result, will be diving deep into the principles of web development as well and tackle some skill issues that havne't been dealt with for quite some time. 
 
+Starting out the same with the open source book [[id:20240106T152840.141743][Hypermedia Systems]].
+
 * Content
 - content and basic layout handled by [[id:20240101T074205.827335][HTML]]
 * Web Design

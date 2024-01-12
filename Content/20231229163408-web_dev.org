@@ -14,6 +14,7 @@ Starting out the same with the open source book [[id:20240106T152840.141743][Hyp
 
 * Content
 - content and basic layout handled by [[id:20240101T074205.827335][HTML]]
+  - [[id:c29d0cf9-9d79-4b00-9884-150722729ab9][XML]] can be used with javascript for AJAX : Asynchronous Javascript and XML
 * Web Design
 - [[id:20240101T074042.866747][CSS]] and [[id:20240101T074056.003771][Javascript]]
 - start out philosophically (while an amateur) with the C.R.A.P principle:
@@ -33,3 +34,5 @@ Starting out the same with the open source book [[id:20240106T152840.141743][Hyp
 ** [[id:a0d99b5b-0b57-4f66-8171-03d76929dc89][WebRTC]]
 ** [[id:b78a9ef2-6f3d-43c1-bfed-9ce57050d3da][WebHooks]]
 ** [[id:bf1a5d71-d05c-4948-bf72-7991a1ed676c][WebServer]]
+* Resources
+ - https://hypermedia.systems

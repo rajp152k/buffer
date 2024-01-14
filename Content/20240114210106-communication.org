@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20240114T210106.876975
+:END:
+#+title: Communication
+#+filetags: :meta:
+
+The act of exchanging [[id:6777b4fa-7046-4553-b2e1-3bb60953a498][information]] (one or two way) between two [[id:20240114T203601.390070][entities]].
+

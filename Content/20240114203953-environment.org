@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20240114T203953.456605
+:END:
+#+title: Environment
+#+filetags: :meta:
+
+Captures the notion of state in several contexts.
+

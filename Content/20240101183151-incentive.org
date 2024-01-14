@@ -4,7 +4,8 @@
 #+title: Incentive
 #+filetags: :meta:
 
-
-
-* Resources
- - https://en.wikipedia.org/wiki/Incentive
+[[id:20240114T204304.033004][Interactions]] between mulitple [[id:20240114T203601.390070][Entities]] can be understood by the model of Incentives.
+These don't just apply to humans but can be extrapolated to environments as well given well researched physical laws.
+A very fundamental incentive for chaos for being the [[id:b35790f3-7502-4175-acf7-dac894bd2a5c][second law of thermodynamics]].
+They may be inherent to the entity without backed explanations or may be induced by some higher level [[id:20240114T210722.836738][axiomatic]] beliefs.
+A powerful and potentially true statement would be that all incentives are rooted in a fundamentally inexplicable [[id:20240114T210722.836738][Axiom]].

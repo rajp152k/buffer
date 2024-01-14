@@ -2,7 +2,9 @@
 :ID:       20230727T192932.286062
 :END:
 #+title: Youtube
-#+filetags: :meta:
+#+filetags: :transient:meta:
+
+checkout : https://youtube.com/@rajp152k?si=mnFzfa1b1lT4C5Ke
 
 * Comment Stream
 ** 0x2143
@@ -32,20 +34,7 @@
 - being free enough to express is what we generally lack...
 - targeting at least a video a week..
 
-* Production
-An index of all the videos : published, work in progress, and prospective
-** Published
-
-|------------+-------------------------------------------------------------+------------------------------+----------|
-| time index | Production Code Name                                        | link                         | playlist |
-|------------+-------------------------------------------------------------+------------------------------+----------|
-|     0x214a | The Definitive Guide to Books                               | https://youtu.be/sJqdliSqmRy | Plans    |
-|     0x2147 | Common Lisp : The Series - Representing Programs (CLTS 0.1) | https://youtu.be/SuI2ns1D9Es | CLTS     |
-|     0x2141 | My Creation and Publishing Pipeline                         | https://youtu.be/dKU_mNaEo1g | Tooling  |
-|     0x213E | Common Lisp : The Series - Introduction (CL-TS 0)           | https://youtu.be/jLonMxrVPbY | CLTS     |
-|     0x2122 | YT init: Incentives and Plans                               | https://youtu.be/A7CKctbouJs | General  |
-|------------+-------------------------------------------------------------+------------------------------+----------|
-
+* Buffer
 ** Work in Progress
 ** Prospectives
 *** initialize a consolidators playlist
@@ -74,3 +63,4 @@ An index of all the videos : published, work in progress, and prospective
  - Recommendation
    - Home: Evil Emacs
    - Work : VS code with a vi extension
+     

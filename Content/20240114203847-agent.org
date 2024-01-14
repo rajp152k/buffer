@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       20240114T203847.960609
+:END:
+#+title: Agent
+#+filetags: :meta:
+
+An [[id:20240114T203601.390070][Entity]] with the ability to perform an Action

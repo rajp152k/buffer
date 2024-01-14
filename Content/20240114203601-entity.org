@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       20240114T203601.390070
+:ROAM_ALIASES: Entities
+:END:
+#+title: Entity
+#+filetags: :meta:
+
+Something that exists. Being.
+Abstract, or tangible. 
+
+An [[id:20240114T203847.960609][Entity can in turn have the potential to act]] (Agent) or [[id:20240114T203953.456605][react to actions by other able entities]] (Environment).
+
+
+A collection of Agents and Environments that [[id:20240114T204304.033004][interact]] within themeselves can then be termed as a [[id:11847f5f-5337-425b-bacb-575f77690a4b][System]].

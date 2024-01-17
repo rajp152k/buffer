@@ -100,7 +100,6 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+--------------|
 | time index | Production code name                                      | link                                                           | Category     |
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+--------------|
-|     0x21B6 | Why skepticism is a habit worth cultivating deliberately? | ---                                                            | Skills       |
 |     0x21B2 | Understanding Reality and Imparting meaning               | https://rajpatil.dev/post/understand-v-impart/                 | Epistemology |
 |     0x21B0 | Hunt, Feast, Repeat                                       | https://rajpatil.dev/post/hunt-feast-repeat/                   | Polymathy    |
 |     0x2194 | Solitude, Society, Originality                            | https://rajpatil.dev/post/solitude-society-originality/        | Polymathy    |
@@ -129,8 +128,6 @@ An index of all that I write about, published, work in progress and prospective.
 |------------+-----------------------------------------------------------+----------------------------------------------------------------+--------------|
 
 ** Work in Progress
-*** why skepticism is a habit worth cultivating deliberately?
-*** The flexible facade that focus is..
 ** Prompts
 *** A child's curiosity and an adult's resolve 
  - Curiosity and Focus don't really get together well if you think about it.

@@ -38,7 +38,7 @@ indexing a blog entry into the book's content: https://rajpatil.dev/post/most-im
 
 - will be writing it in the brain dump in different notes 
 
-* Structure and Content 
+* Structure and Content
 ** Introduction
 *** Why am I writing this book?
 **** Personal reading journey

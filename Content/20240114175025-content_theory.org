@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       20240114T175025.020370
+:END:
+#+title: The Theory of Creation and Consumption
+#+filetags: :meta:
+
+* Abstract 
+
+I wish to be a content creator that has a generically good command over the idea of content creation. Improving a pursuit begins by understanding, quantitatively and qualitatively what can be improved.
+
+I will be breaking down the act of content creation and how it is perceived in the coming prose.
+
+Content creation is a meta profession that can be done along side any principle profession and can be pursued in of itself as well. That makes it worth to be analysed generically.
+
+I'll start by breaking down the components, human and otherwise, that go along with the act of creating a piece of content, it's distribution channels and how it is perceived by it's intended consumers. Note that these creators and consumers need not be human given the ubiquity of bots that form intermediaries before the content finally reaches the intended explicit target audience.
+
+A quick example of the same would be a human writing source code for a software. The end user might never read the source which was actually written for compilers/interpreters which in turn creates an experience that extends over several layers, with one common intent : to deliver the software with said objectives. The compiler/interpreter won't know of such incentives and would only be dealing with the act of converting source code to machine readable executables.
+
+On that what propogates through these layers is the intent of the creator.
+
+Now, formalizing this initial seed of the act into a structured collection of abstractions.
+
+* The Concerned [[id:11847f5f-5337-425b-bacb-575f77690a4b][System]]
+** [[id:20240114T203601.390070][Entities]]
+*** The Creator
+*** The Consumer
+*** [[id:20240114T210106.876975][The Distribution Channel]]
+*** The Ecosystem
+** Behaviours
+The set of all subsets (The [[id:20240114T205026.915010][Power Set]]) of the above entities can in turn be mapped to a range of interactions they exhibit. For instance:
+1. The creator and consumer have an explicit interaction when the consumer consumes the piece of content created by the creator. The act of consumption in here is the behaviour exhibited by the consumer whereas creation is the creator's behaviour.
+2. On a more complex note, the ecosystem might affect the creator's creation process and influences what is actually created. For instance, one probably wouldn't want to contest for theories of the earth being flat given the large corpus of disproves provided by the ecosystem of Physics.
+** [[id:ab264138-da63-4e59-b124-db1833a66c9b][Incentive]]s
+Incentives are a powerful tool to understand very complex behaviours in a simple manner.

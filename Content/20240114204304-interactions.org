@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20240114T204304.033004
+:END:
+#+title: Interactions
+#+filetags: :meta:
+
+Whatever ensues when multiple [[id:20240114T203601.390070][Entities]] ([[id:20240114T203847.960609][Agent]]s or parts of the [[id:20240114T203953.456605][Environment]]) behave differently than if they were isolated may be termed as an interaction between the entities.
+

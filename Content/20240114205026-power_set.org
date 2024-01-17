@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20240114T205026.915010
+:END:
+#+title: Power Set
+#+filetags: :math:
+
+The of all subsets of a set.
+

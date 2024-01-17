@@ -10,3 +10,6 @@ Russel's Paradox in here leads to [[id:287a65a1-5d6d-4442-abc8-e017dca6529a][Typ
 
 * Formal
 To be populated
+
+* Sentinels
+** [[id:20240114T205026.915010][Power Set]]

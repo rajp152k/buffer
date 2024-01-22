@@ -37,7 +37,7 @@ Given that we have a model f that produces an embedding given an image as input 
 	 0))
 #+end_src
 
-Intuitively speaking, this loss encourages embedding of P and A to be closer while that of N and A to be farther away.
+Intuitively speaking, this loss encourages embedding of P and A to be closer while that of N and A to be further away.
 alpha is a positive hyperparameter that if increased, encourages the model to increase the distinction between the first two terms in the triplet loss.
 A lower alpha allows for a more lenient model.
 

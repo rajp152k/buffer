@@ -7,6 +7,6 @@
 
 
 * Abstract
-
  - So far, I'm aware of the use of [[id:269b1dfd-6854-42e7-9c8d-82cda0c8f329][Connectionism]] in here but not quite sure how one would go about applying [[id:20230713T113547.742751][Symbolic AI]] in here.
-   
+* Specifics
+** [[id:8ec98ed1-317f-494d-8f03-acf820bde2a4][Face Processing]]

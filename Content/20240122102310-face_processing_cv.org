@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8ec98ed1-317f-494d-8f03-acf820bde2a4
+:END:
+#+title: Face Processing (CV)
+#+filetags: :cv:ai:
+
+* Primitive Nodes
+** [[id:c4534321-7029-48f5-8400-6cf3e2860f17][Triplet Loss]]
+* Tasks
+In increasing order of complexity ..
+** Detection
+** Verification
+** Recognition
+
+* Issues
+** Pose Variance
+** Illumination
+
+* Resources
+ - FaceNet: https://arxiv.org/pdf/1503.03832.pdf

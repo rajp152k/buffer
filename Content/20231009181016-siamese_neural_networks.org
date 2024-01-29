@@ -48,3 +48,13 @@ Post back-propogation post forwards on a dataset's all such triplets (note that 
 To use it, given two pictures P1 and P2, if the euclidean distance between their forwards is  less than a threshold (a hyperparameter), we mark the pair as being of the same person.
 
 It's called one shot cause you need only one picture for a specific comparison (the training phase still needed a larger dataset though).
+
+*** Triplet selection
+ - most triplets from a dataset wouldn't contribute much toward the objective.
+ - the triplet selection strategy then becomes important, for faster convergence:
+   - it is beneficial to select hard positives and hard negatives that are max and min of their respective pool of hard positives and negatives.
+ - it isn't feasible to maintain these maxes and mins for all such triplets.
+   - so, an approach is generate triplets offline (pause training loop) every n steps using the most recent network checkpoint and compute argmin and argmaxes on this subset
+   - another online approach (part of training loop) is generating hard positives and negatives from within the current minibatch
+     - do note that the minibatch here needs to be large enough for enough hard positives to be formed (FaceNet used 1000+ faces in a minibatch)
+ - read more about this process in section 3.2 of https://arxiv.org/pdf/1503.03832.pdf of the FaceNet paper.

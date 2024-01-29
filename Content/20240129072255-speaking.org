@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       20240129T072255.072908
+:END:
+#+title: Speaking
+#+filetags: :transient:meta:
+
+* Comment stream
+** 0x21E0
+ - actively spending time to improve this aspect of my coms would definitely help with my content creation efforts.
+ - for starters, I need to learn how to speak slowly and relatively more clearly.
+ - I've also been told my tonality can be confusing in the sense that I might sound a little too assertive when I'm simply confident in what I'm saying
+ - might have to slow down my reaction times when I communicate and have to accomodate for the processing latencies of those I'm talking to.
+ - for clarity, I know that verbalising what you speak is anti the speed reading cabal but I'm thinking of selectively employing reading books with my own "presentation-speak" as the verbaliser.
+   - will slow down my reading speeds but that isn't quite the goal when I'm reading non-technically before bed.

@@ -4,21 +4,27 @@
 #+title: linguistics
 #+filetags: :linguistics:
 
-* 0x211F
+* Stream
+** 0x21DF
+Over the duration that I've started developing an interest to learn new languages, I've realized that they act as distilled carriers of knowledge and culture.
+
+Learning a language fast tracks the pursuit of knowledge that was discovered/invented in specific domains.
+
+Lisp for instance, will help you understand the roots of computer science and programming in general.
+
+Learning English removes the barriers to understanding generic, state of the art research as that is what most research is published in today.
+
+Learning Latin and a german only-etymologically a while ago allowed me to discover the domain of linguistics by learning with examples (English having Latinate and Germanic Roots).
+
+For the side-mission to understand the world theologically (the main mission is the epistemological understanding of the world), I'm thinking of delving into sanskrit soon. It does open up the gate to a plethora of the oldest works ever written down and gives me access to the OG content creators out there, rather than watered down versions of what we might read of their thoughts in translated works.
+
+There shall be a similarly incentivized phase for learning greek as well, sometime down the lane.
+** 0x211F
 
 I do plan on learning several languages. I dabbled a bit in latin and sanskrit before I got lazy enough to drop it all and get into [[id:20230712T223044.319985][lisp]].
 
 These set of nodes are meant to document similarities, differences and specifics of languages that I'm interested in
 
-* Proficiency levels
-rated as self-assigned 3-tuple : reading, writing, speech : from 0 to 10
- - English: (8,7,7)
- - Hindi: (3,2,6)
- - Marathi: (3,2,5)
- - French: (3,3,3)
-
-
- 
 * Watch List
 
  - Latin

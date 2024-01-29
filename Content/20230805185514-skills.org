@@ -4,13 +4,15 @@
 #+title: skills
 #+filetags: :skills:
 
-Life is boring if you're boring. This node keeps track of auxiliary skills (don't take too long to learn/progress with daily) that I would like to add to my repertoire.
-
-* The major list
- - [[id:20231212T084350.640179][reading]]
-* The minor list
- - Juggling
- - Flipping food (omelets)
- - Being kind without trying hard
- - Identifying constellations
- - conducting casual interviews
+* Generic Skills
+Generic skills that I plan on actively improving
+** [[id:20230712T131112.909632][Writing]]
+** [[id:20240129T072255.072908][Speaking]]
+** [[id:20231212T084350.640179][Reading]]
+* Specific Domains
+Larger domains, closer to a hard intangible skill, that I wish to fully explore
+** Creative Monetization
+** Marketing
+** Sales
+** Supply Chain/Distribution
+** Graphic Design

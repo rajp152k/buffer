@@ -31,6 +31,12 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 ** [[id:20230727T192932.286062][Youtube]]
  - log of all videos along with plans and indices into drafts
 * Stream
+** 0x21E0
+ - have started using neovim for my programming endeavours
+ - still write in gcc emacs and now have a distinct mindset for when I write and when I program
+ - I feel that's better than trying to fit everything into one tool.
+ - my full-time in emacs wasn't a waste and I've picked up on several useful habits.
+ - neovim just seems to be better at cutting through the fluff and is more tailored towards environments I usually work in (remote shells).
 ** 0x21B1
  - when discussing domains and talking about their overlap, I can qualitatitively judge the closeness of two domains by a metric I picked from my days when I worked in the domain of semantic Segmentation.
  - enter : [[id:e6c6918c-25bd-47f4-830a-4221452885e8][Intersection Over Union]]
@@ -126,45 +132,58 @@ Here are some conventions that I follow to organize my work:
 Tags are meant to serve as keywords that indicate - at a high level - what a [[id:20230712T211919.917191][buffer]] is about, what phase it is in, and how prominent it is in terms of closeness to a root [[id:20230712T212419.175018][domain]].
 
 * Current tags
-**Last Updated** : 0x2172
- - meta
+**Last Updated** : 0x21E0
  - tbp
- - ai
- - programming
- - trait
- - nlp
- - math
- - data
- - idealogy
- - python
- - book
- - linguistics
- - lisp
- - cache
- - atomic
- - task
- - posted
- - blog
- - cv
- - root
- - rust
- - web
- - project
- - tool
- - yt
- - nlu
- - java
- - tools
- - cs
- - ml
  - stat
  - prob
- - wip
- - skills
- - writing
- - nn
- - blend
- - transient
- - problem
+ - math
+ - meta
+ - nlp
  - emacs
-   
+ - ai
+ - ml
+ - cv
+ - tool
+ - root
+ - transient
+ - trait
+ - lisp
+ - nn
+ - skills
+ - project
+ - programming
+ - biology
+ - python
+ - cs
+ - pseudoscience
+ - cache
+ - rust
+ - AI
+ - org
+ - vim
+ - yt
+ - tools
+ - atomic
+ - computer
+ - web
+ - diff
+ - data
+ - Categories
+ - java
+ - writing
+ - metric
+ - book
+ - task
+ - wip
+ - blog
+ - problem
+ - nlu
+ - blend
+ - posted
+ - physics
+ - logic
+ - idealogy
+ - psych
+ - society
+ - electronics
+ - linguistics

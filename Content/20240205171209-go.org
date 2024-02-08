@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       ad4ba668-b2ec-47b1-9214-2284aedaceba
+:END:
+#+title: Golang
+#+filetags: :golang:
+
+
+* Stream
+** 0x21E7
+ - starting out with go to get into cloud native applications and rewriting a product
+* Resources

@@ -30,7 +30,34 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - log of all blogs that  I write down and relevant notes for future works
 ** [[id:20230727T192932.286062][Youtube]]
  - log of all videos along with plans and indices into drafts
+** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x21EA
+ - intialized the first ever fictional node: my head is full of references from great works that I wish to document for my descendants and the rest of humanity
+ - experiencing an increased intellectual appetite lately and experiencing a new kind of insatiable hunger that I don't see myself being able to quench any time soon. 
+ - don't know the point that will be enough : that inspires and excites me for the future
+** 0x21E8
+ - diving into boredom seems to be the best way to tackle it.
+ - explicitly running head on into the act of being bored probably allows you to truly understand its superficial nature.
+ - I have a tendency to get bored a little too easily. But I also believe I've got this weird tendency to enjoy phases of boredom by filling them with interesting activities.
+ - In my pursuit for varied skill acquisition (the wannabe polymath syndrone), I can enjoy reading anything that is accessible to me
+ - Writing flow does seem to be an interesting hobby as well and that does allow one to build up a portfolio of tackling boredom in case you do it regularly and right.
+ - I'm already carrying a pocket notebook so my writing and comtemplativeness has already spiked in the past few days. To keep it up, the key is to be able to write anywhere you go: top of a mountain, post lunch walk in a garden, anywhere.
+ - You should also somewhat be able to write anything without any sense of curation i.e. feel free to spill out rubbish
+ - Music seems to be tricky to figure out for work sessions : I've got these zeroth world problems that very few humans bother to wonder about.
+ - Have been reading this book by tony fadell for some time (Build) and really wish to be building something useful. 
+   - Bet everyone has that feeling from time to time : to be "of Use" - but the act of being creatively useful probably is never preceded by such a thought and could even be a selfish act in some scenarios.
+ - Have been learning Go to build some services and feelings boring as heck - compared to my dreams in lisp, dreaming in go would just be like ..., normal...
+   - anyway, collaboration is important to build larger products and I'm willing to sacrifice moments of boredom to get an output.
+ - feel like I've got to start pruning outlets of my efforts into limited ones.
+** 0x21E7
+ - Am getting into another cycle of learning heavily and documenting the same in the nodes here.
+ - have been grateful recently to receive opportunities that allow me to study and connect several domains.
+ - as of now, completing a practical openCV overview.
+ - Soon, will be diving into advanced cloud compute and the practicals thereof.
+ - will also be replacing all minor passtimes with writing whenever I feel like I'm out of focus. This should be a very good exercise in understanding the true nature of my work capacity and what my brain do.
+ - feel like I'm entering a phase of my life, when I'm expecting slow, stable progress when it comes to my skills and ability get things done i.e. building a true work ethic that I myself can respect and don't look down upon.
+ - this does involve a whole bunch of writing about what I learn, hiking, lifting weights, putting in the hours, practicing patience and just learning to build good stuff. 
 ** 0x21E0
  - have started using neovim for my programming endeavours
  - still write in gcc emacs and now have a distinct mindset for when I write and when I program
@@ -130,60 +157,3 @@ Here are some conventions that I follow to organize my work:
 
  Tag list
 Tags are meant to serve as keywords that indicate - at a high level - what a [[id:20230712T211919.917191][buffer]] is about, what phase it is in, and how prominent it is in terms of closeness to a root [[id:20230712T212419.175018][domain]].
-
-* Current tags
-**Last Updated** : 0x21E0
- - tbp
- - stat
- - prob
- - math
- - meta
- - nlp
- - emacs
- - ai
- - ml
- - cv
- - tool
- - root
- - transient
- - trait
- - lisp
- - nn
- - skills
- - project
- - programming
- - biology
- - python
- - cs
- - pseudoscience
- - cache
- - rust
- - AI
- - org
- - vim
- - yt
- - tools
- - atomic
- - computer
- - web
- - diff
- - data
- - Categories
- - java
- - writing
- - metric
- - book
- - task
- - wip
- - blog
- - problem
- - nlu
- - blend
- - posted
- - physics
- - logic
- - idealogy
- - psych
- - society
- - electronics
- - linguistics

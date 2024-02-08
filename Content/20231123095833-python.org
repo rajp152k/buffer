@@ -5,6 +5,9 @@
 #+filetags: :python:
 
 * Stream
+** 0x21E9
+ - starting out diving deeper into [[id:cf9ebc9c-8af7-4f7c-9c3f-e3325ac260e4][Hy]] (Lisp + Python)
+ - plan on being able to use the python ecosystem with the fluidity of lisp off of my fingers. 
 ** 0x21C4
  - read a little about task queuing, checkout:
     - https://www.fullstackpython.com/task-queues.html
@@ -43,3 +46,12 @@ Exploring [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
      - [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]
      - [[id:097b7bdc-1f4f-4738-a45f-c0a959ef2ff3][Python GIL]]
        
+* Sentinels
+** Plotting
+*** Matplotlib
+:PROPERTIES:
+:ID:       8cb05715-6df5-4a3b-bd09-aaab81869845
+:END:
+
+** Dialects
+*** [[id:cf9ebc9c-8af7-4f7c-9c3f-e3325ac260e4][Hy]]

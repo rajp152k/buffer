@@ -8,6 +8,14 @@
 root blog : https://rajpatil.dev
 medium : https://rajp152k.medium.com/
 * Comment stream
+** 0x21E8
+ - just cleaned off the prompt cache ; feel like I'm mentally stuck in a mental space that isn't quite interesting ; feel like I need to build a new space for myself.
+ - I need to move on when it comes to my style of writing.
+ - I've always wrestled with the idea being simple and writing a little too differently than how I think.
+   - the tendency to completely understand anything before I move does have its pros and cons
+ - getting good with black boxes seems to be a very healthy way to maintain your sanity.
+   - I envy those with the inclination to keep things short and complete only to the extent of the requirements.
+ - forcing a writing flow right now for an hour with some music and the background and seeing what I come up with
 ** 0x21D1
 Also starting out writing on medium : will be adapting all blogs to medium to help bring in traffic to the root site.
  - read some blogs on medium and finding some styles to be easy to be able to follow.
@@ -111,28 +119,4 @@ The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection o
     - credits: https://github.com/maker2413/OrgRoamPublish
  Buffer
 ** Work in Progress
-*** Towards Effortless Awareness (documentation)
 ** Prompts
-*** A child's curiosity and an adult's resolve 
- - Curiosity and Focus don't really get together well if you think about it.
- - The first, you're naturally born with and you may have to work on not losing it over time.
- - The latter, you have to build up over your life if you wish to achieve anything of value.
- - Both are necessary for contributing something important to the world
-   - although execution (result of focus) might be considered the harder ordeal, creative ideation (result of curiosity) can't be ignored and makes the outcome's potential ingenuity worth the efforts.
-*** Care enough to be selectively ignorant
-*** Epistemological cartography
-*** Don't have role models but target specific characteristics
-*** Video Games, Lucidity and L-theanine
-*** Epistemological Voraciousness
-*** Ingredients of Originality
- - fearlessness, especially of being perceived as stupid definitely takes the cake
-*** Feigning humility
-*** On the boundaries of madness and brilliance
-*** Embrace abstracted Complexity : simplicity is overrated
-*** Can you defend your beliefs?
-*** Introductory Self hypnosis
-*** Tactics, principles and strategy
-*** when to pluck low hanging fruits
-*** Convergence
-*** Embracing the Suck: boredom, adulthood and expectations from your days
-*** Cyber Transparency : How much is enough or too much : is there an optimal amount?

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       6e9b50dc-c5c0-454d-ad99-e6b6968b221a
+:END:
+#+title: CyberSecurity
+#+filetags: :programming:root:
+
+* Resources
+** Hacking: the Art of Exploitation
+:PROPERTIES:
+:ID:       14f6375c-110b-46be-b7d1-3a5b14cdb8d2
+:END:
+ - following the book to learn about what computers really are and to be able to think about secure software
+ - not explicitly relevant to my domain but I'm generically into computers and wish to know more
+ - will not be posting notes as they are from the textbook, but will be populating nodes without too many explicit linkages.

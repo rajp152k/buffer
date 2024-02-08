@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       cf9ebc9c-8af7-4f7c-9c3f-e3325ac260e4
+:END:
+#+title: Hy
+#+filetags: :lisp:python:hy:
+
+A [[id:20230712T223044.319985][Lisp]] dialect for [[id:985a470b-7184-4f9f-8b16-fe7b90bccebe][Python]].
+
+* Resources
+** https://leanpub.com/hy-lisp-python

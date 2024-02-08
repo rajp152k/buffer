@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       eda4d14e-f7e2-418f-bcb3-d7ee222d2515
+:END:
+#+title: Patience
+#+filetags: :meta:pseudo:
+

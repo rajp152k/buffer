@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       679cb313-d38c-40ef-bec8-6624b1cde7cc
+:END:
+#+title: Ambition
+#+filetags: :meta:pseudo:
+

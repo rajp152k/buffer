@@ -2,7 +2,7 @@
 :ID:       ffee795c-3e77-4a55-92b5-52afef7f4a53
 :END:
 #+title: Stress
-#+filetags: :root:
+#+filetags: :meta:pseudo:
 
 * 0x2165
 

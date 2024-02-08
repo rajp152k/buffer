@@ -1,0 +1,126 @@
+:PROPERTIES:
+:ID:       6bc26d93-f08d-4b9f-9df1-443e7faece42
+:END:
+#+title: OpenCV
+#+filetags: :tool:ai:cv:
+
+This node aims to capture the practical aspect of [[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][CV]], while considering the tooling for the job. Expect theoretical depth to accompany this overview. OpenCV has bindings for several languages but I'll specifically be proceeding with the python ecosystem (and relevant libraries therefore for pragmatic completeness)
+
+* Reads, Conversions, and Writes
+
+Images are dealt with as an array of numbers (using numpy usually). A combination of RGB values helps paint the pixels as you see them. Most popular image formats include [[id:59b4eaa6-6267-4a4e-9491-de895f76b25e][JPEGs and PNGs]] with the latter also allowing for richer information like an alpha channel.
+
+Mathematically, images can be loaded in three formats: Colored, GrayScale and unaltered (with an alpha channel if it exists).
+
+It's good practice to explicitly specify the concerned "cmap" (color map) when loading the images.
+
+#+begin_src python
+  import cv2
+
+  img = cv2.imread("/path/to/image.extension",cv2.IMREAD_<FLAG>)
+
+  # Possible values for FLAG
+  # - GRAYSCALE : enum of 0
+  # - COLOR  : enum of 1 (default)
+  # - UNCHANGED : enum of -1
+#+end_src
+
+Also keep in mind to provide colormaps when plotting images as using [[id:8cb05715-6df5-4a3b-bd09-aaab81869845][plt]] on a grayscale yields colors that you probably don't expect.
+
+#+begin_src python 
+  import matplotlib.pyplot as plt
+  import cv2
+
+  img = cv2.imread(path_to_grayscale, 0)
+  plt.imshow(img) # yields unusual colors
+  plt.imshow(img, cmap = "gray") # yields what you expect
+#+end_src
+
+Some helpful attributes to understand the image better at a first glance :
+#+begin_src python
+  img.dtype # uint8 for 8 bit depth of each channel (24 bits total)
+  img.shape # (H,W,C) - 3 tuple of height , width , channel
+#+end_src
+
+Note that, OpenCV stores images in BGR (blue, green, red) and matplotlib expects it in RGB format.
+Channel reversal is necessary, hence, to plot the image as it actually isn't
+
+#+begin_src python
+  c_reversed_img = img[:,:,::-1]
+  plt.imshow(img) # default cmap expects 3 channels so that's fine
+#+end_src
+
+Channels can be split and merged using the following methods:
+#+begin_src python
+  r,g,b = cv2.split(c_reversed_img)
+
+  assert (img == cv2.merge((b,g,r))).all() # expects inputs of similar shape
+#+end_src
+
+Once loaded in a format, images can be converted to other color formats using cv2.cvtcolor
+#+begin_src python
+  transformed = cv2.cvtcolor(original, transform_code)
+#+end_src
+
+checkout all transformation codes [[https://docs.opencv.org/4.5.1/d8/d01/group__imgproc__color__conversions.html#ga4e0972be5de079fed4e3a10e24ef5ef0][in the docs]].
+
+With this mechanism, we can say map the input image into Hue, Saturation, Value format (HSV), alter the saturation to change intensity in a way independent of the individual color channels' values and then map back to the RGB format.
+
+Finally, one can write images in either grayscale (8-bit) or BGR (24-bit) format after conversion using imwrite
+
+#+begin_src python
+  cv2.imwrite(save_path, img_object)
+#+end_src
+
+* Basic Manipulations
+
+OpenCv represents images as matrices and all relevant operations can be used to modify the image
+
+Cropping for instance, would be slicing the matrix.
+
+#+begin_src python
+  import cv2
+
+    img_rgb = cv2.imread(imgpath)[:,:,::-1]
+
+     # center cropping
+    width_dev_frac = 0.1 
+    height_dev_frac = 0.1
+
+    h,w = img_rgb.shape[:2]
+
+    gen_slice = lambda f,t : slice(int(0.5*t - f*t),
+				   int(0.5*t + f*t))
+
+    center_cropped = img_rgb[gen_slice(height_dev_frac,h),
+			     gen_slice(width_dev_frac,w)]
+#+end_src
+
+
+Resizing needs an interpolation algorithm (linear by default) to fill in the intermediates when scaling and is done by [[https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html#ga47a974309e9102f5f08231edc7e7529d][cv2.resize]]
+
+So, Image manipulations are encompassed by the set of matrix operations that can be performed on the matrix representation of the image.
+
+* Annotations
+Basic geometry again boils down to drawing over the two-dimensional discrete cartesian plan captured by the matrix reprentation of the image.
+
+ Any drawing function will be completely defined by a set of parameters that describes the object being drawn. For instance, cv2.circle needs a radius and a circle other than the normal defaults (line color, thickiness, drawing type, etc).
+
+ Other basic drawers include : cv2.line, cv2.rect, etc...
+
+ Text can also be written down using cv2.putText with all the font styling information
+
+* Enhancement
+Brightness pertains to altering intensity values by addition/subtraction.
+
+Contrast involves scaling all the intensities by a factor so as to increase/decrease the difference between them.
+
+Overflow issues can be dealt with clipping at the max of the intensities via np.clip
+
+One can create binary images (1's and 0's from grayscale) by thresholding images, using
+ - cv2.threshold
+ - cv2.adaptiveThreshold
+
+
+Masks can be better used with bit-wise (or pixel wise boolean operations) like OR, AND , XOR.
+For instance, a circular alpha view can be emulated by a bitwise-and on a circular mask

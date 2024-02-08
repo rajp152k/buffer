@@ -36,7 +36,7 @@ I populate this node with the intention to index into other major nodes of the f
  - [[id:c1a12380-9aad-4969-8b6a-cfceebfa984f][Sets]]
 
 ** Math as S-expressions
- - I won't be using mathmatical notation in these notes cause of the reasons listed here : [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][NIL]] , and somewhere in the [[id:1729][Index]].
+ - I won't be using mathmatical notation in these notes cause of the reasons listed here : [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][NIL]]
  - I find it convenient to just build up an abstraction when needed
 
 ** [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][Functions]]

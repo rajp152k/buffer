@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       44ba44d8-4ea9-4656-b367-bafffafe61f6
+:END:
+#+title: Batman
+#+filetags: :root:
+
+The idea of being beyond human, while being one, is appealing and worth exploring. Whenever I'm bored, I research, imagine and plan, trying to direct my training modules towards such completeness...
+
+I'll be breaking down these domains into their cores for only the ones not in the right state of their minds don't aspire to be Batman. 
+
+The root incentive of all these domains arises from [[id:8c2aa5a7-c852-4765-b8f9-e9cc153d3b9f][the will to act]].
+
+* Training Domains
+** Physiological
+*** Strength
+*** Speed
+*** Agility
+*** Endurance
+** Psychological
+*** Intellectual
+**** Curiosity
+*** Meta
+**** Resilience
+**** Discipline
+**** Focus
+**** Dispassion
+* Resources
+** Blogs
+*** The Bioneer
+ - https://www.thebioneer.com/
+ - reliably credible reference, research backed content

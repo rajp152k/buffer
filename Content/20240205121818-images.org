@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       59b4eaa6-6267-4a4e-9491-de895f76b25e
+:END:
+#+title: Image
+#+filetags: :cv:
+
+Mathematically, an image can be represented as an array of numbers
+
+
+* Popular encodings
+** JPEG
+A lossy compression format that is pretty snappy and handy for the web
+** PNG
+little more bells and whistles than the JPEG format that also allows for an alpha (transperency) channel, for instance.

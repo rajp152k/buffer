@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       bc1cc0cf-5e6a-4fee-b9a5-16533730020a
+:END:
+#+title: Cloud Computing
+#+filetags: :programming:
+
+* Morphology of a Service
+
+This is an epistemological dive into the nature of cloud computing services.
+
+On an extremely high level, any sort of cloud computing service one provides to a client can be broken down into differing amalgamations of [[id:6f9a4752-aa66-42cf-9b88-2e4fa2091511][compute]] and [[id:40a85632-284f-44f5-a86d-dc287fac1587][storage]] (extents of persistence, to elaborate).
+
+For instance, Functions as a service will be compute oriented (RAM level storages are involved, and data persists till the execution life of the relevant function), where as container as a service will be a mixture of both.
+
+The extent of virtualization in terms of how abstracted your compute is from the baremetal hardware also gives rise to different classes of services.
+
+Intelligently managing the provision of compute and storage over time opens up a whole new opportunity for a suite of meta/administrative tooling (orchestration, scheduling, log analysis)
+
+This core function of a providing a service enables several secondary services that can be used to improve the original provision (log anomaly detection for instance, or power usage prediction to control cooling requirements of a datacenter for instance)
+
+[[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Networking]] plays an important role in connecting all the tangibly separate compute and storage into a large functioning system that abstracts away your specific requirements into a specific readily usable service.
+
+Now adding further degrees of freedom to the problem description allows for the core abstraction to fork into as many services as we want to. Some dimensions being:
+ - scale
+ - security
+ - extent of privacy

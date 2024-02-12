@@ -23,9 +23,18 @@ I'll be proceeding with common lisp.
 
 * Experimental Notions
 I'm testing these out in this brain dump and will be incorporating these into a formal theory upon accumulating multiple successful applications.
-** The Idea of diffing domains
+** The Idea of Diffing Domains
+:PROPERTIES:
+:ID:       b68a599a-b800-47c9-b299-a9535d23daf5
+:END:
  - when trying to explain the difference between epistemology and ontology, I came up with the idea of qualitatlively applying [[id:e6c6918c-25bd-47f4-830a-4221452885e8][IOU]].
  - now I can say that
 #+begin_src 
-IOU(objetivist epistemology, ontology) > IOU(epistemology, ontology)
+IOU(objectivist epistemology, ontology) > IOU(epistemology, ontology)
 #+end_src
+
+** Degrees of Freedom : Cartesianization
+:PROPERTIES:
+:ID:       d0d75b64-13e5-4b50-8833-a2b6a47cdf19
+:END:
+One can factorize a complex domain into its constituent abstractions by identifying the separate degrees of freedom in its description. Varying the extent of a particular degree at a time allows one to meaningfully study variants rather than simply diffing domains.

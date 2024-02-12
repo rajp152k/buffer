@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       11094d83-8847-4382-bf8b-d3660d778e88
+:END:
+#+title: Roam Env
+#+filetags: :emacs:project:
+
+Currently org-roam only allows for a single database and consequently a workspace. If you do have a separate directory, the database will still be mixed up and would result in cross-pollution of workspaces.
+
+A quick solution would be to build a basic context managing wrapper on org-roam that manages these variables and allows for switching safely between org-roam.
+
+Haven't settled on the name as of now and am inclined towards roam-env

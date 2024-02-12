@@ -6,6 +6,7 @@
 
 * Practical
 ** [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]]
+** [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]]
 
 * Resources
  - https://www.computer-networking.info/

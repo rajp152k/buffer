@@ -7,7 +7,13 @@
 
 root blog : https://rajpatil.dev
 medium : https://rajp152k.medium.com/
+poetry : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
+
 * Comment stream
+** 0x21F0
+ - wish to dive deeper into abstract poetry for the intellectual mind.
+ - epistemological poetry seems to be a very esoteric pass time - right up my alley
+   - continuing exploration in a separate node : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
 ** 0x21E8
  - just cleaned off the prompt cache ; feel like I'm mentally stuck in a mental space that isn't quite interesting ; feel like I need to build a new space for myself.
  - I need to move on when it comes to my style of writing.

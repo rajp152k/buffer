@@ -59,7 +59,7 @@
 
 ;; Set html header information
 (setq maker/header "<link rel='stylesheet' type='text/css' href='/css/style_custom.css'/>
-<link rel='stylesheet' type='text/css' href='https://unpkg.com/tippy.js@6/themes/translucent.css'/>
+<link rel='stylesheet' type='text/css' href='https://unpkg.com/tippy.js@6/themes/light-border.css'/>
 <script src='https://unpkg.com/@popperjs/core@2'></script>
 <script src='https://unpkg.com/tippy.js@6'></script>
 <script src='/js/script.js'></script>

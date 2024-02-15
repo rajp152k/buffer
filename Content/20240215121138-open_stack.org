@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       03cd8062-b3fb-4cd9-97a8-5d60f037f7b6
+:END:
+#+title: Open Stack
+#+filetags: :root:tool:
+
+
+* Resources
+ - https://pages.ubuntu.com/rs/066-EOV-335/images/Open%20Stack%20Made%20Easy%20WP%20v9.pdf?mkt_tok=MDY2LUVPVi0zMzUAAAGRRoswlUVED5fY6EwuMV8xOr_j6xrZ28BMpM91cIeU63k3Da7Rskxt7jU7ChipwRvEOAFMHuoucWwkl_skZGNr3OYjkupFxT0hTLpSriqToQCV1yg

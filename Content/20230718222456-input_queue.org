@@ -22,14 +22,9 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** https://news.ycombinator.com/
 ** http://wiki.c2.com/
 ** https://www.cliki.net/
-* Blog posts
-** [[https://microsoft.github.io/TypeChat/blog/introducing-typechat/][Introducing TypeChat - TypeChat]]
-** https://simonwillison.net/2023/Aug/3/weird-world-of-llms/
-** https://mitpress.mit.edu/mit-presss-direct-to-open-d2o-achieves-second-year-goal-opens-access-to-eighty-two-new-books-in-2023/
-** [[https://interviewing.io/blog/sabotage-salary-negotiation-before-even-start][How to sabotage your salary negotiation efforts before you even start]]
-** https://questdb.io/blog/concurrent-lockfree-datastructure-design-walkthrough/
-** http://matpalm.com/blog/cool_machine_learning_books/
-** https://0x65.dev/blog/2019-12-06/building-a-search-engine-from-scratch.html
+* Blogs
+** The CTO Club : https://thectoclub.com/
+ - good for the bigger picture on emerging tech
 * Books 
 ** https://nick-black.com/dankwiki/index.php/Book_list_for_streetfighting_computer_scientists
 ** https://tgvaughan.github.io/sicm/toc.html
@@ -48,6 +43,12 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** [[https://mitpress.mit.edu/9780262028967/structure-and-interpretation-of-classical-mechanics/][Structure and Interpretation of Classical Mechanics]]
 * Courses
  - https://web.stanford.edu/class/cs168/index.html
+** MIT OCW
+ - plan to regularly use these to build a very vast skillset
+ - will be populating what I learn in this brain dump
+ - https://ocw.mit.edu/
+** Spinning up in Deep RL
+ - https://spinningup.openai.com/en/latest/index.html
 * Papers
 ** [[https://ieeexplore.ieee.org/document/6770404][The UNIX time-sharing system]]  
 ** [[https://www.amazon.science/publications/dynamo-amazons-highly-available-key-value-store][Dynamo: Amazon’s highly available key-value store - Amazon Science]] 

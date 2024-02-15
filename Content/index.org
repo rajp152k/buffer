@@ -32,6 +32,10 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - log of all videos along with plans and indices into drafts
 ** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x21F1
+ - beginning to dive deeper to build repositories that represent true insight and don't just mimic a micro-wikipedia.
+ - will be focusing on condensing abstractions into descriptions that are just enough : terseness is key
+ - I'll be having more streams on generic nodes (has to be tagged as root) to allow capturing an evolution in thought rather than just a static overview of the domain
 ** 0x21EA
  - intialized the first ever fictional node: my head is full of references from great works that I wish to document for my descendants and the rest of humanity
  - experiencing an increased intellectual appetite lately and experiencing a new kind of insatiable hunger that I don't see myself being able to quench any time soon. 
@@ -154,3 +158,4 @@ Here are some conventions that I follow to organize my work:
  - A top-down knowledge building style : the human mind doesn't remember what it knows. Trying to remember a specific latent knowledge node in this graph will be more efficient than building all the base nodes one by one until I reach a practical level of application. I will add atoms as and when I see fit : I might even insert most from memory.
  - each major node has its own idea buffer to keep note of specific ideas that I haven't organized yet.
  - at any given point of time, several emtpy nodes may exist : I'm not trying to be exhaustive right away when exploring a domain. This is supposed to be an eternal work in progress. However, to indicate that I intend to work on a node later on and it's not just an empty atom, I've placed ~:tbp:~ (to be populated) tags on such nodes.
+

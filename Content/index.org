@@ -32,6 +32,10 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - log of all videos along with plans and indices into drafts
 ** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x21F1
+ - beginning to dive deeper to build repositories that represent true insight and don't just mimic a micro-wikipedia.
+ - will be focusing on condensing abstractions into descriptions that are just enough : terseness is key
+ - I'll be having more streams on generic nodes (has to be tagged as root) to allow capturing an evolution in thought rather than just a static overview of the domain
 ** 0x21EA
  - intialized the first ever fictional node: my head is full of references from great works that I wish to document for my descendants and the rest of humanity
  - experiencing an increased intellectual appetite lately and experiencing a new kind of insatiable hunger that I don't see myself being able to quench any time soon. 

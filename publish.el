@@ -88,7 +88,7 @@
 ;; Define the publishing project
 (setq org-publish-project-alist
       ;; org-notes is used for the actual org files
-      `(("buffer.rajpatil.dev"
+      `(("buffer"
          :auto-sitemap t
 	 :sitemap-title "Site Map"
 	 :sitemap-ignore-case t
@@ -126,7 +126,7 @@
          :recursive t)
         ;; publish all above
         ("website"
-         :components ("buffer.rajpatil.dev" "static" "images"))))
+         :components ("buffer" "static" "images"))))
 
 ;; Overwrite default HTML output template
 (eval-after-load "ox-html"
@@ -146,13 +146,13 @@
 	     (format "buffer.rajpatil.dev :: ")
 	     "</div>\n"
              "<form action='/'>\n"
-             "<input type='submit' value='Index'>\n"
+             "<input type='submit' value='Root'>\n"
              "</form>\n"
              "<form action='/sitemap'>\n"
-             "<input type='submit' value='NodeList'>\n"
+             "<input type='submit' value='Explore'>\n"
              "</form>\n"
              "<form action='https://rajpatil.dev'>\n"
-             "<input type='submit' value='RootSite'>\n"
+             "<input type='submit' value='Blog'>\n"
              "</form>\n"
              ;"<form id='search' autocomplete='on' class='search-box' action=/search.html>\n"
              ;"<label hidden for='search-input'></label>\n"

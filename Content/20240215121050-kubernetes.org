@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c2072565-787a-4cea-9894-60fad254f61d
+:ROAM_ALIASES: K8s
+:END:
+#+title: Kubernetes
+#+filetags: :tool:
+
+

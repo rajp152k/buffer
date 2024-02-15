@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a9430614-4e6e-41ff-9788-0f51c2867e74
+:END:
+#+title: Hardware
+#+filetags: :computer:
+
+

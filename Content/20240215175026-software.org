@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       d9a3aabe-114b-43c6-81f9-ca6e01ed3f46
+:END:
+#+title: Software
+#+filetags: :programming:computer:
+

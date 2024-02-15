@@ -4,3 +4,5 @@
 #+title: filesystem
 #+filetags: :programming:
 
+* Resources
+ - https://en.wikipedia.org/wiki/File_system

@@ -4,7 +4,6 @@
 #+title: pointers
 #+filetags: :programming:
 
-* 0x211A
-
-A respected triple star C programmer is what we should all strive to be by the end of this life...
+* Absract
+Pointers enable several powerful concepts to be realized feasibly. They are a convenience notion that allow one to direct a unit to another and form parametrized linkages rather than hardcoded ones. Essentially, one could envision them as the generic glue that is capable of holding together semantically related entities.
 

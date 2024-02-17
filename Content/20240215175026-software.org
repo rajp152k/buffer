@@ -4,3 +4,5 @@
 #+title: Software
 #+filetags: :programming:computer:
 
+I'll be exploring this node not theoretically but by pedagogical instances of softwares of considerable significance. An [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating System]] is a good start and will allow for as many degrees of freedom as I can imagine when it comes to developing softwares. Combine this with [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][virtualization]] and I'll soon get into the software that helps manage [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing.]]
+

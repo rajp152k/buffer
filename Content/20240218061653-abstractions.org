@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240218T061653.528745
+:END:
+#+title: Abstractions
+#+filetags: :meta:
+

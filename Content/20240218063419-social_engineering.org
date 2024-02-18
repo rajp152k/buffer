@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20240218T063419.065184
+:END:
+#+title: Social Engineering
+#+filetags: :psych:society:meta:root:
+
+A Domain that explores the exploitation of some [[id:d3617afa-85ce-4ac8-bdc3-19fe587c1956][innate human tendencies]] (trust, fear, curiosity, helpfulness, etc). Arguably immoral approach, in the context of [[id:a55de908-bb7c-4727-b711-3cca55aff0fd][Rhetoric]]. But, still worth diving into to better understand [[id:20240218T064307.072009][society]]. 
+

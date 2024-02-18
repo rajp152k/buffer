@@ -18,3 +18,7 @@ I collect all the abstract Pseudos here to see if I can find meaningful patterns
 ** [[id:991a6421-13e6-4f1c-9673-449a3650a17f][Gratitude]]
 ** [[id:42564322-1093-4d29-9672-46cb4f056cc9][Morality]]
 ** [[id:eda4d14e-f7e2-418f-bcb3-d7ee222d2515][Patience]]
+** [[id:20240218T063707.851290][Trust]]
+** [[id:20240218T063718.210991][Fear]]
+** [[id:20240218T063727.994801][Curiosity]]
+** [[id:20240218T063739.306638][Helpfulness]]

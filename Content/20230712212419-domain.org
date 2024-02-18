@@ -2,7 +2,6 @@
 :ID:       20230712T212419.175018
 :END:
 #+title: Domain
+#+filetags: :meta:
 
-* 0x2118
-
-A root "subject", An extensive "topic", something that serves as an umbrella for several buffers
+A root "subject", An extensive "topic", something that serves as an umbrella for several buffers. The core of a domain is the well-established part and the bleeding edge is explored by the notion of [[id:20240218T062237.587782][Research]].

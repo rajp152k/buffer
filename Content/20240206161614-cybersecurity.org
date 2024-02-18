@@ -1,8 +1,16 @@
 :PROPERTIES:
 :ID:       6e9b50dc-c5c0-454d-ad99-e6b6968b221a
+:ROAM_ALIASES: Hacking
 :END:
 #+title: CyberSecurity
 #+filetags: :programming:root:
+
+* Abstract
+Programs are just as secure as the intent and awareness of the programmer. Consequently, an important aspect of exploring CyberSecurity as a domain is rooted in [[id:20240218T063419.065184][Social Engineering.]] 
+
+I've Aliased this node as Hacking as well but I do acknowledge the more respectful "elegant programs" sense of the word "[[id:20240218T065014.753109][hack]]" as it was originally intended to be used.
+
+Wish to keep nodes relatively colloquial rather than being correct to a fault when it comes to common interpretation of these notes.
 
 * Resources
 ** Hacking: the Art of Exploitation

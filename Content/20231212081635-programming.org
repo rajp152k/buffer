@@ -7,7 +7,11 @@
 Reference Collating Node
 
 * Abstract
- - [[id:6f9a4752-aa66-42cf-9b88-2e4fa2091511][Computer Science]]
+[[id:6f9a4752-aa66-42cf-9b88-2e4fa2091511][Computer Science]] is Physics to the Math that Programming is.
+Algorithms are represented by programs. Representing programs is domains in itself and roots from byte representations in assmembly to high level programming languages (modern stack, punch cards in the old days). Building useful [[id:20240218T061653.528745][Abstractions]] is a core tenet of a notion of a useful program. This facilitates (already enabled by low level languages) interactions with high level programming notions, their analysis and manipulation/composition for further abstractions.
+
+I'll be exploring both, high and low level, ends of this spectrum in this node cluster and will be documenting the purpose of their existence for the concerned context.
+
 * Major Forks/Flavors
  - [[id:20231212T081851.998455][Object Oriented Programming]]
  - [[id:20231212T081907.908301][Functional Programming]]

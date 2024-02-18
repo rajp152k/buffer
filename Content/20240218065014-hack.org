@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       20240218T065014.753109
+:END:
+#+title: Hack
+#+filetags: :meta:
+
+The original sense of the word doesn't imply exploitation but elegance in bending the rules of an interface. This is a disambiguation node and I've aliased [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][CyberSecurity]] as "Hacking" only so that common interpretations of a notion still return what you expect when a reader explores these nodes.
+

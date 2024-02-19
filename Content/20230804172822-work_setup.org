@@ -6,11 +6,24 @@
 
 A stream logging update in my work setup :- hardware, software and any other auxiliaries.
 
-* 0x21A6
+* Requirements
+What should a good work setup facilitate for an epistemological engineer is something that I'll be actively exploring over the coming days. Some aspects that directly come to mind are:
+** A Todo mechanism
+** A Calendar mechanism
+** Git integration for files
+
+* Stream
+** 0x21F5
+ - recently purchased a google one membership 2TB to manage backups across all devices
+ - porting all subscriptions that I pay for slowly into this one integrated workspace subscription that allows me to manage everything from a single space
+ - need to learn how to use the google appscripts engine as well to make custom applications that I'll be deploying for basic tasks like noting down a financial entry etc.
+ - gdrive cli to have a managed source directory that I can access from anywhere I wish to.
+ - will be the family admin and hosting photos in my workspace.
+ - soon looking into procuring a [[id:20240219T092424.022517][VPS]] and moving all hosting requirements on a custom solution rather than on github pages
+** 0x21A6
  - using emacs for writing + programming lisp
  - neovim for programming and remote stuff.
-* 0x212E
-
+** 0x212E
  - have shifted to using gray-scale filters for all my screens (all monitors, phone and the kindle(by default))
  - feels a little odd initially but less stuff catches my eye, when ,say.., scrolling feeds or just browsing the web.
  - makes the internet to be a much more linear experience :- have disabled images by default for eww and only activate them when some text refers to the existence of an infographic.

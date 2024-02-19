@@ -2,7 +2,7 @@
 :ID:       bc1cc0cf-5e6a-4fee-b9a5-16533730020a
 :END:
 #+title: Cloud Computing
-#+filetags: :programming:
+#+filetags: :root:cloud:programming:
 
 * Abstract
 

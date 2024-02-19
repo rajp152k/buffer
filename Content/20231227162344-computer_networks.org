@@ -15,6 +15,8 @@ The OSI Layers:
  5. Session
  6. Presentation 
  7. Application
+
+The communication between any of the two layers across two computers is said to be compliant with the respective [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Protocol]]
   
 * Practical
 ** [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]]

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a3d0278d-d7b7-47d8-956d-838b79396da7
+:END:
+#+title: Distributed Compute
+#+filetags: :cs:
+
+As the scale of the problem that one wishes to solve increases, several computers need to be able to [[id:a4e712e1-a233-4173-91fa-4e145bd68769][coordinate]] to solve the problem at hand, efficiently and correctly.
+
+These "compute"rs might not even be the conventional computer that pops up in one's mind and might rather be a group of servers, database instances or several edge devices such as in [[id:3c0c2077-b24a-4f6b-b93f-f06c08f7b3e9][decentralized applications]].
+
+The uniting feature of all distributed systems is that the workload is distributed on the constituent "compute"rs.
+
+Some basic advantages of distributed compute:
+ - efficiency increases if workload is distributed
+ - fault tolerance in case of workload redundancy
+ - execution modularity helps with debugging the specific module when an error arises rather than having to examine the whole code-base
+
+A few trade-offs incurred due to the above:
+ - latency increases due to the communication overhead
+ - poor system design can affect user experience

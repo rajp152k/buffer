@@ -7,3 +7,5 @@
 In a very generic sense:
 This captures of the notion of the collection of [[id:20240114T203601.390070][Entities]] and their [[id:20240114T204304.033004][Interactions]]
 
+* Specifics
+** [[id:314236f7-81ae-48b7-b62b-dc822119180e][System Design]]

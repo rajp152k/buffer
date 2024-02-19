@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3c0c2077-b24a-4f6b-b93f-f06c08f7b3e9
+:ROAM_ALIASES: dApps
+:END:
+#+title: Decentralized Applications
+#+filetags: :cs:
+

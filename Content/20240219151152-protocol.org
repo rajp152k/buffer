@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       11d303f1-d337-4f51-b211-db435a9f2cd0
+:END:
+#+title: Protocol
+#+filetags: :meta:
+
+This is a decently overlaoded term that varies in connotations across domains.
+
+In the context of [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Networks]] for instance, these are the agreed upon standards that devices on a network communicate by (HTTP, TCP/IP, bitstreams in the physical layer)
+
+
+Regardless of the specific context, protocols provide a predictable and organized way to enable:
+
+ -  Interoperability: Different entities (devices, organizations, individuals) can interact smoothly as long as they all follow the same protocol.
+ -  Reliability: Well-defined protocols create consistency and minimize errors in communication or procedures.
+ -  Efficiency: Standardization allows for optimizations within the guidelines of a protocol.
+   

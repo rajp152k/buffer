@@ -2,5 +2,8 @@
 :ID:       6f9a4752-aa66-42cf-9b88-2e4fa2091511
 :END:
 #+title: Computer Science
-#+filetags: :tbp:cs:
+#+filetags: :cs:
+
+* Sentinels
+** [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]]
 

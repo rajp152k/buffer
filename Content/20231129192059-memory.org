@@ -4,9 +4,7 @@
 #+title: Memory
 #+filetags: :meta:
 
-* Misc
-
-As of now, I've wondered, more than a couple of times, on the origination of the notion and what fork of the same (mentioned below) do I relate to more naturally: Storage is somewhat of a static
+* Abstract
 
 * Forks
 ** Memory (Mind)
@@ -20,4 +18,7 @@ As of now, I've wondered, more than a couple of times, on the origination of the
 :PROPERTIES:
 :ID:       40a85632-284f-44f5-a86d-dc287fac1587
 :END:
- - As stated above, computers have a distinct 
+ - As stated above, computers have a discrete boundary (symbolically speaking) between the notions of memory and compute.
+ - this is a philosophical exploration of the analog, a completely technical elaboration is present in [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Electronic Storage]] 
+   
+   

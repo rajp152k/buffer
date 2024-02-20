@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       18491388-2dcc-488f-8f33-00582cf0f77e
+:END:
+#+title: Electronic Storage
+#+filetags: :electronics:cs:
+
+Exploring this from the ground up - via electrons (Physics) to Logic Gates (Compute Science).
+
+Will be unstructured as I'll be visiting this node from different perspectives over time. 
+
+* Misc Technical
+
+- Some degrees of freedom in the context that enable variations in the physical realization of storage device are:-
+  1. Speed of access
+  2. The underlying Physics of storage
+  3. Persistence of the data
+    
+For instance, speaking about two distinct instances:
+ - [[id:24f37c35-4292-437b-b814-864251f1e44f][qubits]] (quantum information theory)
+ - the smoothened binary notion of day and night at the equator based on the position of the sun.
+
+
+* Sentinels
+** Cache
+:PROPERTIES:
+:ID:       c8a3e246-0f29-4909-ab48-0d34802451d5
+:END:
+ - high speed memory taking advantage of the temporal locality of reference principle -> recenlty accessed data is likely to be accessed again.
+
+ - caches are a good first step towards improving a [[id:2f67eca9-5076-4895-828f-de3655444ee2][DataBase's]] performance under multiple accesses.

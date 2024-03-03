@@ -6,9 +6,26 @@
 
 Mathematically, an image can be represented as an array of numbers
 
-
 * Popular encodings
 ** JPEG
 A lossy compression format that is pretty snappy and handy for the web
 ** PNG
 little more bells and whistles than the JPEG format that also allows for an alpha (transperency) channel, for instance.
+
+* Practical
+** Forgery Detection
+:PROPERTIES:
+:ID:       b5db63c2-c87d-4ff3-875b-014c1b4a26f9
+:END:
+*** Resources
+ - https://link.springer.com/article/10.1007/s11042-022-13797-w
+ - https://www.researchgate.net/publication/332561655_Image_forgery_detection_using_error_level_analysis_and_deep_learning
+    - https://www.kaggle.com/code/sonujha090/tempered-image-detection-pytorch
+
+
+** Dewarping
+:PROPERTIES:
+:ID:       43b7aa87-8b75-4dcf-b19b-b5e2d5b9fa2a
+:END:
+*** Resources
+ - https://github.com/gwxie/Dewarping-Document-Image-By-Displacement-Flow-Estimation

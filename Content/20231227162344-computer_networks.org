@@ -16,7 +16,9 @@ The OSI Layers:
  6. Presentation 
  7. Application
 
-The communication between any of the two layers across two computers is said to be compliant with the respective [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Protocol]]
+The communication between any of the two layers across two computers is said to be compliant with the respective [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Protocol]].
+
+Phsyical networking has its limitations in terms of the extent of simple abstractions you could employ. See [[id:714b029b-d0ac-4842-89f5-5f871d1a22c7][Software Defined Networking]] for alleviation of the same.
   
 * Practical
 ** [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]]

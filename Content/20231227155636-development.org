@@ -18,4 +18,3 @@
 * Methodologies
 ** The Twelve Factor App
  - https://12factor.net/
-* Article Cache

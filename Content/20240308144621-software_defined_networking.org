@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       714b029b-d0ac-4842-89f5-5f871d1a22c7
+:ROAM_ALIASES: SDN
+:END:
+#+title: Software Defined Networking
+#+filetags: :programming:
+
+* Resources
+ - https://www.ibm.com/topics/sdn
+

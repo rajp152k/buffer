@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       935ca1cf-4ee9-4399-ad6b-1f5a987521f6
+:END:
+#+title: Indic NLP and NLU
+#+filetags: :nlp:
+
+Explicitly collating resources that facilitate application of AI for Indic Languages, also documenting the challenges that one faces dealing with them.
+
+* Resources
+ - https://ai4bharat.iitm.ac.in/areas/
+ - https://models.ai4bharat.org/

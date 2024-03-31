@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240331T164431.280627
+:END:
+#+title: the Scientific Method
+#+filetags: :tool:
+

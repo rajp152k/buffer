@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       20240331T194014.871204
+:END:
+#+title: IKN0Xes
+#+filetags: :polymathy:
+
+* Seed
+
+- https://rajpatil.dev/i-know-not/
+- [[id:20231111T232750.075460][Polymathy]]
+
+I'm starting out with my polymathic pursuits with a novel outlook again and planning on getting a little more serious this time around.
+
+During the last revamp (https://rajpatil.dev/post/aefraisk/), I tried redefining what being a polymath would entail. This time around, I will be more encompassing and generic to really allow me to capture the true essence of the idea in a novel sense.
+
+* Incentive
+
+Documenting the evolution of my mindset through all my endeavours in a generic manner to be able to connect all that I experience to generate true insight.
+
+The documentation will be synchronized vlog and blog releases that capture the evolution of this personal domain over time. 
+
+I plan all releases being concise captures, the format of which I'll converge upon in due time.
+
+* Nomenclature
+
+ - I K<now> N<ot> 0X <hex days alive timestamp>
+   

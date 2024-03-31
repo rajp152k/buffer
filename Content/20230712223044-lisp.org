@@ -34,6 +34,8 @@ Maxwell's equations of Software (~Alan Kay in some Interview~)
 	(#t       (apply (car e) (evlis (cdr e) a) a))))
 #+end_src
 * Comment Stream
+** 0x2211
+ - getting into "On Lisp" Now
 ** 0x21F4
  - Researching deeper into lisp being a universal representation of compute.
    - the core boils down to abstract syntax trees being an intermediate for any compiled/interpreted languages
@@ -301,8 +303,8 @@ I'm still a novice and haven't built anything of consequence in lisp: I wish to 
 * Literature Queue
  - [x] Structure and Interpretation of Computer Programs
  - [x] Common Lisp: An introduction to symbolic computation -> book review
- - [ ... ] Practical Common Lisp
- - [ ] On Lisp
+ - [x] Practical Common Lisp
+ - [ ... ] On Lisp
  - [ ] Let over Lambda
  - [ ] The Art of the MetaObject Protocol
  - [ ] Professional Automated Trading : Theory and Practice

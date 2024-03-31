@@ -5,3 +5,10 @@
 #+filetags: :programming:
 
 Diving into the depths pedagogically by studying the [[https://elixir.bootlin.com/linux/latest/source][Linux Kernel]]. To be more specific when discussing concepts, I'll be linking to a particular part of the kernel [[https://elixir.bootlin.com/linux/v6.8-rc4/source/rust/kernel/init.rs#L412][with the line numbers]]. 
+
+* Plans
+ - https://www.kernel.org/doc/html/v4.10/process/howto.html
+   
+* Misc Resources
+ - Booting up: https://docs.rockylinux.org/books/admin_guide/10-boot/
+ - the linux kernel: https://www.kernel.org/

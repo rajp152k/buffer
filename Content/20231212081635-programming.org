@@ -28,4 +28,4 @@ I'll be exploring both, high and low level, ends of this spectrum in this node c
 * Stream
 ** 0x21F1
  - programming can really be boiled down into how instructions (computing) and data (memory) communicate with each other (networking) to achieve and objective.
- - thinking this serves to be a good blanket statement that helps cover the notion of programming
+ - thinking this serves to be a good blanket statement that helps cover the notion of 

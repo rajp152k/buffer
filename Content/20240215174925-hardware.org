@@ -5,3 +5,11 @@
 #+filetags: :computer:
 
 
+* Stream
+** 0x2221
+ - I'll be starting out speaking about hardware in terms of how one interacts with it via [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][Software]].
+ - later on, I might explore hardware for the sake of it.
+ - a good way to segment hardware when thinking in terms of [[id:20231212T081635.633143][programming]] is to partition it in terms of [[id:40a85632-284f-44f5-a86d-dc287fac1587][Memory (Computers)]] and [[id:a8cbf516-055a-4ef7-9afe-7a780bda52ab][Compute]].
+
+* Resources
+ - https://stroustrup.com/Software-for-infrastructure.pdf 

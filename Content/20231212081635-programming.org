@@ -26,6 +26,10 @@ I'll be exploring both, high and low level, ends of this spectrum in this node c
 ** [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]]
 ** [[id:155f01c1-68e6-43ee-95e2-7a5bb6a70368][Debugging]]
 * Stream
+** 0x2221
+ - reading the ultimate go notebook and not missing out on any of the reading assignments : have been reading a whole lot more than I've been writing when it comes to technical domains lately : plan on bridging down the gap over time.
+ - domain specific streams seem like the ideal generic dumps for my readings : like the data lakes of the whole operations.
+ - https://stroustrup.com/Software-for-infrastructure.pdf : reading about writing good software for infrastructure i.e. being efficient, reliable and doing justice to the hardware that one has.
 ** 0x21F1
  - programming can really be boiled down into how instructions (computing) and data (memory) communicate with each other (networking) to achieve and objective.
  - thinking this serves to be a good blanket statement that helps cover the notion of 

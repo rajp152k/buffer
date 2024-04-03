@@ -4,7 +4,30 @@
 #+title: IKN0Xes
 #+filetags: :polymathy:
 
-* Seed
+* Idea Cache
+** what really is creativity?
+** Crowd sourcing
+** On the shoulders of giants
+** A healthy intellectual Risk Appetite
+ - tesla believed in telepathy
+ - newton believed in alchemy
+** The Courage to be potentially wrong
+** Convergence
+ - starting when imperfect
+ - find a good fit over multiple iterations of the same thought
+** Documentation
+ - what does the process of documentation yield?
+ - link to [[id:e702ab85-cc45-480b-955b-0ef620690b52][epistemological cartography]]
+** Incentives
+ - why should one consider pursuing polymathy
+   - the competence aspect
+   - modernized intellectual aristocracy
+** Observational Questions
+ - what does being a polymath according to me look and feel like?
+ - caveats of learning multiple things at once
+   - managing multiple dunning krugers at a moment in time and synchronizing them to allow for balanced, jittered expansion
+* Init
+** Seed
 
 - https://rajpatil.dev/i-know-not/
 - [[id:20231111T232750.075460][Polymathy]]
@@ -13,7 +36,7 @@ I'm starting out with my polymathic pursuits with a novel outlook again and plan
 
 During the last revamp (https://rajpatil.dev/post/aefraisk/), I tried redefining what being a polymath would entail. This time around, I will be more encompassing and generic to really allow me to capture the true essence of the idea in a novel sense.
 
-* Incentive
+** Incentive
 
 Documenting the evolution of my mindset through all my endeavours in a generic manner to be able to connect all that I experience to generate true insight.
 
@@ -21,7 +44,19 @@ The documentation will be synchronized vlog and blog releases that capture the e
 
 I plan all releases being concise captures, the format of which I'll converge upon in due time.
 
-* Nomenclature
+** Nomenclature
 
  - I K<now> N<ot> 0X <hex days alive timestamp>
    
+* Stream
+** 0x2220
+ - the plan is to have an idea cache that I pick up prompts from to build up a portfolio of micro-essays.
+ - then I record videos that are concise and discuss the blog with a minor elaboration allowing the consumer to feel stimulated in terms of seeding their mind for extracting potential opinions on topic of concern.
+ - prioritize more generic topics before I start getting too specific
+** 0x221F
+ - pushed the initialization video and blog
+ - plan on pushing a video daily and building up a repository of correlated videos and blogs 
+ - the blogs will introduce a small concept and will be elaborated upon in the video
+ - Any Ideas that I wish to elaborate upon will go upon in the Idea cache
+ - write micro-essays daily instead of pushing out larger essays over the span of multiple days.
+ - target a stable frequency

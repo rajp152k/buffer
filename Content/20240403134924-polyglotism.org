@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       47f81c24-a0c5-45c1-bc22-52a32795a2d7
+:END:
+#+title: Polyglotism
+#+filetags: :meta:linguistics:
+
+Disclaimer : this node doesn't stick to the conventional notion of polyglotism which pertains to speaking multiple natural langauges. I explore the concept in a relatively abstract manner.
+
+Language is a fundamental notion that is integral to any abstraction that you may interact with. I don't simply mean this in the context of communicating with other human but also in the context of encoding information in a particular format for some [[id:20240114T203847.960609][agent]] to later consume this.
+
+An agent in this case might be another human, a computer or a large scale physical phenomenon. For instance, understanding the language (a domain specific one in this case but a part of the math and physics in general) of vector, scalar fields and rates of changes might help you first understand the earth's atmospheres and its characteristics followed by devising potential actions that may help you influence it (artificial rains, nuking a city, and so on).
+
+I wish to understand more such agents in all possible facets they might exhibit.
+
+Polyglotism is the ability to intellectually comprehend and communicate in multiple such domain specific and generically widened languages that may or may not be mutually exclusive in terms of their semantic coverage.
+
+A good example of complete semantic overlap would be that of comparing turing complete programming lanagues (C and Lisp, for instance). They may help you express the same notion with a different mindset and core understanding.
+
+Domain specific languages allow you to understand novel domains or existing domains with a completely different perspective (lambda calculus and stateful computation models for instance).
+
+I'm not that heavy on the natural languages aspect of polyglotism but more so on the intellectual notions that allow me to comprehend, again, phenomena in general.
+
+I've been in search of a good starter kit to have a satisfying perspective of the world and my natural inclinations led me to [[id:be1c85c9-3255-45a3-a375-b65e6ef811eb][Physics]] and [[id:20231212T083550.544536][Math]] (more specifically [[id:d08a6ebd-a173-4c7d-bda7-6911db9eccbd][Symbolic Algebra]]). 

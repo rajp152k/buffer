@@ -10,6 +10,10 @@ medium : https://rajp152k.medium.com/
 poetry : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
 
 * Comment stream
+** 0x2221
+ - today I wondered what would [[id:499831ab-17d9-44bf-8f2b-849b7026c9d9][timeless]] writing look like?
+ - an example would be the theory of evolution by darwin in 1844
+ - the question was inspired by : https://paulgraham.com/best.html
 ** 0x21F0
  - wish to dive deeper into abstract poetry for the intellectual mind.
  - epistemological poetry seems to be a very esoteric pass time - right up my alley

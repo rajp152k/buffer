@@ -137,7 +137,7 @@
              (org-html--build-meta-info info)
              (org-html--build-head info)
              (org-html--build-mathjax-config info)
-	     (add-analytics-tracker "G-4FV7P8X8H6")
+	     "<script defer src='https://us.umami.is/script.js' data-website-id='6258a166-e351-495d-ab76-a530d85f93cf'></script>"
              "</head>\n"
              "<body>\n"
              "<header>\n"
@@ -153,6 +153,9 @@
              "</form>\n"
              "<form action='https://rajpatil.dev'>\n"
              "<input type='submit' value='Blog'>\n"
+             "</form>\n"
+             "<form action='https://us.umami.is/share/M9yHECVhEaGXHvAS/buffer.rajpatil.dev'>\n"
+             "<input type='submit' value='Analytics'>\n"
              "</form>\n"
              ;"<form id='search' autocomplete='on' class='search-box' action=/search.html>\n"
              ;"<label hidden for='search-input'></label>\n"

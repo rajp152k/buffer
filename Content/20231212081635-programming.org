@@ -12,6 +12,8 @@ Algorithms are represented by programs. Representing programs is domains in itse
 
 I'll be exploring both, high and low level, ends of this spectrum in this node cluster and will be documenting the purpose of their existence for the concerned context.
 
+On a more epistemologically polymathic treatment of the notion of programming, checkout [[id:47f81c24-a0c5-45c1-bc22-52a32795a2d7][Polyglotism]]
+
 * Major Forks/Flavors
  - [[id:20231212T081851.998455][Object Oriented Programming]]
  - [[id:20231212T081907.908301][Functional Programming]]
@@ -30,6 +32,7 @@ I'll be exploring both, high and low level, ends of this spectrum in this node c
  - reading the ultimate go notebook and not missing out on any of the reading assignments : have been reading a whole lot more than I've been writing when it comes to technical domains lately : plan on bridging down the gap over time.
  - domain specific streams seem like the ideal generic dumps for my readings : like the data lakes of the whole operations.
  - https://stroustrup.com/Software-for-infrastructure.pdf : reading about writing good software for infrastructure i.e. being efficient, reliable and doing justice to the hardware that one has.
+ - the way types are handled indicates the nature of a programming langauge
 ** 0x21F1
  - programming can really be boiled down into how instructions (computing) and data (memory) communicate with each other (networking) to achieve and objective.
  - thinking this serves to be a good blanket statement that helps cover the notion of 

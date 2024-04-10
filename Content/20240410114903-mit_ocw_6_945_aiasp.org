@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       779f65e6-4b5f-4601-89dd-0032a0b0158d
+:END:
+#+title: MIT-OCW-6.945-AIASP
+#+filetags: :programming:lisp:course:
+
+

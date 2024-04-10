@@ -10,6 +10,11 @@ medium : https://rajp152k.medium.com/
 poetry : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
 
 * Comment stream
+** 0x2223
+ - blogged about my 0x2222th day yesterday
+ - the writing style was quite casual and turned out to be refreshingly unique
+ - could pump out geniune content without much thought within minutes
+ - a little more deliberate practice and I should be able to find my true writing flow and generic style
 ** 0x2221
  - today I wondered what would [[id:499831ab-17d9-44bf-8f2b-849b7026c9d9][timeless]] writing look like?
  - an example would be the theory of evolution by darwin in 1844

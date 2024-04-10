@@ -32,6 +32,11 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - log of all videos along with plans and indices into drafts
 ** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x2223
+ - will soon dive deeply into the notion of negative rewards
+   - not from the perspective of reinforcement learning but from that of psychology
+ - I feel like I could dissect what makes a good poem in general
+ - should help with my prose and my push towards being a more elegant essayist
 ** 0x221F
  - settled down into a stable and productive circadian cycle.
  - exploiting the good kind of boredom for peak productivity

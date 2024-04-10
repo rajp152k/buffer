@@ -5,13 +5,20 @@
 #+filetags: :polymathy:
 
 * Idea Cache
-** what really is creativity?
+** Explanation Algorithms
+ - Generic Technical Intro
+   - smartest people get you here
+ - Personality based explanations (for intellectually limited individuals)
+   - branch out in mutually exhaustive personalities with stories, myths, analogies, imagery
+ - to really get the masses all at once in an elegant manner:
+   - try poetic imagery
+** Intellectual Projects
+** What really is creativity?
 ** Crowd sourcing
 ** On the shoulders of giants
 ** A healthy intellectual Risk Appetite
  - tesla believed in telepathy
  - newton believed in alchemy
-** The Courage to be potentially wrong
 ** Convergence
  - starting when imperfect
  - find a good fit over multiple iterations of the same thought
@@ -49,6 +56,9 @@ I plan all releases being concise captures, the format of which I'll converge up
  - I K<now> N<ot> 0X <hex days alive timestamp>
    
 * Stream
+** 0x2223
+ - I lately have been diving into technical domains with greater depth than usual : that has been carving out time from my philosophical ramblings -> having a new intellectual project to work with is turning out to be just the kind of active mental rest I was in need of. 
+ - before I blog about a cached prompt in here, I populate it's audience agnostic notes in the dump and only then collate a meaningful extraction of the same.
 ** 0x2220
  - the plan is to have an idea cache that I pick up prompts from to build up a portfolio of micro-essays.
  - then I record videos that are concise and discuss the blog with a minor elaboration allowing the consumer to feel stimulated in terms of seeding their mind for extracting potential opinions on topic of concern.

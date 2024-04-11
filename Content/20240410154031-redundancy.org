@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       262874ff-9248-485d-91ee-f7ca1dc2c31d
+:END:
+#+title: Redundancy
+#+filetags: :meta:
+

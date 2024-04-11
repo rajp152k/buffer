@@ -4,4 +4,20 @@
 #+title: MIT-OCW-6.945-AIASP
 #+filetags: :programming:lisp:course:
 
+* Adventures in Advanced Symbolic Computation
+ - https://ocw.mit.edu/courses/6-945-adventures-in-advanced-symbolic-programming-spring-2009/
 
+* Stream
+** 0x2228 
+ - getting into rigorous studying again with the course
+ - literate programming in org mode will be my primary method of documentation
+   - did SICP in a separate github repository but this buffer is version controlled on a more wholistic level
+ - following the prinicipal read for the course (Software Design for Flexibility)
+ - reading the first chapter and already anticipating all the elegant ideas that I'll get to grok over the span of this read
+ - The notion of flexibility can be viewed in terms of the freedom granted by the individual components that compose a system ...
+ - all cells of a biological organism actualize from the same genetic code and are able to specialize based on the context they are presented, without a master cell/tissue/organ/organism actively controlling their behaviours
+   - cellular intelligence is collaborative and not authorotative.
+   - the initial cell contains all the information and procedures needed for building an organism : that is a prime example of flexibility when it comes to understanding the capabilities of that seeding cell.
+ - Software on the other hand, is traditionally designed with specific functions distributed into components with a master, isolated intent driver that controls the collaboration of the programs. 
+ - checkout [[id:262874ff-9248-485d-91ee-f7ca1dc2c31d][Redundancy]] and [[id:5519c939-063b-4b25-b170-8098fc4d43c7][Degeneracy]]
+   - https://adl.io/essays/degeneracy-code-and-innovation/ is a comprehensive read

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5519c939-063b-4b25-b170-8098fc4d43c7
+:END:
+#+title: Degeneracy
+#+filetags: :biology:meta:
+
+* Resources
+
+ - https://adl.io/essays/degeneracy-code-and-innovation/
+

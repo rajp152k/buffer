@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       0eed2f96-eb6c-44df-81de-3c825bef492a
+:END:
+#+title: iterated functions
+#+filetags: :programming:math:
+
+In the context of mathematical functions, repeated application of a function on itself.
+
+#+begin_src lisp :exports both
+  (defun compose (&rest functions)
+    (lambda (argument)
+      (reduce (lambda (result fn) (funcall fn result))
+	      functions
+	      :initial-value argument)))
+
+  (defun iterate (n f)
+    (if (= n 0)
+	#'(lambda (x) x) 
+	(compose f (iterate (- n 1) f))))
+
+  (defun increment (x)
+    (+ x 1))
+
+  (funcall (iterate 10 #'increment) 0)
+	  #+end_src
+
+#+RESULTS:
+: 10
+
+
+see [[id:fcfd6748-fbbc-49db-bd14-06fdcb253ead][fixed point iteration]]

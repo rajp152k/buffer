@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       8fa8556f-5878-4dbc-82ed-a960594963e2
+:END:
+#+title: combinators
+#+filetags: :programming:
+
+In the context of [[id:e480facb-18a5-4d1a-b533-ec666f0f2183][Domain Specific Languages]], combinators help capture useful usage patterns (as a higher order function (consumes and/or yields functions) for instance) into a more powerful building block.
+
+Extending the domain specific language then becomes the question of tweaking the usage of these combinators.
+
+For getting the most out of these inclusions, consider using a uniform interface for the constituents and the combinations.
+
+This structural recursion then allows for powerful compositions and potential to express more complex abstractions.
+
+An example for the might be:
+- choose a combinator as the higher order function representing function composition
+  - given functions f(x) and g(x), their composition yields another function f(g(x)) 
+-  the domain and range of f(x) and g(x) are established to be a certain set, we can conveniently combine multiple such functions that are further composable down the lane
+
+#+begin_src lisp
+  (defun compose (&rest functions)
+    (lambda (argument)
+      (reduce (lambda (result fn) (funcall fn result))
+	      functions
+	      :initial-value argument)))
+
+  (defun square (x) (* x x))
+  (defun increment (x) (+ x 1))
+
+  (funcall (compose #'square #'increment) 1729) 
+#+end_src
+
+#+RESULTS:
+: 2989442
+
+Another higher order combinator would be the [[id:0eed2f96-eb6c-44df-81de-3c825bef492a][iterative function applier]]
+
+
+* Some Primitive Combinators
+** parallel-combine
+
+collates independent executions of different functions on the same arguments
+
+#+begin_src lisp :exports both
+  (defun parallel-combine (funcs collator)
+    (lambda (argument)
+      (funcall collator
+	     (mapcar (lambda (func) (funcall func argument))
+		     funcs))))
+
+  (defun square (x) (* x x))
+  (defun increment (x) (+ x 1))
+
+  (funcall (parallel-combine (list #'increment #'square)
+			 (lambda (results)
+			   (mapcar (lambda (f)
+				     (apply f results))
+				   (list #'list #'+ #'*)))) 1729)
+#+end_src
+
+#+RESULTS:
+| (1730 2989441) | 2991171 | 5171732930 |
+
+** Spread-combine
+
+Piping the partitioned input into corresponding functions can be a powerful when abstracted away as a higher order function.
+
+One needs to know the arity of each of the constituent functions for this to be constructible.
+
+I'm using SBCL currently so corresponding function to get the arity of a function is ~sb-introspect:function-lambda-list~
+
+#+begin_src lisp :exports both
+  (sb-introspect:function-lambda-list
+   (lambda (x y z &optional a &rest args) 1729))
+#+end_src
+
+#+RESULTS:
+| X | Y | Z | &OPTIONAL | A | &REST | ARGS |
+
+
+
+
+* Caveats
+ - consider generically and intelligently handling the arities of constituent functions for the combinator to be more robustly applicable

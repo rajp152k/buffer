@@ -4,3 +4,10 @@
 #+title: fixed point iteration
 #+filetags: :math:programming:
 
+Iteration is a considerably primitive notion in programming.
+
+Fixed point iteration is defined in the context of a mathematical [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][Function]] such that repeated application results in the same result.
+
+This can be expressed as the set of points {x} for a function f such that f(x) = x.
+
+Speaking more generally, fixed point iteration arises from the concept of [[id:0eed2f96-eb6c-44df-81de-3c825bef492a][iterated functions]]

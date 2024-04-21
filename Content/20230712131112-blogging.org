@@ -10,6 +10,13 @@ medium : https://rajp152k.medium.com/
 poetry : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
 
 * Comment stream
+** 0x2232
+ - what makes a good writing pattern, template?
+ - what really intrigues readers and how to manage their attention and interest over the course of the read?
+ - different ways to capture and retain attention
+ - what does it take to really impress and inspire someone with the written word?
+ - what different kinds of audience that read my work and with what intentions?
+ - ones that are just out there to know random logs rare
 ** 0x2223
  - blogged about my 0x2222th day yesterday
  - the writing style was quite casual and turned out to be refreshingly unique

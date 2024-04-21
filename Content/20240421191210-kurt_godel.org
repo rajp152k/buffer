@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240421T191210.582176
+:END:
+#+title: Kurt Gödel
+#+filetags: :author:
+

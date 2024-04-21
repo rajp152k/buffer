@@ -32,6 +32,12 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - log of all videos along with plans and indices into drafts
 ** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x2233
+ - Actively decoupling any monetary incentives when it comes to writing for a while
+ - This is going to be a meta profession with the intention of creating valuable works
+ - I do not shun monetizing such an activity but I need to get good and be worthy of the value I claim to create before I worry about the returns.
+ - actively focusing on building value rather than fetching returns for a while.
+ - ready for a long span of writing for the sake of itself, building a repository of worthy insights.
 ** 0x2223
  - will soon dive deeply into the notion of negative rewards
    - not from the perspective of reinforcement learning but from that of psychology

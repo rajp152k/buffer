@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240421T191132.805459
+:END:
+#+title: Bertrand Russel
+#+filetags: :author:
+

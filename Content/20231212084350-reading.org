@@ -13,3 +13,7 @@ Prefer E-books, for they allow me to efficiently carry around my currently activ
 
 * Prominent Nodes
  - [[id:e8c0b214-fa70-4462-8d44-ae0282d14981][The List]]
+ - [[id:20240420T190107.545784][The Reader]]
+ - [[id:20240420T190123.489781][The Writer]]
+
+ 

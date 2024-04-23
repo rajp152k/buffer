@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       20240420T192504.510029
+:END:
+#+title: Content
+#+filetags: :meta:
+
+From a lexical perspective:
+
+[[id:20240420T190107.545784][The Reader]] consumes the content that the [[id:20240420T190123.489781][The Writer]] produces.
+
+Understanding the nuances of both and the intermediary (this node) should help me better my abilities as both.

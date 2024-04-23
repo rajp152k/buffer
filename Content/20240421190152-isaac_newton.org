@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240421T190152.504795
+:END:
+#+title: Isaac Newton
+#+filetags: :author:
+

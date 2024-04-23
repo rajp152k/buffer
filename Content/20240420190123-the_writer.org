@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240420T190123.489781
+:END:
+#+title: The Writer
+#+filetags: :archetype:meta:
+

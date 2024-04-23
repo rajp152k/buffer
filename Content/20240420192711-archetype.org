@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       20240420T192711.041969
+:END:
+#+title: Archetype
+#+filetags: :archetype:meta:
+
+Inheriting from the base type that an [[id:20240114T203847.960609][Agent]] is.
+
+Being able to take on different archetypes on demand is a valuable skill. It helps you with:
+ - comprehending a domain from multiple perspectives, managing blind spots and biases that one archetype might exhibit.
+ - multiple degrees of freedom when it comes to dealing with a particular action, that is, better structuring and understanding your own incentives.
+

@@ -80,3 +80,5 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** languages
  - https://www.perl.org/ : aka the duct tape of the internet
    
+
+** https://www.fon.hum.uva.nl/praat/

@@ -32,6 +32,11 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - log of all videos along with plans and indices into drafts
 ** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x2230
+ - I took a 5 day break from caffeine to get my sleep in (fending off a cold) and maintain good hydration levels.
+ - had my first cup today morning : it's almost as if I'm reborn
+ - will be writing more soon.
+ - maybe a cold is just the natural signal I needed to reset my caffeine tolerance twice a year.
 ** 0x2223
  - will soon dive deeply into the notion of negative rewards
    - not from the perspective of reinforcement learning but from that of psychology

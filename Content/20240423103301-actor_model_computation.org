@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       3b44673f-5e7c-4b96-8ef2-1d68f5131173
+:END:
+#+title: Actor-Model Computation
+#+filetags: :programming:
+
+* Relevant
+
+* Resources
+ - https://en.wikipedia.org/wiki/Actor_model

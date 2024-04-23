@@ -6,6 +6,9 @@
 #+filetags: :programming:
 
 * Stream
+** 0x2235
+ - The [[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]] is a domain specific flavor of OOP tuned for concurrent computation 
+ - see [[id:f10899df-3d45-4290-bc50-b75c85bfb66b][Message Passing Computation]], specifically in the context of lisp
 ** 0x21B0
  - Was reading practical common lisp some time ago and the chapter on OOP referenced to the idea of OOP being implemented in different ways in different programming languages.
  - caching directions to explore this idea with depth later on:

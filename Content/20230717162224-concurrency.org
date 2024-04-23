@@ -4,12 +4,5 @@
 #+title: Concurrency
 #+filetags: :programming:
 
-
-* Bottlenecks
-
-Depending on the task being tackled, a process's performance may be
- - IO bound
- - Compute (CPU) bound
-   
-Different solutions are employed for different sorts of bottlenecks.
-
+* Major Flavors
+ - [[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]]

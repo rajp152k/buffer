@@ -4,3 +4,13 @@
 #+title: René Descartes
 #+filetags: :author:
 
+ - https://plato.stanford.edu/entries/descartes/
+
+* Works
+** Discourse on the Method
+** The World and Treatise
+** Meditations (Descartes)
+** Comments on a certain broadsheet
+** Passions of the Soul
+** Principles of Philosophy
+** Objections and Replies

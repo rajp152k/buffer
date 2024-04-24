@@ -15,6 +15,8 @@ I'll be reading across cultures to extract generic patterns, with the overall in
 
 I'll be restricting myself to authors that talk more about eternal affairs than being limited to a specific era. Consequently, the list will be alphabetically ordered.
 
+I'll be adding in here what I've read, the individual nodes contain all that I'd like to read (of course a long term affair).
+
 * Authors
 ** [[id:20240421T190838.435845][Adi Shankaracharya]]
 ** [[id:20240421T191456.119428][Albert Einstein]]
@@ -42,8 +44,9 @@ I'll be restricting myself to authors that talk more about eternal affairs than 
 ** [[id:20240421T185420.084746][Heraclitus]]
 ** [[id:20240421T183846.119756][Immanuel Kant]]
 ** [[id:20240421T190152.504795][Isaac Newton]]
-** [[id:20240421T190246.369385][Jean-Jacques Rousseau]]
 ** [[id:20240421T183853.959887][Jean Paul Sartre]]
+  - [[id:13d58d81-bf9c-4318-a209-9de48e8db269][Existentialism is a Humanism]]
+** [[id:20240421T190246.369385][Jean-Jacques Rousseau]]
 ** [[id:20240421T190443.858304][Karl Max]]
 ** [[id:20240421T191413.950896][Karl Popper]]
 ** [[id:20240421T191210.582176][Kurt Gödel]]
@@ -56,8 +59,8 @@ I'll be restricting myself to authors that talk more about eternal affairs than 
 ** [[id:20240421T185121.994381][Nicollo Machiavelli]]
 ** [[id:20240421T185451.844492][Parmenides]]
 ** [[id:20240421T184811.624243][Patanjali]]
-** [[id:20240421T191824.563587][Paulo Freire]]
 ** [[id:20240421T191745.392461][Paul Ramsey]]
+** [[id:20240421T191824.563587][Paulo Freire]]
 ** [[id:20240421T190415.137895][Ralph Waldo Emerson]]
 ** [[id:20240421T184513.038076][Ravana(Ramayana)]]
 ** [[id:20240421T185222.955087][René Descartes]]

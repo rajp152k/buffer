@@ -2,7 +2,7 @@
 :ID:       54978664-78a5-4c2c-ae33-c4e6a14d6bb0
 :END:
 #+title: Microservices
-#+filetags: :programming:
+#+filetags: :compute:arch:
 
 * Resources
  - https://martinfowler.com/articles/microservices.html

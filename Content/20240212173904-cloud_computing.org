@@ -4,6 +4,11 @@
 #+title: Cloud Computing
 #+filetags: :root:cloud:programming:
 
+* Distilled
+Most of the services a cloud vendor provides can be segregated along the dimensions (via qualitative and quantitative elaborations) of:
+ - Compute
+ - Storage
+ - Networking
 * Abstract
 
 This is an epistemological dive into the nature of cloud computing services.
@@ -27,7 +32,14 @@ Now adding further degrees of freedom to the problem description allows for the 
 
 It would be infeasible to manufacture hardware adapted for each specific combination of the above factors. An ingenious solution to this issue is to have generically manufactured compute that is [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][virtualized]] into symbolic/logical units with pointers to them when required.
 
+* Technical Granularity of Services
+See [[id:89784e77-cdd0-460c-a5b9-cb0a18842903][Anything as a service]]
+ - Platform
+ - Infrastructure
+ - Software
+
 * Practical Sentinel Refs
  - [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]]
  - [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]] 
  - [[id:03cd8062-b3fb-4cd9-97a8-5d60f037f7b6][Open Stack]]
+   

@@ -2,5 +2,5 @@
 :ID:       af4d4e9f-3fd3-4718-ba73-e6af4f57c29c
 :END:
 #+title: Docker
-#+filetags: :tool:
+#+filetags: :compute:tool:
 

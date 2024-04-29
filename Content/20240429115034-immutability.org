@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       efba8f9b-a5df-4212-94c9-230bef916b5c
+:END:
+#+title: Immutability
+#+filetags: :trait:
+

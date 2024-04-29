@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       37961b23-d768-4a4a-bba6-0bd1199478b6
+:END:
+#+title: CRUD
+#+filetags: :programming:
+
+When talking in terms of a objects in a state, or more generically : [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]],
+the CRUD acronym represents the overarching  operations that one can perform on it. Do note that three of these are explicit mutations of the state but you do need to read a resource to be able to manipuate it.
+
+ - Create 
+ - Read
+ - Update
+ - Delete
+
+
+From a Query Language standpoint when talking about persistent data storage systems ([[id:2f67eca9-5076-4895-828f-de3655444ee2][DataBase]]s, for instance), These can be mapped to:
+ - Insert
+ - Select
+ - Update
+ - Delete
+
+* Prominence
+ - Standardization : common language to categorize interactions between code and data (side note : see - [[id:20230728T053744.817854][homoiconicity]])
+ - Essential for Data management : most applications processing and manipulating data relies on CRUD operations or variants thereof.
+ - Design Principles: the difference in requirements of the individual operations aids in strategizing during the [[id:314236f7-81ae-48b7-b62b-dc822119180e][system design]] phase.
+   - for instance a system might need to facilitate a much larger number of reads than writes : this influences the choices for internals of your system.
+
+* [[id:efba8f9b-a5df-4212-94c9-230bef916b5c][Immutability]]
+ - you don't need to actually mutate "objects" in the memory (you can't do without overwriting bits, however) to simulate CRUD.
+ - languages like [[id:03317d23-408b-4fd9-8336-d0597b7cd36c][clojure]] (another [[id:20230712T223044.319985][lisp]]), use persistent data structures and conditional memory sharing to efficiently simulate such operations while maintaining immutability.
+ - updates are actually replaces in this context
+ - Another benefit of maintaining immutability is that maintaining logs of all events help exactly reconstruct the underlying state and can replace state backups altogether. ([[id:2f67eca9-5076-4895-828f-de3655444ee2][DataBase]]s usually do both)
+ - This has interesting consequences, consider reading:
+    - https://www.researchgate.net/publication/2764908_A_Functional_Database
+    - https://www.computer-dictionary-online.org/definitions-f/functional-database
+ - manipulating state is a more computational (than the mathematical) aspect of programming.
+   - this yielding a theoretical interface between the computation and math when you'd like to simulate immutability on a computer, i.e, the [[id:b560de4b-40f0-4393-a081-a6472c006f24][Monad]]
+ - also read up on [[id:20230715T180212.260696][Mutability]] (side-effects in this context)

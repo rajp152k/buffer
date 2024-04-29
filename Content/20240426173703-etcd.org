@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3568f42c-6e48-4d10-8249-c95c080a975c
+:END:
+#+title: etcd
+#+filetags: :database:
+

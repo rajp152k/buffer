@@ -9,11 +9,29 @@ Helps tap into the reliable intellectual storage that the written word is.
 * Personal Approach
 I would consider myself to be a sporadic reader. Anytime I'm infatuated by a topic, I might speed read  a couple of articles and allocate a few bed-time books to put me to sleep. I also might just drop the book as quickly as I picked it up (or defer it).
 
-Prefer E-books, for they allow me to efficiently carry around my currently active reads and are discrete. I pull out my phone and start swiping, you don't know if I'm reading or scrolling.
+Prefer E-books, for they allow me to efficiently carry around my currently active reads and are discrete. I pull out my phone and start swiping, you don't know if I'm reading or scrolling or swiping.
 
 * Prominent Nodes
  - [[id:e8c0b214-fa70-4462-8d44-ae0282d14981][The List]]
  - [[id:20240420T190107.545784][The Reader]]
  - [[id:20240420T190123.489781][The Writer]]
 
- 
+
+* Reading Advanced Technical Texts
+:PROPERTIES:
+:ID:       920fbb25-fcb3-4045-81a2-547cbef8fc83
+:END:
+
+With Gen AI making technicalities easily available in a short time span, consider picking up distilled texts targetted towards acquiring wisdom rather than knowledge. A quicker documentation overview followed by a dense refactor of a technical text can allow you to get started with the more intricate technologies fairly quickly.
+
+The trick is asking extremely dumb questions over the duration of your read and never skipping hurdles with assumptions.
+
+Use the LLMs to fill in the gaps in your understand with iterative questions targeted towards a specific minor objective anytime you encounter an unknown abstraction.
+
+Stand your ground until you can't move on.
+
+Read one advanced book and note down your distilled comprehensions along the way.
+
+This way you'll end up grasping a large amount of technical wisdom in a very short span of time. The relative returns are just as intense as the density of your efforts.
+
+Instead of structuring your notes via subheadings. consider orienting them towards solving specific pointed questions.

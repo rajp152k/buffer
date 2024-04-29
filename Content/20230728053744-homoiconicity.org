@@ -4,8 +4,16 @@
 #+title: homoiconicity
 #+filetags: :programming:
 
-Code is Data is Code ...
+Code, is Data, is Code.
 
 Speaking on a more wholistic scale:
 [[id:20230715T173535.681936][Data structures]] and [[id:f9c89977-5a4b-4c21-b340-56b204cfb35d][Algorithms]] can be interpreted as varying representations of a similar source practicality.
 
+* [[id:b00834e3-eae6-474f-98ab-01c0533533e8][towards Macros]]
+For a more practical projection of the concept, trying to understand [[id:37961b23-d768-4a4a-bba6-0bd1199478b6][CRUD]] with homoiconicity as the seeding context: proceeding with [[id:20230712T223044.319985][Lisp]] as the base language for the disbussion.
+ - Creating would translate to constructing new data structures to represent state.
+ - Reading larger objects in the state would translate to navigating those structures by traversing the memory via the glue that the language provide ([[id:20230715T174319.700414][pointers]]/conses)
+ - Updating the state would involve manipulating the datastructures either by redirecting the pointers or rewriting the underlying bits being interpreted as data.
+ - Deletion involves marking those regions of memory to be free for use by other processes.
+
+This is the usual interpretation for most langauges. However, when talking about homo-iconic languages such as lisp where the code is representable as data and vice versa (abstract syntax trees are "trees" and gluing/yielding objects via lambdas), the concept of mutation on data can be extended to manipulating the abstract syntax sub-tree (s-expressions are a convenient representation of this) therefore yielding code that treats code as data, inturn yielding unconstrained code that is just as free as something you'd write from scratch.

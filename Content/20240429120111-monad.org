@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b560de4b-40f0-4393-a081-a6472c006f24
+:END:
+#+title: Monad
+#+filetags: :programming:
+

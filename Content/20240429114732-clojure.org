@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       03317d23-408b-4fd9-8336-d0597b7cd36c
+:END:
+#+title: Clojure
+#+filetags: :clojure:lisp:
+

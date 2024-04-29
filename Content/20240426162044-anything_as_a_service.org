@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       89784e77-cdd0-460c-a5b9-cb0a18842903
+:ROAM_ALIASES: AAAS
+:END:
+#+title: Anything as a service
+#+filetags: :cloud:
+
+* Abstract
+When provisioning any abstraction as a service, there are four important aspects that need to be completely charted out before you proceed.
+ - Installation
+ - Configuration
+ - Operation
+ - Management
+
+Try understanding this node in the context of [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]] considering the dimensions of compute, storage and networking facilitations.
+* Instances
+** Infrastructure as a Service
+:PROPERTIES:
+:ID:       de6e9e57-6ba8-4d37-8e62-1a2c2327b275
+:END:
+ - the essentials that make up a technical environment
+ - Overarching Components
+   - [[id:a9430614-4e6e-41ff-9788-0f51c2867e74][Hardware]]:  servers, storage devices, networking equipment
+   - [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][Virtualization]]: [[id:86dff49e-3adb-4aa0-a944-6162757c5214][Hypervisor]] (Type 1, Type 2, run time environments if you feel particularly crazy some day)
+   - [[id:b3f9cd0d-d403-48ce-918d-2dd0d341c783][Network]]: Routers, switches, [[id:49fee858-eb36-4230-8eb0-881df964aec8][firewalls]], load balancers
+   - [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]] : protection against unauthorized access and avoiding data breaches/leaks
+** Platform as a Service
+:PROPERTIES:
+:ID:       25c67b28-ba91-4a39-b96c-2b9421273ac0
+:END:
+ - Abstracts away the [[id:a9430614-4e6e-41ff-9788-0f51c2867e74][hardware]], [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][software]] and technologies that provide an enviroment for building and running applications
+ - builds up on [[id:de6e9e57-6ba8-4d37-8e62-1a2c2327b275][Infrastructure as a Service]]
+ - Overarching components:
+   - [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating System]]
+   - [[id:20231212T081635.633143][Programming Langauges]] and Frameworks
+   - Data Management Layer ([[id:2f67eca9-5076-4895-828f-de3655444ee2][Databases]])
+   - Middleware ([[id:bf1a5d71-d05c-4948-bf72-7991a1ed676c][Web servers]], [[id:f10899df-3d45-4290-bc50-b75c85bfb66b][messaging systems]], etc that facilitate the exposure of internal processes)
+ - types:
+   - developement platforms : towards creating software
+   - cloud platforms : towards providing resources targeted towards other higher level motives
+   - data platforms : data collection, storage, analysis
+
+** Software as a Service
+:PROPERTIES:
+:ID:       cbcb26f4-dd24-4f59-8003-25573a7cd034
+:END:
+ - programs designed for end users towards achieving a specific task
+ - generic types:
+   - Web: served via web 
+   - Desktop: installed on local computers
+   - Mobile: ran on smartphones (accessed via a web browser is the first category)
+   - Enterprise: supports large scale business objectives (ERP (enterprise resource planning), CRM (customer relationship management), etc)
+     

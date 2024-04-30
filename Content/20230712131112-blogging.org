@@ -10,6 +10,17 @@ medium : https://rajp152k.medium.com/
 poetry : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
 
 * Comment stream
+** 0x223C
+ - had a draft about writing despite of generative AI but discarded it cause of it being stale enought that it didn't ignite any further excitement.
+ - on that note, wondering about the nature of excitement and novelty, taking it beyond the idea of pushing out an Essay.
+ - what exactly is the reward that I get from writing?
+ - I haven't exactly monetized the efforts that I put in here and these only result in documentation of my thoughts at a moment in time.
+ - why do I choose to publish is another quesion that I haven't particularly answered well.
+ - for all the personal benefits, I could have just continued writing in my personal repositories but choosing to publish makes it different.
+ - I do not completely understand my incentives for the type of content I write doesn't tangibly benefit those who read it.
+ - They mostly are apparent reinterpretations of what I observe around me.
+ - my experiences aren't that different that they haven't been experienced by better expressers than me before.
+ - I still grasp the value of writing and publishing, even though I cannot point to what exactly leads to it.
 ** 0x2232
  - what makes a good writing pattern, template?
  - what really intrigues readers and how to manage their attention and interest over the course of the read?
@@ -140,5 +151,3 @@ The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection o
   - The buffers are maintained in org-roam and published via ox-html
     - credits: https://github.com/maker2413/OrgRoamPublish
  Buffer
-** Work in Progress
-** Prompts

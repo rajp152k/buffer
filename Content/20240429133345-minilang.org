@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       8f0a113d-e3b3-4514-8d2d-8f3a4e284fa0
+:END:
+#+title: minilang
+#+filetags: :linguistics:
+
+see https://minilanguage.com/.
+
+In the context of this ideation buffer, This will act as a instantial language to help understand several meta-linguistic abstractions that span across cultures and history.
+
+start with : https://minilanguage.medium.com/learn-mini-in-20-minutes-8c4fa8093f8f

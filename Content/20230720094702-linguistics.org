@@ -5,6 +5,10 @@
 #+filetags: :linguistics:
 
 * Stream
+** 0x223B
+ - starting out regular daily linguistics dives
+ - won't be sticking to one language for now but explore several meta-linguistic abstractions at once, spanning across cultures.
+ - as a good base language for understanding the features of one, proceeding with [[id:8f0a113d-e3b3-4514-8d2d-8f3a4e284fa0][minilang]]
 ** 0x21DF
 Over the duration that I've started developing an interest to learn new languages, I've realized that they act as distilled carriers of knowledge and culture.
 
@@ -26,13 +30,13 @@ I do plan on learning several languages. I dabbled a bit in latin and sanskrit b
 These set of nodes are meant to document similarities, differences and specifics of languages that I'm interested in
 
 * Watch List
-
+ - Sanskrit
+   - vedas, upanishads, purans...
  - Latin
    - to dive into the latinate roots of english
+ - Greek
  - German
    - to dive into the germanic roots of english and communication
  - Mini
    - an interesting initiative : https://minilanguage.com/
    - could be a good toy-lang to dive into linguistics formally and not just be a dilettant.
-
-   

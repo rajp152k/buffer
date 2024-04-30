@@ -7,7 +7,6 @@
 
 * Abstract
 Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][containerization]].
-
 * Resources
 ** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
  - https://tanzu.vmware.com/content/ebooks/production-kubernetes

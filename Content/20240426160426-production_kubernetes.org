@@ -25,9 +25,14 @@ This is an advanced technical read. Testing out an approach described here in th
  - interaction that allows mutating the cluster state
  - the cluster state maintenance is done via a key-value store ([[id:3568f42c-6e48-4d10-8249-c95c080a975c][etcd]])
 *** Kubelet
- - communicates with the API server to report the status of a node and schedule the necessary workloads on it to achieve the desired state
+ - communicates with the API server to report the status of a node and schedule the necessary workloads
 *** Controller Manager
  - set of controllers packaged in a single binary
  - upon request for a desired state, this is responsible for mutation ([[id:37961b23-d768-4a4a-bba6-0bd1199478b6][CRUD]]) of the resources necessary for the acheiving the said state.
 *** Scheduler
+ - determines the optimal node (decision via filtering and scoring) where a workload should be scheduled
 *** Kube Proxy
+ - implements kubernetes services, providing virtual IPs routable to backend pods.
+ - done by a packet filtering mechanism such ~iptables~ or ~ipvs~.
+
+** Beyond Orchestration

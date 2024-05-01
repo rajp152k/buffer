@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       728c723c-57f3-4b18-beab-a906d931743d
+:END:
+#+title: Nginx
+#+filetags: :web:cs:
+
+ - [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Driven]] architecture enabling servicing thousands of concurrent requests
+
+* Resources
+ - https://www.nginx.com/resources/library/infographic-inside-nginx/
+ - https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/
+ - http://nginx.org/en/docs/beginners_guide.html

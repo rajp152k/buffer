@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       083ee4ac-c213-47d8-a2d9-4c56bf3cf9ea
+:END:
+#+title: Paxos Consensus
+#+filetags: :cs:
+

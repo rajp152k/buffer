@@ -4,3 +4,14 @@
 #+title: etcd
 #+filetags: :database:
 
+Distributed, Highly Available Key Value Store, used by [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]] to manage state.
+
+Auxiliary features worth noting:
+ - ability to subscribe to changes on a key/key prefixes
+ - see the [[id:327ebe76-4fd6-47d4-b053-94e380937c6d][Raft Consensus]] algorithm
+ - strong consistency ([[https://jepsen.io/consistency/models/strict-serializable][strict serializability]])
+* Alternatives
+ - [[https://zookeeper.apache.org/][Apache Zookeeper]]
+ - [[https://www.consul.io/][Hashicorp Consul]]
+* Resources
+ - https://learnk8s.io/etcd-kubernetes

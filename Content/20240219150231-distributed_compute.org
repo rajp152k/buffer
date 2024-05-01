@@ -18,3 +18,5 @@ Some basic advantages of distributed compute:
 A few trade-offs incurred due to the above:
  - latency increases due to the communication overhead
  - poor system design can affect user experience
+
+Theoretical exploration of correctness in distributed compute is actively explored in the [[id:3c7ce266-295a-4f70-a293-aa91725fc23f][Concencus]] node

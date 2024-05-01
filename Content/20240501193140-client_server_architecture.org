@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       e944d11b-ba53-4dc1-aee9-3793f59be8ac
+:END:
+#+title: Client-Server Architecture
+#+filetags: :web:
+
+* Abstract
+ - Distributes the operation of an application in terms of the providers of the service i.e. [[id:bf1a5d71-d05c-4948-bf72-7991a1ed676c][Server]] (mostly a server farm) and the requesters of a service i.e. the clients (usually larger than the number of servers)
+ - the transfer of requests and responses is done over a [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Network]] 
+ - Given the generic nature of the model described above, this gives rise to several abstractions needed to facilitate coms depending on several factors (scale, security, fault tolerance being some initial ones that come to mind)
+* Relevant Abstractions and notes
+ - [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]
+ - [[id:7bff6f16-de9c-4c0d-a9a1-b27e3da6725f][Reverse Proxy]]
+ - [[https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/][Reverse Proxy Vs Load Balancer]]
+* Resources
+ - https://en.wikipedia.org/wiki/Client%E2%80%93server_model

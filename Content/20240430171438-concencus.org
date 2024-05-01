@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       3c7ce266-295a-4f70-a293-aa91725fc23f
+:END:
+#+title: Concencus
+#+filetags: :cs:
+
+* Notable Algorithms
+ - https://raft.github.io/raft.pdf
+
+* Resources
+ - https://en.wikipedia.org/wiki/Consensus_(computer_science)

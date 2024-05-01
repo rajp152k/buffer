@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       0d7c2dea-a250-4380-b826-ad4d2547d8d6
+:END:
+#+title: Load Balancing
+#+filetags: :web:
+
+* Abstract
+ - Revolves around the idea of balancing requests over a pool of resources to avoid the over-"load"ing of any single point of service.
+ - Is placed between the client and a group of servers (server farm)
+ - also see [[id:7bff6f16-de9c-4c0d-a9a1-b27e3da6725f][Reverse Proxy]] and how load balancing compares in the context of [[id:e944d11b-ba53-4dc1-aee9-3793f59be8ac][client-server architecture]]
+ - A core component that defines a load balancer's behaviour is the way it balances traffics, i.e. the underlying [[id:7f960631-c727-41b8-80c2-3ccaa4ae4ba2][scheduling algorithm]]
+   - it can either be static (uses a predefined strategy) or dynamic (routes traffic based on the current state of the load balancer)
+* Benefits
+** Availibility 
+ - Regular health checks
+ - automatic disaster recovery
+ - phased upgrade strategies without downtime
+** Scalability
+ - avoids over"load"ing a single server
+ - traffic prediction capabilities for auto-scaling
+ - redundancy allows scaling confidently
+** Security
+ - monitor traffic and block malicious content : see [[id:49fee858-eb36-4230-8eb0-881df964aec8][Web Application Firewall]]s for an elaboration
+ - redirect attack traffic to multiple backend servers to minimize impact
+** Performance
+ - evenly distributed loads help improve response times
+ - can redirect requests to geographically closer servers
+ - ensure the reliability of physical and virtual computing resources 
+* OverArching Types
+** Application Load Balancing
+ - application level commuincation protocols influence routing decisions
+** Network Load Balancing
+ - Layer 4 traffic is examined (TCP/UDP) to influence routing decisions
+** Global Server Load Balancing
+ - Done across geographically distributed servers
+ - traffic redirected to a geographically closer server
+** DNS Load Balancing
+ - traffic can be distribued across multiple servers (IP addresses, to be specific) for higher availibility and performance
+* Resources
+ - https://aws.amazon.com/what-is/load-balancing/
+ - https://www.cloudflare.com/learning/performance/what-is-dns-load-balancing/

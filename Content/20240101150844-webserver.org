@@ -10,7 +10,7 @@ A client may not directly interact with a serving endpoint (which usually is a g
 
 A lot of cloud [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]] services arise from this basic interface between a server and the internet (usually achieved via a  ([[id:659e7518-56e1-4a6b-b24f-4601d66fa449][Proxy Server]])):
  - [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][CyberSecurity]] ([[id:49fee858-eb36-4230-8eb0-881df964aec8][WAF]])
- - Load Balancing 
+ - [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]] 
  - Caching
  - simplification
 

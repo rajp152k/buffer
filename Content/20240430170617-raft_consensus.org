@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       327ebe76-4fd6-47d4-b053-94e380937c6d
+:END:
+#+title: Raft Consensus
+#+filetags: :cs:
+
+Was devised with understandability in mind compared to the pre-existing [[id:083ee4ac-c213-47d8-a2d9-4c56bf3cf9ea][Paxos Consensus]] protocol.
+
+* Resources
+ - https://raft.github.io/raft.pdf

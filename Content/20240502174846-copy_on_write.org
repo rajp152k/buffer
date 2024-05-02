@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       61ba02ce-df71-40c8-ac61-0762c4130345
+:END:
+#+title: copy-on-write
+#+filetags: :strat:cs:
+
+* Abstract
+ - create a copy of the resource only when you need to write it back on the file system
+
+ - used in [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating System]]s, and also in the context of final read/write layers in [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]].
+
+* QCow
+ - https://en.wikipedia.org/wiki/Qcow
+ - https://www.linux-kvm.org/page/Qcow2
+ - https://docs.digitalocean.com/glossary/qcow2/
+ - https://wiki.qemu.org/Features/Qcow3
+* Resources
+ - https://en.wikipedia.org/wiki/Copy-on-write

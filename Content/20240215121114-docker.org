@@ -2,5 +2,21 @@
 :ID:       af4d4e9f-3fd3-4718-ba73-e6af4f57c29c
 :END:
 #+title: Docker
-#+filetags: :compute:tool:
+#+filetags: :compute:
 
+* Misc 
+ - to avoid uneccessary duplication, docker employs the [[id:61ba02ce-df71-40c8-ac61-0762c4130345][copy-on-write]]
+ - diff between docker build, import, commit
+   - build : build layer by layer via the dockerfile
+   - import : squash the container (image + r/w layer) into one image layer
+   - commit : commit the current r/w layer of an image into a new layer on the previous ones
+ - checkout multi-architecture images: https://docs.docker.com/build/building/multi-platform/
+ - towards efficient docker files: https://container.training/intro-selfpaced.yml.html#275
+ - inspecting docker containers: https://container.training/intro-selfpaced.yml.html#321
+ - container networking basics: https://container.training/intro-selfpaced.yml.html#338
+   
+
+* Resources
+ - https://container.training/intro-selfpaced.yml.html
+
+   

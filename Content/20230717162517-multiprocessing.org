@@ -14,3 +14,8 @@ Depending on the task being tackled, a process's performance may be
  - Compute (CPU) bound
    
 Different solutions are employed for different sorts of bottlenecks.
+
+* Unix
+ - in the context of Unix based operating systems, we need two system calls to create and execute a process:
+   - fork() to create a new child process
+   - execve() to replace the current memory space with a program to be run

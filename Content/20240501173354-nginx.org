@@ -6,7 +6,6 @@
 
 * Abstract
 [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Driven]] architecture enabling servicing thousands of concurrent requests
-
 * Basics
 ** Design
  - Has one master and several worker processes (recommended as the number of CPU cores available).

@@ -4,5 +4,6 @@
 #+title: filesystem
 #+filetags: :programming:
 
+* Misc Concepts
 * Resources
  - https://en.wikipedia.org/wiki/File_system

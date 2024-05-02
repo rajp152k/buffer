@@ -4,3 +4,7 @@
 #+title: Container
 #+filetags: :arch:compute:
 
+See [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]]
+
+* Resources
+ - https://container.training/intro-selfpaced.yml.html

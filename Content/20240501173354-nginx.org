@@ -4,8 +4,37 @@
 #+title: Nginx
 #+filetags: :web:cs:
 
- - [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Driven]] architecture enabling servicing thousands of concurrent requests
+* Abstract
+[[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Driven]] architecture enabling servicing thousands of concurrent requests
 
+* Basics
+** Design
+ - Has one master and several worker processes (recommended as the number of CPU cores available).
+ - the master managers the workers and is responsible for reading the configuration.
+ - the workers are what do the actual work and serve requests.
+   - the [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][event driven]] architecture along with OS native mechanisms are used for the [[id:7f960631-c727-41b8-80c2-3ccaa4ae4ba2][scheduling mechanisms]].
+** Configuration
+ - the configuration file defines the state of nginx
+   - /usr/local/nginx/conf/nginx.conf
+   - /etc/nginx/nginx.conf
+   - /usr/local/etc/nginx/nginx.conf
+ - the config application is composed of:
+   - syntax validation
+   - accept master specific configs
+   - create new workers and notify older workers
+     - older workers stop accepting new requests and serve the ones that are active before a graceful death
+** Graceful shutdown
+ - graceful in here: serves old requests and stops accepting new ones before the workers exit
+ - send a quit signal to the master process
+   - ~kill -s QUIT <nginx-master-pid>~
+** State
+ - for all current relevant workers:
+   - ~ps -aux | grep nginx~ should do it
+   - individual investigation of pids as needed via the file system's internals
+** Interface
+ - coms by signalling the master process with signals:
+   - stop, quit, reload, reopen
+   - ~nginx -s stop~ , for instance
 * Resources
  - https://www.nginx.com/resources/library/infographic-inside-nginx/
  - https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/

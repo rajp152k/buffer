@@ -8,6 +8,9 @@ Diving into the depths pedagogically by studying the [[https://elixir.bootlin.co
 
 In these nodes, restricting myself to the GNU and UNIX family of operating systems.
 
+* Operating Systems
+ - [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]]
+
 * Plans
  - https://www.kernel.org/doc/html/v4.10/process/howto.html
    

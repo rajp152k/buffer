@@ -1,0 +1,91 @@
+:PROPERTIES:
+:ID:       d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9
+:END:
+#+title: Linux
+#+filetags: :cs:
+
+* Abstract
+ - this a fairly vast umbrella node that helps pedagogically cover several concepts in computer science.
+ - a structured end to end walk throught will follow some day but as of now, stitching together what I need in the moment patch by patch.
+
+* The Linux File System
+Tree like, follows the [[https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard][file system hierarchy]] standard (FHS).
+With root level as currect file (directories are file as well), run: 
+#+begin_src bash
+tree -D -L 1 /  
+#+end_src
+** /
+ - the top level of the file system
+ - The "root" 
+** /root
+ - home directory for the root users
+ - root specific configs, etc all go in here
+** /home
+ - users' specific files in respective user directories
+ - default login directories placed here
+** /boot
+ - essentials needed to boot up a system 
+ - bootloader files
+ - root filesystem files
+ - linux kernel files
+ - other boot configuration
+** /bin
+ - contains common binaries executable by all users in single-user mode
+ - check the loc of the bin you want to examine via ~which~
+** /sbin
+ - system binaries and executables reserved for the root user
+ - for instance, reboot..
+** /dev
+ - representative files of devices attached to the system
+   - consoles, hard drives, peripherals
+ - also server a storage for pseudo/virtual devices with no actual hardware associated to them
+   - /dev/null for instance is a bottomless pit for bytes streamed into it
+** /etc
+ - host specific system wide configuration files in here
+   - configs for programs, startup and shutdown shell scripts
+** /lib, /lib32, /lib64
+ - shared library images required by /bin and /sbin  
+   - arch specific 32 and 64 if needed
+** /media
+ - temporary sub directories on which removable media is automatically mounted
+ - /media/cdrom for instance
+** /mnt
+ - temporary mount point for removable media
+ - mostly used to mount storage devices and partitions manually
+** /tmp
+ - temporary files
+ - cleaned upon reboot
+** /opt
+ - third party repository installations go in here
+ - think add-ons
+ - software binaries manually compiled by the user go here
+** /var
+ - variable files go here (constantly changing in size)
+    - /var/log - Contains system and application log files.
+    - /var/cache - Contains cached data from programs.
+    - /var/mail - Contains users’ mailboxes
+    - /var/spool - Comprises queued or spooled files for various programs.
+    - /var/spool/cron - Contains spooled files for cron jobs.
+    - /var/spool/at - Contains spooled jobs for at.
+    - /var/spool/lpd - Contains spooled files for printing.
+    - /var/opt - Contains variable data files for the /opt directory.
+ - spools are short term buffers where data is cached before it can be processed (printing to the terminal for instance)
+    - ~Simultaneous Peripheral Operations On-Line~
+** /run
+ - stores volatile run time data
+ - not persistent across reboots
+** /proc
+ - virtual file system : special files for running processes and kernel's current state
+ - information and control center of the linux kernel
+ - pseudo cause doesn't exist when system powered off
+ - mounted on /proc when booting up
+** /usr
+ - libraries, binaries and documentations for installed software applications
+** /srv
+ - srv = service
+ - site specific data for that linux distro
+ - points to loc of files for specific services (www, FTP, rsync, CVS)
+** /sys
+ - pseudo file system for virtual files attached to the linux kernel
+* Resources
+ - https://www.cherryservers.com/blog/a-complete-guide-to-understanding-linux-file-system-tree

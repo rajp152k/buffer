@@ -5,3 +5,6 @@
 #+filetags: :cloud:programming:
 
 Chaos engineering is the practice of intentionally injecting faults into a system to test its resilience. The goal is to identify potential failure points and correct them before they cause an actual outage or other disruption.
+
+* Resources
+ - https://github.com/Netflix/chaosmonkey

@@ -5,9 +5,14 @@
 #+filetags: :strat:cs:
 
 * Abstract
- - create a copy of the resource only when you need to write it back on the file system
-
- - used in [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating System]]s, and also in the context of final read/write layers in [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]].
+ - create a copy of the resource only when you need to write it back on the [[id:ea72d66a-8192-4cb2-a7be-b05ee928f814][file system]]
+   - checkout BTRFS
+ - happens on the block level and not the file level
+ - some contexts of use:
+   - forking a process (fork())
+   - consistent disk snapshots
+   - efficient vm provisioning
+   - containers
 
 * QCow
  - https://en.wikipedia.org/wiki/Qcow
@@ -16,3 +21,4 @@
  - https://wiki.qemu.org/Features/Qcow3
 * Resources
  - https://en.wikipedia.org/wiki/Copy-on-write
+ - https://container.training/intro-selfpaced.yml.html#749

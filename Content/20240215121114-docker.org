@@ -4,6 +4,11 @@
 #+title: Docker
 #+filetags: :compute:
 
+* Under the hood
+
+ - TLDR : Cgroups and kernel namespaces
+ - https://container.training/intro-selfpaced.yml.html#679
+
 * Misc 
  - to avoid uneccessary duplication, docker employs the [[id:61ba02ce-df71-40c8-ac61-0762c4130345][copy-on-write]]
  - diff between docker build, import, commit
@@ -14,9 +19,23 @@
  - towards efficient docker files: https://container.training/intro-selfpaced.yml.html#275
  - inspecting docker containers: https://container.training/intro-selfpaced.yml.html#321
  - container networking basics: https://container.training/intro-selfpaced.yml.html#338
+ - docker uses a different networking strat then kubernetes:
+   - see CNM vs CNI : https://www.nuagenetworks.net/blog/container-networking-standards/
+ - container ambassadors: https://container.training/intro-selfpaced.yml.html#411
+ - docker volumes: https://container.training/intro-selfpaced.yml.html#481
+ - declarative docker : see docker compose : https://container.training/intro-selfpaced.yml.html#529
+ - managing hosts with docker machine:
+   https://container.training/intro-selfpaced.yml.html#562
+ - Docker buildkit : https://container.training/intro-selfpaced.yml.html#595
+ - application configuration: https://container.training/intro-selfpaced.yml.html#628
+ - logging: https://container.training/intro-selfpaced.yml.html#642
+ - limiting container resources: https://container.training/intro-selfpaced.yml.html#662
+ - security : https://container.training/intro-selfpaced.yml.html#741
    
-
+   
+   
 * Resources
  - https://container.training/intro-selfpaced.yml.html
-
+ - https://www.codementor.io/blog/docker-technology-5x1kilcbow
+ 
    

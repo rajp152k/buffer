@@ -87,5 +87,17 @@ tree -D -L 1 /
  - points to loc of files for specific services (www, FTP, rsync, CVS)
 ** /sys
  - pseudo file system for virtual files attached to the linux kernel
+* Init System
+ - checkout : https://container.training/intro-selfpaced.yml.html#618
+* NameSpaces
+ - provide processes with their own view of the system
+ - drop in conceptual replacement for UIDs
+ - namespaces available in modern kernels:
+ - checkout : https://container.training/intro-selfpaced.yml.html#705
+* Linux Security Modules (LSMs)
+ - checkout : https://www.starlab.io/blog/a-brief-tour-of-linux-security-modules
+ - also see : https://kubearmor.io/
+   
 * Resources
  - https://www.cherryservers.com/blog/a-complete-guide-to-understanding-linux-file-system-tree
+   

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       821aa28f-c16d-4982-bfc7-e1c9cf82c987
+:END:
+#+title: Service Meshes
+#+filetags: :cloud:cs:
+
+* Resources
+ - https://container.training/intro-selfpaced.yml.html#422
+ - http://jpetazzo.github.io/2019/05/17/containers-microservices-service-meshes/
+ - https://www.nginx.com/blog/how-to-choose-a-service-mesh/
+ - https://www.oreilly.com/ideas/do-you-need-a-service-mesh
+ - https://containerjournal.com/2018/12/12/what-is-service-mesh-and-why-do-we-need-it/
+ - https://www.datawire.io/envoyproxy/service-mesh/

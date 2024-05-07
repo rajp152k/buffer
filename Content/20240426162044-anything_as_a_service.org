@@ -24,6 +24,7 @@ Try understanding this node in the context of [[id:bc1cc0cf-5e6a-4fee-b9a5-16533
    - [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][Virtualization]]: [[id:86dff49e-3adb-4aa0-a944-6162757c5214][Hypervisor]] (Type 1, Type 2, run time environments if you feel particularly crazy some day)
    - [[id:b3f9cd0d-d403-48ce-918d-2dd0d341c783][Network]]: Routers, switches, [[id:49fee858-eb36-4230-8eb0-881df964aec8][firewalls]], load balancers
    - [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]] : protection against unauthorized access and avoiding data breaches/leaks
+ - as an evolutionary note, see immutable infrastructure : https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure
 ** Platform as a Service
 :PROPERTIES:
 :ID:       25c67b28-ba91-4a39-b96c-2b9421273ac0

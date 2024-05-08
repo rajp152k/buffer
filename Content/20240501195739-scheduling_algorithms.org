@@ -4,3 +4,24 @@
 #+title: Scheduling Algorithms
 #+filetags: :programming:cs:
 
+In computing, scheduling is the method by which threads, processes or data flows are given access to system resources. (wikipedia)
+
+The scheduler is concerned mainly with:
+
+    throughput (total amount of work done per time unit);
+    turnaround time (between submission and completion);
+    response time (between submission and start);
+    waiting time (between job readiness and execution);
+    fairness (appropriate times according to priorities).
+
+In practice, these goals often conflict.
+
+"Scheduling" = decide which resources to use.
+
+Incorporating multiple dimensions when modelling the priority functions is a difficult (and interesting) problem.
+ - in the context of computer science, over the dimensions of compute, networking and storage, the idea of "scheduling" workloads gradually evolves into the idea of [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][orchestration]]
+
+
+* Resources
+ - https://container.training/intro-selfpaced.yml.html#832
+ - https://en.wikipedia.org/wiki/Scheduling_(computing)

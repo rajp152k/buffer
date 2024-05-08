@@ -9,6 +9,7 @@
  - TLDR : Cgroups and kernel namespaces
  - https://container.training/intro-selfpaced.yml.html#679
 
+
 * Misc 
  - to avoid uneccessary duplication, docker employs the [[id:61ba02ce-df71-40c8-ac61-0762c4130345][copy-on-write]]
  - diff between docker build, import, commit
@@ -31,8 +32,8 @@
  - logging: https://container.training/intro-selfpaced.yml.html#642
  - limiting container resources: https://container.training/intro-selfpaced.yml.html#662
  - security : https://container.training/intro-selfpaced.yml.html#741
-   
-   
+ - docker engine : https://container.training/intro-selfpaced.yml.html#773
+ - quick overview of the docker ecosystem: https://container.training/intro-selfpaced.yml.html#795   
    
 * Resources
  - https://container.training/intro-selfpaced.yml.html

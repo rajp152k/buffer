@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       27a4d68c-adef-42aa-a4b4-b44b3f10395d
+:END:
+#+title: Apache Mesos
+#+filetags: :cs:
+
+* Resources
+ - https://mesos.apache.org/
+

@@ -7,9 +7,11 @@
 
 * Abstract
 Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][containerization]].
-* Resources
-** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
- - https://tanzu.vmware.com/content/ebooks/production-kubernetes
+
+ - checkout a quick intro to orchestration : https://container.training/intro-selfpaced.yml.html#813
+* Alternatives
+** Hashicorp Nomad
+ - https://www.nomadproject.io/
 * Kubernetes Glossary
 :PROPERTIES:
 :ID:       ff47bca7-aaaa-4e76-8624-3f14300b2591
@@ -18,6 +20,7 @@ Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c7
  - https://kubernetes.io/docs/concepts/workloads/pods/
  - smallest deployable unit of compute that can be created and managed in kuberenetes
  - they are ephemeral (an individual pod shouldn't be considered as reliable and durable)
+ - see the generic idea of a container superstructure: https://container.training/intro-selfpaced.yml.html#788
 ** Deployments
  - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
  - representation of a desired state for pods or ReplicaSets
@@ -37,3 +40,11 @@ Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c7
    - HAProxy
    - Kong
    - Ambassador
+* Resources
+** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
+ - https://tanzu.vmware.com/content/ebooks/production-kubernetes
+** Practical
+ - https://github.com/kubernauts/practical-kubernetes-problems
+
+** To be Processed
+ - https://arxiv.org/pdf/2401.09733

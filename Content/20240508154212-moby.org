@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       cda61bfd-86b7-481d-b3da-748322bcfcb5
+:END:
+#+title: Moby
+#+filetags: :compute:
+
+see [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]]
+
+* Resources
+ - https://github.com/moby/moby
+

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9
+:END:
+#+title: Orchestration
+#+filetags: :cs:
+
+* Generic Practicals 
+** [[id:27a4d68c-adef-42aa-a4b4-b44b3f10395d][Apache Mesos]] - 
+** [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]]
+* Resources
+ - https://en.wikipedia.org/wiki/Orchestration_(computing)
+

@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       3d7ffa96-e5c6-424d-ac58-04669b385f2d
+:END:
+#+title: ISO
+#+filetags: :meta:
+
+* Abstract
+ - I recently (today is 0x2245) witnessed an idea being prematurely (and immaturely perhaps) judged because the presenters hadn't referred to the ISO spec of Risk Managment ()
+* Standards
+** ISO-3103
+:PROPERTIES:
+:ID:       e8e15f27-b582-4f54-99f0-55bf1238324a
+:END:
+ - the standardized method of brewing tea
+ - https://en.wikipedia.org/wiki/ISO_3103
+** ISO-31000
+:PROPERTIES:
+:ID:       5e0b3653-64be-4239-81c7-9cd793effef4
+:END:
+ - [[id:dba1a2eb-1480-4a95-a51e-52c0d2f142ad][Risk]] management
+ - I've got a ravenous appetite for this so worth a read
+ - https://en.wikipedia.org/wiki/ISO_31000
+
+   

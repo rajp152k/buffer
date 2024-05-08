@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       30b39fc1-21da-48d5-aa6f-165b9503440d
+:END:
+#+title: opinions
+#+filetags: :meta:
+

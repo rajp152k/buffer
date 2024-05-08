@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       cd3ca7ad-00af-4f67-98a7-57044a652a40
+:END:
+#+title: Quality
+#+filetags: :meta:
+
+Humans are very passionate about comparing entities - ranging from the micro to the macro.
+[[id:0447c491-8276-4fab-b456-e503f701b331][Quantitative information]] makes this somewhat easier.
+
+When it comes to entities varying in incalculabe and abstract degrees of freedom, humans come together and decide to standardize parameters so that life is easier for humans all around and one can reliably get back to comparing entities.
+
+Albeit, one is always entitled to their own [[id:30b39fc1-21da-48d5-aa6f-165b9503440d][opinions]].
+
+On an interesting tangent, see [[id:3d7ffa96-e5c6-424d-ac58-04669b385f2d][ISO]]

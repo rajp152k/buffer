@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       20b64349-a793-43f1-81bd-7abcdb5174f8
+:END:
+#+title: SSH
+#+filetags: :crypto:math:tool:cs:
+
+Secure Shell Protocol
+
+ - checkout [[https://en.wikipedia.org/wiki/Mosh_(software)][MOSH]]
+

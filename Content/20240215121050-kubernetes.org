@@ -9,6 +9,14 @@
 Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][containerization]].
 
  - checkout a quick intro to orchestration : https://container.training/intro-selfpaced.yml.html#813
+ - checkout out a sligtly less quick intro to kubernetes: https://qconuk2019.container.training/#76
+* Misc QuickRefs
+ - internal dynamic dns:  https://qconuk2019.container.training/#46
+ - how the master node avoids running workloads: https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
+ - the CRI to allow multiple (compliant) container runtimes  : https://kubernetes.io/docs/concepts/architecture/cri/
+ - a good overview of the com protocols used in a typical kubernetes setup : https://qconuk2019.container.training/#104
+ - The declarative aspect of kubernetes: https://qconuk2019.container.training/#107
+ - Networking model of kubernetes: https://qconuk2019.container.training/#119
 * Alternatives
 ** Hashicorp Nomad
  - https://www.nomadproject.io/
@@ -44,7 +52,9 @@ Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c7
 ** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
  - https://tanzu.vmware.com/content/ebooks/production-kubernetes
 ** Practical
+ - https://qconuk2019.container.training
  - https://github.com/kubernauts/practical-kubernetes-problems
 
 ** To be Processed
  - https://arxiv.org/pdf/2401.09733
+ - http://kubicorn.io/

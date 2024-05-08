@@ -10,7 +10,7 @@
  - https://container.training/intro-selfpaced.yml.html#679
 
 
-* Misc 
+* Misc QuickRefs
  - to avoid uneccessary duplication, docker employs the [[id:61ba02ce-df71-40c8-ac61-0762c4130345][copy-on-write]]
  - diff between docker build, import, commit
    - build : build layer by layer via the dockerfile

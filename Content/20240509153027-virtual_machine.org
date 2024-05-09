@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9111c90b-6462-4ea4-93eb-9d6dd9b8e0ef
+:END:
+#+title: virtual machine
+#+filetags: :cs:cloud:
+

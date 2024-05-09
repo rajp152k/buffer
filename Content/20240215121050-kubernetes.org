@@ -17,6 +17,16 @@ Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c7
  - a good overview of the com protocols used in a typical kubernetes setup : https://qconuk2019.container.training/#104
  - The declarative aspect of kubernetes: https://qconuk2019.container.training/#107
  - Networking model of kubernetes: https://qconuk2019.container.training/#119
+ - container exposure : https://qconuk2019.container.training/#180
+ - basic service types : https://qconuk2019.container.training/#181
+ - security issues with ~apply~ : https://qconuk2019.container.training/#245
+ - labels and selectors : https://qconuk2019.container.training/#288
+ - stern (following multiple logs): https://qconuk2019.container.training/#340
+ - EFK centralized logging : https://qconuk2019.container.training/#346
+   - compare with ELK stack : https://logz.io/blog/fluentd-logstash/
+     - fluentd is decentralized
+ - prometheus : https://qconuk2019.container.training/#357
+ - stateful services : https://qconuk2019.container.training/#393
 * Alternatives
 ** Hashicorp Nomad
  - https://www.nomadproject.io/
@@ -48,6 +58,9 @@ Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c7
    - HAProxy
    - Kong
    - Ambassador
+** Daemon Sets
+ - per node pod runners
+ - https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
 * Resources
 ** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
  - https://tanzu.vmware.com/content/ebooks/production-kubernetes

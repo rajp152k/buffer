@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       d2dce984-a72a-4069-9fae-10b515f97a26
+:END:
+#+title: Cloud-Init
+#+filetags: :cloud:
+
+* Basics
+** What?
+ - go-to tool for automating the initial setup of [[id:9111c90b-6462-4ea4-93eb-9d6dd9b8e0ef][virtual machines]] (VMs) on [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][cloud]] instances.
+ - prevalent in [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]] distributions.
+** How?
+ - when a VM first boots up on a cloud instance, a configuration process is run (cloud-config)
+ - this doesn't run on reboots but only on the first initialization
+** Where?
+ - works with AWS, Azure, Google Cloud Platform, OpenStack, and more.
+ - also functions in private cloud setups and even for bare-metal installations.
+** Why?
+ - Automation: Saves  time and effort in manual VM configuration, especially when managing multiple instances.
+ - Consistency:  Provides a standardized way to set up your VMs across different cloud environments.
+ - Scalability: easier to launch and configure numerous VMs on demand.
+* Specifics
+** General Tasks
+Cloud-init handles common initial configuration tasks for VMs:
+ -  Setting the Hostname:  Ensuring your VM has a unique name.
+ -  [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] Configuration:  Setting up network interfaces for communication.
+ -  Installing Packages: Installing essential software and updates.
+ -  Managing Users and [[id:20b64349-a793-43f1-81bd-7abcdb5174f8][SSH]] Keys: Creating users and authorizing SSH keys for secure login.
+ -  Executing Custom Scripts: Running scripts to perform any specific setup tasks you need.
+
+** Working Mechanism
+The four stages of cloud-init in chronological order of execution:
+*** Init Local
+ - runs as early as possible in order to allow cloud-init to generate
+network configuration and activate networking.
+ -  run as soon as the root filesystem is mounted read-write.
+ - Cloud-init will go and search for any local data source objects that may allow it to obtain metadata to configure the system.
+ - If any information is received cloud-init will proceed to setup networking devices, including bridges, bonds, vlans, etc.
+*** Init
+ - runs after networking is up and searches for any network data sources to find metadata for the system.
+ - allows for custom storage configurations and expanding disk volumes to occur very early on.
+ - also make any changes requested to make to the block devices as well as setup file systems.
+ - the user-data for the system is obtained for use during the next stage.
+*** Modules Config
+ - follows immediately after the previous one to guaranteed networking and begins running the cloud-init config modules.
+   - SSH keys are imported
+   - apt or yum is configured
+   - time related services are configured
+*** Modules Final
+ - runs at the very end of the boot process.
+ - involves package install and configuration via user-scripts.
+ - Puppet and chef tools are setup and configured, and finally the final message module is run.
+* Resources
+ - https://cloud-init.io/
+ - https://github.com/canonical/cloud-init
+ - whitepaper: https://pages.ubuntu.com/rs/066-EOV-335/images/CloudInit_Whitepaper.pdf?utm_source=marketo&utm_medium=landingpage&utm_campaign=CY19_DC_Server_Whitepaper_CloudInit

@@ -2,7 +2,7 @@
 :ID:       9cac188e-8229-4c7a-9cb4-eeb5e81f8010
 :END:
 #+title: Reinforcement Learning
-#+filetags: :tbp:ai:
+#+filetags: :ml:ai:
 
 * Abstract
 
@@ -14,6 +14,9 @@ The objective of a reinforcement learning algorithm is to learn a policy functio
 
 The action is optimal if it maximizes the expected average reward.
 
+[[id:20230713T110040.814546][Deep Learning]] can fit in here for mapping an environment state to an action that needs to be taken (see [[id:df953c8b-ecd1-4610-bc31-fa6a2e160fb6][Policy Networks]]).
 
-* Projects 
-** 
+* Interesting Caveats
+** [[id:134fe7fe-cfd9-45da-8164-8f2c369bbeb3][Temporal credit assignment problem]]
+ - if the rewards follow after an uncertain amount of time, causally tracking down the definite set of actions that led to that result is needed to formulate a policy
+** [[id:8a8ef56a-8f0a-4bb0-a522-f7b081ace1c2][Exploration vs Exploitation]]

@@ -75,4 +75,5 @@ Do note that this section is about training a model from scratch, without employ
 - upgrading skills : specializing further in fast ai and pytorch
 - will populate notes in here in accordance with what I learn there
 - will also be coding along in python in org-babel cells for comprehensive pass of the book
-  
+*** [[id:4904f920-95e5-48c1-91d5-bed5829c922d][Understanding Deep Learning]]
+ - checkout: https://github.com/udlbook/udlbook

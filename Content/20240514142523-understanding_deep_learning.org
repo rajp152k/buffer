@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       4904f920-95e5-48c1-91d5-bed5829c922d
+:END:
+#+title: Understanding Deep Learning
+#+filetags: :ai:ml:book:
+
+checkout: https://github.com/udlbook/udlbook

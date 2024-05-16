@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       c87be6cb-3bd9-432f-a715-2818a1c0f4c5
+:ROAM_ALIASES: VAEs
+:END:
+#+title: Variational AutoEncoders
+#+filetags: :arch:ml:ai:
+
+
+* Relevant Nodes
+** [[id:896a291f-638e-4eb4-83e0-60c05890d5e1][Latent Variables]]

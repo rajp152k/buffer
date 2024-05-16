@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       134fe7fe-cfd9-45da-8164-8f2c369bbeb3
+:END:
+#+title: temporal credit assignment problem
+#+filetags: :ai:ml:rl:
+
+* Abstract
+Delayed and temporally non-deterministic feedback in the case of a [[id:9cac188e-8229-4c7a-9cb4-eeb5e81f8010][Reinforcement Learning]] yields this issue

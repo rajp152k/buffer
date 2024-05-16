@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       df953c8b-ecd1-4610-bc31-fa6a2e160fb6
+:END:
+#+title: Policy Networks
+#+filetags: :rl:ai:ml:
+
+See [[id:9cac188e-8229-4c7a-9cb4-eeb5e81f8010][Reinforcement Learning]]
+
+Given a current state, chosing the next favorable action, Modelled via [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]],
+yields a policy network
+

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       665e997a-5628-4481-902c-47af4ba30336
+:END:
+#+title: Logs
+#+filetags: :data:
+
+* Abstract
+Logs track how the state of an entity changes over time i.e. tracking an actor's (usually multiple actors') actions in a temporally serialized manner.
+
+With the [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][increasing volumes of data]], book keeping state with discipline can mean the difference between an untrackable source of failure and resurrecting the state for quicker recoveries after a failure

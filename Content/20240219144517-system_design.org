@@ -4,6 +4,12 @@
 #+title: System Design
 #+filetags: :cs:
 
+* Quick Links
+** Latency numbers every programmer should know
+:PROPERTIES:
+:ID:       2dca77bf-c105-407f-8afc-289716ea79d5
+:END:
+ - https://colin-scott.github.io/personal_website/research/interactive_latency.html
 * Abstract 
 
 This node cluster references all the technicalities that go into designing a system - this should as a good rounded tour of the practical aspects of computer science. 
@@ -20,7 +26,6 @@ Factors that the designer needs to consider when designing a system:
  - MTBF (Mean Time Between Failures): Average time a component works before failing.
  - MTTR (Mean Time to Repair): Average time taken to fix a failed component and restore service.
  - Availability is often expressed as a percentage, like this: Availability (%) = (MTBF / (MTBF + MTTR)) * 100
-
 ** Database Access
  - when scaling, the data read/writes need to be correspondingly handled smartly rather than directing all of the requests to the main database.
  - an intermediate module is deployed in such cases

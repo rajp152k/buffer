@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       cb8e2de4-f096-45e6-8519-069f404a69a3
+:ROAM_ALIASES: GANs
+:END:
+#+title: Generative Adversarial Networks
+#+filetags: :arch:ml:ai:
+

@@ -4,7 +4,7 @@
 #+title: Regression
 #+filetags: :ml:ai:
 
-* Pedagogical
+* Instances
 ** Linear Regression
 :PROPERTIES:
 :ID:       4459e764-2e05-4941-ba61-06b9bb2b9e08

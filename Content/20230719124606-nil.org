@@ -4,12 +4,92 @@
 :END:
 #+title: NIL
 
-* i.e. : Notes In Lisp
+* NIL SPEC
+:PROPERTIES:
+:ID:       16e776f7-9a10-4796-aebb-07feffd507e2
+:END:
+ - Sexpressions are an efficient interface between how a human dreams and computes.
+ - collating a spec in here (work in progress) to be more efficient with my notes.
+** NIL: Core
+:PROPERTIES:
+:ID:       ce3c3b07-94e7-4094-a114-218e3874752f
+:END:
+ - retaining the core of the language
+ - basic artithmetic operators do what they do
+ - algorithms can be represented as functions
+ - assertions (read mathematical equalities) will be presented by a "meq" macro
+   - single "=" is retained for the predicate function testing for equality
+#+begin_src lisp
+  (eq t '())
+#+end_src
+ - all symbol modifiers that follow will be prefixes and not suffixes for quicker graspability of what higher level directive is to be called upon
+** NIL: Abstract Operators (abscro)
+:PROPERTIES:
+:ID:       3fafe48f-cc75-4cd9-a553-22338cbeb512
+:END:
+- read these as magical macros that assume several underlying black boxes to be delegated to the mystery that the human mind is.
+- I might proceed in a functional manner in some cases and in the procedural manner in some
+- the usual language compliant macro will occur as ~defmacros~
+- but the not so usual (shouldn't be so unusual once you read some NIL) will occur as ~defabscro~
+  - referring these as abscros
+#+begin_src lisp
+    (defmacro defabscro (...)
+      "This does some questionably explicable stuff"
+      (...)) 
 
+    (defasbscro daydream (...)
+      "This yeilds a day dreaming abstraction"
+      (...))
+#+end_src
+
+** NIL: Dereferencing abstractions (abscros as black boxes)
+:PROPERTIES:
+:ID:       70c39e63-65a4-4a13-9f69-ea7396dfc727
+:END:
+ - I'll be creating quite a few symbols on the fly, skipping the axiomatics from time to time, for the time being
+ - to express a notion that isn't a usual variable and the one I want to assume an abstract initiation for
+ - I'll be preceding that symbol with "**.." -> read as dereferencing a concept.
+   - this is a generic derferencer and can apply to functions as well as symbols that refer to an abscro not defined explicitly in the context
+ - used during acts of laziness when you don't wish to defabscro something
+ #+begin_src lisp
+   (**daydream **something-not-not-worth-daydreaming-about)
+ #+end_src
+** NIL: Entities
+:PROPERTIES:
+:ID:       f8512080-2ea6-47cb-bd29-0d124afe711d
+:END:
+ - I'll be referring some entities as well that aren't just cooked up in the moment and have explicit corpora built around them that can later on be used for mathematically formulating their aspects
+ - these will be prefixed with ~~*~
+
+#+begin_src lisp
+  (*daydream ~*light-sabers)
+#+end_src
+** NIL: Categories
+- Categorizing and breaking down abstractions is an important feature of a notetaking language.
+- prefixing an categorization assertion by a ~//~:
+  - the categories follow with a ~::~ prefix individually
+#+begin_src lisp
+  (//~*boolean
+   ::~*true
+   ::~*false
+   ::~*maybe-boolean)
+#+end_src
+
+- a modifier on the same line following the leading symbol can be used for tagging the sexp and aiding comprehension
+
+#+begin_src lisp
+  (//~*boolean 'non-exhaustive
+   ::~*true
+   ::~*maybe-boolean)
+#+end_src
+
+- this can further be used to denote subsets
+
+* Stream
 ** 0x211E
-
 I started off with this notion while being lazy regarding use latex in my notes (I'll mostly work with text-files and although I can render math in them with a few chords and key-strokes, it takes me away from the process of noting being seamless and crude).
 
 Given I can directly use the built in (slime-)inferior-lisp process with Org-babel for cl/elisp, I have the expressive power to express anything that I need. This will handle math but will also allow me to express procedures in a more readable format than normal pseudocode. 
 
 I might develop a personal standard/protocol over time for uniformity and elegance. I can see myself having a representative s-expression for each node in the future that powers up what I can really do with this system. For now, I'll begin with basic math and functions while also trying to build a more "natural" representaion language in lisp. This might become a formal pursuit later on.
+

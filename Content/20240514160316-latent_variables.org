@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       896a291f-638e-4eb4-83e0-60c05890d5e1
+:END:
+#+title: Latent Variables
+#+filetags: :meta:ml:ai:
+
+Real life instances (images, audio) are a meaningful subset of all the possible mathematical constructions that their numerical representations can accomodate.
+
+This allows exploring the idea of representing complex instances via a simpler mathematical space.
+
+See [[id:01c9c298-6d43-4097-935c-7628e39b9a89][Generative Modelling]]
+

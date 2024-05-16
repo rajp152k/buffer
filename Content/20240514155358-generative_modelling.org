@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       01c9c298-6d43-4097-935c-7628e39b9a89
+:END:
+#+title: Generative Modelling
+#+filetags: :ai:ml:
+
+* Abstract
+ - Learning the underlying distribution of a dataset(domain).
+   - injecting randomness allows generating multiple instances from the same semantically close [[id:896a291f-638e-4eb4-83e0-60c05890d5e1][Latent Variable]]
+ - Using [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]] in conjuction with [[id:fded2ca7-e60a-4c83-842f-bc60f1ea5260][Unsupervised Learning]] yields stronger results.
+ - see [[id:322ac854-7baf-41e2-8895-c33b2ef08f91][Semi-Supervised Learning]] 
+
+* Relevant Nodes
+** [[id:cb8e2de4-f096-45e6-8519-069f404a69a3][GANs]]
+** [[id:c87be6cb-3bd9-432f-a715-2818a1c0f4c5][Variational AutoEncoders]]
+ - see the notion of [[id:896a291f-638e-4eb4-83e0-60c05890d5e1][Latent Variables]]
+** [[id:82668cbb-e532-4607-801a-b0248ae85b4d][AutoRegressive Models]]
+** [[id:2d09c37d-9041-4166-ac4d-fe6063f2b208][Flow Based Models]]

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5812e4df-b296-4b8b-81f7-7cbe07ce97ba
+:END:
+#+title: LuaScript
+#+filetags: :programming:
+
+ - 1-Based indexing...
+ - That irks me enough to learn Lua.

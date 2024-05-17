@@ -32,6 +32,23 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - log of all videos along with plans and indices into drafts
 ** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x224D
+ - haven't recorded a day dream in a while
+ - starting out with random thoughts in here again
+ - I turned 24 recently but totally don't feel like it.
+ - 20s are definitely confusing. 
+ - bought a foam roller and a massage gun 2 weeks ago.
+   - good: recovery delays have lowered and sleeping better
+ - 1 based indexing sounds crazy:
+   - this is the reason I'll actively try out lua
+   - I say actively cause passively do use it for configuring neovim
+ - was thinking of writing on how I study given the current scenario of knowledge and artificially intelligent tools conveniently at our disposal
+ - need to think what really matters more 
+ - actively going to think of problems worth solving
+ - also looking to attend some technical conferences soon
+   - by looking I mean listing out what and where I'd like to go
+   - missed out on the european lisp symposium (vienna) this year
+   - bummer..
 ** 0x2233
  - Actively decoupling any monetary incentives when it comes to writing for a while
  - This is going to be a meta profession with the intention of creating valuable works

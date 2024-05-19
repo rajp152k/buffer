@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       20240519T162020.534547
+:END:
+#+title: Consensus Algorithms
+#+filetags: :cs:
+
+* Purpose
+Ensure agreement among computers (nodes) in a distributed system.
+* Key Goals:
+ - Agreement: All nodes decide on the same value.
+ - Termination: Decision-making process ends.
+ - Validity: Decided value was proposed by at least one node.
+* Types
+- Leader-Based: One node leads decision-making (e.g., [[id:327ebe76-4fd6-47d4-b053-94e380937c6d][Raft]], [[id:083ee4ac-c213-47d8-a2d9-4c56bf3cf9ea][Paxos]]).
+    - Pro: Strong consistency
+    - Con: Less available if leader fails
+- [[id:20240519T200217.994784][Quorum]]-Based: Majority agreement required (e.g., Paxos variants).
+    - Pro: Good availability
+    - Con: Weaker consistency in network splits
+- Proof-of-Work/Stake: Used in blockchains for transaction validation.
+    - Pro: Secure, decentralized
+    - Con: High energy consumption (PoW), potential centralization (PoS)
+* Use Cases:
+    * [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] databases
+    * Configuration management
+    * Leader election
+    * Blockchain
+    * [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud computing]]
+* Choosing
+Depends on your system's needs for consistency, availability, [[id:20240519T162542.805560][fault tolerance]], performance, and scalability.
+
+see [[id:20240519T152842.050227][CAP]] theorem
+

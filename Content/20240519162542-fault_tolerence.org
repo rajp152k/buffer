@@ -1,0 +1,86 @@
+:PROPERTIES:
+:ID:       20240519T162542.805560
+:END:
+#+title: fault tolerence
+#+filetags: :cs:
+
+Also see [[id:45753302-58fd-4cb1-bff6-f8843aee5708][Chaos Engineering]]
+
+
+ - ability of a system to continue operating correctly even when some of its components fail.
+
+Fault tolerance is essential for critical systems where downtime or data loss can have severe consequences, such as financial systems, healthcare applications, and online services. It helps ensure that these systems remain operational and accessible even in the face of unexpected failures.
+
+* Overview
+** Purpose
+ - To prevent failures from causing complete system downtime or data loss.
+** Types of Failures
+  - [[id:a9430614-4e6e-41ff-9788-0f51c2867e74][Hardware]]: Server crashes, disk failures, power outages.
+  - [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][Software]]: Bugs, crashes, security vulnerabilities.
+  - [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]]: Lost connections, congestion, cyberattacks.
+  - niques:
+** Detecting Failures
+
+ - identifying when a component (e.g., server, network link) in a distributed system stops functioning correctly.
+   
+ - essential for triggering recovery mechanisms like failover, replication, or reconfiguration.
+
+*** Challenges
+
+ - Network delays and partitions can make it difficult to distinguish between slow responses and actual failures.
+
+ - False positives (mistakenly declaring a node as failed) and false negatives (failing to detect a real failure) can have serious consequences.
+
+*** Types of Failures
+
+ - Crash Failures: A node stops responding completely.
+ - Omission Failures: A node fails to send or receive messages.
+ - Byzantine Failures: A node behaves arbitrarily or maliciously.
+
+*** Failure Detection Mechanisms
+
+ - Heartbeating: Nodes periodically send "I'm alive" messages to a central monitor or each other. Absence of heartbeats indicates a potential failure.
+
+ - Ping/Echo: A node sends a ping message, and the other node replies with an echo. Lack of response suggests a failure.
+
+ - Gossip Protocols: Nodes exchange information about the health of other nodes, spreading failure information quickly.
+
+ - Timeout-Based Detection: If a node doesn't respond within a certain time, it's assumed to have failed.
+
+*** Failure Detector Properties
+
+ - Completeness: Every actual failure is eventually detected.
+
+ - Accuracy: No non-faulty node is incorrectly suspected of failing.
+
+ - Speed: Failures are detected quickly.
+
+*** Practical Considerations
+
+ - Trade-offs must be made between accuracy and speed.
+
+ - Timeout values and other parameters need to be adjusted based on network conditions and application requirements.
+
+ - Failure detection is often probabilistic - It provides a likelihood of failure rather than absolute certainty.
+** Strategies
+  - [[id:262874ff-9248-485d-91ee-f7ca1dc2c31d][Redundancy]]: Having multiple copies of critical components (e.g., servers, disks).
+  - Replication: Copying data to multiple locations for backup.
+  - Failover: Automatically switching to a backup component when a primary one fails.
+  - Error Detection and Correction: Identifying and fixing errors in data or software.
+  - [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]: Distributing workload to prevent overload and improve performance.
+** Benefits
+ - Increased Reliability: Reduces the risk of system failures and downtime.
+ - High Availability: Ensures critical applications and services remain accessible even with failures.
+ - Data Protection: Safeguards against data loss due to hardware or software malfunctions.
+ - Improved Performance: Can enhance performance by distributing workload and preventing bottlenecks.
+
+* Instances
+
+** RAID (Redundant Array of Independent Disks)
+ Protects against disk failures by storing data redundantly across multiple disks.
+
+** Clustering
+Groups servers to provide high availability and failover capabilities.
+
+** Distributed [[id:2f67eca9-5076-4895-828f-de3655444ee2][Databases]]
+Replicate data across multiple nodes to ensure data consistency and availability.

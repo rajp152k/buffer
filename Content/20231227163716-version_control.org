@@ -9,9 +9,8 @@ Is an extremely useful concept that arises upon the application of the notion of
 This should be the founding initializer of any coding or non-technical project that one starts out with. For the benefits of maintaining records are incomparable.
 
 * Tools
-** Git
+** [[id:20240519T201738.321557][Git]]
 ** Mercurial
-
 * Philosophies
  - resources : https://notes.burke.libbey.me/metarepo/
 ** Monorepo

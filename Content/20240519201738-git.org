@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       20240519T201738.321557
+:END:
+#+title: git
+#+filetags: :cs:
+
+
+ - distributed [[id:038e3720-0307-41d8-bcb1-e77b75a161df][version control system]] (VCS) designed to handle projects of all sizes with speed and efficiency.
+
+* Key Features
+
+ - Distributed Nature: Every developer has a complete copy of the project history on their local machine, enabling offline work and faster operations like committing and branching.
+
+ - Branching and Merging: Git excels at creating and merging branches, making it easy to experiment with new features or isolate work without affecting the main codebase.
+
+ - Staging Area: Allows you to selectively add changes to a commit, giving you granular control over what gets tracked.
+
+ - Lightweight Branching: Branches are cheap and easy to create, encouraging experimentation and parallel development.
+
+ - Data Integrity: Git uses cryptographic hashes (SHA-1) to ensure data integrity. Every commit is identified by a unique hash, making it virtually impossible to change the history without detection.
+
+* Core Concepts:
+
+ - Repository: A directory where Git stores all project files and their history.
+
+ - Commit: A snapshot of the project at a specific point in time, identified by a unique hash.
+
+ - Branch: A pointer to a commit, allowing you to create separate lines of development.
+
+ - Merge: The process of combining changes from different branches.
+
+ - Remote Repository: A copy of the repository hosted on a server (e.g., GitHub, GitLab) for collaboration.
+
+* Working Mechanism
+
+ - Blobs: Each version of a file is stored as a blob (binary large object). The content of the blob is hashed to create a unique identifier.
+
+ - Trees: Directories are represented as tree objects, which contain hashes of the blobs or trees within them.
+
+ - Commits: Each commit is a snapshot of the project at a specific point in time. It includes a tree object representing the project's directory structure at that point, along with metadata like author, message, and a reference to the parent commit(s).
+
+ - [[id:20240519T201001.324666][Merkle]] DAG: The entire history of a Git repository is a directed acyclic graph of commits, where each commit's hash is derived from its content and the hashes of its parent commits. This is similar to how Merkle trees work, where each parent node's hash is derived from its children.
+
+** Benefits of Using Merkle Trees in Git:
+
+ - Content Integrity: Since the hash of each commit depends on its content and its parents, any change in the repository's history would result in a different hash. This ensures the integrity of the repository's data.
+
+ - Efficient Comparison: Git can quickly determine if two repositories are the same by comparing their root hashes.
+
+ - Partial Checkouts: Git can efficiently retrieve specific versions of files or directories by traversing the Merkle DAG.
+
+It's worth noting that Git's implementation is not a pure Merkle tree because commits can have multiple parents (in the case of merges). However, the underlying principle of hashing and linking content for efficient verification and comparison remains the same.

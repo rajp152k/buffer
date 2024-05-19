@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       20240519T201001.324666
+:END:
+#+title: Merkle Tree
+#+filetags: :cs:
+
+
+ - used to efficiently verify and summarize large amounts of data.
+ - like a pyramid of hashes, where each level summarizes the information below it.
+
+* Working mechanism
+
+1. Data Blocks: The bottom level of the tree consists of hashes of individual data blocks (e.g., transactions, files).
+
+2. Parent Nodes: Each pair of sibling nodes (hashes) is combined and hashed to create a parent node.
+
+3. Root Hash: This process continues upwards, creating new parent nodes, until there's only one node left at the top – the Merkle root.
+
+* Key Properties
+
+ - Tamper-Proof: If even a single bit of data changes in a block, the corresponding hash will change, propagating the change up the tree to the root. This makes it easy to detect any modifications.
+
+ - Efficient Verification: You can verify if a specific data block is part of a larger dataset by only checking a small number of hashes in the Merkle tree path leading to the root, rather than the entire dataset.
+
+ - Data Integrity: The Merkle root acts as a unique fingerprint for the entire dataset. Any change to the data alters the root hash.
+
+* Uses
+
+ - [[id:20240519T201406.029955][Blockchain]]: Merkle trees are used in blockchains to summarize all transactions in a block and ensure their integrity.
+
+ - [[id:20240519T201442.376294][Peer-to-Peer Networks]]: They help verify the consistency of files shared across different peers.
+
+ - [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Systems]]: They are used to detect inconsistencies between replicas of data.
+
+* Key Benefits
+
+ - Efficient Verification: Makes verifying large datasets quick and easy.
+
+ - Data Integrity: Ensures data remains unaltered and secure.
+
+ - Tamper Detection: Quickly detects any changes or inconsistencies in the data.
+
+* Example
+
+Given a Merkle tree with four data blocks (A, B, C, D):
+
+#+begin_src 
+         Root Hash
+       /          \
+    Hash AB     Hash CD
+   /      \     /      \
+  Hash A  Hash B Hash C Hash D
+#+end_src
+
+If you want to verify that block C is in the original dataset, you only need to check Hash C, Hash CD, and the Root Hash, instead of checking all four blocks.
+
+* Resources
+ - https://en.wikipedia.org/wiki/Merkle_tree
+ 

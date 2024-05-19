@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       20240519T200217.994784
+:END:
+#+title: Quorum
+#+filetags: :cs:
+
+
+ - fundamental concept in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]], serving as a decision-making mechanism to ensure consistency and coordination among multiple nodes (servers or processes).
+ - establishes the minimum number of nodes that must participate or agree on a specific action for it to be considered valid or committed.
+ - is tunable : providing granularity when trading off between the consistency and availability, also giving the option to prioritize reads and writes 
+
+To proceed with an operation, a designated number of nodes must vote in favor of it. This helps prevent conflicts and maintains data integrity, especially in scenarios where the system is prone to [[id:20240519T162542.805560][failures]] or network partitions.
+
+* Working Mechanism
+
+1. Setting the Quorum: The quorum size is typically set to be more than half the total number of nodes in the system. For instance, in a five-node cluster, a quorum might require three nodes to agree.
+
+2. Initiating an Operation: When a node wants to perform an operation (e.g., write data), it sends a request to other nodes, seeking their votes.
+
+3. Voting and Decision: Each node evaluates the request and casts its vote. Once the quorum is reached, the operation is considered valid and is executed. If the quorum isn't met, the operation is rejected.
+
+* Benefits of Quorum (see [[id:20240519T152842.050227][CAP]])
+
+ - Consistency: ensures data consistency by preventing conflicting operations from being executed concurrently.
+
+ - Fault Tolerance: allows the system to continue functioning even if some nodes fail, as long as the quorum is maintained.
+
+ - Availability: improves availability by allowing operations to proceed even when some nodes are unavailable.
+
+* Types of Quorum
+
+ - Read Quorum: The minimum number of nodes that must respond to a read request before the data is considered valid.
+
+ - Write Quorum: The minimum number of nodes that must acknowledge a write request before it is considered committed.
+
+* in Practice
+
+widely used in various distributed systems, including:
+
+ - Distributed [[id:2f67eca9-5076-4895-828f-de3655444ee2][Databases]]: To maintain data consistency across replicas.
+ - Distributed [[id:ea72d66a-8192-4cb2-a7be-b05ee928f814][File Systems]]: To ensure file integrity and prevent conflicts.
+ - Distributed Locking: To coordinate access to shared resources.
+
+* Challenges
+
+ - Network Partitions: In scenarios where the network splits, different partitions might have their own quorums, leading to potential inconsistencies.
+
+ - Tuning Quorum Size: Setting the right quorum size is crucial. A smaller quorum favors availability, while a larger quorum prioritizes consistency.
+
+Overall, quorum is a powerful tool for managing distributed systems, but it requires careful consideration and configuration to balance consistency, availability, and fault tolerance.
+
+
+
+* Misc
+ - see [[id:20240519T201001.324666][Merkle Tree]]

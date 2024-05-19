@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       3c7ce266-295a-4f70-a293-aa91725fc23f
 :END:
-#+title: Concencus
+#+title: Consencus
 #+filetags: :cs:
 
 * Notable Algorithms

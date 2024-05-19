@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       20240519T152842.050227
+:END:
+#+title: CAP
+#+filetags: :cs:
+
+* Basics
+
+[[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] Systems: Applies to systems that run on multiple computers connected over a [[id:a4e712e1-a233-4173-91fa-4e145bd68769][network]].
+
+* The Tradeoff
+You can only guarantee two out of three properties:
+
+ - Consistency (C): Everyone sees the same data at the same time.
+
+ - Availability (A): The system is always up and running, even with some failures.
+
+ - Partition Tolerance (P): The system keeps working even if network problems split it into parts.
+
+Network Problems are unavoidable, so partition tolerance is a must.
+   
+* The Choice
+Have to choose between consistency and availability when network problems happen:
+ - CP Systems: Prioritize consistency, may become unavailable during problems.
+ - AP Systems: Prioritize availability, may show outdated data during problems.
+

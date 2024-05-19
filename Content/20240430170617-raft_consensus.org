@@ -4,7 +4,18 @@
 #+title: Raft Consensus
 #+filetags: :cs:
 
-Was devised with understandability in mind compared to the pre-existing [[id:083ee4ac-c213-47d8-a2d9-4c56bf3cf9ea][Paxos Consensus]] protocol.
+ - Was devised with understandability in mind compared to the pre-existing [[id:083ee4ac-c213-47d8-a2d9-4c56bf3cf9ea][Paxos Consensus]] protocol.
+
+ - is considered a [[id:20240519T152842.050227][CP]] system
+
+* [[id:20240519T152842.050227][CAP]] analysis
+
+ - Partition Tolerance (P): Raft is designed to handle network partitions. It can continue operating even if some servers are disconnected.
+ - Consistency (C): Raft prioritizes strong consistency. It ensures all servers agree on the same data, even during network problems. 
+ - Availability (A): Raft aims for high availability but may sacrifice it temporarily during network issues to maintain consistency. For example, if the leader is unreachable, the system might pause until a new leader is elected.
+
+Overall: Raft is considered a CP system. It emphasizes data accuracy (consistency) over being always available. This makes it a good choice for applications where data consistency is critical, even if it means occasional short periods of unavailability.
+
 
 * Resources
  - https://raft.github.io/raft.pdf

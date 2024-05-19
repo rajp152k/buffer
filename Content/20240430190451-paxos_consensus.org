@@ -4,3 +4,53 @@
 #+title: Paxos Consensus
 #+filetags: :cs:
 
+
+- family of protocols designed to achieve consensus among a group of nodes in a distributed system.
+- ensures that even if some nodes fail, the system can still agree on a single value or decision.
+
+* Overview
+
+** Roles
+
+ - Proposer: Proposes values to be agreed upon.
+ - Acceptor: Votes on proposed values.
+ - Learner: Learns the final agreed-upon value.
+
+** Phases
+
+*** 1. Prepare:
+   - A proposer selects a unique proposal number and sends a "Prepare" message to the acceptors.
+   - Acceptors respond with a promise to not accept any proposals with a lower number and any values they have already accepted.
+
+*** 2. Accept:
+   - If the proposer receives a majority of promises, it chooses a value (either its own or one from the acceptors) and sends an "Accept" message to the acceptors.
+   - Acceptors accept the proposed value if it has a higher proposal number than any they have already accepted.
+
+*** 3. Learn:
+   - Once a value is accepted by a majority of acceptors, it is considered chosen.
+   - The proposer or acceptors inform the learners of the chosen value.
+
+** Key Points:
+
+ - Multiple Proposers: Paxos can handle multiple proposers, preventing deadlock.
+
+ - Fault Tolerance: Paxos can tolerate the failure of some nodes as long as a majority of acceptors remain operational.
+
+ - Safety: Paxos guarantees that only one value will be chosen, ensuring consistency.
+
+ - Liveness: Paxos strives to make progress and eventually choose a value, but it may stall under certain conditions.
+
+* [[id:20240519T152842.050227][CAP]] analysis
+
+
+ - Partition Tolerance (P): Paxos is partition-tolerant. It can operate correctly even when the network splits into separate groups of nodes.
+
+ - Consistency (C): Paxos prioritizes strong consistency. It guarantees that all nodes agree on the same value, even during network partitions.
+
+ - Availability (A): While Paxos aims for high availability, it can be temporarily unavailable in specific failure scenarios, particularly when multiple proposers compete or during leader election. However, Paxos is designed to recover and eventually reach consensus.
+
+** Overall
+Paxos, like [[id:327ebe76-4fd6-47d4-b053-94e380937c6d][Raft]], is considered a CP system. It emphasizes strong consistency over absolute availability. This makes it well-suited for scenarios where maintaining consistent data is crucial, even if it means occasional delays or temporary unavailability.
+
+** Trade-off
+The trade-off lies in balancing safety (guaranteeing a single agreed-upon value) and liveness (making progress and eventually choosing a value). In certain failure scenarios, Paxos might prioritize safety over liveness, leading to temporary unavailability until the situation is resolved.

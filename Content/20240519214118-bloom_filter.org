@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       20240519T214118.461723
+:END:
+#+title: Bloom Filter
+#+filetags: :cs:data:
+
+
+ - a space-efficient [[id:91b6fb5d-6447-43fe-8412-2054bb79979a][probabilistic]] [[id:20230715T173535.681936][data structure]] designed to quickly determine if an element is a member of a [[id:c1a12380-9aad-4969-8b6a-cfceebfa984f][set]].
+ - a handy tool when need to check if something exists without searching the entire set of elements.
+ - valuable tool for applications that need fast membership tests and can tolerate a small chance of false positives.
+ - their space efficiency makes them particularly useful for large datasets.
+
+* Working Mechanism
+
+1. Bit Array: A Bloom filter starts with an empty bit array (a sequence of 0s) of a fixed size.
+
+2. Hash Functions: It uses multiple hash functions to map elements to positions in the bit array.
+
+3. Adding Elements: 
+   - When you add an element, it's hashed with each of the hash functions.
+   - The bits at the resulting positions in the array are set to 1.
+
+4. Checking for Membership:
+   - To check if an element is in the set, hash it with each of the hash functions.
+   - If all the resulting positions in the array contain 1s, then the element is probably in the set.
+   - If any of the positions contain 0s, then the element is definitely not in the set.
+
+* Key Properties
+
+ - Probabilistic: Bloom filters can have false positives (incorrectly saying an element is present) but never false negatives (incorrectly saying an element is absent).
+
+ - Space-Efficient: They use much less space than storing the entire set of elements, especially for large sets.
+
+ - Fast: Lookups are extremely fast, as they only involve computing hash functions and checking a few bits.
+
+* Use Cases
+
+ - [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Cache]] Filtering: Check if a requested item is in the cache before fetching it from a slower storage.
+
+ - Duplicate Detection: Quickly identify duplicate items in a stream of data.
+
+ - Spell Checkers: Check if a word is misspelled by comparing it to a dictionary represented as a Bloom filter.
+
+ - [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] Routers: Filter out known malicious IP addresses to protect against attacks.
+
+* Limitations
+
+ - False Positives: Bloom filters have a small probability of false positives, which can be controlled by adjusting their size and the number of hash functions.
+
+ - Cannot Delete: Removing elements is not directly supported because a single bit might correspond to multiple elements.
+

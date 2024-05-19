@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       20240519T213730.807988
+:END:
+#+title: SS Table
+#+filetags: :data:cs:
+
+ - SSTable, short for Sorted String Table, is a simple yet powerful data structure used in many storage systems, including NoSQL databases like Cassandra and LevelDB. It's a fundamental building block for efficient data storage and retrieval.
+
+ - versatile and efficient [[id:20230715T173535.681936][data structure]] that plays a crucial role in many storage systems, particularly those that require high performance and scalability.
+
+* Key Characteristics
+
+ - Sorted: Data within an SSTable is sorted by keys, making it easy to find specific records using binary search.
+
+ - Immutable: Once created, an SSTable cannot be modified. This immutability simplifies concurrency control and allows for efficient merging of multiple SSTables.
+
+ - Persistent: SSTables are typically stored on disk for long-term persistence.
+
+* Structure
+
+Consists of several components:
+
+ - Data Block: Contains a sequence of key-value pairs sorted by key.
+
+ - Index Block: Stores the offset of the first key in each data block, enabling quick lookup of the data block containing a specific key.
+
+ - [[id:20240519T214118.461723][Bloom Filter]]: A probabilistic data structure that helps determine whether a key might exist in the SSTable, avoiding unnecessary disk reads.
+
+* Working Mechanism
+
+1. Data Ingestion: Incoming key-value pairs are written to a memory-based data structure (e.g., Memtable in Cassandra).
+
+2. Flushing to Disk: When the Memtable reaches a certain size, it is flushed to disk as an SSTable.
+
+3. Compaction: Multiple SSTables are merged periodically to remove duplicates and deleted data, improving read performance.
+
+4. Read Operations: When a key is requested, the index block is searched to find the relevant data block, which is then read from disk. The Bloom filter is used to quickly determine if the key might be present before reading the data block.
+
+* Advantages
+
+ - Efficient Reads: Sorted structure enables fast lookups using binary search.
+
+ - Efficient Writes: Writes are sequential and batched, minimizing disk seeks.
+
+ - Space Efficiency: Compaction eliminates duplicate and deleted data.
+
+ - Scalability: Can be easily distributed across multiple nodes for large datasets.
+
+* Use Cases
+
+ - NoSQL Databases: Cassandra, LevelDB, and RocksDB heavily rely on SSTables for data storage.
+
+ - Key-Value Stores: Many key-value stores use SSTables as their underlying storage format.
+
+ - Search Engines: SSTables can be used to store inverted indexes for fast search operations.

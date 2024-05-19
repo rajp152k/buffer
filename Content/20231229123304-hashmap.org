@@ -1,7 +1,56 @@
 :PROPERTIES:
 :ID:       235113d9-983a-4782-a4e8-d027ba52d82b
 :END:
-#+title: HashMap
-#+filetags: :programming:data:
+#+title: Hashing
+#+filetags: :cs:programming:data:
 
-A [[id:20230715T173535.681936][Data Structure]] that is stores values indexable with hashed keys.
+ - Hashmap: A [[id:20230715T173535.681936][Data Structure]] that is stores values indexable with hashed keys.
+ - Hash Function: the corresponding mapping mechanism yielding values for a hashed key.
+
+* Consistent Hashing
+:PROPERTIES:
+:ID:       20240519T215504.815957
+:END:
+
+ - technique used in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]] to distribute data across multiple nodes (servers) efficiently.
+ - Unlike traditional hashing, where a change in the number of nodes can disrupt the entire data distribution, consistent hashing minimizes the impact of adding or removing nodes.
+
+ - resources :
+   - https://www.toptal.com/big-data/consistent-hashing
+   - https://en.wikipedia.org/wiki/Consistent_hashing
+
+* Working mechanism
+
+1. The Hash Ring: Imagine a circular ring (the "hash ring"). Both data items and nodes are assigned positions on this ring using a hash function.
+
+2. Data Placement: Each data item is mapped to the first node encountered clockwise on the ring from its hash position. This node is responsible for storing and serving that data item.
+
+3. Node Addition: When a new node is added, its position on the ring is determined by hashing its identifier. Only the data items that were previously mapped to the nearest clockwise node now get remapped to the new node.
+
+4. Node Removal: When a node is removed, the data items it was responsible for are remapped to the next available node in the clockwise direction.
+
+* Benefits
+
+ - Minimizes Remapping: When nodes are added or removed, only a small fraction of the data needs to be remapped, reducing disruption to the system.
+
+ - Balanced Load Distribution: Data is distributed evenly across nodes, preventing any single node from becoming a bottleneck.
+
+ - Scalability: Easily scales horizontally by adding more nodes to the ring.
+
+* Use Cases
+
+ - [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]: Used in systems like Memcached and Redis to distribute cache data across multiple servers.
+
+ - [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]: Used to distribute requests across multiple web servers or application servers.
+
+ - Distributed Hash Tables (DHTs): Used in [[id:20240519T201442.376294][peer-to-peer]] systems to locate data stored across a network of nodes.
+
+* Key Considerations
+
+ - Hash Function Choice: Choosing a good hash function is crucial for ensuring even data distribution.
+
+ - Virtual Nodes: To further improve load balancing, each physical node can be represented by multiple "virtual nodes" on the hash ring.
+
+ - Data Replication: Consistent hashing can be combined with replication strategies to ensure data availability even if nodes fail.
+
+

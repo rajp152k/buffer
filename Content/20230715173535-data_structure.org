@@ -5,6 +5,11 @@
 #+filetags: :programming:data:
 
 * Stream
+** 0x2250
+ - exploring consensus algorithms, some relevant structures
+   - [[id:20240519T201001.324666][Merkle Tree]] (also used in [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Version Control]])
+   - [[id:20240519T213730.807988][SS Table]]
+   - [[id:20240519T214118.461723][Bloom Filter]]
 ** 0x21B6
  - initializing the first dedicated population phase
    - need a stable base for all specializations 

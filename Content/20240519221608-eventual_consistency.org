@@ -1,0 +1,109 @@
+:PROPERTIES:
+:ID:       20240519T221608.054348
+:END:
+#+title: Eventual Consistency
+#+filetags: :cs:
+
+* Gossip Protocols
+:PROPERTIES:
+:ID:       20240519T222301.158791
+:END:
+
+ - also known as epidemic protocols,
+ - communication mechanisms used in distributed systems where nodes share information with each other in a decentralized manner.
+ - mimic the way gossip spreads in social networks, where individuals share news with their friends, who then share it with their friends, and so on.
+
+** Working Mechanism
+
+1. Random Peer Selection: Each node periodically selects a random subset of its peers (other nodes it's connected to) and initiates communication.
+
+2. Information Exchange: The nodes exchange information about their state, including data, updates, or events they've observed.
+
+3. Propagation: The received information is then shared with other randomly selected peers, gradually disseminating throughout the network.
+
+** Key Features
+
+ - [[id:3c0c2077-b24a-4f6b-b93f-f06c08f7b3e9][Decentralized]]: No central coordinator or leader controls the communication.
+
+ - Scalable: Works well in large-scale systems with thousands of nodes.
+
+ - Robust: Tolerant to node failures and network partitions.
+
+ - Eventual Consistency: Information eventually reaches all nodes, but there's no guarantee on how long it will take.
+
+** Types of Gossip Protocols
+
+ - Push Gossip: A node actively pushes its information to randomly selected peers.
+
+ - Pull Gossip: A node requests information from randomly selected peers.
+
+ - Push-Pull Gossip: A combination of both, where nodes both push and pull information.
+
+** Use Cases
+
+ - [[id:20240519T222806.511836][Failure Detection]]: Nodes can gossip about their health status, allowing the system to detect failures quickly.
+
+ - Data Dissemination: Used to spread data updates or events across the network.
+
+ - Peer Sampling: Nodes can discover other nodes in the network by gossiping about their neighbors.
+
+ - Aggregate Computation: Nodes can compute aggregates (e.g., average, sum) by gossiping partial results.
+
+** Advantages
+
+ - Scalability: Handles large networks with thousands of nodes efficiently.
+
+ - [[id:20240519T162542.805560][Fault Tolerance]]: Can withstand node failures and network partitions.
+
+ - Simplicity: Relatively simple to implement and understand.
+
+ - Low Overhead:  Doesn't require a central coordinator, reducing communication overhead.
+
+** Disadvantages
+
+ - Eventual Consistency: Not suitable for applications requiring strong consistency.
+   
+ - Latency: Can take some time for information to propagate to all nodes.
+
+ - Redundant Messages: Can result in redundant messages being sent due to the random nature of peer selection.
+* Hinted Handoff
+:PROPERTIES:
+:ID:       20240519T221942.851343
+:END:
+ 
+ - helps ensure that data updates eventually reach all replicas, even when some nodes are temporarily unavailable.
+
+ - is a key mechanism in [[id:20240519T221905.005300][Cassandra]] that helps to bridge the gap between [[id:20240519T152842.050227][availability and eventual consistency]]
+
+ - by temporarily storing data updates for unavailable replicas, it ensures that writes are not lost and that all replicas eventually converge to the same state.
+
+ - This makes Cassandra a robust and reliable choice for applications that prioritize availability and can tolerate eventual consistency.
+
+** How Hinted Handoff Works
+
+1. Write Request: When a write request is sent to a Cassandra node (the coordinator), it forwards the request to the replicas responsible for storing that data.
+
+2. Unavailable Replica: If one or more replicas are unavailable (e.g., due to network issues or maintenance), the coordinator cannot immediately write the data to them.
+
+3. Hint Creation: Instead of failing the write, the coordinator stores a "hint" locally. This hint contains the data that needs to be written and the address of the unavailable replica.
+
+4. Handoff: When the unavailable replica comes back online, it contacts the coordinator and requests any hints that were stored for it.
+
+5. Hint Replay: The coordinator sends the stored hints to the replica, which then applies the missed writes, eventually catching up with the rest of the cluster.
+
+** Benefits
+
+ - Increased Write Availability: Even if some replicas are down, writes can still succeed as long as a quorum of replicas is available.
+
+ - Eventual Consistency: Hinted handoff ensures that all replicas eventually receive the updates, maintaining data consistency over time.
+
+ - Reduced Client Retries: Clients don't need to constantly retry failed writes since the hints will be replayed automatically.
+
+** Key Considerations
+
+ - Hint Lifetime: Hints are not stored indefinitely. They have a configurable lifetime, after which they are discarded if the replica remains unavailable.
+
+ - Hint Storage: Hints are typically stored on disk, which can impact disk usage if a node is down for an extended period.
+
+ - Handoff Overhead: Replaying hints can add some overhead to the system, but this is usually a minor cost compared to the benefits of improved availability and consistency.
+

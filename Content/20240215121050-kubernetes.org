@@ -30,44 +30,12 @@ Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c7
 * Alternatives
 ** Hashicorp Nomad
  - https://www.nomadproject.io/
-* Kubernetes Glossary
-:PROPERTIES:
-:ID:       ff47bca7-aaaa-4e76-8624-3f14300b2591
-:END:
-** Pods
- - https://kubernetes.io/docs/concepts/workloads/pods/
- - smallest deployable unit of compute that can be created and managed in kuberenetes
- - they are ephemeral (an individual pod shouldn't be considered as reliable and durable)
- - see the generic idea of a container superstructure: https://container.training/intro-selfpaced.yml.html#788
-** Deployments
- - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
- - representation of a desired state for pods or ReplicaSets
- - The Deployment resource is only the configuration for the desired state but the deployment controller actually manages and updates the state.
-** Service
- - https://kubernetes.io/docs/concepts/services-networking/service/
- - a method for exposing a network application running on (a) pod(s) on the cluster.
- - as pods are ephemeral, a service acts a persistent end point in case they're restarted
-** Ingress
- - https://kubernetes.io/docs/concepts/services-networking/ingress/
- - mediates external access
- - API object : The ingress resource is a set of rules and configurations
- - Ingress Controller is the actual software that puts the Ingress resource (the rules and configurations) to use and configures the load balancer and directs traffic according to the rules
- - some common ingress controllers:
-   - [[id:728c723c-57f3-4b18-beab-a906d931743d][Nginx]] : https://docs.nginx.com/nginx-ingress-controller/
-   - Traefik
-   - HAProxy
-   - Kong
-   - Ambassador
-** Daemon Sets
- - per node pod runners
- - https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
 * Resources
 ** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
  - https://tanzu.vmware.com/content/ebooks/production-kubernetes
 ** Practical
  - https://qconuk2019.container.training
  - https://github.com/kubernauts/practical-kubernetes-problems
-
 ** To be Processed
  - https://arxiv.org/pdf/2401.09733
  - http://kubicorn.io/

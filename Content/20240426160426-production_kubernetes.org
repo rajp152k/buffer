@@ -9,8 +9,6 @@ With the intention of building a deep understanding of kubernetes in the wild, w
 
 This is an advanced technical read. Testing out an approach described here in the [[id:920fbb25-fcb3-4045-81a2-547cbef8fc83][reading node]].
 
-Quick definitions several top level concepts can be found in the core [[id:ff47bca7-aaaa-4e76-8624-3f14300b2591][Kubernetes Glossary]].
-
 * C1: A Path to Production
 ** Chapter Objective
  - chart out the considerations one needs when looking to deploy with kubernetes.

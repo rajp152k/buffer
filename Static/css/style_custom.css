@@ -79,7 +79,7 @@ header {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #8fffff;
+  color: #4fff00;
   font-style: italic;
   font-weight: bold;
 }
@@ -89,7 +89,7 @@ a.active {
 }
 
 a:hover {
-    color: #af0;
+    color: #fff;
 }
 a[target="_blank"]:after {
   padding-left: 3px;

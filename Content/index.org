@@ -26,12 +26,9 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 ** [[id:20231112T080937.669416][Projects]]
  - a cache for ideas that may never see the light of day again.
    - or they just might...
-** [[id:20230712T131112.909632][blog]]
- - log of all blogs that  I write down and relevant notes for future works
-** [[id:20230727T192932.286062][Youtube]]
- - log of all videos along with plans and indices into drafts
-** [[id:44ba44d8-4ea9-4656-b367-bafffafe61f6][Batman]]
 * Stream
+** 0x2250
+ - studying more, blogging more
 ** 0x224D
  - haven't recorded a day dream in a while
  - starting out with random thoughts in here again

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       20240520T101029.699685
+:END:
+#+title: Synchronization
+#+filetags: :meta:
+

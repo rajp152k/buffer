@@ -10,7 +10,7 @@
 :ID:       2dca77bf-c105-407f-8afc-289716ea79d5
 :END:
  - https://colin-scott.github.io/personal_website/research/interactive_latency.html
-* Abstract 
+* Abstract
 
 This node cluster references all the technicalities that go into designing a system - this should as a good rounded tour of the practical aspects of computer science. 
 
@@ -18,53 +18,3 @@ An important aspect of system design is to be able to handle all the users that 
 
 System design is a problem oriented and not just limited to generical theoretical design patterns.
 
-* Design Factors
-Factors that the designer needs to consider when designing a system:
-** Availability
- - on how available is the system (temporally speaking)
-*** Key Terms and Calculations
- - MTBF (Mean Time Between Failures): Average time a component works before failing.
- - MTTR (Mean Time to Repair): Average time taken to fix a failed component and restore service.
- - Availability is often expressed as a percentage, like this: Availability (%) = (MTBF / (MTBF + MTTR)) * 100
-** Database Access
- - when scaling, the data read/writes need to be correspondingly handled smartly rather than directing all of the requests to the main database.
- - an intermediate module is deployed in such cases
-** Concurrent Users
- - the capability of the system to handle multiple users at the same time
-** Manageability
- - the ability to detect failures and to recover from them
-** Reliability
- - implication that the required task will be executed consistently (and correctly) even with increased loads
- - an example would be a write on a globally distributed database network - it doesn't propogate throughout whole network at a point and data consistency can't be ensured without incurring a delay.
-** Latency
- - time to response : important factor in user experience
-
-** Cost
- - more hardware isn't always feasible and tangible resources need to be managed smartly
-
-* Performance Vs Scalability
- - Performance is about how fast or slow a system works for a single user
- - Scalability is how well the system retains that performs for multiple concurrent users.
-
-Scalability needs to be pre-emptively considered as altering a poorly designed solution to handle concurrent experiences is challenging.
- 
-Scalability applies to different aspects of a system like compute and [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] accesses for instance.
-
-* Data Access Scalability
-
-a basic webserver might be modelled like:
-
-#+begin_src mermaid :file images/basic_data_scale.png :exports results
-  graph LR
-  A[User] --> B[Application Server]
-  B --> C(Database)
-#+end_src
-
-#+RESULTS:
-[[file:images/basic_data_scale.png]]
-
-Such a system is susceptible to scale issues and quickly becomes unusable with increasing users.
-
-To explore the solution space for such and issue, looking into caches, indexes, queues, load-balancers and proxy-servers
-
-** Cache

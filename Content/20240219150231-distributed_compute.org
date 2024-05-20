@@ -19,9 +19,9 @@ A few trade-offs incurred due to the above:
  - latency increases due to the communication overhead
  - poor system design can affect user experience
 
-Theoretical exploration of correctness in distributed compute is actively explored in the [[id:3c7ce266-295a-4f70-a293-aa91725fc23f][Consencus]] node
+Theoretical exploration of correctness in distributed compute is actively explored in the [[id:3c7ce266-295a-4f70-a293-aa91725fc23f][Consensus]] node
 
-* Specifics
+* Versioning
 ** Lamport Timestamps
 :PROPERTIES:
 :ID:       20240519T185811.832145
@@ -128,6 +128,23 @@ Now, we can determine that the event at N1 happened before the updated event at 
  - Conflict Detection: Helps identify conflicting updates to replicated data.
  Versioning: Used to manage versions of data in distributed systems.
 
-* Instances worth studying
+* Distributed Databases
 ** Dynamo DB
  - https://aws.amazon.com/dynamodb/resources/
+** [[id:3568f42c-6e48-4d10-8249-c95c080a975c][etcd]]
+** [[id:20240519T221905.005300][Cassandra]]
+* Unique ID generation
+** Flickr Ticket Server
+ - https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/
+   
+** Twitter Snowflake
+:PROPERTIES:
+:ID:       20240520T101047.706923
+:END:
+ - https://en.wikipedia.org/wiki/Snowflake_ID
+* Clock [[id:20240520T101029.699685][Synchronization]]
+**  [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] Time Protocol (NTP)
+:PROPERTIES:
+:ID:       20240520T101043.435348
+:END:
+ - https://en.wikipedia.org/wiki/Network_Time_Protocol

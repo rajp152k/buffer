@@ -5,3 +5,6 @@
 #+title: Decentralized Applications
 #+filetags: :cs:
 
+All Decentralized applications are [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] (in control and compute) but distributed computation also includes applications with centralized control.
+
+See [[id:3c7ce266-295a-4f70-a293-aa91725fc23f][Consensus]] algorithms.

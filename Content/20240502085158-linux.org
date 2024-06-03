@@ -7,59 +7,60 @@
 * Abstract
  - this a fairly vast umbrella node that helps pedagogically cover several concepts in computer science.
  - a structured end to end walk throught will follow some day but as of now, stitching together what I need in the moment patch by patch.
-
-* The Linux File System
+* Misc
+** [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][Virtualization]]
+** The Linux File System
 Tree like, follows the [[https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard][file system hierarchy]] standard (FHS).
 With root level as currect file (directories are file as well), run: 
 #+begin_src bash
 tree -D -L 1 /  
 #+end_src
-** /
+*** /
  - the top level of the file system
  - The "root" 
-** /root
+*** /root
  - home directory for the root users
  - root specific configs, etc all go in here
-** /home
+*** /home
  - users' specific files in respective user directories
  - default login directories placed here
-** /boot
+*** /boot
  - essentials needed to boot up a system 
  - bootloader files
  - root filesystem files
  - linux kernel files
  - other boot configuration
-** /bin
+*** /bin
  - contains common binaries executable by all users in single-user mode
  - check the loc of the bin you want to examine via ~which~
-** /sbin
+*** /sbin
  - system binaries and executables reserved for the root user
  - for instance, reboot..
-** /dev
+*** /dev
  - representative files of devices attached to the system
    - consoles, hard drives, peripherals
  - also server a storage for pseudo/virtual devices with no actual hardware associated to them
    - /dev/null for instance is a bottomless pit for bytes streamed into it
-** /etc
+*** /etc
  - host specific system wide configuration files in here
    - configs for programs, startup and shutdown shell scripts
-** /lib, /lib32, /lib64
+*** /lib, /lib32, /lib64
  - shared library images required by /bin and /sbin  
    - arch specific 32 and 64 if needed
-** /media
+*** /media
  - temporary sub directories on which removable media is automatically mounted
  - /media/cdrom for instance
-** /mnt
+*** /mnt
  - temporary mount point for removable media
  - mostly used to mount storage devices and partitions manually
-** /tmp
+*** /tmp
  - temporary files
  - cleaned upon reboot
-** /opt
+*** /opt
  - third party repository installations go in here
  - think add-ons
  - software binaries manually compiled by the user go here
-** /var
+*** /var
  - variable files go here (constantly changing in size)
     - /var/log - Contains system and application log files.
     - /var/cache - Contains cached data from programs.
@@ -71,30 +72,30 @@ tree -D -L 1 /
     - /var/opt - Contains variable data files for the /opt directory.
  - spools are short term buffers where data is cached before it can be processed (printing to the terminal for instance)
     - ~Simultaneous Peripheral Operations On-Line~
-** /run
+*** /run
  - stores volatile run time data
  - not persistent across reboots
-** /proc
+*** /proc
  - virtual file system : special files for running processes and kernel's current state
  - information and control center of the linux kernel
  - pseudo cause doesn't exist when system powered off
  - mounted on /proc when booting up
-** /usr
+*** /usr
  - libraries, binaries and documentations for installed software applications
-** /srv
+*** /srv
  - srv = service
  - site specific data for that linux distro
  - points to loc of files for specific services (www, FTP, rsync, CVS)
-** /sys
+*** /sys
  - pseudo file system for virtual files attached to the linux kernel
-* Init System
+** Init System
  - checkout : https://container.training/intro-selfpaced.yml.html#618
-* NameSpaces
+** NameSpaces
  - provide processes with their own view of the system
  - drop in conceptual replacement for UIDs
  - namespaces available in modern kernels:
  - checkout : https://container.training/intro-selfpaced.yml.html#705
-* Linux Security Modules (LSMs)
+** Linux Security Modules (LSMs)
  - checkout : https://www.starlab.io/blog/a-brief-tour-of-linux-security-modules
  - also see : https://kubearmor.io/
    

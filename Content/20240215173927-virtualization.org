@@ -2,13 +2,13 @@
 :ID:       fc34b43d-57e6-49a7-a678-8ec9df4d0c55
 :END:
 #+title: virtualization
-#+filetags: :computer:programming:
+#+filetags: :cs:computer:programming:
 
+* Abstract
 A form of [[id:20230715T174319.700414][mapping]] that allows one to simulate something via [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][Software]].
 This something can be compute, storage or networking [[id:a9430614-4e6e-41ff-9788-0f51c2867e74][Hardware]].
 
-The Major Pro of virtualization is allowance of hardware Uniformity and easier Replicability of software.
-
+Exploring in depth, specifically in the context of [[id:7291bab2-4e69-47ad-ae37-f3da260b1d89][Linux Virtualization]]
 * Hypervisor
 This is the software responsible for the indirection of resources into symbolic units in the virtualized machines. Two basic types:
 

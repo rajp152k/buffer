@@ -12,7 +12,7 @@ The uniting feature of all distributed systems is that the workload is distribut
 
 Some basic advantages of distributed compute:
  - efficiency increases if workload is distributed
- - [[id:20240519T193311.937619][fault tolerance]] in case of workload redundancy
+ - [[id:20240519T162542.805560][Fault tolerance]] in case of workload redundancy
  - execution modularity helps with debugging the specific module when an error arises rather than having to examine the whole code-base
 
 A few trade-offs incurred due to the above:

@@ -27,6 +27,11 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - a cache for ideas that may never see the light of day again.
    - or they just might...
 * Stream
+** 0x2262
+- will be booting some frustrating habits over time that I've acquired unknowingly.
+- these should be generic patterns that don't pertain to anything specific but span several domains.
+- they are generic habits, the effects of which trickle down into all aspects of my life.
+- keeping these nodes free from any personal burdens : this has incentivized me to maintain a commonplace notepad.
 ** 0x2250
  - studying more, blogging more
 ** 0x224D

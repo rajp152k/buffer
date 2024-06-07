@@ -9,6 +9,11 @@ see [[id:aa78d0bb-76c6-414c-9660-445100742232][Epistemology]] and [[id:74cd7bc4-
 On the night of 0x2169, I found the idea of mapping abstract knowledge domains into a mental landscape to be quite attractive..
 
 * Stream
+** 0x2262
+- thought of working with the arxiv dataset  https://www.kaggle.com/datasets/Cornell-University/arxiv
+- would help create a good map of the scientific knowledge from the past 30 years.
+- processing clusters would be more interesting than a single paper in terms of citation groups, etc.
+- big information, or, in the spirit of this node, big epistemology or to be slightly nerdier, macro-epistemology does sound like an interesting domain to get into.
 ** 0x216A
  - Cartography usually refers mapping landscapes and terrains physically. I find the idea of mapping the abstract knowledge landscape.
  - might allow me to do some interesting things
@@ -22,4 +27,3 @@ On the night of 0x2169, I found the idea of mapping abstract knowledge domains i
  - need a more organic, flexible, non-rigid form of math that allows for possibilities: [[id:91b6fb5d-6447-43fe-8412-2054bb79979a][Probability]] might be a good starting point but there's a lot more that I need to reject than accept into the final model
  - once I correctly capture the notion of indefinite dimensions, I can start building up analogies of travelling between domains via different routes.
  - Symbolic Algebra could be a hyper-central node that allows you to reach any node fairly quickly.
-* Notions to capture

@@ -3,12 +3,13 @@
 :END:
 #+title: Golang
 #+filetags: :golang:
-
-
 * Stream
+** 0x2266
+ - starting a book: building an orchestrator in golang
 ** 0x2221
  - pushing for competency : reading the ultimate go notebook
  - will also read up a lot about writing efficient software in general along the way (concurrency, hyperscaled infrastructure oriented software, and the likes)
 ** 0x21E7
  - starting out with go to get into cloud native applications and rewriting a product
 * Resources
+** BOOK: building an orchestrator in golang

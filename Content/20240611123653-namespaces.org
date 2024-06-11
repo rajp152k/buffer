@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       92f509f7-5b8f-4beb-a66c-7890e79c84a3
+:END:
+#+title: namespaces
+#+filetags: :meta:cs:

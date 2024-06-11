@@ -6,7 +6,7 @@
 
 * Abstract
  - this a fairly vast umbrella node that helps pedagogically cover several concepts in computer science.
- - a structured end to end walk throught will follow some day but as of now, stitching together what I need in the moment patch by patch.
+ - a structured end to end walk through will follow some day but as of now, stitching together what I need in the moment patch by patch.
 * Misc
 ** [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][Virtualization]]
 ** The Linux File System
@@ -90,11 +90,23 @@ tree -D -L 1 /
  - pseudo file system for virtual files attached to the linux kernel
 ** Init System
  - checkout : https://container.training/intro-selfpaced.yml.html#618
-** NameSpaces
+** [[id:a4ca9065-0613-44f8-8ca5-693dfc7704ae][Cgroups]]
+** Linux [[id:92f509f7-5b8f-4beb-a66c-7890e79c84a3][NameSpaces]]
+:PROPERTIES:
+:ID:       b64d0696-8061-4299-a17e-08627e0c2ead
+:END:
+
  - provide processes with their own view of the system
  - drop in conceptual replacement for UIDs
  - namespaces available in modern kernels:
  - checkout : https://container.training/intro-selfpaced.yml.html#705
+*** Types and Functions:
+- PID: Isolates process IDs. A process in one PID namespace can't see or interact with processes in another.
+- Network: Provides a separate network stack (interfaces, routing tables) for each namespace.
+- Mount:  Isolates mount points, allowing containers to have their own file system views.
+- UTS: Isolates hostname and domain name.
+- IPC: Isolates inter-process communication mechanisms.
+- User: Isolates user IDs and groups.
 ** Linux Security Modules (LSMs)
  - checkout : https://www.starlab.io/blog/a-brief-tour-of-linux-security-modules
  - also see : https://kubearmor.io/

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a4ca9065-0613-44f8-8ca5-693dfc7704ae
+:END:
+#+title: cgroups
+#+filetags: :linux:

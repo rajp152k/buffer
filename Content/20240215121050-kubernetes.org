@@ -5,6 +5,8 @@
 #+title: Kubernetes
 #+filetags: :arch:compute:tool:
 
+see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
+
 * Abstract
 Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][containerization]].
 

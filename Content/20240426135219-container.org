@@ -10,15 +10,17 @@ See [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]],[[id:cda61bfd-86b7-481d-
 ** Prerequisites
  - isolated execution environments leveraging two key kernel features: [[id:a4ca9065-0613-44f8-8ca5-693dfc7704ae][cgroups]] and [[id:92f509f7-5b8f-4beb-a66c-7890e79c84a3][namespaces]].
  - cgroups (control groups) govern and isolate resource usage for processes.
-   - Processes are organized hierarchically into cgroups.
-   - Each cgroup enforces limits on resources like CPU time, memory, network bandwidth, and I/O.
+   - [[id:8afb9d29-252b-4f17-ad42-700444fe4464][Processes]] are organized hierarchically into cgroups.
+   - Each cgroup enforces limits on resources like CPU time, memory, [[id:a4e712e1-a233-4173-91fa-4e145bd68769][network]] bandwidth, and I/O.
  - Namespaces provide process isolation by creating virtual views of system resources.
 ** Collation
 Containers utilize both cgroups and namespaces to create isolated environments.
 1. Namespaces isolate: Processes, network resources, mount points, etc., creating the perception of a separate system.
 2. cgroups limit and manage:  Resource utilization within these isolated namespaces, ensuring predictable behavior.
 ** Caveats:
-- Container security relies heavily on the Linux kernel. Kernel vulnerabilities can impact container isolation.
-- While providing strong isolation, containers are not virtual machines. They share the host kernel, unlike [[id:9111c90b-6462-4ea4-93eb-9d6dd9b8e0ef][VMs]] which have their own kernel.
+- Container security relies heavily on the [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]] kernel. Kernel vulnerabilities can impact container isolation.
+- While providing strong isolation, containers are not [[id:9111c90b-6462-4ea4-93eb-9d6dd9b8e0ef][virtual machines]]. They share the host kernel, unlike [[id:9111c90b-6462-4ea4-93eb-9d6dd9b8e0ef][VMs]] which have their own kernel.
+- managing multiple containers can be a task in itself, especially in a distributed context. checkout [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][orchestration]].
+
 * Resources
  - https://container.training/intro-selfpaced.yml.html

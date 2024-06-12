@@ -23,17 +23,20 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 
 - A sample of how that looks like would be:
 
-*** LLM: based on the above, greet my readers while summarize my intentions
+
+#+begin_src
+,*** LLM: based on the above, greet my readers while summarize my intentions
 
 
 Welcome! This document reflects my own learnings augmented by LLMs, with raw LLM outputs appended as subnodes for transparency and further exploration. My aim is to provide concise yet comprehensive explanations on various topics.
 
-*** LLM
+,*** LLM
 - I may group my questions in a section at the end for easier access sometimes.
-**** mention the intentions of the author based on what occurs before this point.
+,**** mention the intentions of the author based on what occurs before this point.
 
 
 The author intends to utilize this document as a personal knowledge base, emphasizing clarity and conciseness in their explanations. They also plan to leverage LLMs as learning aids, appending raw LLM responses for transparency and further analysis. This hybrid approach aims to provide a comprehensive and insightful exploration of the covered topics.
+#+end_src
 
 * Endpoints
 ** [[id:1729][Index]]
@@ -53,7 +56,7 @@ The author intends to utilize this document as a personal knowledge base, emphas
    - or they just might...
 * Stream
 ** 0x2267
- - will have an AI tag for nodes where I ask questions. Am using gemini-1.5-pro-advanceed.
+ - setup an AI usage disclaimer
 ** 0x2262
 - will be booting some frustrating habits over time that I've acquired unknowingly.
 - these should be generic patterns that don't pertain to anything specific but span several domains.

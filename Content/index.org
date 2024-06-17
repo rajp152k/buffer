@@ -57,7 +57,16 @@ The author intends to utilize this document as a personal knowledge base, emphas
 * Stream
 ** 0x226C
 - setup biblio + citar in doom
-- exploring neurosymbolic AI : [cite:@sheth_neurosymbolic_2023]
+- exploring neurosymbolic AI -
+  - [[id:5ec6cae2-7c8c-467b-b5a6-6bb9edd1bffd][Sheth, Amit and Roy, Kaushik and Gaur, Manas :: Neurosymbolic AI – Why, What, and How]]
+- working with citations:
+  - export references.bib via Zotero to be used by citar.
+  - create relevant notes with citar-open-notes
+  - this creates a roam node that can then be referenced normally
+  - emacs isn't to be used to manipulate the references file
+  - always only export from zotero
+
+
 ** 0x2267
  - setup an AI usage disclaimer
 ** 0x2262
@@ -238,5 +247,3 @@ Here are some conventions that I follow to organize my work:
  - A top-down knowledge building style : the human mind doesn't remember what it knows. Trying to remember a specific latent knowledge node in this graph will be more efficient than building all the base nodes one by one until I reach a practical level of application. I will add atoms as and when I see fit : I might even insert most from memory.
  - each major node has its own idea buffer to keep note of specific ideas that I haven't organized yet.
  - at any given point of time, several emtpy nodes may exist : I'm not trying to be exhaustive right away when exploring a domain. This is supposed to be an eternal work in progress. However, to indicate that I intend to work on a node later on and it's not just an empty atom, I've placed ~:tbp:~ (to be populated) tags on such nodes.
-
-   

@@ -55,6 +55,9 @@ The author intends to utilize this document as a personal knowledge base, emphas
  - a cache for ideas that may never see the light of day again.
    - or they just might...
 * Stream
+** 0x226C
+- setup biblio + citar in doom
+- exploring neurosymbolic AI : [cite:@sheth_neurosymbolic_2023]
 ** 0x2267
  - setup an AI usage disclaimer
 ** 0x2262

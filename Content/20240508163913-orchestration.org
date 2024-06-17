@@ -8,10 +8,57 @@ See [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][Container]]
 * Abstract
 - provisioning automation for deployment, scaling and management of resources.
 - said resources may be defined by conceptual combinations of compute, storage and networking resources.
+* Overview
+An orchestrator's interpretation may be enabled via following generic terminology:
+** Task
+- smallest unit of work, usually run in a container.
+- defined by a set of specifications:
+  - resource requirements (compute, storage (disk, memory))
+  - failure policy (restart, etc)
+  - metadata (names, tags, book keeping stuff)
+** Job
+- An aggregation of tasks
+- specifies details at a higher level than a task
+  - tasks that make up a job
+  - which data centers should run it
+  - number of replications
+  - failure policy and further types
+** Scheduler
+- schedules tasks in a job
+- decision making component
+  - checkout [[id:7f960631-c727-41b8-80c2-3ccaa4ae4ba2][scheduling algorithms]]
+  - score candidates based on job compatibility
+  - allocate job to the best machine at the moment
+** Manager
+- control plane : brains
+- orchestrates the working of all components discussed here
+- global metrics, logging, tracking etc
+- a basic manager should be able to:
+  - accept user requests to start/stop tasks
+  - schedule tasks onto workers
+  - track tasks, their states, and their address
+** Worker
+- runs tasks assigned to it
+- local metrics, tracking, logging, health for manager's log collation
+- supply local task stats and meta-data for manager's meta-data collation
+** Cluster
+- logical grouping of all the components above
+- towards [[id:20240519T162542.805560][High Availability]] and [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][scalability]]
+** Interface (CLI atleast)
+- query and command the orchestrator
+- the internal interface for how the above interact can also be included in the design spec of this component
+- see [[id:20240101T073142.439145][Application Programming Interface]]
 * Instances
 ** [[id:27a4d68c-adef-42aa-a4b4-b44b3f10395d][Apache Mesos]]
 ** [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]]
+** Hashicorp Nomad
+** Google Borg
+- https://research.google/pubs/large-scale-cluster-management-at-google-with-borg/
 * Resources
  - https://en.wikipedia.org/wiki/Orchestration_(computing)
 
+ - [[id:3af62b5f-3c13-40c8-a912-18a94b7cb175][BOOK: building an orchestrator in golang]]
 
+ - https://ieeexplore.ieee.org/document/4291052
+
+ - https://www.researchgate.net/figure/The-deployment-of-an-ePVM-application_fig3_262408650

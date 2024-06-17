@@ -17,7 +17,6 @@ Fault tolerance is essential for critical systems where downtime or data loss ca
   - [[id:a9430614-4e6e-41ff-9788-0f51c2867e74][Hardware]]: Server crashes, disk failures, power outages.
   - [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][Software]]: Bugs, crashes, security vulnerabilities.
   - [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]]: Lost connections, congestion, cyberattacks.
-  - niques:
 * Failure Detection
 :PROPERTIES:
 :ID:       20240519T222806.511836
@@ -75,7 +74,6 @@ Fault tolerance is essential for critical systems where downtime or data loss ca
  - High Availability: Ensures critical applications and services remain accessible even with failures.
  - Data Protection: Safeguards against data loss due to hardware or software malfunctions.
  - Improved Performance: Can enhance performance by distributing workload and preventing bottlenecks.
-
 * Instances
 
 ** RAID (Redundant Array of Independent Disks)

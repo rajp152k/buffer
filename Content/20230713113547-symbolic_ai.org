@@ -1,22 +1,12 @@
 :PROPERTIES:
 :ID:       20230713T113547.742751
 :END:
-#+title: Symbolic AI
+#+title: NeuroSymbolic AI
 #+filetags: :ai:
 
-Usual statistical stuff tries to represent that comes to natural intelligence without math, with the help of copious quantities of numbers. I don't need implicitly to crunch numbers to verify if I'm seeing a dog or a cat.
+see [[id:2b29e96a-5d46-4aca-a1bc-e17e51fe1194][NeuroInformatics]]
 
-We do model the world in terms of binary representations but bits are ultimately accumulations and lack there-off of electrons in certain positions.
-
-This might give rise to a hammer and nail tunnel vision.
-
-While the former has been fairly successful, I'd like to explore the symbolic aspects (qualitative) of intelligence and pattern recognition.
-
-[[id:e94b1ff3-ee62-417f-8d01-afb23ccd0c3b][linguistics]] is a nice entry point for the same and I'm starting my journey formally from here.
-
-Starting my journey from the technical whitepaper by (https://www.mind.ai/)  [[id:ff08bbeb-e202-40d1-99ff-3da643e2a8a5][Mind AI]] and exploring further using supplementary needs whenever needed.
-
-* Elaborated References
-** Out of Vocab : Brittleness
- - the engine needs the exact words that it was fed during model building to be able to process the queries.
- - this can be tackled by incorporting principles of 
+* References
+ - [[id:5ec6cae2-7c8c-467b-b5a6-6bb9edd1bffd][Sheth, Amit and Roy, Kaushik and Gaur, Manas :: Neurosymbolic AI – Why, What, and How]]
+* Resources
+- https://www.reddit.com/r/MachineLearning/comments/ry3urr/d_neurosymbolic_ai/

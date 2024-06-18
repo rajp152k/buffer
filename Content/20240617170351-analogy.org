@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2dab1b99-93c7-40cf-94a1-888be2f3a031
+:END:
+#+title: analogy
+#+filetags: :meta:

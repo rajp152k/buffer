@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2b29e96a-5d46-4aca-a1bc-e17e51fe1194
+:END:
+#+title: NeuroInformatics
+#+filetags: :ai:neuroscience:
+
+
+* Resources
+ - https://incf.org/about/what-is-neuroinformatics

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       9e07b6d4-aa6a-4584-bb4e-6f1285be34c3
+:END:
+#+title: Text
+#+filetags: :meta:
+
+Text in computer science is a sequence of characters representing human-readable information. This contrasts with binary data directly processed by computers. Ultimately, all data stored on computers is represented by bits, but human-readable text is a happy medium that seems to be a good intermediary towards better interacting with machines in an efficient manner.
+
+Efficient Text manipulation is then a good tool to have in your utility belt.

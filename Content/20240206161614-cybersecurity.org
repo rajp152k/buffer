@@ -2,7 +2,7 @@
 :ID:       6e9b50dc-c5c0-454d-ad99-e6b6968b221a
 :ROAM_ALIASES: Hacking
 :END:
-#+title: CyberSecurity
+#+title: Cyber Security
 #+filetags: :programming:root:
 
 * Abstract
@@ -12,6 +12,10 @@ I've Aliased this node as Hacking as well but I do acknowledge the more respectf
 
 Wish to keep nodes relatively colloquial rather than being correct to a fault when it comes to common interpretation of these notes.
 
+I'll refrain from using "hacking" anymore in these nodes unless I really mean hacking away at something with an axe.
+
+As for thinking in an offensive manner, as many have already documented, understanding a system's weaknesses is the most explicit way towards strengthening its defenses.
+
 * Resources
 ** Hacking: the Art of Exploitation
 :PROPERTIES:
@@ -20,3 +24,10 @@ Wish to keep nodes relatively colloquial rather than being correct to a fault wh
  - following the book to learn about what computers really are and to be able to think about secure software
  - not explicitly relevant to my domain but I'm generically into computers and wish to know more
  - will not be posting notes as they are from the textbook, but will be populating nodes without too many explicit linkages.
+
+** Linux basics for Hackers
+:PROPERTIES:
+:ID:       310eb440-587c-4927-9b06-e2f3e0efb647
+:END:
+ - occupy the web
+ - actively building cybersec skill set

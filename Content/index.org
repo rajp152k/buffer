@@ -65,8 +65,6 @@ The author intends to utilize this document as a personal knowledge base, emphas
   - this creates a roam node that can then be referenced normally
   - emacs isn't to be used to manipulate the references file
   - always only export from zotero
-
-
 ** 0x2267
  - setup an AI usage disclaimer
 ** 0x2262

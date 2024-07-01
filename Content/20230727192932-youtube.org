@@ -4,8 +4,6 @@
 #+title: Youtube
 #+filetags: :transient:meta:
 
-checkout : https://youtube.com/@rajp152k?si=mnFzfa1b1lT4C5Ke
-
 * Comment Stream
 ** 0x2279
 - there are phases to a good video

@@ -1,0 +1,110 @@
+:PROPERTIES:
+:ID:       c7a34ac9-3238-4d29-b1f9-5f96acb52a27
+:END:
+#+title: process
+#+filetags: :linux:programming:
+
+* Signals
+- interrupts, used to announce asynchronous events to a process
+- all start with "SIG" and around 64 of them
+** how does a process handle a signal?
+three cases:
+ - ignores it
+ - catch and handle the exception
+ - let the default action apply
+** standard signals
+
+| Signal # | Name      | Default Action | Comment                                                | POSIX |
+|----------+-----------+----------------+--------------------------------------------------------+-------|
+|        1 | SIGHUP    | Terminate      | Hang up detected on controlling terminal or process.   | Yes   |
+|        2 | SIGINT    | Terminate      | Interrupt from keyboard (Ctrl+C).                      | Yes   |
+|        3 | SIGQUIT   | Dump           | Quit from keyboard (Ctrl+\).                           | Yes   |
+|        4 | SIGILL    | Dump           | Illegal instruction.                                   | Yes   |
+|        5 | SIGTRAP   | Dump           | Breakpoint for debugging.                              | No    |
+|        6 | SIGABRT   | Dump           | Abnormal termination.                                  | Yes   |
+|        6 | SIGIOT    | Dump           | Equivalent to `SIGABRT`.                               | No    |
+|        7 | SIGBUS    | Dump           | Bus error (hardware fault).                            | No    |
+|        8 | SIGFPE    | Dump           | Floating-point exception.                              | Yes   |
+|        9 | SIGKILL   | Terminate      | Forced process termination (cannot be caught/ignored). | Yes   |
+|       10 | SIGUSR1   | Terminate      | User-defined signal 1.                                 | Yes   |
+|       11 | SIGSEGV   | Dump           | Invalid memory reference (segmentation fault).         | Yes   |
+|       12 | SIGUSR2   | Terminate      | User-defined signal 2.                                 | Yes   |
+|       13 | SIGPIPE   | Terminate      | Writing to a pipe with no readers.                     | Yes   |
+|       14 | SIGALRM   | Terminate      | Real-time timer expired.                               | Yes   |
+|       15 | SIGTERM   | Terminate      | Termination request (default signal for `kill`).       | Yes   |
+|       16 | SIGSTKFLT | Terminate      | Stack fault on coprocessor.                            | No    |
+|       17 | SIGCHLD   | Ignore         | Child process stopped, terminated, or received signal. | Yes   |
+|       18 | SIGCONT   | Continue       | Resume execution, if stopped.                          | Yes   |
+|       19 | SIGSTOP   | Stop           | Stop process execution (cannot be caught/ignored).     | Yes   |
+|       20 | SIGTSTP   | Stop           | Stop signal from terminal (Ctrl+Z).                    | Yes   |
+|       21 | SIGTTIN   | Stop           | Background process trying to read from terminal.       | Yes   |
+|       22 | SIGTTOU   | Stop           | Background process trying to write to terminal.        | Yes   |
+|       23 | SIGURG    | Ignore         | Urgent condition on socket.                            | No    |
+|       24 | SIGXCPU   | Dump           | CPU time limit exceeded.                               | No    |
+|       25 | SIGXFSZ   | Dump           | File size limit exceeded.                              | No    |
+|       26 | SIGVTALRM | Terminate      | Virtual timer expired.                                 | No    |
+|       27 | SIGPROF   | Terminate      | Profiling timer expired.                               | No    |
+|       28 | SIGWINCH  | Ignore         | Window size change.                                    | No    |
+|       29 | SIGIO     | Terminate      | I/O now possible.                                      | No    |
+|       29 | SIGPOLL   | Terminate      | Equivalent to `SIGIO`.                                 | No    |
+|       30 | SIGPWR    | Terminate      | Power failure.                                         | No    |
+|       31 | SIGSYS    | Dump           | Bad system call.                                       | No    |
+|       31 | SIGUNUSED | Dump           | Equivalent to `SIGSYS`.                                | No    |
+
+** sending signals
+- checkout ~man kill~
+- can send all signals irrespective of what the name indicates
+- default is to terminate if no number provided
+** raising signals
+- can raise signals within a process using the `raise()` or `kill()` functions, both declared in the `signal.h` header file in C.
+- ~man 2 signal~ and check out the "SEE ALSO" section
+- ~man 3 raise~
+- ~man 2 kill~
+- and more ...
+** masking signals
+- fetch and/or change the signal mask of the calling thread
+- set of signals whose delivery is currently blocked for the caller
+- ~man 2 sigprocmask~
+** catching signals
+~SIGUSR1~ and ~SIGUSR2~ are user-defined signals. Here's a basic example using ~SIGUSR1~ to toggle a flag in a C program:
+
+#+begin_src C
+#include <stdio.h>
+#include <unistd.h>
+#include <signal.h>
+
+volatile int flag = 0;
+
+void signal_handler(int signum) {
+  if (signum == SIGUSR1) {
+    flag = !flag; // Toggle the flag
+    printf("Signal received, flag toggled to: %d\n", flag);
+  }
+}
+
+int main() {
+  signal(SIGUSR1, signal_handler); // Register signal handler
+
+  while (1) {
+    printf("Waiting for signal (flag: %d)...\n", flag);
+    sleep(1); // Check every second
+  }
+  return 0;
+}
+#+end_src
+
+
+#+begin_src sh
+gcc signal_example.c -o signal_example
+./signal_example
+#+end_src
+
+#+begin_src sh
+ps aux | grep signal_example
+kill -USR1 <process_id>
+#+end_src
+
+* Resources
+ - Signals https://faculty.cs.niu.edu/~hutchins/csci480/signals.htm
+ - ~man 7 signal~
+ - ~man kill~

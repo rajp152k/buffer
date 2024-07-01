@@ -5,7 +5,7 @@
 #+filetags: :programming:
 
 See [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]],[[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]],[[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][Asynchronous Programming]]
-
+also see what is a [[id:c7a34ac9-3238-4d29-b1f9-5f96acb52a27][process]].
 
 * Bottlenecks
 

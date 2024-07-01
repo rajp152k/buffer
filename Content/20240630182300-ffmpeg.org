@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       88f03140-7c60-41aa-b191-63e1460e76bd
+:END:
+#+title: ffmpeg
+#+filetags: :yt:tool:
+
+* Resources
+ - https://ffmpeg.org/ffmpeg.html

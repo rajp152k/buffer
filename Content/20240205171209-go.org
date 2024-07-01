@@ -3,7 +3,14 @@
 :END:
 #+title: Golang
 #+filetags: :golang:
+
+* Basics
+** Project Setup
+*** Modules
 * Stream
+** 0x2273
+- another book : software engineering in golang
+- another book : let's go
 ** 0x2266
  - starting a book: building an orchestrator in golang
 ** 0x2221

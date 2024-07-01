@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       c3228445-00c4-4451-a0cc-b8742673753d
+:END:
+#+title: video processing
+#+filetags: :yt:
+
+* Abstract
+Phases of producing a video
+- pre prod
+- prod
+- post prod
+* Priorities
+ - efficient and not too time consuming
+ - isn't the main aspect of my hobby
+ - will not spend too much time on this
+ - presentability is good but most of it derives from the inherent nature of the content being filmed
+* Video Editors
+* CLI tools
+ - [[id:88f03140-7c60-41aa-b191-63e1460e76bd][ffmpeg]]
+ - editly
+ - mpv
+ - vlc
+* Resources
+ - https://konradreiche.com/blog/editing-your-video-on-the-command-line

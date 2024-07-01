@@ -7,7 +7,14 @@
 checkout : https://youtube.com/@rajp152k?si=mnFzfa1b1lT4C5Ke
 
 * Comment Stream
-** 0x21EE 
+** 0x2279
+- there are phases to a good video
+- pre-prod, prod and post-prod
+- all the scripting, planning, and ideation comes in preprod
+- the actual shooting and collection of all clips needed comes is prod
+- the final collation of all in those clips is post prod
+- checkout [[id:c3228445-00c4-4451-a0cc-b8742673753d][video processing]]
+** 0x21EE
 - need to understand how I could document my current learning pursuits well
 - feel like I need to master relatively shorter formats (thinking 5 minutes tops)
   - video editing will be a necessary skill and a script will be mandatory as well to pack in as much content as possible to make it work for the reader.
@@ -40,33 +47,3 @@ checkout : https://youtube.com/@rajp152k?si=mnFzfa1b1lT4C5Ke
 - being free enough to express is what we generally lack...
 - targeting at least a video a week..
 
-* Buffer
-** Work in Progress
-** Prospectives
-*** initialize a consolidators playlist
- - discusses results, feedback, plans and improvements since the last consolidator
- - Preferably : a weekly process published every saturday discussing the progress over the week
- - the qualitative and the quantitative
-   - qualitative discusses my delivery, content, how consumers resond etc.
-   - quantitative discusses consumer metrics, meta-data about the videos (length, etc) that are relevant to the qualitative aspect
-*** generic ideas : introduction to new data science libraries
-*** building a good relationship with text
- - My text editing journey
- - Vim, Emacs and VS code
- - first : learning to touch type
- - ditching the mouse
- - customization : everything is data (text)
-   - variables, functions, hooks, representations...
-   - custom keymaps :- chords and strokes	
-   - implicitly encode semantics into the binds
- - what is a good text editor?
-   - the one that gets the job done
-     - sed, for that matter on a remote server's docker container where don't even have vim installed
-       - to change a single line of text in a mis-represented data/config file (eg: mal-headered csv) : where you don't have any editor installed
-   - the one that lets you do it quickly
-   - the one that assists you to get better at it
-   - the one that makes you come back
- - Recommendation
-   - Home: Evil Emacs
-   - Work : VS code with a vi extension
-     

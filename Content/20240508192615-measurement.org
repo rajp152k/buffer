@@ -4,3 +4,5 @@
 #+title: measurement
 #+filetags: :meta:physics:
 
+* Programmatic
+checkout [[id:82b3414e-5a87-4051-a281-2794d6ad86db][frink]]

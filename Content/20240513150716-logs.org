@@ -5,6 +5,9 @@
 #+filetags: :data:
 
 * Abstract
-Logs track how the state of an entity changes over time i.e. tracking an actor's (usually multiple actors') actions in a temporally serialized manner.
-
-With the [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][increasing volumes of data]], book keeping state with discipline can mean the difference between an untrackable source of failure and resurrecting the state for quicker recoveries after a failure
+- track how the state of an entity changes over time
+  - tracking an actor's (usually multiple actors') actions in a temporally serialized manner.
+* Management
+- in the case of [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed compute]], dedicated infrastructure and tooling are essential for robust log management:
+  - [[id:a5d7c19d-d30a-466a-bac3-14d111278fcd][ELK : elastic search, logstash kibana]]
+  - [[id:791d861e-f535-4c49-9cb2-8cb8539fc619][Opensearch]]

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       abbce407-072f-4c39-9580-a8d6256dbe69
+:END:
+#+title: Configuration Management
+#+filetags: :meta:tool:cloud:
+
+* Tools
+comparison : https://www.reddit.com/r/devops/comments/18fleds/ansible_vs_chef_vs_puppet/
+** Ansible
+** Puppet
+** Chef

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       88828c6f-87e0-4569-b236-dc6ebb72d282
+:END:
+#+title: Representational State Transfer (ReST)
+#+filetags: :programming:

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       791d861e-f535-4c49-9cb2-8cb8539fc619
+:END:
+#+title: Opensearch (& Dashboard)
+#+filetags: :data:
+
+* Abstract
+ - [[id:a5d7c19d-d30a-466a-bac3-14d111278fcd][ELK]] is a faux OSL (not Apache 2.0 anymore), ergo ..
+ - community driven and dedicated to FOSS philosophy
+
+* Resources
+ - https://opensearch.org/

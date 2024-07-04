@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fa58feb4-25a2-40f1-8533-cafcb0d3886b
+:END:
+#+title: Kafka
+#+filetags: :tool:programming:data:

@@ -83,7 +83,6 @@
  - if you don't maintain the trailing and leading character: you miss out on replaces like "twoneighthreeight" being "21838"
  - inserting extra sentinel characters to maintain an implicit invariant (existence of other spelled out numerals) is something that isn't obvious at a first glance.
    
-   
 * --- Day 2: Cube Conundrum ---
 -  https://adventofcode.com/2023/day/2
 

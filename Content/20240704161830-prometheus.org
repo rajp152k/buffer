@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       55a62ff7-7160-4e6e-9bb5-0df996bf995e
+:END:
+#+title: Prometheus
+#+filetags: :cloud:tool:
+
+* Abstract
+ - open-source monitoring and alerting toolkit built around a time-series database.
+ - excels at collecting and analyzing metrics from dynamic, cloud-native environments.
+ - see [[id:8f401b28-efb8-49e3-b1c6-02f101341669][Monitoring]]
+
+* Characteristics
+
+- Pull-based model
+
+- metrics identified by key-value pairs (labels)
+
+- PromQL: designed for manipulating and analyzing time-series data.
+
+- Alertmanager integration : notification setup via multiple channels
+
+- Exporters and integrations: ecosystem of exporters exists for collecting metrics from multiple sources (databases, message queues, etc.).
+
+* Use Cases
+** Infrastructure monitoring
+Track CPU usage, memory consumption, disk space, and network traffic across servers and containers.
+** Application performance monitoring (APM)
+Monitor request rates, response times, error rates, and other application-specific metrics.
+** Business metrics monitoring:
+Track key performance indicators (KPIs) like orders per minute or user sign-up rate.
+
+* Sample Prod
+ [[https://raw.githubusercontent.com/prometheus/prometheus/main/documentation/images/architecture.svg]]
+
+** Components:
+*** Prometheus Servers:
+ - Role: Scrape metrics from targets, store them locally, and handle alerting.
+ - Scalability: Use a two-tier approach:
+       - Tier 1: Multiple Prometheus instances for scraping, each dedicated to specific services or teams. This ensures fault tolerance.
+       - Tier 2: Optional - A global Prometheus instance for long-term storage and querying across all data. Tools like Thanos or Cortex can back this tier.
+*** Target Services:
+ - Role: Your applications, infrastructure components (databases, load balancers, etc.) exposing metrics in Prometheus format.
+ - Instrumentation: Use client libraries (like the official Prometheus client libraries) to instrument your applications and expose relevant metrics.
+*** Service Discovery:
+ - Role: Dynamically discover and register new targets with Prometheus servers.
+ - Tools: Consul, Kubernetes Service Discovery, AWS Service Discovery, etc.
+*** Alertmanager:
+ - Role: Receives alerts from Prometheus, handles deduplication, grouping, silencing, and routing to notification channels (email, PagerDuty, Slack, etc.).
+ - High Availability: Deploy in a cluster (minimum 3 nodes) for redundancy.
+*** Grafana:
+ - Role: Visualization and dashboarding tool, querying data from Prometheus (and potentially other data sources).
+ - High Availability: Run multiple Grafana instances behind a load balancer for redundancy.
+** Data Flow:
+1. Target Expose Metrics: Applications and infrastructure expose metrics.
+
+2. Prometheus Scrapes: Prometheus servers scrape metrics from targets.
+
+3. Prometheus Stores: Data is stored in Prometheus's local time-series database.
+
+4. Long-Term Storage: Optionally, data is sent to a long-term storage solution ([[id:81827ad7-9751-499c-8785-d04d7533c527][Thanos]], [[id:2464c99e-3da3-42d9-ae21-d53ae3a46c4a][Cortex]]) from Tier 1 Prometheus servers.
+
+5. Alertmanager Processing: Prometheus sends alerts to Alertmanager based on configured rules.
+
+6. Alerting: Alertmanager routes alerts to the appropriate channels.
+
+7. Grafana Querying: Users query and visualize data in Grafana dashboards, drawing data from Prometheus.
+
+** Additional Considerations:
+ - Monitoring Your Monitoring: Monitor the health and performance of your Prometheus and Grafana infrastructure itself!
+
+* Resources
+- https://github.com/prometheus/prometheus
+- https://prometheus.io/
+- https://grafana.com/
+- https://thanos.io/
+- https://cortexmetrics.io/
+- https://prometheus.io/docs/alerting/alertmanager/

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       81827ad7-9751-499c-8785-d04d7533c527
+:END:
+#+title: Thanos
+#+filetags: :cloud:data:
+
+- useful for data persistence in the context of [[id:55a62ff7-7160-4e6e-9bb5-0df996bf995e][Prometheus]]

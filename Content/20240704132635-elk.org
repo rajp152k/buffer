@@ -59,6 +59,8 @@ B = Beats
 | Use Cases       | Troubleshooting, security auditing | Performance monitoring, alerting     |
 
 * Resources
+- https://www.elastic.co/elastic-stack
 - https://logz.io/learn/complete-guide-elk-stack/
+- https://github.com/deviantony/docker-elk
 - https://github.com/opensearch-project/OpenSearch
 - also see [[id:791d861e-f535-4c49-9cb2-8cb8539fc619][Opensearch (& Dashboard)]] , ELK isn't open source anymore (as of 2021)

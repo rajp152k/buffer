@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2464c99e-3da3-42d9-ae21-d53ae3a46c4a
+:END:
+#+title: Cortex
+#+filetags: :data:cloud:
+
+persistent data storage for [[id:55a62ff7-7160-4e6e-9bb5-0df996bf995e][Prometheus]]
+* Resources
+- https://cortexmetrics.io/

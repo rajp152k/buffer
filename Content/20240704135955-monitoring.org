@@ -2,4 +2,13 @@
 :ID:       8f401b28-efb8-49e3-b1c6-02f101341669
 :END:
 #+title: Monitoring
-#+filetags: :meta:tool:
+#+filetags: :cloud:meta:tool:
+
+* Abstract
+- provide visibility into applications and infrastructure, ensuring reliability and performance.
+
+- collect, aggregate, and visualize data, enabling proactive issue identification and resolution.
+
+* Tools
+ - [[id:55a62ff7-7160-4e6e-9bb5-0df996bf995e][Prometheus]]
+ - [[id:c655ab1e-827c-446b-967b-473c0a34dc0d][InfluxDB]]

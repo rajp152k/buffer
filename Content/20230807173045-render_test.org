@@ -44,3 +44,25 @@ this is a test verse.
 Yeah .., it is.
 A test verse.
 #+end_verse
+
+* Plant UML
+
+#+begin_src plantuml :file images/plant-uml.png :exports both
+@startuml
+start
+
+:Read user input;
+
+if (Input is valid?) then (yes)
+  :Process the input;
+  :Display results;
+else (no)
+  :Display error message;
+endif
+
+stop
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:images/plant-uml.png]]

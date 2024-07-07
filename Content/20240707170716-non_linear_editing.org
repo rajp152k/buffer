@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4f1aa1e0-5409-4290-8564-be2e908c5c76
+:END:
+#+title: Non-Linear Editing
+#+filetags: :video:

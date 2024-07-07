@@ -2,7 +2,27 @@
 :ID:       88f03140-7c60-41aa-b191-63e1460e76bd
 :END:
 #+title: ffmpeg
-#+filetags: :yt:tool:
+#+filetags: :video:cli:tool:
 
+* Abstract
+** FFmpeg Overview
+FFmpeg is a free, open-source command-line toolkit for multimedia processing. It functions as a comprehensive solution for handling audio and video files.
+
+** Core Features:
+- Decoding and Encoding: Supports a wide range of multimedia formats (video, audio, subtitles) for both reading and writing.
+
+- Transcoding: Converts between various codecs (e.g., H.264, H.265) to optimize compatibility and compression.
+
+- Manipulation:  Enables cutting, trimming, concatenating, splitting, and rearranging audio and video streams.
+
+- Processing: Offers filters for color correction, noise reduction, resizing, and other effects.
+
+- Streaming: Facilitates sending and receiving live multimedia streams over networks.
+
+- Analysis: Extracts metadata and other information from multimedia files.
+
+** GUIs
+- [[id:02abc3f4-0caf-481d-a439-80bf86f1740a][HandBrake]]
+- Lossless Cut
 * Resources
  - https://ffmpeg.org/ffmpeg.html

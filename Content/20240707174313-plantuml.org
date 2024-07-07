@@ -3,3 +3,64 @@
 :END:
 #+title: PlantUML
 #+filetags: :chart:tool:
+
+* Sequence Diagrams
+
+#+begin_src plantuml  :file images/plantuml-seq.png :exports both
+@startuml
+Alice -> Bob: Authentication request
+Bob --> Alice: Authenticate accepted
+Alice -> Bob: Another request
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:images/plantuml-seq.png]]
+
+* Class Diagrams
+#+begin_src plantuml :file images/plant-uml.png
+@startuml
+class Note{
+        + title: String
+        + content: String
+        + addTag(tag: Tag)
+}
+class Tag{
+        + name: String
+}
+
+Note "1" *-- "*" Tag
+@enduml
+#+end_src
+
+* State diagrams
+
+#+begin_src plantuml :file images/plantuml-state.png :exports both
+@startuml
+[*] --> Idea
+Idea --> Research: Gather Information
+Research --> Draft: Start writing
+Draft --> Review: Self edit
+Review --> Publish: Share
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:images/plantuml-state.png]]
+
+* Mind Maps
+#+begin_src plantuml :file images/plantuml-mmap.png :exports both
+@startmindmap
+,* Plantuml
+,** Features
+,*** Sequence Diagrams
+,*** Class Diagrams
+,*** State Diagrams
+,** Benefits
+,*** Clear Visualization
+,*** Version Control
+@endmindmap
+#+end_src
+
+#+RESULTS:
+[[file:images/plantuml-mmap.png]]

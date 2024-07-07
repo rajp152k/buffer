@@ -7,6 +7,8 @@
 * Abstract
  - The usual log management stack : more inclined towards a reactive analysis.
  - for a more real time (and predictive) analysis, checkout the [[id:8f401b28-efb8-49e3-b1c6-02f101341669][Monitoring]] node
+ - checkout [[id:791d861e-f535-4c49-9cb2-8cb8539fc619][Opensearch (& Dashboard)]], BLEK isn't open source anymore
+   - has the premium features of BLEK and is open source (Apache 2.0 OSL)
 * Components:
  - Beats: Lightweight data shippers on edge devices forward data to Logstash
  - Logstash:  ingests, transforms, and ships data from various sources into Elasticsearch
@@ -40,7 +42,7 @@ B = Beats
  [Load Balancer]:::::B(NGINX Logs)====O
                                        \   |  RMQ   |
  [Application Server]::B(App Logs)======O--| Buffer |-->[Logstash]-->[Elasticsearch]-->[Kibana]
-                                       /   | [[id:fa58feb4-25a2-40f1-8533-cafcb0d3886b][AKafka]] |
+                                       /   | AKafka |
  [Database]::B(MySQL Logs)============O
 
 B = Beats
@@ -58,9 +60,10 @@ B = Beats
 | Data Collection | Centralized from various sources   | Pull-based from instrumented systems |
 | Use Cases       | Troubleshooting, security auditing | Performance monitoring, alerting     |
 
+* Pre-emptive v Reactive Analysis
+
 * Resources
 - https://www.elastic.co/elastic-stack
 - https://logz.io/learn/complete-guide-elk-stack/
 - https://github.com/deviantony/docker-elk
 - https://github.com/opensearch-project/OpenSearch
-- also see [[id:791d861e-f535-4c49-9cb2-8cb8539fc619][Opensearch (& Dashboard)]] , ELK isn't open source anymore (as of 2021)

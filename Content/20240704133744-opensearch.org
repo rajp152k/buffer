@@ -5,8 +5,24 @@
 #+filetags: :data:
 
 * Abstract
- - [[id:a5d7c19d-d30a-466a-bac3-14d111278fcd][ELK]] is a faux OSL (not Apache 2.0 anymore), ergo ..
+ - [[id:a5d7c19d-d30a-466a-bac3-14d111278fcd][blek]] is a faux OSL (not Apache 2.0 anymore), ergo ..
  - community driven and dedicated to FOSS philosophy
-
+ - distributed search and analytics engine
+* Strengths
+    - Fast full-text search (like [[id:a5d7c19d-d30a-466a-bac3-14d111278fcd][Elasticsearch]])
+    - Scalable to large datasets and queries
+    - Real-time data ingestion and [[id:656af4b9-648b-41f9-932b-cbf2d2017794][search]]
+    - Analytics capabilities (aggregations, metrics)
+* diff'd w/ BLEK
+| Component     | OpenSearch Equivalent       | Notes                                                                                                                 |
+|---------------+-----------------------------+-----------------------------------------------------------------------------------------------------------------------|
+| Elasticsearch | OpenSearch                  | Core search and analytics engine. Functional overlap, but OpenSearch is a fork, not a drop-in replacement.            |
+| Kibana        | OpenSearch Dashboards       | Visualization and management. Feature parity still developing.                                                        |
+| Logstash      | No direct equivalent        | OpenSearch can ingest data directly or via tools like Fluentd/Fluent Bit.                                             |
+| Beats         | Partially covered by agents | OpenSearch offers some data shippers (agents), but not the breadth of Beats. Community-driven alternatives may exist. |
+* Migration
+- https://opensearch.org/docs/latest/upgrade-to/upgrade-to/
+- https://opster.com/guides/opensearch/opensearch-basics/migrate-from-elasticsearch-to-opensearch/
+- https://opensearch.org/blog/moving-from-opensource-elasticsearch-to-opensearch
 * Resources
  - https://opensearch.org/

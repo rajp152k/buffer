@@ -2,7 +2,9 @@
 :ID:       617ab23f-058a-48c8-872f-c71c6d78c68b
 :END:
 #+title: mermaid-babel
-#+filetags: :tool:
+#+filetags: :archive:tool:
+
+see [[id:b11af479-044b-4262-91b1-67c4cfd64127][PlantUML]]  instead, this is archived
 
 A self serving tutorial on mermaid.js with (org-babel) for completeness.
 

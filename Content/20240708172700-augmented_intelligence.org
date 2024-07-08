@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       551a65b2-4955-4a35-8833-b17929cb70c4
+:END:
+#+title: Augmented Intelligence
+#+filetags: :tool:ai:
+
+* Tools
+- fabric : https://github.com/danielmiessler/fabric
+- open interpreter : https://docs.openinterpreter.com

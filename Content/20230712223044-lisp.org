@@ -33,7 +33,7 @@ Maxwell's equations of Software (~Alan Kay in some Interview~)
 	       (#t                 (apply (car e) (evlis (cdr e) a) a))))
 	(#t       (apply (car e) (evlis (cdr e) a) a))))
 #+end_src
-* Comment Stream
+* Comment-Stream
 ** 0x227B
 - am bored of reading common lisp books
 - want to code a bit without explicit directives from a book

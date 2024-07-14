@@ -18,7 +18,7 @@ iframe {
 
 header {
   background-color: #000000;
-  border-bottom: 5px solid #4fff00;
+  border-bottom: 5px solid #8c52ff;
   padding-bottom: 1px;
   padding-left: 1px;
 }
@@ -79,7 +79,7 @@ header {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #4fff00;
+  color: #8c52ff;
   font-style: italic;
   font-weight: bold;
 }
@@ -123,5 +123,5 @@ input[type="submit"]:hover {
 
 .header-title{
     font-size: x-large;
-    color: #4fff00 ;
+    color: #8c52ff ;
 }

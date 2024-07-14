@@ -33,6 +33,9 @@ Note "1" *-- "*" Tag
 @enduml
 #+end_src
 
+#+RESULTS:
+[[file:images/plant-uml.png]]
+
 * State diagrams
 
 #+begin_src plantuml :file images/plantuml-state.png :exports both

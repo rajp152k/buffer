@@ -17,57 +17,16 @@ skinparam rectangle {
     StereotypeFontName monospace
 }
 
-rectangle "Input File" <<file format>> as input
+rectangle "Input\n(Demuxing)" <<file format>> as input
+rectangle "Decoding" as decode
+rectangle "Transformations (Optional)" as transform
+rectangle "Encoding" as encode
+rectangle "Output\n(Muxing)" <<file format>> as output
 
-rectangle "Demuxer" as demux {
-    rectangle "Container\nFormat\nDetection" as detection
-    rectangle "Stream\nSeparation" as separation
-    detection -down-> separation
-}
-
-rectangle "Video Decoder" as vdecode <<Codec>>
-rectangle "Audio Decoder" as adecode <<Codec>>
-rectangle "Subtitle Decoder" as sdecode <<Codec>>
-
-rectangle "Video Processing (Optional)" as vprocess {
-  rectangle "Scaling, Cropping, etc." as vfilter
-  rectangle "Transcoding\n(Codec Change)" as vtranscode
-}
-
-rectangle "Audio Processing (Optional)" as aprocess {
-  rectangle "Volume, Resampling, etc." as afilter
-  rectangle "Transcoding\n(Codec Change)" as atranscode
-}
-
-rectangle "Video Encoder" as vencode <<Codec>>
-rectangle "Audio Encoder" as aencode <<Codec>>
-rectangle "Subtitle Encoder" as sencode <<Codec>>
-
-rectangle "Muxer" as mux {
-  rectangle "Stream\nMerging" as merging
-  rectangle "Container\nFormat\nCreation" as container
-  merging -down-> container
-}
-
-rectangle "Output File" <<file format>> as output
-
-input -right-> demux
-demux -down-> vdecode : Video Stream
-demux -down-> adecode : Audio Stream
-demux -down-> sdecode : Subtitle Stream
-
-vdecode -right-> vprocess
-aprocess -right-> aencode : (If transcoded)
-vprocess -right-> vencode : (If processed/transcoded)
-sdecode -right-> sencode
-
-vprocess -down-> vencode : (If not transcoded)
-adecode -down-> aprocess : (If not transcoded)
-
-vencode -down-> mux : Encoded Video Stream
-aencode -down-> mux : Encoded Audio Stream
-sencode -down-> mux : Encoded Subtitle Stream
-mux -right-> output
+input -down-> decode
+decode -down-> transform #line.dashed
+transform -down-> encode #line.dashed
+encode -down-> output
 
 @enduml
 #+end_src

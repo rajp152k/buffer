@@ -143,7 +143,7 @@
              "<header>\n"
              "<div class='navigation'>\n"
 	     "<div class='header-title'>\n"
-	     (format "buffer.rajpatil.dev :: ")
+	     (format "((Bit-Mage) 'buffer) :: ")
 	     "</div>\n"
              "<form action='/'>\n"
              "<input type='submit' value='Root'>\n"
@@ -151,10 +151,10 @@
              "<form action='/sitemap'>\n"
              "<input type='submit' value='Explore'>\n"
              "</form>\n"
-             "<form action='https://rajpatil.dev'>\n"
+             "<form action='https://thebitmage.com'>\n"
              "<input type='submit' value='Blog'>\n"
              "</form>\n"
-             "<form action='https://us.umami.is/share/M9yHECVhEaGXHvAS/buffer.rajpatil.dev'>\n"
+             "<form action='https://cloud.umami.is/share/M9yHECVhEaGXHvAS/buffer.thebitmage.com'>\n"
              "<input type='submit' value='Analytics'>\n"
              "</form>\n"
              ;"<form id='search' autocomplete='on' class='search-box' action=/search.html>\n"

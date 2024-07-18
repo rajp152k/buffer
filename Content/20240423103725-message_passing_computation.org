@@ -5,3 +5,5 @@
 #+filetags: :programming:
 
 A foundational thinking approach that enables [[id:20231212T081851.998455][Object Oriented Programming]] and [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]]([[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]])
+
+In the context of scaling your operations, checkout

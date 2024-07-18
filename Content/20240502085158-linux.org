@@ -110,7 +110,13 @@ tree -D -L 1 /
 ** Linux Security Modules (LSMs)
  - checkout : https://www.starlab.io/blog/a-brief-tour-of-linux-security-modules
  - also see : https://kubearmor.io/
-   
+
+** chroot
+:PROPERTIES:
+:ID:       d922cae8-da0c-4a0e-8d78-d8e8358d502b
+:END:
+ - checkout https://superuser.com/questions/111152/whats-the-proper-way-to-prepare-chroot-to-recover-a-broken-linux-installation
+
 * Resources
  - https://www.cherryservers.com/blog/a-complete-guide-to-understanding-linux-file-system-tree
    

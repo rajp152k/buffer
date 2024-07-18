@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ee0b0178-82f7-4fd2-af51-f6378f251c9e
+:END:
+#+title: The Modern Data Stack
+#+filetags: :data:

@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       1073cfed-a09d-48b6-bd52-ba09708699bf
+:END:
+#+title: Message Brokers
+#+filetags: :programming:tool:data:
+
+* Why
+- robustness and scalability require decoupled components
+- message brokers act as [[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][asynchronous]] intermediaries for interservice [[id:20240114T210106.876975][coms]]
+- instead of direct, synchronous calls, applications exchange messages through the broker
+- see [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Driven Programming]]
+
+* Benefits of [[id:501f2afe-e1af-4284-9ac3-3e44f68af7c1][Indirection]]
+
+- Decoupling:  Producers and consumers operate independently, enabling asynchronous communication and enhancing [[id:20240519T162542.805560][fault tolerance]].
+
+- Increased Performance & Responsiveness: Asynchronous messaging prevents producers from blocking, optimizing performance even under heavy load.
+
+- Simplified Development & Deployment: Location transparency abstracts service discovery and routing complexities.
+
+- Load Levelling: Message queues act as buffers, absorbing traffic spikes and preventing cascading failures.
+
+- Reliable Delivery:  Brokers offer various message persistence and acknowledgement options, ensuring message delivery even in failure scenarios.
+
+* Characteristics
+
+- Message Ordering: Guaranteed within a partition/queue, not across multiple. Impacts scalability and consistency.
+
+- Delivery: "At-least-once" ensures delivery (potential duplicates). "Exactly-once" guarantees single processing (more complex). Choose based on use case needs.
+
+- Durability: In-memory queues offer speed but risk data loss. Disk-based persistence prioritizes reliability over speed.
+
+- Message Flow: Push-based brokers deliver messages proactively. Pull-based brokers require consumer action.
+
+- Routing:  Content, topic, or header-based routing mechanisms allow for granular control over message delivery and consumption.
+
+* Tools
+** [[id:4a3714bb-42dd-4bdd-aa04-9b868aaee1df][RabbitMQ]]
+- Mature and versatile message broker.
+- Robust routing capabilities with diverse exchange types and protocol support.
+- Prioritizes flexible message delivery over raw throughput.
+** [[id:fa58feb4-25a2-40f1-8533-cafcb0d3886b][Kafka]]
+- High-throughput data streaming for event-driven architectures and real-time analytics.
+- Guaranteed order within partitions and robust fault tolerance.
+- Ideal for mission-critical applications.
+** [[id:5e438030-0096-4b97-8931-f99eb7b738c5][Apache Pulsar]]
+- Cloud-native platform combining queuing and streaming.
+- Features multi-tenancy, geo-replication, and flexible subscription semantics.
+- Versatile choice for distributed applications.

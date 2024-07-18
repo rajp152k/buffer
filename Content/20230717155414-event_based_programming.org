@@ -5,14 +5,13 @@
 #+title: Event Driven Programming
 #+filetags: :programming:
 
-This principle paradigm used in Graphical User Interfaces (eg, upon click/submit, etc) and in cases when one uses triggers related to an event rather than querying to verify if that event happened.
+* Abstract
 
-In the generic structure of the driver, we have a main loop (aka listener instead of an asker in the conventional verification solution) that acts(executes hooks/callbacks) when certain events are triggered.
+The event-driven paradigm is readily observable in graphical user interfaces (GUIs) where actions like clicks and submissions trigger specific responses. This contrasts with traditional verification-based systems that rely on continuous polling.
 
-This may even be implemented by hardware interrupts in the case of embedded systems.
+Event-driven architecture centers around a main loop (often termed a "listener") which remains dormant until an event occurs. Upon triggering, the listener executes pre-defined functions known as event handlers, hooks, or callbacks. This mechanism can be implemented at the hardware level using interrupts, particularly in embedded systems.
 
-Any procedure one executes post an event may be termed as an event-handler/hook/callback.
+Higher-level programming languages offer abstractions for elegant event handling. Asynchronous programming constructs like "await" (often paired with "async") and closures (also known as lambdas) streamline event-driven code.
 
-Segue into the higher level programming abstractions of await(coupled with async) and closures (colloquially lambdas).
-
-Exploring the practical component via [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO-python]]
+* Practical
+- [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]

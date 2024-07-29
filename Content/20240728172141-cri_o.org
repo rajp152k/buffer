@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       320016f3-53be-4756-b9b8-3a89714ff1d9
+:END:
+#+title: cri-o
+#+filetags: :compute:cloud-native:cncf:

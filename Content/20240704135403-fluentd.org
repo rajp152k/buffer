@@ -2,4 +2,4 @@
 :ID:       b656ae66-8364-4803-8262-41aa3cb18061
 :END:
 #+title: fluentd
-#+filetags: :tool:database:
+#+filetags: :cncf:cloud-native:tool:database:

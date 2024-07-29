@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       f0f7ed1f-4117-46d1-91be-b921a2e5cab6
+:END:
+#+title: Unix
+#+filetags: :cs:
+
+* The Unix Philosophy
+:PROPERTIES:
+:ID:       910c0fc3-7f4f-4dea-8088-0ac90b585eaf
+:END:
+
+** Tenets
+    - Modularity: Divide programs into distinct, reusable modules that can be independently developed and maintained.
+
+    - Simplicity: Prioritize clarity and conciseness in code design to enhance both readability and maintainability.
+
+    - Compatibility: Ensure software compatibility across a range of hardware and operating system platforms for seamless deployment and execution.
+
+    - Extensibility: Design programs to seamlessly integrate with future enhancements and extensions, facilitating adaptability to changing requirements and evolving technologies.
+
+*** Pragmatics
+
+    - Single Responsibility Principle: Assign each program a unique and well-defined purpose, enabling efficient and focused execution.
+
+    - Pipes and Filters: Connect programs through pipelines to form complex workflows, allowing data to flow seamlessly through multiple processing stages.
+
+    - Abstraction and Encapsulation: Treat all data as a stream of characters, concealing implementation details and providing a consistent interface for data manipulation.

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c50c85ac-0b21-486f-99ac-00f325e2c43c
+:END:
+#+title: KEDA (Kubernetes Event-Driven AutoScaler)
+#+filetags: :cncf:cloud-native:

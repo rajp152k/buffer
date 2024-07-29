@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a1a26817-85fe-481b-b41e-659502094361
+:END:
+#+title: TUF (The Update Framework)
+#+filetags: :cncf:cloud-native:sec:

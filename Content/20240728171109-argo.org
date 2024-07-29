@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3ea6cf40-f57e-4fa8-b451-6ccb0928249b
+:END:
+#+title: Argo
+#+filetags: :cloud-native:cncf:

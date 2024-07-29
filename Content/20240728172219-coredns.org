@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d3f2c59a-602d-4a88-8828-82797f25fbd3
+:END:
+#+title: CoreDNS
+#+filetags: :network:cloud-native:cncf:

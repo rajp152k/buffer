@@ -4,6 +4,8 @@
 #+title: Cloud Computing
 #+filetags: :root:cloud:programming:
 
+In the context of [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Engineering]], see [[id:739d8493-d7a6-4eee-b31a-44d087f4fb42][cloud native]]
+
 * Distilled
 Most of the services a cloud vendor provides can be segregated along the dimensions (via qualitative and quantitative elaborations) of:
  - Compute

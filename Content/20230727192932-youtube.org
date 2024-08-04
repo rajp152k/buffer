@@ -4,6 +4,19 @@
 #+title: Youtube
 #+filetags: :transient:meta:
 
+* Publishing Pipeline
+** Pre-Mature
+*** [[id:3d6be1e0-2489-4200-834b-6a88f1aaebf6][How to take smart notes]] with [[id:20230712T224009.631876][Emacs]] org-roam
+*** Read. More.
+*** The Superpower that Solitude is.
+*** Competence in a post-LLM era.
+*** The Polyglotic Programmer
+*** Climb the harder skill cliffs.
+*** You need to Hallucinate.
+** Draftable
+** Ideated
+*** The Editor Wars: A memoir
+** Produced
 * Major Ideation Groups
 ** Generic
 *** [[id:20240218T063727.994801][Curiosity]]

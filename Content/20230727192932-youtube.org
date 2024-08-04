@@ -4,7 +4,16 @@
 #+title: Youtube
 #+filetags: :transient:meta:
 
-* Comment Stream
+* Logs
+** 0x229C
+- have tried quite a different things so far for youtube
+- emacs works to pull in audiences : this has been reeling in the audiences so far
+- other unix utilities are good to build a long term corpus for people to discover new things
+- lisp could also be great but I'll need to be more strategic with what sort of content I post
+- too specific and it becomes a tutorial
+- need to focus on the why so that the viewer is incentivized to get into what is being discussed
+- do not assume interest
+- a good thumbnail that strikes a cyber-mystic vibe could attract a lot of people : the beard helps
 ** 0x2279
 - there are phases to a good video
 - pre-prod, prod and post-prod

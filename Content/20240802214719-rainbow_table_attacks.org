@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       00e14ade-658b-44a4-b971-8a62c8c4c490
+:END:
+#+title: rainbow table attacks
+#+filetags: :sec:cs:
+
+* Overview
+
+Rainbow table attacks precompute hashes for common passwords, storing them alongside corresponding plaintexts in a space-efficient data structure called a [[id:76c14922-1be9-4c69-bb3a-302edc7b6b89][rainbow table]]. This allows attackers to quickly reverse lookup hashed passwords obtained from compromised systems.
+
+- Salted passwords render rainbow tables useless: [[id:2b9a4bc9-751c-491d-8435-ffa8c3bc166a][salts(cryptography)]], unique random values added to each password before hashing, create unique hashes even for identical passwords, negating precomputation.
+
+*Example:* Ophcrack utilizes rainbow tables to crack Windows LAN Manager (LM) hashes, known for their weakness.
+
+* Rainbow Tables
+:PROPERTIES:
+:ID:       76c14922-1be9-4c69-bb3a-302edc7b6b89
+:END:
+
+** Etymology of rainbow tables
+
+The "rainbow" in "rainbow table" refers to the use of multiple reduction functions during table generation. These functions create chains of alternating hash and reduction operations, producing a colorful spectrum of intermediate values analogous to a rainbow. This technique reduces storage requirements compared to storing all hash-plaintext pairs directly.
+
+** Resources
+ - https://en.wikipedia.org/wiki/Rainbow_table
+ - http://project-rainbowcrack.com/

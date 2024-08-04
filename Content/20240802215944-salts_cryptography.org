@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       2b9a4bc9-751c-491d-8435-ffa8c3bc166a
+:END:
+#+title: salts(cryptography)
+#+filetags: :sec:cs:
+
+* Overview
+
+
+Salts are random strings of data added to passwords before hashing to prevent pre-computed tables ([[id:76c14922-1be9-4c69-bb3a-302edc7b6b89][rainbow tables]]) from cracking them.
+
+*How they work:*
+
+1.  User creates password.
+2.  System generates unique salt.
+3.  Salt is combined with password (e.g., appended).
+4.  Combined value is hashed (e.g., using [[id:89d7166b-f925-43d0-a74b-bcd53cdeab26][bcrypt]] or Argon2).
+5.  Salt and hash are stored.
+
+*Caveats:*
+
+-   Salts must be unique per user/password.
+-   Salt length should be cryptographically secure (e.g., 16 bytes).
+-   Salts don't protect against weak passwords or brute-force attacks on individual accounts.
+
+*Example:*
+
+-   *Without salt:*  =password= might always hash to  =5f4dcc3b...=.
+-   *With salt:*  =salt1password=  hashes to  =a1b2c3d4...= while  =salt2password=  hashes to  =e5f6g7h8...=, making rainbow tables ineffective.
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Salt_(cryptography)

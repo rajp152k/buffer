@@ -4,3 +4,17 @@
 #+title: SurrealDB
 #+filetags: :data:
 
+ - open-source
+ - distributed
+
+* Characteristics
+
+- Multi-model: Handles document, graph, key-value, and time series data. This reduces the need for separate specialized databases.
+
+- Single Access Pattern: Uses SQL-like query language for all data models. This simplifies development and data access.
+
+- Built-in features: Includes authentication, authorization, caching, and real-time capabilities. Reduces reliance on external tools.
+
+* Resources
+ - https://surrealdb.com/
+ - https://surrealdb.com/docs/surrealdb/introduction/start

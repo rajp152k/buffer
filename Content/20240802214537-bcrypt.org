@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       89d7166b-f925-43d0-a74b-bcd53cdeab26
+:END:
+#+title: bcrypt
+#+filetags: :sec:cs:
+
+* Overview
+
+Bcrypt is a password hashing function that [[id:2b9a4bc9-751c-491d-8435-ffa8c3bc166a][salts]] and adapts over time.
+
+*Salting:* append a pseudo-randomized entity to each password before hashing, preventing identical passwords from producing the same hash ([[id:00e14ade-658b-44a4-b971-8a62c8c4c490][rainbow table attacks]]).
+
+*Adaptive:*  Uses computationally expensive algorithms (key stretching) that can be tuned to stay ahead of increasing hardware speeds (think [[id:3f4e1e94-43fe-417b-84e4-d330606f2e4a][Argon2]] as a more modern alternative).

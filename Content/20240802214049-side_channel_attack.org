@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       41253fb7-a617-48ee-9a29-20cac381e83d
+:END:
+#+title: side-channel-attack
+#+filetags: :cs:sec:
+
+* Overview
+
+Side-channel attacks exploit information leakage from a system's physical implementation, rather than directly exploiting vulnerabilities in algorithms or code.
+
+** Examples:
+
+- Timing Attacks: Measuring how long a system takes to perform cryptographic operations to deduce secret keys (e.g., OpenSSL Heartbleed vulnerability).
+
+- Power Monitoring: Analyzing the power consumption patterns of a device during cryptographic operations to reveal key information.
+
+- Electromagnetic Emanations: Capturing electromagnetic signals emitted by a device to recover sensitive data (e.g., TEMPEST attacks).
+
+** Caveats:
+
+- Physical Proximity: Often require close proximity to the target system.
+
+- Specialized Equipment: May necessitate expensive and sophisticated equipment.
+
+** Mitigation
+
+ - deliberate bottlenecks to mask internal differences can be useful (eg: [[id:89d7166b-f925-43d0-a74b-bcd53cdeab26][bcrypt's]] deliberately slow hashing function)

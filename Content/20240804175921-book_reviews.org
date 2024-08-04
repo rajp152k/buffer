@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2754cd2d-639b-49ea-a39e-69322fc1ce4b
+:END:
+#+title: Book Reviews
+#+filetags: :book:
+
+An Index into all the books that I read and think need to log the take-aways.

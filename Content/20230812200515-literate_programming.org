@@ -2,5 +2,12 @@
 :ID:       20230812T200515.697950
 :END:
 #+title: literate programming
-#+filetags: :tbp:
+#+filetags: :programming:
 
+Literate programming treats code as literature. It emphasizes writing for human understanding as much as machine execution : writing code for humans.
+
+Key Idea:  Interweave code and prose explanations seamlessly.
+
+* Tools
+** Jupyter Notebook
+** Org Babel

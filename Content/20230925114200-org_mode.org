@@ -17,6 +17,7 @@ I refrain from using timestamps in the latter but do so in the former for the or
 
 [[id:20230812T200515.697950][Literate programming]] is another powerful concept conveniently realizable via org-mode that is essential for any pedagogical content creator.
 
+
 I'm covering a pretty minimal subset of all the capabilities of org-mode that I use frequently (exclusive to org-roam)
 
 * Basics

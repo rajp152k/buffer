@@ -6,3 +6,10 @@
 
 * Misc
 ** what function does boredom serve?
+:PROPERTIES:
+:ID:       312ee1fd-4d3d-4757-83d1-61e068b12d23
+:END:
+
+
+** [[id:cb550473-6804-4066-b492-0f007e6c2dd1][What is worth Learning?]]
+** [[id:20231112T081124.213227][What-would-X-read?]]

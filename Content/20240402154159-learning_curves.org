@@ -4,10 +4,25 @@
 #+title: Learning Curves
 #+filetags: :meta:
 
-The relationship between proficiency at a skill and the amount of experience invested into it - usually a positive correlation with linearity of the same depending on the kind of skill under discussion.
+The relationship between proficiency at a skill (dependent variable) and effort invested into it (independent variable) - usually a positive correlation with linearity of the same depending on the kind of skill under discussion.
 
 
-Citing wikipedia for an important note:
+** Steepness Disambiguation
 #+begin_quote
 The common expression "a steep learning curve" is a misnomer suggesting that an activity is difficult to learn and that expending much effort does not increase proficiency by much, although a learning curve with a steep start actually represents rapid progress. In fact, the gradient of the curve has nothing to do with the overall difficulty of an activity, but expresses the expected rate of change of learning speed over time. An activity that it is easy to learn the basics of, but difficult to gain proficiency in, may be described as having "a steep learning curve".
 #+end_quote
+
+So, something with a steep learning curve will represent
+
+* Skill Cliffs
+:PROPERTIES:
+:ID:       24c83374-c61f-4086-9a3f-4decf2a403b9
+:END:
+
+I find climbing Skill Cliffs (not a steep learning curve (see note above) : on the contrary this would be a seemingly difficult acquisition) to be a more rewarding activity than to traverse over gradually ascending pseudo-plateaus.
+
+* Relevant Questions
+** What is worth Learning?
+:PROPERTIES:
+:ID:       cb550473-6804-4066-b492-0f007e6c2dd1
+:END:

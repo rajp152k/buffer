@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       3d6be1e0-2489-4200-834b-6a88f1aaebf6
+:END:
+#+filetags: :book:
+#+title: How to take smart Notes?
+
+The book serves as an important guideline for intellectual atheletes to maintain their sanity and consequenlty channel their efforts during their training blocks.
+
+This collection of notes is inspired by the same book.
+
+As of today(0x229C), it has been some time since I last read the book and I think I need a refresher.
+
+* Notes
+
+* Personal
+** [[id:6efc5118-aa6d-43f7-bd46-5f0460819813][NIL]]
+* Resources
+- Book: https://www.soenkeahrens.de/en/takesmartnotes

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d67f54e1-aee4-4ef4-abc9-158192fb8249
+:END:
+#+title: Thinking in Systems
+#+filetags: :book:

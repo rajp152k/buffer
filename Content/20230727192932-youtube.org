@@ -4,6 +4,35 @@
 #+title: Youtube
 #+filetags: :transient:meta:
 
+* Major Ideation Groups
+** Generic
+*** [[id:20240218T063727.994801][Curiosity]]
+*** [[id:75b97f8f-1c44-4662-a425-7d501ce8cf62][Learning]]
+*** [[id:3d6be1e0-2489-4200-834b-6a88f1aaebf6][How to take smart Notes?]]
+*** [[id:20240420T190107.545784][The Reader]]
+*** [[id:20240420T190123.489781][The Writer]]
+** OverArching
+*** [[id:2754cd2d-639b-49ea-a39e-69322fc1ce4b][Book Reviews]]
+*** Long Term Learning Logs
+** The Programmer Meta
+*** [[id:20230812T200515.697950][literate programming]]
+*** [[id:9e07b6d4-aa6a-4584-bb4e-6f1285be34c3][Text]] (Perspective)
+*** Text Editors
+- [[id:20230712T224009.631876][Emacs]]
+- [[id:8bc9d1c6-da56-4db9-a904-8f052e6836cb][Vim]]
+*** Programmatic [[id:20231111T232750.075460][Polymathy]]
+- [[id:47f81c24-a0c5-45c1-bc22-52a32795a2d7][Polyglotism]]
+** Specific
+*** [[id:20230712T223044.319985][lisp]]
+*** [[id:f0f7ed1f-4117-46d1-91be-b921a2e5cab6][Unix]]
+** Core CS
+*** Esoteric [[id:f9c89977-5a4b-4c21-b340-56b204cfb35d][Algorithms]]
+*** [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]]
+*** [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Networks]]
+*** [[id:20230713T110006.406161][Machine Learning]]
+*** [[id:20230715T173535.681936][Data Structure]]
+*** [[id:2f67eca9-5076-4895-828f-de3655444ee2][DataBase]]
+*** [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating System]]
 * Logs
 ** 0x229C
 - have tried quite a different things so far for youtube
@@ -14,6 +43,16 @@
 - need to focus on the why so that the viewer is incentivized to get into what is being discussed
 - do not assume interest
 - a good thumbnail that strikes a cyber-mystic vibe could attract a lot of people : the beard helps
+- need to read a whole lot more for the kind of videos I wish to make.
+- going for several shorter videos (11 mins is a sweet mark) henceforth with a long one once in a while.
+- building a corpus of ideas that I can regularly draw from
+- will need to put the zettelkasten to use over time
+- need to be on the hunt as to what could suit my audience
+- regular generic notes and content creation will be needed.
+- a lot of reading and writing is necessary
+- tapping into the consumer's curiosity is what I might have not been explicitly focusing on so far.
+- rather than focusing on the tool, the thumbnails and titles should focus on what the consumer is missing out on.
+
 ** 0x2279
 - there are phases to a good video
 - pre-prod, prod and post-prod

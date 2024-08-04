@@ -4,3 +4,8 @@
 #+title: The Writer
 #+filetags: :archetype:meta:
 
+For an intellectual athelete, writing is just as important as the act of reading.
+
+Balancing external sources and internal insights is the key to generating content worth consuming: being just the right amount of alienating and familiar so as to not sound too delusional and obvious.
+
+When starting out and understanding the nature of content can be conveyed, invoking heavily upon [[id:20240420T190107.545784][The Reader]] becomes a necessity.

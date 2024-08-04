@@ -10,3 +10,4 @@
  - A book enlistment that suggests what your favorite super-villain does sound very interesting and should be an interesting toy project.
  - A corpus of books is of-course needed for the same and could be a domain specific search engine in the long term
  - for starters, can be a youtube series that I run.
+ - checkout a work-in-progress personal list of books here : [[id:e8c0b214-fa70-4462-8d44-ae0282d14981][The List]]

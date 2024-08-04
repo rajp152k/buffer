@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       fba2762c-d780-49d2-bd79-60dcb627f45f
+:END:
+#+title: Intellectual Composition
+#+filetags: :meta:
+
+The notion that any intellecual entity can be broken down into fundamental [[id:20240114T210722.836738][axioms]] and consequently be expressed as recursive compositions with axiomatic base cases.
+
+Identifying a practical axiom that is abstract enough so as to not distract one with irrelevant details and fundamental enough that it can be reliably built upon is an interesting exercise.
+
+Intellectual Composition (the operator) may be of several natures based on the constituent ideas (the operands).
+
+The factors that would completely describe operands and the operator are, although practically in-enumerable, worth pseudo-exhautively enumerating.

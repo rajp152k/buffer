@@ -31,9 +31,6 @@ encode -down-> output
 @enduml
 #+end_src
 
-#+RESULTS:
-[[file:images/ffmpeg-overview.png]]
-
 ** Core Features:
 - Decoding and Encoding: Supports a wide range of multimedia formats (video, audio, subtitles) for both reading and writing.
 

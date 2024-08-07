@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       20240519T152842.050227
+:ROAM_ALIASES: "Partition Tolerance(CAP)" Availability(CAP) Consistency(CAP)
 :END:
 #+title: CAP
 #+filetags: :cs:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       026cebc6-e388-4e7e-84ce-b46d8f3151a9
+:END:
+#+title: operations
+#+filetags: :bs:

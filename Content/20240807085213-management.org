@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3242595d-3773-4e24-8e37-b8155a6e9187
+:END:
+#+title: Management
+#+filetags: :bs:

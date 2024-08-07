@@ -3,3 +3,131 @@
 :END:
 #+title: Apache Pulsar
 #+filetags: :tool:programming:data:
+
+* Basics
+
+An Open-source distributed pub-sub messaging system:
+
+** High Performance & Scalability
+*** [[id:2dca77bf-c105-407f-8afc-289716ea79d5][Low Latency]]
+Apache Pulsar achieves low latency through a segment-based architecture that separates data writing (Producers to Brokers) from data reading (Consumers from Brokers).
+**** Understanding Segmented Architecture of Pulsar
+***** Topics are divided into Segments
+A topic, which serves as the channel for messages, is divided into smaller segments over time.
+***** Brokers for Writing (Producers):
+
+New messages are appended to the current open segment on a specific Broker. This approach facilitates fast write operations, akin to appending data to a log file.
+
+***** Brokers for Reading (Consumers):
+
+Consumers can read from any segment, independent of the ongoing write operations. This separation offers several advantages:
+
+- Parallelism: Multiple consumers can concurrently read from different segments of a topic, thereby increasing overall throughput.
+
+- Scalability: Brokers can be added or removed from the system without affecting the read availability of existing segments.
+
+**** [[id:4ef92e32-360e-4d76-8d8b-f7c42dcd859c][Apache BookKeeper]]
+
+Segment storage is handled by Apache BookKeeper, a system that guarantees data durability and replication. This allows brokers to focus primarily on message routing and delivery.
+
+Analogy:  Consider a newspaper printing press. Writers (Producers) continually add news to the latest edition (representing the current segment). Concurrently, readers (Consumers) can access any past or present edition (segments) without mutual interference.
+
+**** Caveats
+
+- Managing segments introduces complexity compared to traditional message queue systems.
+
+- While the segment-based architecture enables low latency, achieving exceptionally low latencies (sub-millisecond range) might necessitate specific configurations and hardware optimizations.
+
+*** Horizontal Scaling
+Pulsar separates compute (brokers) and storage (BookKeeper), allowing each to scale independently. This enables handling massive throughput (millions of messages per second) by adding more brokers or bookies.
+** Durability & Fault Tolerance
+*** Disk Persistence
+Messages are durably stored on disk in BookKeeper, ensuring data isn't lost even if brokers restart.
+*** Replication
+Data is replicated across multiple bookies for fault tolerance. If one bookie fails, others can seamlessly take over.
+*** Write-Ahead Logging in [[id:4ef92e32-360e-4d76-8d8b-f7c42dcd859c][Apache BookKeeper]]
+
+Write-ahead logging (WAL) is a fundamental mechanism within Apache BookKeeper, a distributed storage system that underpins Pulsar's message persistence. It ensures data durability by writing all changes to a log file before applying them to the main storage.
+
+**** How it Works
+
+1. Log File: When a new entry (message) is written to BookKeeper, it is first appended to a write-ahead log file, which is stored on disk.
+
+2. In-Memory Cache: The entry is also temporarily cached in memory for fast access.
+
+3. Commit to Main Storage: Once the log entry is successfully written to disk, BookKeeper commits the change to the main storage (typically a file on disk).
+
+4. Durability Guarantee: Even if the BookKeeper server crashes before the data reaches main storage, the log file ensures that the changes can be replayed upon recovery, guaranteeing data consistency.
+
+**** Effects
+
+- Durability: Data is persistent even in the event of system failures.
+
+- Crash Recovery: Upon recovery, BookKeeper can replay the write-ahead log, restoring data to its consistent state.
+
+- Performance: The in-memory cache enables faster data access, while the WAL ensures that data is persisted in the background.
+
+**** Caveats
+
+- Log File Size: The write-ahead log file can grow over time, potentially impacting disk space and performance.
+
+- Disk I/O: The WAL process involves disk I/O operations, which can impact performance if the system is under heavy load.
+
+** Multi-tenancy
+*** Tenant Isolation
+Pulsar provides logical isolation between tenants (different applications or organizations) for security and resource management.
+*** Resource Allocation
+Administrators can allocate resources (topics, bandwidth, storage) to specific tenants, ensuring fair usage and predictable performance.
+*** Access Control
+Granular access control mechanisms restrict tenant access to specific resources, enhancing security and data privacy.
+
+** Understanding [[id:e9973a5d-a0bb-49b5-9767-af6df7a459eb][Geo-Replication]]
+
+Geo-replication in Pulsar ensures data durability and low latency across
+geographically distributed systems.
+
+It effectively mirrors data across multiple data centers, ensuring application continuity even if one data center experiences an outage.
+
+*** Working Mechanism
+1. Clusters & Namespaces: Pulsar deploys in clusters, each capable of
+   hosting multiple tenants and namespaces, which logically group
+   topics.
+2. Replication Policies: Policies are defined to replicate specific
+   namespaces across clusters. These policies determine the number and
+   location of data copies.
+3. Asynchronous Replication: Data is replicated asynchronously from the
+   origin cluster to remote clusters. This approach ensures low latency
+   for producers and consumers, even during replication.
+4. Automatic Failover (Optional): In the event of an outage, Pulsar can
+   automatically failover to a healthy cluster, minimizing downtime.
+*** Benefits
+- Disaster Recovery: Data is protected from regional outages.
+- Low Latency: Users connect to the nearest cluster, minimizing data access delays.
+- Data Locality: Compliance with data sovereignty regulations is simplified by keeping data within specific geographical boundaries.
+** Tiered Storage
+Tiered storage in Apache Pulsar optimizes message storage by strategically distributing data across different storage tiers based on access frequency and retention requirements. This approach resembles a filing cabinet with different drawers for different types of documents; frequently used documents are kept in the top drawer, while less frequently accessed ones are in lower drawers.
+
+*** Working Mechanism
+
+1. Primary Storage (Hot Tier): Messages are initially written to the primary storage tier, typically fast storage like SSDs or NVMe drives. This ensures low latency for producers and consumers accessing recently written messages.
+
+2. Secondary Storage (Warm Tier): After a specified period (e.g., 7 days), less frequently accessed messages are moved to a secondary storage tier, usually cheaper and slower storage like HDDs.
+
+3. Archive Storage (Cold Tier): For very old or infrequently accessed messages, Pulsar can move them to an archive storage tier, often located on cloud storage services.
+
+*** Benefits
+
+**** Cost Optimization
+Using cheaper storage for less frequently accessed data reduces overall storage costs.
+
+**** Performance Improvement
+By keeping frequently accessed data on faster storage, Pulsar maintains low latency for most operations.
+
+**** Scalability
+The tiered storage architecture allows Pulsar to handle larger datasets without incurring excessive storage costs.
+
+**** Flexibility
+Different retention policies can be applied to different namespaces or topics, providing flexibility in managing data lifecycle.
+
+* Relevant Nodes
+** [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Message Brokers]]

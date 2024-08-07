@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       ab7c582a-9b00-4e4d-a71c-302efdc1f0e7
+:ROAM_ALIASES: RAW
+:END:
+#+title: The Read-Act-Write Protocol
+#+filetags: :meta:protocol:
+
+I don't know a lot about a lot.
+I wish to know a lot about a lot.
+
+This framework has worked for me, when it comes to gaining competency in a domain:
+ - research sweeps i.e. Read
+ - conduct informed expriments i.e. Act
+ - maintain records and consolidate i.e. Write
+ - iterate until satisfaction
+
+I do apply this only to the domains that I'm seriously considering to be worth the time. In any other case, I roam around freely based on the whims of my whims. So if you've been directed to this node from a node-set somewhere, the implication is that I'm investing seriously into the study of that node-set and the content there-in is more reliable than a non-RAW node set.

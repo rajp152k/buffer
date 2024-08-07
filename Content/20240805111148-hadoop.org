@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       7aa94354-25d9-441b-993f-31ccc970edd3
+:END:
+#+title: Hadoop
+#+filetags: :tool:data:

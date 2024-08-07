@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       4ef92e32-360e-4d76-8d8b-f7c42dcd859c
+:END:
+#+title: Apache BookKeeper
+#+filetags: :tool:compute:
+
+* Basics
+
+- a distributed log storage service.
+
+** Key Features
+
+- provides high durability and [[id:20240519T152842.050227][availability]] for storing logs (write-ahead logs, transaction logs).
+
+- offers a scalable, [[id:20240519T162542.805560][fault-tolerant]], and low-latency storage solution.
+
+- ensures consistent, ordered, and replicated logs.
+
+** Working Mechanism
+
+bookkeeper separates storage and serving roles:
+
+- *bookies:* individual storage nodes (similar to datanodes in [[id:7aa94354-25d9-441b-993f-31ccc970edd3][hadoop]]) responsible for storing log fragments.
+
+- *metadata storage:* tracks bookie locations and log segment metadata ([[id:b635cd13-0e7b-4d3e-aa3e-24ad0c3df768][zookeeper]] is commonly used).
+
+- *clients:* write and read entries to/from bookkeeper (e.g.,[[id:5e438030-0096-4b97-8931-f99eb7b738c5][apache pulsar]]).
+
+** Use Cases
+
+- [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][messaging systems]]: providing durable and replicated storage for message streams.
+
+- write-ahead logging: ensuring data consistency and recovery for databases and other systems.
+
+- ledger storage: offering a reliable and performant foundation for distributed ledgers.
+
+** Advantages
+
+- *high throughput and low latency:* designed for high-performance logging operations.
+- *scalability:* easily scales horizontally by adding more bookie nodes.
+- *durability and availability:* replicated storage ensures data durability and availability.
+
+* Resources
+ - https://bookkeeper.apache.org/docs/

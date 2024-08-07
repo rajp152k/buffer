@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0e59bb86-1735-47d0-9373-fed97a835b50
+:END:
+#+title: customer
+#+filetags: :bs:

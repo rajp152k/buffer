@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       b5576a88-d12a-4779-958b-03ad4f4c6403
+:END:
+#+title: Business
+#+filetags: :bs:
+
+
+* Abstract
+
+** Personal
+This node set is the pragmatics of business, adapted to my (ever-evolving) incentives.
+
+I have some formal education in Business (took Business Studies during GCSE for two years (age 14-16)) and I was always inclined towards creating value in a sustainable manner, with personal temporal freedom also being a major motivator.
+
+Having recently begun working on [[id:95dd2f7c-e699-4ff6-9f40-52d573527107][theBitMage]], I want to fill in the gaps that the lack of practice has introduced in my approaches, over time.
+
+This node-set is going to be a deep practical analysis of the aspects of business applied to my needs.
+
+I am, as of 0x229F, in the dark when it comes to the ground realities of a operating a business. [[id:ab7c582a-9b00-4e4d-a71c-302efdc1f0e7][The iterative Read-Act-Write (RAW) protocol]] is being applied to this one. The contents encompassed can therefore be considered reliable.
+
+Parallely initializing a fundamental read, I'll be conducting experiments on the aspects of this node set.
+
+** The Etymology
+
+#+begin_quote
+Business" originates from the Old English "bisignes", meaning "care, anxiety, occupation",  highlighting its association with effort and activity.  Over time, it evolved to encompass trade and commerce, emphasizing the transactional nature of engaging in an endeavor for profit.
+#+end_quote
+
+** Overview of the Aspects
+
+Business encompasses the [[id:20240114T175025.020370][creation]], [[id:39bb719f-702a-4fb4-9e61-e35e55540bb1][exchange]], and [[id:fd0a58b4-1324-43c7-887f-54c332e1bbbe][delivery]] of [[id:c9942084-31af-424e-bc2b-41800004fa24][value]] to customers, aiming to generate [[id:9d500676-9ae0-48a9-a9c5-f2d87f8ca64c][profit]] and ensure [[id:19e192af-33a5-435f-a4b8-f1e1c7932608][sustainability]]. It involves understanding [[id:0e59bb86-1735-47d0-9373-fed97a835b50][customer]] [[id:9403896e-dcc6-4c02-b492-3f31bb901f54][needs]], developing [[id:85d33895-5734-4df9-97f7-e30a7a0640b2][solutions]], [[id:3242595d-3773-4e24-8e37-b8155a6e9187][managing]] [[id:026cebc6-e388-4e7e-84ce-b46d8f3151a9][operations]], and navigating [[id:f271220c-7cdc-449e-b5e6-90b6583b0fae][market]] dynamics.
+
+Importantly, business [[id:87d0947f-665c-4c88-96bd-86d8cf2fe017][success]] requires [[id:964a55a3-eb75-4ce6-b799-21ae0efed6dd][balancing]] profitability with [[id:6d388392-d79b-4f44-84cf-fdc985b6d144][ethical]] considerations, social impact, and regulatory [[id:06cb8fe6-cf1e-4c0c-afdc-f16ab38414ef][compliance]].
+
+* Resources
+** Book : The Personal MBA
+:PROPERTIES:
+:ID:       d9166a1b-cca7-4167-939c-2a2256485e5d
+:END:

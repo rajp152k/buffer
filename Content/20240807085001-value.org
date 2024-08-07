@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c9942084-31af-424e-bc2b-41800004fa24
+:ROAM_ALIASES: worth
+:END:
+#+title: Value
+#+filetags: :meta:

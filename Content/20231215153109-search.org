@@ -4,5 +4,7 @@
 #+title: Search
 #+filetags: :meta:
 
-
-
+* checkout
+- https://lunrjs.com/
+- https://xapian.org/
+- https://xapian.org/docs/omega/overview.html

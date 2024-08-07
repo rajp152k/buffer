@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fd0a58b4-1324-43c7-887f-54c332e1bbbe
+:END:
+#+title: delivery
+#+filetags: :meta:

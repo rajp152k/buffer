@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e9973a5d-a0bb-49b5-9767-af6df7a459eb
+:END:
+#+title: Geo-Replication
+#+filetags: :compute:data:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       95dd2f7c-e699-4ff6-9f40-52d573527107
+:END:
+#+title: theBitMage
+#+filetags: :bs:

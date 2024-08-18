@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f893fd9c-dab9-421f-89bb-01520b36423d
+:END:
+#+title: Resources
+#+filetags: :bs:

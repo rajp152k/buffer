@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       80f58d2f-2349-49f0-b499-7891735ee481
+:END:
+#+title: Catrina Fake
+#+filetags: :author:
+
+* Quotes
+** The right thing
+#+begin_quote
+So often people are working hard at the wrong thing. Working on the right thing is probably more important than working hard.
+#+end_quote
+* Presence
+- https://caterina.net/

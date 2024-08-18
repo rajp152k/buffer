@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       cd17f5bc-9ce3-4451-9d93-1637e740ffa2
+:END:
+#+title: Thomas Carlyle
+#+filetags: :author:
+
+* Quotes
+** CTA
+#+begin_quote
+The best effect of any book is that it excites the reader to self activity
+#+end_quote

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4424ebe1-e392-49a4-b542-28d76836eddb
+:END:
+#+title: pinecone
+#+filetags: :database:AI:

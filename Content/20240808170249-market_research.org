@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       396424f5-50c9-408d-bfdb-b666100fa839
+:END:
+#+title: Market Research
+#+filetags: :bs:

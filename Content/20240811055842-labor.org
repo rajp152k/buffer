@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eeca7dde-4a1e-4470-b8f5-9c033c0b91bf
+:END:
+#+title: labor
+#+filetags: :bs:

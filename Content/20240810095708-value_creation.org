@@ -1,0 +1,173 @@
+:PROPERTIES:
+:ID:       2da7b9ea-7bf0-4e7c-8e55-2a4113fa1584
+:END:
+#+title: Value Creation
+#+filetags: :bs:
+
+
+* 5 Interdependents of every business
+Every [[id:b5576a88-d12a-4779-958b-03ad4f4c6403][Business]] is fundamentally a collection of five interdependent processes:
+1. [[id:c9942084-31af-424e-bc2b-41800004fa24][Value]] Creation: Discovering what people [[id:9403896e-dcc6-4c02-b492-3f31bb901f54][need]] or want, then creating it.
+2. [[id:5c3d1afc-5ba6-4cce-b0c3-3594c28813f7][Marketing]]: Attracting attentiona and building demand for what you've created.
+3. [[id:5b5601de-511f-4034-9af9-e3e17f5ae622][Sales]]: Turning prospective customers into paying customers.
+4. Value Delivery: Giving your customers what you've promised and ensuring that they're satisfied.
+5. [[id:bb517f51-4272-4543-9d1e-f79b22f16a4d][Finance]]: Bringing in enough money to keep going and make your effort worthwile
+
+Understanding of your business idea with respect to these fundamentals is a necessary condiction to getting a good start.
+* Economically Valuable Skills
+If you want to improve your value as a businessperson, focus on improving skills directly related to the Five Interdependents mentioned above.
+
+* The Iron Law of the Market
+:PROPERTIES:
+:ID:       9c52cb9c-2852-41df-88c8-d9cf968cd096
+:END:
+#+begin_quote
+The Iron Law of the Market is cold, hard, and unforgiving: if you don't have a large group of people who really want what you have to offer, your chances of building a viable business are very slim.
+#+end_quote
+
+* Core Human Drives
+** The Drive to Acquire
+ - tangible objects : encompassed by [[id:03a09070-b8ab-42ea-bc97-915c3a840973][money]]
+ - intangible abstractions
+   - status
+   - power
+   - influence
+ - Businesses focusing on this need:
+   - [[id:b9335a3f-2013-49dc-8d28-a1b2d48d2d23][Retailers]]
+   - [[id:0e6023a5-15f1-4303-a147-186cabd0cd00][Investment]] brokerages
+   - Political [[id:3dc9e524-58c0-4f6f-9ad6-a1cb3864822a][Consulting]] firms
+** The Drive to Bond
+- to feel valued and loved
+- forming relationships
+  - platonic (touring groups, conferences)
+  - romantic (dating apps)
+- the [[id:026cebc6-e388-4e7e-84ce-b46d8f3151a9][logistics]] maybe facilitated by a generic [[id:22df2b30-5132-4a5f-a8e2-6effd7a4e735][organizer]] like [[id:a2fe6a79-979d-40f6-a323-20ed27374e16][restaurants]]
+** The Drive to Learn
+ - to satisfy our curiosity.
+   - academic programs
+   - book publishers
+   - training workshops
+   - [[id:95dd2f7c-e699-4ff6-9f40-52d573527107][theBitMage]]
+ - businesses that intend make you more
+   - [[id:5872676e-3660-4d22-9559-38b743baa1dd][competent]]
+   - [[id:d96386ab-1a50-431c-b97d-ff7a4a077427][knowledgable]]
+** The Drive to Defend
+- leverages the desire to [[id:0fc23da9-18f9-4f74-9444-030eef9f89c3][protect]] yourself, loved ones and your belongings.
+  - home alarm systems
+  - insurance firms
+  - martial arts instruction
+  - legal services
+- business that promise to ..
+  - keep us safe
+  - eliminate a problem
+  - prevent bad things from happening
+
+** The Drive to Feel
+- new sensory stimulus
+- emotional experiences
+- business that promise pleasure, excitement, entertainment, anticipation
+  - movies
+  - games
+  - concerts
+  - sporting events
+  - prostitution & porn ..
+** Clearly communicating the drives
+- when a combination of drives has a sizeable unmet demand, a market forms to satisfy that demand
+- Consequently, the more elaborate the drives driving your offerings needs, the more attractive it will be to the market to be.
+- Similarly, given all businesses deal out some mixture of money, status, power,love, knowledge, protection, pleasure and excitement..
+  - The clear communication of how your [[id:db5e0a19-ffe3-42e1-9751-faef5d28dd5f][service]]/[[id:5f2c9060-b27f-4f19-8c82-b3340a483c71][product]] satisfies the about, will make your offer more attractive.
+* Ten Parameters to Evaluate a Market
+:PROPERTIES:
+:ID:       de8d7ad0-0a9c-4955-9ed0-8fd79e2e3f90
+:END:
+back of the napkin calculation for the following parameters, rate each from 0 to 10, 10 being the most attractive.
+** The parameters
+*** Urgency
+- How Badly to people want this right now?
+- Renting an old movie is low urgency
+- seeing the first show of a new movie is high urgency
+*** Market Size
+- How many people are actively purchasing things like these?
+- the market size is:
+  - small for underwater basket weaving courses
+  - large for cancer treatment
+*** Pricing Potential
+- What is the highest price a typical purchaser would be willing to spend for a solution?
+- compare the peak worth of a conventional lolipop to that of an aircraft carrier.
+*** Cost of Customer Acquisition
+- How easy is it to acquire a new customer? ([[id:f893fd9c-dab9-421f-89bb-01520b36423d][Land]] + [[id:6f483dcf-823e-4bbf-8d2f-2a56da584c90][Entrepreneurship]] + [[id:07abd3d1-9a68-407b-9bf8-1aed23014f8e][Capital]] + [[id:eeca7dde-4a1e-4470-b8f5-9c033c0b91bf][Labor]])?
+- restaurants on busy streets vs goverment contractors proof of competency before acquiring a project (compliance, etc)
+*** Cost of Value Delivery
+- How much would it cost to create and deliver the value offered? ([[id:f893fd9c-dab9-421f-89bb-01520b36423d][Land]] + [[id:6f483dcf-823e-4bbf-8d2f-2a56da584c90][Entrepreneurship]] + [[id:07abd3d1-9a68-407b-9bf8-1aed23014f8e][Capital]] + [[id:eeca7dde-4a1e-4470-b8f5-9c033c0b91bf][Labor]])?
+- Per user streaming costs for Netflix vs a coal mine delivering loads to a power plant.
+*** Uniqueness of Offer
+- How unique is your offer vs competing offers in the market?
+- How easy/difficult is it your replicate your offering?
+- hair salons vs space tourism.
+*** Speed to Market
+- How quickly can you create something to sell?
+- mowing a lawn vs establishing a bank
+*** Up-Front Investment
+- How much will you have to invest before you're ready to sell?
+- being a web developer vs mining gold
+*** Upsell Potential
+- are there any related secondary offers that you could also present to purchasing customers?
+- frisbees are a one time sell but razors accompanied with shaving cream and blade subscriptions.
+*** Evergreen Potential
+- once the initial offer has been created, how much additional work will you have to put into it in order to continue selling?
+- business consulting requires ongoing work to get paid; whereas a book, once written, generates revenue as is for a longer
+** Recommendations
+- if the cumulative score is ..
+  - below 50, your time, energy and resources are better invested in other opportunities
+  - above 75, proceed with the idea
+  - b/w 50 and 75, [[id:19e192af-33a5-435f-a4b8-f1e1c7932608][sustainability]] will require a considerable amount of investment in resources and energy; evaluate the personalized worth of the proceedings.
+* The Hidden Benefits of Competition
+- when any two markets are equally attractive in other respects, you're better off choosing to enter the one with competition
+  - this means you know from the start there's a market of paying customers for this idea, eliminating your biggest risk.
+- The existence of a market implies you're on the right side of [[id:9c52cb9c-2852-41df-88c8-d9cf968cd096][The Iron Law of the Market]]
+- The existence of several succesful businesses implies you're not investing in a dead end.
+** Observing your [[id:f3586ba7-e892-4938-a579-d836206df609][competitors]]
+- The best way to observe what your potential competitors are up to is to become their customer.
+- buy as much as you can of what they offer
+- observing competition from the inside can teach you an enormous amount about the market.
+  - what value the competitor provides
+  - how they attract attention
+  - what they charge
+  - how they close sales
+  - how they make customers happy
+  - how they deal with issues
+  - what needs aren't they serving yet
+* The Mercenary Rule
+ - Becoming a mercenary doesn't pay: don't start a business for the money alone.
+   - cause : starting and running a business always takes more effort than you first expect.
+ - Even though a self-sustainable business can be identified,
+   - setting up the [[id:d67f54e1-aee4-4ef4-abc9-158192fb8249][systems]] necessary requires persistence and dedication
+   - if [[id:03a09070-b8ab-42ea-bc97-915c3a840973][Money]] was the only incentive, you'll probably quit before you hit the [[id:cccc5763-8610-4b5f-b5e7-d32fe82bb8af][Gold]] lode.
+ - pay close attention to the things that you find yourself coming back to over and over again
+ - building or finishing anything is mostly a matter of starting over again and again : don't ignore what pulls you
+ - The trick is to find an attractive [[id:f271220c-7cdc-449e-b5e6-90b6583b0fae][market]] that interests you enough to keep you improving your offering every single day.
+ - Finding such a market is mostly a matter of patience and active exploration.
+
+* The Crusader Rule
+- thinking objectively is important : there's a huge difference between an interesting idea and  a solid business.
+- learn to differentiate between hobbies, side projects and business.
+- you can casually diversify your pursuits once the financial bases are covered
+- before proceeding with your idea, evaluate it with the [[id:de8d7ad0-0a9c-4955-9ed0-8fd79e2e3f90][Ten Parameters to Evaluate a Market]]
+- Then test it as quickly and inexpensively as you can before fully commiting.
+
+* Twelve Standard Forms of Value
+In order to successfully  provide value to another person, it must take on a form they're willing to pay for. Economic Value usually takes on one of the following 12 forms:
+1. [[id:5f2c9060-b27f-4f19-8c82-b3340a483c71][Product]] : create tangible entity, sell and deliver for more than what it cost.
+2. [[id:db5e0a19-ffe3-42e1-9751-faef5d28dd5f][Service]] : provide aid or assistance, then charge a fee for the benefits rendered.
+3. [[id:b6e4c544-9f17-4c95-86a0-38c6cd8df1d5][Shared Resource]] : create a durable asset that can be used by many people, then charge for access.
+4. [[id:165b394b-6dbc-40c0-9fb2-02357142f1ce][Subscription]] : Offer a benefit on an ongoing basis, and charge a recurring fee.
+5. Resale : Acquire an asset from a wholesaler, then sell that asset to a retail buyer at a higher price.
+6. [[id:eb6b3216-1d77-4e95-b06a-869c93363aea][Lease]] : Acquire an asset, then allow another person to use that asset for a predefined amount of time in exchange for a fee.
+7. [[id:17d0736c-1967-4c36-93dc-82a2ffa2f397][Agency]] : Market and sell an asset of service you don't own on behalf of a third party, then collect a percentage of the transaction price for a fee.
+8. [[id:f089b12e-1620-4dca-9e3d-6e8432b7cf81][Audience]] Aggregation : Get the attention of a group of people with certain characteristics, then sell access in the form of advertising to another business looking to reach that audience.
+9. [[id:820d9b48-b6b4-4d67-8091-fd17dca5d0be][Loan]] : Lend a certain amount of money, then collect payments over a predefined period of time equal to the original loan plus a predefined interest rate.
+10. [[id:bdf6cab3-a807-4b04-a28f-98cdcdd7094b][Option]] : Offer the ability to take a predefined action for a fixed period of time in exchange for a fee.
+11. [[id:e6c04f65-fc33-48ba-8c76-75b64bd24939][Insurance]] : Take on the risk of some specific bad thing happening to the policy holder in exchange for a predefined series of payments, then pay out claims only when the bad thing actually happens.
+12. [[id:07abd3d1-9a68-407b-9bf8-1aed23014f8e][Capital]] : Purchase an ownership stake in a [[id:b5576a88-d12a-4779-958b-03ad4f4c6403][business]], then collect a corresponding portion of the [[id:9d500676-9ae0-48a9-a9c5-f2d87f8ca64c][profit]] as a one-time payout or ongoing [[id:a8ad72c6-207a-4a7d-ac48-9dd2edb1e320][dividend]].
+* Resources
+** [[id:d9166a1b-cca7-4167-939c-2a2256485e5d][Book : The Personal MBA]]

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       51dfb5e7-6b00-4bde-b5f5-65cb395f5d54
+:END:
+#+title: Llammaindex
+#+filetags: :tool:genAI:
+
+* Resources
+- https://www.llamaindex.ai/

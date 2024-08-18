@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       07abd3d1-9a68-407b-9bf8-1aed23014f8e
+:END:
+#+title: Capital
+#+filetags: :bs:

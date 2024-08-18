@@ -4,3 +4,8 @@
 #+title: Freidrich Nietzsche
 #+filetags: :author:
 
+* Quotes
+** Educating Educators
+#+begin_quote
+To educate educators! But the first ones must educate themselves! And for these I write.
+#+end_quote

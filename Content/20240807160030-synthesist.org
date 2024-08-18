@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       7fa8612e-7547-4fc4-8e2d-c86da9fc488f
+:END:
+#+title: Synthesist
+#+filetags: :polymathy:skills:
+
+* Abstract
+
+A synthesist combines disparate concepts, ideas, or data to create novel and valuable outputs. They [[id:20231111T232750.075460][bridge gaps across different disciplines, leveraging diverse knowledge]] to generate innovative solutions, insights, and perspectives.
+
+*Tools & Analogies:*
+
+- *Concept mapping software (e.g., XMind, Coggle):*  Helps visualize relationships between different ideas.
+- *Analogy engines (e.g., Google's "People also ask"):*  Surface unexpected connections and relationships.
+- *Cross-disciplinary research:* A biologist studying the mechanics of insect flight to inspire drone design.
+
+* Resources
+- *Analogy engines:*  Surface unexpected connections and relationships.
+  - https://analogenie.com/

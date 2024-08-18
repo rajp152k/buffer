@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6418b288-b9f1-4baa-a339-1b2a28f51c93
+:END:
+#+title: Isaac Asimov
+#+filetags: :author:

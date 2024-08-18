@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bb517f51-4272-4543-9d1e-f79b22f16a4d
+:END:
+#+title: Finance
+#+filetags: :bs:skills:

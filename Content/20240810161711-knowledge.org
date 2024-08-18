@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d96386ab-1a50-431c-b97d-ff7a4a077427
+:END:
+#+title: knowledge
+#+filetags: :meta:

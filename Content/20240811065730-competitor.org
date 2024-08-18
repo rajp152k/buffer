@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f3586ba7-e892-4938-a579-d836206df609
+:END:
+#+title: competitor
+#+filetags: :bs:

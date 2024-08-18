@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       6a64d738-7333-4df5-a50c-4d52662c1e3f
+:END:
+#+title: Martin Luther King, Jr.
+
+* Quotes
+** Serve
+#+begin_quote
+Everyone can be great because everyone can serve.
+#+end_quote

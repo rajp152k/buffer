@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       4797f11c-d9ba-4b35-b177-f3b1b5cabd57
+:END:
+#+title: Principles
+#+filetags: :meta:
+
+
+#+begin_quote
+"As to methods, there may be a million and then some. But principles are few. The man who grasps principles can successfully select his own methods. The man who tries methods, ignoring principles, is sure to have trouble."
+- Ralph Waldo Emerson
+#+end_quote

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0fc23da9-18f9-4f74-9444-030eef9f89c3
+:END:
+#+title: protection
+#+filetags: :meta:

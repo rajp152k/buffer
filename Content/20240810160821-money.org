@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       03a09070-b8ab-42ea-bc97-915c3a840973
+:END:
+#+title: Money
+#+filetags: :bs:

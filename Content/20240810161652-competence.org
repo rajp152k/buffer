@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5872676e-3660-4d22-9559-38b743baa1dd
+:END:
+#+title: competence
+#+filetags: :meta:

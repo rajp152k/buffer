@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       cccc5763-8610-4b5f-b5e7-d32fe82bb8af
+:END:
+#+title: Gold
+#+filetags: :chem:

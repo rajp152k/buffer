@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       b32f9d5b-50b2-4f64-81c0-ee5de0ab7478
+:END:
+#+title: Louis L'Amour
+#+filetags: :author:
+
+* Quotes
+** if it doesn't work?
+#+begin_quote
+Are you where you want to be if it doesn't work?
+#+end_quote

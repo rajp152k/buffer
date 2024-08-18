@@ -4,9 +4,7 @@
 #+title: Business
 #+filetags: :bs:
 
-
 * Abstract
-
 ** Personal
 This node set is about the pragmatics of business, adapted to my (ever-evolving) incentives.
 
@@ -21,17 +19,37 @@ I am, as of 0x229F, in the dark when it comes to the ground realities of a opera
 Parallely initializing a fundamental read, I'll be conducting experiments on the aspects of this node set.
 
 ** The Etymology
-
 #+begin_quote
-Business" originates from the Old English "bisignes", meaning "care, anxiety, occupation",  highlighting its association with effort and activity.  Over time, it evolved to encompass trade and commerce, emphasizing the transactional nature of engaging in an endeavor for profit.
+Business originates from the Old English "bisignes", meaning "care, anxiety, occupation",  highlighting its association with effort and activity.  Over time, it evolved to encompass trade and commerce, emphasizing the transactional nature of engaging in an endeavor for profit.
 #+end_quote
+** A Succesful Business can:
+ 1. [[id:5b8b5a9d-0c0a-4e26-8716-6399e979bd1e][supply]] something of [[id:c9942084-31af-424e-bc2b-41800004fa24][value]]
+ 2. that the [[id:f271220c-7cdc-449e-b5e6-90b6583b0fae][market]] [[id:3ddd1a63-e5cc-4039-a170-42af81674a6f][demand]]s
+ 3. at a mutually agreed upon [[id:98f9c55c-c14a-4ff3-b5f2-79318d7be1f3][price]] that
+ 4. satisfies the demand
+ 5. while generating enough [[id:c42d5bac-d922-45ef-ae68-0758609e5592][revenue]] to make it worthwile for continuing [[id:026cebc6-e388-4e7e-84ce-b46d8f3151a9][operations]]
+* Misc
+** [[id:20230815T212630.336328][questions]], not Answers
+ - framing the current situation well with the right questions is much more important than knowing the right answers to a specific problem.
+ - learning to ask better questions then should be the objective, not accumulating answers to constrained scenarios.
+** Leverage [[id:20240218T061653.528745][Abstractions]]
+ - understanding everything with complete depth and breadth is not my objective.
+ - learning to regularly upgrade your [[id:20240114T210722.836738][Axiom]]s to a relevant level allows you to bypass fretting over the unnecessary details and better direct your efforts towards the current [[id:187d2839-8a3b-479c-a745-c1195965ed43][bottle necks]].
+ - for instance, as of now, my bottleneck would be the uncertainty in my awareness about the fundamental aspects of a business: consequently, as of 0x229F, the most profitable action for me is educating myself on the matter.
 
-** Overview of the Aspects
-
-Business encompasses the [[id:20240114T175025.020370][creation]], [[id:39bb719f-702a-4fb4-9e61-e35e55540bb1][exchange]], and [[id:fd0a58b4-1324-43c7-887f-54c332e1bbbe][delivery]] of [[id:c9942084-31af-424e-bc2b-41800004fa24][value]] to customers, aiming to generate [[id:9d500676-9ae0-48a9-a9c5-f2d87f8ca64c][profit]] and ensure [[id:19e192af-33a5-435f-a4b8-f1e1c7932608][sustainability]]. It involves understanding [[id:0e59bb86-1735-47d0-9373-fed97a835b50][customer]] [[id:9403896e-dcc6-4c02-b492-3f31bb901f54][needs]], developing [[id:85d33895-5734-4df9-97f7-e30a7a0640b2][solutions]], [[id:3242595d-3773-4e24-8e37-b8155a6e9187][managing]] [[id:026cebc6-e388-4e7e-84ce-b46d8f3151a9][operations]], and navigating [[id:f271220c-7cdc-449e-b5e6-90b6583b0fae][market]] dynamics.
-
-Importantly, business [[id:87d0947f-665c-4c88-96bd-86d8cf2fe017][success]] requires [[id:964a55a3-eb75-4ce6-b799-21ae0efed6dd][balancing]] profitability with [[id:6d388392-d79b-4f44-84cf-fdc985b6d144][ethical]] considerations, social impact, and regulatory [[id:06cb8fe6-cf1e-4c0c-afdc-f16ab38414ef][compliance]].
-
+* Skills
+** [[id:5b5601de-511f-4034-9af9-e3e17f5ae622][Sales]]
+** [[id:5c3d1afc-5ba6-4cce-b0c3-3594c28813f7][Marketing]]
+** [[id:bb517f51-4272-4543-9d1e-f79b22f16a4d][Finance]]
+** [[id:026cebc6-e388-4e7e-84ce-b46d8f3151a9][Operations]]
+** [[id:9c63b373-804e-48b0-bc95-032481c70fa3][Product Development]]
+** [[id:c042e4d1-3575-4f8d-840c-3898148c0e12][Customer Service]]
+** [[id:ee45dace-4ea9-4415-abd6-74bd2930df37][Human Resources]]
+** [[id:20240218T064356.582939][Psychology]]
+** [[id:11847f5f-5337-425b-bacb-575f77690a4b][Systems]]
+** [[id:8d7067b7-084f-4c25-a8e0-609bbbe6fac6][Networking]]
+* Overarching Aspects
+** [[id:2da7b9ea-7bf0-4e7c-8e55-2a4113fa1584][Value Creation]]
 * Resources
 ** Book : The Personal MBA
 :PROPERTIES:

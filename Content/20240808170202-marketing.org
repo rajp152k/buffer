@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5c3d1afc-5ba6-4cce-b0c3-3594c28813f7
+:END:
+#+title: Marketing
+#+filetags: :bs:

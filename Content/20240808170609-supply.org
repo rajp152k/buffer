@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5b8b5a9d-0c0a-4e26-8716-6399e979bd1e
+:END:
+#+title: supply
+#+filetags: :bs:

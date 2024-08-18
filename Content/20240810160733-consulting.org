@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3dc9e524-58c0-4f6f-9ad6-a1cb3864822a
+:END:
+#+title: Consulting
+#+filetags: :bs:

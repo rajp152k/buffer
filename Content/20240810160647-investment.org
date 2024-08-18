@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0e6023a5-15f1-4303-a147-186cabd0cd00
+:END:
+#+title: Investment
+#+filetags: :bs:

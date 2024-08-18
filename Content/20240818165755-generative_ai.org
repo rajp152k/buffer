@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       95d78022-1277-469f-a497-e6442ecc416b
+:END:
+#+title: Generative AI
+#+filetags: :AI:
+
+* Abstract
+** Refining Gen AI outputs
+In order of increasing effort:
+*** Prompting with Context
+- provide more context with the regular prompt that you provide
+*** Retrieval Augmented Generation
+- fetch relevant data from a database and append that to the prompt
+*** Fine-Tuned Models
+- train foundational models further on your own data for refined responses
+*** Specifically Trained Models
+- train models from scratch for that specific context that you wish to optimize for
+* Tools Index
+** Overarching Frameworks
+*** [[id:9c31ddef-2087-4b95-892e-006df1dca1f3][Langchain]]
+*** [[id:51dfb5e7-6b00-4bde-b5f5-65cb395f5d54][Llammaindex]]
+*** [[id:880f7167-eb9a-4ff9-abb3-53a68f4f9cb0][Haystack]]
+** Vector Databases
+*** [[id:4424ebe1-e392-49a4-b542-28d76836eddb][pinecone]]
+* Resources
+ - https://microsoft.github.io/generative-ai-for-beginners/

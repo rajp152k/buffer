@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       fe043a58-2d9e-497a-9c61-cb9d29a7f478
+:END:
+#+title: Mark Andreessen
+#+filetags: :author:
+
+* Quotes
+** Markets
+#+begin_quote
+Market matters most; neither a stellar team nor a fantastic product will redeem a bad market. Markets that don't exist don't care how smart you are.
+#+end_quote

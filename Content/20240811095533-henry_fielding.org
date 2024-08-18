@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       114e95ea-b85b-44d4-b775-4a2a160b6e87
+:END:
+#+title: Henry Fielding
+#+filetags: :author:
+
+* Quotes
+** Money, your god
+#+begin_quote
+Make money your god and it will plague you like the devil
+#+end_quote

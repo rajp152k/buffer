@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       880f7167-eb9a-4ff9-abb3-53a68f4f9cb0
+:END:
+#+title: Haystack
+#+filetags: :tool:genAI:
+
+* Resources
+- https://haystack.deepset.ai/overview/intro

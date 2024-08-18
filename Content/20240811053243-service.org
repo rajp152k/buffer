@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       db5e0a19-ffe3-42e1-9751-faef5d28dd5f
+:END:
+#+title: service
+#+filetags: :bs:

@@ -10,6 +10,8 @@ medium : https://rajp152k.medium.com/
 poetry : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
 
 * Comment stream
+** 0x229F
+ - https://analogenie.com/
 ** 0x223C
  - had a draft about writing despite of generative AI but discarded it cause of it being stale enought that it didn't ignite any further excitement.
  - on that note, wondering about the nature of excitement and novelty, taking it beyond the idea of pushing out an Essay.

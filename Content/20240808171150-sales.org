@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5b5601de-511f-4034-9af9-e3e17f5ae622
+:END:
+#+title: Sales
+#+filetags: :bs:skills:

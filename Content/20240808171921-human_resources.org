@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ee45dace-4ea9-4415-abd6-74bd2930df37
+:END:
+#+title: Human Resources
+#+filetags: :bs:

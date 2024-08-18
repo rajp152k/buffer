@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       3a6d45e1-ef8a-4271-9de6-803ff369f6c3
+:END:
+#+title: William Shenstone
+#+filetags: :author:
+
+* Quotes
+** The Zealous and The Judicious
+#+begin_quote
+The zealous display the strength of their belief, while the judicious show the grounds of it.
+#+end_quote

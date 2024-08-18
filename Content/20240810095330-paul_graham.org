@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       fbd38417-13a0-4cda-b256-ee1ab94048f0
+:END:
+#+title: Paul Graham
+#+filetags: :author:
+
+* Quotes
+** Value
+#+begin_quote
+Make something people want.. There's nothing more valuable than an unmet need that is just becoming fixable. If you find something broken that you can fix for a lot of people, you've found a gold mine.
+#+end_quote

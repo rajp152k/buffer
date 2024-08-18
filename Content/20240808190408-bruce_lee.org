@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       5eb381ff-5574-470f-a9b9-e319c20ed230
+:END:
+#+title: Bruce Lee
+#+filetags: :author:
+
+* Quotes
+** Obsessions
+#+begin_quote
+Any technique, however worthy or desirable, becomes a disease when the mind is obsessed with it.
+#+end_quote

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b6e4c544-9f17-4c95-86a0-38c6cd8df1d5
+:END:
+#+title: Shared Resource
+#+filetags: :bs:

@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       20240218T061653.528745
+:ROAM_ALIASES: "mental model"
 :END:
 #+title: Abstractions
 #+filetags: :meta:

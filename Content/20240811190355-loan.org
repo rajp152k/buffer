@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       820d9b48-b6b4-4d67-8091-fd17dca5d0be
+:END:
+#+title: Loan
+#+filetags: :bs:

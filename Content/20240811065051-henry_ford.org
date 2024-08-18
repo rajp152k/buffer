@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       3548bba7-5798-475a-819f-b8eed6e4b742
+:END:
+#+title: Henry Ford
+#+filetags: :author:
+
+* Quotes
+** Competition
+#+begin_quote
+The competitor to be feared is one who never bothers about you at all, but goes on making his own business better all the time.
+#+end_quote

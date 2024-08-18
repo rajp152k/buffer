@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       5f2c9060-b27f-4f19-8c82-b3340a483c71
+:END:
+#+title: Product
+#+filetags: :bs:
+
+* Abstract
+
+A Product is a tangible form of [[id:c9942084-31af-424e-bc2b-41800004fa24][Value]]; running a product-oriented [[id:b5576a88-d12a-4779-958b-03ad4f4c6403][Business]] requires:
+
+1. Creating something tangible that people want.
+2. Product that item as inexpensively as possible while maintaining an acceptable level of quality.
+3. Sell as many units as possible for as high a price as the market will bear.
+4. Keep enough inventory of finished product available to fulfill orders as they come in.
+
+
+Products can be Durables (cars, computers, etc); consumables (chocolates, medicine); Products don't have to be physical (software, e-books).
+
+Products are a valuable way to provide value because :
+ - they have potential for duplication (create once, replicate for each sell)
+ - consequently, products scale better than other forms of value

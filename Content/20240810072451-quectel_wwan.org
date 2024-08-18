@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       051ff645-bf0b-4229-add9-56da0caa5654
+:END:
+#+title: quectel-wwan
+#+filetags: :hardware:
+
+facing some issues with the EM05G post-suspension wake, tried some recommendations cause nmtui shows hardware missing

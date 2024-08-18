@@ -4,3 +4,8 @@
 #+title: Albert Einstein
 #+filetags: :author:
 
+* Quotes
+** curiosity of inquiry
+#+begin_quote
+It is, in fact, nothing short of a miracle that modern methods of instruction have not entirely strangled the curiosity of inquiry.
+#+end_quote

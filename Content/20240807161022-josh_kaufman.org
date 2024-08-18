@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8f3cee56-4400-441c-903f-418bdc708338
+:END:
+#+title: Josh Kaufman
+#+filetags: :author:
+
+* Books
+** [[id:d9166a1b-cca7-4167-939c-2a2256485e5d][The Personal MBA]]

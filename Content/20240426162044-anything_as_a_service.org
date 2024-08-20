@@ -14,7 +14,7 @@ When provisioning any abstraction as a service, there are four important aspects
 
 Try understanding this node in the context of [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]] considering the dimensions of compute, storage and networking facilitations.
 * Instances
-** Infrastructure as a Service
+** [[id:54b9dd70-6104-4f01-8007-967b16f8e010][Infrastructure]] as a Service
 :PROPERTIES:
 :ID:       de6e9e57-6ba8-4d37-8e62-1a2c2327b275
 :END:

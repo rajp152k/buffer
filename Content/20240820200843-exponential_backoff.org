@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b862218a-a89d-4262-a2fe-844de60e6ace
+:END:
+#+title: Exponential Backoff
+#+filetags: :cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Exponential_backoff

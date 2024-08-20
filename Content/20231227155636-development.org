@@ -4,7 +4,7 @@
 #+title: Software Engineering
 #+filetags: :meta:programming:
 
-* Misc Index
+* Major Index
 ** Dependencies
 :PROPERTIES:
 :ID:       4a17f01a-8000-40d0-bf4d-46da6cdacc1d
@@ -34,3 +34,6 @@ Given a Dependency [[id:179b5b39-234a-4d0c-afde-c3b81409760c][Relationship]], li
 :ID:       7a450c24-000e-4262-8632-b07f8a4d1df9
 :END:
  - https://12factor.net/
+
+* Patterns Index
+** The [[id:64b6bd2a-de67-4f28-9406-336879845d80][Circuit Breaker]]

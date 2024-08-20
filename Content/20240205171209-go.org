@@ -26,13 +26,145 @@ exporting both input and output as I usually do with all source that I write`)
 }
   #+end_src
 
-  #+RESULTS:
-  : Verifying Org-Babel works for golang
-  : exporting both input and output as I usually do with all source that I write
-
 - works, and I'm ready to go..
+- unbuffered channels:
+  #+begin_src go :exports both
+package main
+
+import "fmt"
+
+func main() {
+	ch := make(chan string)
+
+	for i:= 0; i < 3; i++{
+                go func() {
+                        message := <-ch
+                        fmt.Println(message)
+                        ch <- "pong"
+                }()
+
+                ch <- "ping"
+                fmt.Println(<-ch)
+	}
+}
+  #+end_src
+
+  #+RESULTS:
+  : ping
+  : pong
+  : ping
+  : pong
+  : ping
+  : pong
+
+- buffered channels
+
+  #+begin_src go :exports both
+package main
+
+import "fmt"
+
+func main(){
+	ch := make(chan map[string]int,3)
+
+	ch <- map[string]int{"a": 1, "b": 2}
+	ch <- map[string]int{"c": 3, "d": 4}
+	ch <- map[string]int{"e": 5, "f": 6}
+
+	fmt.Println(<- ch)
+	fmt.Println(<- ch)
+
+	close(ch)
+
+	recv, present := <- ch
+
+	fmt.Println(recv, present)
+
+	recv, present = <- ch
+
+	fmt.Println(recv, present)
+
+}
+  #+end_src
+
+  #+RESULTS:
+  : map[a:1 b:2]
+  : map[c:3 d:4]
+  : map[e:5 f:6] true
+  : map[] false
 
 
+- looping over channels
+
+  #+begin_src go :exports both
+package main
+import "fmt"
+
+func main(){
+	ch := make(chan int,3)
+
+	ch <- 1
+	ch <- 2
+	ch <- 3
+
+	close(ch)
+	// looping without close would result in a deadlock
+
+	for i := range ch {
+		fmt.Println(i)
+	}
+
+
+}
+  #+end_src
+
+  #+RESULTS:
+  : 1
+  : 2
+  : 3
+
+- concurrency seems to have been dramatically simplified
+
+  #+begin_src go :exports both
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	var ch chan int
+
+	for i:= 0; i < 2; i++{
+                select {
+                case m := <- ch:
+                        fmt.Println(m)
+                case <-time.After(1 * time.Second):
+                        fmt.Println("Timed out at:", time.Now())
+				}
+	}
+}
+
+  #+end_src
+
+  #+RESULTS:
+  : Timed out at: 2024-08-20 16:58:29.476867225 +0530 IST m=+1.000813585
+  : Timed out at: 2024-08-20 16:58:30.477541565 +0530 IST m=+2.001487824
+
+  - might start exploring building generative AI applications in golang
+  - I do have an active project that demands LLM integrations
+  - I think I might benefit by porting the whole operations into golang
+  - have been enjoying it so far.
+  - might just stick to golang for all that I write henceforth for a while
+  - I haven't specialised in some time, am seriously considering mastering this for good
+  - is very straightforward while still allowing for the programming primitives that I enjoy (has a psuedo lisp dialect, closures, lambdas, etc with a priority for pragmatic concurrency)
+  - my doom emacs toolchain for golang with dap is also convenient to setup and work with.
+  - am willing to explore all the intricacies and the complex things that I can do with go.
+  - the core language is minimal but already can anticipate all that I can do with it.
+  - going to give this a serious thought.
+  - checking out the context package
+    - https://pkg.go.dev/context
 ** 0x2273
 - another book : software engineering in golang
 - another book : let's go

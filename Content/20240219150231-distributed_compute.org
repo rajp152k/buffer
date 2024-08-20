@@ -19,8 +19,23 @@ A few trade-offs incurred due to the above:
  - latency increases due to the communication overhead
  - poor system design can affect user experience
 
-Theoretical exploration of correctness in distributed compute is actively explored in the [[id:3c7ce266-295a-4f70-a293-aa91725fc23f][Consensus]] node
+Theoretical exploration of correctness in distributed compute is actively explored in the [[id:3c7ce266-295a-4f70-a293-aa91725fc23f][Consensus]] node.
 
+This is an index of relevant nodes
+
+* Fallacies of Distributed Computing
+:PROPERTIES:
+:ID:       2b29d5fb-58ab-41fe-a8b3-59b9ee675b5f
+:END:
+ - checkout https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
+** The [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] is reliable
+** Latency is zero
+** Bandwidth is infinite
+** The Network is [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][secure]]
+** Topology doesn't change
+** There is one administrator
+** Transport cost is zero
+** The network is homogenous
 * Versioning
 ** Lamport Timestamps
 :PROPERTIES:

@@ -26,6 +26,91 @@ Cloud native refers to designing, developing, and operating applications that op
 ** [[id:b24fb743-99bb-4e1a-b4a4-3b81c9677360][Resilience]]
 ** [[id:2cd51b23-f253-40e2-8c5d-6f2924ca484d][Manageability]]
 ** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
+* [[id:2b29d5fb-58ab-41fe-a8b3-59b9ee675b5f][Fallacies of Distributed Computing]]
+* Cloud Native Patterns
+** context.Context
+- read up : https://pkg.go.dev/context
+- used to idiomatically convey, cancellation signals, deadline abstractions (timeouts), etc.
+- context values are thread safe
+- read up : https://dave.cheney.net/2017/01/26/context-is-for-cancelation
+- also read up : https://dave.cheney.net/2017/08/20/context-isnt-for-cancellation
+
+** Stability Patterns
+*** Circuit Breaker
+:PROPERTIES:
+:ID:       64b6bd2a-de67-4f28-9406-336879845d80
+:END:
+- https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern
+- automatically degrades service functions in response to a likely fault, preventing larger or cascading failures by eliminating recurring errors and providing reasonable error responses
+- 2 major components :
+  - Circuit
+  - Breaker
+- Consider the Scenario:->
+  - User Request <-> Business Logic Layer <-> Data Layer
+  - the Business Logic implements a Breaker if the Circuit (Data Layer in this case has failed)
+  - will retry after sensible pauses and backoff strats
+  - won't continue requesting if failures are assured.
+**** Code
+
+
+- Consider the Circuit type as, that signifies the signature of the function that's interacting with the database. An error as one of its returns is necessary.
+
+  #+begin_src go
+type Circuit func(context.Context) (string, error)
+  #+end_src
+
+- Consider the Breaker function that accepts a function of type Circuit and some failure threshold information (number of consecutive failures to be tolerated in this case, before breaking (opening) the circuit), returning a wrapped circuit with the same function signature.
+
+  #+begin_src go
+
+func Breaker(circuit Circuit, failureThreshold uint) Circuit {
+
+	consecutiveFailures := 0
+	lastAttempt := time.Now()
+
+	// for closures access over breaker's administrative data
+	// failure count and retry times
+	var m sync.RWMutex
+
+	return func(context.Context) (string,error) {
+		//see exponential backoff
+		m.RLock()
+
+		d := consecutiveFailures - int(failureThreshold)
+
+		if d >= 0 { //circuit breaking in case of failure
+			shouldRetryAt := lastAttempt.Add(time.Second*2 << d)
+			if !time.Now().After(shouldRetryAt){
+				m.Runlock()
+				return "", errors.New("Service unreachable")
+			}
+		}
+
+		m.Runlock()
+
+		// continuing request if no track of failures
+
+		response, err := circuit(ctx)
+
+		m.Lock() // acquiring write locks for closure's commons
+		defer m.Unlock()
+
+		lastAttempt = time.Now()
+
+		if err != nil {
+			consecutiveFailures++
+			return response, err
+		}
+
+		consecutiveFailures = 0
+		return response, nil
+	}
+}
+
+  #+end_src
+
+
+
 * CNCF (Cloud Native Computing Foundation)
 :PROPERTIES:
 :ID:       56e931a4-16af-4eba-bcd0-c8f0b9566153

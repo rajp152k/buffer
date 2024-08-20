@@ -26,17 +26,6 @@ jobs:
         with:
           publish_script: publish.el
           
-      - name: Install node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Search Index
-        run: node build-index.js
-      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

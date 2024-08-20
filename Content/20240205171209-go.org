@@ -7,10 +7,31 @@
 * Stream
 ** 0x22AB
 - finished "Let's Go"
-- will do "Let's Go Further sometime down the lane"
+- will do "Let's Go Further" sometime down the lane
 - getting into "Cloud Native Go" now though
 - will soon start with open source contribs in the CNCF landscape
-- The concurrency model of golang :[[id:0458f827-5634-41e0-b261-dfc5cb2d2389][CSP-Concurrency]]
+- The concurrency model of golang : [[id:0458f827-5634-41e0-b261-dfc5cb2d2389][CSP-Concurrency]]
+- choosing golang as my principal language for the close future
+- is the lingua-cloud-native and do see myself personally benefitting moving away from the lisp romantic that I am for some time and building practical stuff.
+- as usual, I begin with verifying org babel works
+
+  #+begin_src go :exports both
+package main
+
+import "fmt"
+
+func main(){
+	fmt.Println(`Verifying Org-Babel works for golang
+exporting both input and output as I usually do with all source that I write`)
+}
+  #+end_src
+
+  #+RESULTS:
+  : Verifying Org-Babel works for golang
+  : exporting both input and output as I usually do with all source that I write
+
+- works, and I'm ready to go..
+
 
 ** 0x2273
 - another book : software engineering in golang

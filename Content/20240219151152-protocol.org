@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       11d303f1-d337-4f51-b211-db435a9f2cd0
+:ROAM_ALIASES: Interface
 :END:
 #+title: Protocol
 #+filetags: :meta:

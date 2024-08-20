@@ -12,14 +12,20 @@ Cloud native refers to designing, developing, and operating applications that op
 
  The Projects sub-node in here hosts an index into tooling that I've enqueued for exploration.
 
-* Canonical Layers to Cloud-Native
-*** Provisioning
-*** Runtime
-*** Orchestration and Management
-*** App Definition and Development
-* Ancillary Pillars to Cloud-Native
-*** Observability and Analysis
-*** Platform
+ All the major practical components of the cloud native landscape (as of 0x22AB) are being developed in [[id:ad4ba668-b2ec-47b1-9214-2284aedaceba][Golang]] : initializing exploration of the same directed towards my intentions of contributing competently in the CNCF landscape.
+
+* The Path to Cloud Native
+- The primary incentive so far pushing the evolution of computing services has been the pressure to [[id:56dbce77-b258-4fde-a6c7-f865e476c879][scale]].
+- 1950s : about the [[id:b72d3ca3-53fa-4a97-964f-cbc1a8d612a4][mainframe]] computer with all the [[id:a8cbf516-055a-4ef7-9afe-7a780bda52ab][logic]] and [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] residing together as one [[id:5be3075a-d718-4f44-b031-4df5547423a2][monolith]].
+- 1980s : [[id:a4e712e1-a233-4173-91fa-4e145bd68769][networks]] of personal computers encouraged some changes. Some application logic could be off-loaded to these PCs (partioning into the [[id:e944d11b-ba53-4dc1-aee9-3793f59be8ac][Client-Server Architecture]]) : the first major move towards decoupled services.
+- 1990s : the dotcom rush led to explosion of (SaaS) [[id:cbcb26f4-dd24-4f59-8003-25573a7cd034][Software as a Service]].  The associated logistics of operating (develop, deploy, maintain) such a service began to get complex. This further encouraged the decoupling of the business layer in the Client Server architecture into multiple [[id:54978664-78a5-4c2c-ae33-c4e6a14d6bb0][Microservices]].
+- 2000s : AWS popularized (IaaS) [[id:de6e9e57-6ba8-4d37-8e62-1a2c2327b275][Infrastructure as a Service]] : yielding the initiation of the term [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]].
+* Important Terms (checkout [[id:314236f7-81ae-48b7-b62b-dc822119180e][System Design]])
+** [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]
+** [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][Loose Coupling]]
+** [[id:b24fb743-99bb-4e1a-b4a4-3b81c9677360][Resilience]]
+** [[id:2cd51b23-f253-40e2-8c5d-6f2924ca484d][Manageability]]
+** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
 * CNCF (Cloud Native Computing Foundation)
 :PROPERTIES:
 :ID:       56e931a4-16af-4eba-bcd0-c8f0b9566153
@@ -35,8 +41,16 @@ The CNCF is a vendor-neutral open source community that fosters the adoption and
 
 - [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][Automated]]: Infrastructures and pipelines are managed declaratively and automated.
 
-* Projects
-** [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][Devops]]
+** Canonical Layers to Cloud-Native
+**** Provisioning
+**** Runtime
+**** Orchestration and Management
+**** App Definition and Development
+** Ancillary Pillars to Cloud-Native
+**** Observability and Analysis
+**** Platform
+** Projects
+*** [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][Devops]]
 |------------+--------------------------|
 | Project    | Utility                  |
 |------------+--------------------------|
@@ -46,14 +60,14 @@ The CNCF is a vendor-neutral open source community that fosters the adoption and
 | [[id:c50c85ac-0b21-486f-99ac-00f325e2c43c][KEDA]]       | AutoScaling              |
 | [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]] | Orchestration            |
 |------------+--------------------------|
-** Compute
+*** Compute
 |------------+-------------------|
 | Project    | Utility           |
 |------------+-------------------|
 | [[id:2e953b92-6b7c-46ce-aa31-f278601ab005][Containerd]] | Container Runtime |
 | [[id:320016f3-53be-4756-b9b8-3a89714ff1d9][cri-o]]      | Container Runtime |
 |------------+-------------------|
-** Storage
+*** Storage
 |---------+---------------------------|
 | Project | Utility                   |
 |---------+---------------------------|
@@ -61,7 +75,7 @@ The CNCF is a vendor-neutral open source community that fosters the adoption and
 | [[id:63dbe80a-9503-470f-94f7-af72190f35db][TiKV]]    | distributed key-val store |
 | [[id:731a8c2c-da51-419b-8224-774913c597e6][Vitess]]  | Scalable Relational  DB   |
 |---------+---------------------------|
-** [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Networking]]
+*** [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Networking]]
 |---------+----------------------|
 | Project | Utility              |
 |---------+----------------------|
@@ -72,7 +86,7 @@ The CNCF is a vendor-neutral open source community that fosters the adoption and
 | [[id:2f89e95e-9bfa-4762-a5f1-b1caae1f364b][lstio]]   | Service Mesh         |
 | [[id:bb7b9374-8773-45f5-992d-c969d7cbded2][LinkerD]] | Service Mesh         |
 |---------+----------------------|
-** Security
+*** Security
 |-------------------+------------------------|
 | Project           | Utility                |
 |-------------------+------------------------|
@@ -82,7 +96,7 @@ The CNCF is a vendor-neutral open source community that fosters the adoption and
 | [[id:c96bc90b-0f7e-4943-803e-916fcd036c19][Spire]]             | Key Management         |
 | [[id:a1a26817-85fe-481b-b41e-659502094361][TUF]]               | Update System Security |
 |-------------------+------------------------|
-** Meta
+*** Meta
 |------------+---------------------|
 | Project    | Utility             |
 |------------+---------------------|

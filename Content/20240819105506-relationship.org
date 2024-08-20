@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       179b5b39-234a-4d0c-afde-c3b81409760c
+:END:
+#+title: Relations
+#+filetags: :math:
+
+* Properties
+** Transitivity
+:PROPERTIES:
+:ID:       40f40ce6-c25f-4076-ac32-b69dbb5a3b4a
+:END:
+** Associativity
+:PROPERTIES:
+:ID:       366f45b6-1942-431b-9e16-7951634ca39e
+:END:
+** Reflexivity
+:PROPERTIES:
+:ID:       0c0dbaf8-46aa-4dd6-890f-b14ea4b34b8d
+:END:
+** Symmetry
+:PROPERTIES:
+:ID:       66aded20-c17c-49d8-b30f-a08a8fce4ffd
+:END:
+** AntiSymmetry
+:PROPERTIES:
+:ID:       56422537-b8a0-4f45-8837-5698bd105c2a
+:END:

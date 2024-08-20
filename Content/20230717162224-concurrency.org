@@ -6,3 +6,4 @@
 
 * Major Flavors
  - [[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]]
+ - [[id:0458f827-5634-41e0-b261-dfc5cb2d2389][CSP: Communicating Sequential Processes]]

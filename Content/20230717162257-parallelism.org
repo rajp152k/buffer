@@ -4,3 +4,8 @@
 #+title: Parallelism
 #+filetags: :programming:
 
+Parallelism implies the simultaneous execution of multiple independent processes.
+
+[[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]] describes the composition of independently executing processes : not saying anything regarding when these will be executed.
+
+Concurrency is not parallelism.

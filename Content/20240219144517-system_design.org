@@ -4,12 +4,6 @@
 #+title: System Design
 #+filetags: :cs:
 
-* Quick Links
-** Latency numbers every programmer should know
-:PROPERTIES:
-:ID:       2dca77bf-c105-407f-8afc-289716ea79d5
-:END:
- - https://colin-scott.github.io/personal_website/research/interactive_latency.html
 * Abstract
 
 This node cluster references all the technicalities that go into designing a system - this should as a good rounded tour of the practical aspects of computer science. 
@@ -18,3 +12,53 @@ An important aspect of system design is to be able to handle all the users that 
 
 System design is a problem oriented and not just limited to generical theoretical design patterns.
 
+* Major Aspects
+** Scalability
+:PROPERTIES:
+:ID:       56dbce77-b258-4fde-a6c7-f865e476c879
+:END:
+- the ability of a system to continue to behave as expected in the face of significant upward or downward changes in demand.
+*** Types
+**** Vertical Scaling
+- altering the hardware resources already allocated to a server.
+- straightforward but limited extensibility
+**** Horizontal Scaling
+- altering the number of servers serving the application
+- more complex but greater flexibility
+*** Enablement
+- have services with their state management decoupled from the act of serving.
+- see [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]] i.e. distributing state between service replicas.
+
+** Loose Coupling
+:PROPERTIES:
+:ID:       adaf5bfa-48f9-415b-893e-7398b10f383e
+:END:
+- the system property and design strategy in which a system's components have minimal knowledge of any other components.
+- internal changes to one don't demand changes in the other
+- web servers and web browsers for instance are loosely coupled given both have certain guarantees.
+*** Enablement
+- Having a [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Protocol]] allows standardizing the input expectations and output assurances of a component.
+- These may be addressed as [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Interfaces]] as well.
+** Resilience
+:PROPERTIES:
+:ID:       b24fb743-99bb-4e1a-b4a4-3b81c9677360
+:END:
+- see [[id:20240519T162542.805560][fault tolerence]]
+- the measure of how well a system withstands and recovers from errors and faults
+
+** Manageability
+:PROPERTIES:
+:ID:       2cd51b23-f253-40e2-8c5d-6f2924ca484d
+:END:
+ - the ease with which a system's behaviour can be modified to keep it secure, running smoothly, and compliant with changing requirements.
+** Observability
+:PROPERTIES:
+:ID:       3913909e-2b8d-465c-8303-5c634bd08f57
+:END:
+ - the measure of how well a system's internal states can be inferred from knowledge of its external outputs.
+* Quick Links
+** Latency numbers every programmer should know
+:PROPERTIES:
+:ID:       2dca77bf-c105-407f-8afc-289716ea79d5
+:END:
+ - https://colin-scott.github.io/personal_website/research/interactive_latency.html

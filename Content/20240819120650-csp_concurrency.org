@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0458f827-5634-41e0-b261-dfc5cb2d2389
+:ROAM_ALIASES: "Communicating Sequential Processes"
+:END:
+#+title: CSP-Concurrency
+#+filetags: :golang:programming:
+
+* Resources
+- https://en.wikipedia.org/wiki/Communicating_sequential_processes
+- http://www.usingcsp.com/cspbook.pdf

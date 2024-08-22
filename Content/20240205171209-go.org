@@ -182,3 +182,6 @@ func main() {
 :END:
 
 ** BOOK: Cloud Native Go
+:PROPERTIES:
+:ID:       64bfc13e-1b7c-4cbe-ba0e-9d17ebaacef1
+:END:

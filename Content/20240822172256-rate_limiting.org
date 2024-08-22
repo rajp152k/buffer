@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       a9f836f0-d43d-4e97-96fc-06f75e982d15
+:END:
+#+title: Rate Limiting
+#+filetags: :programming:
+
+* Algorithms
+** Token Bucket
+- https://en.wikipedia.org/wiki/Token_bucket

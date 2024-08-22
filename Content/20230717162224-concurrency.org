@@ -173,6 +173,21 @@ func main(){
 	wg.Wait()
 }
 #+end_src
+
+#+RESULTS:
+#+begin_example
+dest chan # 4 intook { 5 from source chan }
+dest chan # 4 intook { 6 from source chan }
+dest chan # 4 intook { 8 from source chan }
+dest chan # 1 intook { 2 from source chan }
+dest chan # 1 intook { 7 from source chan }
+dest chan # 1 intook { 10 from source chan }
+dest chan # 4 intook { 9 from source chan }
+dest chan # 3 intook { 4 from source chan }
+dest chan # 0 intook { 1 from source chan }
+dest chan # 2 intook { 3 from source chan }
+#+end_example
+
 ** Future-Promise
 :PROPERTIES:
 :ID:       0e346737-3bff-4f35-b08c-9c8c2f163a3d

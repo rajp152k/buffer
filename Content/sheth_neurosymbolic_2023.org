@@ -2,7 +2,7 @@
 :ID:       5ec6cae2-7c8c-467b-b5a6-6bb9edd1bffd
 :ROAM_REFS: @sheth_neurosymbolic_2023
 :END:
-#+title: Sheth, Amit and Roy, Kaushik and Gaur, Manas :: Neurosymbolic AI – Why, What, and How
+#+title: Neurosymbolic AI – Why, What, and How
 
 * Criteria for Judgement of a technique
 ** Algorithm Level

@@ -308,13 +308,28 @@ func main() {
 }
   #+end_src
 
-  #+RESULTS:
-  : Obtained Future at 2024-08-22 19:46:26.104675345 +0530 IST m=+0.000038815
-  : This routine is free to do other stuff now
-  : Obtained Promised value at 2024-08-22 19:46:28.10595539 +0530 IST m=+2.001318890
-  : This slept for 2 seconds
+** Sharding
+:PROPERTIES:
+:ID:       f57a745d-8b10-4374-9a5e-a2193f56923d
+:END:
+- splits a large data structure into multiple partitions to localize the effects of read/write locks
+  - helps distribute load and provide redundancy
+- Usually employed natively by databases : horizontal sharding
+  - the sort of issues that do arise:
+    - waiting on the mutexes might become the bottleneck : lock contention
+      - can be resolved by scaling the instances, at the cost of increased complexity and latency
+        - reads can be easily distributed but writes need to be consistent
+- Alternative strat : Vertical sharding
+  - the larger data structure is partitioned into multiple structures each representing a portion of the whole.
+  - this only calls for a portion being locked when reading/writing from there : decreasing lock contention
+  - This doesn't scale well though
+- Might consider using a hybrid adaptive strategy:
+  - initiate vertically shards based on access density (more requests to a region : create more shards )
+  - finally horizontally shard the portions adaptively
 
 
+
+    
 * Major Flavors
  - [[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]]
  - [[id:0458f827-5634-41e0-b261-dfc5cb2d2389][CSP: Communicating Sequential Processes]]

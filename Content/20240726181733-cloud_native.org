@@ -288,6 +288,7 @@ func main() {
   - Effector : the function being regulated
   - Throttle : the enwrapping closure over Effector : implementing the rate limiting layer
 
+**** Code
     #+begin_src  go
 type Effector func(context.Context) (string, error)
     #+end_src
@@ -345,6 +346,8 @@ func Throttle(e Effector, max uint, refill uint, d time.Duration) Effector {
   - slowfunction : a long running function
   - timeout : wrapper over slow function
 - straightforward if a function utilizes context.Context in golang,
+
+**** Code
   #+begin_src go
 ctx := context.Background()
 ctxt,cancel := context.WithTimeout(ctx, 10*time.Second)

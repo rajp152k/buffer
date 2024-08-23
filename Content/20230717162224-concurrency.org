@@ -325,11 +325,148 @@ func main() {
   - This doesn't scale well though
 - Might consider using a hybrid adaptive strategy:
   - initiate vertically shards based on access density (more requests to a region : create more shards )
-  - finally horizontally shard the portions adaptively
+  - finally horizontally shard the vertically sharded portions adaptively
+- two components:
+  - ShardedMap : wrapping over multiple shards abstracting access into that of a single map
+  - Shard : individually lockable collection representing a single data partition
+
+*** Code
+
+- starting out with unsharded global wrap
+#+begin_src go
+var items = struct {
+	sync.RWMutex
+	m map[string]int
+}(m: make(map[string]int))
+
+func ThreadSafeRead(key string) int {
+	items.RLock()
+	value := items.m[key]
+	items.RUnlock()
+	return value
+}
+
+func ThreadSafeWrite(key string, value int) {
+	items.Lock()
+	items.m[key] = value
+	items.Unlock()
+}
+#+end_src
+
+- vertically sharding
+
+  #+begin_src go :exports both
+package main
+
+import (
+	"fmt"
+	"sync"
+	"crypto/sha1"
+)
+
+type Shard struct{
+	sync.RWMutex //composing the lock in
+	m map[string]interface{}
+}
+
+type ShardedMap []*Shard
+
+func NewShardedMap(nshards int) ShardedMap{
+	shards := make(ShardedMap, nshards)
+
+	for i:= 0; i< nshards; i++  {
+		shard := make(map[string]interface{})
+		shards[i] = &Shard{m: shard}
+	}
+
+	return shards
+}
+
+func (m ShardedMap) getShardIndex(key string) int {
+	checksum := sha1.Sum([]byte(key))
+	// choose an arbitrary hasher's input
+	// a uint8 will only be able to handle 256 shards
+	// for more shards : can use something like
+	// hash := int(checksum[13]) << 8 |  int(checksum[17])
+	// for byte 13 and 17 : exp(2, 16) shards possible now
+	hash:= int(checksum[17])
+	return hash % len(m)
+}
+
+func (m ShardedMap) getShard(key string) *Shard {
+	return m[m.getShardIndex(key)]
+}
+
+func(m ShardedMap) Get(key string) interface{} {
+	shard := m.getShard(key)
+	shard.RLock()
+	defer shard.RUnlock()
+	return shard.m[key]
+}
+
+func(m ShardedMap) Set(key string, val interface{}) {
+	shard := m.getShard(key)
+	shard.Lock()
+	defer shard.Unlock()
+
+	shard.m[key] = val
+}
+
+func(m ShardedMap) Keys() []string {
+	keys := make([]string,0)
+
+	mutex := sync.Mutex{}
+
+	wg := sync.WaitGroup{}
+	wg.Add(len(m))
+
+	for _,shard := range m {
+		go func(s *Shard) {
+			s.RLock()
+
+			for key:= range s.m {
+				mutex.Lock()
+				keys = append(keys, key)
+				mutex.Unlock()
+			}
+			s.RUnlock()
+			wg.Done()
+		}(shard)
+	}
+
+	wg.Wait()
+
+	return keys
+}
+
+func main() {
+	shardedMap := NewShardedMap(5)
+
+	shardedMap.Set("alpha",1)
+	shardedMap.Set("beta",2)
+	shardedMap.Set("gamma",3)
+
+	fmt.Println(shardedMap.Get("alpha"))
+	fmt.Println(shardedMap.Get("beta"))
+	fmt.Println(shardedMap.Get("gamma"))
+
+	keys := shardedMap.Keys()
+
+	for _,k := range keys{
+		fmt.Println(k)
+	}
+}
+  #+end_src
+
+  #+RESULTS:
+  : 1
+  : 2
+  : 3
+  : gamma
+  : beta
+  : alpha
 
 
-
-    
 * Major Flavors
  - [[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]]
  - [[id:0458f827-5634-41e0-b261-dfc5cb2d2389][CSP: Communicating Sequential Processes]]

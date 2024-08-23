@@ -35,5 +35,9 @@ Given a Dependency [[id:179b5b39-234a-4d0c-afde-c3b81409760c][Relationship]], li
 :END:
  - https://12factor.net/
 
+** Idempotence
+- https://en.wikipedia.org/wiki/Idempotence
+- https://hackernoon.com/the-idempotence-principle-in-software-architecture
+
 * Patterns Index
 ** The [[id:64b6bd2a-de67-4f28-9406-336879845d80][Circuit Breaker]]

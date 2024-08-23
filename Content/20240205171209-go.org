@@ -5,6 +5,9 @@
 #+filetags: :golang:
 
 * Stream
+** 0x22AF
+- finished Chapter 4 of cloud native Go
+- aggressively, rigorously cementing the detailed fundamentals now with "The Go Programming Language" and getting used to reading the docs
 ** 0x22AB
 - finished "Let's Go"
 - will do "Let's Go Further" sometime down the lane
@@ -184,4 +187,9 @@ func main() {
 ** BOOK: Cloud Native Go
 :PROPERTIES:
 :ID:       64bfc13e-1b7c-4cbe-ba0e-9d17ebaacef1
+:END:
+
+** BOOK: The Go Programming Language
+:PROPERTIES:
+:ID:       bb226cbf-fca1-4306-8f79-6bd87262ced6
 :END:

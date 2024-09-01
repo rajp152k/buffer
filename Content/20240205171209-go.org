@@ -5,6 +5,11 @@
 #+filetags: :golang:
 
 * Stream
+** 0x22B2
+- post theGoPL, will finish of TDD with Go
+- have found it to be productive when starting out building a new service
+- not so much integrating into existing ones : will solidify the habit of writing tests
+
 ** 0x22AF
 - finished Chapter 4 of cloud native Go
 - aggressively, rigorously cementing the detailed fundamentals now with "The Go Programming Language" and getting used to reading the docs
@@ -193,3 +198,9 @@ func main() {
 :PROPERTIES:
 :ID:       bb226cbf-fca1-4306-8f79-6bd87262ced6
 :END:
+
+** BOOK: Learn Go with Tests
+:PROPERTIES:
+:ID:       44bccb93-ebff-4745-baa1-0e85a293c314
+:END:
+ - https://quii.gitbook.io/learn-go-with-tests

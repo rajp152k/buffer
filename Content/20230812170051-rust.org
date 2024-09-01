@@ -5,8 +5,6 @@
 #+filetags: :rust:
 
 * Stream
-Just a casual comment stream...
-
 ** 0x2142
  - the rsty stack
    - https://www.youtube.com/watch?v=luOgEhLE2sg&ab_channel=Let'sGetRusty
@@ -38,7 +36,6 @@ Just a casual comment stream...
    - starting to see why people say "if it compiles, it runs"
  - controllers are expressions .. : can be used in conjunction with let
      
-
 ** 0x2138
  - coding with LSP after a long time (slime is what i use for lisp) -> having common keybinds for all my polyglot-ic pursuits did excite me a lot 2 years ago
 ** 0x2137
@@ -60,6 +57,7 @@ Just a casual comment stream...
 
      #+begin_src rust :exports both
        let x = 1;
+
        println!("{x} is inside, but {} isn't", x + 1);
      #+end_src
 

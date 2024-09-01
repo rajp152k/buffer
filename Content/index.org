@@ -55,6 +55,21 @@ The author intends to utilize this document as a personal knowledge base, emphas
  - a cache for ideas that may never see the light of day again.
    - or they just might...
 * Stream
+** 0x22B8
+ - I forget to have some deliberate from time to time
+ - actively scheduling in enjoyment and relaxation is essential to your incentives not dampening down in the long run
+ - I find myself to be lucky to find joy in learning and writing about random things out there
+ - today I had the thought of pursuing higher education in physics later down the lane so that I can earn the noble title of a physicist (I already look like one now).
+ - I tend to lose sight of the present from time to time for the sake of the immediate future.
+ - that is not something that I'm proud or ashamed of but have been noticing that isn't exactly a good strategy to maximise one's long term mental gains from the activities that they partake in.
+ - I was bed-ridden for a while (diagnosed with dengue around 3 weeks ago, recovered 2 weeks ago) and had to let go of my routines for a while.
+ - I have picked up a few things with greater intensity but am yet to incorporate all that I was doing before completely.
+ - what I learned though, was to be okay with resting for a while here and there and not worrying about progress.
+ - now, I'm a productivity nut, and I'm not going to say there's more to life (there is but that is a very poor excuse to not indulge in this game with the best of your abilities), but it's worth slowing down from time to time to better refine your ambition compass, instead of the enduring mental drain that ensues if not dealt with, with awareness.
+** 0x22B8
+ - found out roadmap.sh
+ - might consider shifting most of my studying workloads to it.
+ - picking up "The HitchHiker's Guide to the Galaxy" for the 5th time : I've put it down 20 mins into it, all the times, so far.
 ** 0x226C
 - setup biblio + citar in doom
 - exploring neurosymbolic AI -

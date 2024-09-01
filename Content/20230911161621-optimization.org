@@ -4,6 +4,6 @@
 #+title: Optimization
 #+filetags: :tbp:math:
 
-A branch of math dealing with optimizing a certain criterion (see [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]]) by choosing corresponding optimal parameters.
 
+A branch of math dealing with optimizing a certain criterion (see [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]]) by choosing corresponding optimal parameters.
 The most generic and popular optimization algorithm might be (Stochastic) [[id:a4761c32-806d-4a7f-ba18-27136a3de1fc][Gradient Descent]]

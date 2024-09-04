@@ -1,0 +1,87 @@
+:PROPERTIES:
+:ID:       b39bb8e1-091a-4c5a-a6ce-99e650e1c65d
+:END:
+#+title: netcat
+#+filetags: :cs:network:
+
+* Abstract
+ncat - Concatenate and redirect sockets
+
+#+begin_src bash
+ncat [OPTIONS...] [hostname] [port]
+#+end_src
+
+* Overview
+  - Functionality: Feature-packed networking utility for reading and writing data across networks via command line.
+  - Origin: Developed for the [[id:76f8161c-8501-46fb-b8e3-d623144d1d94][Nmap]] Project.
+  - Purpose: Reliable back-end tool providing instant network connectivity for other applications and users.
+  - Compatibility: Works with both IPv4 and IPv6.
+
+** Key Features
+  - Ncat Chaining: Ability to chain multiple Ncats together.
+  - Port Redirection: Supports redirection of TCP, UDP, and SCTP ports to other sites.
+  - SSL Support: Secure connections with SSL.
+  - Proxy Connections: Compatible with SOCKS4, SOCKS5, and HTTP proxies, with optional proxy authentication.
+
+** General Principles
+  - Enables instant networking support for software that would typically lack such capabilities.
+
+* Usage Examples
+
+1. *Simple Chat Server/Client:*
+   - *Server:*
+     #+begin_src bash
+     ncat -l 1234
+     #+end_src
+   - *Client:*
+     #+begin_src bash
+     ncat hostname 1234
+     #+end_src
+
+2. *File Transfer:*
+   - *Sender:*
+     #+begin_src bash
+     ncat -l 1234 < file.txt
+     #+end_src
+   - *Receiver:*
+     #+begin_src bash
+     ncat hostname 1234 > file.txt
+     #+end_src
+
+3. *Port Scanning:*
+   #+begin_src bash
+   ncat -z -v hostname 20-80
+   #+end_src
+   - =-z=: Zero-I/O mode (used for scanning).
+   - =-v=: Verbose (provides detailed output).
+
+4. *Port Forwarding:*
+   #+begin_src bash
+   ncat -l localhost 1234 --sh-exec "ncat remote.host 5678"
+   #+end_src
+   - This command forwards traffic from localhost:1234 to remote.host:5678.
+
+** *Caveats:*
+
+- *Security Risks:*
+  - *Unencrypted Data:* Without SSL, data sent via Netcat can be easily intercepted.
+  - *Unauthorized Access:* If not properly secured, Netcat can be exploited for unauthorized access.
+
+- *Firewall/IDS:*
+  - Netcat traffic might be blocked or flagged by firewalls or Intrusion Detection Systems (IDS).
+
+- *Performance:*
+  - It’s not optimized for high-performance data transfer.
+
+*Netcat Alternatives:*
+- *socat:* More feature-rich with better fine-grained control.
+  #+begin_src bash
+  socat TCP4-LISTEN:1234,reuseaddr,fork FILE:file.txt
+  #+end_src
+
+- *nmap's Ncat:* Extended version of Netcat with more features.
+  #+begin_src bash
+  ncat --ssl -l 1234
+  #+end_src
+
+For more detailed documentation on Ncat, refer to the [Nmap’s Ncat documentation](https://nmap.org/ncat/guide/index.html).

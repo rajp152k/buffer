@@ -25,9 +25,11 @@ As for thinking in an offensive manner, as many have already documented, underst
  - not explicitly relevant to my domain but I'm generically into computers and wish to know more
  - will not be posting notes as they are from the textbook, but will be populating nodes without too many explicit linkages.
 
-** Linux basics for Hackers :sec:programming:root:
+** Linux basics for Hackers
 :PROPERTIES:
 :ID:       310eb440-587c-4927-9b06-e2f3e0efb647
 :END:
  - occupy the web
- - actively building cybersec skill set
+ - actively building cybersec skill
+** OSSF best practices
+- https://best.openssf.org/

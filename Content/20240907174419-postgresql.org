@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d053cf42-f70c-488f-8712-196e6a60c958
+:END:
+#+title: PostgreSQL
+#+filetags: :database:

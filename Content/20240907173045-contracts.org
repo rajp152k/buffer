@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6494cfcc-084b-4bde-ba33-a2124ef071f1
+:END:
+#+title: contracts
+#+filetags: :meta:

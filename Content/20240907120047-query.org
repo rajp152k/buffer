@@ -1,0 +1,101 @@
+:PROPERTIES:
+:ID:       2948cedb-bbc8-40df-a45c-3683a2a0a838
+:END:
+#+title: Querying Databases
+#+filetags: :database:
+
+* Overview
+
+Queries [[id:20240218T061653.528745][abstract]] the underlying [[id:20230715T173535.681936][data structures]] in a [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] by providing a simplified, high-level [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][interface]] to [[id:37961b23-d768-4a4a-bba6-0bd1199478b6][manipulate and retrieve data]], masking the complexity of the physical data storage and retrieval processes.
+
+* Execution of a Query
+
+The execution of a query involves multiple steps:
+
+1. [[id:5b9cb73a-3b58-4055-b762-ab9cbcebe044][Parsing]]: The query is checked for syntax errors. For example, SQL queries are parsed to ensure they follow proper syntax rules.
+
+2. [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][Optimization]]: The query is optimized to determine the most efficient way to access the data. Tools like [[id:bcf77db8-6a37-4d02-8744-cdcbffb392c4][query planners]] and optimizers in databases like [[id:d053cf42-f70c-488f-8712-196e6a60c958][PostgreSQL]] play a crucial role here.
+
+3. Execution: The optimized query is executed using the chosen execution plan. The [[id:67ff5bb4-59cb-4b43-9911-a72a83a7df0e][database engine]] performs operations such as searching, filtering, and joining tables.
+
+4. Result Retrieval: The data is fetched from the database and returned to the user or application that made the query.
+
+* Elaborated Types
+*** 1. [[id:fe29fdde-c87f-4ef7-865b-c997447e435d][Relational Databases]]
+
+- *SELECT*: Used to retrieve data from the tables (e.g., =SELECT * FROM users WHERE age > 25;=).
+
+- *INSERT*: Used to add new rows to a table (e.g., =INSERT INTO users (name, age) VALUES ('John', 30);=).
+
+- *UPDATE*: Used to modify existing data within a table (e.g., =UPDATE users SET age = 31 WHERE name = 'John';=).
+
+- *DELETE*: Removes existing rows from a table (e.g., =DELETE FROM users WHERE age < 18;=).
+
+- *DDL (Data Definition Language)*: Includes queries to define or alter schema objects like tables and indexes (e.g., =CREATE TABLE users (id INT, name VARCHAR(100));=).
+
+- *DCL (Data Control Language)*: Manages access to the database, such as granting or revoking permissions (e.g., =GRANT SELECT ON users TO read_only_user;=).
+
+*** 2. [[id:3231e4a2-702d-4fd2-89ed-6efb34e2c3ee][Graph Databases]]
+
+- *Pattern Matching*: Used to find specific patterns within the graph (e.g., in Cypher for Neo4j: =MATCH (p:Person)-[:KNOWS]->(f:Friend) RETURN p, f;=).
+
+- *Path Queries*: Queries that find paths between nodes (e.g., =MATCH path = (start)-[*]->(end) RETURN path;=).
+
+- *Graph Traversal*: Navigates through the graph based on node relationships (e.g., in Gremlin for Apache TinkerPop: =g.V().has('name', 'John').out('KNOWS').values('name');=).
+
+*** 3. [[id:e0b24113-36fd-44dc-9049-2cf493079d1a][Document Stores]]
+
+- *Find*: Retrieves documents from a collection (e.g., in MongoDB: =db.users.find({ age: { $gt: 25 } });=).
+
+- *Insert*: Adds new documents to a collection (e.g., =db.users.insert({ name: 'John', age: 30 });=).
+
+- *Update*: Modifies existing documents (e.g., =db.users.update({ name: 'John' }, { $set: { age: 31 } });=).
+
+- *Delete*: Removes documents from a collection (e.g., =db.users.remove({ age: { $lt: 18 } });=).
+
+*** 4. [[id:91a15189-1200-463e-a648-1f1b938370af][Key-Value Stores]]
+
+- *Get*: Retrieves the value for a given key (e.g., in Redis: =GET user:1000:name=).
+
+- *Set*: Adds or updates a value for a given key (e.g., =SET user:1000:name "John"=).
+
+- *Delete*: Removes the value associated with a key (e.g., =DEL user:1000:name=).
+
+*** 5. [[id:dd9cdc7c-154f-4082-993b-384ea9becd2d][Columnar Databases]]
+
+- *SELECT*: Efficient retrieval of specific columns (e.g., in Cassandra: =SELECT name, age FROM users WHERE age > 25;=).
+
+- *INSERT*: Adds rows to a column family (e.g., =INSERT INTO users (id, name, age) VALUES (1001, 'John', 30);=).
+
+- *UPDATE*: Modifies existing columns within a row (e.g., =UPDATE users SET age = 31 WHERE id = 1001;=).
+
+- *DELETE*: Removes rows from a column family (e.g., =DELETE FROM users WHERE age < 18;=).
+
+*** 6. [[id:f86c0a4b-978a-4b94-ad3f-233ded9c4c6a][In-Memory Databases]]
+
+- *Get/Set*: Similar to key-value stores, these rapidly access data stored in RAM (e.g., in Redis: =GET user:1000:name= and =SET user:1000:name "John"=).
+
+- *Atomic Operations*: Execute operations like incrementing a counter (e.g., =INCR page_view_count=).
+
+- *Pub/Sub*: Implement publish/subscribe messaging patterns (e.g., =SUBSCRIBE channel1=).
+
+*** 7. [[id:5447792f-f653-41db-acfa-fe7c3018c459][Time-Series Databases]]
+
+- *Select*: Retrieves time-series data points (e.g., in InfluxDB: =SELECT mean(temperature) FROM weather WHERE time > now() - 1h GROUP BY time(10m);=).
+
+- *Insert*: Adds new data points (e.g., =INSERT INTO weather (time, temperature) VALUES (now(), 22.5);=).
+
+- *Aggregation*: Perform time-based aggregations like averages, sums (e.g., =SELECT SUM(usage) FROM electricity WHERE time > now() - 1d GROUP BY time(1h);=).
+
+*** 8. [[id:e1ce3df0-0337-4f65-a9d7-edc361d88075][NewSQL Databases]]
+
+- *SELECT*: High-performance SQL queries (e.g., in CockroachDB: =SELECT * FROM users WHERE age > 25;=).
+
+- *INSERT*: Adding new rows with ACID compliance (e.g., =INSERT INTO users (name, age) VALUES ('John', 30);=).
+
+- *UPDATE*: Modifying data with distributed transactions (e.g., =UPDATE users SET age = 31 WHERE name = 'John';=).
+
+- *DELETE*: Removing rows consistently across nodes (e.g., =DELETE FROM users WHERE age < 18;=).
+
+
+* Building an Inference Engine

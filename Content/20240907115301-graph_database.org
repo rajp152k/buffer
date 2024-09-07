@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       3231e4a2-702d-4fd2-89ed-6efb34e2c3ee
+:END:
+#+title: Graph Database
+#+filetags: :cs:database:
+
+* Overview
+
+- Equally prioritizing relationships and entities
+- Utilizing graph structures for data representation
+- abstracting storage as nodes, edges, and properties
+
+** Key Concepts
+1. Nodes (Vertices): Individual data entities, similar to records in relational databases.
+2. Edges (Relationships): Connections between nodes, representing relationships.
+3. Properties: Attributes of nodes and edges, providing additional context.
+
+** Advantages
+- Performance: Efficient for querying hierarchical and [[id:a4e712e1-a233-4173-91fa-4e145bd68769][network]] structures.
+- Flexibility: Easily accommodate changes in [[id:20230715T173535.681936][data structures]].
+- Intuitive Visualization: Naturally mapped to real-world relationships, enhancing understanding.
+
+** Use Cases
+- Social Networks: Mapping relationships between users.
+- Recommendation Engines: Connecting users with products based on preferences.
+- Fraud Detection: Analyzing transactional patterns and relationships to identify anomalies.
+
+
+* Diff w/ Relational Databases
+
+** Efficient Query Performance
+- Complex Queries
+  - Graph databases handle complex [[id:2948cedb-bbc8-40df-a45c-3683a2a0a838][queries]] involving numerous joins or traversals more efficiently than relational databases.
+  - Example: Quickly finding the shortest path between two nodes or determining the network of direct and indirect relationships.
+
+** Direct Representation of Relationships
+- First-Class Citizens
+  - Relationships are explicitly modeled in graph databases, making it easier to manage and query them.
+  - Relevant Domains
+    - Social Networks
+    - Recommendation Systems
+    - Fraud Detection
+
+** Flexibility and Schema-less Nature
+- Schema-less Design
+  - Graph databases do not require a predefined schema, allowing for agile development.
+  - Adaptability
+    - Easily accommodate changes in data structures.
+    - Evolve relationships over time without significant restructuring.
+
+** Intuitive Data Modeling
+- Direct Representation
+  - Nodes and edges in graph databases directly represent entities and their relationships.
+- User Understanding
+  - More intuitive to understand and visualize compared to tables and foreign keys in relational databases.
+
+** Handling Semi-Structured Data
+- Versatility
+  - Excel in managing semi-structured or heterogeneous data.
+  - Integration
+    - Seamlessly incorporate different data types (e.g., structured and unstructured).

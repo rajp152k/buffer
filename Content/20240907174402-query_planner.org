@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bcf77db8-6a37-4d02-8744-cdcbffb392c4
+:END:
+#+title: query planner
+#+filetags: :database:

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       e1ce3df0-0337-4f65-a9d7-edc361d88075
+:END:
+#+title: NewSQL Databases
+#+filetags: :database:
+
+* Overview
+
+NewSQL databases are a class of modern relational databases designed to provide the same scalable performance of NoSQL systems while maintaining the ACID (Atomicity, Consistency, Isolation, Durability) guarantees of traditional SQL databases. They aim to address the limitations of conventional SQL databases, particularly in high-throughput and distributed environments.
+
+*Key Features:*
+1. *Scalability:* NewSQL databases can horizontally scale out by distributing data across multiple servers.
+2. *ACID Compliance:* They ensure data consistency through ACID transactions, which is a primary benefit over many NoSQL databases.
+3. *SQL Interface:* Maintains the use of SQL as the query language, providing familiarity and ease of use for those with experience in SQL.
+4. *Performance:* Designed for high performance with techniques optimized for handling large volumes of transactions.
+
+*Popular NewSQL Databases:*
+1. *Google Spanner:* A globally distributed database that supports strong consistency and horizontal scaling.
+2. *CockroachDB:* An open-source, distributed SQL database that offers strong consistency, horizontal scaling, and high availability.
+3. *VoltDB:* Focuses on handling high-throughput transaction processing with in-memory storage.
+4. *NuoDB:* Designed to scale out on cloud architectures while maintaining strong consistency and transactional integrity.
+
+*Caveats:*
+1. *Complexity:* NewSQL databases often incorporate complex architectures and mechanisms for maintaining consistency and performance, which can complicate deployment and management.
+2. *Maturity:* Some NewSQL solutions might not yet be as mature and widely adopted as traditional relational databases.
+3. *Use Case Specificity:* While they excel in high-scalability scenarios, they may not be the best fit for smaller, simpler applications.
+
+*Use Cases:*
+- Financial Transactions: Ensure consistency and integrity in high-frequency trading platforms.
+- E-commerce: Manage large volumes of transactions while ensuring atomicity and data consistency.
+- Telecommunications: Handle state and session management at scale.
+
+*Conclusion:*
+NewSQL databases bridge the gap between the scalability of NoSQL and the reliability of traditional SQL databases, making them suitable for modern, high-demand applications. For more information, you can explore resources such as [Google Spanner](https://cloud.google.com/spanner), [CockroachDB](https://www.cockroachlabs.com/), and [VoltDB](https://www.voltdb.com/).

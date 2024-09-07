@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       dd9cdc7c-154f-4082-993b-384ea9becd2d
+:END:
+#+title: Columnar Databases
+#+filetags: :database:

@@ -41,7 +41,6 @@
 | Programming Language     | C++, Python                    | C++, Python, Java, Go, Node.js | C++, Go, Python            | C++, Python                   | C++, Python                  | C++, Python, MATLAB           | C++, Python                  | Java, Python, REST API           |
 | Documentation            | Extensive                      | Good                           | Extensive                  | Good                          | Moderate                     | Extensive                     | Moderate                     | Extensive                        |
 
-
 ** Intricacies
 
 *** *Scalability*

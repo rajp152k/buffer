@@ -7,14 +7,14 @@ Towards managing [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] stores.
 
 Speaking formally, databases represent another layer of abstraction over a computer system's [[id:ea72d66a-8192-4cb2-a7be-b05ee928f814][filesystem]] that intend to provide convenient endpoints for tasks (like templated insertion, deletion, searches, etc) that would be performed with higher frequencies : they facilitate structured storage, pushing for reliability and efficiency.
 
-* standards: ACID Compliance
+* Standards: ACID Compliance
  - Atomicity
  - Consistency
  - Isolation
  - Durability
 checkout : https://docs.digitalocean.com/glossary/acid/
 * Types (Need Not be Mutually Exclusive)
-** Relational Databases (RDBMS)
+** [[id:fe29fdde-c87f-4ef7-865b-c997447e435d][Relational Databases]]
 *** Tools
 **** PostGres 
  - RDBMS
@@ -55,13 +55,13 @@ checkout : https://docs.digitalocean.com/glossary/acid/
 *** Resources
  - https://neo4j.com/blog/graph-search-algorithm-basics/
  - https://go.neo4j.com/rs/710-RRC-335/images/Definitive-Guide-Graph-Databases-for-RDBMS-Developer.pdf
-** Document Stores
+** [[id:e0b24113-36fd-44dc-9049-2cf493079d1a][Document Stores]]
 *** Tools
  - semi structured representation for nested data (json,bson,etc)
 **** MongoDB
 **** Riak
 **** Apache CouchDB
-** Key-Value Stores
+** [[id:91a15189-1200-463e-a648-1f1b938370af][Key-Value Stores]]
  - underlying data stucture being the [[id:235113d9-983a-4782-a4e8-d027ba52d82b][HashMap]]
 *** Tools
 **** Redis
@@ -69,15 +69,15 @@ checkout : https://docs.digitalocean.com/glossary/acid/
  - good for caching, queuing, and storing session data and requests
  - check out : https://realpython.com/python-redis/
 **** Memcached
-** Columnar Databases
+** [[id:dd9cdc7c-154f-4082-993b-384ea9becd2d][Columnar Databases]]
  - builds on key-value pairs
  - each pair a row in a store while each column family is similar to a table in the relational model.
 *** Tools
 **** Apache Cassandra
 **** Apache HBase
-** In-Memory Databases
-** Time-Series Databases
-** NewSQL Databases
+** [[id:f86c0a4b-978a-4b94-ad3f-233ded9c4c6a][In-Memory Databases]]
+** [[id:5447792f-f653-41db-acfa-fe7c3018c459][Time-Series Databases]]
+** [[id:e1ce3df0-0337-4f65-a9d7-edc361d88075][NewSQL Databases]]
 * Auxiliary features
 ** Data Replication
 - one master, multiple read-only slaves (different than sharding)

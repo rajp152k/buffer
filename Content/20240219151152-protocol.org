@@ -5,7 +5,17 @@
 #+title: Protocol
 #+filetags: :meta:
 
-This is a decently overlaoded term that varies in connotations across domains.
+This is a decently overlaoded term with varying connotations across domains.
+
+* Programming
+
+In programming, interfaces are [[id:6494cfcc-084b-4bde-ba33-a2124ef071f1][contracts]] that define a set of methods or properties that a class or a type must implement. They are used to enforce a consistent implementation of behavior across different classes or [[id:287a65a1-5d6d-4442-abc8-e017dca6529a][types]], facilitating [[id:f4342410-5df0-4e82-b2fa-7fad21cd0c9a][polymorphism]] and decoupling the code.
+
+- Definition: An interface specifies what methods or properties should be available but does not implement them.
+
+- Use Case: They are particularly useful in situations where multiple classes need to implement the same set of functionalities but might do so in different ways.
+
+* Computer Networks
 
 In the context of [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Networks]] for instance, these are the agreed upon standards that devices on a network communicate by (HTTP, TCP/IP, bitstreams in the physical layer)
 

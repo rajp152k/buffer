@@ -19,6 +19,7 @@ A mathematical protocal used to represent suitable abstractions using nodes and 
  - check out [[id:78d16b5e-1893-4057-bc22-b2c9a3ca7ed6][Topological Sort]] for a practical application
 * Forks/Deviants
 ** [[id:20230718T234741.567442][Graph Neural Networks]]
+** [[id:3231e4a2-702d-4fd2-89ed-6efb34e2c3ee][Graph Databases]]
 * Practical Instances
 ** [[id:11847f5f-5337-425b-bacb-575f77690a4b][Systems]]
  - A lot of practical components acheiving minor tasks, when compiled into one functioning that works towards certain defined objectives, can be modelled as a graph.

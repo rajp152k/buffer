@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f4342410-5df0-4e82-b2fa-7fad21cd0c9a
+:END:
+#+title: polymorphism
+#+filetags: :programming:

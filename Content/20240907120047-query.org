@@ -97,5 +97,35 @@ The execution of a query involves multiple steps:
 
 - *DELETE*: Removing rows consistently across nodes (e.g., =DELETE FROM users WHERE age < 18;=).
 
+* Building a Query Language's Inference Engine
 
-* Building an Inference Engine
+Building a query language's inference engine is a complex task involving several key components:
+
+1. *Lexical Analysis (Tokenization)*:
+   - Converts query strings into tokens. Tools like ANTLR can assist with this process.
+   - Example: Breaking down the SQL statement =SELECT * FROM users;= into tokens like =SELECT=, =*=, =FROM=, =users=, =;=.
+
+2. *Parsing*:
+   - Parses tokens into a syntax tree using a grammar that defines valid query structures.
+   - Example: Using parser generators like Bison to create a parse tree from SQL queries.
+
+3. *Semantic Analysis*:
+   - Checks for semantic errors like type mismatches and schema validations.
+   - Example: Ensuring that the =users= table exists and that =*= is a valid column selection.
+
+4. *Optimization*:
+   - Optimizes the query plan for efficient execution.
+   - Techniques include query re-writing, join reordering, and indexing strategies.
+   - Example: PostgreSQL’s query planner optimizes =SELECT * FROM users WHERE age > 25;= by using an index on the =age= column.
+
+5. *Execution Plan Generation*:
+   - Translates the optimized query into an execution plan, detailing how to retrieve data.
+   - Example: Deciding whether to perform a full table scan or utilize an index.
+
+6. *Query Execution*:
+   - Executes the plan using the database engine, managing I/O and computation.
+   - Example: Reading data blocks from disk into memory, applying filters, and returning results.
+
+7. *Result Formatting*:
+   - Converts raw execution results into the desired output format.
+   - Example: Formatting query results as JSON or CSV.

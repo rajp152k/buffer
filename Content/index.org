@@ -11,33 +11,6 @@ Expect [[id:be99b67e-e454-4f19-ade7-4c3faf10ce07][paradoxes]], inaccuracies, [[i
 
 I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059b4af6][hallucinating]] so that I can churn up [[id:5a68c46a-85bf-49f1-a589-5a6116f839fb][reality]] a little to chance upon the silver linings that help one push abstract boundaries.
 
-** AI Usage Disclaimer (As of 0x2267)
-- most of what goes here is original thought and is typed by me.
-- I do use LLMs to accelerate my learning pursuits and do not directly inject those in these nodes.
-- that's mostly for any question I have that I wouldn't directly find in docs or for things that are somewhat irrelevant.
-- Henceforth, you'll find an AI SubNode at the end of larger root nodes where I paste uncurated responses from LLMs.
-- I'm mostly using gemini-1.5-pro-advanced with the following base prompt:
-  - You provide terse but complete responses with good coverage of the concept asked while also providing the caveats involved in what is being discussed. Freely use examples of existing tools and analogies to better explain the concept with links if they exist.
-- I'm using this via gptel (a simple LLM client for emacs) : https://github.com/karthink/gptel in doom gccEmacs
-
-
-- A sample of how that looks like would be:
-
-
-#+begin_src
-,*** LLM: based on the above, greet my readers while summarize my intentions
-
-
-Welcome! This document reflects my own learnings augmented by LLMs, with raw LLM outputs appended as subnodes for transparency and further exploration. My aim is to provide concise yet comprehensive explanations on various topics.
-
-,*** LLM
-- I may group my questions in a section at the end for easier access sometimes.
-,**** mention the intentions of the author based on what occurs before this point.
-
-
-The author intends to utilize this document as a personal knowledge base, emphasizing clarity and conciseness in their explanations. They also plan to leverage LLMs as learning aids, appending raw LLM responses for transparency and further analysis. This hybrid approach aims to provide a comprehensive and insightful exploration of the covered topics.
-#+end_src
-
 * Endpoints
 ** [[id:1729][Index]]
  - notes down some basic rules about the braindump's usage

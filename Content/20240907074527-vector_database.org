@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       054bc1aa-98ca-4370-9de2-b1922ab731f5
+:END:
+#+title: Vector Database
+#+filetags: :ai:database:
+
+* Overview
+
+- A [[id:691ea9d3-1311-49be-b198-f9b10dac441d][vector]] database efficiently stores, retrieves, and manages high-dimensional data vectors.
+- Essential for large-scale [[id:20230713T110006.406161][machine learning]], [[id:20230713T150554.400026][natural language processing]], and [[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][computer vision]].
+- Supports [[id:3dc63bcb-d471-42b0-bcc9-5674e9f33a65][similarity searches]], nearest neighbor searches, and [[id:d9f0b0b5-3cdf-499c-9c78-ceda036fdb58][clustering]].
+
+** Key Concepts:
+- *Vector Representation*:
+  - Multi-dimensional vectors
+  - Examples: Word embeddings in NLP, feature vectors in image recognition
+
+- *Similarity Search*:
+  - Efficient algorithms
+    - Approximate Nearest Neighbor (ANN)
+    - Exact search
+
+- *Indexing Techniques*:
+  - Accelerates search operations
+  - Methods: KD-trees, VP-trees
+  - Advanced techniques: Hierarchical Navigable Small World (HNSW)*** Common Use Cases:
+
+** Instances
+
+| Feature                  | Faiss                          | Annoy                          | Milvus                     | ScaNN                         | NGT                          | FLANN                         | HNSWlib                      | ElasticSearch with KNN           |
+|--------------------------+--------------------------------+--------------------------------+----------------------------+-------------------------------+------------------------------+-------------------------------+------------------------------+----------------------------------|
+| Developed By             | Facebook AI Research           | Spotify                        | Zilliz                     | Google                        | Yahoo Japan                  | University of North Carolina  | Independent (Boris Ginsburg) | Elastic                          |
+| Primary Use Case         | Dense vector similarity search | Memory-efficient ANN search    | Vector database management | High-dimensional ANN search   | ANN search                   | High-dimensional spaces ANN   | Fast ANN search              | Distributed search and analytics |
+| Techniques Used          | HNSW, IVF, PQ                  | Random projection trees        | HNSW, IVF_FLAT             | Asymmetric Locality Sensitive | Graph and tree-based methods | Multiple algorithms, best fit | HNSW graphs                  | KNN index                        |
+| Speed                    | Highly optimized               | Fast                           | High speed                 | High speed                    | Fast                         | Variable                      | Very fast                    | Fast                             |
+| Memory Usage             | Efficient                      | Memory-efficient               | Optimized                  | Optimized                     | Efficient                    | Variable                      | Efficient                    | Moderate                         |
+| Dataset Size Suitability | Extremely large                | Large                          | Large                      | Large                         | Large                        | Varies                        | Large                        | Large                            |
+| GPU Support              | Yes                            | No                             | Yes                        | Yes (partially)               | No                           | No                            | No                           | No                               |
+| Multi-threading Support  | Yes                            | No                             | Yes                        | Yes                           | Yes                          | Yes                           | Yes                          | Yes                              |
+| Flexibility              | High                           | Moderate                       | High                       | Moderate                      | High                         | High                          | Moderate                     | High                             |
+| Programming Language     | C++, Python                    | C++, Python, Java, Go, Node.js | C++, Go, Python            | C++, Python                   | C++, Python                  | C++, Python, MATLAB           | C++, Python                  | Java, Python, REST API           |
+| Documentation            | Extensive                      | Good                           | Extensive                  | Good                          | Moderate                     | Extensive                     | Moderate                     | Extensive                        |
+
+
+** Intricacies
+
+*** *Scalability*
+
+  - *Importance*:
+    - Scalability is crucial when managing high-dimensional data due to the increased complexity and volume.
+
+  - *Challenges*:
+    - Significant computational power and storage resources are required.
+    - Current systems often face difficulties, leading to increased latency and hardware costs.
+
+  - *Necessity*:
+    - Effective management demands advanced algorithms and architectures to process and store data efficiently without compromising performance.
+
+*** *Accuracy vs. Speed*
+
+  - *Challenge in Search and Retrieval*:
+     - Balancing accuracy and speed is a fundamental issue.
+
+  - *Accuracy*:
+     - High precision requires extensive computations and sophisticated algorithms, resulting in slower processes.
+
+  - *Speed*:
+     - Faster algorithms may use approximations or heuristics, thus potentially compromising accuracy.
+
+  - *Decision-Making*:
+     - Data professionals must decide based on application requirements, often prioritizing either prompt results or precise outcomes.
+
+  - *Ongoing Issue*:
+     - Achieving an optimized balance between accuracy and speed remains a persistent challenge.
+
+*** *Curse of Dimensionality*
+
+  - *Concept*:
+     - Traditional distance metrics lose their efficacy as data dimensions increase.
+
+  - *Impact*:
+     - In high-dimensional spaces, distance becomes less discriminative and intuitive.
+     - Identifying meaningful patterns and relationships within data becomes harder.
+
+  - *Analytical Techniques*:
+     - Many techniques relying on distance metrics lose effectiveness.
+
+  - *Necessity*:
+     - New methods and tools must be developed to address the unique characteristics of high-dimensional data, ensuring accurate and insightful analysis.

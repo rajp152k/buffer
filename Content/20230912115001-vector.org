@@ -20,3 +20,6 @@ Accessing a particular element of a tensor is termed as indexing into it.
    - this is an oriented collection of dot-products
 
  - a more detailed expansion on the relevant math for vectors (and matrices and tensors) will be populated in here from the paper : [[https://explained.ai/matrix-calculus/][The Matrix Calculus you need for Deep Learning]]
+
+* Pragmatic
+** [[id:054bc1aa-98ca-4370-9de2-b1922ab731f5][Vector Database]]

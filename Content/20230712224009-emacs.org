@@ -2,9 +2,90 @@
 :ID:       20230712T224009.631876
 :END:
 #+title: Emacs
-#+filetags: :emacs:tool:
+#+filetags: :emacs:
 
-* Stream 
+* Stream
+** 0x22C9
+*** Intro
+
+- techno-talkthrough
+  - larger, overarching concept
+  - rapid practical examples
+
+- This video:
+
+  - idea is to build the conceptual idea buff stackability in you tools
+
+  - the collaborative interop is greater  than the individual worths of these tools
+
+*** Buff Stacking Emacs
+
+   - the extensibility allows the community to be flexible and build all sorts of things
+
+   - can fit your needs (whatever they are)
+
+   - sensible defaults with doom emacs can get you started quickly
+
+   - to the pragmatics right away
+
+   - the toolsets stack on each other due to powerful & uniform underlying representation
+
+   - lisp machine: I'm actively exploring this more and will soon publish fully-baked content
+
+*** Pragmatics
+
+ - version control anything: magit
+   - faster porcelain than the cli
+   - dedicated video coming in soon
+
+ - LLM interface as a text buffer
+
+ - eww -> firefox
+
+ - lsp-mode (+ dap + treesitter)
+   - polyglotic programming ++
+   - generic programming hooks (M-x compile, etc)
+
+ - org -> blogs, todos, capture buffers, notes, literate programming, babel
+   - dedicated video coming soon
+
+ - context-aware snippets
+   - python
+   - go
+   - markups, org, markdown
+
+ - dired, projectile, buffer, proc, file management
+   - can also use external proc management if you prefer that
+   - I prefer btop as a decent monitor of all (metrics) at once
+     - temp, other misc stuff
+     - compute(CPUUtils, mem), storage(IOPs), networks(B/s)
+     - proc management
+   - I like it this way: wouldn't want monitoring emacs from emacs
+
+ - I can't even claim to be an efficient emacs user yet
+   - don't use elisp as much yet (other than configs), working actively on that front
+
+*** Emacs as your OS
+
+   - Emacs as your OS (lucky to spend 90% of my day in emacs)
+
+     - for the modal humans our there : emacs is my normal mode now
+
+     - can further minimize context switching by altering your workflows into more keyboard oriented modalities
+       - firefox + vimium
+       - i3wm if you're Xorg, I'm on wayland so sway
+
+*** What Next?
+
+ - I also blog : check out the bitmage.com
+   - if you're into text (site.xml RSS at the bottom left)
+
+ - a lot of emacs stuff coming in your way
+
+ - also will get into a lot of CLI LINUX/UNIX/GNU in a phase later on
+
+ - thanks for tuning in, this was the bitmage
+
 ** 0x21BD
  - studying how org-lists work : might try to extend the features with something useful of my own
 ** 0x21B0

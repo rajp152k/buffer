@@ -2,6 +2,7 @@
 :ID:       109e1432-b42a-4fef-b1b4-f6ec715cb8f8
 :END:
 #+title: health
+#+filetags: :health:
 
 * Generic Aspects
 ** Boredom

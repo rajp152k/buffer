@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0907747e-e58d-48cd-858d-4ab3dea0e4a8
+:END:
+#+title: Testgrid
+#+filetags: :cloud-native:tools:
+
+see https://testgrid.k8s.io/ for inspiration
+
+* Resources
+ - https://github.com/GoogleCloudPlatform/testgrid/blob/main/standalone.md

@@ -18,3 +18,5 @@ Several types that deal with different points of failures
 
 * For [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Orchestration]]
 ** [[id:45753302-58fd-4cb1-bff6-f8843aee5708][Chaos Engineering]]
+* Observability
+- [[id:0907747e-e58d-48cd-858d-4ab3dea0e4a8][Testgrid]]

@@ -4,6 +4,26 @@
 #+title: Microservices
 #+filetags: :compute:arch:
 
+* Misc
+** Heartbeat
+
+"Heartbeat" in a microservices architecture refers to a mechanism for monitoring the health and availability of services. It often involves:
+
+1. *Health Checks*: Services periodically send a "heartbeat" signal to a centralized monitoring system to indicate they are operational. Common tools include Prometheus and Consul.
+
+2. *Failure Detection*: By monitoring heartbeats, the system can detect and respond to service failures or network issues quickly. For example, Kubernetes uses liveness and readiness probes for this purpose.
+
+3. *Load Balancing*: Heartbeat signals can inform load balancers to reroute traffic from unhealthy instances to healthy ones. NGINX and HAProxy are widely used in this context.
+
+4. *Auto-scaling*: Systems can use heartbeat data to scale services up or down based on demand. AWS Auto Scaling and Google Kubernetes Engine (GKE) provide such capabilities.
+
+*** *Caveats*:
+- *False Positives/Negatives*: Ensure heartbeats accurately reflect service health, avoiding scenarios where a service appears healthy when it's not (false positives) or vice versa (false negatives).
+- *Resource Overhead*: Frequent heartbeat checks might lead to increased resource consumption if not properly managed.
+
+*** *Example*:
+A basic implementation might involve a service endpoint that returns HTTP status 200 for "OK". More sophisticated systems might check database connectivity and other dependencies.
+
 * Resources
  - https://martinfowler.com/articles/microservices.html
-
+ - https://martinfowler.com/microservices/

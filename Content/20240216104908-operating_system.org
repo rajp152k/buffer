@@ -2,11 +2,11 @@
 :ID:       aba08b45-c41d-4bb4-9053-bc6dd8704444
 :END:
 #+title: Operating System
-#+filetags: :programming:
+#+filetags: :cs:programming:
 
 Diving into the depths pedagogically by studying the [[https://elixir.bootlin.com/linux/latest/source][Linux Kernel]]. To be more specific when discussing concepts, I'll be linking to a particular part of the kernel [[https://elixir.bootlin.com/linux/v6.8-rc4/source/rust/kernel/init.rs#L412][with the line numbers]].
 
-In these nodes, restricting myself to the GNU and UNIX family of operating systems.
+check out [[id:c0964cd2-fa9c-4c92-8283-341d345c819f][RackOS]]
 
 * Operating Systems
  - [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]]
@@ -16,3 +16,4 @@ In these nodes, restricting myself to the GNU and UNIX family of operating syste
 * Misc Resources
  - Booting up: https://docs.rockylinux.org/books/admin_guide/10-boot/
  - the linux kernel: https://www.kernel.org/
+ - https://wiki.osdev.org

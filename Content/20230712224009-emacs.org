@@ -5,20 +5,49 @@
 #+filetags: :emacs:
 
 * Stream
+** 0x22CA
+*** Context
+ - working in the cloud native space
+ - golang is the cloud native language
+*** Go installation
+ - install go and add to path
+   - https://go.dev/doc/install
+ - verify with =go version=
+*** Lsp-mode with golang
+- install gopls :
+  - =go install golang.org/x/tools/gopls@latest=
+  - verify with =gopls version=
+*** Sentinel repository
+ - =git clone https://github.com/rajp152k/xkcd-corpus-builder=
+ - jumping around
+ - running tests
+   - ginkgo and gomega
+ - lsp all options
+ - snippets
+ - M-x Compile
+ - local e-shell
+*** Debugging with Dap
+*** Bonus Video
+** 0x22CA
+- setting up emacs for data science
+- basic priorities : interactive repl based on which mamba env I am in
+- language server integration
+- able to see notebooks and images
+- able to work with juptyer notebooks
 ** 0x22C9
-*** Intro
+*** intro
 
 - techno-talkthrough
   - larger, overarching concept
   - rapid practical examples
 
-- This video:
+- this video:
 
   - idea is to build the conceptual idea buff stackability in you tools
 
   - the collaborative interop is greater  than the individual worths of these tools
 
-*** Buff Stacking Emacs
+*** buff stacking emacs
 
    - the extensibility allows the community to be flexible and build all sorts of things
 
@@ -30,21 +59,21 @@
 
    - the toolsets stack on each other due to powerful & uniform underlying representation
 
-   - lisp machine: I'm actively exploring this more and will soon publish fully-baked content
+   - lisp machine: i'm actively exploring this more and will soon publish fully-baked content
 
-*** Pragmatics
+*** pragmatics
 
  - version control anything: magit
    - faster porcelain than the cli
    - dedicated video coming in soon
 
- - LLM interface as a text buffer
+ - llm interface as a text buffer
 
  - eww -> firefox
 
  - lsp-mode (+ dap + treesitter)
    - polyglotic programming ++
-   - generic programming hooks (M-x compile, etc)
+   - generic programming hooks (m-x compile, etc)
 
  - org -> blogs, todos, capture buffers, notes, literate programming, babel
    - dedicated video coming soon
@@ -56,37 +85,38 @@
 
  - dired, projectile, buffer, proc, file management
    - can also use external proc management if you prefer that
-   - I prefer btop as a decent monitor of all (metrics) at once
+   - i prefer btop as a decent monitor of all (metrics) at once
      - temp, other misc stuff
-     - compute(CPUUtils, mem), storage(IOPs), networks(B/s)
+     - compute(cpuutils, mem), storage(iops), networks(b/s)
      - proc management
-   - I like it this way: wouldn't want monitoring emacs from emacs
+   - i like it this way: wouldn't want monitoring emacs from emacs
 
- - I can't even claim to be an efficient emacs user yet
+ - i can't even claim to be an efficient emacs user yet
    - don't use elisp as much yet (other than configs), working actively on that front
 
-*** Emacs as your OS
+*** emacs as your os
 
-   - Emacs as your OS (lucky to spend 90% of my day in emacs)
+   - emacs as your os (lucky to spend 90% of my day in emacs)
 
      - for the modal humans our there : emacs is my normal mode now
 
      - can further minimize context switching by altering your workflows into more keyboard oriented modalities
        - firefox + vimium
-       - i3wm if you're Xorg, I'm on wayland so sway
+       - i3wm if you're xorg, i'm on wayland so sway
 
-*** What Next?
+*** what next?
 
- - I also blog : check out the bitmage.com
-   - if you're into text (site.xml RSS at the bottom left)
+ - i also blog : check out the bitmage.com
+   - if you're into text (site.xml rss at the bottom left)
 
  - a lot of emacs stuff coming in your way
 
- - also will get into a lot of CLI LINUX/UNIX/GNU in a phase later on
+ - also will get into a lot of cli linux/unix/gnu in a phase later on
 
  - thanks for tuning in, this was the bitmage
 
 ** 0x21BD
+
  - studying how org-lists work : might try to extend the features with something useful of my own
 ** 0x21B0
  - will be altering the work space and the required mindset that allows me to run emacs as a client with an ever-running daemon

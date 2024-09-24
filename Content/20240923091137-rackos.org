@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       c0964cd2-fa9c-4c92-8283-341d345c819f
+:END:
+#+title: RackOS
+#+filetags: :cs:racket:
+
+* Stream
+** 0x22CF
+*** some (de)Motivation
+- https://wiki.osdev.org/Beginner_Mistakes
+*** Thought stream
+ - will go for a CLI initially
+   - GUI later on
+ - should also get good with the racket ecosystem
+ - will catch up on OS design
+ - have my work chalked out for me : will be a great project though
+*** wiki.osdev.org
+*** r/racket
+ - try to figure out how one could go about the whole process
+ - there are some talks that already exist : https://www.reddit.com/r/Racket/comments/syv2ql/bare_metal_racket/
+*** Miscellaneous links
+ - https://armpit.sourceforge.net/
+ - https://guix.gnu.org/ (booting to Guile)
+ - https://wiki.osdev.org/Languages
+ - https://matt.might.net/articles/low-level-web-in-racket/
+ - https://en.wikipedia.org/wiki/Lisp_machine : explore this a whole lot more
+ - https://luksamuk.codes/posts/lispm-001.html
+*** exploratory term analysis queue
+ - interrrupt handlers (hardware event handlers)
+ - system calls
+** 0x22CE
+*** picking up racket again
+- https://docs.racket-lang.org/more/index.html
+*** Setting up Emacs for Racket dev
+- get racket (zypper in racket)
+- setup doom emacs for racket dev
+- (racket +lsp +xp +hash-lang)
+  - true λ
+  - (add-hook 'racket-mode-hook      #'racket-unicode-input-method-enable)
+  - (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable)
+- raco pkg install racket-langserver
+*** Expectations
+- fun & frustration
+*** Seeding Resources
+ - wiki.osdev.org
+ - a lot of mistakes
+*** The Documentation strat
+- youtube playlist + streams out here with links
+- blogs for major updates
+*** Premise
+ - I'm taking on the long term side project of building an operating system in Racket
+ - I know this is scary and ambitious but it's also exciting and sounds somewhat crazy
+ - do check out the ideation init : https://thebitmage.com/post/tumbleweed/

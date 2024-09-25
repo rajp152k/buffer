@@ -5,6 +5,9 @@
 #+filetags: :cs:racket:
 
 * Stream
+** 0x22D0
+*** revenge of the son of the lisp machine
+ - https://www2.ccs.neu.edu/racket/pubs/icfp99-ffkf.pdf
 ** 0x22CF
 *** some (de)Motivation
 - https://wiki.osdev.org/Beginner_Mistakes
@@ -25,9 +28,22 @@
  - https://matt.might.net/articles/low-level-web-in-racket/
  - https://en.wikipedia.org/wiki/Lisp_machine : explore this a whole lot more
  - https://luksamuk.codes/posts/lispm-001.html
+ - https://awesome-racket.com/
+ - https://felleisen.org/matthias/manifesto/
+ - https://docs.racket-lang.org/foreign/index.html
+ - https://github.com/cfenollosa/os-tutorial
 *** exploratory term analysis queue
- - interrrupt handlers (hardware event handlers)
+ - interrrupt handlers
  - system calls
+ - bootloader
+ - kernel space
+ - user space
+ - filesystem
+ - scheduling
+ - threading
+ - memory management
+ - intruction set
+ - networking
 ** 0x22CE
 *** picking up racket again
 - https://docs.racket-lang.org/more/index.html

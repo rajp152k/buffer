@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       e335ebc2-727a-4c98-afe5-32edaec22706
+:END:
+#+title: C.RackOS
+
+
+* Stream
+** 0x22D1
+- see rackos stream entry [[id:5673f3d4-294f-48bc-b44a-f145cc4a9e6b][0x22D1]]
+- I planned on writing an operating system in racket, and then understood that there is a whole lot that I need to be conceptually clear about before I start incorporating alien tech into what I do.
+- so this is going to start with me ditching the functional realm and actually getting down dirty with C.
+- of course, this is a temporary detour : am looking forward to charting out some C
+- that is actually my programmatic Alma Mater
+- this could be an insanely long sub project of an insanely long project

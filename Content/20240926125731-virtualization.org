@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       104f0326-0505-4bbe-a78f-b9273f051b42
+:END:
+#+title: Virtualization
+#+filetags: :cs:

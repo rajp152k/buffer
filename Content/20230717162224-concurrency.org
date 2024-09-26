@@ -6,7 +6,6 @@
 
 * Abstract
 - Important aspect when it comes to optimizing the [[id:314236f7-81ae-48b7-b62b-dc822119180e][design of a system]].
-- I'll be initiating the initial deep dive into low level concurrency primitives and extensively studying patterns in [[id:ad4ba668-b2ec-47b1-9214-2284aedaceba][Golang]]
 * Patterns
 ** Fan-In
 :PROPERTIES:
@@ -465,7 +464,6 @@ func main() {
   : gamma
   : beta
   : alpha
-
 
 * Major Flavors
  - [[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]]

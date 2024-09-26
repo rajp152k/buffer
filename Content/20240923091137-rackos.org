@@ -5,6 +5,22 @@
 #+filetags: :cs:racket:
 
 * Stream
+** 0x22D1
+:PROPERTIES:
+:ID:       5673f3d4-294f-48bc-b44a-f145cc4a9e6b
+:END:
+*** Operating Systems: Three Easy Pieces : https://pages.cs.wisc.edu/~remzi/OSTEP/
+ - [[id:104f0326-0505-4bbe-a78f-b9273f051b42][Virtualization]]
+ - [[id:d2d0f670-9bdf-437a-a639-fbdf7ba7d6c7][Persistence]]
+ - [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]]
+*** thoughts
+ - might consider proting the homework into racket
+ - that might be a ery interesting porject in itself (expecting it to be in C, of course)
+ - am considering actually doing it in C first and then porting to racket
+ - anywanted to get into low level stuff
+ - okay: I'm going to do it in C first and then port it to racket
+ - maybe I should name it [[id:e335ebc2-727a-4c98-afe5-32edaec22706][C.RackOS]]
+ - I'll return someday for sure
 ** 0x22D0
 *** revenge of the son of the lisp machine
  - https://www2.ccs.neu.edu/racket/pubs/icfp99-ffkf.pdf

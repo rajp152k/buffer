@@ -5,6 +5,10 @@
 #+filetags: :cs:racket:
 
 * Stream
+** 0x22D2
+ - so porting concepts from the three easy pieces into racket is the next plan
+ - will have to understand C as well
+ - I feel like I might just get on with common lisp rather than racket
 ** 0x22D1
 :PROPERTIES:
 :ID:       5673f3d4-294f-48bc-b44a-f145cc4a9e6b

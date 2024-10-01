@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       778aa08b-4375-489c-a491-f75beb9247a7
+:END:
+#+title: K8s Controllers
+#+filetags: :cs:
+
+
+* Overview
+- *Controllers*: Automated systems managing the state of Kubernetes clusters.
+- Essential for maintaining Kubernetes operations.
+- Automates the repetitive and complex tasks.
+- Key to achieving scalable and reliable container orchestration.
+- see https://kubernetes.io/docs/concepts/architecture/controller/
+** Core Functionality
+- *State Reconciliation*: Compare current state to desired state.
+- *Actions*:
+  - Deploy
+  - Mount volumes
+  - Manage scaling
+  - Handle failures
+** Mechanism
+- *Control Loop*: Continuously monitors and updates cluster state.
+- *Work Queue*: Stores observations/changes for processing.
+- *Reconcile Loop*: Processes items from Work Queue to align with desired state.
+
+** Epistemological Correlations
+- *[[id:925e2fbb-afb7-4857-853d-899bb9e2d8d1][Control Theory]]*: Similar to control systems in engineering.
+- *[[id:a17d6ca7-c065-434e-8730-10871a9b3652][Homeostasis]] in Biology*: Maintains stable internal environment despite external changes.

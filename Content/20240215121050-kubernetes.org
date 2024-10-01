@@ -3,16 +3,22 @@
 :ROAM_ALIASES: K8s
 :END:
 #+title: Kubernetes
-#+filetags: :arch:compute:tool:
+#+filetags: :cs:tool:
 
 see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 
-* Abstract
-Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][containerization]].
-
- - checkout a quick intro to orchestration : https://container.training/intro-selfpaced.yml.html#813
- - checkout out a sligtly less quick intro to kubernetes: https://qconuk2019.container.training/#76
-* Misc QuickRefs
+* Stream
+** 0x22D6
+*** Open Container Initiative
+- https://opencontainers.org/
+- https://github.com/opencontainers
+*** Kubernetes Interfaces
+**** Container Runtime Interface
+- https://kubernetes.io/docs/concepts/architecture/cri/
+**** Container Network Interface
+**** Container Storage Interface
+** 0x22D6
+ - some quick indexes from container.training
  - internal dynamic dns:  https://qconuk2019.container.training/#46
  - how the master node avoids running workloads: https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
  - the CRI to allow multiple (compliant) container runtimes  : https://kubernetes.io/docs/concepts/architecture/cri/
@@ -29,15 +35,9 @@ Conductors (or Choreographers (based on your tastes)) for [[id:d4627a77-fafc-4c7
      - fluentd is decentralized
  - prometheus : https://qconuk2019.container.training/#357
  - stateful services : https://qconuk2019.container.training/#393
-* Alternatives
-** Hashicorp Nomad
- - https://www.nomadproject.io/
 * Resources
 ** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
  - https://tanzu.vmware.com/content/ebooks/production-kubernetes
 ** Practical
  - https://qconuk2019.container.training
  - https://github.com/kubernauts/practical-kubernetes-problems
-** To be Processed
- - https://arxiv.org/pdf/2401.09733
- - http://kubicorn.io/

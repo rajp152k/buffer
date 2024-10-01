@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       925e2fbb-afb7-4857-853d-899bb9e2d8d1
+:END:
+#+title: Control Theory
+
+* Resources
+- https://en.wikipedia.org/wiki/Control_theory

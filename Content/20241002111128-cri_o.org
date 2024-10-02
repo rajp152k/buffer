@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       25a01326-bb5e-4654-9c6e-36a1d764419c
+:END:
+#+title: CRI-O
+#+filetags: :k8s:

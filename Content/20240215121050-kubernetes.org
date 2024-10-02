@@ -3,7 +3,7 @@
 :ROAM_ALIASES: K8s
 :END:
 #+title: Kubernetes
-#+filetags: :cs:tool:
+#+filetags: :k8s:cs:tool:
 
 see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 

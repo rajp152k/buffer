@@ -2,7 +2,7 @@
 :ID:       20230815T044212.558049
 :END:
 #+title: org-roam-publish
-#+filetags: :wip:project:
+#+filetags: :project:
 
 Publishing name : Undecided
 

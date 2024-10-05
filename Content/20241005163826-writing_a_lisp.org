@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID:       2dfa41e9-07ba-4deb-a466-af409fa8b465
+:END:
+#+title: Writing a lisp
+#+filetags: :lisp:cs:
+
+* Abstract
+Any language is defined by the tooling that processes the source (they conform to a set of standards/expectations).
+
+What makes lisp "lisp" is [[id:20230728T053744.817854][homoiconicity]]: any toolchain that I write, should expose the underlying AST in a manner that it is flexibly manipulable.
+
+Other than that, the generic requirements to an interpreter would be:
+ - the [[id:700dff70-2a6d-40d4-8e81-996b3be39b47][Lexer]] : from characters to tokens
+ - the [[id:0ae38d19-9a2e-4304-8efb-a97fb8cbdc44][parser]] : from tokens to interpretable forms
+ - Evaluator : evaluating forms in a context
+ - Environment : the context
+
+Crafting a basic lisp without much influence from all the existing major projects is an interesting exercise every aspiring lisp demigod might benefit from partaking in
+
+Over the course of my life, I might consider writing a lisp in different languages.
+
+To make the experience more uniform, I'll be starting out with [[id:b812b221-7932-4ada-966a-fefa69300232][McCarthy's original Lisp]] (courtesy: [[id:fbd38417-13a0-4cda-b256-ee1ab94048f0][Paul Graham]] )
+* Specifications
+** [[id:ba2c1fb5-129b-4fc1-8437-0aeccb606d3a][Writing a lisp in Golang]]
+* Overview of Building a Lisp Interpreter
+  - Understand the Lisp language
+    - Syntax and semantics
+    - Core concepts: symbols, lists, S-expressions
+  - Design the interpreter structure
+    - Lexer/Tokenizer
+    - Parser
+    - Evaluator
+    - Environment representation
+
+  - [[id:700dff70-2a6d-40d4-8e81-996b3be39b47][Lexer]]/Tokenizer
+    - Convert input character stream into tokens
+    - Handle whitespace and comments
+    - Recognize symbols, numbers, strings, parentheses
+    - Example: tokenize "(+ 1 2)" into ['(', '+', '1', '2', ')']
+
+  - [[id:0ae38d19-9a2e-4304-8efb-a97fb8cbdc44][Parser]]
+    - Construct Abstract Syntax Tree (AST) from tokens
+    - Recognize and handle S-expressions
+    - Create data structures to represent expressions
+    - Example: parse ['(', '+', '1', '2', ')'] into an AST
+
+  - Evaluator
+    - Traverse and interpret the AST
+    - Implement core Lisp operations: addition, subtraction, etc.
+    - Recursively evaluate nested expressions
+    - Maintain an environment for variable bindings
+
+  - Environment Representation
+    - Implement variable storage and retrieval mechanism
+    - Handle lexical scoping
+    - Example: store variables as key-value pairs in a dictionary
+
+  - Critiques and Considerations
+    - Error handling: ensure meaningful error messages for invalid inputs
+    - Performance: optimize evaluation for larger expressions
+    - Extendability: consider how to add more features or functions
+
+  - Connections
+    - Lexer/Tokenizer feeds tokens into the Parser
+    - Parser outputs an AST for the Evaluator to process
+    - Environment interacts with the Evaluator for variable management
+
+* Building a basics lisp specification

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       ba2c1fb5-129b-4fc1-8437-0aeccb606d3a
+:END:
+#+title: Writing a lisp in Golang
+#+filetags: :golang:lisp:
+
+* Stream
+** 0x22DA
+ - the basics of writing a lisp:
+   - the lexer, the parser, the evaluator and the environment
+ - checkout https://github.com/rajp152k/lisp-in-go
+ - I'm not going to try and be write from the get go but make meaningful progress : I'm not starting out with a map (I could fetch one before I start) but am actually just going to drive in a foggy night.

@@ -2,7 +2,7 @@
 :ID:       c4058b62-7997-4c35-a852-63075e2be4c4
 :END:
 #+title: Prompt Engineering
-#+filetags: :wip:skills:
+#+filetags: :skills:
 
 Reading up on Generative AI to shift from googling to gaining information via more accurate prompts. Should help me as a content creator: from a writing perspective, I'd refrain from using a lot of it when it comes to my blogs and a youtube script. It'll definitely leverage it when I need to some factual fillers but staying away from its stylistic suggestions. Will explore art and design as well later on.
 

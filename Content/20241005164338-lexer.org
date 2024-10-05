@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       700dff70-2a6d-40d4-8e81-996b3be39b47
+:ROAM_ALIASES: "lexical analysis"
+:END:
+#+title: Lexer
+#+filetags: :compiler:cs:
+

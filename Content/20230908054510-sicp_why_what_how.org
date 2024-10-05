@@ -2,7 +2,7 @@
 :ID:       20230908T054510.505181
 :END:
 #+title: SICP-how-what-why?
-#+filetags: :wip:blog:yt:lisp:
+#+filetags: :blog:yt:lisp:
 
 * Core
  - practicing structure and intent with this post

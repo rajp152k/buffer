@@ -2,7 +2,7 @@
 :ID:       95d78022-1277-469f-a497-e6442ecc416b
 :END:
 #+title: Generative AI
-#+filetags: :AI:
+#+filetags: :ai:
 
 * Abstract
 ** Refining Gen AI outputs

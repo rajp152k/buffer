@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       20230827T153308.339339
 :END:
-#+title: A Pragmatist's Guide to [[id:20240421T173425.305252][Literature]]
+#+title: A Pragmatist's Guide to Literature
 #+filetags: :book:
 
 * Readings

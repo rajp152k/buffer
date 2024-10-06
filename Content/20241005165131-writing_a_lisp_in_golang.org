@@ -13,3 +13,35 @@
    - the lexer, the parser, the evaluator and the environment
  - checkout https://github.com/rajp152k/lisp-in-go
  - I'm not going to try and be write from the get go but make meaningful progress : I'm not starting out with a map (I could fetch one before I start) but am actually just going to drive in a foggy night.
+ - will proceed with TDD : I do like my emacs golang workflow right now
+ - will be starting out with [[id:b812b221-7932-4ada-966a-fefa69300232][McCarthy's original Lisp]] and building from there onwards.
+ - will also need to brush up some theory, all relevant nodes in this buffer regarding compilers should help out.
+* Building the Lexer
+** 0x22DB
+- going with [[id:b812b221-7932-4ada-966a-fefa69300232][McCarthy's original Lisp]]
+- there are some built in functionalities and keywords
+- then there's defined functions
+- one has to be able to analyse variables as well
+- there are special symbols include only the "()',`"
+  - LPAREN
+  - RPAREN
+  - QUOTE
+  - UNQUOTE
+  - QUASIQUOTE
+- other than these, everything can be dereferenced as a symbol and looked up in the environment.
+- so for now, going for these special tokens + symbols sound like a good way to go about it.
+- a token than is an overarching type that can either be a special token or a symbol with a repr value that will be stored as a string
+- so something like (+ 1 2) or (add 1 2) should be lexically analysed as [LPAREN, SYMBOL, SYMBOL, SYMBOL, RPAREN]
+- macros is something that I'll deal with later
+- whether a symbol is a keyword, a variable, a function (also have to choose if i'll go the lisp or the scheme way later on),
+- whitespace is something that I can ignore between symbols but might have to focus on when dealing with strings and comments
+
+- before I move on with the red in TDD, have to frame the representation strategy in golang:
+  - a token stream can be a slice of token
+  - from what I charted about above, a token can be a struct with an id string and repr string
+
+- checkout code until this commit if you're following along: https://github.com/rajp152k/lisp-in-go/commit/f645c41f82c02aac69feacc4c82ccb67cdb09f1b
+
+- have added a basic failing test so that can form the basis for my work tomorrow.
+
+- all sentinels ready, gathering some momentum

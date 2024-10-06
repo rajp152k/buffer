@@ -8,6 +8,10 @@
 - https://github.com/rajp152k/lisp-in-go
 
 * Stream
+** 0x22DB
+ - I'm quite enjoying the exploratory nature of what I'm doing in here
+ - was thinking of going for a definite spec but why not just build flexibly so that I can add or retract freely
+ - in the language design stage now that I have a basic parser going for
 ** 0x22DA
  - the basics of writing a lisp:
    - the lexer, the parser, the evaluator and the environment
@@ -17,6 +21,56 @@
  - will be starting out with [[id:b812b221-7932-4ada-966a-fefa69300232][McCarthy's original Lisp]] and building from there onwards.
  - will also need to brush up some theory, all relevant nodes in this buffer regarding compilers should help out.
 * Building the Lexer
+** 0x22DB
+ - the next step in augmenting the lexer is testing for literals
+ - now the string approach might not work and I might have to pull out regexps if I want to be tidy
+ - so also need to start building a spec that can handle what I'm trying to do here
+ - the next feature I want to add is to merge tabs and spaces into one whitespace token so there's multiple stages to my lexer now
+ - In the first stage, I've simply read in the strings and made them accessible
+ - In the next stage, I can start differentiating between symbols and literals
+ - a literal is just that value in itself : could be a string, a number, or a boolean
+ - as of now my symbols are representing all that comes in.
+ - need to start associating a value with them.
+ - so the lexer handles the values of literals and the value of the variables is resolved during evaluation
+ - maybe I should just use special symbols to represent literals
+ - could have a surrounding "|" for raw strings
+   - think that is a fine idea
+   - need a string mode now.
+   - If I encounter a "|", anything until the next "|" get's acc'ed
+ - check code till this commit : https://github.com/rajp152k/lisp-in-go/commit/5539a0bb5b36b0e3886a88c86fd65b0dc06fe56b
+
+
+
+
+
+
+
+
+
+** 0x22DB
+ - alright, time to move from red to green
+ - to read a string of characters piece by piece, will just read string piece by piece
+ - I don't to worry about if the syntax is right in this stage (unbalanced parens for instance).
+ - so just read a string, store intermediates, ignore whitespace (not handling comments yet so should be fine)
+ - but, maybe newlines and whitespace(tabs and spaces) are important after all
+ - still going to make note of them in the stream and ignore them when needed
+ - have a recursive solution but also have an iterative one in mind so given I'm using go, will proceed with iterations.
+ - so I'm in the green right now with a minor feature additions (I know TDD insn't supposed to be like this, but yeah...)
+ - if you're following along, check code until this commit : https://github.com/rajp152k/lisp-in-go/commit/44943157128773a8c37cd322074d9232bd1f1394
+ - now that I've got a basic lexer, I can start thinking about how I'll represent functions and variables
+ - but before that, representing a grammar is going to be somewhat tricky without any external tooling
+ - I would like to build something fairly minimal myself rather than use a library that is bigger than the project oriented codebase.
+ - I'm going to give it a try: the parser simply takes in the token stream and generates an abstract synax tree based on a few rules that define a program.
+ - I could build a data structure for my own parse tree : just needs to be a tree
+ - which is really just a list
+ - also need to understand how to link an environment to a node
+ - all I need to do is an apply and an eval
+ - that's calling a function on a bunch of evaluated arguments
+ - now for a function call, the root being the function symbol and the rest being argument forms should do
+ - an environment is just going to be a map from symbols (string repr'd) to values or other functions
+ - using the same namespace for variables and functions should be fine for now : i.e. I'm going the scheme way
+ - stacking environments together by having a list of these maps to look for seems to be a good way to get started
+ - I also need to define what keywords I plan on having.
 ** 0x22DB
 - going with [[id:b812b221-7932-4ada-966a-fefa69300232][McCarthy's original Lisp]]
 - there are some built in functionalities and keywords
@@ -32,6 +86,7 @@
 - so for now, going for these special tokens + symbols sound like a good way to go about it.
 - a token than is an overarching type that can either be a special token or a symbol with a repr value that will be stored as a string
 - so something like (+ 1 2) or (add 1 2) should be lexically analysed as [LPAREN, SYMBOL, SYMBOL, SYMBOL, RPAREN]
+
 - macros is something that I'll deal with later
 - whether a symbol is a keyword, a variable, a function (also have to choose if i'll go the lisp or the scheme way later on),
 - whitespace is something that I can ignore between symbols but might have to focus on when dealing with strings and comments
@@ -45,3 +100,8 @@
 - have added a basic failing test so that can form the basis for my work tomorrow.
 
 - all sentinels ready, gathering some momentum
+
+* Building the Parser
+** 0x22DB
+- now that I can read strings into my customized tokens, I can start working on the internal representations and axioms of the language.
+- going for a theoretical detour before I jump

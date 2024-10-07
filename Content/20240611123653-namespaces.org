@@ -3,3 +3,10 @@
 :END:
 #+title: namespaces
 #+filetags: :meta:cs:
+
+* Overview
+** Definition
+    - A namespace is a container that holds identifiers, such as variables and functions, and ensures that they are unique within that context.
+** Purpose
+    - Resolves name conflicts arising from identifiers with the same name being used in different parts of a program.
+    - Enhances code organization and modularity.

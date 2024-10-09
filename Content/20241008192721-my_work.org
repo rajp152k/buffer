@@ -9,3 +9,5 @@
 * Stream
 ** 0x22DE
 - read [[id:e81a4a6d-05ba-452d-a94d-64533aa25ea3][Daniel Miessler]]'s, https://danielmiessler.com/p/how-my-projects-fit-together and was +encouraged+ ashamed into initializing one for myself
+- I don't have an overarching purpose attached to my pursuits right now but soon might benefit from having one: at an inflexion where I think I'm getting competent enough to start making a practical dent in problems that matter societally.
+- would like to document this inflexion

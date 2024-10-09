@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       e81a4a6d-05ba-452d-a94d-64533aa25ea3
+:END:
+#+title: Daniel Miessler
+#+filetags: :author:
+
+ - Structures a lot of his works around augmenting humans
+
+* Projects
+ - [[id:45e5f48a-c7df-4ec8-8730-f9b9a31365ff][Human 3.0]]
+ - https://github.com/danielmiessler/fabric
+ - https://github.com/human-substrate/Substrate
+ - https://github.com/danielmiessler/Telos
+ - https://github.com/danielmiessler/Daemon
+ - https://github.com/danielmiessler/Frames
+
+
+* Resources
+ - https://danielmiessler.com/p/how-my-projects-fit-together

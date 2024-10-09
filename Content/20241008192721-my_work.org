@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       6ee22d70-0d07-477f-9756-db9e9ab10317
+:END:
+#+title: My Work
+#+filetags: :meta:
+
+* Principles
+
+* Stream
+** 0x22DE
+- read [[id:e81a4a6d-05ba-452d-a94d-64533aa25ea3][Daniel Miessler]]'s, https://danielmiessler.com/p/how-my-projects-fit-together and was +encouraged+ ashamed into initializing one for myself

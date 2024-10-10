@@ -5,3 +5,6 @@
 #+filetags: :root:
 
 * Stream
+** 0x22DF
+ - yesterday, during a discussion with my sister (she's pursuing formal education in product design), we discussed about a few biology oriented forks of the same: one of them being  [[id:2ac1cb5c-fd21-41a7-a30a-d6a2080d973e][bioMimicry]], [[id:8bfdfe41-f0ff-47f5-ba9d-3aea45ab0fe7][bioDesign]], [[id:c33c91cb-3323-4ef4-8272-478fa1fc69c3][bioUtility]]  and the likes
+ - found that interesting and could start a personal pursuit of observing abstractions in nature.

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2ac1cb5c-fd21-41a7-a30a-d6a2080d973e
+:END:
+#+title: bioMimicry
+#+filetags: :biology:

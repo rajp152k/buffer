@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8bfdfe41-f0ff-47f5-ba9d-3aea45ab0fe7
+:END:
+#+title: bioDesign
+#+filetags: :biology:

@@ -3,3 +3,44 @@
 :END:
 #+title: CoreDNS
 #+filetags: :network:cloud-native:cncf:
+
+* Overview
+
+- CoreDNS:
+  - flexible and extensible DNS server that can serve as a kube-dns replacement in [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]] environments.
+  - written in Go and can handle multiple DNS protocols.
+
+- Key Features:
+  - Modularity: CoreDNS features a plugin-based architecture, allowing users to enable only the DNS features they need.
+  - Plugins: Some essential plugins are health checks, cache functionality, load-balancing, and more.
+  - Performance: Optimizes DNS response times and scales efficiently in cloud-native environments.
+
+- Deployment and Use Cases:
+  - Primarily used within Kubernetes clusters to resolve service names and other DNS records.
+  - Can be used for service discovery in microservices architectures, external DNS resolution, and more.
+
+- CNCF and Community:
+  - CoreDNS is a graduated project within the Cloud Native Computing Foundation (CNCF), indicating a mature community and governance policy.
+  - Regular contributions and updates from a wide community base enhance its stability and security.
+
+- Comparisons:
+  - Compared to traditional DNS solutions, CoreDNS offers better integration with Kubernetes.
+  - Unlike BIND, CoreDNS is focused on extensibility rather than merely offering comprehensive DNS services out-of-the-box.
+
+* CoreDNS Plugins Overview
+  - CoreDNS is a flexible and scalable DNS server.
+  - CoreDNS can be extended and customized through plugins.
+  - Plugins allow CoreDNS to serve various use cases, such as:
+      - Caching
+      - Load balancing
+      - Service discovery
+  - CoreDNS comes with a collection of built-in plugins.
+
+- Key Built-in Plugins
+  - *Cache*: Caches DNS responses to improve performance and decrease load.
+  - *Forward*: Forwards queries to other nameservers, usually upstream.
+  - *Grpc*: Provides functionalities over gRPC, applicable within service meshes.
+  - *[[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]]*: Provides service discovery for Kubernetes clusters by managing DNS entries for Kubernetes resources.
+  - *[[id:55a62ff7-7160-4e6e-9bb5-0df996bf995e][Prometheus]]*: Offers metrics collection and exposes them in a format compatible with Prometheus.
+  - *Rewrite*: Allows modification of incoming DNS queries before processing.
+  - *Health*: Provides a health endpoint for monitoring the state of CoreDNS.

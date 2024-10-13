@@ -29,10 +29,7 @@ Given a Dependency [[id:179b5b39-234a-4d0c-afde-c3b81409760c][Relationship]], li
  - Development 
  - [[id:17d78466-2fcc-47aa-af20-9b74d94c96bb][Testing]]
  - Production
-** The Twelve Factor App
-:PROPERTIES:
-:ID:       7a450c24-000e-4262-8632-b07f8a4d1df9
-:END:
+** [[id:64ef7555-7eda-49ed-82d4-e393ef1cccd2][The Twelve Factor App]]
  - https://12factor.net/
 
 ** Idempotence

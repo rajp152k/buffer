@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       74d7c3e9-bf98-4311-a95c-c9674e61fe97
+:END:
+#+title: K8S DNS
+#+filetags: :network:k8s:
+
+* Overview
+** [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]] (K8S) DNS Overview
+  - Kubernetes includes a built-in [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][DNS]] server that correlates with the services within the cluster.
+  - When a new service is created, the DNS server is notified and can manage DNS records accordingly.
+  - DNS names follow the format =<service-name>.<namespace>.svc.cluster.local=.
+  - The DNS server helps with service discovery, allowing Kubernetes services to communicate seamlessly.
+  - [[id:d3f2c59a-602d-4a88-8828-82797f25fbd3][CoreDNS]] is the default DNS solution from version 1.13 onwards, replacing kube-dns.
+
+** Functional Components of K8S DNS
+  - Service Discovery: Simplifies the process of finding and connecting with services by names rather than IPs.
+  - Pod DNS Resolution: Each pod can query the DNS system, facilitating interaction with other services.
+  - ClusterDNS: Configures kubelets to communicate with the DNS server for name resolutions.
+  - CoreDNS Configuration: Provides flexibility and supports various plugins for handling DNS queries efficiently.

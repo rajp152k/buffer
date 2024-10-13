@@ -3,3 +3,6 @@
 :END:
 #+title: DNS (Domain Name System)
 #+filetags: :network:cs:
+
+* Forks
+** [[id:74d7c3e9-bf98-4311-a95c-c9674e61fe97][K8S DNS]]

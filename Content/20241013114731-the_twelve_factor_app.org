@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       64ef7555-7eda-49ed-82d4-e393ef1cccd2
+:END:
+#+title: The Twelve Factor App
+#+filetags: :cs:
+
+* Overview
+  The twelve-factor app is a methodology for building software-as-a-service applications that aims to maximize portability, resilience, and scalability.
+* the 12 factors
+** Codebase:
+    - A twelve-factor app always has a one-to-one correlation between the codebase and the app.
+    - Various deploys of the app (e.g., staging, production) should be from the same codebase, facilitating easier deployment and management.
+** Dependencies:
+    - Dependencies should be explicitly declared and isolated to ensure consistency in different environments.
+    - Use dependency managers and tools that mechanize this isolation and declaration (e.g., pip for Python, Maven for Java).
+** Configuration:
+    - Configuration should be external and separate from the codebase, typically managed via environment variables.
+    - This allows for seamless changes without code alterations.
+** Backing Services:
+    - Treat backing services (e.g., databases, queues) as attached resources, abstracting them through well-defined APIs.
+    - This abstraction allows swapping of backing services without disruption.
+** Build, Release, Run:
+    - Strict separation between the build, release, and run stages to enable continuous delivery and integration.
+    - Builds should be versioned and contain all dependencies, while releases should combine builds with their respective configs.
+** Processes:
+    - The app should be executed as one or more stateless processes. Persist any state to external backing services.
+** Port Binding:
+    - Adopts an explicit port binding for web apps, making them self-contained and independent of language-specific execution environments.
+** Concurrency:
+    - Scale out via the process model by running multiple identical processes. It facilitates better resource usage and fault tolerance.
+** Disposability:
+    - Prioritize fast startup and graceful shutdown of processes to adapt to changes in scaling and code changes rapidly.
+** Dev/Prod Parity:
+    - Maintain minimal divergence between development and production environments to minimize deployment gaps and debugging effort.
+** Logs:
+    - Treat logs as event streams, ensuring they can be routed to various log destinations for analysis and audit.
+** Admin Processes:
+    - Any administrative or management tasks should be run as one-off processes, separate from the regular app runtime.
+* Connections:
+    - The principles ensure a high degree of portability, reducing risks when changing environments (e.g., moving between cloud providers).
+    - Emphasizes automation and simplification for easier integration with CI/CD pipelines.
+    - By isolating states and dependencies, eases the process of scaling out operations.
+
+* Critique and Further Exploration:
+    - While twelve-factor app methodology provides a firm structure for SaaS applications, it might require adaptation for highly specialized legacy systems.
+    - Investigate variations of twelve-factor methodology suited for microservices or serverless architectures.
+
+* Ideation Strategies for Improvement:
+    - Consistently review the twelve factors in the context of your application to identify opportunities for optimization and refinement.
+    - Consider adopting twelve-factor principles incrementally to existing applications.
+
+* Resources
+ - https://12factor.net/

@@ -10,6 +10,7 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 * Stream
 ** 0x22E2
 - reading https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/
+- reading up on ConfigMaps
 ** 0x22E1
  - the <git vc host>/kubernetes/hack/ is useful
  - charting the kubernetes source code

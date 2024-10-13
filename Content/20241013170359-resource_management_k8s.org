@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       31fe99cb-2739-45cd-9a8b-755ffc018917
+:END:
+#+title: Resource Management-K8S
+#+filetags: :k8s:
+
+* Resources
+ - https://openmetrics.io/
+ - [[id:28387722-d0ca-4c0b-8436-5c4c2ae4ba13][Helm]]
+ - [[id:a204f9b7-a562-429b-8fb4-644a758f933b][Kustomize]]
+ - https://kubernetes.io/docs/concepts/workloads/management/
+ - https://kubectl.docs.kubernetes.io/guides/config_management/introduction/

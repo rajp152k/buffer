@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3556f180-8efb-4ece-9856-12c322d4bb3d
+:END:
+#+title: Network Policies-K8S
+#+filetags: :sec:k8s:
+
+* Resources
+ - https://kubernetes.io/docs/concepts/services-networking/network-policies/

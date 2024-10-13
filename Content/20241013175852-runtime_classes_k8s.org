@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5bbc2e82-8c88-46cb-9f8c-40ed065d3c97
+:END:
+#+title: Runtime Classes-K8S
+#+filetags: :sec:k8s:
+
+* Resources
+ - https://kubernetes.io/docs/concepts/containers/runtime-class/

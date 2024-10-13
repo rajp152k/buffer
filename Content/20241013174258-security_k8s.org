@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       68d08457-9ce7-4b48-8cef-c52134a99c40
+:END:
+#+title: Security-K8S
+#+filetags: :sec:k8s:
+
+* K8S Security Mechanisms
+** Control Plane Protection
+ - data in transit encryption ([[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]):
+   - https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/
+ - encryption at rest :
+   - https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/
+** [[id:691a68cd-bef5-47c3-be5a-030cfffca5c5][Secrets]]
+- maskable configs
+** Workload Protection
+- [[id:3556f180-8efb-4ece-9856-12c322d4bb3d][Network Policies-K8S]]
+- [[id:5bbc2e82-8c88-46cb-9f8c-40ed065d3c97][Runtime Classes-K8S]]
+
+** Auditing
+* Resources
+- https://kubernetes.io/docs/concepts/security/
+- https://kubernetes.io/docs/concepts/security/cloud-native-security/

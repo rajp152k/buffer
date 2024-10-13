@@ -2,4 +2,4 @@
 :ID:       28387722-d0ca-4c0b-8436-5c4c2ae4ba13
 :END:
 #+title: Helm
-#+filetags: :cloud-native:cncf:
+#+filetags: :k8s:cloud-native:cncf:

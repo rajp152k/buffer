@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       a204f9b7-a562-429b-8fb4-644a758f933b
+:END:
+#+title: Kustomize
+#+filetags: :k8s:
+
+
+* Resources
+- https://kustomize.io/

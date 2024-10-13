@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2244b835-3c8a-496e-b4bd-5ab0951c7d29
+:END:
+#+title: ConfigMap-K8S
+#+filetags: :k8s:
+
+* Definition:
+  - ConfigMap is an API object in Kubernetes used to store non-confidential data in key-value pairs.
+
+* Purpose:
+  - To decouple configuration artifacts from container images to make applications more secure and portable.
+
+* Limitations:
+  - They are not suited to store sensitive information such as passwords or keys; for that, [[id:691a68cd-bef5-47c3-be5a-030cfffca5c5][Kubernetes Secrets]] should be used.
+  - ConfigMaps are limited to 1MB each; exceeding this limit requires a different approach.
+
+
+* Resources
+- https://kubernetes.io/docs/concepts/configuration/configmap/
+- https://kubernetes.io/blog/2016/04/configuration-management-with-containers/

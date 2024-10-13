@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f9002f5f-f8b8-4064-8af4-dabcc145668d
+:END:
+#+title: ModemManager
+#+filetags: :hardware:
+
+* Resources
+- https://mobile-broadband.pages.freedesktop.org/

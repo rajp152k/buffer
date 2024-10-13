@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       d799bc90-5032-4a69-9806-83145297a335
+:END:
+#+title: IP (Internet Protocol) Address
+#+filetags: :network:
+
+* Definition
+  - a unique numeric label assigned to each device connected to a [[id:a4e712e1-a233-4173-91fa-4e145bd68769][computer network]] that uses the IP for communication.
+  - two primary functions:
+    - identifying a host or network interface
+    - providing the location of the host in the network [[id:6bb5e976-0619-4a6e-8c6b-adb39d5dcc8c][topology]]
+
+* Types of IP Addresses
+** [[id:f3fda9d4-bfde-4672-8b51-a41700c0cd98][IPv4]]
+    - Consists of 32 bits.
+    - Forms over 4.3 billion unique addresses.
+    - Format: four octets separated by dots (e.g., 192.168.1.1).
+** [[id:1a3d2a4c-bfad-4e5a-ab97-4db4531e7bd2][IPv6]]
+    - Developed due to the exhaustion of IPv4 addresses.
+    - Consists of 128 bits.
+    - Can support about 340 undecillion addresses.
+    - Format: eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+
+** [[id:1c4b02bf-2597-4e2d-9e85-1be4993dcb31][IPv5 Lore]]
+* Static vs. Dynamic IP Addresses
+  - Static IP Addresses
+    - Permanently assigned to a computer by an ISP.
+  - Dynamic IP Addresses
+    - Temporarily assigned from a pool by the [[id:dd743d7a-7e96-45a7-9894-13f79b351681][DHCP (Dynamic Host Configuration Protocol)]].
+
+* IP-related Concepts and Connections
+** [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][DNS (Domain Name System)]]
+    - Translates human-readable domain names to IP addresses.
+** [[id:e6f902bf-c138-4d79-85cc-98f1165ef761][IP Subnetting]]
+    - Divides a large network into smaller, manageable segments.
+** [[id:2db5d39c-8f0d-4bcb-ba73-c5d4e22c4d03][NAT (Network Address Translation)]]
+    - Allows multiple devices on a local network to share a single public IP address.
+
+** [[id:74055437-5557-4a21-9b7a-a3b5df3a8a24][IPVS (IP Virtual Server)]]

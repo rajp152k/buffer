@@ -2,7 +2,7 @@
 :ID:       0d7c2dea-a250-4380-b826-ad4d2547d8d6
 :END:
 #+title: Load Balancing
-#+filetags: :web:
+#+filetags: :network:web:
 
 * Abstract
  - Revolves around the idea of balancing requests over a pool of resources to avoid the over-"load"ing of any single point of service.

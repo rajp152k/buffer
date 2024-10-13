@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       1c4b02bf-2597-4e2d-9e85-1be4993dcb31
+:END:
+#+title: IPv5 Lore
+#+filetags: :network:
+
+* Overview
+
+- IPv5, officially known as the Internet Stream Protocol (ST)
+  - Developed in the late 1970s and early 1980s as an experimental protocol.
+  - Intended to support voice and video streaming.
+
+- Historical Context
+  - Appeared after [[id:f3fda9d4-bfde-4672-8b51-a41700c0cd98][IPv4]], around the time networking demands started to exceed existing capabilities.
+  - Primarily focused on addressing multicast traffic requirements.
+
+- Reasons for Lack of Adoption
+  - [[id:1a3d2a4c-bfad-4e5a-ab97-4db4531e7bd2][IPv6]] development eventually overshadowed IPv5 due to its more comprehensive improvements.
+  - The Stream Protocol was not intended to replace IPv4 but to work alongside it for specific use cases.
+  - Limited deployment and lack of backward compatibility.
+
+- Connections
+  - IPv5 influenced future transport and streaming protocols by highlighting the need for real-time data transmission capabilities.
+  - Lessons from IPv5 partially informed design choices in subsequent protocols like RTP (Real-time Transport Protocol).
+
+- Critique
+  - IPv5's role as a standalone protocol was limited; thus, its practical applications were marginal.
+  - The protocol's compartmentalized vision indicates a lack of foresight for overarching internet scalability needs, something IPv6 addressed more robustly.
+
+- Connections and Historical Context
+  - The invention of IPv5 revealed early intentions to handle real-time communications, which laid groundwork concepts for later technologies.
+  - Key ideas from IPv5 can be seen in the development of [[id:11c09e36-bdef-4977-9142-6d8ec0e697ba][Quality of Service]] (QoS) mechanisms to prioritize data packages effectively.
+  - There is a progression of protocol evolution, from IPv4 addressing limitations, to IPv5 experimentation, culminating in IPv6, which provides a vastly larger address space and enhanced functionalities.
+
+- Critique
+  - IPv5 was limited by its integer-based versioning, as the number "5" was an interim step rather than a full-fledged protocol version; this highlights the complexity of protocol version transitions.
+  - The major critique of IPv5 was a lack of foresight concerning the explosion of internet-connected devices, which IPv6 primarily aimed to address with its larger address pool.
+
+- Ideation Strategies
+  - Understanding the failures and limitations of previous technologies like IPv5 can guide innovative thinking in protocol development and network infrastructure improvements.
+  - Encourage critical analysis of current network demands and potential future trends to preemptively design adaptable protocol systems.
+  - Foster interdisciplinary collaboration, as real-time data implications span fields like telecommunications, multimedia services, and IoT development.
+
+- Questions for Further Exploration
+  - What specific elements from IPv5 were integrated into later protocols?
+  - How has real-time data transmission evolved from early attempts like IPv5 to modern broadband technologies?
+  - Can the limitations of IPv5 provide insights into potential pitfalls for future network protocol developments?
+
+
+- It seems there was no specific context provided in the previous interaction.
+- To assist effectively, here are some questions to help guide the discussion:
+  - What domain or topic are you interested in exploring?
+  - Are you looking to understand a specific concept or historical development in network protocols?
+  - Is there a particular challenge or problem you are aiming to solve with the information?
+- Filling in these details will allow for more precise and helpful insights.
+* Resources
+- https://en.wikipedia.org/wiki/Internet_Stream_Protocol

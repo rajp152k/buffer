@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2deb95d6-5474-4096-85fc-bd568031cc33
+:END:
+#+title: OSI (Open Systems Interconnection) Model
+#+filetags: :network:cs:

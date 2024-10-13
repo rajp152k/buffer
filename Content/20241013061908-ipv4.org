@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       f3fda9d4-bfde-4672-8b51-a41700c0cd98
+:END:
+#+title: IPv4
+#+filetags: :network:
+
+see [[id:d799bc90-5032-4a69-9806-83145297a335][Internet Protocol Address]]

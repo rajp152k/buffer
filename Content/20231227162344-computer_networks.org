@@ -5,7 +5,7 @@
 #+filetags: :cs:programming:
 
 * Abstract
-The notion of communication between Computers. Theoretically captured by the [[https://en.wikipedia.org/wiki/OSI_model][7-layered OSI (open systems Interconnection)]] model.
+The notion of communication between Computers. Theoretically captured by [[id:2deb95d6-5474-4096-85fc-bd568031cc33][the OSI model]]
 
 The OSI Layers:
  1. Hardware

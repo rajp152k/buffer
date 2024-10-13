@@ -8,6 +8,18 @@
 see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 
 * Stream
+** 0x22E2
+- reading https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/
+** 0x22E1
+ - the <git vc host>/kubernetes/hack/ is useful
+ - charting the kubernetes source code
+** 0x22DF
+*** Netshoot
+ - for debugging purposes:
+   - definitely checkout netshoot
+   - recommend using as a plugin with krew
+   - am locally using on my minikube dev setup via krew as of now
+   - https://github.com/nicolaka/netshoot
 ** 0x22D6
 *** Open Container Initiative
 - https://opencontainers.org/
@@ -17,7 +29,7 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 - https://kubernetes.io/docs/concepts/architecture/cri/
 **** Container Network Interface
 **** Container Storage Interface
-** 0x22D6
+** 0x22D5
  - some quick indexes from container.training
  - internal dynamic dns:  https://qconuk2019.container.training/#46
  - how the master node avoids running workloads: https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/

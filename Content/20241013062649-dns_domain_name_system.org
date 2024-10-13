@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c1875db1-be4d-43fe-9c88-bf5fc7a95df3
+:END:
+#+title: DNS (Domain Name System)
+#+filetags: :network:cs:

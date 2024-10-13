@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       74055437-5557-4a21-9b7a-a3b5df3a8a24
+:END:
+#+title: IPVS (IP Virtual Server)
+#+filetags: :cs:network:
+
+* Overview
+  - *Definition*: IPVS ([[id:d799bc90-5032-4a69-9806-83145297a335][IP]] Virtual Server) is a transport-layer [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][load balancing]] tool implemented within the [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]] Kernel.
+    - It is part of the [[id:b8797396-4551-4a54-84ea-80b8f1a5b086][LVS (Linux Virtual Server)]]  project.
+    - Operates at Layer 4 of the [[id:2deb95d6-5474-4096-85fc-bd568031cc33][OSI model]] (Transport Layer).
+
+  - *Purpose*: Distributes network traffic across multiple servers.
+    - Used for scaling services by spreading client requests.
+    - Ensures high availability and reliability of applications.
+
+  - *Use Cases*:
+    - Commonly used for load balancing web servers.
+    - Supports both TCP and UDP protocols.
+
+  - *Implementation*:
+    - Kernel module: Requires appropriate configuration of kernel and network settings.
+    - Works in conjunction with iptables for packet filtering.

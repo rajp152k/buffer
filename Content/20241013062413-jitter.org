@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e1ccd5f4-2431-457d-b823-334e767a29b3
+:END:
+#+title: Jitter
+#+filetags: :cs:network:

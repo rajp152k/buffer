@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       a5c1f909-fffb-4afb-af50-5c546820dd7c
+:END:
+#+title: conntrack
+#+filetags: :network:cs:
+
+* Overview
+** Definition
+- conntrack is a system used for [[id:a4e712e1-a233-4173-91fa-4e145bd68769][network connection]] tracking.
+- Integral to many firewall software setups, especially in Linux-based systems.
+
+** Functionality
+- Monitors state of active connections.
+- Manages connection state information for network protocols such as TCP, UDP.
+- Utilizes a state table for tracking connections.
+
+** Importance
+- Enhances security by helping to filter and manage network traffic.
+- Allows for more complex and dynamic firewall rules.
+- Important for network performance tuning and understanding traffic patterns.
+
+** Key Components
+- conntrack-tools: a suite of user-space utilities to manage the active connections.
+- nf_conntrack: a kernel module handling the connection tracking functionality.
+
+** Connection to [[id:49fee858-eb36-4230-8eb0-881df964aec8][Firewalls]]
+- Used extensively in iptables/netfilter frameworks.
+- Provides stateful inspection capabilities, allowing decisions based on connection states.
+

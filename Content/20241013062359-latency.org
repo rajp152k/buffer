@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23
+:END:
+#+title: Latency
+#+filetags: :network:cs:

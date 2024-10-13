@@ -2,7 +2,7 @@
 :ID:       d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9
 :END:
 #+title: Linux
-#+filetags: :cs:
+#+filetags: :linux:cs:
 
 * Abstract
  - this a fairly vast umbrella node that helps pedagogically cover several concepts in computer science.

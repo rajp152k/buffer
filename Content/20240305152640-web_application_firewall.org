@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       49fee858-eb36-4230-8eb0-881df964aec8
 :END:
-#+title: Web Application Firewall
+#+title: Firewall
 #+filetags: :sec:web:
 
 An agent between requests from the web and a server that acts as a to avoid exploits.

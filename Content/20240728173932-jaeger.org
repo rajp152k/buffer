@@ -2,4 +2,10 @@
 :ID:       0c8ba7f9-e7c8-4c79-89b6-bb0c9992d1bd
 :END:
 #+title: Jaeger
-#+filetags: :cloud-native:cncf:
+#+filetags: :cs:
+
+* See [[id:5effa800-8d9c-4964-aa15-2da32bb49000][OpenTelemetry]]
+* Alternatives
+** [[id:07331d68-6ac0-4b79-af87-4c837874d2f7][Zipkin]]
+* Resources
+ - https://www.jaegertracing.io/

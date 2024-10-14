@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       042860a7-ee83-4baa-b31f-8f5d4ceab2bf
+:END:
+#+title: K8SGPT
+#+filetags: :ai:k8s:
+
+* Alternatives
+- [[id:57878350-18c4-4d33-9570-b7f1d7c1ff81][HolmesGPT]]
+
+* Resources
+- https://k8sgpt.ai/
+- https://docs.k8sgpt.ai/

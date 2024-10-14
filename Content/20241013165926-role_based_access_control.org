@@ -3,3 +3,6 @@
 :END:
 #+title: Role Based Access Control
 #+filetags: :cs:sec:
+
+* Resources
+- https://kubernetes.io/docs/concepts/security/rbac-good-practices/

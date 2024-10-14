@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       57878350-18c4-4d33-9570-b7f1d7c1ff81
+:END:
+#+title: HolmesGPT
+#+filetags: :k8s:ai:
+
+* Resources
+- https://github.com/robusta-dev/holmesgpt/

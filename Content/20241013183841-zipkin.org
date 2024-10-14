@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       07331d68-6ac0-4b79-af87-4c837874d2f7
+:END:
+#+title: Zipkin
+#+filetags: :cs:
+
+Distributed Tracing System
+
+* Resources
+- https://github.com/openzipkin/zipki

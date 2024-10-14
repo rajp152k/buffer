@@ -15,8 +15,9 @@
 ** Workload Protection
 - [[id:3556f180-8efb-4ece-9856-12c322d4bb3d][Network Policies-K8S]]
 - [[id:5bbc2e82-8c88-46cb-9f8c-40ed065d3c97][Runtime Classes-K8S]]
-
-** Auditing
+*** Pod Security Standards
+- https://kubernetes.io/docs/concepts/security/pod-security-standards/
+** [[id:931ce18f-8320-45f3-87dd-ee2ac0264752][Auditing]]
 * Resources
 - https://kubernetes.io/docs/concepts/security/
 - https://kubernetes.io/docs/concepts/security/cloud-native-security/

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       931ce18f-8320-45f3-87dd-ee2ac0264752
+:END:
+#+title: Auditing-K8S
+#+filetags: :k8s:
+
+* Resources
+- https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/

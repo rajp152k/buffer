@@ -15,6 +15,8 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 - reading up on [[id:31fe99cb-2739-45cd-9a8b-755ffc018917][Resource Management]]
 - see https://github.com/OpenObservability/OpenMetrics.git
 - building up a [[id:68d08457-9ce7-4b48-8cef-c52134a99c40][Security]] node for K8s
+- tried [[id:042860a7-ee83-4baa-b31f-8f5d4ceab2bf][K8SGPT]] : has potential
+
 ** 0x22E1
  - the <git vc host>/kubernetes/hack/ is useful
  - charting the kubernetes source code

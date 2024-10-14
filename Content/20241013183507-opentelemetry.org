@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5effa800-8d9c-4964-aa15-2da32bb49000
+:END:
+#+title: OpenTelemetry
+#+filetags: :cs:
+
+* Resources
+- https://opentelemetry.io/

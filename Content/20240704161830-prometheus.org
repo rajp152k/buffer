@@ -69,6 +69,9 @@ https://raw.githubusercontent.com/prometheus/prometheus/main/documentation/image
 ** Additional Considerations:
  - Monitoring Your Monitoring: Monitor the health and performance of your Prometheus and Grafana infrastructure itself!
 
+* Setups
+** With Minikube
+- https://blog.marcnuri.com/prometheus-grafana-setup-minikube
 * Resources
 - https://github.com/prometheus/prometheus
 - https://prometheus.io/

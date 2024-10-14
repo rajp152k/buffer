@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       6693363c-a939-47bb-8900-5b1a6dc56c0c
+:END:
+#+title: Storage-K8S
+#+filetags: :k8s:
+
+* Overview
+- Storage in Kubernetes provides both persistent and ephemeral storage options for applications.
+- Storage abstraction in Kubernetes involves resources like Persistent Volumes (PV), Persistent Volume Claims (PVC), and Storage Classes to streamline provisioning and management.
+
+** Components of Kubernetes Storage
+
+- Persistent Volume (PV):
+  - Cluster storage provisioned by administrators or dynamically via storage classes.
+  - Functions independently of pod lifecycle with defined capacity and access mode.
+
+- Persistent Volume Claim (PVC):
+  - User-requested storage specifying size and access modes (ReadWriteOnce, ReadOnlyMany, ReadWriteMany).
+  - Binds to a PV that meets the claim’s specifications.
+
+- Storage Classes:
+  - Define different storage types and characteristics like replication and performance.
+  - Enable dynamic volume provisioning.
+  - Applications leverage StorageClass to align volumes with performance requirements.
+
+** Connection between PV, PVC, and Storage Classes
+
+- PVCs abstract storage for users; PVs represent the actual storage resource.
+- Storage Classes offer templates for dynamically provisioning PVs based on application needs.
+- Kubernetes provisions a PV automatically upon PVC creation that matches the desired StorageClass.
+
+** Considerations in Kubernetes Storage
+
+- Data Security: Implement encryption, access controls, and network policies.
+- Storage Performance: Monitor IOPS, latency, and throughput relative to application demands.
+- Backup and Recovery: Develop strategies and use tools for data recovery.
+- Capacity Planning: Evaluate resource utilization and anticipate future needs for optimal storage allocation.
+
+** Approaches for Smarter Storage Management in K8S
+
+- Automate monitoring and alert systems for storage usage and performance metrics.
+- Update Storage Classes regularly to incorporate new storage technology advancements.
+- Design storage architecture with scalability and high availability in mind.
+- checkout [[id:ce56c5a9-b31d-46db-b2b0-6c83fa6abf02][CSI]], for flexible storage classes
+- also read up on non-persistent storage options ([[id:60916676-5582-4438-b24e-902d51cbd8e0][Ephemeral Volumes]])
+
+* Resources
+- https://kubernetes.io/docs/concepts/storage/
+- https://cloudian.com/guides/kubernetes-storage/kubernetes-storage-101-concepts-and-best-practices/
+- https://bluexp.netapp.com/blog/cvo-blg-kubernetes-storage-an-in-depth-look
+- https://kubernetes.io/docs/concepts/storage/ephemeral-volumes/
+- https://kubernetes.io/docs/concepts/storage/persistent-volumes/

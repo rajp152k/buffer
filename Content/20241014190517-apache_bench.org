@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0472a2a4-99bb-46e7-a2ab-da094483f106
+:END:
+#+title: Apache Bench
+#+filetags: :tool:cs:
+
+* Resources
+- https://httpd.apache.org/docs/2.4/programs/ab.html

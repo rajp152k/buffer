@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6ca98606-217b-4741-97f8-d8f9f70a7d46
+:END:
+#+title: Container Network Interface
+#+filetags: :k8s:

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       0d5a5e8f-6b9f-4427-b60a-a3f93735b256
+:END:
+#+title: Custom Controllers-K8S
+#+filetags: :k8s:
+
+Work in conjunction with [[id:73c378eb-6593-4479-bb6f-5d731ce203f2][Custom Resources-K8S]]

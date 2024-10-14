@@ -30,6 +30,8 @@ A generic Flow :
 [[file:images/devops.png]]
 
 
+* Relevant Nodes
+** [[id:92efb858-8a87-40f6-bbcf-d736d0ffd942][GitOps]]
 * Resources
 ** blogs
  - https://www.kalzumeus.com/2010/12/12/staging-servers-source-control-deploy-workflows-and-other-stuff-nobody-teaches-you/

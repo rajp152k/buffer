@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       92efb858-8a87-40f6-bbcf-d736d0ffd942
+:END:
+#+title: GitOps
+#+filetags: :cs:
+
+* Overview
+ - practices towards managing infra and applications
+ - git as the single source of truth
+
+* Relevant Nodes
+** [[id:60e66e66-d394-42e7-a624-303ddb295395][Flux]]
+* Resources
+ - https://docs.gitlab.com/ee/user/clusters/agent/gitops.html

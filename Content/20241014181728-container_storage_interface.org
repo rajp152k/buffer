@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       ce56c5a9-b31d-46db-b2b0-6c83fa6abf02
+:END:
+#+title: Container Storage Interface
+#+filetags: :k8s:
+
+
+* Resources
+- https://kubernetes-csi.github.io/docs/introduction.html
+- https://github.com/kubernetes/design-proposals-archive/blob/main/storage/container-storage-interface.md
+- https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/

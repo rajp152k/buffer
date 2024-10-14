@@ -3,3 +3,6 @@
 :END:
 #+title: Flux
 #+filetags: :cloud-native:cncf:
+
+* Resources
+- https://fluxcd.io/flux/

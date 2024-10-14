@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       59305648-ed10-4298-be07-cd67f277f612
+:END:
+#+title: Scheduling-K8S
+#+filetags: :k8s:
+
+* Overview
+
+- The scheduling component in Kubernetes is a core responsibility of the control plane.
+- Assign pods to nodes ensuring optimal resource allocation and management.
+
+* Primary Functionalities
+** Resource Optimization
+- Considers CPU, memory requests, and constraints.
+** Affinity/Anti-affinity Rules
+- Enables pod co-location or separation.
+** Taints and Tolerations
+- Ensures nodes can repel certain pods unless explicitly tolerated.
+** NodeSelector and NodeAffinity
+- Limits nodes that can host particular pods.
+** Priorities and Preemption
+- Ensures urgent pods get priority using preemption.
+** Scheduler Algorithms:
+    - Priority Functions: Rank nodes based on set criteria.
+    - Predicate Functions: Determines if a pod can run on a particular node.
+** Custom Schedulers:
+    - Allows for user-defined policies and scheduling strategies.

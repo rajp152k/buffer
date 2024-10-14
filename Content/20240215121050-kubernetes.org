@@ -8,6 +8,10 @@
 see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 
 * Stream
+** 0x22E3
+ - reading up on [[id:7cb8489b-2b84-4224-b3f9-9f5bf0f38cfe][autoscaling]]
+ - see [[id:7f960631-c727-41b8-80c2-3ccaa4ae4ba2][Scheduling Algorithms]] & [[id:59305648-ed10-4298-be07-cd67f277f612][Scheduling-K8S]]
+
 ** 0x22E2
 - reading https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/
 - reading up on [[id:2244b835-3c8a-496e-b4bd-5ab0951c7d29][ConfigMap]]s

@@ -21,6 +21,9 @@ In practice, these goals often conflict.
 Incorporating multiple dimensions when modelling the priority functions is a difficult (and interesting) problem.
  - in the context of computer science, over the dimensions of compute, networking and storage, the idea of "scheduling" workloads gradually evolves into the idea of [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][orchestration]]
 
+* Forks and Flavours
+** [[id:59305648-ed10-4298-be07-cd67f277f612][Scheduling-K8S]]
+** [[id:c50c2084-973a-4f9e-9ab3-946c71b5f2fa][RTLinux]]
 
 * Resources
  - https://container.training/intro-selfpaced.yml.html#832

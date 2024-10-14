@@ -3,3 +3,6 @@
 :END:
 #+title: KEDA (Kubernetes Event-Driven AutoScaler)
 #+filetags: :cncf:cloud-native:
+
+* Resources
+- https://keda.sh/docs/2.15/concepts/#architecture

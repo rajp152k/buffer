@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c50c2084-973a-4f9e-9ab3-946c71b5f2fa
+:END:
+#+title: RTLinux
+#+filetags: :linux:
+
+* Resources
+ - https://en.wikipedia.org/wiki/RTLinux

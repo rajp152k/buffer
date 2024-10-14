@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f48a21a7-496e-4068-8b31-0e4a485701a9
+:END:
+#+title: Bounty Hunting
+#+filetags: :cs:
+
+Incentivized Intellectual Competitions are great.
+
+* Resources
+** https://console.algora.io/
+** https://github.com/djadmin/awesome-bug-bounty

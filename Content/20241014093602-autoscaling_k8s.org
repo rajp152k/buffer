@@ -1,0 +1,88 @@
+:PROPERTIES:
+:ID:       7cb8489b-2b84-4224-b3f9-9f5bf0f38cfe
+:END:
+#+title: AutoScaling-K8S
+#+filetags: :k8s:
+
+* Cluster AutoScaling
+** Definition
+  - Cluster Autoscaling is a feature in Kubernetes that automatically adjusts the size of a cluster based on the current resource demand.
+  - It targets the number of nodes, ensuring that workloads have enough resources to run.
+
+** Components
+  - *Cluster Autoscaler*: A Kubernetes component responsible for scaling the number of nodes.
+  - *Node Pools/Groups*: Logical groupings of similar nodes managed by the autoscaler.
+  - *Metrics*: Utilizes metrics such as CPU and memory usage, as well as pod resource requests and availability.
+
+** Mechanism
+  - *Scale Out*: Increases the number of nodes when existing nodes are under pressure, and resources are insufficient.
+  - *Scale In*: Decreases the number of nodes when they are underutilized, conserving cost and resources.
+
+** Benefits
+  - *Cost Efficiency*: Automatically optimizes resource utilization and potentially reduces costs.
+  - *Reliability*: Ensures workloads have necessary resources, enhancing stability.
+  - *Scalability*: Seamlessly supports growing or fluctuating workloads.
+
+** Considerations
+  - *Pod Disruptions*: Ensuring minimal disruption to running pods during scaling events.
+  - *Cluster Limits*: Understanding and setting appropriate maximum and minimum node quotas.
+  - *Rescheduling*: Management of pod scheduling upon node removal.
+
+** Connections
+  - *HPA (Horizontal Pod Autoscaler)*: Works alongside cluster autoscaling by adjusting the number of pod replicas.
+  - *Resource Quotas*: Ensures that autoscaler respects defined resource limits within namespaces.
+
+** Critique
+  - *Limitations on Custom Metrics*: While effective on standard metrics, custom use cases may require additional configurations.
+  - *Latency in Scaling Actions*: There might be a delay in scaling reactions depending on configurations and metric polling intervals.
+
+** Ideation Strategies
+  - *Monitoring*: Implement comprehensive monitoring to assess scaling effectiveness.
+  - *Automation*: Use CI/CD to manage and update scaling strategies as workloads and requirements change.
+
+** Further Inquiry
+  - How does autoscaler manage complex workloads with mixed resource requirements?
+  - What are the best practices for configuring autoscalers for high-availability systems?
+  - How can one incorporate cost analysis into autoscaling decision frameworks?
+
+* Vertical Pod AutoScaling
+- Vertical Pod Autoscaling (VPA) Overview
+  - Adjusts the resource requests and limits of Kubernetes pods.
+  - Focuses on optimizing resource allocation for existing pods, enhancing performance.
+  - Automatically increases or decreases CPU and memory resource requests based on usage metrics.
+- Components of VPA
+  - Recommender:
+    - Suggests optimal CPU and memory requests based on historical usage.
+  - Updater:
+    - Responsible for evicting pods to apply new recommendations.
+  - Admission Controller:
+    - Modifies incoming pod specs to align with recommended resources.
+- Benefits of VPA
+  - Reduces resource wastage by tuning resources closer to actual usage.
+  - Helps in cost savings by optimizing resource usage.
+  - Simplifies resource management by alleviating the need for manual tuning.
+- Limitations & Considerations
+  - Pod eviction may cause temporary downtimes; not ideal for stateful applications.
+  - May not react instantly to sudden spikes in demand; better for gradually evolving workloads.
+  - Requires a robust monitoring setup to capture accurate usage metrics.
+* Horizontal Pod AutoScaling
+
+** **Overview**
+  - Automatic adjustment of pod count in Kubernetes
+  - Based on CPU, memory, or custom metric utilization
+  - Essential for performance and resource optimization
+
+** **Components**
+  - **Metrics Server**: Supplies metrics for decision-making
+  - **Controller Manager**: Executes scaling operations
+
+** **Benefits**
+  - Optimizes resource use through dynamic pod management
+  - Cost-effective resource allocation in cloud settings
+  - Improves reliability and availability by responding to traffic changes
+
+* Tools
+** [[id:c50c85ac-0b21-486f-99ac-00f325e2c43c][KEDA (Kubernetes Event-Driven AutoScaler)]]
+* Resources
+- https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/
+- https://github.com/kubernetes/autoscaler

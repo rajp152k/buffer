@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       996c1f7e-363d-41a3-b48b-affcae4b95bd
+:END:
+#+title: eBPF (extended Berkely Packet Filters)
+
+
+* Resources
+:PROPERTIES:
+:ID:       291cfc45-cab6-4c16-a807-3535a1f09233
+:END:
+
+ - https://ebpf.io/what-is-ebpf/

@@ -14,14 +14,54 @@
 - Considers CPU, memory requests, and constraints.
 ** Affinity/Anti-affinity Rules
 - Enables pod co-location or separation.
+- https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+
 ** Taints and Tolerations
 - Ensures nodes can repel certain pods unless explicitly tolerated.
+- https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
+- good usecases:
+  - tainted the nodes with GPUs and running GPU demanding pods on such nodes by adding tolerations
 ** NodeSelector and NodeAffinity
 - Limits nodes that can host particular pods.
 ** Priorities and Preemption
 - Ensures urgent pods get priority using preemption.
+- https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority
+
+** Eviction
+- https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/
+- https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/
 ** Scheduler Algorithms:
     - Priority Functions: Rank nodes based on set criteria.
     - Predicate Functions: Determines if a pod can run on a particular node.
 ** Custom Schedulers:
     - Allows for user-defined policies and scheduling strategies.
+
+** Pod Topology Spread Constraints
+- https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/
+* Kube-Scheduler
+Two basic stages to allocating a pod to a node:
+- Filtering : disqualify candidates
+- Scoring : prioritize candidates
+** Scheduling Policies
+- configure predicates(for filtering) and Priorities(for scoring)
+** Scheduling Profiles
+- configure plugins that implement different scheduling stages:
+  - QueueSort
+  - Filter
+  - Score
+  - Bind
+  - Reserve
+  - Permit
+* Scheduling Framework
+The allocation of a pod is split in two phases:
+ - Scheduling Cycle : Decides
+ - Binding Cycle : applies the decision
+* Resources
+- https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/
+- https://kubernetes.io/docs/reference/scheduling/policies/
+- https://kubernetes.io/docs/reference/scheduling/config/#profiles
+- https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/
+- https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/
+- https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority
+- https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/
+- https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/

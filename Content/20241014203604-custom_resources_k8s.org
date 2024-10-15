@@ -4,8 +4,15 @@
 #+title: Custom Resources-K8S
 #+filetags: :k8s:
 
-For a truly declarative API (orchestrating current and desired states), also see [[id:0d5a5e8f-6b9f-4427-b60a-a3f93735b256][Custom Controllers-K8S]]
+For a truly declarative API (orchestrating current and desired states), also see [[id:0d5a5e8f-6b9f-4427-b60a-a3f93735b256][Custom Controllers-K8S]].
 
+in the abscence of a controller, a custom resource will be exposed as an imperative API (no notion of desired state, only instructions for a change)
+
+Custom Resources and Custom Controllers, when patterned together, yield [[id:240c4c11-3782-471b-b855-22e2e123b1af][Operators-K8S]]
+
+* Custom Resource Definitions (CRDs)
 
 * Resources
  - https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#custom-controllers
+
+ - https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       240c4c11-3782-471b-b855-22e2e123b1af
+:END:
+#+title: Operators-K8S
+#+filetags: :k8s:
+
+* OperatorHub.io
+- https://operatorhub.io/
+* Resources
+- https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+- https://github.com/cncf/tag-app-delivery/blob/163962c4b1cd70d085107fc579e3e04c2e14d59c/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md
+- https://web.archive.org/web/20170129131616/https://coreos.com/blog/introducing-operators.html
+- https://cloud.google.com/blog/products/containers-kubernetes/best-practices-for-building-kubernetes-operators-and-stateful-apps

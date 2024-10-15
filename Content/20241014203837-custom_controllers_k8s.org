@@ -4,4 +4,4 @@
 #+title: Custom Controllers-K8S
 #+filetags: :k8s:
 
-Work in conjunction with [[id:73c378eb-6593-4479-bb6f-5d731ce203f2][Custom Resources-K8S]]
+[[id:73c378eb-6593-4479-bb6f-5d731ce203f2][Custom Resources]] and Custom Controllers, when patterned together, yield [[id:240c4c11-3782-471b-b855-22e2e123b1af][Operators-K8S]]

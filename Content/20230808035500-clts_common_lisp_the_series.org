@@ -191,7 +191,7 @@ The series will be a splice between the different following phases - even at the
 * Output 
 ** CLTS 0
  - youtube : https://youtu.be/jLonMxrVPbY
- - blog : https://rajpatil.dev/post/clts/clts-0
+ - blog : https://thebitmage.com/post/clts/clts-0
 
 
  

@@ -8,12 +8,12 @@ A quick index of all the content (books, videos, blogs) that I produce. A parall
 * Books
 ** [[id:20230827T153308.339339][The Definitive Guide to Books]] 
 * Blogs
- - https://rajpatil.dev/post/clts/clts-0/
- - https://rajpatil.dev/post/rip-bram-moolenar/
- - https://rajpatil.dev/post/my-emacs-config-0x213b/
- - https://rajpatil.dev/post/cl-aitsc/
- - https://rajpatil.dev/post/picc/
- - https://rajpatil.dev/post/writing-setup/
+ - https://thebitmage.com/post/clts/clts-0/
+ - https://thebitmage.com/post/rip-bram-moolenar/
+ - https://thebitmage.com/post/my-emacs-config-0x213b/
+ - https://thebitmage.com/post/cl-aitsc/
+ - https://thebitmage.com/post/picc/
+ - https://thebitmage.com/post/writing-setup/
 * Videos
 - https://youtu.be/jLonMxrVPbY 
 - https://youtu.be/A7CKctbouJs

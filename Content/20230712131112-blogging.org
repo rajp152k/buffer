@@ -5,7 +5,7 @@
 #+title: Writing
 #+filetags: :meta:transient:
 
-root blog : https://rajpatil.dev
+root blog : https://thebitmage.com
 medium : https://rajp152k.medium.com/
 poetry : [[id:21008bf7-42c5-496b-a7a4-43e8df15e242][Poetry]]
 
@@ -139,14 +139,14 @@ I intend to improve upon this process with this setup of decoupling my notes and
 
 **** The Incentive to Write 
 
-I have two major objectives (implicitly interdependent) associated with my online presence on the main [[https://rajpatil.dev][blog]] and the [[https://buffer.rajpatil.dev][buffer]]:
+I have two major objectives (implicitly interdependent) associated with my online presence on the main [[https://thebitmage.com][blog]] and the [[https://buffer.thebitmage.com][buffer]]:
  - To write for myself
  - To write for others
 
 Both are important aspects towards being good writer and need to be independently catered to so as to not deter my proficiency in the other.
    
 The [[id:20230712T211919.917191][buffer]]s will be a personal brain dump where I won't care about formalizing my notes and any other necessities of published works.They will be shorter and linked to other buffers.
-The main [[https://buffer.rajpatil.dev][blog]] will be a formalized projection of multiple inter-related buffers into one serialized output : a snapshot of the living, breathing organism that I intend the buffers to evolve into.
+The main [[https://buffer.thebitmage.com][blog]] will be a formalized projection of multiple inter-related buffers into one serialized output : a snapshot of the living, breathing organism that I intend the buffers to evolve into.
    
 *** The Technicalities
   - The main blog is maintained in markdown and published via Hugo

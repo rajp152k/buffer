@@ -52,9 +52,9 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 *** Pragmatics
 **** Associated blogs
 - [ ] Being a sneaky reader
-- [X] https://rajpatil.dev/post/hunt-feast-repeat/
-- [X] https://rajpatil.dev/post/writing-setup/
-- [X] https://rajpatil.dev/post/picc/
+- [X] https://thebitmage.com/post/hunt-feast-repeat/
+- [X] https://thebitmage.com/post/writing-setup/
+- [X] https://thebitmage.com/post/picc/
 **** what should you read : the joy of reading diversely
 - On idea hunts and ideation feasts
 **** Choosing your next book
@@ -69,10 +69,10 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 **** Overcoming Reading Slumps
 *** Writing Books
 **** Associated blogs
-- [X] https://rajpatil.dev/post/my-creation-and-publishing-pipeline/
-- [X] https://rajpatil.dev/post/most-important-book/                 
-- [X] https://rajpatil.dev/post/better-writer/
-- [X] https://rajpatil.dev/post/dense-guide-prompt-engineering/
+- [X] https://thebitmage.com/post/my-creation-and-publishing-pipeline/
+- [X] https://thebitmage.com/post/most-important-book/                 
+- [X] https://thebitmage.com/post/better-writer/
+- [X] https://thebitmage.com/post/dense-guide-prompt-engineering/
 **** Stepping stones
 **** Choosing your topic
 **** Why write?
@@ -82,7 +82,7 @@ Began at 19 with a technical inclination and hardly ready a book other than some
 
 ** Archived Planning Stream
 *** 0x216A
-indexing a blog entry into the book's content: https://rajpatil.dev/post/most-important-book/
+indexing a blog entry into the book's content: https://thebitmage.com/post/most-important-book/
 - goes in the latter half of the book (on writing books)
 *** 0x2146
 - started my morning with 20 mins of mental warm up, listening to a relevant podcast, while juggling and some pushups and squats sprinkled in ...

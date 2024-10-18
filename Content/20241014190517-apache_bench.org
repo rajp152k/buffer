@@ -4,5 +4,8 @@
 #+title: Apache Bench
 #+filetags: :tool:cs:
 
+
+* Alternatives
+** [[id:68adffea-c367-49ad-a74b-e0ea425d4a2d][wrk]]
 * Resources
 - https://httpd.apache.org/docs/2.4/programs/ab.html

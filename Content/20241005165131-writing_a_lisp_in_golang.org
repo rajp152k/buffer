@@ -12,15 +12,6 @@
  - I'm quite enjoying the exploratory nature of what I'm doing in here
  - was thinking of going for a definite spec but why not just build flexibly so that I can add or retract freely
  - in the language design stage now that I have a basic parser going for
-** 0x22DA
- - the basics of writing a lisp:
-   - the lexer, the parser, the evaluator and the environment
- - checkout https://github.com/rajp152k/lisp-in-go
- - I'm not going to try and be write from the get go but make meaningful progress : I'm not starting out with a map (I could fetch one before I start) but am actually just going to drive in a foggy night.
- - will proceed with TDD : I do like my emacs golang workflow right now
- - will be starting out with [[id:b812b221-7932-4ada-966a-fefa69300232][McCarthy's original Lisp]] and building from there onwards.
- - will also need to brush up some theory, all relevant nodes in this buffer regarding compilers should help out.
-* Building the Lexer
 ** 0x22DB
  - the next step in augmenting the lexer is testing for literals
  - now the string approach might not work and I might have to pull out regexps if I want to be tidy
@@ -38,14 +29,6 @@
    - need a string mode now.
    - If I encounter a "|", anything until the next "|" get's acc'ed
  - check code till this commit : https://github.com/rajp152k/lisp-in-go/commit/5539a0bb5b36b0e3886a88c86fd65b0dc06fe56b
-
-
-
-
-
-
-
-
 
 ** 0x22DB
  - alright, time to move from red to green
@@ -101,7 +84,14 @@
 
 - all sentinels ready, gathering some momentum
 
-* Building the Parser
 ** 0x22DB
 - now that I can read strings into my customized tokens, I can start working on the internal representations and axioms of the language.
 - going for a theoretical detour before I jump
+** 0x22DA
+ - the basics of writing a lisp:
+   - the lexer, the parser, the evaluator and the environment
+ - checkout https://github.com/rajp152k/lisp-in-go
+ - I'm not going to try and be write from the get go but make meaningful progress : I'm not starting out with a map (I could fetch one before I start) but am actually just going to drive in a foggy night.
+ - will proceed with TDD : I do like my emacs golang workflow right now
+ - will be starting out with [[id:b812b221-7932-4ada-966a-fefa69300232][McCarthy's original Lisp]] and building from there onwards.
+ - will also need to brush up some theory, all relevant nodes in this buffer regarding compilers should help out.

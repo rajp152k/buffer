@@ -28,6 +28,10 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - a cache for ideas that may never see the light of day again.
    - or they just might...
 * Stream
+** 0x22E7
+ - allocating every friday half to clear up all the ancillary tech that I get into..
+ - I tend to push a lot of smaller interesting technologies and things into my INQ and NA
+ - having a dedicated flush from them every weekend sounds systematic
 ** 0x22B8
  - going a break from youtube : will return on <2025-03-01 Sat>
  - I forget to have some deliberate from time to time

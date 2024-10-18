@@ -5,7 +5,8 @@
 #+filetags: :meta:tool:cloud:
 
 * Tools
-comparison : https://www.reddit.com/r/devops/comments/18fleds/ansible_vs_chef_vs_puppet/
-** Ansible
-** Puppet
+** [[id:20de914b-92ef-4f3e-979c-ad19ffb67137][Ansible]]
+** [[id:b0bcad88-8b50-4d4d-ab0f-24fc75ec76f4][Puppet]]
 ** Chef
+** [[id:35b86275-db0e-489a-94e6-5e043129c8d0][Stow]]
+** [[id:ec5e53f4-a53f-474d-833d-dffb02ea810e][Tuckr]]

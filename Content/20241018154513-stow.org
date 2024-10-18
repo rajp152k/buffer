@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       35b86275-db0e-489a-94e6-5e043129c8d0
+:END:
+#+title: Stow
+#+filetags: :cs:tool:
+
+* Resources
+-  https://www.gnu.org/software/stow/

@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       20de914b-92ef-4f3e-979c-ad19ffb67137
+:END:
+#+title: Ansible
+#+filetags: :tool:cloud:
+
+* Overview
+
+- open-source automation tool
+- for [[id:abbce407-072f-4c39-9580-a8d6256dbe69][configuration management]], application deployment, and task automation
+
+* Features
+  - no agent required
+  - Uses YAML for its playbooks
+  - Idempotent applications
+
+* Key Components:
+  - *Playbooks*: YAML files describing automation tasks.
+  - *Modules*: Specific reusable scripts executed in steps of playbooks.
+  - *Inventory*: Listing of target machines for automation.
+  - *Roles*: Organizational way to manage playbooks tasks, variables, and files.
+
+* Benefits:
+  - Agentless design reduces resource overhead and simplifies management.
+    - Ansible, being agentless, can be more secure from a network topology perspective, reducing the points of failure compared to agent-based solutions like [[id:b0bcad88-8b50-4d4d-ab0f-24fc75ec76f4][Puppet]].
+  - Broad cross-platform support (Windows, UNIX, Linux).
+  - Large community support and extensive library of existing modules.
+
+* Resources
+ - https://docs.ansible.com/ansible/latest/index.html

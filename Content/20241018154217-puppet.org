@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b0bcad88-8b50-4d4d-ab0f-24fc75ec76f4
+:END:
+#+title: Puppet
+#+filetags: :tool:cloud:

@@ -1,0 +1,142 @@
+:PROPERTIES:
+:ID:       fbf4b86f-9f3b-4fc7-aa76-1112c755eb1a
+:END:
+#+title: Operator
+#+filetags: :tool:cs:
+
+* CNCF Operator White Paper
+** Table of Contents
+    - Executive Summary
+    - Introduction
+        - Document Goal
+        - Target Audience
+    - Foundation
+        - Operator Design Pattern
+        - Operator Characteristics
+        - Operator Components in Kubernetes
+        - Operator Capabilities
+    - Security
+        - Operator Developer
+        - Application Developer (Operator-"Users")
+    - Operator Frameworks for Kubernetes
+        - CNCF Operator Framework
+        - Kopf
+        - kubebuilder
+        - Metacontroller
+    - Operator Lifecycle Management
+        - Upgrading the Operator
+        - Upgrading Declarative State
+        - Managing CRD Relations
+    - Use Cases for an Operator
+        - Prometheus Operator
+        - GitOps Operator
+    - Successful Patterns
+        - Single Application Management
+        - Operator of Operators
+        - One CRD per Controller
+        - Publishing and Finding Operators
+        - Further Reading
+    - Designing Operators
+        - Requirement Analysis
+        - Custom or Third-party Operator
+        - Tool Selection
+        - Programming Language
+        - Design Considerations
+        - References
+    - Emerging Patterns
+        - Operator Lifecycle Management
+        - Policy-Aware Operators
+        - References
+    - Conclusion
+    - Related Work
+    - Acknowledgements
+        - Contributors
+        - Reviewers
+
+** Executive Summary
+    - Application infrastructure maintenance requires repetitive tasks.
+    - Operators encapsulate activities, checks, and state management.
+    - In Kubernetes, operators extend API functionality for automation.
+    - Operators enhance development speed, reduce errors, and increase autonomy.
+    - Document serves as a reference for implementing operator best practices.
+
+** Introduction
+    - Defines operators beyond Kubernetes, outlining characteristics and patterns.
+    - Highlights difference from controllers and provides best practices.
+
+** Document Goal
+    - Defines operators for cloud-native applications in Kubernetes.
+
+** Target Audience
+    - For application developers, Kubernetes operators, and service providers.
+    - Assumes basic Kubernetes knowledge (Pods, Deployments).
+
+** Foundation
+    - Operators automate state management leveraging Kubernetes features.
+    - Extend automation to highly capable offerings across platforms.
+    - Export automation concepts beyond Kubernetes.
+
+** Operator Design Pattern
+    - Manages resources using domain-specific knowledge and declarative state.
+    - Reduces manual work by coding management knowledge.
+    - User defines desired state; operators adjust to match real state.
+
+** Operator Characteristics
+    - Extends API with domain knowledge, like Prometheus object management.
+    - Dynamic configuration via custom objects enhances validation and autonomy.
+    - Automation for operational tasks ensures reliability and consistency.
+
+** Operator Components in Kubernetes
+    - Combines Kubernetes controllers and watched objects.
+    - Desired state defined in custom resources; reconciled with current state.
+    - Control Loop ensures specified state matches real state.
+
+** Operator Capabilities
+    - Capabilities include installation, upgrades, backup, recovery, scaling, etc.
+    - Operators create, upgrade, and manage resources automatically.
+    - Advanced functions include auto-scaling, remediation, and configuration tuning.
+
+** Security
+    - Security considerations for developers and users.
+    - Developers should focus on transparency, documentation, and scope.
+    - Users manage namespaces and RBAC carefully for secure deployment.
+
+** Operator Frameworks for Kubernetes
+    - Frameworks like CNCF Operator Framework, Kopf, kubebuilder for ease of use.
+    - Provide features like dependency management, discoverability, and stability.
+
+** Operator Lifecycle Management
+    - Manage operator versioning, maintain managed resource states during upgrades.
+    - Oversee complex relations and dependencies among multiple CRDs.
+
+** Use Cases for an Operator
+    - Examples like Prometheus Operator and GitOps highlight practical implementations.
+    - Operators can manage applications and non-application configurations declaratively.
+
+** Successful Patterns
+    - Focus on managing single applications, utilizing operator-of-operators architecture.
+    - Ensure clear separation of concerns and efficient resource management.
+
+** Designing Operators
+    - Analyze requirements, choose between custom and third-party Operators.
+    - Use appropriate tooling and programming languages for development.
+    - Design operators to suit operational needs and ensure backward compatibility.
+
+** Emerging Patterns
+    - Trends like dynamic authorization and Operator reuse provide new capabilities.
+    - Policy-aware operators and maintenance transparency are evolving considerations.
+
+** Conclusion
+    - Operators enhance orchestration capabilities but introduce complexities.
+    - Critical to weigh benefits against implementation challenges.
+
+** Related Work
+    - Expands on initial CoreOS blog post defining Operator roles.
+    - References various documents for deepened understanding and context.
+
+** Acknowledgements
+    - Community-driven effort of CNCF TAG App-Delivery Operator Working Group.
+    - Recognition of contributors and reviewers.
+* Resources
+ - https://github.com/cncf/tag-app-delivery/blob/163962c4b1cd70d085107fc579e3e04c2e14d59c/operator-wg/whitepaper/Operator-WhitePaper_v1-0.md
+

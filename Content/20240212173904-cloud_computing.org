@@ -39,11 +39,12 @@ See [[id:89784e77-cdd0-460c-a5b9-cb0a18842903][Anything as a service]]
  - Platform
  - Infrastructure
  - Software
-* Control Flow (work in progress)
+* WIPs
+** Control Flow
 This sub-node intends to document the major points of control when it comes to provisioning resources on the cloud.
-** [[id:d2dce984-a72a-4069-9fae-10b515f97a26][Cloud-Init]]
+*** [[id:d2dce984-a72a-4069-9fae-10b515f97a26][Cloud-Init]]
 * Practical Sentinel Refs
  - [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]]
  - [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]] 
  - [[id:03cd8062-b3fb-4cd9-97a8-5d60f037f7b6][Open Stack]]
-   
+ - [[id:714b029b-d0ac-4842-89f5-5f871d1a22c7][Software Defined Networking]]

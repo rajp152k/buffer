@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d79e644e-0e3b-4ca3-ab92-6f55e11b372c
+:END:
+#+title: MetaController
+#+filetags: :k8s:
+
+* Resources
+ - https://metacontroller.github.io/metacontroller/intro.html
+ - https://github.com/metacontroller/metacontroller

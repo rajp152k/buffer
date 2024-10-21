@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1bc077cf-d69d-4cec-a80b-9d8fc9a18386
+:END:
+#+title: Operator LifeCycle Manager
+#+filetags: :k8s:
+
+* Resources
+ - https://olm.operatorframework.io/

@@ -3,3 +3,92 @@
 :END:
 #+title: NAT (Network Address Translation)
 #+filetags: :cs:network:
+
+* Overview
+** Definition
+  - NAT is a method used in [[id:8d7067b7-084f-4c25-a8e0-609bbbe6fac6][networking]] to remap one [[id:d799bc90-5032-4a69-9806-83145297a335][IP address]] space into another by modifying network address information in the IP header of packets while they are in transit.
+
+** Types of NAT
+
+  - Static NAT (SNAT): Maps a single private IP address to a single public IP address.
+
+  - Dynamic NAT (DNAT): Dynamically maps private IP addresses to a pool of public IP addresses.
+
+  - Port Address Translation (PAT): Also known as NAT overload, maps multiple private IP addresses to a single public IP address using different ports.
+
+** Benefits of NAT
+
+  - Conserves the number of public IP addresses used within an organization.
+
+  - Enhances security by masking internal IP addresses from external networks.
+
+  - Allows multiple devices on a local network to access the internet using a single public IP address.
+
+** Challenges and Criticism of NAT
+
+  - Complicates peer-to-peer communications and certain applications that require end-to-end connectivity.
+
+  - Can pose challenges for applications using IP-level information, such as VoIP.
+
+  - Introduces latency due to the need for translation.
+
+** Connections
+
+  - NAT and IPv4 Address Exhaustion
+    - NAT was widely adopted as a solution to the IPv4 address exhaustion problem by allowing multiple devices on a local network to share a single public IP address.
+
+  - NAT and Security
+    - While NAT can hide internal network structures, it is not inherently a security mechanism and should be used in conjunction with other [[id:49fee858-eb36-4230-8eb0-881df964aec8][security measures]].
+
+  - NAT vs. [[id:1a3d2a4c-bfad-4e5a-ab97-4db4531e7bd2][IPv6]]
+    - IPv6 was designed to overcome the limitations of IPv4, including the need for NAT, through a vastly larger address space.
+
+** Further Research Pathways
+  - How does NAT affect newer networking technologies such as [[id:714b029b-d0ac-4842-89f5-5f871d1a22c7][Software-Defined Networking (SDN)]]?
+  - What are the performance implications of NAT on high-throughput applications and how can these be mitigated?
+  - In transitioning to IPv6, what role does NAT still play, if any, in the IPv6-based networks?
+
+* NAT & IPV6
+** Context
+- *IPv6 (Internet Protocol version 6)*
+  - Address Space: Offers a vastly larger address space compared to IPv4, theoretically eliminating the need for NAT.
+  - Direct Addressing: Every device can have a unique global IP address, simplifying end-to-end connectivity and eliminating the middle-man nature of NAT.
+
+- *NAT in IPv6 Context*
+  - NAT's Original Purpose: The primary motivation for NAT in IPv4 was IP address conservation due to scarcity.
+  - IPv6 Design: IPv6 was designed with the intention of removing the need for NAT, providing a globally unique address for every device.
+  - Usage in IPv6: Technically, NAT is not required with IPv6; however, certain forms such as [[id:e3be59fe-2334-47f8-a889-fff672c1c1af][NAT66]] might be used for other purposes like address masking.
+
+- *Connections Between NAT and IPv6*
+  - Security Concerns: Some organizations use NAT66 for perceived security, hiding internal network structures.
+  - Network Policies: NAT66 can facilitate network policy enforcement where internal addressing schemes need to be kept private.
+  - Legacy Implementations: Transitional technologies might employ NAT in mixed IPv4/IPv6 environments as a bridging tool.
+
+- *Critique and Observations*
+  - Philosophical Standpoints: Some argue NAT remains useful for security and privacy, despite its redundancy in IPv6 for addressing needs.
+  - Technological Pragmatism: Actual deployments might still rely on NAT due to ingrained IPv4 legacy practices and tools.
+
+** NAT66
+:PROPERTIES:
+:ID:       e3be59fe-2334-47f8-a889-fff672c1c1af
+:END:
+*** NAT66 (Network Address Translation for IPv6)
+
+  - Purpose: NAT66 is a form of network address translation for IPv6, which translates one set of IPv6 addresses to another, while maintaining end-to-end address integrity.
+  - Debate: While NAT66 is not necessary for preserving address space as in IPv4, some propose its use for:
+    - Privacy: Masking internal network addresses from external observers.
+    - Policy Enforcement: Facilitating organizational policies that require address manipulation.
+
+*** Considerations and Critiques
+  - Lack of Necessity: With IPv6’s plentiful addresses, NAT66 is not needed to conserve addresses, the original rationale for NAT in IPv4 environments.
+  - Potential Downsides: NAT66 could disrupt end-to-end connectivity and add complexity, which contradicts one of the core simplifications IPv6 offers.
+  - Security Illusion: NAT66 may give a false sense of security. True security in IPv6 relies more on robust [[id:49fee858-eb36-4230-8eb0-881df964aec8][firewall]] policies and proper configuration.
+
+*** Further Research Pathways
+  - What specific scenarios might justify the use of NAT66 in modern networks?
+  - How do privacy and security policies differ across regions or industries regarding NAT66?
+  - In practice, how has NAT66 been implemented, and what are the common pitfalls observed?
+  - In what ways can IPv6 address the security and policy enforcement needs without relying on NAT66?
+
+*** Resources
+ - https://blog.apnic.net/2018/02/02/nat66-good-bad-ugly/

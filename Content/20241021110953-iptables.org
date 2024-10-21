@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       3081373b-adbd-413d-8151-06ce322b9583
+:END:
+#+title: IPTables
+#+filetags: :network:linux:cs:
+
+* Netfilter
+** Netfilter Overview
+  - Netfilter is a framework within the [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]] kernel.
+  - It provides various [[id:8d7067b7-084f-4c25-a8e0-609bbbe6fac6][networking]]-related operations.
+  - Netfilter’s primary role involves packet filtering, [[id:2db5d39c-8f0d-4bcb-ba73-c5d4e22c4d03][network address translation]], and packet mangling.
+
+** Key Features of Netfilter
+  - Allows for the manipulation of packets as they traverse through the Linux [[id:2deb95d6-5474-4096-85fc-bd568031cc33][network stack]].
+  - Utilized by administrators to manage and control network traffic.
+  - Versatile in terms of protocols and network layers.
+
+** Connection to IPTables
+  - IPTables is a user-space utility program.
+  - Utilizes the Netfilter framework to implement firewall configurations.
+  - Provides a command-line interface to configure rules governing packet filtering and NAT.
+
+** Additional Functionalities
+  - Implements different network address translation techniques, such as SNAT and DNAT.
+  - Supports stateful packet inspection, allowing tracking of connection states.
+
+* Relevant nodes
+ - [[id:49fee858-eb36-4230-8eb0-881df964aec8][Firewall]]

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       744acfd8-f1eb-4b5b-a8b5-043b9cd36ca4
+:ROAM_ALIASES: "Data Center Operations"
+:END:
+#+title: DCOps
+#+filetags: :cloud:

@@ -4,5 +4,9 @@
 #+title: Flux
 #+filetags: :cloud-native:cncf:
 
+* Relevant Nodes
+ - [[id:92efb858-8a87-40f6-bbcf-d736d0ffd942][GitOps]]
+
 * Resources
 - https://fluxcd.io/flux/
+- https://fluxcd.io/

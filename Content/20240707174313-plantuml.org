@@ -8,9 +8,10 @@
 
 #+begin_src plantuml  :file images/plantuml-seq.png :exports both
 @startuml
-Alice -> Bob: Authentication request
-Bob --> Alice: Authenticate accepted
-Alice -> Bob: Another request
+Client -> "R-Proxy": request
+"R-Proxy" -> Server: request
+Server -> "R-Proxy": response
+"R-Proxy" -> Client: response
 @enduml
 #+end_src
 
@@ -32,9 +33,6 @@ class Tag{
 Note "1" *-- "*" Tag
 @enduml
 #+end_src
-
-#+RESULTS:
-[[file:images/plant-uml.png]]
 
 * State diagrams
 

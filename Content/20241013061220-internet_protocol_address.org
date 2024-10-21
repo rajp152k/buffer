@@ -37,3 +37,5 @@
     - Allows multiple devices on a local network to share a single public IP address.
 
 ** [[id:74055437-5557-4a21-9b7a-a3b5df3a8a24][IPVS (IP Virtual Server)]]
+* [[id:3081373b-adbd-413d-8151-06ce322b9583][IPTables]]
+- https://www.digitalocean.com/community/tutorials/a-deep-dive-into-iptables-and-netfilter-architecture

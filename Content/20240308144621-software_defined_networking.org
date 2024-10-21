@@ -3,8 +3,46 @@
 :ROAM_ALIASES: SDN
 :END:
 #+title: Software Defined Networking
-#+filetags: :programming:
+#+filetags: :cs:network:
+
+
+
+* Overview
+  - Software Defined Networking (SDN) is a [[id:8d7067b7-084f-4c25-a8e0-609bbbe6fac6][networking paradigm]] that separates the control plane from the data plane.
+    - *Control Plane*: Responsible for decision-making processes about where traffic is sent.
+    - *Data Plane*: Handles the actual forwarding of packets according to decisions made by the control plane.
+  - SDN allows network administrators to manage network services through [[id:20240218T061653.528745][abstraction]].
+    - Centralized management of network configuration.
+    - Simplifies network design and operation since the control plane is logically centralized.
+
+** Key Components
+    - *SDN Controller*: The central system that governs the behavior of the network.
+    - *Northbound Interfaces (APIs)*: Interfaces allowing interactions between the SDN controller and the applications/processes.
+    - *Southbound Interfaces (APIs)*: Interfaces enabling communication between the SDN controller and the network devices/switches (e.g., [[id:b148083e-d81d-4ea5-830e-b944cd0034dc][OpenFlow]]).
+
+** Benefits of SDN
+    - Improved network flexibility and agility.
+    - Easier automation of network functions and services.
+    - Enhanced network programmability.
+
+** Challenges and Critiques
+    - Potential security risks due to centralized control.
+    - Complexity in the initial transition from traditional networking to SDN.
+    - Performance bottlenecks if the controller fails or the network is overly centralized.
+
+** Current Trends
+    - Integration with cloud computing to enhance network scalability.
+    - Use in modern [[id:744acfd8-f1eb-4b5b-a8b5-043b9cd36ca4][data centers]] to support [[id:4e6ad3db-c61d-4f5a-8c4f-6e4a7f169c87][multi-tenant networking]].
+
+** Connections and Further Insights
+    - *SDN and [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]]*: Both aim for resource optimization and improved service delivery, and they complement each other by enhancing network management in cloud environments.
+    - *Security Concerns*: Centralization in SDN introduces a single point of failure, making thorough security measures essential.
+    - *Technical Evolution*: Movement towards more decentralized models like distributed SDN to mitigate some of the centralization risks.
+
+* [[id:5e9efba1-5e48-4ecb-a8dd-752481528b1b][Distributed SDN]]
 
 * Resources
  - https://www.ibm.com/topics/sdn
-
+ - https://opennetworking.org/sdn-definition/
+ - https://sdn.systemsapproach.org/
+ - https://github.com/sdnds-tw/awesome-sdn

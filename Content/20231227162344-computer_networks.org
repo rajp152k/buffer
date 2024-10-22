@@ -2,7 +2,7 @@
 :ID:       a4e712e1-a233-4173-91fa-4e145bd68769
 :END:
 #+title: Computer Networks
-#+filetags: :cs:programming:
+#+filetags: :network:cs:programming:
 
 * Abstract
 The notion of communication between Computers. Theoretically captured by [[id:2deb95d6-5474-4096-85fc-bd568031cc33][the OSI model]]
@@ -28,6 +28,7 @@ Phsyical networking has its limitations in terms of the extent of simple abstrac
 ** [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]]
 ** [[id:821aa28f-c16d-4982-bfc7-e1c9cf82c987][Service Meshes]]
 ** [[id:7702a33f-ac1a-4bfb-80b9-0ec3705426a6][Network Virtualization]]
+** [[id:11c09e36-bdef-4977-9142-6d8ec0e697ba][Quality of Service]]
 * Tools 
 ** httping
  - https://www.vanheusden.com/httping/

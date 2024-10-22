@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       11c09e36-bdef-4977-9142-6d8ec0e697ba
+:ROAM_ALIASES: QoS
 :END:
 #+title: Quality of Service
 #+filetags: :cs:network:
@@ -11,20 +12,30 @@
 - [[id:aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23][Latency]]: The delay before a transfer of data begins following an instruction for its transfer.
 - [[id:e1ccd5f4-2431-457d-b823-334e767a29b3][Jitter]]: The variation in the time between packets arriving.
 - [[id:91792611-56f9-472c-acf1-c8402bda2de6][Error Rates]]: The frequency of errors in data transmission or processing.
-* Importance
-- Ensures reliable and predictable communication performance.
-- Crucial for applications requiring high data integrity and low latency, such as video conferencing and online gaming.
-- Connections
-- High QoS is generally correlated with enhanced user experience in digital services.
-- Implementation of QoS requires careful network planning and sometimes additional resources or infrastructure.
-- Critiques & Considerations
-- Measuring true QoS can be challenging due to variability in internet traffic and external factors.
-- Implementation may introduce complexity and overhead, potentially affecting performance in systems with constrained resources.
-- Improvement Strategies
-- Prioritize network traffic based on application needs.
-- Constant monitoring and adaptive algorithms to dynamically manage resources.
-- Investing in infrastructure upgrades to support higher performance standards.
-- Engaging in load balancing to distribute traffic effectively.
-- Areas for Further Inquiry
-- What are the best practices for implementing QoS in a large-scale network?
-- How can QoS be effectively measured and monitored in real-time?
+
+* QoS Mechanisms:
+
+  - Traffic Classification: Identifying and categorizing packets to apply differential handling.
+
+  - Traffic Shaping: Controlling the volume of traffic being sent into a network to ensure smooth network operation.
+
+  - Prioritization: Assigning priority levels to different types of traffic. For instance, voice and video data may be prioritized over general browsing data.
+
+  - Bandwidth Allocation: Reserving a portion of bandwidth for priority or critical tasks.
+
+* Benefits of QoS:
+
+  - Ensures reliable service levels for critical applications such as Voice over IP (VoIP) and streaming services.
+
+  - Helps manage limited network resources efficiently.
+
+  - Reduces delays and improves performance by prioritizing specific types of traffic.
+
+* Critique of QoS:
+
+  - Implementation Complexity: Configuring and maintaining QoS tools can be complex.
+
+  - Scalability Issues: QoS may not scale well in very large networks without careful planning.
+
+  - Limited by Physical Infrastructure: QoS effectiveness is dependent on the existing network infrastructure capacities.
+

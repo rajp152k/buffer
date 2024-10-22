@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       7702a33f-ac1a-4bfb-80b9-0ec3705426a6
+:END:
+#+title: Network Virtualization
+
+* Relevant Nodes
+ - [[id:714b029b-d0ac-4842-89f5-5f871d1a22c7][Software Defined Networking]]
+ - [[id:39110110-b831-48e5-b966-bb362a4bd988][VxLAN]]
+
+* Resources
+ - https://sdn.systemsapproach.org/netvirt.html

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       39110110-b831-48e5-b966-bb362a4bd988
+:END:
+#+title: VxLAN
+#+filetags: :cs:network:
+
+* Resources
+ - https://www.youtube.com/watch?v=IPaU-N7p4L0&ab_channel=KeithBarker-TheOGofIT

@@ -39,8 +39,12 @@
     - *Security Concerns*: Centralization in SDN introduces a single point of failure, making thorough security measures essential.
     - *Technical Evolution*: Movement towards more decentralized models like distributed SDN to mitigate some of the centralization risks.
 
-* [[id:5e9efba1-5e48-4ecb-a8dd-752481528b1b][Distributed SDN]]
-
+** SDN: A System's Approach
+* Flavors and Forks
+** [[id:5e9efba1-5e48-4ecb-a8dd-752481528b1b][Distributed SDN]]
+* Relevant Nodes
+** [[id:077fcee8-8014-4e4f-8af7-4ec0f49be60e][spine-leaf-topology]]
+** [[id:39110110-b831-48e5-b966-bb362a4bd988][VxLAN]]
 * Resources
  - https://www.ibm.com/topics/sdn
  - https://opennetworking.org/sdn-definition/

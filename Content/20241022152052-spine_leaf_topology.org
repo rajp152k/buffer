@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       077fcee8-8014-4e4f-8af7-4ec0f49be60e
+:END:
+#+title: spine-leaf-topology
+#+filetags: :network:cs:
+
+* Resources
+ - https://sdn.systemsapproach.org/trellis.html
+ - https://www.youtube.com/watch?v=IPaU-N7p4L0&ab_channel=KeithBarker-TheOGofIT

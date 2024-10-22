@@ -27,6 +27,7 @@ Phsyical networking has its limitations in terms of the extent of simple abstrac
 ** [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]]
 ** [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]]
 ** [[id:821aa28f-c16d-4982-bfc7-e1c9cf82c987][Service Meshes]]
+** [[id:7702a33f-ac1a-4bfb-80b9-0ec3705426a6][Network Virtualization]]
 * Tools 
 ** httping
  - https://www.vanheusden.com/httping/
@@ -39,4 +40,6 @@ Phsyical networking has its limitations in terms of the extent of simple abstrac
  - https://datatracker.ietf.org/doc/html/rfc1180 
  - https://github.com/saminiir/level-ip
  - https://www.youtube.com/watch?v=6G14NrjekLQ
-   
+* Books
+** SDN: A Systems Approach
+ - https://sdn.systemsapproach.org/

@@ -14,7 +14,7 @@
 :ID:       5673f3d4-294f-48bc-b44a-f145cc4a9e6b
 :END:
 *** Operating Systems: Three Easy Pieces : https://pages.cs.wisc.edu/~remzi/OSTEP/
- - [[id:104f0326-0505-4bbe-a78f-b9273f051b42][Virtualization]]
+ - [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][virtualization]]
  - [[id:d2d0f670-9bdf-437a-a639-fbdf7ba7d6c7][Persistence]]
  - [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]]
 *** thoughts

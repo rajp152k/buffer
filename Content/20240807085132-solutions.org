@@ -3,3 +3,7 @@
 :END:
 #+title: solutions
 #+filetags: :meta:
+
+* Abstract
+- Thinking in terms of what [[id:3dc89742-51ee-49dc-bb3b-19bd24e50c8a][problems]] your are solving is a good implicit directive to efficiently utilizing your time.
+-

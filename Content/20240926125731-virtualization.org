@@ -1,8 +1,0 @@
-:PROPERTIES:
-:ID:       104f0326-0505-4bbe-a78f-b9273f051b42
-:END:
-#+title: Virtualization
-#+filetags: :cs:
-
-* Relevant Nodes
-** [[id:7291bab2-4e69-47ad-ae37-f3da260b1d89][Linux Virtualization]]

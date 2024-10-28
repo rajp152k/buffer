@@ -8,6 +8,8 @@ Diving into the depths pedagogically by studying the [[https://elixir.bootlin.co
 
 check out [[id:c0964cd2-fa9c-4c92-8283-341d345c819f][RackOS]]
 
+* Three Easy Pieces
+**
 * Operating Systems
  - [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]]
 * Plans

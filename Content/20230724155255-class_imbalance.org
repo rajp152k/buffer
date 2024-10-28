@@ -2,7 +2,7 @@
 :ID:       89c8e59e-e058-4edc-bd85-b4db9eb089a9
 :END:
 #+title: Class Imbalance
-#+filetags: :problem:ai:
+#+filetags: :ai:
 
 See [[id:0fb8c9c4-f491-4d40-b6b7-a6a331316c01][Classification]].
 

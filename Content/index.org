@@ -27,7 +27,13 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 ** [[id:20231112T080937.669416][Projects]]
  - a cache for ideas that may never see the light of day again.
    - or they just might...
+** [[id:3dc89742-51ee-49dc-bb3b-19bd24e50c8a][problems]]
 * Stream
+** 0x22F1
+ - thinking of explicitly trying to identify value creation opportunities
+ - I am a consumer of value so far but not a creator in the sense that general society would find it useful.
+ - opportunities, of course, do exist everywhere but I just need to hone in on being able to observe and capitalize on them
+ - might involve an explicit shift needed to move from the mindset of learning new abstractions to identifying problems around me.
 ** 0x22EA
  - my mechanisms are pretty smooth around the edges now
 ** 0x22E7

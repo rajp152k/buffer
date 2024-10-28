@@ -4,7 +4,8 @@
 #+title: PlantUML
 #+filetags: :chart:tool:
 
-* Sequence Diagrams
+* Examples
+** Sequence Diagrams
 
 #+begin_src plantuml  :file images/plantuml-seq.png :exports both
 @startuml
@@ -18,7 +19,7 @@ Server -> "R-Proxy": response
 #+RESULTS:
 [[file:images/plantuml-seq.png]]
 
-* Class Diagrams
+** Class Diagrams
 #+begin_src plantuml :file images/plant-uml.png
 @startuml
 class Note{
@@ -34,7 +35,7 @@ Note "1" *-- "*" Tag
 @enduml
 #+end_src
 
-* State diagrams
+** State diagrams
 
 #+begin_src plantuml :file images/plantuml-state.png :exports both
 @startuml
@@ -46,10 +47,7 @@ Review --> Publish: Share
 @enduml
 #+end_src
 
-#+RESULTS:
-[[file:images/plantuml-state.png]]
-
-* Mind Maps
+** Mind Maps
 #+begin_src plantuml :file images/plantuml-mmap.png :exports both
 @startmindmap
 ,* Plantuml
@@ -65,3 +63,6 @@ Review --> Publish: Share
 
 #+RESULTS:
 [[file:images/plantuml-mmap.png]]
+
+* Resources
+ - https://crashedmind.github.io/PlantUMLHitchhikersGuide/about/Sections.html

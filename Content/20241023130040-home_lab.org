@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3de72ca1-ceee-4b5e-a1ba-3412a8db3ec1
+:END:
+#+title: Home Lab
+#+filetags: :project:network:cs:
+
+* Relevant Nodes
+ - [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Computer Networks]]

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ba8ffe00-365d-42b4-9cb4-d9554490620e
+:ROAM_ALIASES: DSP
+:END:
+#+title: Digital Signal Processing
+#+filetags: :cs:network:

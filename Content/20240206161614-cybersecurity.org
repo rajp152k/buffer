@@ -16,6 +16,8 @@ I'll refrain from using "hacking" anymore in these nodes unless I really mean ha
 
 As for thinking in an offensive manner, as many have already documented, understanding a system's weaknesses is the most explicit way towards strengthening its defenses.
 
+* Relevant Nodes
+** [[id:68184953-e9ff-456d-acc9-533b522d9743][Cyber-Forensics]]
 * Resources
 ** Hacking: the Art of Exploitation
 :PROPERTIES:

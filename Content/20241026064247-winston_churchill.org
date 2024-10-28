@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1fef211e-b8cc-40c8-b310-1fd514b6340b
+:END:
+#+title: Winston Churchill
+#+filetags: :author:
+
+* Quotes
+** A link at a time
+> It is a mistake to look too far ahead. Only one link in the chain of destiny can be handled at a time.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       4c67f9c4-a120-46eb-9081-b33cf43b028d
+:END:
+#+title: David Clark
+#+filetags: :author:
+
+* Quotes
+** Run code
+> We reject kings, presidents, and voting. We believe in rough consensus and running code.

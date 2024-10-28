@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       eefd5f2b-5d3f-450b-875a-016e8db6a023
+:ROAM_ALIASES: SDR
+:END:
+#+title: Software Defined Radio
+#+filetags: :electronics:cs:network:
+
+* Overview
+- Software Defined Radio (SDR) refers to a radio communication system where components typically implemented in hardware (e.g., mixers, filters, amplifiers, modulators, demodulators, detectors) are instead implemented by means of software on a personal computer or embedded system.
+- SDR systems are versatile and adaptable, allowing developers to modify their radio protocols or frequencies solely through software changes, rather than alterations in hardware.
+- The concept of SDR exploits the flexibility of modern computing architectures to accommodate multiple signal types or standards dynamically.
+
+* Advantages
+- *Flexibility*: SDRs can quickly adapt to new frequencies or standards as they emerge globally.
+- *Cost Efficiency*: By eliminating the need for multiple hardware radios designed for various signals, SDRs potentially reduce hardware costs.
+- *Multi-standard Support*: They support a variety of communications standards and protocols within the same hardware framework.
+
+* Challenges
+- *Processing Power*: SDR requires significant [[id:ba8ffe00-365d-42b4-9cb4-d9554490620e][digital signal processing]] (DSP) capabilities to handle real-time signal modulation/demodulation.
+- *Latency*: Software processes can introduce latencies that are not present in traditional hardware radios.
+- *Complexity in Design*: While SDRs support flexibility, designing robust software architectures that effectively implement desired functionalities can be complex.
+
+* Core Components
+- *RF Front End*: Captures and converts incoming radio signals into a form that can be processed by the ADC (Analog-to-Digital Converter).
+- *ADC/DAC*: Converts analog signals to digital (ADC) for processing, and vice versa (DAC) for transmission.
+- *Digital Signal Processor*: Computes the necessary transformations on the digital signal.
+- *Software Stack*: Controls all smart radio functions including filtering, modulation/demodulation, encoding, and decoding.
+
+* Applications
+- *Telecommunications*: Supporting multi-standard wireless communication networks.
+- *Research*: Assisting researchers in developing and testing new communication protocols.
+- *Defense and Public Safety*: Enabling secure, flexible communication channels on the field.
+
+* Connections
+- SDR can leverage modern advances in [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][cloud computing]] and [[id:db649cb6-047e-426e-8cdc-774586ef30a0][AI]] for adaptive signal processing.
+
+* Critique on Current Limitations
+- While SDR allows for rapid software changes, the dependency on high-performance computing resources might not be feasible in energy-constrained or resource-limited environments.
+- Security might be a concern since the ease of reprogramming can potentially allow malicious modifications if proper security measures aren’t implemented.
+  - see [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Cyber Security]]

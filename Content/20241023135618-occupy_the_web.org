@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2d083b92-816a-4389-8475-367177f49eca
+:END:
+#+title: occupy-the-web
+#+filetags: :cs:network:author:

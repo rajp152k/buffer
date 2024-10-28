@@ -34,6 +34,15 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - I am a consumer of value so far but not a creator in the sense that general society would find it useful.
  - opportunities, of course, do exist everywhere but I just need to hone in on being able to observe and capitalize on them
  - might involve an explicit shift needed to move from the mindset of learning new abstractions to identifying problems around me.
+ - I feel I'm also technologically deprived of hardcore problems.
+ - will returning to some low level stuff for the fun of it.
+ - I'm really bored and getting started with writing an operating system.
+ - in fact could start reading up on physics again, for the sake of itself..
+ - sort of intellectually angry in some way.
+ - aggressively ramping up my reads as well: I'm asking for an overload : life's boring at the usual intellectual pace that I've been maintaining for quite some time now.
+ - wish to explore the harder aspects of computer engineering: distributed computing is sometime down the chopping block
+ - might also start blogging like a purely technical guy that doesn't care about his audience.
+ - this needs to be done.
 ** 0x22EA
  - my mechanisms are pretty smooth around the edges now
 ** 0x22E7

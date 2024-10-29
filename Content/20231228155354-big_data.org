@@ -4,4 +4,3 @@
 #+title: Big Data
 #+filetags: :data:
 
-check out [[id:ee0b0178-82f7-4fd2-af51-f6378f251c9e][The Modern Data Stack]]

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       015cb100-bd71-4e98-ae7f-03d547b048e5
+:ROAM_ALIASES: "Extract, Load, Transform"
+:END:
+#+title: ELT
+#+filetags: :data:

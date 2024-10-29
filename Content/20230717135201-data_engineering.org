@@ -1,6 +1,48 @@
 :PROPERTIES:
 :ID:       e9d75f9d-f8bf-4125-beb0-8ca34166ce9e
 :END:
-#+title: data engineering
+#+title: Data Engineering
 #+filetags: :data:
 
+* Stream
+** 0x22F2
+ - see [[id:1656ed9e-9ed0-4ddb-9953-98189f6bb42e][Extract, Transform, Load]]
+ - see [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][Big Data]]
+** 0x22F2
+ - starting out with setting up a data lake
+ - reading on the book : fundamentals of data engineering
+ - will be populating a lot of relevant nodes that demand further exploration
+ - all tagged as =:data:=
+ - do have foundational data science experience; intrigued to explore how it scales out operationally.
+ - will not be able to do and end to end over view of the whole field.
+ - will be indexing into relevant nodes from the stream sub nodes instead.
+* Core Nodes
+** Data Engineering Lifecycle
+#+begin_src plantuml :file ./images/data-eng-lifecycle.png :exports both
+@startuml
+package Processing {
+        [Ingestion] --> [Transformation]
+        [Transformation]  --> [Serving]
+}
+
+[Generation] --> [Ingestion]
+
+package Applications {
+[Analytics]
+[Machine Learning]
+[Reverse ETL]
+}
+
+Serving ==> [Analytics]
+Serving ==> [Machine Learning]
+Serving ==> [Reverse ETL]
+
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:./images/data-eng-lifecycle.png]]
+
+* Resources
+** Books
+ - Fundamentals of Data Engineering

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       1656ed9e-9ed0-4ddb-9953-98189f6bb42e
+:ROAM_ALIASES: "Extract, Transform, Load"
+:END:
+#+title: ETL
+#+filetags: :data:
+
+* Overview
+** *Extract:*
+    - Involves retrieving raw data from various sources.
+    - Data sources could include [[id:2f67eca9-5076-4895-828f-de3655444ee2][databases]], flat files, [[id:20240101T073142.439145][APIs]], or unstructured sources.
+    - The goal is to gather all the necessary data for further processing.
+** *Transform:*
+    - Converts extracted data into a suitable format or structure for analysis or storage.
+    - Includes operations like filtering, sorting, aggregating, cleansing, validating, and enriching data.
+    - Ensures data quality by correcting inconsistencies and errors.
+** *Load:*
+    - Involves loading transformed data into a target data store, such as a [[id:cfa5fba0-eb2d-4e71-b17a-c646149ab27e][data warehouse]] or database.
+    - Data can be loaded on a regular schedule or in real-time, depending on business needs.
+    - Ensures data is available for querying, reporting, and decision-making processes.
+
+* *Applications and Importance:*
+    - Used in data warehousing to create a centralized repository of data.
+    - Helps organizations in making informed business decisions through data insights.
+    - Enables better data integration across disparate data sources.
+
+* Relevant Nodes
+** [[id:015cb100-bd71-4e98-ae7f-03d547b048e5][ELT]] (Extract, Load, Transform)

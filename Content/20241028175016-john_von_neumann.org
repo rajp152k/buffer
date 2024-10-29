@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       204bb19c-213a-4df4-880e-fd95fcde049c
+:END:
+#+title: John von Neumann
+#+filetags: :author:

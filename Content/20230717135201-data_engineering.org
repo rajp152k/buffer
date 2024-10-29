@@ -20,6 +20,10 @@
 ** Data Engineering Lifecycle
 #+begin_src plantuml :file ./images/data-eng-lifecycle.png :exports both
 @startuml
+[Ingestion] <-> [Storage]
+[Storage] <-> [Transformation]
+[Storage] <-> [Serving]
+
 package Processing {
         [Ingestion] --> [Transformation]
         [Transformation]  --> [Serving]
@@ -39,9 +43,6 @@ Serving ==> [Reverse ETL]
 
 @enduml
 #+end_src
-
-#+RESULTS:
-[[file:./images/data-eng-lifecycle.png]]
 
 * Resources
 ** Books

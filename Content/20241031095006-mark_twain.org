@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       d5f7bb46-c839-4e75-99aa-c10eb87f9b5b
+:END:
+#+title: Mark Twain
+#+filetags: :author:
+
+* Quotes
+** History
+History doesn't repeat itself, but it rhymes.

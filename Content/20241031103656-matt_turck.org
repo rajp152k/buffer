@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       8de13d87-a38a-4868-9ae4-d59b8bf386ba
+:END:
+#+title: Matt Turck
+#+filetags: :author:
+
+* Works
+** MAD 2024
+ - https://mattturck.com/mad2024/

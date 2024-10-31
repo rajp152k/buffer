@@ -5,6 +5,8 @@
 #+filetags: :data:
 
 * Stream
+** 0x22F4
+ - see [[id:869abfbd-031b-40a0-9c4b-69c3e7d820ab][real-time data streaming]] and [[id:f4135d2f-3390-4d76-b05a-222f910c10d4][batch computing]]
 ** 0x22F2
  - see [[id:1656ed9e-9ed0-4ddb-9953-98189f6bb42e][Extract, Transform, Load]]
  - see [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][Big Data]]
@@ -20,30 +22,52 @@
 ** Data Engineering Lifecycle
 #+begin_src plantuml :file ./images/data-eng-lifecycle.png :exports both
 @startuml
-[Ingestion] <-> [Storage]
-[Storage] <-> [Transformation]
-[Storage] <-> [Serving]
 
-package Processing {
-        [Ingestion] --> [Transformation]
-        [Transformation]  --> [Serving]
+frame {
+        [Storage]
 }
 
-[Generation] --> [Ingestion]
+frame Processing {
+        [Ingestion] -right-> [Transformation]
+        [Transformation]  -right-> [Serving]
 
-package Applications {
+        [Storage] -up-> [Ingestion]
+        [Storage] -up-> [Transformation]
+        [Storage] -up-> [Serving]
+}
+
+[Generation] -down-> [Processing]
+
+frame Applications {
 [Analytics]
 [Machine Learning]
 [Reverse ETL]
 }
 
-Serving ==> [Analytics]
-Serving ==> [Machine Learning]
-Serving ==> [Reverse ETL]
-
+Serving =right=> Applications
 @enduml
 #+end_src
+#+RESULTS:
+[[file:./images/data-eng-lifecycle.png]]
 
+** Undercurrents
+*** [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]]
+*** Data Management
+*** DataOps
+*** Data Architecture
+*** [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
+*** [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Engineering]]
+** [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][Big Data]]
+* Tooling
+** [[id:7aa94354-25d9-441b-993f-31ccc970edd3][Hadoop]]
+** [[id:1978cfeb-5ff8-49d1-a1e1-7306151f9850][Spark]]
+** [[id:ebd4a55a-6d00-4c3f-9a8a-f806a3e5c2bc][Pig]]
+** [[id:62ba92d7-598d-4cc9-b2bd-8bc7bcab7123][Hive]]
+** [[id:bf454d38-3ffb-4ef7-9c3b-5e20b8a5b279][Dremel]]
+** [[id:99aafe54-241d-4683-ae2d-4152bb9801fc][HBase]]
+** [[id:11df321c-ace6-45f2-a080-bdfc2431ae3a][Storm]]
+** [[id:20240519T221905.005300][Cassandra]]
+** [[id:a34cc866-ec4b-44f5-972f-1c12782f649d][Presto]]
 * Resources
 ** Books
  - Fundamentals of Data Engineering

@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       1978cfeb-5ff8-49d1-a1e1-7306151f9850
+:END:
+#+title: Apache Spark
+#+filetags: :data:tool:
+
+* Overview
+** *Definition*
+Apache Spark is an open-source unified analytics engine for large-scale data processing, known for its speed, ease of use, and sophisticated analytics.
+** *Core Features*
+*** Speed
+ Spark processes data in memory, reducing the time consumed for disk IO operations, which enhances the speed of data processing significantly.
+*** Ease of Use
+ Spark provides simple and expressive APIs in Python, Java, Scala, and R, which makes it accessible to a wide range of developers and data scientists.
+*** Advanced Analytics
+ Supports [[id:8bba90f5-5880-4c5d-b969-3ae17b53dc35][SQL]] queries, streaming data, [[id:20230713T110006.406161][machine learning]], and [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][graph]] processing.
+
+** *Components*
+*** Spark Core
+ The engine that handles memory management and data scheduling. It also provides the basic functionalities like task dispatching and inputoutput operations.
+*** Spark SQL
+ Enables querying data via SQL as well as working with DataFrames and Datasets, which are distributed collections of data organized into named columns.
+*** Spark Streaming
+ Allows for real-time data stream processing.
+*** MLlib ([[id:20230713T110006.406161][Machine Learning]] Library)
+ A scalable machine-learning library that leverages Spark’s parallel processing capabilities.
+*** GraphX
+ For graph processing and graph-parallel computation.
+
+** *Deployment Modes*:
+  - Standalone: Runs as a separate cluster on your machine.
+  - YARN: Deploys within a Hadoop cluster using YARN (Yet Another Resource Negotiator).
+  - [[id:27a4d68c-adef-42aa-a4b4-b44b3f10395d][Mesos]]: Runs on Apache Mesos, a cluster manager that can also manage other distributed frameworks.
+  - [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]]: Deployment on a Kubernetes-managed cluster.
+
+** *Use Cases*:
+  - Real-time data analysis
+  - Batch processing
+  - Machine learning model training and evaluation
+  - Interactive data exploration
+
+** Connections:
+- Spark is often integrated with Hadoop’s HDFS for storage, utilizing Hadoop clusters to scale out data processing.
+- It competes with tools like [[id:7aa94354-25d9-441b-993f-31ccc970edd3][Apache Hadoop]] [[id:2cc32697-c4ce-41b8-987a-2a44a09f78c3][MapReduce]] but offers significantly faster processing due to its in-memory capabilities.
+- [[id:fa58feb4-25a2-40f1-8533-cafcb0d3886b][Apache Kafka]] is frequently used alongside Spark Streaming for real-time data ingestion.
+

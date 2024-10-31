@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       3504d497-477f-467c-8d6b-d8096c7528c1
+:END:
+#+title: Data Science Hierarchy of Needs
+
+From Upstream (root initiatives) to Downstream (consequent initiatives)
+
+* collect
+** instrumentation
+** logging
+** sensors
+** external data
+** user generated content
+* move/store
+** reliable data flow
+** infrastructure
+** pipelines
+** ETL
+** structured data storage
+** unstructured data storage
+* explore/transform
+** cleaning
+** anomaly detection
+** prepprocessing/preparation
+* aggregate/label
+** A/B testing
+** Experimentation
+** simpler ML algorithms
+* learn/optimize
+** AI
+** Deep Learning

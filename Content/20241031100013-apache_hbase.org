@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       99aafe54-241d-4683-ae2d-4152bb9801fc
+:END:
+#+title: Apache HBase
+#+filetags: :data:tool:

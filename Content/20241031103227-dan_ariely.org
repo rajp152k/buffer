@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       00b01069-1086-4597-aaba-5239efd0db23
+:END:
+#+title: Dan Ariely
+#+filetags: :author:
+
+* Quotes
+** Big Data
+Big Data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it.

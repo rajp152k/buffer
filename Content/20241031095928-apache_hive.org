@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       62ba92d7-598d-4cc9-b2bd-8bc7bcab7123
+:END:
+#+title: Apache Hive
+#+filetags: :data:tool:

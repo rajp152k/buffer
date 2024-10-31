@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ebd4a55a-6d00-4c3f-9a8a-f806a3e5c2bc
+:END:
+#+title: Apache Pig
+#+filetags: :tool:data:

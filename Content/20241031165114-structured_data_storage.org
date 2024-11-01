@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a0cb423e-4e39-4b7c-886d-57d9796f35ed
+:END:
+#+title: Structured data storage
+#+filetags: :data:

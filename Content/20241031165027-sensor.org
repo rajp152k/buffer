@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0bb707ba-24a5-44b3-8e23-45ade88f605c
+:END:
+#+title: Sensor
+#+filetags: :electronics:

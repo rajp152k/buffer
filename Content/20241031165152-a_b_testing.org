@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       85ff1796-5245-4b42-8f97-64b1fc9487e0
+:END:
+#+title: A/B testing
+#+filetags: :cs:
+
+* Overview
+** *Definition*:
+  - A/B testing, also known as split testing, is a method of comparing two versions of a web page, application, or product feature to determine which one performs better in achieving a specific goal.
+
+** *Components*:
+  - *Control Group (A)*: The original version being tested.
+  - *Variant Group (B)*: The modified version where some changes have been made.
+  - *Metrics*: Quantifiable data points used to evaluate the performance, such as conversion rates, click-through rates, or user engagement metrics.
+
+** *Process*:
+  - *Hypothesis Formation*: Define what change you believe will improve the outcome.
+  - *Design*: Create alternate versions (A and B) of the element to be tested.
+  - *Randomization*: Users are randomly assigned to either version A or B to ensure fairness and reliability of the test results.
+  - *Data Collection*: Gather data on how users interact with both versions.
+  - *Analysis*: Use statistical methods to determine if the observed differences are significant.
+
+** *Statistical Significance*:
+  - This refers to the likelihood that the results of the test are not due to random chance. P-values and confidence intervals are often used to assess this.
+
+** *Tools and Software*:
+  - Common tools include Google Optimize, Optimizely, and Adobe Target, among others, which facilitate the execution and analysis of A/B tests.
+
+** *Applications*:
+  - Used extensively in web design, marketing campaigns, product development, and UX/UI design.
+
+** *Limitations*:
+  - *Sample Size Constraints*: Too small sample sizes may not yield significant results.
+  - *Time and Resources*: Testing can be time-consuming and require substantial resources.
+  - *External Validity*: Results may not always generalize beyond the specific setting or population tested.
+
+** Connections:
+- The success of A/B testing largely depends on correctly identifying impactful changes.
+- It requires a balanced approach to data collection and analysis, ensuring that randomization and statistical interpretations are executed properly.
+- Tools are integral for managing the complexity and scale of A/B tests, especially as the number of tests or user groups increases.

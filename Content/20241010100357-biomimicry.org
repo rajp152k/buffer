@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       2ac1cb5c-fd21-41a7-a30a-d6a2080d973e
+:ROAM_ALIASES: bioMimetics
 :END:
 #+title: bioMimicry
 #+filetags: :biology:

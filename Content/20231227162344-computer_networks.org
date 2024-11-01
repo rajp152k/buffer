@@ -12,6 +12,8 @@ I'll be exploring networks in a whimsical manner across several domains and will
 Also initializing a stream for a lot of the other domains that I explore will be rooted to this node in an unstructered manner.
 
 * Stream
+** 0x22F5
+ - exploring swarm networks
 ** 0x22EC
  - speed reading
 ** 0x22EB

@@ -23,9 +23,15 @@ From Upstream (root initiatives) to Downstream (consequent initiatives)
 ** [[id:a9f08fcf-c62d-40c0-a7fb-53d7f827b5ea][anomaly detection]]
 ** prepprocessing/preparation
 * aggregate/label
+** Analytics
+** Metrics
+** Segments
+** Aggregates
+** Features
+** Training data
+* learn/optimize
 ** [[id:85ff1796-5245-4b42-8f97-64b1fc9487e0][A/B testing]]
 ** Experimentation
 ** simpler ML algorithms
-* learn/optimize
 ** [[id:db649cb6-047e-426e-8cdc-774586ef30a0][AI]]
 ** [[id:20230713T110040.814546][Deep Learning]]

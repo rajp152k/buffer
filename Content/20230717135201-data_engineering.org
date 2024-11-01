@@ -20,6 +20,7 @@
  - will be indexing into relevant nodes from the stream sub nodes instead.
 * Core Nodes
 ** Data Engineering Lifecycle
+*** Overview
 #+begin_src plantuml :file ./images/data-eng-lifecycle.png :exports both
 @startuml
 
@@ -47,16 +48,38 @@ frame Applications {
 Serving =right=> Applications
 @enduml
 #+end_src
+
 #+RESULTS:
 [[file:./images/data-eng-lifecycle.png]]
 
-** Undercurrents
-*** [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]]
-*** Data Management
-*** DataOps
-*** Data Architecture
-*** [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
-*** [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Engineering]]
+**** Generation
+ - source systems : origins of data in the lifecycle
+ - possibilities:
+   - [[id:b8f679c7-3ac1-48d7-b1b5-8e4743a62767][IoT]] device
+   - application [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][message queue]]
+   - transactional [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]]
+ - the data engineer consumes from the source systems but doesn't own them
+ - practical examples:
+   - application database
+   - IoT swarms
+**** [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Storage]]
+- data architectures leverage several storage solutions for all kinds of flows, stores and transitions
+- they also need to have side-car processing capabilities to serve complex queries
+- storage is omnipresent across the cycle from ingestion to serving results and the transformations sandwiched within
+- streaming frameworks like [[id:fa58feb4-25a2-40f1-8533-cafcb0d3886b][apache kafka]] and [[id:5e438030-0096-4b97-8931-f99eb7b738c5][pulsar]] can simultaneously function as ingestion, storage and query systems for messages
+**** Ingestion
+**** Transformation
+**** Serving
+**** Applications
+*** Undercurrents
+**** [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]]
+**** Data Management
+**** DataOps
+**** Data Architecture
+**** [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
+**** [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Engineering]]
+*** [[id:9204583f-13ab-4039-9bfc-453700f8b0d1][The Data Life Cycle]]
+ - The Data engineering lifecycle is a subset of the data life cycle (explored separately)
 ** [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][Big Data]]
 * Tooling
 ** [[id:7aa94354-25d9-441b-993f-31ccc970edd3][Hadoop]]

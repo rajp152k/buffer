@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9204583f-13ab-4039-9bfc-453700f8b0d1
+:END:
+#+title: The Data Life Cycle
+#+filetags: :data:

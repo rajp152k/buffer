@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       d4f81cb7-e01b-4115-b8a1-9a303a82699d
+:ROAM_ALIASES: PoLP
+:END:
+#+title: The Principle of Least Privilege
+#+filetags: :sec:
+
+* *Definition*:
+  - The Principle of Least Privilege (PoLP) entails granting users, applications, or systems the minimum levels of access—or permissions—necessary to perform their functions.
+  - PoLP is foundational in cybersecurity, aiming to reduce the risk of accidental or malicious damage.
+
+* *Applications*:
+  - *[[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating Systems]]*: Use [[id:16d3b9b3-2f2a-47ef-81bf-5e045482a26f][role-based access controls]] (RBAC) to assign minimum permissions.
+  - *[[id:2f67eca9-5076-4895-828f-de3655444ee2][Database]] Management*: Limit access rights to essential data entities.
+  - *[[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] Security*: Restrict user access at the network level (e.g., through [[id:49fee858-eb36-4230-8eb0-881df964aec8][firewalls]]).
+
+* *Benefits*:
+  - *Security*: Minimizes [[id:f0485935-d6fc-4bfa-a933-c14fd2a35da7][attack surfaces]] for potential security breaches.
+  - *[[id:6bef65b1-60da-4cc8-88bf-ee83366fa73d][Damage Control]]*: Limits the extent of damage in case of system compromise.
+  - *[[id:06cb8fe6-cf1e-4c0c-afdc-f16ab38414ef][Compliance]]*: Assists in meeting regulatory requirements related to data protection.
+
+* *Challenges*:
+  - *Complexity*: Managing permissions can become complex in large organizations.
+  - *Usability*: Over-restriction can hinder productivity if not managed wisely.
+  - *Dynamic Environments*: Continuously changing user roles require constant updates to permissions.
+
+* *Connections*:
+  - PoLP is related to *[[id:6e558dab-3173-4fab-92b7-1a339719b280][Zero Trust Architecture]]*, both emphasizing stringent access controls.
+  - It complements *[[id:c35c153d-e26b-4f73-8a8d-f960f615c7a7][Defense in Depth]]*, providing layered security by controlling access at various levels.
+  - *[[id:4e1d433c-9f6b-46c7-ad06-4f8bf798785e][Identity and Access Management]] (IAM)* systems often implement PoLP as part of broader security strategies.

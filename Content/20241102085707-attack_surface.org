@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f0485935-d6fc-4bfa-a933-c14fd2a35da7
+:END:
+#+title: attack surface
+#+filetags: :sec:

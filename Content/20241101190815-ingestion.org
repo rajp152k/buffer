@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       5cc98814-915c-4e20-a8e5-82ddd6783466
+:END:
+#+title: Data Ingestion
+#+filetags: :cs:data:
+
+* Overview
+** *Definition*:
+Data ingestion refers to the process of transporting data from various sources to a storage medium where it can be accessed, used, and analyzed.
+
+** *Sources of Data*:
+  - Data can be ingested from diverse sources such as [[id:2f67eca9-5076-4895-828f-de3655444ee2][databases]], cloud [[id:18491388-2dcc-488f-8f33-00582cf0f77e][storage]], [[id:20240101T073142.439145][APIs]], [[id:b8f679c7-3ac1-48d7-b1b5-8e4743a62767][IoT]] devices, and social media platforms.
+
+** *Data Formats*:
+  - Data ingestion tools must handle multiple data formats, including structured, unstructured, and semi-structured data formats like JSON, CSV, XML, Avro, Parquet, etc.
+
+** Types
+*** *Temporality*:
+**** Batch Processing
+- Definition: Data is collected over a period, then processed as a single unit or batch.
+- Latency: Typically associated with high latency, as it waits for a complete dataset before processing.
+- Use Cases: Ideal for scenarios where up-to-date data is not crucial, such as end-of-day reporting, ETL processes, and periodic data integrations.
+- Scalability: Generally scalable for large volumes of data, since processing can be done in bulk.
+- Complexity: Simpler to implement in comparison to streaming, often utilizing traditional databases and data warehouses.
+
+**** Streaming Processing
+- Definition: Data is processed in real-time or near-real-time as it arrives.
+- Latency: Low latency, providing immediate or timely processing of information.
+- Use Cases: Suited for applications requiring instant data processing like fraud detection, live event monitoring, and online recommendation systems.
+- Scalability: Can handle continuous data flows which may require distributed processing systems to scale effectively.
+- Complexity: More complex to implement due to the requirement of managing data flow, consistency, and processing order.
+
+**** Connections and Considerations:
+- Data Volume & Velocity: Batch is preferable for high-volume, less frequent transactions, whereas streaming better handles continuous flows of data.
+- Data Consistency & Accuracy: Consider how eventual consistency or exactly-once semantics would impact your application; these are more challenging to guarantee in streaming systems.
+- Infrastructure & Cost: Streaming might require more sophisticated and potentially costly infrastructure to maintain low latency.
+- Business Needs: Analyze whether the nature of your business operations aligns more closely with periodic updates or ongoing, real-time data insights.
+*** *Mechanisms*
+**** Push
+  - Definition: Data is sent from the source to the destination proactively.
+  - Use Cases: Suitable for real-time or near-real-time data applications.
+  - Advantages:
+    - Lower latency since data is sent as soon as it's available.
+    - Simplicity for the source as it only needs to send data to the target.
+  - Disadvantages:
+    - More complex error handling required by the destination to manage unexpected data arrival.
+    - Potentially more challenging to scale if the source needs to send data to multiple destinations.
+**** Pull
+  - Definition: The destination requests and retrieves data from the source.
+  - Use Cases: Ideal for periodic batch data processing.
+  - Advantages:
+    - The destination controls the rate and timing of data retrieval, simplifying error management and processing.
+    - Easier to manage retries and failed data retrievals.
+  - Disadvantages:
+    - Higher latency, as data is retrieved based on the destination's schedule.
+    - Increased complexity on the destination side, as it must implement scheduling and data checking mechanisms.
+**** Connections and Considerations
+- Latency: Push systems generally have lower latency than pull systems since they send data immediately upon availability.
+- Scalability: Pull systems might offer better scalability if multiple consumers are polling from the same source, while push systems can become complex if the source pushes data to many destinations.
+- Resource Management: Push systems require proactive resource management by the source, while pull systems require it by the destination.
+- Error Handling: Pull systems often have built-in mechanisms to handle intermittent retrieval failures, while push systems require robust error-handling frameworks at the
+** *Challenges in Data Ingestion*:
+  - Scalability: Managing increasing volumes of data efficiently.
+  - Data Quality: Ensuring the accuracy and consistency of data being ingested.
+  - Latency: Minimizing delays from data source to destination.
+  - Security: Protecting data during ingestion from unauthorized access or corruption.
+
+** *Best Practices*:
+  - Ensuring data quality and cleansing before ingestion.
+  - Implementing robust error handling mechanisms.
+  - Using scalable solutions that can adapt to growing data inflows.
+  - Monitoring the ingestion process continuously to detect and fix issues early.
+
+* Misc
+** Key Engineering Considerations for Ingestion Phase
+- What are the use cases for the data I'm ingesting?
+  - Can I use this data rather than creating multiple version of the same dataset?
+- Are the systems generating and ingesting this data reliably, and is the data available when I need it?
+- What is the data destination after ingestion?
+- How frequently will I need to access the data?
+- In what volume will the data typically arrive?
+- What format is the data in? Can my downstream storage and transformation systems handle this format?
+- Is the source data in good shape for immediate downstream use? If so, for how long, and what may cause it to be unusable?
+- If the data is from a streaming source, does it need to be transformed before reaching its destination? Would an in-flight transformation be appropriate, where the data is transformed within the stream itself?

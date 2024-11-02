@@ -1,5 +1,5 @@
 :PROPERTIES:
 :ID:       06cb8fe6-cf1e-4c0c-afdc-f16ab38414ef
 :END:
-#+title: compliance
+#+title: Compliance
 #+filetags: :bs:

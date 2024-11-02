@@ -11,9 +11,6 @@ A mathematical protocal used to represent suitable abstractions using nodes and 
  - Edges : a connection with optional properties between entities
 * Prominent Variants
 ** Directed Acyclic Graph
-:PROPERTIES:
-:ID:       d07976cd-5194-484e-82ab-8c55e064eeb1
-:END:
  - directed edges, no cycles
  - many applications
  - check out [[id:78d16b5e-1893-4057-bc22-b2c9a3ca7ed6][Topological Sort]] for a practical application

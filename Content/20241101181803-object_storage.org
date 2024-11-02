@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       add20973-54a9-4d96-a938-b27ccbf9c1e6
+:END:
+#+title: Object Storage
+#+filetags: :data:

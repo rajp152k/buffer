@@ -4,23 +4,10 @@
 #+title: Data Engineering
 #+filetags: :data:
 
-* Stream
-** 0x22F4
- - see [[id:869abfbd-031b-40a0-9c4b-69c3e7d820ab][real-time data streaming]] and [[id:f4135d2f-3390-4d76-b05a-222f910c10d4][batch computing]]
-** 0x22F2
- - see [[id:1656ed9e-9ed0-4ddb-9953-98189f6bb42e][Extract, Transform, Load]]
- - see [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][Big Data]]
-** 0x22F2
- - starting out with setting up a data lake
- - reading on the book : fundamentals of data engineering
- - will be populating a lot of relevant nodes that demand further exploration
- - all tagged as =:data:=
- - do have foundational data science experience; intrigued to explore how it scales out operationally.
- - will not be able to do and end to end over view of the whole field.
- - will be indexing into relevant nodes from the stream sub nodes instead.
 * Core Nodes
 ** Data Engineering Lifecycle
 *** Overview
+**** Overall Flow
 #+begin_src plantuml :file ./images/data-eng-lifecycle.png :exports both
 @startuml
 
@@ -67,17 +54,77 @@ Serving =right=> Applications
 - they also need to have side-car processing capabilities to serve complex queries
 - storage is omnipresent across the cycle from ingestion to serving results and the transformations sandwiched within
 - streaming frameworks like [[id:fa58feb4-25a2-40f1-8533-cafcb0d3886b][apache kafka]] and [[id:5e438030-0096-4b97-8931-f99eb7b738c5][pulsar]] can simultaneously function as ingestion, storage and query systems for messages
-**** Ingestion
+**** [[id:5cc98814-915c-4e20-a8e5-82ddd6783466][Ingestion]]
 **** Transformation
+
+In the data engineering lifecycle, the transformation process is a critical stage where raw data is converted into a suitable format for analysis and utilization. Here are the key aspects of the transformation process:
+
+- *Extraction*:
+  - Raw data is sourced from multiple origins, including databases, external data feeds, sensors, and more.
+
+- *Data Cleaning*:
+  - Removing duplicates, correcting errors, and filling in missing values to ensure data quality.
+  - Standardizing data formats and naming conventions for consistency.
+
+- *Data Integration*:
+  - Combining data from different sources to provide a unified view.
+  - Resolving heterogeneities and conflicts in data schemas.
+
+- *Data Transformation*:
+  - Changing data from its original form into a format that is analyzable. This includes:
+    - *Normalization/Denormalization*: Adjusting the data structure for better access or storage.
+    - *Aggregation*: Summarizing data to provide insights at a higher level.
+    - *Enrichment*: Adding new data fields derived from existing data to enhance context.
+
+- *Filtering*:
+  - Removing unnecessary or irrelevant data to focus on what's important.
+
+- *Feature Engineering*:
+  - Creating new variables or modifying existing ones to improve the performance of models.
+
+- *Validation*:
+  - Ensuring that transformed data meets quality and integrity standards.
+  - Conducting checks against business rules and expectations.
+
+***** *Connections and Importance*:
+- The transformation process is intrinsically connected to subsequent stages of data analytics and machine learning, as the quality and structure of transformed data directly impact the performance of analytics models.
+- It ensures that data is suitable for storage in a data warehouse or data lake, where further data exploration can occur.
+- By transforming data appropriately, businesses can derive actionable insights that drive strategic decisions.
+
 **** Serving
-**** Applications
+ - [[id:552f0396-488d-43d8-8b44-f68dff74fa5e][Analytics]]
+ - [[id:49b0dd1e-ca9e-46fa-a0b9-db0ec330833d][MultiTenancy]]
+ - [[id:20230713T110006.406161][Machine Learning]]
+ - Reverse [[id:1656ed9e-9ed0-4ddb-9953-98189f6bb42e][ETL]]
 *** Undercurrents
 **** [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]]
+ - Access Control for:
+   - Data
+   - Systems
+ - [[id:d4f81cb7-e01b-4115-b8a1-9a303a82699d][The Principle of Least Privilege]]
 **** Data Management
+ - Data Governance
+   - Discoverability
+   - Definitions
+   - Accountability
+ - Data Modeling
+ - Data Integrity
 **** DataOps
+ - Data Governance
+ - Observability and Monitoring
+ - Incident Reporting
 **** Data Architecture
+ - Analyse tradeoffs
+ - Design for agility
+ - Add value to the business
 **** [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
+ - Coordinate workflows
+ - Schedule jobs
+ - Manage tasks
 **** [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Engineering]]
+ - Programming and coding skills
+ - Software Design Patterns
+ - Testing and Debugging
 *** [[id:9204583f-13ab-4039-9bfc-453700f8b0d1][The Data Life Cycle]]
  - The Data engineering lifecycle is a subset of the data life cycle (explored separately)
 ** [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][Big Data]]
@@ -93,4 +140,7 @@ Serving =right=> Applications
 ** [[id:a34cc866-ec4b-44f5-972f-1c12782f649d][Presto]]
 * Resources
 ** Books
- - Fundamentals of Data Engineering
+*** Fundamentals of Data Engineering
+** Articles
+***  Data Observability Driven Development
+   - https://www.kensu.io/blog/a-guide-to-understanding-data-observability-driven-development

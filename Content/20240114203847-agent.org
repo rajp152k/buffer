@@ -9,3 +9,5 @@ An [[id:20240114T203601.390070][Entity]] with the ability (at-least) to perform 
 Complex versions there-of might delve into the ability to think, comprehend, formulate, make decisions over the basic requirement of being capable of acting.
 
 An Agent that only thinks and doesn't act (or isn't capable of consequences) isn't an entity of significant consequence.
+
+See [[id:a819cd68-91f9-4d67-b40f-fc37324f708b][Agentic AI]]

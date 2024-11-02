@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       a819cd68-91f9-4d67-b40f-fc37324f708b
+:END:
+#+title: Agentic AI
+#+filetags: :ai:
+
+* Overview
+
+- *Definition of Agentic AI*:
+  - An AI system designed to make decisions and take actions autonomously.
+  - Operates with a level of agency that allows it to pursue specified goals.
+
+- *Characteristics*:
+  - Autonomy: The ability to operate without human intervention.
+  - Goal-Oriented: Designed to achieve specific objectives.
+  - Adaptivity: Capable of learning and adjusting strategies based on new information.
+
+- *Applications*:
+  - Robotics: Autonomous robots that perform tasks such as exploration or maintenance.
+  - Virtual Assistants: Systems like Siri or Alexa that can act based on user inputs.
+  - Autonomous Vehicles: Self-driving cars with decision-making capabilities.

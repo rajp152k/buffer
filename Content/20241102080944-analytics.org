@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       552f0396-488d-43d8-8b44-f68dff74fa5e
+:END:
+#+title: Analytics
+#+filetags: :data:
+
+* Overview
+** *Definition and Scope*
+  - Analytics refers to the systematic computational analysis of [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] or [[id:ed67b732-55bc-40a5-97d8-b9d16311e959][statistics]].
+  - It is used for the discovery, interpretation, and communication of meaningful patterns in data.
+
+** *Types of Analytics*
+*** Fundamental
+  - *Descriptive Analytics*: Analyzes historical data to understand changes over time.
+  - *Predictive Analytics*: Uses statistical models and forecasts techniques to understand the future.
+  - *Prescriptive Analytics*: Suggests actions you can take to affect desired outcomes.
+*** Application based
+**** *Business Intelligence (BI):*
+  - *Purpose:* Involves the use of data analysis tools to provide historical, current, and predictive views of business operations.
+  - *Components:*
+    - Data mining
+    - Process analysis
+    - Performance benchmarking
+    - Descriptive analytics
+  - *Outcomes:* Helps in making informed business decisions by highlighting trends and insights through dashboards and reports.
+
+**** *Operational Analytics:*
+  - *Purpose:* Focuses on monitoring and analyzing current business operations to improve efficiency and effectiveness on an ongoing basis.
+  - *Components:*
+    - Real-time data processing
+    - Forecasting for operational efficiency
+    - Optimization of business processes
+  - *Outcomes:* Provides actionable insights to refine and optimize internal operations, enhancing productivity and minimizing waste.
+
+**** *Embedded Analytics:*
+  - *Purpose:* Integrates analytic capabilities directly into existing applications and business processes.
+  - *Components:*
+    - Seamless integration into software applications
+    - Accessible analytics within operational workflows
+    - Enhanced user engagement through context-specific insights
+  - *Outcomes:* Offers users the ability to interact with analytics in real-time within the context of their daily tasks, driving informed decision-making as part of their standard operations.
+
+**** *Connections:*
+  - *BI vs. Operational Analytics:* While BI is more about strategic insights and long-term decision-making, operational analytics zeros in on the day-to-day workings and is more tactical.
+  - *Operational vs. Embedded Analytics:* Both deal with real-time data, but embedded analytics specifically focuses on integrating insights directly into the operational tools users are already employing.
+  - *BI vs. Embedded Analytics:* BI typically stands alone as a platform that requires user interaction to analyze data, whereas embedded analytics brings the insights into the tools and systems the user already interacts with daily.
+
+** *Challenges*
+  - Data Quality: Ensuring the accuracy and completeness of data.
+  - Data Integration: Combining data from different sources.
+  - Privacy and Security: Protecting sensitive data from breaches and misuse.
+
+** *Connections:*
+- The type of analytics used often correlates with business objectives, such as forecasting demand (predictive) or improving operational efficiency (prescriptive).
+- Tools and technologies are selected based on the data complexity, volume, and specific use cases within an organization.

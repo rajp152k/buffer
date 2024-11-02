@@ -1,7 +1,61 @@
 :PROPERTIES:
 :ID:       18491388-2dcc-488f-8f33-00582cf0f77e
 :END:
-#+title: Electronic Storage
-#+filetags: :electronics:cs:
+#+title:  Storage
+#+filetags: :data:cs:
 
-* Sentinels
+* Overview
+** *Types of Storage*:
+  - Primary Storage: Also known as volatile memory or RAM, it is used by computers to temporarily store data that is actively being used or processed.
+  - Secondary Storage: Refers to non-volatile storage like hard drives (HDDs), solid-state drives (SSDs), and optical discs where data is stored for long-term retention.
+  - Tertiary Storage: Involves storage systems used for archiving and backup such as tape drives or cloud-based cold storage solutions.
+  - Quaternary Storage: Rarely used term, sometimes refers to off-site storage systems or lesser-used forms like microforms.
+
+** *Storage Technologies*:
+  - Magnetic Storage: Utilizes magnetic media to store data (e.g., HDDs, magnetic tapes).
+  - Optical Storage: Uses lasers to readwrite data (e.g., CDs, DVDs, Blu-rays).
+  - Flash Storage: A form of EEPROM, non-volatile storage technology used in SSDs, USB flash drives.
+  - Cloud Storage: Allows data to be stored and accessed over the internet, offered by providers like AWS, Google Cloud, Azure.
+
+** *Key Concepts*:
+  - Volatility: Determines whether storage retains data when power is lost.
+  - Capacity: Amount of data a storage medium can hold.
+  - Speed: Access time and data transfer rates of a storage medium.
+  - Durability: Resistance to physical wear and data deterioration over time.
+* Misc
+** Understanding Data Access Frequency
+*** Temperatures
+**** Hot Data
+ - more than many times per day
+ - could be several times per second
+**** Cold Data
+ - seldom queried
+ - often retained for compliance purposes
+ - backups in cases of catastrophic failures
+** Handy Questions to evaluate Storage systems
+
+These are some questions that help gauge the choices of storage systems when architecting a data solution such as:
+ - [[id:cfa5fba0-eb2d-4e71-b17a-c646149ab27e][data warehouse]]
+ - [[id:796b4db7-42dc-4783-bb05-b15524ddf117][data lakehouse]]
+ - [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]]
+ - [[id:add20973-54a9-4d96-a938-b27ccbf9c1e6][object storage]]
+
+** Questions
+ - Is this storage solution compatible with the architecture's required read and write speeds?
+ - Will storage create a bottleneck for downstream processes?
+ - Do you understand how this storage technology works?
+   - are you using the storage system optimally or commiting unnatural acts?
+   - for instance: are you applying a high rate of random access updates in an object storage (an antipattern)
+ - Will this storage system handle anticipated future scale?
+   - you should consider all capacity limits on the storage system: total available storage, read operation rate, write volume, etc
+ - Will downstream users and processes be able to retrieve data in the required [[id:079db37b-925c-478a-836f-7f6ce8027108][service level agreement]]
+ - Are you capturing [[id:5c5245d1-4919-4e13-9232-410f324c0288][metadata]] about the schema evolution, data flows, data lineage and so forth?
+   - Metadata has a significant impact on the utility of data
+   - Metadata represents an investment in the future, dramatically enhancing discoverability and institutional knowledge to streamline future projects and architecture changes.
+ - Is this a pure storage solution (object storage), or does it support complex query patterns (i.e. a cloud data warehouse)?
+ - Is the storage system schema-agnostic (object storage)? Flexible schema (Cassandra)? Enforced Schema (a cloud data warehouse)?
+ - How are you tracking master data, golden records data quality, and data lineage for data governance?
+ - How are you handling regulatory compliance and data sovereignty? For example, can you store your data in certain geographical locations but not others?
+* Relevant Nodes
+ - [[id:e9d75f9d-f8bf-4125-beb0-8ca34166ce9e][Data Engineering]]
+ - [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Message Brokers]]

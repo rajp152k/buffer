@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6e558dab-3173-4fab-92b7-1a339719b280
+:END:
+#+title: Zero Trust Architecture
+#+filetags: :sec:

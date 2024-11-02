@@ -4,6 +4,3 @@
 #+title: Cache
 #+filetags: :data:
 
- - high speed memory taking advantage of the temporal locality of reference principle -> recenlty accessed data is likely to be accessed again.
-
- - caches are a good first step towards improving a [[id:2f67eca9-5076-4895-828f-de3655444ee2][DataBase's]] performance under multiple accesses.

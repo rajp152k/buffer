@@ -15,3 +15,6 @@
 * Why NeuroSymbolic?
  - perception (the neural way) and cognition (the symbolic way)
  - both are important for true intelligence
+
+* Resources
+** [cite:@sheth_neurosymbolic_2023]

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2663b7ca-cfa8-417e-b8ef-d2ac0aa0423f
+:END:
+#+title: Apache Parquet
+#+filetags: :data:

@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       29011444-16f6-4dce-bd25-cb0cc8c9b34d
-:END:
-#+title: Delta Lake
-#+filetags: :data:

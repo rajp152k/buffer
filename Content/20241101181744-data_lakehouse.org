@@ -1,6 +1,5 @@
 :PROPERTIES:
 :ID:       796b4db7-42dc-4783-bb05-b15524ddf117
-:ROAM_ALIASES: "Data Lakehouse"
 :END:
 #+title: Data Lake
 #+filetags: :data:
@@ -26,7 +25,7 @@
   - Provides a cost-effective solution for enterprises to manage massive amounts of data without the expense of traditional data warehouses.
 
 
-* Data Lakehouse
+* [[id:5f3cbb68-5932-434f-a344-39e86bb3cd89][Data Lakehouse]]
 
 ** Definition and Characteristics:
   - A Data Lakehouse is an architectural pattern that combines elements of both data lakes and data warehouses.
@@ -42,4 +41,4 @@
   - These solutions integrate with processing engines like Apache Spark for enhanced data operations.
 
 * Resources
- - [cite:@armbrust_lakehouse_2021]
+ -

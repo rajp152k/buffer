@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       29011444-16f6-4dce-bd25-cb0cc8c9b34d
+:ROAM_REFS: @armbrust_delta_2020
+:END:
+#+title: Delta lake: high-performance ACID table storage over cloud object stores

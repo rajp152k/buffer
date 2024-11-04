@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       5f3cbb68-5932-434f-a344-39e86bb3cd89
+:ROAM_REFS: @armbrust_lakehouse_2021
+:END:
+#+title: Data Lakehouse
+#+filetags: :data:
+
+* Resources
+ - https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf

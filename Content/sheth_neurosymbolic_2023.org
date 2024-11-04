@@ -17,4 +17,4 @@
  - both are important for true intelligence
 
 * Resources
-** [cite:@sheth_neurosymbolic_2023]
+** [cite:@sheth_neurosymbolic_2023] - https://arxiv.org/abs/2305.00813

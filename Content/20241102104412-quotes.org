@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       ab2c93dd-5a5b-48f6-bbd8-094d28a0af41
+:END:
+#+title: Quotes
+#+filetags: :meta:
+
+Some quotes may not be attributable to a single author (or authors that I have nodes for in here) or may have unidentified origins but are still worth documenting.
+
+* [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][Software]]
+** The Best Architecture
+#+begin_quote
+Never shoot for the best architecture, but rather the least worst architecture
+#+end_quote
+- [[id:63e51201-3840-4ece-bcf2-e5158fe1d324][Mark Richards]]
+- [[id:1cd07415-4076-4692-b30e-cea9cbf15300][Neal Ford]]

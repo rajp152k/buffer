@@ -3,3 +3,7 @@
 :END:
 #+title: Consulting
 #+filetags: :bs:
+
+* Resources
+** Articles
+- https://www.melisaliberman.com/blog/best-books-for-consultants

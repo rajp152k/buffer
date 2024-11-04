@@ -2,4 +2,61 @@
 :ID:       49b0dd1e-ca9e-46fa-a0b9-db0ec330833d
 :END:
 #+title: MultiTenancy
-#+filetags: :meta:
+#+filetags: :cs:meta:
+
+* Overview
+** *Definition*
+Multitenancy is a software architecture where a single instance of a software application serves multiple customers, referred to as tenants. Each tenant's data is isolated and remains invisible to other tenants.
+
+** *Components*:
+  - *Tenant*: An individual user, a group, or an organization that uses the shared software service but experiences it as though it is solely dedicated to their use.
+  - *Instance*: A single deployment of the software solution that supports multiple tenants.
+  - *Isolation*: Techniques that keep tenant data and configurations separate from one another to ensure privacy and personalization.
+
+** *Types of Multitenancy*:
+  - *Physical Multitenancy*: Different physical machines host different tenants.
+  - *Virtual Multitenancy*: Virtualization technology allows multiple tenants to share hardware resources.
+  - *Application-Level Multitenancy*: A single application serves multiple tenants, typically providing each with a customizable experience.
+
+** *Benefits*:
+  - *Cost Efficiency*: Reduced operational costs as resources are shared among tenants.
+  - *Scalability*: Easier scaling since the architecture is designed to accommodate multiple tenants.
+  - *Simplified Management*: Centralized management and updates for software applications.
+
+** *Challenges*:
+  - *Security Concerns*: Potential risks of data breaches or leaks between tenants.
+  - *Customization*: Balancing between offering shared resources and the customization needs of different tenants.
+  - *Performance*: Ensuring that the performance is optimal and equitable across all tenants.
+
+** *Applications*:
+  - Widely used in SaaS (Software as a Service) products like CRM systems.
+  - Employed in cloud computing platforms to optimize resource utilization.
+
+** Connections and Insights
+
+- Multitenancy aligns with the broader trends in cloud computing and SaaS, providing a practical means of delivering services at scale.
+- Physical, virtual, and application-level multitenancy represents a spectrum of implementation strategies, each with trade-offs in terms of cost, performance, and security.
+
+** Exploring Further
+
+- How do differing implementations of multitenancy impact the scalability and flexibility of a SaaS product?
+- What best practices exist for ensuring data isolation and security in a multitenant architecture?
+- How does multitenancy compare with single-instance architectures in terms of cost and operational efficiency?
+
+* Data Isolation Mechanisms
+** Primal Types
+
+- Logical Isolation: Each tenant's data is stored in separate tables within a shared database, using unique identifiers to distinguish tenant data.
+
+- Dedicated Schema: Each tenant is assigned a unique database schema that comprises the necessary tables and views, ensuring separation at the database level.
+
+- Separate Databases: Each tenant has their own database instance, providing the highest level of data isolation but also higher resource usage.
+
+- Encryption: Data is encrypted at rest and in transit to prevent unauthorized access, with encryption keys managed per tenant.
+
+** Connections and Insights
+
+- Logical isolation balances resource efficiency with data separation, suitable for environments where cost is a concern.
+- Dedicated schema and separate databases increase isolation but might introduce higher complexity and costs.
+- Encryption serves as a critical layer of security across all types.
+

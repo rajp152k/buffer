@@ -3,3 +3,31 @@
 :END:
 #+title: Apache Pig
 #+filetags: :tool:data:
+
+* Overview
+
+** *Definition and Purpose*
+  - Apache Pig is a high-level platform for creating programs that run on [[id:7aa94354-25d9-441b-993f-31ccc970edd3][Apache Hadoop]].
+  - It is designed to process large data sets using a programming language known as Pig Latin.
+
+** *Components*
+  - *Pig Latin*: A scripting language for expressing data flows. It is easier to write compared to Java MapReduce code.
+  - *Pig Execution Environment*: Where Pig Latin scripts are executed, usually on a cluster of machines.
+  - *Pig Compiler*: Converts Pig Latin into sequences of MapReduce jobs for execution on Hadoop.
+
+** *Key Features*
+  - *Ease of Use*: Pig Latin is simpler than Java MapReduce for developers to write and understand.
+  - *Extensibility*: Users can create User-Defined Functions (UDFs) to execute custom processing logic.
+  - *Optimization Opportunities*: The Pig framework optimizes execution plans automatically.
+
+** *Applications*
+  - Used in sectors like research analytics, log data processing, and data pipeline construction.
+  - Typically employed in scenarios where large volumes of data need a batch processing model.
+
+** *Comparison to Other Tools*
+  - Unlike Hive, which is more SQL-oriented, Pig is more procedural and script-based.
+  - It offers flexibility and efficiency for certain types of data transformations.
+
+** *Integration*
+  - Works seamlessly with Hadoop's ecosystem including HDFS for storage and MapReduce for processing.
+  - Can be integrated with other tools like Apache Oozie for workflow scheduling.

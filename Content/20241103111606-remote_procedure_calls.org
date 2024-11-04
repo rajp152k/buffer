@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       19079639-be92-46cf-82c5-3d81c935705c
+:ROAM_ALIASES: RPC
+:END:
+#+title: Remote Procedure Calls
+#+filetags: :programming:cs:

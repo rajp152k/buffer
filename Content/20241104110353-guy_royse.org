@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       53b61e21-425e-4c5e-b85f-3aa50fa5643e
+:END:
+#+title: Guy Royse
+#+filetags: :author:
+
+* Resources
+ - http://guyroyse.com/
+ - https://www.youtube.com/watch?v=25z9bRo_t0c&ab_channel=NDCConferences

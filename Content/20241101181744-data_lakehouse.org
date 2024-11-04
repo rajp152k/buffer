@@ -1,5 +1,45 @@
 :PROPERTIES:
 :ID:       796b4db7-42dc-4783-bb05-b15524ddf117
+:ROAM_ALIASES: "Data Lakehouse"
 :END:
-#+title: Data Lakehouse
+#+title: Data Lake
 #+filetags: :data:
+
+* Overview
+
+** *Definition and Purpose:*
+  - A Data Lake is a [[id:5c59fbd4-1f9a-4438-a10e-bbfb4991b859][centralized]] repository designed to store, process, and secure large volumes of structured, semi-structured, and unstructured data.
+  - It allows for the storage of raw data in its native format until it is needed for analysis.
+
+** *Architecture Components:*
+  - *[[id:18491388-2dcc-488f-8f33-00582cf0f77e][Storage Layer]]:* Utilizes scalable and cost-effective storage solutions to store vast amounts of diverse data types.
+  - *Processing Layer:* Includes tools and frameworks (e.g., [[id:7aa94354-25d9-441b-993f-31ccc970edd3][Apache Hadoop]], [[id:1978cfeb-5ff8-49d1-a1e1-7306151f9850][Apache Spark]]) for processing and analyzing data.
+  - *Governance and Security Layer:* Ensures data quality, privacy, and compliance through metadata management, lineage tracking, and access controls.
+
+** *Key Features:*
+  - *Scalability:* Easily accommodates expanding data volumes.
+  - *Flexibility:* Supports different data formats and ingestion processes.
+  - *Accessibility:* Offers data access through APIs and query tools like SQL on Hadoop engines.
+
+** *Benefits:*
+  - Enables data scientists and analysts to perform advanced analytics and machine learning on comprehensive and diverse datasets.
+  - Provides a cost-effective solution for enterprises to manage massive amounts of data without the expense of traditional data warehouses.
+
+
+* Data Lakehouse
+
+** Definition and Characteristics:
+  - A Data Lakehouse is an architectural pattern that combines elements of both data lakes and data warehouses.
+  - It aims to provide the flexibility and scalability of a data lake with the performance and reliability of a data warehouse.
+  - Supports [[id:2f67eca9-5076-4895-828f-de3655444ee2][ACID]] transactions, data governance, and modeling capabilities traditionally associated with data warehouses.
+
+** Comparative Insights:
+  - Data Management:* Data lakehouses enable structured, semi-structured, and unstructured data management similar to data lakes.
+  - Analytic Performance:* They improve query performance and support BI operations through indexing, caching, and optimized storage layers.
+
+** Examples and Tools:
+  - Platforms like [[id:29011444-16f6-4dce-bd25-cb0cc8c9b34d][Delta Lake]], [[id:b5dd1c43-151f-4b4d-905e-f0894cbe5e2c][Apache Iceberg]], and [[id:015135fc-5e3f-4821-ac8f-a252747418ef][Apache Hudi]] exemplify data lakehouse implementations.
+  - These solutions integrate with processing engines like Apache Spark for enhanced data operations.
+
+* Resources
+ - [cite:@armbrust_lakehouse_2021]

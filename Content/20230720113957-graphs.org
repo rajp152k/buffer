@@ -10,10 +10,7 @@ A mathematical protocal used to represent suitable abstractions using nodes and 
  - Nodes : a representative point for an entity
  - Edges : a connection with optional properties between entities
 * Prominent Variants
-** Directed Acyclic Graph
- - directed edges, no cycles
- - many applications
- - check out [[id:78d16b5e-1893-4057-bc22-b2c9a3ca7ed6][Topological Sort]] for a practical application
+** [[id:d07976cd-5194-484e-82ab-8c55e064eeb1][Directed Acyclic Graph]]
 * Forks/Deviants
 ** [[id:20230718T234741.567442][Graph Neural Networks]]
 ** [[id:3231e4a2-702d-4fd2-89ed-6efb34e2c3ee][Graph Databases]]

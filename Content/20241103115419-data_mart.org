@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       b691a5c1-0a48-4091-b249-f7e37aeb3378
+:END:
+#+title: Data Mart
+#+filetags: :data:
+
+* Overview
+** *Definition*:
+  - A data mart is a subset of a [[id:cfa5fba0-eb2d-4e71-b17a-c646149ab27e][data warehouse]], designed to serve the needs of a specific business unit or department.
+  - It contains summarized and selected data, tailored to meet the analytical requirements of particular business functions.
+
+** *Purpose*:
+  - Intended to improve data analysis and reporting for specific departments (e.g., sales, finance, marketing).
+  - Provides quicker access to relevant data by reducing the volume of information compared to a full data warehouse.
+  - Enhances user productivity by simplifying data queries and accessibility.
+
+** *Components*:
+  - Data Sources: Originating databases or data warehouses from which the data is extracted.
+  - [[id:1656ed9e-9ed0-4ddb-9953-98189f6bb42e][ETL]] Processes: Extraction, Transformation, and Loading processes to shape the data.
+  - [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Storage]]: Database or similar structure housing the refined data.
+  - Access Tools: Interfaces and query tools enabling users to interact with the data.
+
+** *Benefits*:
+  - Improves decision-making by providing timely and department-specific information.
+  - Cost-effective, as they are typically smaller and require less storage infrastructure.
+  - Easier to maintain and can be configured more quickly than full-scale data warehouses.
+
+** *Comparison with Data Warehouses*:
+  - Data warehouses are comprehensive data storage solutions that aggregate data from across an organization.
+  - Data marts are focused, summarized versions targeting specific functional areas.
+
+** *Types of Data Marts*:
+  - *Dependent Data Marts*: Extracts data from a central data warehouse.
+  - *Independent Data Marts*: Sourced directly from operational systems or external data, not involving a centralized data warehouse.
+
+** *Connections Between Concepts*:
+- Data marts streamline the workflow between vast data warehouses and end-user applications, making them critical for departments that require specific insights without the overhead of handling all organizational data.
+- By integrating with business intelligence tools, data marts play a crucial role in operational efficiency and competitive strategy.

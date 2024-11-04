@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c724b622-32a7-46c4-81bc-b7570080c9ee
+:END:
+#+title: GraphQL
+#+filetags: :programming:tool:cs:

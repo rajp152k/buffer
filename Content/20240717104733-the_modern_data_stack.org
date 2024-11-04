@@ -1,5 +1,47 @@
 :PROPERTIES:
 :ID:       ee0b0178-82f7-4fd2-af51-f6378f251c9e
 :END:
-#+title: The Modern Data Stack
+#+title: Data Architecture
 #+filetags: :data:
+
+* Overview
+** *Data Architecture Definition*
+  - Structured framework that dictates how data is collected, stored, managed, and utilized in a system.
+
+** *Core Components*
+  - *Data Models*: Abstract representations that define data elements and relationships.
+  - *Data Flows*: Pathways showing data movement between system components or processes.
+  - *Data [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Storage]]*: Mechanisms and technologies for data persistence (e.g., databases, data lakes).
+  - *Data Integration*: Combining data from different sources into a unified view ([[id:1656ed9e-9ed0-4ddb-9953-98189f6bb42e][ETL]]/[[id:015cb100-bd71-4e98-ae7f-03d547b048e5][ELT]] processes).
+  - *Data Governance*: Policies and standards ensuring data quality, security, and privacy.
+
+** *Architectural Patterns*
+  - *Traditional [[id:cfa5fba0-eb2d-4e71-b17a-c646149ab27e][Data Warehouse]]*: Centralized storage that supports decision-making; characterized by structured data.
+  - *[[id:796b4db7-42dc-4783-bb05-b15524ddf117][Data Lake]]*: Storage system that handles raw and unstructured data; useful for big data analytics.
+  - *[[id:cb90e066-953f-4ab7-acf5-2442753e6624][Data Mesh]]*: Decentralized architecture promoting domain-oriented data ownership and self-service analytics.
+
+** *Evolution and Trends*
+  - Movement towards cloud-based solutions and serverless architectures for scalability and flexibility.
+  - Increased importance on real-time data processing and analytics.
+  - Emphasis on automation via AI/ML for more efficient data handling.
+
+** *Interrelated Disciplines*
+  - *Data Governance* is crucial for maintaining data integrity across the architecture.
+  - *Enterprise Architecture* ensures alignment between data initiatives and business goals.
+
+** *Functional Paritions*
+*** Operational Data Architecture
+ - dictates the what
+*** Technical Data Architecture
+ - dictates the how
+
+* Principles of Good Data Architecture
+** Choose common components wisely
+** Plan for [[id:23ab0400-38d2-433d-9978-772075e6dee0][Failure]]
+** Architect for [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]
+** Architecture is leadership
+** Always be architecting
+** Build loosely coupled systems
+** Make reversible decisions
+** Prioritize [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][security]]
+** Embrace [[id:38fdbb53-52ee-4f01-ae48-4ea17238efca][FinOps]]

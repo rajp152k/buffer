@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       d3a28c5a-1daa-4dd7-a31d-2baa2655e1b2
+:END:
+#+title: Request-Driven Architecture
+#+filetags: :cs:
+
+* Overview
+** *Definition:*
+  - Request-driven architecture is a design approach where the system operates based on requests initiated by users or other systems. Each request triggers a response from the system, leading to actions being performed or data being retrieved.
+
+** *Core Components:*
+  - *Request Initiators:* Clients or systems that send requests to the architecture.
+  - *Request Handlers:* Components or services that process incoming requests, often triggering a chain of operations.
+  - *Response Generators:* Subsystems responsible for crafting the response back to the request initiator after processing.
+
+** *Operation Modes:*
+  - *Synchronous:* The initiator waits for a response as the request is processed.
+  - *Asynchronous:* The request is processed independently of the response, suitable for processes that are non-blocking and can operate without immediate data return.
+
+** *Common Technologies:*
+  - HTTP/HTTPS: Often used in web-based request-driven architectures.
+  - [[id:88828c6f-87e0-4569-b236-dc6ebb72d282][REST]] APIs: A popular way to implement requests and responses in a structured format.
+  - Web Services/[[id:c724b622-32a7-46c4-81bc-b7570080c9ee][GraphQL]]: Other methodologies to facilitate requests within applications.
+
+** *Advantages:*
+  - *Scalability:* Systems can be scaled horizontally by adding more handlers as demand increases.
+  - *Modularity:* Enables separation of concerns as different request types can be directed to specific handlers.
+  - *Flexibility:* Easily integrates with various external systems, allowing for diverse data sources and functions.
+
+** *Challenges:*
+  - *Latency:* Potential for delay in receiving responses, especially with complex requests.
+  - *State Management:* May require complex state management if requests depend on previous interactions.
+  - *Error Handling:* Robust systems must handle errors gracefully to ensure consistent performance.
+
+*** Connections and Considerations
+
+- In contrast to [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][event-driven architecture]], request-driven systems center around external stimuli triggering operations, whereas event-driven ones respond to internal events.
+- [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load balancing]] techniques are crucial in request-driven systems to distribute incoming requests evenly and maintain performance.
+- Proper design of APIs and clear contract definitions are essential to reduce the likelihood of integration issues across different services.
+- Monitoring and logging are vital for debugging and analyzing request patterns to identify potential bottlenecks and optimize performance.

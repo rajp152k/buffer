@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       38fdbb53-52ee-4f01-ae48-4ea17238efca
+:END:
+#+title: FinOps
+#+filetags: :bs:
+
+* Overview
+** *Definition of FinOps*:
+  - FinOps, short for "Financial Operations," is a practice that bridges the financial planning and operational management of cloud budgeting and spending.
+  - It aims to bring together teams such as finance, engineering, and business to collaborate for better financial accountability in cloud resource management.
+
+** *Key Objectives*:
+  - Increase cost visibility and allocation through shared financial insight across relevant departments.
+  - Optimize cloud spending by identifying inefficiencies and implementing cost-saving strategies.
+  - Drive cultural change in organizations to promote financial accountability and agile financial decision-making.
+
+** *Practices and Framework*:
+  - Implementing cost forecasting and budgeting strategies to predict future expenses and align them with business goals.
+  - Enforcing policies for resource tagging and cost allocation to ensure accurate expense tracking.
+  - Utilizing automation and tooling for real-time data analysis to enable better decision-making.
+
+** *Stakeholders Involved*:
+  - Finance teams responsible for budgeting and expense tracking.
+  - Engineering teams in charge of deploying and maintaining cloud resources.
+  - Operations teams focused on performance and reliability of cloud services.
+  - Executive teams overseeing the alignment of cloud spending with business objectives.
+
+** *Industry Relevance*:
+  - As cloud environments grow in complexity, FinOps is increasingly critical for managing costs effectively.
+  - With trends toward multi-cloud strategies, the need for robust financial management frameworks becomes more crucial.
+
+** *Connections and Considerations*:
+- FinOps draws parallels with DevOps in its collaborative and integrated approach to cross-disciplinary teamwork.
+- Cloud service providers often offer FinOps-related tools to help organizations track and manage their spending.
+- Emerging technologies and business needs can influence the FinOps practices shifting focus based on market demand.

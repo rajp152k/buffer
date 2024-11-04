@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       63e51201-3840-4ece-bcf2-e5158fe1d324
+:END:
+#+title: Mark Richards
+#+filetags: :author:
+
+* Quotes
+** The Best Architecture
+- Never shoot for the best architecture, but rather the least worst architecture
+* Resources
+ - https://www.developertoarchitect.com/mark-richards.html

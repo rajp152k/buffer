@@ -4,6 +4,27 @@
 #+title: Asynchronous Programming
 #+filetags: :programming:
 
-* Language Specific
- - [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]
+* Overview
+** *Definition*:
+  - Asynchronous programming is a coding paradigm allowing a particular piece of code to execute separately from the main application thread. This is particularly useful in managing operations that are time-consuming or involve waiting for external resources.
+
+** *Benefits*:
+  - *Efficiency*: Allows programs to handle multiple tasks simultaneously without wasting time waiting for each task to finish.
+  - *Responsiveness*: Keeps applications responsive, especially important in user interfaces where long tasks can lead to freezing.
+  - *Scalability*: Suitable for applications that require handling many tasks or requests efficiently, like web servers.
+
+** *Mechanisms*:
+  - *Callbacks*: Functions passed as arguments to be executed after an operation completes.
+  - *Promises/Futures*: Objects representing the eventual completion or failure of an asynchronous operation, allowing chaining of actions.
+  - *Async/Await*: Syntax to write asynchronous code in a synchronous style, enhancing readability and maintainability.
+
+** *Applications*:
+  - *Web development*: Handling HTTP requests, file reading/writing, database queries without blocking the main thread.
+  - *Real-time systems*: Game development, live data processing where non-blocking execution is crucial.
+  - *I/O Bound tasks*: Networking operations, API calls where latency can be significant.
+
+** *Challenges*:
+  - *Complexity*: Requires careful management of state and potential issues like callback hell.
+  - *Debugging difficulties*: Tracing errors can be more complex due to non-linear execution.
+  - *Concurrency bugs*: Introducing or handling race conditions, deadlocks can be tricky.
 

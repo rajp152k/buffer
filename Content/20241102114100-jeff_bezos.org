@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1059c1c6-65f8-4d02-831b-ddee79c23173
+:END:
+#+title: Jeff Bezos
+#+filetags: :author:
+
+* The Bezos API mandate
+ - https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/

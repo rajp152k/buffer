@@ -3,3 +3,28 @@
 :END:
 #+title: Data Warehouse
 #+filetags: :data:
+
+* Overview
+** *Definition*:
+  - A data warehouse is a [[id:5c59fbd4-1f9a-4438-a10e-bbfb4991b859][centralized]] repository that stores large volumes of structured data accumulated from various sources within an organization. It is designed to facilitate reporting and [[id:552f0396-488d-43d8-8b44-f68dff74fa5e][analysis]].
+
+** *Purpose*:
+  - The primary purpose of a data warehouse is to offer a comprehensive view of an organization's data to support business decision-making and analytics. It helps in data consolidation and management.
+
+** *Architecture*:
+  - Typically, it follows a layered design, with components such as:
+    - *Data Sources*: Input from various databases, flat files, or external sources.
+    - *[[id:1656ed9e-9ed0-4ddb-9953-98189f6bb42e][ETL]] (Extract, Transform, Load)*: Processes that extract data from sources, cleanse and transform it, and load it into the warehouse.
+    - *[[id:18491388-2dcc-488f-8f33-00582cf0f77e][Data Storage]]*: Centralized storage in [[id:b691a5c1-0a48-4091-b249-f7e37aeb3378][data marts]] or a central repository.
+    - *[[id:5c5245d1-4919-4e13-9232-410f324c0288][Metadata]]*: Information about data definitions, mappings, and transformations.
+    - *End-user access tools*: Interfaces for analysis, reporting, and data mining.
+
+** *Characteristics*:
+  - *Subject-Oriented*: Organized around key business subjects such as sales, inventory, or finance.
+  - *Integrated*: Combines data from various sources into a unified view.
+  - *Time-Variant*: Involves historical data over time for trend analysis.
+  - *Non-Volatile*: Data is stable and does not change once it’s stored.
+
+** *Connections*:
+- Data warehouses often work in tandem with [[id:2898bf49-d0a9-478f-b6e0-b5e8583612f3][OLAP]] (Online Analytical Processing) for multidimensional analysis and Business Intelligence (BI) tools that enable user-friendly reporting and dashboards.
+- They are distinct from [[id:796b4db7-42dc-4783-bb05-b15524ddf117][data lakes]], which store raw, unprocessed data that can include structured, semi-structured, or unstructured formats.

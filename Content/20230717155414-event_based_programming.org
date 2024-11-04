@@ -2,16 +2,53 @@
 :ID:       46f09529-c273-49ed-9bf7-7e0a6d97d65c
 :ROAM_ALIASES: callbacks hooks "Event Based Programming"
 :END:
-#+title: Event Driven Programming
-#+filetags: :programming:
+#+title: Event Driven Architecture
+#+filetags: :cs:
 
-* Abstract
+* Overview
+** *Event-Driven Architecture (EDA):*
+  - EDA is a [[id:477c67c1-b742-4b54-886f-a06ad47f231f][software architecture]] paradigm that promotes the production, detection, consumption of, and reaction to events.
+  - Events can be defined as significant occurrences or changes in the system's state that can be originated internally or externally.
+  - EDA is commonly used in systems where decoupled components need to communicate asynchronously.
 
-The event-driven paradigm is readily observable in graphical user interfaces (GUIs) where actions like clicks and submissions trigger specific responses. This contrasts with traditional verification-based systems that rely on continuous polling.
+** *Components of EDA:*
+  - *Events:* Key occurrences or changes to which the architecture is responsive. Events can trigger actions or workflows.
+  - *Event Producers:* Entities that generate and publish events. They are responsible for notifying the system when something significant happens.
+  - *Event Consumers:* Components that listen for and handle events. They react based on the event's information.
+  - *Event Channel/Bus:* A medium through which events are transmitted from producers to consumers, often enabling a publish-subscribe model.
+  - *Event Processing:* Logic that transforms or directs events as necessary to facilitate actions within the system.
 
-Event-driven architecture centers around a main loop (often termed a "listener") which remains dormant until an event occurs. Upon triggering, the listener executes pre-defined functions known as event handlers, hooks, or callbacks. This mechanism can be implemented at the hardware level using interrupts, particularly in embedded systems.
+** *Callbacks:*
+  - Callbacks are functions that are passed as arguments to other functions and are invoked once a specific event occurs or the task is complete.
+  - They are primarily used for [[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][asynchronous]] operations, allowing a program to continue without blocking waiting for an event or result.
 
-Higher-level programming languages offer abstractions for elegant event handling. Asynchronous programming constructs like "await" (often paired with "async") and closures (also known as lambdas) streamline event-driven code.
+** *Hooks:*
+  - Hooks are predefined points within a system where custom code or functions can be inserted to influence the behavior of the system at runtime.
+  - They allow for modification and extension of existing functionality without altering the core codebase, often used in plugin architectures.
 
-* Practical
-- [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]
+** *Connections:*
+- EDA uses both callbacks and hooks to efficiently manage and respond to events.
+- Callbacks provide a way to react to asynchronous events immediately, often simplifying the chaining of operations.
+- Hooks provide extensibility and customization, ensuring that various components or extensions can react to events by inserting additional logic.
+
+* Relevent Nodes
+** [[id:d3a28c5a-1daa-4dd7-a31d-2baa2655e1b2][Request-Driven Architectures]]
+* Diff b/w Request and Event Driven Architecure
+** *Request-Driven Architectures:
+- Operate on the basis of requests and responses, typically client-server models.
+- The flow of operations is initiated by a client request, leading to synchronous processing.
+- Suitable for operations requiring immediate feedback or results.
+- Often involves direct interaction patterns such as [[id:88828c6f-87e0-4569-b236-dc6ebb72d282][REST]] or [[id:19079639-be92-46cf-82c5-3d81c935705c][RPC]].
+
+** Event-Driven Architectures:
+- Operate on events that are emitted as significant state changes.
+- Asynchronous and decoupled, enabling components to react independent of each other.
+- Suitable for scenarios requiring real-time data processing and distributed system responsiveness.
+- Use indirect interaction patterns like message queues and publish-subscribe systems.
+
+** Key Differences:
+- *Synchronous vs. Asynchronous:* Request-driven is typically synchronous, while event-driven is inherently asynchronous.
+- *Initiation:* Request-driven is initiated by a specific client request, whereas event-driven is initiated by system or external events.
+- *Decoupling:* EDA emphasizes a higher level of decoupling between components than request-driven systems.
+- *Scalability and Flexibility:* EDA often provides greater scalability and flexibility, as components can evolve independently.
+

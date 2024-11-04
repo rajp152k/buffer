@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       25576040-ffc1-4423-98b4-b1d8299d16a7
+:END:
+#+title: Werner Vogels
+#+filetags: :author:
+
+* Quotes
+** Fails
+ - Everything fails, all the time.
+
+* Resources
+ - https://www.allthingsdistributed.com/

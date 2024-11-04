@@ -4,3 +4,38 @@
 :END:
 #+title: ELT
 #+filetags: :data:
+
+* Overview
+
+** *Extract, Load, Transform (ELT)*:
+  - *Definition*: ELT is a data processing paradigm where data is first extracted from sources and loaded into a storage system, typically a data warehouse or a data lake, before transforming it into the desired format or structure for analysis.
+
+** *Components*:
+  - *Extract*:
+    - Collecting data from various sources such as databases, APIs, and logs.
+    - Data is often in raw form and may not be immediately usable for analysis.
+  - *Load*:
+    - Transferred data is moved into a centralized storage system.
+    - The data warehouse or lake can manage large volumes of unstructured and structured data.
+  - *Transform*:
+    - Data is cleaned, formatted, and transformed as needed once it is already in the warehouse.
+    - Transformation can occur using SQL queries and other processing tools while data remains accessible for analysis.
+
+** *Comparison with ETL (Extract, Transform, Load)*:
+  - In ETL, transformation happens before data is loaded into a target database.
+  - ELT is often more suitable for handling big data due to advancements in cloud data warehousing technologies and the capability to quickly process and query data at scale.
+
+** *Advantages*:
+  - *Scalability*: Better suited for big data environments.
+  - *Flexibility*: Allows for diverse and evolving data requirements since data can be transformed as needed once it's loaded.
+  - *Real-time Analytics*: Facilitates quicker access to raw data for timely insights.
+
+** *Disadvantages*:
+  - *Data Security and Compliance*: Storing raw data might expose sensitive information before transformation.
+  - *Complexity in Management*: Requires robust governance to manage data flow and ensure data quality.
+
+** *Applications*:
+  - Used widely in cloud computing environments and modern data platforms like Snowflake, Amazon Redshift, and Google BigQuery.
+
+** *Connections*:
+- While ETL is traditionally used in on-premises environments, ELT takes advantage of cloud-based architectures and scalable computing power.

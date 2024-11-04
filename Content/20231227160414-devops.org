@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       58ea31e4-95ae-4c25-b475-c8686fe23817
 :END:
-#+title: Devops
+#+title: DevOps
 #+filetags: :meta:programming:
 
 A software development practice that promotes collaboration between development and operations, resulting in faster and more reliable software delivery.

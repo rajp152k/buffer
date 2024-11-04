@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       2898bf49-d0a9-478f-b6e0-b5e8583612f3
+:ROAM_ALIASES: "Online Analytical Processing"
+:END:
+#+title: OLAP
+#+filetags: :cs:bs:

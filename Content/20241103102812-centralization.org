@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5c59fbd4-1f9a-4438-a10e-bbfb4991b859
+:END:
+#+title: Centralization
+#+filetags: :meta:

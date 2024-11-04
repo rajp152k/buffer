@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6beb22b6-8f0e-4e9f-b01e-679df272976a
+:END:
+#+title: agile
+#+filetags: :bs:cs:

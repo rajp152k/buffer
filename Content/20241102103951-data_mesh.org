@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       cb90e066-953f-4ab7-acf5-2442753e6624
+:END:
+#+title: Data Mesh
+#+filetags: :data:
+
+* Overview
+** *Definition*:
+  - Data Mesh is a [[id:3c0c2077-b24a-4f6b-b93f-f06c08f7b3e9][decentralized]] approach to [[id:ee0b0178-82f7-4fd2-af51-f6378f251c9e][data architecture]] and organizational design.
+  - It treats data as a product, promoting data ownership by domain teams rather than [[id:5c59fbd4-1f9a-4438-a10e-bbfb4991b859][centralizing]] data management.
+
+** *Core Principles*:
+  1. *Domain-Oriented Decentralization*:
+     - Decomposes data architecture based on business domains or capabilities.
+     - Empowers domain teams to take ownership of data quality, governance, and accessibility.
+  2. *Data as a Product*:
+     - Treats data assets with the same rigor and standards as customer-facing products.
+     - Incorporates practices of product thinking, including user-centric design and iterative improvements.
+  3. *Self-Serve Data Infrastructure*:
+     - Facilitates autonomous data engineering by providing reusable infrastructure and tools.
+     - Focuses on reducing friction for domain teams to produce and consume data streams.
+  4. *Federated Computational Governance*:
+     - Implements a governance model that balances standardization with flexibility.
+     - Encourages shared accountability and compliance within a federated structure.
+
+** *Implementation Strategies*:
+  - Organizational restructuring to support domain-oriented teams with end-to-end autonomous capabilities.
+  - Adoption of cloud-native data platforms to enable scalable self-service capabilities.
+  - Integration of [[id:6beb22b6-8f0e-4e9f-b01e-679df272976a][agile]] and [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][DevOps]] practices to streamline data product development and operations.
+  - Emphasis on collaboration between data producers and consumers through cross-functional teams.
+
+** *Implications and Benefits*:
+  - Improved agility and responsiveness to business needs by empowering domain experts.
+  - Enhanced data quality and relevance through ownership and accountability at the domain level.
+  - Reduction in bottlenecks and silos typically associated with centralized data management.
+  - Better alignment between data initiatives and business priorities.

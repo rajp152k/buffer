@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       98baeb1e-8c6c-47ca-8aea-7103ea21e997
+:END:
+#+title: Enterprise Architecture
+#+filetags: :arch:meta:bs:
+
+* Definitions
+** TOGAF Def
+ #+begin_quote
+ The term "Enterprise" in the context of "enterprise architecture" can denote an entire enterprise - encompassing all of its information and technology services, processes and infrastructure - or a specific domain within the enterprise. In both cases, the architecture crosses multiple systems, and multiple functional groups within the enterprise
+ #+end_quote
+** Gartner's Def
+#+begin_quote
+Enterprise Architecture (EA) is a discipline for proactively and holistically leading enterprise responses to disruptive forces by identifying and analyzing the execution of change toward desired business vision and outcomes. EA delivers value by presenting business and IT leaders with signature-ready recommendations for adjusting policies and projects to achieve targeted business outcomes that capitalize on relevant business disruptions
+#+end_quote
+** EABOK's Def
+#+begin_quote
+Enterprise Architecture (EA) is an organizational model; an abstract representation of an Enterprise that aligns strategy, operations, and technology to create a roadmap for success
+#+end_quote
+* Components
+** Business Architecture
+** Technical Architecture
+** Application Architecture
+** [[id:ee0b0178-82f7-4fd2-af51-f6378f251c9e][Data Architecture]]
+* Resources
+ - TOGAF
+   - https://www.opengroup.org/togaf
+ - Gartner
+   - https://www.gartner.com/en/information-technology/role/enterprise-architecture-technology-leaders
+ - EABOK
+    - https://en.wikipedia.org/wiki/Enterprise_Architecture_Body_of_Knowledge

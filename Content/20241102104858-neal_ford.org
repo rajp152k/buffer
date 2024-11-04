@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       1cd07415-4076-4692-b30e-cea9cbf15300
+:END:
+#+title: Neal Ford
+#+filetags: :author:
+
+* Quotes
+** The Best Architecture
+- Never shoot for the best architecture, but rather the least worst architecture
+
+* Resources
+ - https://nealford.com/

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       477c67c1-b742-4b54-886f-a06ad47f231f
+:END:
+#+title: Software Architecture
+#+filetags: :cs:

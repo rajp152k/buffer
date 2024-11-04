@@ -3,3 +3,6 @@
 :ROAM_REFS: @armbrust_delta_2020
 :END:
 #+title: Delta lake: high-performance ACID table storage over cloud object stores
+
+* Resources
+ - [cite:@armbrust_delta_2020] https://dl.acm.org/doi/10.14778/3415478.3415560

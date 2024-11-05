@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       02ed8db4-c275-49ec-ae3f-6c97722bc072
+:END:
+#+title: Translation
+#+filetags: :nlp:ai:linguistics:

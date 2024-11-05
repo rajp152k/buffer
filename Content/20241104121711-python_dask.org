@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       307031dd-1645-472a-b5ee-aac421804e45
+:END:
+#+title: Dask
+#+filetags: :programming:python:
+
+* Resources
+ - https://www.dask.org/

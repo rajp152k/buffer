@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       939c16c5-9e25-4861-a5d4-6a47b3e55b16
+:END:
+#+title: DITAA (Diagrams through ascii art)
+#+filetags: :tool:chart:
+
+* Resources
+ - https://ditaa.sourceforge.net/

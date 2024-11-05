@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       acf63668-4e0f-4cbb-b64f-50bad5db2656
+:END:
+#+title: DuckDB
+#+filetags: :database:
+
+* Resources
+ - https://duckdb.org/

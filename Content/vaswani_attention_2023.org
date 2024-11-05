@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5372e665-a8cd-4d02-831b-1e6a408a9e95
+:ROAM_REFS: @vaswani_attention_2023
+:END:
+#+title: Attention Is All You Need
+#+filetags: :ai:ml:
+
+
+* Resources
+ - https://arxiv.org/abs/1706.03762

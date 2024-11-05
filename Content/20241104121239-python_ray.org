@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       bd065473-002d-4282-8ec6-9aebe0ebfbb8
+:END:
+#+title: Ray
+#+filetags: :python:ai:
+
+* Resources
+ - https://www.ray.io/

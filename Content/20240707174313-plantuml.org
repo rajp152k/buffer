@@ -66,3 +66,6 @@ Review --> Publish: Share
 
 * Resources
  - https://crashedmind.github.io/PlantUMLHitchhikersGuide/about/Sections.html
+
+* Relevent Nodes
+** [[id:939c16c5-9e25-4861-a5d4-6a47b3e55b16][DITAA]]

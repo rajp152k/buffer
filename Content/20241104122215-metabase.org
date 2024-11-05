@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       24e46630-7e76-4dfb-ac1d-2f33e3fde1aa
+:END:
+#+title: MetaBase
+#+filetags: :data:database:
+
+* Resources
+ - https://github.com/metabase/metabase

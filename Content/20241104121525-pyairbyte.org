@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       21f136f8-4e4f-4713-b50b-4e87efa60c93
+:END:
+#+title: PyAirByte
+#+filetags: :data:
+
+* Resources
+ - https://airbyte.com/product/pyairbyte

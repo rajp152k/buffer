@@ -2,13 +2,10 @@
 :ID:       ea67fa6d-6bc9-44fb-98a2-63bc9f95f8ea
 :END:
 #+title: Attention
-#+filetags: :tbp:ml:ai:
+#+filetags: :ml:ai:
 
 seeded here from the shortcomings of [[id:f70bec51-ce7d-404e-aa37-223f64f07691][Recurrent Neural Networks]].
 
 * Relevant Nodes
  - [[id:4f9006cf-6e6f-4019-bb8d-e7d5d85e191e][Transformers]]
  - [[id:affff439-329d-4962-bf5f-def85d75042e][Large Language Models]]
-
-* Resources
- - https://arxiv.org/abs/1706.03762

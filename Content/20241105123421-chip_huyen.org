@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3cddab8a-4462-4782-8077-6418979ecb66
+:END:
+#+title: Chip Huyen
+#+filetags: :author:
+
+* Resources
+ - https://huyenchip.com/

@@ -3,5 +3,23 @@
 :ROAM_ALIASES: LLM
 :END:
 #+title: Large Language Models
-#+filetags: :tbp:ml:ai:
+#+filetags: :ml:ai:
 
+* Overview
+** *Definition*:
+Large Language Models (LLMs) are a class of [[id:db649cb6-047e-426e-8cdc-774586ef30a0][artificial intelligence]] that leverage [[id:20230713T110040.814546][deep learning]] techniques, particularly [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][neural networks]], to understand, generate, and manipulate human [[id:9f8b59eb-aa65-4f37-ad64-6a575580ed1f][language]].
+
+** *Architecture*:
+  - Primarily founded on [[id:4f9006cf-6e6f-4019-bb8d-e7d5d85e191e][transformer]] architecture, this enables efficient processing and context understanding over longer text sequences.
+  - Components include layers of encoders and decoders, self-attention mechanisms, and feedforward neural networks.
+
+** *Training Data*:
+  - LLMs are trained on vast [[id:d177cba9-1273-4d38-a40a-dae7a618ead6][datasets]] comprising text from books, articles, websites, and various online resources.
+  - The quality and breadth of training data affect model performance and bias.
+
+** *Applications*:
+  - [[id:ea5448e1-82aa-428e-884e-460a3244129d][Text generation]], [[id:02ed8db4-c275-49ec-ae3f-6c97722bc072][translation]], [[id:6a6f631a-211f-4e00-8c65-f07478c1f3cd][summarization]], and [[id:09853995-d942-4ec5-bb9a-abf0996bae36][sentiment analysis]].
+  - [[id:a819cd68-91f9-4d67-b40f-fc37324f708b][Virtual assistants]], [[id:8c4f3ddc-fce2-415e-a34d-c7854b7cb3cd][chatbots]], and automated content creation.
+
+* Resources
+** Book: Building LLMs for production

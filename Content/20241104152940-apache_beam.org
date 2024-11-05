@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       53df04fb-61cd-44da-bd90-8f91062dd58e
+:END:
+#+title: Apache Beam
+#+filetags: :data:
+
+* Resource
+ - https://beam.apache.org/

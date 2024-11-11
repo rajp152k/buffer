@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       60121a6c-9dd8-4a17-8a87-15e8147ab228
+:END:
+#+title: Divide & Conquer
+#+filetags: :cs:

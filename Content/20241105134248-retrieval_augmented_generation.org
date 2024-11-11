@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       38b43748-ed73-4cb3-948d-d67756c2be7b
+:ROAM_ALIASES: RAG
+:END:
+#+title: Retrieval Augmented Generation
+#+filetags: :ai:ml:
+
+* Overview
+
+** *Definition*:
+  - A framework that combines machine learning models to enhance [[id:656af4b9-648b-41f9-932b-cbf2d2017794][information retrieval]] and [[id:ea5448e1-82aa-428e-884e-460a3244129d][text generation]] capabilities.
+  - It integrates two predominant AI tasks: retrieval of relevant data from a knowledge base and subsequent generation of a coherent response or narrative based on that data.
+
+** *Key Components*:
+  - *Retriever Model*:
+    - Generally based on models like [[id:a522a94f-23f0-4ecf-b9f9-1469f41a9bf0][BERT]], designed to extract relevant documents or data chunks from a large corpus.
+    - Utilizes [[id:656af4b9-648b-41f9-932b-cbf2d2017794][querying]] techniques to identify information pertinent to the user’s question or topic.
+  - *Generator Model*:
+    - Typically a language model such as [[id:214ec3f0-8aa3-426c-82fa-57886b5c0f39][GPT]], tasked with creating natural language output from the retrieved information.
+    - Ensures that the final response is coherent, contextually relevant, and aligns with human-like language quality.
+
+** *Applications*:
+  - Frequently used in conversational AI, customer service, and content creation to provide detailed, context-aware responses.
+  - Enhances research by providing a systemic way to retrieve and summarize knowledge from expansive datasets or articles.
+
+** *Challenges*:
+  - Accuracy in retrieval to ensure the generator has the most relevant and up-to-date information.
+  - Balancing the generation of creative language with factual correctness.
+  - Managing computational efficiency to handle the typically large models involved in such frameworks.
+
+** *Connections to Other Domains*:
+  - Similar to traditional search engines but advances the capability by integrating generative responses.
+  - Reflects advancements in NLP and AI where discrete models for retrieval and generation are continuously being refined and integrated.
+
+* Benefits
+** Reduces [[id:f3347380-f482-4077-a89b-a3ff059b4af6][Hallucinations]]
+ - limits context for the LLM to generate an answer
+** [[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Explainability]]
+ - can clearly reference sources for different aspects of the query
+** Specific and Up to Date Data
+** Lesser of a black box
+- lower reliance on the condesnsed memory of an LLM

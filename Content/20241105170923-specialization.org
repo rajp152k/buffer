@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6fcb5324-7c6f-4b3d-8a1e-718ad7142825
+:END:
+#+title: Specialization
+#+filetags: :meta:

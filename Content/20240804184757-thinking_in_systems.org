@@ -3,3 +3,6 @@
 :END:
 #+title: Thinking in Systems
 #+filetags: :book:
+
+* Relevant Nodes
+** [[id:b1b0dcb5-318c-4e6b-8e7f-885e9ca049de][Systems Engineering]]

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b1b0dcb5-318c-4e6b-8e7f-885e9ca049de
+:END:
+#+title: Systems Engineering
+#+filetags: :sys:meta:

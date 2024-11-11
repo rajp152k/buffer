@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       214ec3f0-8aa3-426c-82fa-57886b5c0f39
+:ROAM_ALIASES: "Generative Pretrained Transformer"
+:END:
+#+title: GPT
+#+filetags: :arch:ai:ml:

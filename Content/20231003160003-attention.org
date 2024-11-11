@@ -4,7 +4,103 @@
 #+title: Attention
 #+filetags: :ml:ai:
 
-seeded here from the shortcomings of [[id:f70bec51-ce7d-404e-aa37-223f64f07691][Recurrent Neural Networks]].
+* Overview
+- *Definition and Purpose*
+  - Attention mechanisms are computational techniques used to improve the efficiency and performance of neural networks.
+  - They allow models to focus on specific parts of the input data when making predictions or generating outputs, much like human attention.
+
+- *Types of Attention*
+  - *Soft Attention*: Assigns a probability distribution over the input elements, allowing the model to attend to different parts of the input differently.
+  - *Hard Attention*: Selects specific parts of the input with binary choices, often using reinforcement learning techniques.
+  - *Self-Attention*: Each element of the input sequence attends to all other elements, widely used in Transformer models.
+  - *Bahdanau Attention (Additive Attention)*: Computes weights using a feed-forward network, applying to encoder-decoder architectures.
+  - *Luong Attention (Multiplicative Attention)*: Utilizes dot-product or general methods for calculating alignment scores between input and output sequences.
+
+- *Applications*
+  - *[[id:20230713T150554.400026][Natural Language Processing]]*: Improves sequence-to-sequence tasks such as translation, summarization, and question answering.
+  - *[[id:2e6d0401-1bce-4aa8-8b5b-9a0f5557f15b][Computer Vision]]*: Helps in identifying relevant areas in images, enhancing object detection and image captioning.
+  - *[[id:89a9f1ff-2d93-4bcd-bb3d-7ba7fa3e9b11][Speech Recognition]]*: Aligns spoken and textual data, improving accuracy in transcriptions and translations.
+
+- *Key Models Leveraging Attention*
+  - *[[id:4f9006cf-6e6f-4019-bb8d-e7d5d85e191e][Transformer]]*: Utilizes self-attention and has become foundational in NLP tasks.
+  - *[[id:a522a94f-23f0-4ecf-b9f9-1469f41a9bf0][BERT]]*: Uses bidirectional attention to achieve deep contextual understanding.
+  - *[[id:214ec3f0-8aa3-426c-82fa-57886b5c0f39][GPT]]*: Autoregressive transformer-based model that generates human-like text by predicting next words in sequences.
+
+* Working Mechanism
+*** Self-Attention and Vectors
+- *Query (Q):* Determines which sequence elements to focus on by projecting the input sequence into a different space.
+- *Key (K):* Represents each sequence element in a way that allows the model to match it against the Query.
+- *Value (V):* Contains the actual information to aggregate and use for the output.
+
+*** Mathematical Explanation
+
+**** Self-Attention Mechanism
+- For a given word in a sequence, self-attention computes a weighted sum of values from all words in the sequence.
+- The weights are determined by the dot product of Query and Key vectors, followed by a softmax operation.
+
+**** Formulas
+
+1. *Computing the Attention Scores:*
+    - Let \( X \) be the input sequence matrix where each row is an input word vector.
+    - Compute Queries, Keys, and Values as linear projections of the input:
+      \[
+      Q = XW^Q, \quad K = XW^K, \quad V = XW^V
+      \]
+      where \( W^Q, W^K, W^V \) are learned parameter matrices specific to Query, Key, and Value respectively.
+
+2. *Scaled Dot-Product Attention:*
+   - Compute attention scores using dot products followed by scaling:
+     \[
+     \text{Attention Scores} = \frac{QK^T}{\sqrt{d_k}}
+     \]
+     where \( d_k \) is the dimension of the Key vectors (used for scaling to prevent large values which improve convergence).
+
+3. *Apply Softmax and Compute Output:*
+   - Apply the softmax function to the scores to obtain the attention weights:
+     \[
+     \text{Attention Weights} = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
+     \]
+   - Compute the final output as a weighted sum of the values:
+     \[
+     \text{Output} = \text{Attention Weights} \cdot V
+     \]
+
+*** Connections and Insights
+
+- *[[id:830928ea-680e-4fee-9466-6f2ac7840ef8][Projection]] Matrices:* The matrices \( W^Q, W^K, W^V \) transform the input to queries, keys, and values, allowing attention to operate over different semantic representations.
+- *[[id:799650ff-fea0-45b0-aabf-3f4d80540439][Softmax]] Scaling:* The division by \(\sqrt{d_k}\) stabilizes the gradients by preventing the dot-product values from becoming too large.
+- *Attention Mechanism:* It enables the transformer to focus differently on different input parts, capturing dependencies irrespective of their position.
+
+
+* Multihead Attention Detailed Elaboration
+
+Multihead Attention is a fundamental component of the Transformer architecture, which has been pivotal in advancing natural language processing and other fields.
+
+- *Core Concept*:
+  - Involves multiple attention mechanisms running in parallel, allowing the model to focus on different parts of the input sequence simultaneously.
+
+- *Multihead Attention*:
+  - Instead of having a single set of queries, keys, and values, Multihead Attention uses multiple sets, each called a 'head'.
+  - Each head performs its own scaled dot-product attention operation in parallel, and the results are concatenated and projected to obtain the final output.
+  - This allows the model to jointly attend to information from different representation subspaces at different positions.
+
+- *Benefits*:
+  - Enhanced modeling capacity: The use of multiple attention heads allows capturing diverse types of dependencies in the input.
+  - Parallelizability: Multihead attention enables parallel processing and efficient use of computational resources.
+
+- *Implementation Details*:
+  - In practice, the input is often split into a fixed number of heads, where each head performs attention on a portion of the embedding dimensions.
+  - The dimensions of Q, K, and V are typically chosen such that the dimensions after concatenation match the input dimension, facilitating residual connections, a key feature in Transformer architectures.
+
+- *Applications and Extensions*:
+  - Widely used in language models, such as BERT and GPT.
+  - Variants include multihead attention with relative positional encodings, multihead attention with local constraints in [[id:6145692e-b916-42d6-83a5-df1bc8eb2a6b][Vision Transformers]] (ViTs), etc.
+
+** Connections between these entities:
+
+- *Operational Process*: The attention mechanism's ability to focus comes from the interaction between Q, K, V, which is optimized through the training process, allowing for flexible modeling of input dependencies.
+- *Architectural Design*: Multihead mechanism builds upon the basic attention to leverage positional and contextual variations that a single head may miss.
+- *Use Cases*: This mechanism's applicability extends beyond NLP, making it versatile for problems involving sequential or spatial data.
 
 * Relevant Nodes
  - [[id:4f9006cf-6e6f-4019-bb8d-e7d5d85e191e][Transformers]]

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6145692e-b916-42d6-83a5-df1bc8eb2a6b
+:END:
+#+title: Vision Transformers
+#+filetags: :arch:ml:

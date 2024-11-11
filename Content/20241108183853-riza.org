@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       47a7b11e-aa28-4ca1-b212-0157471d12b2
+:END:
+#+title: Riza
+#+filetags: :programming:tool:
+
+* Use Cases
+ - execution engine for [[id:affff439-329d-4962-bf5f-def85d75042e][LLM's]] code outputs
+* Resources
+ - https://riza.io/

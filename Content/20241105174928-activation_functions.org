@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       63b96fd9-7a25-44e1-8670-df4be6ca8903
+:END:
+#+title: Activation Functions
+#+filetags: :ml:

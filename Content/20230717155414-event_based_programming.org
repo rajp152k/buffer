@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       46f09529-c273-49ed-9bf7-7e0a6d97d65c
-:ROAM_ALIASES: callbacks hooks "Event Based Programming"
+:ROAM_ALIASES: Callbacks Hooks "Event Based Programming"
 :END:
 #+title: Event Driven Architecture
 #+filetags: :cs:

@@ -9,9 +9,9 @@
 In order of increasing effort:
 *** Prompting with Context
 - provide more context with the regular prompt that you provide
-*** Retrieval Augmented Generation
+*** [[id:38b43748-ed73-4cb3-948d-d67756c2be7b][Retrieval Augmented Generation]]
 - fetch relevant data from a database and append that to the prompt
-*** Fine-Tuned Models
+*** [[id:fae10684-b86b-4ab7-9a52-2642414e22d7][Fine-Tuned]] Models
 - train foundational models further on your own data for refined responses
 *** Specifically Trained Models
 - train models from scratch for that specific context that you wish to optimize for

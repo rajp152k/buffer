@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       799650ff-fea0-45b0-aabf-3f4d80540439
+:END:
+#+title: Softmax
+#+filetags: :math:

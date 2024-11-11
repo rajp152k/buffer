@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bb9e6c1a-875c-47d9-8b34-2fe846343482
+:END:
+#+title: Backpropogation
+#+filetags: :ml:

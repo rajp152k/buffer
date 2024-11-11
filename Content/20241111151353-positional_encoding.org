@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       3b08a1d8-f66b-44dc-9f76-a9d021db9e8b
+:END:
+#+title: Positional Encoding
+#+filetags: :arch:ai:
+
+* Overview of positional encodings in NLP
+
+- *Definition*:
+  - used in [[id:20230713T150554.400026][NLP]] models, particularly in [[id:4f9006cf-6e6f-4019-bb8d-e7d5d85e191e][transformer]]-based architectures, to inject information about the position of tokens within a sequence into the model. This helps the model distinguish between identical tokens situated in different positions.
+
+- *Significance*:
+  - Traditional models like Recurrent Neural Networks (RNNs) naturally learn positional information due to their sequential processing. In contrast, transformers process sequences in parallel, requiring an explicit method to understand token order.
+
+- *Mechanism*:
+  - Positional encodings are added to the input embeddings and consist of a fixed set of vectors derived from mathematical functions.
+  - Commonly, sinusoids of varying frequencies are used, allowing models to potentially extrapolate sequences beyond the scope they were trained on.
+  - Each position is encoded separately with the function applied to calculate different values for sin and cos (example, using sine for even positions and cosine for odd positions).
+
+- *Mathematical Representation*:
+  - For a position \( pos \), and a position encoding dimension \( i \):
+    - \( PE(pos, 2i) = \sin(pos/10000^{2i/d_{model}}) \)
+    - \( PE(pos, 2i+1) = \cos(pos/10000^{2i/d_{model}}) \)
+  - Here, \( d_{model} \) is the dimension of the model's embeddings.
+
+- *Variants*:
+  - Absolute positional encoding (standard method) - uses fixed sinusoidal functions.
+  - Relative positional encoding - considers the relative distance between tokens, offering more flexibility in some cases, especially for tasks dealing with variable sequence lengths.
+
+- *Applications*:
+  - Used in transformers like BERT, GPT, and many other deep learning models that involve language understanding and generation.
+
+- *Pros and Cons*:
+  - *Pros*:
+    - No additional parameters, only computationally derived vectors, hence they are space efficient.
+    - Allows network to consider sequence order information effectively.
+  - *Cons*:
+    - Fixation on fixed-length sequences due to predefined functions can be a downside unless handled with relative encodings.
+
+The key connections in the concept of positional encoding revolve around:
+
+- The need for transformers to interpret input sequences in parallel without inherent positional information.
+- The choice between absolute and relative encodings based on the task requirements in NLP.
+- The interplay between sequence length and ability of the model to extrapolate based on the encoding strategy chosen.
+
+
+
+
+* Resources
+ - https://machinelearningmastery.com/a-gentle-introduction-to-positional-encoding-in-transformer-models-part-1/

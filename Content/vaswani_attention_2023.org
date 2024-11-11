@@ -3,8 +3,7 @@
 :ROAM_REFS: @vaswani_attention_2023
 :END:
 #+title: Attention Is All You Need
-#+filetags: :ai:ml:
-
+#+filetags: :ml:
 
 * Resources
  - https://arxiv.org/abs/1706.03762

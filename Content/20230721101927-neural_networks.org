@@ -4,47 +4,25 @@
 #+title: Neural Networks
 #+filetags: :ai:
 
-* Inspiration
- - mimicking the behaviour of neural circuits by activation and threshold functions : see [[https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf][A Logical calculus of the ideas immanent in nervous activity]]
- - 
-* Abstract
-A neural network is basically a mathematical function that maps input features to desired results that can be used for a desired task.
+* Overview
+** *Definition*:
+Neural Networks are computational models inspired by the [[id:72b5c162-cbcb-4838-a668-101aa47f3498][human brain's]] interconnected [[id:5ea528bc-34e8-49b8-bb03-ab4376e6f8ad][neuron]] structure, designed to recognize patterns and relationships in [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]].
 
-The mapping can be composed of several primary layers that result in a final nested function or a composition.
+** *Components*:
+  - *Neurons (Nodes)*: Basic processing units analogous to neurons in the brain.
+  - *Layers*:
+    - *Input Layer*: Receiving data input, each neuron represents a feature of the input data.
+    - *Hidden Layers*: Intermediate layers that transform inputs through weights and activation functions.
+    - *Output Layer*: Produces the final prediction or output of the model.
 
-These layers are of different nature and serve different purposes to help build a comprehensible latent map of the input features that can be output into a valuable result.
+** *Key Concepts*:
+  - *[[id:04765817-4d53-4f95-88e0-3e28be6aa89a][Weights and Biases]]*: Parameters that are learned and adjusted during training to minimize error.
+  - *[[id:63b96fd9-7a25-44e1-8670-df4be6ca8903][Activation Functions]]*: Introduce non-linearity into the model (e.g., ReLU, Sigmoid, Tanh).
+  - *[[id:bb9e6c1a-875c-47d9-8b34-2fe846343482][Backpropagation]]*: Training algorithm that updates weights and biases to minimize the loss function.
+  - *[[id:8a125f0a-34d5-4a40-b3fa-d356c9676c5d][Loss Function]]*: A metric to quantify how well the model's predictions match the target values.
 
-Based on the output and provided labels, one can engineer a loss function relevant to our requirements. The loss function can then be minimized by tweaking the function parameters by optimization algorithms (see [[id:a4761c32-806d-4a7f-ba18-27136a3de1fc][Gradient Descent]] and [[id:b9a1ec54-7977-418f-9181-8c4ff0254aed][Matrix Calculus]]).
+** *Challenges*:
+  - *Computational Costs*: High resource requirements for training, especially with large datasets.
 
-All that is really happening is we're modelling a function based on sample inputs and outputs in the case of [[id:90bcd50c-a360-4fd2-a5f2-356a6c7035cd][Supervised Learning]].
-
-Studying neural networks can then be broken down into analysing behaviours of consituent layers that make it up, the nature of the gradients, for instance, being one such factor one can consider during their analysis. 
-
-Variants of a neural network can be engineered by manipulating these layers. For instance:
- - placing a logistic layer in the end yields a classifier
- - placing a linear layer in the end yields a regressor
-
-Any form of output (mixtures of categorical and numerical format - images, bounding boxes, segmentation marks and labels, video tags, etc) can be than captured by a neural network.
-
-One important characteristic that should be captured by these layers is that they should be able to capture the notion of non-linearity in some way. Otherwise, the complete model will also be unable to model non-linear functions - which is usually the case for most real life applications.
-
-A basic way of introducing non-linearities is having non-linear activation functions like:
-
-#+begin_src lisp
-  (defun relu (input)
-    (if (< input 0) 0 input))
-
-  (defun tanh (input)
-    (let* ((ez (power e input))
-	   (e-z (/ 1 ez)))
-      (/ (- ez e-z)
-	 (+ ez e-z))))
-#+end_src
-
-For a deeper analysis of the calculus needed during the operations of neural network, check out [[id:b9a1ec54-7977-418f-9181-8c4ff0254aed][Matrix Calculus]]
-
-* Different kinds of neural networks
-This node serves as an index into various major classes of neural networks mentioned in this brain dump. all of them have been tagged with :nn:.
-** [[id:26f0b76d-c430-484c-832e-e1917800b43c][Convolutional Neural Networks]]
-** [[id:f70bec51-ce7d-404e-aa37-223f64f07691][Recurrent Neural Networks]]
-** [[id:bff6a881-a5f7-4e20-af5a-1a952b193591][Siamese Neural Networks]]
+* Resources
+ - https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf

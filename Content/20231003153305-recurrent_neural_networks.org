@@ -1,34 +1,25 @@
 :PROPERTIES:
 :ID:       f70bec51-ce7d-404e-aa37-223f64f07691
+:ROAM_ALIASES: RNN
 :END:
 #+title: Recurrent Neural Networks
-#+filetags: :nn:ml:ai:
+#+filetags: :arch:ml:
 
- - Used to label, classify or generate seqences.
-   - a sequence is a collection of objects and different than a set in the sense that the order of the objects matters.
- - this, therefore has a natural application to text processing, and consequently, speech processing as well.
+* Overview
 
+**  *Definition*:
+Recurrent Neural Networks (RNNs) are a class of artificial neural networks designed to recognize patterns in [[id:0dca64bc-836f-48f4-8c48-4f9fb4d098c1][sequences]] of data, such as [[id:a8cdf417-e51e-4465-9ae1-035d9373099f][time series]] or [[id:20230713T150554.400026][natural language]].
 
-This isn't a simple feed forward network as it contains loops.
+**  *Key Features*:
+  - *Sequence Handling*: RNNs possess an internal state (memory) that allows them to process sequences by maintaining a hidden state from previous inputs.
+  - *Recurrent Connections*: Unlike feedforward neural networks, RNNs have loops to enable information to persist. This looping allows the network to model temporal dynamics.
 
-** Crux
+**  *Architecture*:
+  - *Hidden Layers*: RNNs typically consist of input, hidden, and output layers. The hidden layers have a recurrent connection with a loop that feeds back into the layer.
+  - *Activation Functions*: Commonly used activation functions in RNNs include the tanh and ReLU functions. However, due to issues like vanishing gradients, other architectures like Long Short-Term Memory (LSTM) or Gated Recurrent Unit (GRU) are often used.
 
-Each unit in a layer has it's own memory state, and takes in two inputs:
- - outputs from the previous layers
- - outputs from the same layer from the previous time step
+**  *Challenges*:
+  - *[[id:5affdbd4-d042-4580-85d6-f8ade06d961c][Vanishing/Exploding Gradients]]*: Because RNNs backpropagate through time, they often face these gradient issues, where gradients may become too small or too large to manage effectively.
 
-.. to produce a vector of outputs for this layer at the current timestep.
-
-The order of the sequence is captured via temporally spacing the processing of the tokens in the sequence.
-
-Variants of the above result in different ways to process sequences.
-
-** Shortcomings
-
-The notion of "context" of a token is weaker in a a normal RNN in that one can only see what came before that token in that token.
- - one way to address this is work bidirectionally with the sequence so as to capture forward and backward glances.
-
-RNNs also lose ability to capture their dependency relations over long sequences.
- - Gated RNNs : Long Short Term Memory (LSTM) networks and Gated Recurrent Units (GRU) are current practical instances of RNNs in use today. They can store information about tokens for future use.
-This enforces an unnecessary bias on the model that closely related tokens will affect each other more which might not be the cases in all applications : take the presence of different signifiers of arguments followed by the relevant clauses in the English language later on in the sequence (although, however, but, etc).
- - one way to address this is to introduce [[id:ea67fa6d-6bc9-44fb-98a2-63bc9f95f8ea][attention modules]] that allow the processing of a token to factor in all the other tokens in a sequence at a time without any sequential dependency assumptions.
+**  *Advancements*:
+  - *[[id:4fcd41ce-1be2-4e18-8918-772c5f90690e][LSTM]] and [[id:8fa544d9-3529-484f-88a4-2000683515e2][GRU]]*: Variants of RNNs like LSTM and GRU are designed to better capture long-range dependencies without being affected significantly by gradient issues.

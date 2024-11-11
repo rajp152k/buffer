@@ -3,3 +3,58 @@
 :END:
 #+title: Langchain
 #+filetags: :ai:tool:
+
+* Key Concepts & Components
+** [[id:c4058b62-7997-4c35-a852-63075e2be4c4][Prompts]]
+ LangChain provides tooling to create and work with prompt templates. Prompt templates are predefined recipes for generating prompts for [[id:affff439-329d-4962-bf5f-def85d75042e][language models]].
+** Output Parsers
+ Output parsers are classes that help structure language model responses. They are responsible for taking the output of an LLM and transforming it into a more suitable format.
+** [[id:38b43748-ed73-4cb3-948d-d67756c2be7b][Retrievers]]
+ Retrievers accept a string query as input and return a list of Documents as output. LangChain provides several advanced retrieval types and also integrates with many third-party retrieval services.
+** Document Loaders
+ A Document is a piece of text and associated metadata. Document loaders provide a “load” method for loading data as documents from a configured source.
+** Text Splitters
+ Text splitters divide a document or text into smaller chunks or segments. LangChain has a number of built-in document transformers that can split, combine, and filter documents.
+** [[id:656af4b9-648b-41f9-932b-cbf2d2017794][Indexes]]
+ An index in LangChain is a data structure that organizes and stores data to facilitate quick and efficient searches.
+** [[id:1e4742cb-ae8f-4f6d-863f-e5d2fb321bbc][Embeddings]] models
+ The Embeddings class is designed to interface with text embedding models. It provides a standard interface for different embedding model providers, such as OpenAI, Cohere, Hugging Face, etc.
+** [[id:054bc1aa-98ca-4370-9de2-b1922ab731f5][Vector]] Stores
+ A vector store stores embedded data and performs vector search. Embedding and storing embedding vectors is one of the most common ways to store and search over unstructured data.
+** [[id:a819cd68-91f9-4d67-b40f-fc37324f708b][Agents]]
+ Agents are the decision-making components that decide the plan of action or process.
+** Chains
+ They are sequences of calls, whether to an LLM, a tool, or a data preprocessing step. They integrate various components into a user-friendly interface, including the model, prompt, memory, output parsing, and debugging capabilities.
+** Tool
+ A tool is a specific function that helps the language model gather the necessary information for task completion. Tools can range from Google Searches and database queries to Python REPL and other chains.
+** Memory
+ This feature records past interactions with a language model, providing context for future interactions.
+** [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Callbacks]]
+ LangChain provides a callbacks system that allows you to hook into the various stages of your LLM application. This is useful for logging, monitoring, and streaming.
+
+
+* LangChain Agents & Tools Overview
+** What?
+ - complete tasks using chains, prompts, memory, and tools
+ - can perform diverse tasks, including executing steps in a predetermined sequence, interfacing with external systems and more
+
+**  Types
+*** Zero-shot [[id:89ec4a3c-b4bd-43e6-9752-18ee111dce46][ReAct]]
+  - uses the ReAct framework to decide tool usage based on the descriptions.
+  - termed “zero-shot” because it relies only on the tool descriptions without the need for specific usage examples.
+*** Structured Input ReAct
+  - manages tools that necessitate multiple inputs.
+*** OpenAI Functions Agent
+  - specifically developed for function calls for fine-tuned models
+*** Self-Ask with Search Agent
+  - sources factual responses to questions, specializing in the “Intermediate Answer” tool.
+  - similar to the methodology in the original self-ask with search research.
+*** ReAct Document Store Agent
+  - combines the “Search” and “Lookup” tools to provide a continuous thought process.
+*** Plan-and-Execute Agents
+ - formulates a plan consisting of multiple actions, which are then carried out sequentially
+ - particularly effective for complex or long-running tasks, maintaining a steady focus on long-term goals
+ - However, one trade-off  is the potential for increased latency.
+
+* All tools
+ - https://python.langchain.com/docs/integrations/tools/

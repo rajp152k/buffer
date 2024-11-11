@@ -2,10 +2,10 @@
 :ID:       f3347380-f482-4077-a89b-a3ff059b4af6
 :END:
 #+title: Hallucinate
-#+filetags: :meta:
+#+filetags: :ai:meta:
 
+* Hallucinations in [[id:affff439-329d-4962-bf5f-def85d75042e][LLMs]]
 * Misc
-
  - without pulling up a dictionary, this pertains to something that isn't "real".
  - boundaries between plans, dreams, reality, delusions and the likes are discretized by the tag of hallucinations.
  - I think it has the potential to be an interesting exercise that can serve some purposes that I'm not yet aware of.

@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       a4e712e1-a233-4173-91fa-4e145bd68769
+:ROAM_ALIASES: Telecommunication
 :END:
 #+title: Computer Networks
 #+filetags: :network:cs:programming:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       affff439-329d-4962-bf5f-def85d75042e
-:ROAM_ALIASES: LLM
+:ROAM_ALIASES: LLMs
 :END:
 #+title: Large Language Models
 #+filetags: :ml:ai:
@@ -21,5 +21,81 @@ Large Language Models (LLMs) are a class of [[id:db649cb6-047e-426e-8cdc-774586e
   - [[id:ea5448e1-82aa-428e-884e-460a3244129d][Text generation]], [[id:02ed8db4-c275-49ec-ae3f-6c97722bc072][translation]], [[id:6a6f631a-211f-4e00-8c65-f07478c1f3cd][summarization]], and [[id:09853995-d942-4ec5-bb9a-abf0996bae36][sentiment analysis]].
   - [[id:a819cd68-91f9-4d67-b40f-fc37324f708b][Virtual assistants]], [[id:8c4f3ddc-fce2-415e-a34d-c7854b7cb3cd][chatbots]], and automated content creation.
 
+* Relevant Attributes
+** Context Window
+- *Definition*:
+  - The context window refers to the amount of text (i.e., number of tokens) that a language model considers when generating a response.
+  - This is essentially the "memory" the model uses to understand the current input and produce coherent outputs.
+
+- *Technical Aspects*:
+  - The size of a context window is often set by the architecture of the model and can vary across different implementations.
+  - It dictates the length of text the model can process at one time, influencing both coherence and relevance.
+
+- *Operational Implications*:
+  - A smaller context window means potential truncation of input, which could lead to loss of information if the input exceeds the window size.
+  - A larger context window allows the model to draw from a more substantial portion of text, enhancing its ability to maintain coherence across a longer narrative.
+
+- *Storage and Performance*:
+  - Larger context windows generally require more computational resources due to the increased memory footprint and processing time.
+  - This can impact system performance, requiring optimization to handle longer context windows efficiently.
+
+- *Limitations*:
+  - Even when a large context window is available, models may struggle with very long-term dependencies, as the influence of earlier parts of the text diminishes.
+  - Potential for decreased relevance over larger spans due to the nature of attention mechanisms.
+
+* Misc
+** The [[id:4bc04a14-32df-422d-9ab1-9bc0cfd41fe6][March of Nines]] w.r.t. LLMs
+*** [[id:c4058b62-7997-4c35-a852-63075e2be4c4][Prompt Engineering]]
+*** [[id:38b43748-ed73-4cb3-948d-d67756c2be7b][Retrieval Augmented Generation]]
+*** [[id:fae10684-b86b-4ab7-9a52-2642414e22d7][Fine Tuning]]
+*** Custom UI/UX
+** Scaling Laws
+The scaling laws for Large Language Models (LLMs) describe how changes in different parameters affect the performance of these models.
+ - N : Number of Params
+ - D : Dataset size
+ - F : FLOPs
+**** (N) *Model Size*:
+  - Increasing the number of parameters in a model generally improves performance. However, the performance gains may diminish past a certain point due to diminishing returns.
+  - Larger models capture more complex patterns and nuances in data, which can help improve generalization.
+
+**** (D) *Data Size*:
+  - More training data typically leads to better model performance, as it allows the model to learn from a wider array of examples and scenarios.
+  - There's a synergy between model size and data size; a larger model may require significantly more data to reach optimal performance.
+  - recommended training data set size of 20 times the number of model parameters : see the chinchilla paper
+
+**** (F) *Compute Budget*:
+  - The amount of computational resources directly influences the model's training and inference times.
+  - Efficient utilization of the compute budget involves balancing between model size and data size to achieve the desired performance.
+
+*** Resources
+ - The Chinchilla Paper : https://arxiv.org/abs/2203.15556 :  [cite:@hoffmann_training_2022]
+** Emergent Abilities in LLMs
+
+- *Definition*:
+  - Emergent abilities are features or skills that manifest in large-scale neural networks and are not observed in smaller models.
+
+- *Scale and Complexity*:
+  - The occurrence of emergent abilities is generally correlated with an increase in the model's parameters and training data.
+  - Larger models have a more complex representation space, allowing for more sophisticated pattern recognition and problem-solving.
+
+- *Examples*:
+  - Language translation without specific training for multilingual tasks.
+  - Basic reasoning and common sense knowledge application.
+  - Playing complex games or performing tasks that require strategy or planning.
+
+- *Reasons for Emergence*:
+  - Large datasets provide diverse patterns and contexts, assisting in generalization.
+  - Complex architectures allow for nuanced data transformations, uncovering higher-order patterns.
+  - Spontaneous discovery of useful heuristics or shortcuts to perform tasks efficiently.
+
+- *Research and Development Directions*:
+  - Increasingly accurate benchmarking and analysis to study when and how these abilities manifest.
+  - Developing tools to better visualize and interpret the decision-making processes of LLMs.
+** Evaluating LLMS via Benchmarks
+*** Big Bench Suite
+*** Truthful QA
+*** Massive Multitask Language Understanding
+*** Word in Context
 * Resources
 ** Book: Building LLMs for production
+ - https://towardsai.net/book

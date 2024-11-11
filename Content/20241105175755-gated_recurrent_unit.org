@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8fa544d9-3529-484f-88a4-2000683515e2
+:END:
+#+title: Gated Recurrent Unit
+#+filetags: :ml:

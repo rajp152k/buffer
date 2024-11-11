@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       2002e82c-6381-4e40-ad04-8cc0cc026445
+:END:
+#+title: OpenAI
+#+filetags: :ai:
+
+* Relevant Nodes
+ - [[id:affff439-329d-4962-bf5f-def85d75042e][LLMs]]
+* Resources
+ - https://github.com/openai/openai-cookbook

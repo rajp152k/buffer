@@ -1,10 +1,11 @@
 :PROPERTIES:
 :ID:       656af4b9-648b-41f9-932b-cbf2d2017794
+:ROAM_ALIASES: "Information Retrieval"
 :END:
 #+title: Search
 #+filetags: :meta:
 
-* checkout
+* Tooling
 - https://lunrjs.com/
 - https://xapian.org/
 - https://xapian.org/docs/omega/overview.html

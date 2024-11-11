@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       89ec4a3c-b4bd-43e6-9752-18ee111dce46
+:END:
+#+title: ReAct
+#+filetags: :ml:
+
+* ReAct Agents
+** *Reasoning*:
+  - capable of generating a thought process similar to human reasoning before reaching conclusions.
+  - involves creating intermediate reasoning steps that are often explicit and human-readable.
+  - They resemble methods like chain-of-thought prompting, where the solving process is broken down into logical steps.
+
+** *Acting*:
+  - Besides just reasoning, these agents can interact with their environment or perform tasks based on their thought-out reasoning.
+  - This involves taking actions that can lead to gathering more information or interacting with an underlying system or environment based on the conclusions drawn from reasoning.
+
+** *Combining Reasoning and Acting*:
+  - ReAct agents merge the two capabilities, enabling them to apply reasoned decision-making to guide actions.
+  - This is particularly useful in complex decision-making scenarios where both understanding and interacting with dynamic data or environments are required.
+
+* [[id:3bfe1fcd-bd56-495e-8015-a38981fccf0c][Zero-Shot]] ReAct
+- *Interplay between Prediction and Action:*
+  - Both frameworks can be pivotal in scenarios where systems need to operate with limited prior examples (as in Zero-Shot) and then intelligently decide actions based on inference (as in ReAct).
+- *Hybrid Implementations:*
+  - Zero-Shot reasoning could provide a prior foundation upon which ReAct strategies enhance operational decisions in novel situations.
+- *Complementary Strengths:*
+  - ZSL's capability to extend inference over unseen classes is complemented by ReAct’s structured decision-making processes, potentially leading to robust autonomous systems.
+
+* Structured Input ReAct
+** Definition:
+  - Structured Input ReAct involves using predefined, organized data formats to enhance both the reasoning and acting capabilities of ReAct agents.
+
+** Advantages:
+  - Enables more accurate reasoning due to the clarity and consistency of the input format.
+  - Reduces ambiguity in decision-making, leading to more effective actions.
+
+** Applications:
+  - Suitable for environments where data is consistently structured or can be organized prior to processing (e.g., financial data analysis, industrial automation systems).
+
+** Design Considerations:
+  - Requires robust mechanisms to transform raw data into a structured format before being fed into the ReAct system.
+  - Often involves a trade-off in flexibility, as highly structured inputs may not accommodate unexpected or novel data types as effectively.
+
+** Connections:
+  - Structured Input ReAct can significantly enhance Zero-Shot ReAct scenarios by using organized data to fill knowledge gaps when facing unseen tasks or environments.

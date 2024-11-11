@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4789146c-f0f7-41f6-8c29-aac16ef7a2cc
+:END:
+#+title: Latex
+#+filetags: :meta:

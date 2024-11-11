@@ -1,13 +1,39 @@
 :PROPERTIES:
 :ID:       67812842-bd33-4927-a693-fdf02721b019
+:ROAM_ALIASES: MoE
 :END:
 #+title: Mixture of Experts
-#+filetags: :ai:
+#+filetags: :ml:
 
-* Stream
-** 0x2148
-Read about GPT4 being a mixture of experts. Will explore further soon
+* Overview
 
-* Resources
-- https://en.wikipedia.org/wiki/Mixture_of_experts
+** *Mixture of Experts (MoE):*
+  - An [[id:05507b9a-ab6b-45cb-92b4-d71b574c5b7b][ensemble]] technique generally used in machine learning and artificial intelligence.
+  - Involves multiple "experts" models, each specialized in different parts of the input space or tasks.
+  - A gating network is used to determine which expert should be used for a particular input.
 
+** *Key Concepts:*
+  - *Expert Models:* Specialized models that focus on specific areas of a problem or dataset.
+  - *Gating Network:* A mechanism that selects the most appropriate expert or combination of experts for given input data.
+  - *Ensemble Method:* Combines the outputs of different models to improve the performance over single models.
+
+** *Benefits:*
+  - Offers the potential for increased efficiency as each expert only processes relevant data, reducing computational load.
+  - Can lead to better model performance by leveraging specialization.
+  - Encourages increased model interpretability through modular design.
+
+** *Challenges:*
+  - Designing effective gating networks can be complex.
+  - Balancing the expertise for different subspaces or tasks is non-trivial.
+  - Overhead of managing and training multiple experts.
+
+** *Applications:*
+  - Any domain where tasks can be effectively decomposed or benefit from [[id:6fcb5324-7c6f-4b3d-8a1e-718ad7142825][specialization]].
+
+** *In-Depth Connections:*
+
+- The gating mechanism can draw parallels to [[id:ea67fa6d-6bc9-44fb-98a2-63bc9f95f8ea][attention mechanisms]] where certain "attention weights" dictate focus on parts of data.
+
+- Shares similarities with [[id:b8f3591e-1d49-4a0d-9182-3c8e33a48450][modular neural networks]], which aim to handle complex tasks through specialized components.
+
+- MoE is conceptually related to [[id:60121a6c-9dd8-4a17-8a87-15e8147ab228][divide-and-conquer]] strategies in computer science, where problems are broken into simpler sub-problems.

@@ -2,7 +2,68 @@
 :ID:       4f9006cf-6e6f-4019-bb8d-e7d5d85e191e
 :END:
 #+title: Transformers
-#+filetags: :ml:ai:
+#+filetags: :arch:ml:ai:
 
+* Architecture
+** Conceptual Components
+- *Self-attention Mechanism*
+  - Enables the model to weigh the significance of each component of the input data relative to others.
+  - Allows for capturing dependencies across sequences regardless of their distance apart.
+- *Multi-head Attention*
+  - Extends the self-attention mechanism by having multiple attention heads.
+  - Each head learns different aspects of the relationships between the sequence components and concatenates their outputs for a richer representation.
+- *Feed-forward Neural Networks*
+  - Positioned after each multi-head attention block to further transform the attention outputs through non-linear layers.
+  - Applied identically to each position separately and independently.
+- *Position-wise Encoding*
+  - Necessary because self-attention mechanisms don't inherently consider the order of input tokens.
+  - Positional encodings are added to input embeddings to provide the model with information about the position of each word.
+- *Transformer Blocks*
+  - Standardized architecture including layers of multi-head self-attention followed by feed-forward neural networks.
+  - Each block includes layer normalization and residual connections for stable training.
+- *Encoder-Decoder Structure (in many cases)*
+  - The encoder processes the input sequence and creates a representation.
+  - The decoder uses this representation along with its own inputs from prior time steps to generate output sequences.
+** Temporal Breakdown
+ - Input [[id:1e4742cb-ae8f-4f6d-863f-e5d2fb321bbc][Embeddings]]
+ - [[id:3b08a1d8-f66b-44dc-9f76-a9d021db9e8b][Positional Encoding]]
+ - [[id:ea67fa6d-6bc9-44fb-98a2-63bc9f95f8ea][Self Attention]] Mechanism
+
+* Misc
+** Computational Complexity of Transformers
+
+When considering the computational complexity of Transformer models, a few key points need to be examined
+
+
+*** *Attention Mechanism*
+ The core operation in Transformers is the self-[[id:ea67fa6d-6bc9-44fb-98a2-63bc9f95f8ea][attention]] mechanism, which computes the pairwise interactions between all tokens in a sequence.
+  - It generally has a complexity of \(O(n^2 \cdot d)\), where \(n\) is the number of tokens in the sequence and \(d\) is the dimensionality of the token embeddings. This quadratic dependency on the sequence length is a central concern in scaling transformers.
+
+*** *Feedforward [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Networks]]*
+ After the self-attention layer, Transformers use a position-wise fully connected feedforward network.
+  - This operation has a complexity of \(O(n \cdot d^2)\), but typically the quadratic dependency with respect to \(d\) is not as prohibitive as the quadratic dependency on \(n\).
+
+*** *Overall Complexity*
+ Combining these, each Transformer layer generally has a complexity of \(O(n^2 \cdot d + n \cdot d^2)\), with the self-attention mechanism often being the computational bottleneck, especially for long sequences.
+
+*** *Impact of Sequence Length*
+ The quadratic complexity with respect to the sequence length \(n\) means that the computation and memory requirements grow quickly with longer inputs, often limiting the practical application of standard Transformers to relatively short sequences.
+
+*** *Optimizations and Variants*
+
+  - *Efficient Attention Mechanisms*
+ Various approaches like Linformer, Reformer, or Longformer have been proposed to reduce the complexity of the attention mechanism using approximations, sparsity, or other transformations to bring the complexity closer to linear or other sub-quadratic forms.
+  - *Sparse Attention*
+ Techniques such as sparse attention patterns can help reduce the computational burden by only considering a subset of token pairs in the attention calculation.
+
+*** *Memory Considerations*
+ Beyond time complexity, Transformers are also memory-intensive, particularly because the attention mechanism requires storing a large attention matrix of size \(n \times n\), leading to memory usage that can become prohibitive.
+
+To gain a more comprehensive understanding of computational complexity in Transformers, these aspects should be connected with practical applications, constraints, and innovations
+
+
+ -  The quadratic attention complexity creates a big challenge for NLP tasks involving long documents, sequences, or contexts.
+ -  As models become larger (e.g., GPT-3, BERT Large), considerations around efficiency and scalability become paramount, particularly in terms of deployment and inference.
+ -  The development of efficient Transformers aligns with increasing interest in expanding the practical applications of NLP to real-time and resource-constrained environments.
 * Resources
-- [cite:@vaswani_attention_2023] :
+- [cite:@vaswani_attention_2023] : [[id:5372e665-a8cd-4d02-831b-1e6a408a9e95][Attention Is All You Need]]

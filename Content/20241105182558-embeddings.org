@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       1e4742cb-ae8f-4f6d-863f-e5d2fb321bbc
+:END:
+#+title: Embeddings
+#+filetags: :ml:
+
+* Overview
+** *Definition:*
+  - Embeddings are a method to represent categorical data, usually words or items, into continuous [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][vector spaces]]. They aim to capture the semantic meaning of these items in a form that is conducive to machine learning models.
+
+** *Mechanisms:*
+  - [[id:bc56a36d-6b62-4e9c-b540-00528d72b3b5][Neural Networks]]: Most embeddings are learned as part of a neural network-based model.
+  - [[id:ec4cd02f-e700-41ce-93df-484dfdf8d3eb][Dimensionality Reduction]]: Techniques like [[id:dfdad686-71df-41b7-bdcc-b859f6cdc1ae][PCA]] (Principal Component Analysis) or [[id:b7ef9ede-f335-4d40-983a-99a5b4011177][t-SNE]] (t-Distributed Stochastic Neighbor Embedding) can be used to create embeddings.
+
+** *Benefits:*
+  - Semantic Meaning: Embeddings allow capturing relationships and meanings between items (e.g., words with similar meanings have similar embeddings).
+  - [[id:ec4cd02f-e700-41ce-93df-484dfdf8d3eb][Dimensionality Reduction]]: Transforming data into lower dimensions helps in reducing computational cost while preserving essential information.
+
+** *Challenges:*
+  - [[id:398d134d-6193-409a-b3b5-9e7c7de86ce7][Interpretability]]: Embeddings are often dense vectors that aren't directly interpretable by humans.
+  - Training Data [[id:9b9f920e-31a4-40b8-b051-fc01b5e4a4ac][Bias]]: Embeddings can inherit biases present in the training datasets.
+  - [[id:64c6a881-ef47-4973-a821-34e0cc085f34][Domain-Specificity]]: Embeddings trained on one domain might not generalize well to another without fine-tuning.
+
+** *Trends:*
+  - Use in [[id:3057f68a-b547-4e45-bde7-bb03e29d0876][multimodal AI]] scenarios combining text, image, and sound data for richer representations.
+

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f23475aa-a639-4550-819d-5c2201b22fbe
+:END:
+#+title: Cohere
+#+filetags: :tool:ai:
+
+* Resources
+ - https://cohere.com/

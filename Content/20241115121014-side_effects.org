@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ca98597a-027f-4eda-bbb2-801b8f74d0a5
+:END:
+#+title: Side Effects
+#+filetags: :programming:

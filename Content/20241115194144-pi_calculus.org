@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       b2efd76b-740b-486d-b307-7ea4bed72b5d
+:END:
+#+title: Pi Calculus
+#+filetags: :meta:
+
+* Overview
+
+  - for the study of [[id:618d0535-411d-4c36-b176-84413ec8bfc1][concurrent]] systems.
+  - allows for the description, analysis, and verification of interacting systems.
+
+  - *Core Concepts:*
+    - *Processes*: The fundamental units of Pi Calculus that engage in interactions.
+    - *Channels*: The conduits for communication between processes.
+    - *Mobility*: The notion that the connection structure among processes can change over time.
+    - *Names*: Used in Pi Calculus to represent channels and can be communicated between processes, enabling dynamic topology.
+
+  - *Operations:*
+    - *Prefix*: =(x).P= describes a process P that waits to receive input on channel x before proceeding.
+    - *Output*:  =x<y>.P= describes a process P that sends y over channel x and then behaves as P.
+    - *Parallel Composition*: =P | Q= represents the parallel execution of processes P and Q.
+    - *Restriction*: =νx.P= restricts the scope of the channel x to the process P, meaning x is private to P.
+    - *Replication*: =!P= indicates an unbounded number of copies of process P running in parallel.
+
+  - *Applications:*
+    - Used in modeling and verifying protocols for [[id:a4e712e1-a233-4173-91fa-4e145bd68769][communication]] networks.
+    - Helps in analyzing the correctness of [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]] and their ability to handle concurrency.
+    - Provides foundational structures for programming languages designed for concurrent computations.
+
+  - *Related Concepts:*
+    - *Calculus of Communicating Systems (CCS)*: An earlier model of concurrency developed by Milner.
+    - *Mobile processes*: A shift from static to dynamic process structures, where the communication links between processes can change, a concept captured by Pi Calculus.

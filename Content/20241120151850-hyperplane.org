@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       892fad58-dbf7-4db6-8184-51bd4276d462
+:END:
+#+title: hyperplane
+#+filetags: :math:

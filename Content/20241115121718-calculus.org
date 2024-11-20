@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       c30a1e1b-f615-4b02-884f-656fee743e1d
+:ROAM_ALIASES: Calculi
+:END:
+#+title: Calculus
+#+filetags: :meta:
+
+* Etymological roots
+
+- *Origin Language*: The word "calculus" comes from Latin.
+- *Latin Meaning*: In Latin, "calculus" means "small stone" or "pebble."
+- *Historical Context*:
+  - /Counting Stones/: This term was historically used because small stones were used for counting and calculations, particularly in the ancient abacus.
+  - /Mathematical Practice/: As methods for systematic calculation evolved, the name stuck to represent the burgeoning mathematical field.
+- *Development of Mathematical Concept*:
+  - /17th Century and Beyond/: The development of calculus as we understand it today is attributed to the work of mathematicians Neumann, Leibniz, and Newton in the 17th century.
+  - /Use as a Mathematical Term/: Over time, "calculus" began to be used more broadly in the context of mathematics to specifically signify the advanced study of rates of change and quantities found under curves.
+
+Connections and Further Exploration:
+
+- The term’s roots in counting and measurement reflect the foundational aspects of calculus as a system for analyzing changes quantitatively.
+- The use of a metaphorical "small stones" indicates the fundamental building blocks nature of calculus in mathematics, similar to atoms in matter.
+- The transition from physical representations (stones) to abstract mathematical formulations mirrors the broader evolution of scientific thought from tangible observations to abstract theories.
+
+Questions for Further Exploration:
+
+- How did the transition from physical methods of calculation to theoretical calculus influence other scientific domains?
+- What impact did the work of Newton and Leibniz have on the understanding and teaching of calculus in modern education systems?
+- How has the notion of 'building blocks' evolved in other areas of mathematics and science from the etymological roots of calculus?
+
+* Branches
+** [[id:b2efd76b-740b-486d-b307-7ea4bed72b5d][Pi Calculus]]

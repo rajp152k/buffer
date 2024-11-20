@@ -34,6 +34,10 @@ Maxwell's equations of Software (~Alan Kay in some Interview~)
 	(#t       (apply (car e) (evlis (cdr e) a) a))))
 #+end_src
 * Comment-Stream
+** 0x2303
+ - read up on the sharp dot (#.) read macro
+ - https://www.lispworks.com/documentation/HyperSpec/Body/02_dhf.htm
+
 ** 0x22DA
  - what goes into [[id:2dfa41e9-07ba-4deb-a466-af409fa8b465][writing a lisp]] interpreter?
 ** 0x227B

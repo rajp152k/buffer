@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       912ba440-5083-41a9-b2ab-553cd9a7f8c7
+:END:
+#+title: Variable Scope
+#+filetags: :programming:

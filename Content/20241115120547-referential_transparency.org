@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       c6ef7bd2-dd62-44bf-90d5-a7520b873fcd
+:END:
+#+title: Referential Transparency
+#+filetags: :programming:
+
+* Overview
+- *Definition*:
+  - Referential transparency is a property of parts of a computer program where an expression can be replaced with its value without changing the program's behavior.
+  - often associated with [[id:20231212T081907.908301][functional programming]].
+
+- *Benefits*:
+  - *Improved Readability and Understandability*: Because expressions can be replaced consistently with their values, it simplifies reasoning about code.
+  - *Easier Debugging and Testing*: With referentially transparent code, testing becomes easier as expressions yield the same result every time they are evaluated with the same inputs.
+  - *Facilitates Optimization*: Compilers and interpreters can more easily optimize code through techniques like [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][memoization]] or [[id:eba75a47-6e35-4146-a152-b05089bbd8ec][lazy evaluation]].
+
+- *Key Concepts*:
+  - *Pure Functions*: Functions that are deterministic (same inputs lead to the same outputs) and do not produce [[id:ca98597a-027f-4eda-bbb2-801b8f74d0a5][side effects]], a critical component for achieving referential transparency.
+  - *[[id:efba8f9b-a5df-4212-94c9-230bef916b5c][Immutable]] Data*: Often accompanies referential transparency by ensuring that data is not altered after creation which supports consistency in function results.

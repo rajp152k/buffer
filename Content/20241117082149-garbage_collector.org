@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       028bcc58-f867-432c-8623-0a40018848e6
+:ROAM_ALIASES: GC
+:END:
+#+title: Garbage Collector
+#+filetags: :programming:
+
+* Overview
+
+** *Definition*:
+  - A garbage collector (GC) is a form of automatic [[id:bb936c2a-dd8a-4bab-b8f9-783c3fb54f94][memory management]]. The system is responsible for identifying and reclaiming memory that is no longer in use by programs, thus preventing [[id:5ac70a3c-79b1-44a3-bc4e-f2760f4486d6][memory leaks]].
+
+** *Purpose*:
+  - The primary objective of garbage collection is to free up memory space that is no longer needed, enabling efficient memory usage in processes that dynamically manage memory allocation and deallocation during runtime.
+
+** *Mechanism*:
+  - *Reachability*: Typically, a GC determines object eligibility for garbage collection based on reachability; objects that cannot be reached by any reference path from a root reference are considered garbage.
+  - *Phases*: Common GC processes include marking, sweeping, compacting, and possibly copying.
+    - *Marking*: Traverses object graphs starting from root references to mark all reachable objects.
+    - *Sweeping*: Reclaims memory occupied by unmarked (non-reachable) objects.
+    - *Compacting*: Reorganizes objects in memory to reduce fragmentation and improve allocation performance.
+    - *Copying*: Moves reachable objects to a new memory area and reclaims the old area as free space.
+
+** *Types*:
+  - *Reference Counting*: Counts references to each object and collects objects once references reach zero.
+  - *Tracing Garbage Collection*: Uses graph traversal techniques (mark-and-sweep, mark-and-compact, generational) to discover unused objects.
+  - *Generational GC*: Optimizes for the observation that most objects die young by segregating them into different lifespan generations.

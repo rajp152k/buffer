@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3821a4f5-998a-4903-970f-d95bf2ed8cd4
+:END:
+#+title: Binary Tree
+#+filetags: :data:programming:

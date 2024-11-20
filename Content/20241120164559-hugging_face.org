@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b6db2d75-f3f9-454b-a847-b22446401c39
+:END:
+#+title: Hugging Face
+#+filetags: :tool:ai:
+
+
+* Resources
+ - https://huggingface.co/docs/hub/en/index

@@ -96,6 +96,70 @@ The scaling laws for Large Language Models (LLMs) describe how changes in differ
 *** Truthful QA
 *** Massive Multitask Language Understanding
 *** Word in Context
-* Resources
+** Hyperparameters of an LLM
+*** During Training:
+- *Learning Rate*:
+  - Controls the step size for updating model weights.
+  - A crucial hyperparameter as it affects convergence and stability.
+
+- *Batch Size*:
+  - Number of training examples used in one iteration.
+  - Larger batch sizes can stabilize gradient updates but require more memory.
+
+- *Number of Epochs*:
+  - Defines how many times the entire training dataset is passed through the model.
+  - Needed to ensure adequate learning without overfitting.
+
+- *Optimizer Type*:
+  - Algorithms like Adam, SGD, or RMSProp used to adjust weights.
+  - Different optimizers can result in varying convergence speeds and outcomes.
+
+- *Dropout Rate*:
+  - Probability of dropping units in neural networks to prevent overfitting.
+  - Applied to the network layers during training.
+
+- *Weight Initialization*:
+  - Strategy for initializing model weights.
+  - Influences how quickly and effectively the model converges.
+
+- *Gradient Clipping*:
+  - Limits the maximum value of gradients to prevent exploding gradient issues.
+  - Especially useful in training large networks.
+
+- *Warmup Steps*:
+  - Number of initial training steps with a gradually increasing learning rate.
+  - Helps avoid large sudden updates in early training.
+
+*** During Inference:
+- *Beam Size (in beam search)*:
+  - Number of beams (alternate sequences) considered for output generation.
+  - Balances between computational resources and quality of output.
+
+- *Temperature*:
+  - Controls randomness during sampling; higher values increase randomness.
+  - Influences creativity versus coherence of generated text.
+
+- *Top-k Sampling*:
+  - Limits the next word selection to the top k probable entries.
+  - Reduces unpredictability by narrowing down the choice of words.
+
+- *Top-p Sampling (Nucleus Sampling)*:
+  - Extends top-k by choosing from a dynamically determined set of most probable outputs.
+  - Balances diversity and coherence more effectively than fixed k.
+
+- *Max Token Length*:
+  - Maximum number of tokens to generate in the output.
+  - Used to allocate computational resources appropriately.
+
+*** Connections:
+- *Learning Rate and Warmup Steps*:
+  - Both influence how learning is paced and stabilized during the early training stages.
+
+- *Batch Size and Gradient Clipping*:
+  - Larger batch sizes might affect the stability of gradients, where clipping can help to prevent instabilities.
+
+- *Temperature, Top-k, and Top-p Sampling*:
+  - These hyperparameters work together to modulate the randomness and quality of the generated text during inference.
+
 ** Book: Building LLMs for production
  - https://towardsai.net/book

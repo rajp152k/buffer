@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d9d30a75-f1aa-4ca0-8480-cb617afe29ab
+:END:
+#+title: deeplake.ai
+#+filetags: :ai:data:
+
+* Resources
+ - https://www.deeplake.ai/

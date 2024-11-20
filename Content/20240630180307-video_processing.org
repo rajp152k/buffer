@@ -1,8 +1,8 @@
 :PROPERTIES:
 :ID:       c3228445-00c4-4451-a0cc-b8742673753d
 :END:
-#+title: video processing
-#+filetags: :video:
+#+title: Video Processing
+#+filetags: :programming:bs:
 
 * Abstract
 Phases of producing a video

@@ -32,7 +32,6 @@
 ** [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Callbacks]]
  LangChain provides a callbacks system that allows you to hook into the various stages of your LLM application. This is useful for logging, monitoring, and streaming.
 
-
 * LangChain Agents & Tools Overview
 ** What?
  - complete tasks using chains, prompts, memory, and tools

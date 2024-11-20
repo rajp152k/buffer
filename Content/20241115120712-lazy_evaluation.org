@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eba75a47-6e35-4146-a152-b05089bbd8ec
+:END:
+#+title: Lazy Evaluation
+#+filetags: :programming:

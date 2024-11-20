@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       9bb733a2-8540-4f7e-acd8-63547efa9b7e
+:ROAM_ALIASES: "Spatial Data"
 :END:
 #+title: vector space model
 #+filetags: :math:

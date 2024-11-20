@@ -38,3 +38,7 @@ IOU(objectivist epistemology, ontology) > IOU(epistemology, ontology)
 :ID:       d0d75b64-13e5-4b50-8833-a2b6a47cdf19
 :END:
 One can factorize a complex domain into its constituent abstractions by identifying the separate degrees of freedom in its description. Varying the extent of a particular degree at a time allows one to meaningfully study variants rather than simply diffing domains.
+
+* Generic Tools
+** [[id:cbd8cb36-6cba-46c3-84bf-077756dc3b37][Etymology]]
+** [[id:c30a1e1b-f615-4b02-884f-656fee743e1d][Calculi]]

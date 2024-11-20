@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9c288e43-1136-4bf5-9d12-26ada642224b
+:END:
+#+title: Vector Store Index
+#+filetags: :data:ai:

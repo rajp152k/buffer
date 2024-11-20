@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       949f8091-e900-4e99-9a1b-c02e6b9d4d3d
+:END:
+#+title: Ball Trees
+#+filetags: :programming:data:
+
+* Overview

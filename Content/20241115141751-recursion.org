@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID:       95edc4bc-c364-4b18-833a-ba476b3283e8
+:END:
+#+title: Recursion
+#+filetags: :programming:
+
+* Overview
+
+- *Definition and Concept*:
+  - Recursion is a programming technique where a [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][function]] calls itself, either directly or indirectly, to solve a problem.
+  - It typically involves a base case to stop the recursion and a recursive case to divide the problem into smaller instances of the same problem.
+
+- *Base Case*:
+  - The base case is the termination condition that stops the recursion.
+  - Without a base case, the recursive calls would continue indefinitely, leading to a [[id:ea557127-190f-4861-aecb-f727fe6e676b][stack overflow]].
+
+- *Recursive Case*:
+  - This is the part of the function that includes a call to itself.
+  - It reduces the problem at each step, bringing it closer to the base case.
+
+- *Applications*:
+  - Used in algorithms for traversing data structures like trees and graphs (e.g., depth-first search).
+  - Useful in problems that can be divided into similar sub-problems, like divide and conquer algorithms (e.g., mergesort, quicksort).
+
+*Connections*:
+- Recursion is a fundamental concept in computer science closely related to [[id:120cade5-1cf0-4afe-b541-e2b607ae77da][mathematical induction]], as both involve solving problems by breaking them down into base cases and smaller sub-problems.
+- Recursion is frequently compared to [[id:40722d92-1d10-445e-bcd9-f41999ccdf52][iteration]], as both can be used to repeat tasks but have different trade-offs in terms of complexity and efficiency.
+
+* Interconverting Recursion and [[id:40722d92-1d10-445e-bcd9-f41999ccdf52][Iteration]]
+** Steps for Interconverting Recursion to Iteration:
+
+1. *Identify Base Case*:
+   - Determine the base case(s) in recursion which serves as the termination condition.
+
+2. *Set Initial Conditions*:
+   - Translate the base case of recursion into initial conditions for the iterative loop.
+
+3. *Transform Recursive Logic*:
+   - Convert the recursive calls into loop updates. This often involves using auxiliary data structures like stacks to simulate the recursive call stack.
+
+4. *Loop Until Condition Met*:
+   - Replace the recursive function call mechanism with a loop structure to handle repetitive execution until the condition is met.
+
+5. *End Condition*:
+   - Ensure the loop has a termination condition similar to how a recursive function has a base case.
+
+** Steps for Interconverting Iteration to Recursion:
+
+1. *Define Base Case*:
+   - Translate the loop’s termination condition into a base case for the recursive function.
+
+2. *Create Recursive Function*:
+   - Define a recursive function that includes parameters reflecting loop variables or state.
+
+3. *Inject Recursive Call*:
+   - Replace loop iteration with a self-referential function call, where each call updates the state similar to loop iteration.
+
+4. *Ensure Termination*:
+   - Implement a termination check within the recursive function to ensure the function exits appropriately.
+
+* Relevant Nodes
+- [[id:3a717d24-64ef-4d38-936a-6814baaa1e6a][Tail Recursion]]
+- [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][Memoization]]

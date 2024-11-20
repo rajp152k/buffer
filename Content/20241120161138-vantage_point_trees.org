@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       ecdf53f5-9659-4ea4-9fe7-b9035a83a918
+:ROAM_ALIASES: "VP Trees"
+:END:
+#+title: Vantage Point Trees
+#+filetags: :data:programming:
+
+* Overview
+  - *Data Structure*: VP Trees are a type of metric tree used for [[id:26c1717a-55a6-43d7-8a92-d39800e31df1][nearest neighbor search]] in [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][metric spaces]].
+  - *Purpose*: They efficiently handle queries like "find the closest data points" by organizing data points in a way that reduces the number of distance calculations needed.
+  - *Use Case*: Commonly used in applications like image retrieval, fingerprint recognition, and any domain where quick nearest neighbor search is required.
+
+  - *Construction*
+    - *Vantage Point Selection*: A 'vantage point' is chosen from the dataset (typically random).
+    - *Partitioning*: Data points are divided into two groups based on their distance from the vantage point. This involves selecting a radius around the vantage point and classifying points into "inside" and "outside" groups.
+    - *Recursive Application*: This process is recursively applied to the groups, constructing the binary tree.
+
+  - *Query Execution*
+    - *Nearest Neighbor Search*: Searches are performed by traversing the tree, using the distances from the vantage points at each level to efficiently exclude large portions of data from search.
+    - *Pruning Capability*: During the search, branches that cannot contain the nearest neighbor are pruned, allowing for efficient query processing.
+
+  - *Advantages*
+    - *Efficiency*: Can significantly reduce the number of distance computations compared to a linear search, especially in high-dimensional data.
+    - *Adaptability*: Works well with diverse types of metric spaces, not limited to Euclidean distance.
+
+  - *Challenges*
+    - *High Dimensionality*: While VP Trees improve search times, they are still affected by the “[[id:848387f1-ec7a-4410-9ddd-40849472ef1d][curse of dimensionality]]” common in all metric trees.
+    - *Dynamic Updates*: Insertion and deletion of data can be complex as it may require tree reconstruction.
+
+*Connections:*
+- *Metric Trees*: VP Trees are one of several types of metric trees, similar in purpose to KD-trees but more suited to [[id:70f4b746-2255-40ab-b63e-aa64630890dc][non-Euclidean]] spaces.
+- *Nearest Neighbor Algorithms*: Relate closely with other methods such as [[id:a6434778-8ee0-4560-8637-5c583dcd85ec][KD-trees]], [[id:949f8091-e900-4e99-9a1b-c02e6b9d4d3d][Ball Trees]], and [[id:5a86e5bf-214c-44c2-9668-aa5c965b8ec1][Cover Trees]], each with strengths and weaknesses depending on the context.

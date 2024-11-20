@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       a6434778-8ee0-4560-8637-5c583dcd85ec
+:END:
+#+title: KD Trees
+#+filetags: :programming:data:
+
+* Overview
+  - A k-dimensional tree, known as a KD Tree, is a [[id:20230715T173535.681936][data structure]] commonly used for organizing points in a k-dimensional [[id:9bb733a2-8540-4f7e-acd8-63547efa9b7e][space]].
+  - Primarily used for applications involving multidimensional [[id:656af4b9-648b-41f9-932b-cbf2d2017794][search]] queries such as range searches and [[id:26c1717a-55a6-43d7-8a92-d39800e31df1][nearest neighbor searches]].
+
+  - *Key Characteristics*:
+    - *[[id:3821a4f5-998a-4903-970f-d95bf2ed8cd4][Binary Tree]]*: Similar to a binary search tree but designed for multiple dimensions.
+    - *Recursive Partitioning*: The space is recursively divided into two half-spaces at each step by a [[id:892fad58-dbf7-4db6-8184-51bd4276d462][hyperplane]].
+    - *Non-balanced*: It may not be balanced; balance depends on the order of input data.
+
+  - *Construction*:
+    - *Inserting Elements*: Splits are done along one dimension at each level of the tree, typically cycling through the dimensions.
+    - *Depth*: A balanced KD Tree with =n= points will have a depth that is typically =O(log n)=.
+
+  - *Usage*:
+    - *Range Search*: Efficiently find all points within a specific range in a multidimensional space.
+    - *Nearest Neighbor Search*: Locate the nearest data point to a given query point in =O(log n)= time on average for balanced trees.
+
+  - *Algorithms*:
+    - *Build*: Typically built in =O(n log n)= time complexity where =n= is the number of points.
+    - *Query*: Queries like nearest neighbor and range queries typically have an average log-scale complexity with respect to the size of the dataset.
+
+  - *Limitations*:
+    - *[[id:848387f1-ec7a-4410-9ddd-40849472ef1d][Curse of Dimensionality]]*: Efficiency decreases as the number of dimensions increases, diminishing its advantage over brute-force methods.
+    - *Imbalance*: Poor insertion order can lead to imbalanced trees, potentially degrading performance.
+
+*Connections and Pathways*:
+- How does recursive partitioning influence the searching times in a KD Tree?
+- What are the strategies to ensure a more balanced KD Tree?
+- How do alternative data structures compare to KD Trees for higher-dimensional data, and at what dimensionality do they become more efficient?
+- In what specific scenarios is a KD Tree more practical compared to other spatial data structures like quad-trees or [[id:9f869b16-1bf8-485b-a878-6d00107848ec][R-trees]]?
+
+If you need more detailed information on a specific aspect of KD Trees or have a particular example in mind, could you please provide more context? This would help in tailoring the details more precisely.

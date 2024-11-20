@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5ac70a3c-79b1-44a3-bc4e-f2760f4486d6
+:END:
+#+title: memory leaks
+#+filetags: :programming:

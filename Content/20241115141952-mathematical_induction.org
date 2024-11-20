@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       120cade5-1cf0-4afe-b541-e2b607ae77da
+:END:
+#+title: mathematical induction
+#+filetags: :math:

@@ -28,6 +28,7 @@ These are meant to be navigated with org-roam emacs and accessing them is conven
 ** https://news.ycombinator.com/
 ** http://wiki.c2.com/
 ** https://www.cliki.net/
+** https://explodinginsights.com/
 * Blogs
 ** The CTO Club : https://thectoclub.com/
  - good for the bigger picture on emerging tech

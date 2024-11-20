@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bb936c2a-dd8a-4bab-b8f9-783c3fb54f94
+:END:
+#+title: memory management
+#+filetags: :programming:

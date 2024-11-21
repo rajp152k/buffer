@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       663bd13a-1f02-4e96-a56f-1257ff5a162b
+:END:
+#+title: AutoGPT
+#+filetags: :tool:ai:
+
+
+* Resources
+  - https://agpt.co/blog/introducing-the-autogpt-platform

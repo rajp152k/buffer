@@ -4,7 +4,10 @@
 #+title: Llammaindex
 #+filetags: :ai:tool:
 
+*
 * Relevant Nodes
 ** [[id:d9d30a75-f1aa-4ca0-8480-cb617afe29ab][Deep Lake Vector Stores]]
+** [[id:29c7a4c9-2699-4c8c-b2f2-a8e9bd5731ce][Ragas]]
+** [[id:a8c2f397-3380-4aae-a771-63a4b688d4fe][DeepEval]]
 * Resources
 - https://www.llamaindex.ai/

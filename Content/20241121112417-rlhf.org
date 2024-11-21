@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       02b7c7eb-2ba2-43b8-8cdb-c5e7d201596a
+:ROAM_ALIASES: "Reinforcement Learning from Human Feedback"
+:END:
+#+title: RLHF
+#+filetags: :rl:ai:
+
+
+* Relevant Nodes
+** [[id:64e7e0eb-ab1f-42db-b027-fc8069a65f3d][Direct Preference Optimization]]
+** [[id:54f1b3b2-28ba-485b-947a-98c48ae41caa][RLAIF]]
+* Resources
+ - https://openai.com/index/instruction-following/

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       29c7a4c9-2699-4c8c-b2f2-a8e9bd5731ce
+:END:
+#+title: Ragas
+#+filetags: :tool:ai:
+
+* Resources
+ - https://github.com/explodinggradients/ragas/tree/main
+ - https://docs.ragas.io/en/stable/

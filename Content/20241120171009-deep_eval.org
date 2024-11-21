@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a8c2f397-3380-4aae-a771-63a4b688d4fe
+:END:
+#+title: DeepEval
+#+filetags: :tool:ai:
+
+* Resources
+ -  https://github.com/confident-ai/deepeval

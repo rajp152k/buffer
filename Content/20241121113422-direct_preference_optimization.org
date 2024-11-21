@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       64e7e0eb-ab1f-42db-b027-fc8069a65f3d
+:ROAM_ALIASES: DPO
+:END:
+#+title: Direct Preference Optimization
+#+filetags: :ai:

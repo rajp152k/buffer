@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       4f197b8c-7f2c-442f-9350-ef1f83cd8701
+:ROAM_ALIASES: "Quantized Low-Rank Adaptation" QLoRa LoRA
+:END:
+#+title: Low Rank Adaptation
+#+filetags: :ai:

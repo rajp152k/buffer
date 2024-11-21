@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       54f1b3b2-28ba-485b-947a-98c48ae41caa
+:ROAM_ALIASES: "Reinforcement Learning from AI Feedback"
+:END:
+#+title: RLAIF

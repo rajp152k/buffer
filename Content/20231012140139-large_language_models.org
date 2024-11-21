@@ -161,5 +161,8 @@ The scaling laws for Large Language Models (LLMs) describe how changes in differ
 - *Temperature, Top-k, and Top-p Sampling*:
   - These hyperparameters work together to modulate the randomness and quality of the generated text during inference.
 
+** [[id:4f197b8c-7f2c-442f-9350-ef1f83cd8701][Low Rank Adaptation]]
+** [[id:02b7c7eb-2ba2-43b8-8cdb-c5e7d201596a][RLHF]]
+* Resources
 ** Book: Building LLMs for production
  - https://towardsai.net/book

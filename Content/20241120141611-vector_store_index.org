@@ -3,3 +3,6 @@
 :END:
 #+title: Vector Store Index
 #+filetags: :data:ai:
+
+* Relevant Nodes
+** [[id:51dfb5e7-6b00-4bde-b5f5-65cb395f5d54][Llammaindex]]

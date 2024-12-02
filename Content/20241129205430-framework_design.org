@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e716b2d9-38bf-40e2-9d70-36731915d108
+:END:
+#+title: Framework Design
+#+filetags: :cs:

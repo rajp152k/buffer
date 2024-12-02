@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       2ef09a6d-420f-43cb-a271-f9e45d243a35
+:ROAM_ALIASES: BPE
+:END:
+#+title: Byte Pair Encoding
+
+* Overview
+- *Byte Pair Encoding (BPE)*:
+  - A form of data [[id:2a09af3c-8c56-4874-b18b-b728b0d655c7][compression]] technique originally developed for [[id:9e07b6d4-aa6a-4584-bb4e-6f1285be34c3][text]].
+  - Encodes a sequence of bytes and reduces redundancy by replacing the most frequently occurring pairs of bytes wi
+th a single unused byte or symbol.
+  - Commonly used in natural language processing (NLP) to preprocess text data, especially for subword tokenization.
+
+- *Process*:
+  - Count all the pairs of contiguous symbols in the data.
+  - Identify the most frequent pair and replace all occurrences of that pair with a new symbol.
+  - Repeat the process for a predefined number of iterations or until a certain compression ratio is achieved.
+
+- *Applications*:
+  - Utilized in various [[id:20230713T150554.400026][NLP]] models, including [[id:4f9006cf-6e6f-4019-bb8d-e7d5d85e191e][transformers]] (like [[id:214ec3f0-8aa3-426c-82fa-57886b5c0f39][GPT]]) for efficiently handling large vocabularies by producing subword units.
+  - Reduces out-of-vocabulary words by breaking rare words into smaller, common subword units.
+
+- *Advantages*:
+  - Efficient handling of large datasets with diverse vocabularies.
+  - Balances between fully character-based and word-based encoding, improving efficiency and performance.
+
+- *Limitations*:
+  - May lead to the creation of subword units that are not meaningful in isolation.
+  - Requires careful tuning of the number of merges to avoid overfitting to the training data.
+
+*** Connections
+
+- BPE is significant within the broader context of data compression techniques and NLP preprocessing.
+- Its effectiveness relates to various algorithms in the field of machine learning that handle linguistic data, including tokenization strategies in transformer architectures.
+- BPE can also be compared with other encoding methods such as WordPiece and SentencePiece, which serve similar purposes but differ in their algorithms and implementations.
+

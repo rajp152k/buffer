@@ -4,3 +4,6 @@
 :END:
 #+title: Low Rank Adaptation
 #+filetags: :ai:
+
+* Resources
+ - https://ar5iv.labs.arxiv.org/html/2106.09685

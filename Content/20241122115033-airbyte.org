@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0fa15655-6f19-4984-bff8-78f44d92efc3
+:END:
+#+title: AirByte
+#+filetags: :ai:data:
+
+* Resources
+ - https://github.com/airbytehq/airbyte

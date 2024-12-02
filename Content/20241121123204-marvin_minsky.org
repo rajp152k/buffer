@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       78fdaa20-b89a-4c1d-a0b2-286beaf515fe
+:END:
+#+title: Marvin Minsky
+#+filetags: :author:
+
+* Quotes
+** Trick
+What magical trick makes us intelligent? The trick is that there is no trick. The power of intelligence
+stems from our vast diversity, not from any single, perfect principle.”

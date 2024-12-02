@@ -6,7 +6,6 @@
 #+filetags: :ai:ml:
 
 * Overview
-
 ** *Definition*:
   - A framework that combines machine learning models to enhance [[id:656af4b9-648b-41f9-932b-cbf2d2017794][information retrieval]] and [[id:ea5448e1-82aa-428e-884e-460a3244129d][text generation]] capabilities.
   - It integrates two predominant AI tasks: retrieval of relevant data from a knowledge base and subsequent generation of a coherent response or narrative based on that data.
@@ -40,3 +39,36 @@
 ** Specific and Up to Date Data
 ** Lesser of a black box
 - lower reliance on the condesnsed memory of an LLM
+
+* Building a RAG pipeline
+** Overview of the RAG Pipeline Stages:
+
+1. *Loading & Ingestion*
+   - Gather diverse data sources (e.g., documents, databases, APIs).
+   - Clean and preprocess data for consistency (removal of duplicates, normalization).
+   - Use formats compatible with the subsequent stages (e.g., JSON, CSV).
+
+2. *Indexing and [[id:1e4742cb-ae8f-4f6d-863f-e5d2fb321bbc][Embedding]]*
+   - Create an index for efficient search and retrieval (e.g., inverted index or vector index).
+   - Convert documents into embeddings using models like BERT or Sentence Transformers.
+   - Ensure embeddings capture semantic meaning and are optimized for similarity searches.
+
+3. *Storing*
+   - Choose storage solutions (e.g., SQL databases, NoSQL databases, vector databases).
+   - Organize data effectively in a way that preserves relationships (e.g., metadata storage).
+   - Implement efficient data retrieval systems to minimize latency.
+
+4. *Querying*
+   - Develop a query interface that accepts user input and translates it into machine-understandable requests.
+   - Utilize the indexing system to retrieve relevant data fast.
+   - Use embedding similarity measures (e.g., cosine similarity) to find semantically related information.
+
+** Evaluation:
+ - a critical step in any flow is checking how effective it is relative to other strategies, or when you make changes. Evaluation provides objective measures of how accurate, faithful and fast your responses to queries are.
+** Connections Between Stages:
+
+- The *Loading & Ingestion* phase is foundational as it determines the quality and breadth of data available for indexing, embedding, and ultimately querying.
+- The accuracy of *Indexing and Embedding* directly impacts the efficiency and relevance of results in the *Querying* stage, as poorly indexed or insufficiently trained embeddings can lead to irrelevant responses.
+- The choice of storage in the *Storing* phase affects both retrieval speed and the ability to perform advanced queries efficiently.
+- Each query's success relies on how well each previous stage has been executed, emphasizing a pipeline's integrity and system design.
+

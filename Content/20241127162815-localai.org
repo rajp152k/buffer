@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4bc04402-bf24-4740-aba6-1ff667bd5247
+:END:
+#+title: LocalAI
+#+filetags: :tool:ai:

@@ -6,6 +6,13 @@
 
 
 * Stream
+** 0x2311
+ - Emacs python setup
+ - pyright, conda, ipython
+ - images and graphs via an external [[id:7e59cdd8-64f3-46f9-ab43-e94dd4b605a5][experiment]] tracker
+ - two philosophies.
+   - separate results from code
+   - literate programming
 ** 0x21E9
  - starting out diving deeper into [[id:cf9ebc9c-8af7-4f7c-9c3f-e3325ac260e4][Hy]] (Lisp + Python)
  - plan on being able to use the python ecosystem with the fluidity of lisp off of my fingers. 

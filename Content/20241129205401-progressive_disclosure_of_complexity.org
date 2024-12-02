@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e722f250-2bc6-4d75-b5e7-01b7329d9d43
+:END:
+#+title: Progressive Disclosure of Complexity
+#+filetags: :cs:meta:
+
+* Relevant Nodes
+- [[id:e716b2d9-38bf-40e2-9d70-36731915d108][Framework Design]]

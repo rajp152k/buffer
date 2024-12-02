@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       35eef33c-39d3-429a-8a6d-3bcd328378f8
+:END:
+#+title: Prefect
+#+filetags: :cs:
+
+* Relevant Nodes
+ - [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
+ - [[id:978c6155-10fd-45fb-aa6b-69cc22b9cf08][Apache Airflow]]
+
+* Resources
+ - https://www.prefect.io/
+ - https://www.prefect.io/prefect-vs-airflow

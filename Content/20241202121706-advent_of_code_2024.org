@@ -4,8 +4,46 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
-I'm prepping input via vim macros
+* Day 3
+#+begin_src lisp
+(ql:quickload :uiop)
+(ql:quickload :cl-ppcre)
 
+(defvar input (read-file-to-string "input"))
+
+;; part 1
+
+(defun extract-mul-parameters (input-string)
+        (multiple-value-bind (matched-p matches)
+                (cl-ppcre:scan-to-strings "mul\\((\\d+),(\\d+)\\)" input-string)
+            (when matched-p
+                    matches)))
+
+(defun parse-mul (match)
+        (let* ((parse-vec (extract-mul-parameters match))
+                    (n1 (parse-integer (svref parse-vec 0)))
+                    (n2 (parse-integer (svref parse-vec 1))))
+            (* n1 n2)))
+
+(defun solve-p1 (input)
+        (apply #'+ (mapcar #'parse-mul
+                                (cl-ppcre:all-matches-as-strings
+                                    "mul\\((\\d+),(\\d+)\\)"
+                                        input))))
+;; part 2
+
+(defun solve-p2 (input)
+        (let ((do? t)
+                (acc 0))
+            (dolist (state (cl-ppcre:all-matches-as-strings
+                                "mul\\((\\d+),(\\d+)\\)|do\\(\\)|don't\\(\\)"
+                                    input)
+                                acc)
+                    (cond ((equal state "do()") (setf do? t))
+                            ((equal state "don't()") (setf do? nil))
+                                (t (when do?
+                                            (incf acc (parse-mul state))))))))
+#+end_src
 * Day 2
 
 #+begin_src lisp

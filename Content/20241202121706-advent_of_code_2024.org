@@ -4,6 +4,107 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
+* Day 4
+#+begin_src lisp
+;; for each cell, check 8 directions
+;; checking in a direction can be generically identified as an accumulated past state and the stepper function
+;; the stepper functions will then be 8 of them ranging cartesian product of +1,-1,0 for x,y except 0,0 (9-1)
+;; can build steppers dynamically with macros
+
+
+;; the checker actually uses a stepper func, has the current state and has the knowledge of the state machine baked in
+
+(ql:quickload :uiop)
+(ql:quickload :alexandria)
+
+(defvar input (uiop:read-file-lines "input.txt"))
+
+(defun gen-util-funcs (arr)
+  (macrolet ((in? (i low high)
+               `(and (< ,i ,high)
+                     (>= ,i ,low))))
+    (let ((rows (length arr))
+          (cols (length (car arr)))
+          (utils (make-hash-table)))
+      (setf (gethash :idx utils )
+            (lambda (i j)
+                ;; indexer
+                (aref (nth i arr) j)))
+      (setf (gethash :chk utils)
+            (lambda (i j)
+                ;; validity checker
+                (and (in? i 0 rows)
+                     (in? j 0 cols))))
+      utils)))
+
+(defvar utils (gen-util-funcs input))
+
+(defun fetch (i j)
+  (when (funcall (gethash :chk utils) i j)
+    (funcall (gethash :idx utils) i j)))
+
+(defun build-stepper (steps)
+  #'(lambda (x y)
+      (list (+ x (car steps))
+            (+ y (cadr steps)))))
+
+(defvar steppers
+  (cdr (mapcar #'build-stepper
+               (loop for x in
+                           (list 0 1 -1)
+                     nconc
+                     (loop for y in
+                                 (list 0 1 -1)
+                           collect (list x y)))) ))
+
+(defun checker (i j stepper req)
+  (labels ((iter-check (x y req-i)
+             (let ((fetched (fetch x y))
+                   (lreq (length req)))
+               (cond ((= req-i lreq)
+                      t)
+                     ((not fetched)
+                      nil)
+                     ((equal fetched (aref req req-i))
+                      (apply #'iter-check (append (funcall stepper x y) (list (+ 1 req-i)))))))))
+    (iter-check i j 0)))
+
+
+(defun collate-checks (i j req)
+  (count 't (mapcar #'(lambda (stepper)
+                        (checker i j stepper req))
+                    steppers)))
+
+(defun solve-p1 (req)
+  (let ((acc 0))
+    (dolist (i (alexandria:iota (length input)))
+      (dolist (j (alexandria:iota (length (car input))))
+        (incf acc (collate-checks i j req))))
+    acc))
+
+
+;; part 2
+;; approach still the same via specific steppers, just validator can be monolithic
+
+(defun check-X-MAS (i j)
+  (when (equal (fetch i j) #\A)
+    (and (eval `(or ,@(mapcar (alexandria:curry
+                         #'checker (1- i) (1- j) (build-stepper (list 1 1)))
+                        (list "MAS" "SAM"))))
+         (eval `(or ,@(mapcar (alexandria:curry
+                              #'checker (1+ i) (1- j) (build-stepper (list -1 1)))
+                             (list "MAS" "SAM")))))))
+
+
+(defun solve-p2 ()
+  (let ((acc 0))
+    (dolist (i (alexandria:iota (1- (length input)) :start 1))
+      (dolist (j (alexandria:iota (1- (length (car input))) :start 1))
+        (when (check-x-mas i j)
+          (incf acc 1))))
+    acc))
+#+end_src
+
 * Day 3
 #+begin_src lisp
 (ql:quickload :uiop)

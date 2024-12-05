@@ -4,6 +4,125 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
+* Day 5
+#+begin_src lisp
+(ql:quickload :uiop)
+(ql:quickload :alexandria)
+(ql:quickload :cl-ppcre)
+
+(defun parse-input (input-file)
+  (let* ((parsed (cl-ppcre:split "\\n\\n" (uiop:read-file-string input-file)))
+         (edges (cl-ppcre:split "\\n" (car parsed)))
+         (updates (cl-ppcre:split "\\n" (cadr parsed))))
+    (list edges updates)))
+
+(defun gen-hash-manager ()
+  (let ((hsh (make-hash-table)))
+    #'(lambda (message)
+        (cond ((eq message 'reset)
+               #'(lambda ()
+                   (clrhash hsh)))
+              ((eq message 'table)
+               #'(lambda ()
+                   hsh))
+              ((eq message 'insert)
+               #'(lambda (key val)
+                   (let ((existing (gethash key hsh)))
+                     (if existing
+                         (setf (gethash key hsh) (cons val existing))
+                         (setf (gethash key hsh) (list val))))))
+              ((eq message 'fetch)
+               #'(lambda (key)
+                   (gethash key hsh)))
+              (t (error message "invalid message received"))))))
+
+(defvar hasher (gen-hash-manager))
+
+(defun insert (key val)
+  (funcall (funcall hasher 'insert) key val))
+
+(defun fetch (key)
+  (funcall (funcall hasher 'fetch) key))
+
+(defun build-hash (edges)
+  (dolist (edge edges)
+    (let ((split (cl-ppcre:split #\| edge)))
+      (insert (parse-integer (cadr split))
+              (parse-integer (car split))))))
+
+(defvar input (parse-input "input.txt"))
+
+(build-hash (car input))
+
+(defun check-update (update)
+  (let ((update (mapcar #'parse-integer update))
+        (mid (ceiling (/ (length update)
+                       2)))
+        (middle nil))
+    (do ((curr (car update) (car tail))
+         (tail (cdr update) (cdr tail))
+         (i 1 (+ i 1)))
+        ((not tail) middle)
+      (when (= i mid)
+        (setf middle curr))
+      (when (intersection tail (fetch curr))
+        (return nil)))))
+
+(defun solve-p1 ()
+  (reduce #'(lambda (acc curr)
+              (+ acc (if curr curr 0)))
+          (mapcar #'check-update (mapcar (alexandria:curry #'cl-ppcre:split #\,) (cadr input)))
+          :initial-value 0))
+
+;; part 2
+
+(defun insert-at-index (list element index)
+  (if (zerop index)
+      (cons element list)
+      (let ((head (subseq list 0 index))
+            (tail (nthcdr index list)))
+        (append head (list element) tail))))
+
+(defun curtail (curr tail intsction)
+  (let ((fixes (insert-at-index tail
+                                curr
+                                (1+ (apply #'max
+                                           (mapcar #'(lambda (ele)
+                                                       (position ele tail))
+                                                   intsction))))))
+    (values (car fixes) (cdr fixes))))
+
+
+(defun check-fixed-update (update)
+  (let ((update (mapcar #'parse-integer update))
+        (mid (ceiling (/ (length update)
+                         2)))
+        (fix-flag nil)
+        (middle nil))
+    (do ((curr (car update) (car tail))
+         (tail (cdr update) (cdr tail))
+         (i 1 (+ i 1)))
+        ((not tail) (when fix-flag middle))
+      (tagbody
+         start
+         (let ((intsction (intersection tail (fetch curr))))
+           (when intsction
+             (setf fix-flag t)
+             (multiple-value-bind (cr tl)
+                 (curtail curr tail intsction)
+               (setf curr cr
+                     tail tl))
+             (go start)))
+         (when (= i mid)
+           (setf middle curr))))))
+
+(defun solve-p2 ()
+  (reduce #'(lambda (acc curr)
+              (print curr)
+              (+ acc (if curr curr 0)))
+          (mapcar #'check-fixed-update (mapcar (alexandria:curry #'cl-ppcre:split #\,) (cadr input)))
+          :initial-value 0))
+#+end_src
 * Day 4
 #+begin_src lisp
 ;; for each cell, check 8 directions

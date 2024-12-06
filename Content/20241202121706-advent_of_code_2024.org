@@ -4,6 +4,171 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
+* Day 6
+#+begin_src lisp
+(ql:quickload :uiop)
+(ql:quickload :alexandria)
+
+(defvar input (uiop:read-file-lines "test.txt"))
+
+(defun gen-util-funcs (arr)
+  (macrolet ((in? (i low high)
+               `(and (< ,i ,high)
+                     (>= ,i ,low))))
+    (let ((rows (length arr))
+          (cols (length (car arr)))
+          (utils (make-hash-table)))
+      (setf (gethash :idx utils )
+            (lambda (i j)
+              ;; indexer
+              (aref (nth i arr) j)))
+      (setf (gethash :set utils)
+            (lambda (i j char)
+              (setf (aref (nth i arr) j) char)))
+      (setf (gethash :chk utils)
+            (lambda (i j)
+              ;; validity checker
+              (and (in? i 0 rows)
+                   (in? j 0 cols))))
+      utils)))
+
+(defvar utils (gen-util-funcs input))
+
+(defun fetch (i j)
+  (when (funcall (gethash :chk utils) i j)
+    (funcall (gethash :idx utils) i j)))
+
+(defun setgr (i j char)
+  (when (funcall (gethash :chk utils) i j)
+    (funcall (gethash :set utils) i j char)))
+
+(defun setgrl (l char)
+  (setgr (car l) (cadr l) char))
+
+(defun fetchl (l)
+  (fetch (car l) (cadr l)))
+
+
+;; orientation can be decided by current stepper func
+;; storing such that when you cycling through them is turning right
+(defvar dirs
+  (list
+   #'(lambda (i j)
+       (list (1- i) j))
+   #'(lambda (i j)
+       (list i (1+ j)))
+   #'(lambda (i j)
+       (list (1+ i) j))
+   #'(lambda (i j)
+       (list  i (1- j)))))
+
+(defvar dir-hash (make-hash-table))
+(setf (gethash #\^ dir-hash) 0)
+(setf (gethash #\> dir-hash) 1)
+(setf (gethash #\v dir-hash) 2)
+(setf (gethash #\< dir-hash) 3)
+
+(defun yield-dir (dx)
+  (nth dx dirs))
+
+(defun turn-right (dx)
+  (mod (1+ dx) 4))
+
+(defun turn-left (dx)
+  (mod (1- dx) 4))
+
+(defun turn-around (dx)
+  (mod (+ 2 dx) 4))
+
+;; moving around
+;; given initial directions
+;; dowhile with a counter map and incf for new place
+;; continue until fetch is nil
+;; when fetch is obstacle, turn right
+;; when fetch is ., step
+;; recurse
+
+(defun detect-initial-pos-dir ()
+  (dotimes (i (length input))
+    (dotimes (j (length (car input)))
+      (let ((curr (fetch i j)))
+        (when (not (find curr (list #\. #\#)))
+          (setgr i j #\X)
+          (return-from detect-initial-pos-dir (list i j (gethash curr dir-hash))))))))
+
+;; store dirs walked at an x
+;; when x and dir sync, stop step
+
+(defun walkeds (input)
+  (loop repeat (length input)
+        collect (loop repeat (length (car input))
+                      collect '())))
+
+(defvar walkeds (walkeds input))
+
+(defmacro fwalkeds (i j)
+  `(nth  ,j (nth ,i walkeds)))
+
+(defun inswalkeds (i j char)
+  (setf (fwalkeds i j) (cons char (fwalkeds i j))))
+
+(defun coincides? (i j dir)
+  (find dir (fwalkeds i j)))
+
+(defvar found-obs '())
+
+(defun already-placed? (i j)
+  (find -1 (fwalkeds i j)))
+
+(defun potential-obs-ahead? (i j dir)
+  (cond
+    ((not (fetch i j)) nil)
+    ((coincides? i j dir) t)
+    (t
+     (let ((next (funcall (yield-dir dir) i j)))
+       (if (eq (fetchl next) #\#)
+           (apply #'potential-obs-ahead? (append next (list (turn-right dir))))
+           (potential-obs-ahead? (car next) (cadr next) dir))))))
+
+(defun walk ()
+  (let ((marked 1)
+        (potential-obs 0)
+        (obses '())
+        (pos-dir (detect-initial-pos-dir)))
+    (labels ((stp (dx i j)
+               (let* ((next (funcall (yield-dir dx) i j))
+                      (fnext (fetchl next)))
+                 (inswalkeds i j dx)
+                 (cond ((eq fnext #\.) (progn
+                                         (when (potential-obs-ahead? i j (turn-right dx))
+                                           (when (apply #'already-placed? next)
+                                             (decf potential-obs))
+                                           (setf obses  (cons  (list (list 'in-from  i j)
+                                                                     `('obs-on ,@next) dx (turn-right dx))
+                                                               obses))
+                                           (incf potential-obs))
+                                         (setgrl next #\X)
+                                         (incf marked)
+                                         (stp dx (car next) (cadr next))))
+                       ((eq fnext #\#) (stp (turn-right dx) i j))
+                       ((eq fnext #\X)
+                        (progn
+                          (when (potential-obs-ahead? i j (turn-right dx))
+                            (when (apply #'already-placed? next)
+                              (decf potential-obs))
+                            (setf obses  (cons  (list (list 'in-from  i j)
+                                                      `('obs-on ,@next) dx (turn-right dx))
+                                                obses))
+                            (incf potential-obs))
+                          (stp dx (car next) (cadr next))))
+                       (t (list obses marked potential-obs))))))
+      (inswalkeds (car pos-dir)
+                  (cadr pos-dir)
+                  (caddr pos-dir))
+      (stp (caddr pos-dir)
+           (car pos-dir)
+           (cadr pos-dir)))))
+#+end_src
 * Day 5
 #+begin_src lisp
 (ql:quickload :uiop)

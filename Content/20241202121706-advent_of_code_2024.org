@@ -4,6 +4,112 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
+* Day 8
+#+begin_src lisp
+(ql:quickload :uiop)
+(ql:quickload :alexandria)
+
+(defun build-arr (input-file)
+  (let* ((lines  (uiop:read-file-lines input-file))
+         (arr (make-array (list (length lines) (length (car lines)))
+                          :element-type 'character)))
+    (loop for row from 0 below (array-dimension arr 0)
+          for line in lines do
+            (loop for col from 0 below (array-dimension arr 1)
+                  do (setf (aref arr row col)
+                           (aref line col))))
+    arr))
+
+(defparameter arr (build-arr "input.txt"))
+
+(defun fetch (i j) (when (array-in-bounds-p arr i j) (aref arr i j)))
+
+(defun setarr (i j val)
+  (when (array-in-bounds-p arr i j) (setf (aref arr i j) val)))
+
+(defparameter hash (make-hash-table))
+
+(defun inshash (key val)
+  (if (gethash key hash)
+      (setf (gethash key hash) (cons val (gethash key hash)))
+      (setf (gethash key hash) (list val))))
+
+(defun build-hash-from-arr ()
+  (loop for i from 0 below (array-dimension arr 0)
+        do (loop for j from 0 below (array-dimension arr 1)
+                 do (let ((chr (fetch i j)))
+                      (when (not (eq chr #\.))
+                        (inshash chr (list i j)))))))
+
+(build-hash-from-arr)
+
+(defun build-pairs (items)
+  (remove-duplicates
+   (remove-if #'(lambda (coords)  (or (equal (car coords)
+                                             (cadr coords))))
+              (alexandria:map-product #'list items items))
+   :test #'(lambda (a b) (equal a (reverse b)))))
+
+(defun vec-add (p1 p2)
+  (mapcar #'+ p1 p2))
+
+(defun vec-mul (p factor)
+  (mapcar #'(lambda (ele) (* ele factor)) p))
+
+(defun extrapolate (va vb)
+  (let ((dir (vec-add vb (vec-mul va -1)))
+        (antis '()))
+    (do ((anti (vec-add va dir) (vec-add anti dir)))
+        ((not (array-in-bounds-p arr (car anti) (cadr anti))) antis)
+      (push anti antis))))
+
+(defun calc-antinodes (va vb)
+  (append (extrapolate va vb)
+          (extrapolate vb va)))
+
+(defun report-all-antinodes ()
+  (remove-if-not #'(lambda (coord) (apply #'array-in-bounds-p arr coord))
+                 (remove-duplicates
+                  (reduce #'append
+                          (mapcar #'(lambda (coord) (apply #'calc-antinodes coord))
+                                  (reduce #'append
+                                          (mapcar #'build-pairs
+                                                  (alexandria:hash-table-values hash)))))
+                  :test 'equal)))
+
+(defun solve ()
+    (length (report-all-antinodes)))
+#+end_src
+* Day 7
+#+begin_src lisp
+(ql:quickload :uiop)
+(ql:quickload :cl-ppcre)
+
+(defun parse-line (line)
+  (let ((parsed (cl-ppcre:split ": " line)))
+    (list (parse-integer (car parsed))
+          (mapcar #'parse-integer
+                  (uiop:split-string (cadr parsed))))))
+
+(defun || (int1 int2)
+  (parse-integer (format nil "~S~S" int1 int2)))
+
+(defun dfs (target path)
+  (labels ((dfs-iter (left acc)
+             (macrolet ((fork (op) `(dfs-iter (cdr left) (,op acc (car left)))))
+               (cond ((null left) (= acc target))
+                     (t (or (fork *) (fork +) (fork ||)))))))
+    (dfs-iter (cdr path) (car path))))
+
+(defun solve (input-file)
+  (apply #'+ (remove-if #'null
+                    (mapcar #'(lambda (line)
+                                (let ((parsed (parse-line line)))
+                                  (when (dfs (car parsed) (cadr parsed))
+                                    (car parsed))))
+                            (uiop:read-file-lines input-file)))))
+#+end_src
+
 * Day 6
 #+begin_src lisp
 (ql:quickload :uiop)

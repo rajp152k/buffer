@@ -4,3 +4,29 @@
 #+title: Computation
 #+filetags: :computer:
 
+* Relevant Nodes
+ - [[id:5c5c63a4-803b-4f9b-80c8-932bf6bf3bb6][Flynn's Taxonomy (computer archs)]]
+* Misc Processing units
+
+| Compute Flag  | Description                                                                                                                                                     |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CPU           | Central Processing Unit - the primary component of a computer that performs most processing inside a computer.                                                  |
+| CUDA          | Compute Unified Device Architecture - a parallel computing platform and application programming interface model created by NVIDIA.                              |
+| IPU           | Intelligence Processing Unit - a type of microprocessor designed specifically for artificial intelligence and machine learning tasks.                           |
+| XPU           | Generic term, often referring to a heterogeneous compute platform encompassing CPUs, GPUs, and other acceleration devices.                                      |
+| MKLDNN        | Math Kernel Library for Deep Neural Networks, now Intel DNNL (Deep Neural Network Library) - an open-source performance library for deep learning applications. |
+| OpenGL        | Open Graphics Library - a cross-language, cross-platform specification for rendering 2D and 3D vector graphics.                                                 |
+| OpenCL        | Open Computing Language - a framework for writing programs that execute across heterogeneous platforms consisting of CPUs, GPUs, and other processors.          |
+| iDeep         | Intel Deep Learning Enhancement Primitives - provides deep learning executions in C++.                                                                          |
+| HIP           | Heterogeneous-compute Interface for Portability - an API developed by AMD for writing portable applications across GPU platforms.                               |
+| VE            | Vector Engine - might refer to vector processing units used for accelerating data-parallel workloads.                                                           |
+| FPGA          | Field-Programmable Gate Array - an integrated circuit designed to be configured by the customer or designer after manufacturing.                                |
+| MAIA          | Specific reference unknown - the name could be associated with a specific project or technology initiative.                                                     |
+| XLA           | Accelerated Linear Algebra - a domain-specific compiler for linear algebra that can speed up TensorFlow computations.                                           |
+| Lazy          | Lazy execution strategy - deferring computations until necessary, typically for optimization reasons.                                                           |
+| Vulkan        | A low-overhead, cross-platform 3D graphics and computing API.                                                                                                   |
+| MPS           | Metal Performance Shaders - a framework that provides a highly optimized set of graphics and compute shaders for Apple platforms.                               |
+| Meta          | Could refer to the use of metaprogramming techniques or a project within the broader computing context.                                                         |
+| HPU           | Holographic Processing Unit - found in devices like Microsoft's HoloLens for processing spatial input and environment mapping.                                  |
+| MTIA          | Meta's custom AI inference chip, targeted at accelerating machine learning workloads.                                                                           |
+| PrivateUseOne | Typically refers to user-defined or proprietary hardware units within a system.                                                                                 |

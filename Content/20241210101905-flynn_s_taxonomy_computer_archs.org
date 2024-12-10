@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       5c5c63a4-803b-4f9b-80c8-932bf6bf3bb6
+:ROAM_ALIASES: MIMD MISD SIMD SISD
+:END:
+#+title: Flynn's Taxonomy (computer archs)
+#+filetags: :arch:compute:
+
+* Overview
+
+- *Flynn’s Taxonomy*:
+  - A classification system for computer architectures developed by Michael J. Flynn in 1966.
+  - Categorizes computer systems based on the number of concurrent instruction and data streams they can handle.
+
+- *Four Categories of Flynn's Taxonomy*:
+  1. *Single Instruction, Single Data (SISD)*:
+     - A single processor executing a single instruction stream to operate on data stored in a single memory.
+     - Traditional von Neumann architecture falls under this category.
+
+  2. *Single Instruction, Multiple Data (SIMD)*:
+     - A single instruction stream controls multiple processing elements (PEs), each executing the same instruction on different pieces of data.
+     - Used in applications like image processing and matrix operations.
+
+  3. *Multiple Instruction, Single Data (MISD)*:
+     - Multiple instruction streams operate on a single data stream.
+     - Rarely used in practice but can be seen in certain fault-tolerant systems that employ redundancy.
+
+  4. *Multiple Instruction, Multiple Data (MIMD)*:
+     - Multiple processors with independent instruction and data streams.
+     - Common in many modern multi-core and distributed systems.
+
+- *Connections and Applications*:
+  - *SISD* is typical in general-purpose computing.
+  - *SIMD* is widely used in graphics processing units (GPUs) and vector processors for parallel processing tasks.
+  - *MISD* finds niche applications in specialized fields like space systems where redundancy and fault tolerance are prioritized.
+  - *MIMD* is favored in complex computing tasks that require high parallelism, like scientific computations and simulations.
+
+** SPMD and MPMD
+
+- Single Program, Multiple Data (SPMD):
+  - A parallel computing model where multiple autonomous processors simultaneously execute the same program on different pieces of distributed data.
+  - Often considered a subtype or an extension of the MIMD model.
+  - Common in distributed computing environments like clusters and [[id:4dfc4edf-4222-4f6c-acce-edf8bf193ba4][supercomputers]], using frameworks such as [[id:f10899df-3d45-4290-bc50-b75c85bfb66b][MPI]] (Message Passing Interface).
+
+- Multiple Program, Multiple Data (MPMD):
+  - A parallel computing model where different processors execute different programs on different sets of data.
+  - Suitable for heterogeneous computing environments where different tasks need to be carried out on various datasets.
+  - Used in complex workflows where diverse processing is necessary; for example, different nodes might perform distinct roles in a larger distributed application.
+
+- Connections and Evolution:
+  - Both SPMD and MPMD can be implemented on MIMD architectures, which provides the flexibility to run diverse and complex workloads.
+  - SPMD simplifies programming by using a single program logic across multiple datasets but still requires careful data synchronization.
+  - MPMD offers greater flexibility at the potential cost of increased complexity in managing different program executions and coordinating data exchanges.
+
+* Resources
+ - https://en.wikipedia.org/wiki/Flynn's_taxonomy

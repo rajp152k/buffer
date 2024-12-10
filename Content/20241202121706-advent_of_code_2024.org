@@ -4,6 +4,192 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
+* Day 10
+#+begin_src lisp
+(ql:quickload :uiop)
+(ql:quickload :alexandria)
+
+;; dynamic prog
+
+;; at an n (store current position if peak)
+;; merge positions of all surrounding (n+1s)
+;; at a base (collate results of the base+1)
+
+(defparameter *base* 0)
+(defparameter *peak* 9)
+
+(defun char->int (char)
+  (- (char-int char)
+     (char-int #\0)))
+
+(defun parse-topography (input-file)
+  (let* ((lines (uiop:read-file-lines input-file))
+         (arr (make-array (list (length lines) (length (car lines)))
+                          :element-type 'integer)))
+    (loop for row from 0 below (array-dimension arr 0)
+          do (loop for col from 0 below (array-dimension arr 1)
+                   do (setf (aref arr row col)
+                            (char->int (aref  (nth row lines) col) ) )))
+    arr))
+
+(defparameter *topography* (parse-topography "input.txt"))
+
+(defparameter *collates* (make-array (array-dimensions *topography*)
+                                     :initial-element nil
+                                     :element-type 'list))
+
+(defun prot-get (arr i j)
+  (when (array-in-bounds-p arr i j)
+    (aref arr i j)))
+
+(defun prot-set (arr i j val)
+  (when (array-in-bounds-p arr i j)
+    (setf (aref arr i j) val)))
+
+(defun tget (i j) (prot-get *topography* i j))
+(defun tset (i j val) (prot-set *topography* i j val))
+
+(defun cget (i j) (prot-get *collates* i j))
+(defun cset (i j val) (prot-set *collates* i j val))
+
+(defun cpush (i j vals)
+  (let ((init-vals (cget i j)))
+    (setf (aref *collates* i j) (append vals init-vals))))
+
+;; start from peak
+;; iterate until base
+
+(defparameter rows (array-dimension *topography* 0))
+(defparameter cols (array-dimension *topography* 1))
+
+(defun surroundings (i j)
+  (list (list (1+ i) j)
+        (list i (1+ j))
+        (list (1- i) j)
+        (list i (1- j))))
+
+(defun mark-surrounding-inits (i j n)
+  (loop for pos in (surroundings i j)
+        do (if (eq (tget (car pos) (cadr pos)) (1- n))
+               (cpush (car pos) (cadr pos) (cget i j)))))
+
+(defun populate-collation ()
+  (loop for curr from *peak* above *base*
+        do (loop for i from 0 below rows do
+                 (loop for j from 0 below cols
+                       do (when (= (tget i j)
+                                   curr)
+                            (when (= curr  *peak*)
+                              (cpush i j (list (list  i j))))
+                            (mark-surrounding-inits i j curr))))))
+
+(defun deduplicate ()
+  (loop for i from 0 below rows do
+                 (loop for j from 0 below cols
+                       do (cset i j (remove-duplicates (cget i j)
+                                                       :test #'equal)))))
+
+(defun report-base-scores ()
+  (let ((acc 0))
+    (loop for i from 0 below rows do
+      (loop for j from 0 below cols
+            do (when (= (tget i j) *base*)
+                 (incf acc (length (cget i j))))))
+    acc))
+
+(defun solve-p1 ()
+  (populate-collation)
+  (deduplicate)
+  (report-base-scores))
+
+(defun solve-p2 ()
+  (populate-collation)
+  ;; (deduplicate)
+  (report-base-scores))
+#+end_src
+* Day 9
+#+begin_src lisp
+:uiop)
+(ql:quickload :alexandria)
+
+
+(defun swap (arr i1 i2)
+    (let ((temp (aref arr i1)))
+    (setf (aref arr i1) (aref arr i2))
+    (setf (aref arr i2) temp)))
+
+(defun swap-lr (arr ll lr rl rr)
+  (dotimes (i (1+ (- lr ll)) )
+    (swap arr (+ ll i) (+ rl i))))
+
+(defun len (r)
+  (- (cadr r)
+     (car r)
+     -1))
+
+(defun process-init-checksum (input)
+  (let* ((checksum (mapcar  #'(lambda (char)  (- (char-int char)
+                                                 (char-int #\0)))
+                            (coerce (car (uiop:read-file-lines input)) 'list)))
+         (total-blocks (apply #'+ checksum))
+         (disk (make-array (list total-blocks) :initial-element -1))
+         (flrs nil)
+         (eyrs nil))
+    (let ((i 0)
+          (id 0)
+          (empty nil))
+      (dolist (j checksum)
+        (if (not empty)
+            (progn
+              (push (list i (+ j i -1)) flrs)
+              (dotimes (b j)
+                (setf (aref disk i) id)
+                (incf i))
+              (incf id)
+              (setf empty t))
+            (progn
+              (when (>= (+ j i -1) i)
+                (push (list i (+ j i -1)) eyrs))
+              (dotimes (b j)
+                (setf (aref disk i) -1)
+                (incf i))
+              (setf empty nil)))))
+    (setf eyrs (nreverse eyrs))
+
+    (labels ((check-swap ()
+               (let* ((eyr (car eyrs))
+                      (flr (find-if #'(lambda (flr)
+                                        (<= (len flr)
+                                            (len eyr)))
+                                    flrs)))
+                 (if flr
+                     (let* ((ll (car eyr))
+                            (lr (+ ll (len flr) -1))
+                            (rl (car flr))
+                            (rr (cadr flr)))
+                       (if (= (len flr) (len eyr))
+                           (pop eyrs)
+                           (let ((neweyr (list (1+ lr) (cadr eyr))))
+                             (pop eyrs)
+                             (push neweyr eyrs)))
+                       (setf flrs
+                             (remove-if #'(lambda (an-flr)
+                                            (equal an-flr flr))
+                                        flrs))
+                       (swap-lr disk ll lr rl rr))
+                     (pop eyrs)))))
+      (do ()
+          ((null eyrs) nil)
+        (check-swap)))
+
+    (do ((i 0 (+ 1 i))
+         (acc 0 acc))
+        ((eq i (length disk)) acc)
+      (when (not (eq (aref disk i) -1))
+        (incf acc (* (aref disk i) i))))))
+
+(process-init-checksum "input.txt")
+#+end_src
 * Day 8
 #+begin_src lisp
 (ql:quickload :uiop)

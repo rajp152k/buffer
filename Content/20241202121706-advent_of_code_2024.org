@@ -4,6 +4,36 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
+* Day 11
+#+begin_src lisp
+(ql:quickload :uiop)
+
+(defparameter *stones* (uiop:split-string (uiop:read-file-line "input.txt")))
+
+(defun even-str-p (string) (evenp (length string)))
+(defun strip-string (stone) (write-to-string (parse-integer stone)))
+(defun x2024 (stone) (write-to-string (* (parse-integer stone) 2024)))
+(defun halves (string)
+    (let ((split (/ (length string) 2)))
+    (mapcar #'strip-string (list (subseq string 0 split) (subseq string split)))))
+
+(defparameter *mem* (make-hash-table :test 'equal))
+(defmacro ghsh (stone steps)
+    `(gethash (list ,stone ,steps) *mem*))
+
+(defun nstep (stone steps)
+    (if (ghsh stone steps) (ghsh stone steps)
+        (setf (ghsh stone steps)
+            (cond ((= steps 0) 1)
+                    ((equal stone "0") (nstep "1" (1- steps)))
+                    ((even-str-p stone) (apply #'+ (mapcar #'(lambda (stone)
+                                                                (nstep stone (1- steps)))
+                                                            (halves stone))))
+                    (t (nstep (x2024 stone) (1- steps)))))))
+
+(defun solve (i)
+    (apply #'+ (mapcar #'(lambda (stone) (nstep stone i)) *stones*)))
+#+end_src
 * Day 10
 #+begin_src lisp
 (ql:quickload :uiop)

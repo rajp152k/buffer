@@ -139,7 +139,7 @@
 #+end_src
 * Day 9
 #+begin_src lisp
-:uiop)
+(ql:quickload :uiop)
 (ql:quickload :alexandria)
 
 

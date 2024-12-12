@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       030800db-1708-4f98-a27e-7239450c9ca8
+:END:
+#+title: Advent of Code 2015
+#+filetags: :project:
+
+
+* Day 2
+* Day 1
+#+begin_src lisp
+(ql:quickload :uiop)
+
+(defun solve-p1 (input-file)
+  (apply #'+
+         (mapcar #'(lambda (chr) (if (eq chr #\()
+                                     1
+                                     -1))
+                 (coerce (uiop:read-file-line input-file) 'list))))
+
+(defun solve-p2 (input-file)
+  (let ((curr 0)
+        (input  (mapcar #'(lambda (chr) (if (eq chr #\()
+                                                   1
+                                                   -1))
+                               (coerce (uiop:read-file-line input-file) 'list))))
+    (do ((i 0 (+ 1 i))
+         (head input (cdr head)))
+        ((= curr -1) i)
+      (incf curr (car head)))))
+#+end_src

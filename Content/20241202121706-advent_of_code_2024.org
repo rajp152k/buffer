@@ -4,6 +4,148 @@
 #+title: Advent of Code 2024
 #+filetags: :project:
 
+* Day 12
+#+begin_src lisp
+(ql:quickload :uiop)
+(ql:quickload :alexandria)
+
+(defun yield-grid (input-file)
+  (let* ((lines (uiop:read-file-lines input-file))
+         (arr (make-array (list (length lines) (length (car lines)))
+                          :initial-element nil)))
+    (loop for i from 0 below (array-dimension arr 0)
+          for line in lines do
+            (loop for j from 0 below (array-dimension arr 1)
+                  do (setf (aref arr i j) (char line j))))
+    arr))
+
+(defparameter *grid* (yield-grid "input.txt"))
+
+(defparameter *cluster-grid* (make-array (array-dimensions *grid*)
+                                         :initial-element -1))
+
+(defun scaffold-cluster (init-id chr)
+  (let ((charac chr)
+        (id init-id)
+        (indices (make-hash-table :test 'equal))
+        (area 0)
+        (perim 0)
+        (vertex 0))
+    (labels ((get-id ()
+               id)
+             (get-chr ()
+               charac)
+             (insert-pos (i j)
+               (setf (gethash (list i j) indices) t))
+             (indices ()
+               (alexandria:hash-table-keys indices))
+             (indexp (pos)
+               (gethash pos indices))
+             (g-area () area)
+             (inc-area () (incf area))
+             (g-perim () perim)
+             (inc-perim () (incf perim))
+             (g-vertex () vertex)
+             (inc-vertex () (incf vertex))
+             (orchestrate (msg)
+               (case msg
+                 (:id #'get-id)
+                 (:chr #'get-chr)
+                 (:insert #'insert-pos)
+                 (:indices #'indices)
+                 (:idxp #'indexp)
+                 (:g-area #'g-area)
+                 (:g-perim #'g-perim)
+                 (:g-vertex #'g-vertex)
+                 (:inc-area #'inc-area)
+                 (:inc-perim #'inc-perim)
+                 (:inc-vertex #'inc-vertex)
+                 (otherwise (error 'invalid-msg msg)))))
+      #'orchestrate)))
+
+(defmacro cf (cluster msg &rest args)
+  `(funcall (funcall ,cluster ,msg) ,@args))
+
+(defparameter *clusters* (make-hash-table))
+
+(defmacro cidf (id msg &rest args)
+  `(cf ,(gethash id *clusters*) ,msg ,@args))
+
+
+(defun unmarked (i j)
+  (when (array-in-bounds-p *cluster-grid* i j)
+    (= (aref *cluster-grid* i j) -1)))
+
+(defun find-cluster (test-fn)
+  (loop for i from 0 below (array-dimension *cluster-grid* 0)
+        do (loop for j from 0 below (array-dimension *cluster-grid* 1)
+                 do (when (funcall test-fn i j)
+                      (return-from find-cluster  (list i j))))))
+
+(defun find-unmarked () (find-cluster #'unmarked))
+
+(defun surroundings (i j)
+  (list
+   (list i (1- j))
+   (list (1- i) j)
+   (list (1+ i) j)
+   (list i (1+ j))))
+
+(defparameter *corners* (list (list 1 1)
+                              (list -1 -1)
+                              (list 1 -1)
+                              (list -1 1)))
+
+(defun explore-root (id i j)
+  (let* ((c-char (aref *grid* i j))
+         (c (scaffold-cluster id c-char)))
+    (setf (gethash id *clusters*) c)
+    (labels ((same? (ic jc)
+               (when (array-in-bounds-p *grid* ic jc)
+                 (eq (aref *grid* ic jc) c-char)))
+             (explore-dir-vertex (ic jc istep jstep)
+               (when (array-in-bounds-p *grid* ic jc)
+                 (let ((istpd (same? (+ ic istep) jc))
+                       (jstpd (same? ic (+ jc jstep)))
+                       (ijstpd (same? (+ ic istep) (+ jc jstep))))
+                   (when  (or  (and (not istpd)
+                                    (not jstpd))
+                               (and (not ijstpd)
+                                    istpd
+                                    jstpd))
+                     (cf c :inc-vertex)))))
+             (explore-iter (ic jc)
+               (if (array-in-bounds-p *grid* ic jc)
+                   (cond
+                     ((same? ic jc) (when (unmarked ic jc)
+                                      (progn
+                                        (cf c :inc-area)
+                                        (setf (aref *cluster-grid* ic jc) id)
+                                        (cf c :insert ic jc)
+                                        (mapcar #'(lambda (pos)
+                                                    (apply #'explore-iter pos))
+                                                (surroundings ic jc)))))
+                     (t (cf c :inc-perim)))
+                   (cf c :inc-perim))))
+      (explore-iter i j)
+      (dolist (cpos (cf c :indices))
+        (dolist (corner *corners*)
+          (explore-dir-vertex (car cpos) (cadr cpos) (car corner) (cadr corner))))
+      (values (cf c :g-area)
+              (cf c :g-perim)
+              (cf c :g-vertex)))))
+
+(defun build-cluster-grid ()
+  (let ((acc-area-perim 0)
+        (acc-area-sides 0))
+    (do ((next-unmarked (list 0 0) (find-unmarked))
+         (id 0 (1+ id)))
+        ((not next-unmarked) (list acc-area-perim acc-area-sides))
+      (multiple-value-bind (area perim sides)
+          (apply #'explore-root (cons id next-unmarked))
+        (incf acc-area-perim (* area perim))
+        (incf acc-area-sides (* area sides))))))
+#+end_src
 * Day 11
 #+begin_src lisp
 (ql:quickload :uiop)

@@ -11,5 +11,9 @@
  - https://github.com/mark3labs/mcphost
  - https://github.com/otwld/ollama-helm
 
+* Relevant Nodes
+ - JSON-[[id:19079639-be92-46cf-82c5-3d81c935705c][RPC]]
+
 * Resources
   - https://modelcontextprotocol.io/introduction
+  - https://spec.modelcontextprotocol.io/specification/

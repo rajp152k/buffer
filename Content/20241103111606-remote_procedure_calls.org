@@ -4,3 +4,47 @@
 :END:
 #+title: Remote Procedure Calls
 #+filetags: :programming:cs:
+
+* Overview
+
+** *Definition*
+Remote Procedure Calls (RPC) are protocols that allow a program to execute a procedure in another address space, commonly on a different physical machine.
+
+** *Components*:
+  - *Client*: The program that calls the procedure.
+  - *Server*: The program that executes the procedure.
+  - *Communication Protocol*: The method used for data exchange, often including serialization of data (e.g., JSON, XML).
+
+** *Mechanism*:
+  - The client sends a request to the server.
+  - The server processes the request and sends a response back.
+  - Typically involves network communication methods such as TCP/IP.
+
+** *Types of RPC*:
+   - *gRPC*:
+     - Utilizes HTTP/2 for transport.
+     - Supports multiple programming languages.
+     - Features tools for automatic code generation.
+   - *XML-RPC*:
+     - Encodes RPC calls in XML format.
+     - More verbose due to XML, which can increase overhead.
+     - Simpler implementation and more human-readable.
+   - *JSON-RPC*:
+     - Similar to XML-RPC, but uses JSON for encoding.
+     - Generally more lightweight than XML.
+     - Suitable for web applications and easier for JavaScript integration.
+*** Comparisons:
+   - *Performance*:
+     - gRPC often outperforms XML-RPC and JSON-RPC due to binary serialization and multiplexing capabilities.
+   - *Ease of Use*:
+     - JSON-RPC may be easier for web developers due to JSON's prevalence in web APIs.
+   - *Language Support*:
+     - gRPC has extensive language support and is well-documented, whereas XML-RPC and JSON-RPC could be limited in terms of language bindings.
+   - *Best Use Case*:
+     - gRPC is favored for microservices, whereas XML-RPC and JSON-RPC are more commonly utilized for lightweight web services.
+** *Use Cases*:
+  - [[id:54978664-78a5-4c2c-ae33-c4e6a14d6bb0][Microservices]] architectures.
+  - [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] computing systems.
+  - Remote [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] access.
+  - Cloud services and [[id:20240101T073142.439145][APIs]].
+

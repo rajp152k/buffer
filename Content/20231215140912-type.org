@@ -14,9 +14,6 @@ It might be beneficial to structure entities into relevant categories when it co
 To be populated
 * Practical
 ** Schema
-:PROPERTIES:
-:ID:       e47e785a-60dc-4ee6-b0b3-7cd2fd75c863
-:END:
  - a type specification for records when it comes to working with [[id:2f67eca9-5076-4895-828f-de3655444ee2][a DataBase]]
  - also used more casually when talking about the representation specification of [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][serialized data]]
    

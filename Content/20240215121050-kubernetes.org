@@ -8,6 +8,8 @@
 see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 
 * Stream
+** 0x2324
+ - see [[id:dd91e448-4e13-471f-aa2a-3137b420db91][kubeconfig]]
 ** 0x22E3
  - reading up on [[id:7cb8489b-2b84-4224-b3f9-9f5bf0f38cfe][autoscaling]]
  - see [[id:7f960631-c727-41b8-80c2-3ccaa4ae4ba2][Scheduling Algorithms]] & [[id:59305648-ed10-4298-be07-cd67f277f612][Scheduling-K8S]]

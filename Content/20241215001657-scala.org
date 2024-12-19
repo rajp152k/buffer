@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9497fb82-9220-4e8d-b29c-9811c14a70ab
+:END:
+#+title: Scala
+#+filetags: :scala:

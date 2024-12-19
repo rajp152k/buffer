@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       d508997a-359b-4581-b781-b3e87e41fb23
+:END:
+#+title: Idempotence
+#+filetags: :math:
+
+* Overview
+
+- *Definition of Idempotence:*
+  - A property of certain operations or functions, where applying them multiple times does not change the result beyond the initial application.
+
+- *Computer Science Context:*
+  - In programming and [[id:20240101T073142.439145][APIs]], an idempotent operation can be performed multiple times without different outcomes.
+  - [[id:88828c6f-87e0-4569-b236-dc6ebb72d282][HTTP methods]] like PUT and DELETE are generally considered idempotent.
+
+- *Generalization in Algebra:*
+  - In a [[id:bb4cc157-483e-462b-b0a7-90617601c808][monoid]] (an algebraic structure), an element \( a \) is idempotent if \( a \cdot a = a \).
+
+- *Applications:*
+  - Database operations: Ensuring that commands like update do not result in multiple records being altered inadvertently.
+  - Functional programming: Enhancing code reliability and predictability by using idempotent functions.
+
+*Connections:*
+- The concept of idempotence bridges multiple fields, from mathematics and computer science to functional programming, emphasizing its foundational role in logical reasoning and system reliability.
+- Idempotence is crucial for designing systems that are fault-tolerant and predictable, allowing users to repeat actions without unintended effects.
+
+*Questions for Further Research:*
+- How does the concept of idempotence apply to distributed systems or APIs in real-world applications?
+- What are the implications of idempotence in database transactions, particularly in the context of ACID properties?
+- Are there any notable exceptions or edge cases in which an operation is considered idempotent in theory but not in practice?
+
+* Idempotence and [[id:3586cec4-d474-404e-87af-6e3520049494][Ephemerality]] in the [[id:739d8493-d7a6-4eee-b31a-44d087f4fb42][cloud native]] world
+ - https://www.appdynamics.com/blog/engineering/what-are-idempotency-ephemerality-in-cloud-native-world/

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       bb4cc157-483e-462b-b0a7-90617601c808
+:END:
+#+title: Monoid
+#+filetags: :math:
+
+* Overview
+*** Overview of Monoid
+
+- *Definition*: A monoid is an [[id:412f3aa9-2b5f-4e78-9b4e-1adfa34bfe01][algebraic structure]] consisting of a set equipped with an associative binary operation and an identity element.
+
+- *Components*:
+  - *Set*: A non-empty set \( M \).
+  - *Binary Operation*: A function \( \cdot : M \times M \rightarrow M \) representing the operation.
+  - *Associativity*: For all \( a, b, c \in M \), \( (a \cdot b) \cdot c = a \cdot (b \cdot c) \).
+  - *Identity Element*: There exists an element \( e \in M \) such that for all \( a \in M \), \( e \cdot a = a \cdot e = a \).
+
+- *Examples*:
+  - The set of natural numbers \( \mathbb{N}_0 \) (including zero) with addition as the operation.
+  - The set of strings over a fixed alphabet with string concatenation as the operation.
+
+- *Equivalent Notations*: Monoids can be notated using the triplet \( (M, \cdot, e) \), where \( M \) is the set, \( \cdot \) is the operation, and \( e \) is the identity element.
+
+*** Connections:
+
+- *Relation to [[id:8a045d3f-6bea-4844-94b5-3d59c51b042f][Groups]]*: Every monoid can be seen as a generalization of groups, where groups have the additional property of every element having an inverse.
+
+- *Applications*:
+  - Used in computer science, particularly in [[id:20231212T081907.908301][functional programming]] (e.g., fold operations).
+  - Helpful in category theory, where monoids can represent objects and morphisms.
+

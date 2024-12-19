@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8fd3deca-b629-4df6-b22c-ff57cf8c028d
+:END:
+#+title: kubectl
+#+filetags: :k8s:

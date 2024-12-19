@@ -4,7 +4,28 @@
 #+title: Actor-Model Computation
 #+filetags: :programming:
 
-* Relevant
+* Overview
+*** Overview of Actor-Model Computation
 
+- *Definition*: Actor-model computation is an abstraction used in computer science to model computation as a collection of "actors."
+- *Actors*: The fundamental units of computation in this model that encapsulate state and behavior, interact with each other through asynchronous message passing.
+- *Concurrency*: Supports concurrent computation by allowing actors to operate independently and in a non-blocking manner.
+- *Location Transparency*: Actors can communicate regardless of their physical location in a system, enabling distributed computing.
+- *Fault Tolerance*: The model encourages building systems that can gracefully handle failures by isolating actors.
+
+*** Key Concepts
+
+- *[[id:f10899df-3d45-4290-bc50-b75c85bfb66b][Message Passing]]*: Actors communicate by sending messages, ensuring that interactions are loosely coupled.
+- *State Management*: Each actor maintains its own state and is responsible for managing it, thus simplifying reasoning about state changes.
+- *Supervisor Hierarchy*: An organizational structure where actors can supervise other actors, enabling a robust fault recovery mechanism.
+
+*** Connections
+
+- The *actor model* contrasts with shared-state concurrency models, where threads share memory and require synchronization, leading to complexities like deadlocks and race conditions.
+- *Applications*: Widely used in systems requiring high concurrency, such as telecommunications (e.g., [[id:158b95bc-9434-48f2-b932-3be750afa7e6][Erlang]]), [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]], and real-time applications.
+- It has influenced various programming languages and frameworks, promoting a paradigm centered on concurrency and parallelism, most notably in languages like [[id:9497fb82-9220-4e8d-b29c-9811c14a70ab][Scala]] and Akka.
+
+* Relevant Nodes
+** [[id:29c69e24-36df-4283-b8e7-1398f205f40f][Ergo]]
 * Resources
  - https://en.wikipedia.org/wiki/Actor_model

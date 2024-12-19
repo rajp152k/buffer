@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3586cec4-d474-404e-87af-6e3520049494
+:END:
+#+title: Ephemerality
+#+filetags: :meta:

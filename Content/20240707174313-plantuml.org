@@ -35,6 +35,9 @@ Note "1" *-- "*" Tag
 @enduml
 #+end_src
 
+#+RESULTS:
+[[file:images/plant-uml.png]]
+
 ** State diagrams
 
 #+begin_src plantuml :file images/plantuml-state.png :exports both
@@ -46,6 +49,9 @@ Draft --> Review: Self edit
 Review --> Publish: Share
 @enduml
 #+end_src
+
+#+RESULTS:
+[[file:images/plantuml-state.png]]
 
 ** Mind Maps
 #+begin_src plantuml :file images/plantuml-mmap.png :exports both

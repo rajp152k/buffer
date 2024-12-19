@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       f6f7f087-b7fe-4192-8950-497166f5af0f
+:END:
+#+title: MCP (Model Context Protocol)
+#+filetags: :network:ai:
+
+* Model Context Protocol
+
+* Relevant Tooling
+** CLI testing utilities
+ - https://github.com/mark3labs/mcphost
+ - https://github.com/otwld/ollama-helm
+
+* Resources
+  - https://modelcontextprotocol.io/introduction

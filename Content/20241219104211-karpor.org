@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       b5c02b4f-4476-4af1-88ad-2ca1cd2aec8e
+:END:
+#+title: Karpor
+#+filetags: :open-source:project:
+
+* Work Logs
+** 0x2325
+ - init chronologically descending logs for karpor contribs
+ - [[id:f6f7f087-b7fe-4192-8950-497166f5af0f][model context proctol]] integration into the stack is what I'm going for
+* Relevance
+ - https://github.com/KusionStack/karpor/issues/658
+* Resources
+ - https://github.com/KusionStack/karpor

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       29c69e24-36df-4283-b8e7-1398f205f40f
+:END:
+#+title: Ergo
+#+filetags: :erlang:golang:
+
+Exposing erlang ecosystem in golang
+
+* Resources
+ - https://docs.ergo.services/

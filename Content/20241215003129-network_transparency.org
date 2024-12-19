@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       9d903415-5198-4b13-b2e4-ef0acc99c76c
+:END:
+#+title: Network Transparency
+#+filetags: :network:
+
+* Overview
+
+- *Definition of Network Transparency*: Network transparency refers to the degree to which users can see and understand the workings of a [[id:a4e712e1-a233-4173-91fa-4e145bd68769][network]], including its [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][protocols]], architecture, and interactions.
+
+- *Importance in Networking*:
+  - Facilitates [[id:20240218T063707.851290][trust]] among users.
+  - Enhances security by allowing for audits and assessments.
+  - Aids in problem detection and resolution.
+
+- *Key Aspects*:
+  - *Visibility*: Information on network operations and performance metrics should be easily accessible.
+  - *Accessibility*: Tools and data for monitoring should be user-friendly.
+  - *Interoperability*: Different systems and protocols must work together seamlessly, allowing users to understand how components interact.
+
+- *Applications*:
+  - Used in corporate networks for compliance and governance.
+  - Integral to [[id:20240519T201406.029955][blockchain]] technologies where transactions and operations are visible to all participants.

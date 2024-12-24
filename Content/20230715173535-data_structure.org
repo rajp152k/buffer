@@ -1,32 +1,53 @@
 :PROPERTIES:
 :ID:       20230715T173535.681936
 :END:
-#+title: Data Structure
+#+title: Data Structures
 #+filetags: :programming:data:
 
-* Stream
-** 0x2250
- - exploring consensus algorithms, some relevant structures
-   - [[id:20240519T201001.324666][Merkle Tree]] (also used in [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Version Control]])
-   - [[id:20240519T213730.807988][SS Table]]
-   - [[id:20240519T214118.461723][Bloom Filter]]
-** 0x21B6
- - initializing the first dedicated population phase
-   - need a stable base for all specializations 
-   - will be proceeding in python
-   - accompanied by a parallel phase for [[id:f9c89977-5a4b-4c21-b340-56b204cfb35d][Algorithms]]
-** 0x21B3
- - checkout [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
- - the right approach persistence does affect and applications health
-** 0x21B1
- - Doing a quick overview of [[id:2f67eca9-5076-4895-828f-de3655444ee2][data storage methodologies]]
-** 0x211A
+* [[id:d45dae92-5148-4220-b8dd-e4da80674053][Data]] Structures: Overview
+** Definition
+- Data structures are specific ways of organizing and storing data in a computer to enable efficient access and modifications.
+** Categories
+1. *Primitive Data Structures*
+   - Integers, characters, floats, etc.
+   - Basic types directly supported by programming languages.
 
-A way of representing data in memory: The most primitive notion of a data structure arises from the ability to glue objects together according to one's preferred semantics, the variation in which gives rise to all the representations that can exist.
+2. *Non-Primitive Data Structures*
+   - *Linear Structures*
+     - Arrays: Fixed-size collections of elements.
+     - Linked Lists: Collections of elements linked via pointers.
+     - Stacks: Last-in-first-out (LIFO) storage.
+     - Queues: First-in-first-out (FIFO) storage.
+   - *Non-linear Structures*
+     - Trees: Hierarchical structures (e.g., binary trees, AVL trees).
+     - Graphs: Collections of nodes and edges.
 
-This glue can be at a physical level (adjacent registers) or be achieved with several levels of indirection ([[id:20230715T174319.700414][pointers]])
+** Operations
+- *Basic Operations on Data Structures*
+  - Insertion: Adding elements.
+  - Deletion: Removing elements.
+  - Traversal: Accessing elements in a systematic way.
+  - Searching: Finding elements (e.g., linear search, binary search).
+  - Sorting: Arranging elements (e.g., quicksort, mergesort).
+* [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Cache]] Friendliness: Overview
+- /Definition/: Cache friendliness refers to how well a data structure or algorithm utilizes the CPU cache to minimize latency and improve performance.
 
-Closely related to a data structure, is its behavior under various operations (insert, delete, search,...). It is an abstraction of data that is exposed by these behaviors allowing one to manipulate it.
+** Key Concepts
+1. /Locality of Reference/
+   - /Temporal Locality/: If a data location is accessed, it is likely to be accessed again soon.
+   - /Spatial Locality/: If a data location is accessed, nearby data locations are likely to be accessed soon.
 
-***  [[id:20230715T180212.260696][Mutability]]
-This affects how one implements the said representation and the details of the abstraction (generation/return of references, copies, etc).
+2. /Cache Hierarchy/
+   - Modern CPUs have multiple cache levels (L1, L2, L3).
+   - Data structures should fit within cache lines to leverage fast memory access.
+
+** Characteristics of Cache-Friendly Data Structures
+- /Contiguous Memory Allocation/: Arrays are generally more cache-friendly than linked lists as they store elements in contiguous memory locations.
+- /Data Structure Size/: Smaller structures that fit in cache are preferable.
+- /Access Patterns/: Sequential access patterns (e.g., traversing an array) are usually better than random access patterns.
+
+** Impact on Performance
+- Efficient cache usage can reduce memory access time significantly, leading to overall faster program execution.
+
+* Resources
+ - https://www.youtube.com/watch?v=ouipSd_5ivQ&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=5&ab_channel=ByteByteGo

@@ -3,3 +3,60 @@
 :END:
 #+title: Representational State Transfer (ReST)
 #+filetags: :programming:
+
+* Overview
+
+- *Definition*: Representational State Transfer (ReST) is an architectural style for designing [[id:a4e712e1-a233-4173-91fa-4e145bd68769][networked]] applications, primarily used in web services.
+- *Principles*:
+  - Statelessness: Each request from client to server must contain all necessary information, and the server does not store the session state.
+  - [[id:e944d11b-ba53-4dc1-aee9-3793f59be8ac][Client-Server]] Architecture: Separation of client and server concerns enhances the scalability and flexibility of the application.
+  - Cacheability: Responses must be explicitly marked as cacheable or non-cacheable to improve performance.
+  - Layered System: A client should not be able to tell whether it is connected directly to the end server or an intermediary (proxy or gateway).
+  - Uniform Interface: Emphasizes a standardized way to interact with the server through resources and standard HTTP methods (GET, POST, PUT, DELETE).
+- *[[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]] [[id:37961b23-d768-4a4a-bba6-0bd1199478b6][Methods]]*:
+  - *GET*: Retrieve data.
+  - *POST*: Submit data to be processed.
+  - *PUT*: Update existing data.
+  - *DELETE*: Remove data.
+- *Resources*: In ReST, data and functionality are considered resources, which can be identified by URIs (Uniform Resource Identifiers).
+
+*** Connections
+- *Comparative Framework*: ReST contrasts with other web service models such as SOAP (Simple Object Access Protocol), which relies on XML messaging and a more rigid protocol.
+- *Web and Internet Standards*: ReST builds on existing web standards, heavily using HTTP, so it is easier to implement and more accessible.
+- *Microservices Architecture*: Often used in conjunction with microservices, as ReST allows easy interaction between services and promotes loose coupling.
+
+* ReST Developement Tips
+** Limit and Offset
+- *Definition*
+  - *Limit*: Specifies the maximum number of records to return in a single response.
+  - *Offset*: Indicates the number of records to skip before starting to collect the response.
+
+- *Usage*
+  - Enhances performance by avoiding the retrieval of complete datasets.
+  - Useful for creating paginated views in user interfaces for easier navigation.
+
+- *Example*
+  - URL: =GET /api/resources?limit=10&offset=20= would return the third "page" of results, containing the 21st through 30th records.
+
+- *Considerations*
+  - *Zero-based Indexing*: Ensure client-side calculations adjust for zero-based offsets.
+  - *Performance*: Very large offsets might lead to performance degradation.
+
+** Versioning
+- *Definition*
+  - The practice of maintaining multiple versions of an API to support changes and ensure backward compatibility.
+
+- *Methods of Versioning*
+  - *URI Versioning*: Include the version in the URL (e.g., =/v1/resources=).
+  - *Header Versioning*: Include versioning information in the request headers (e.g., =Accept-Version: 1.0=).
+  - *Query Parameter Versioning*: Specify version in a query string (e.g., =/api/resources?v=1=).
+
+- *Best Practices*
+  - Clearly document changes in each version.
+  - Deprecate older versions gracefully, giving clients time to transition.
+
+* Relevant Nodes
+** [[id:d508997a-359b-4581-b781-b3e87e41fb23][Idempotence]]
+** [[id:c724b622-32a7-46c4-81bc-b7570080c9ee][GraphQL]]
+* Resources
+ - https://www.youtube.com/watch?v=-mN3VyJuCjM&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=4&ab_channel=ByteByteGo

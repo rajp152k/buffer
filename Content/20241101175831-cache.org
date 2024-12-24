@@ -1,6 +1,178 @@
 :PROPERTIES:
 :ID:       c8a3e246-0f29-4909-ab48-0d34802451d5
 :END:
-#+title: Cache
+#+title: Caching
 #+filetags: :data:
 
+* Overview
+
+- *Definition*: Caching is a technology that stores copies of files or data in a temporary storage location for quicker access.
+
+- *Purpose*:
+  - Reduces the time it takes to access data.
+  - Minimizes the load on primary storage locations (e.g., databases, servers).
+
+- *Types of Caching*:
+  - *Memory Caching*: Uses RAM to store frequently accessed data.
+  - *Disk Caching*: Stores data on disk drives for access beyond RAM limits.
+  - *Web Caching*: Saves web pages, images, etc., to speed up browsing.
+
+- *Use Cases*:
+  - Database queries (e.g., caching results of frequent searches).
+  - Web browsers storing previously visited sites.
+  - Applications caching user data to reduce load times.
+
+- *Benefits*:
+  - Improved performance (decreased latency and faster load times).
+  - Reduced bandwidth usage.
+  - Enhanced user experience.
+
+- *Challenges*:
+  - Cache coherence: Ensuring the cached data remains up-to-date with the source data.
+  - Cache size management: Limiting the cache size to avoid overwhelming the system.
+  - Eviction policies: Deciding which data to remove when the cache is full (e.g., LRU, FIFO).
+
+* Processor Caches
+
+- Definition: Processor caches are small, high-speed storage locations within or close to the CPU (Central Processing Unit) that store copies of frequently accessed data from the main memory (RAM).
+
+- Levels of Processor Caches:
+  - L1 Cache:
+    - Smallest and fastest.
+    - Usually integrated into the CPU chip.
+    - Split into instruction cache and data cache.
+  - L2 Cache:
+    - Larger than L1 but slower.
+    - May reside on the CPU chip or be located close to it.
+  - L3 Cache:
+    - Even larger, shared among multiple cores.
+    - Slower than L2 but still faster than main memory.
+
+- Purpose:
+  - Reduces the time it takes for the CPU to access frequently used data, thereby increasing overall system performance.
+
+- Functionality:
+  - When the CPU needs data, it first checks the L1 cache, then L2, then L3, and finally the main memory if it is not found in any cache (this is often referred to as a cache miss).
+
+- Cache Hits and Misses:
+  - Cache Hit: When the data requested by the CPU is found in the cache, allowing for faster operation.
+  - Cache Miss: When the data is not found, necessitating access to slower main memory.
+
+- Importance of Cache Hierarchy:
+  - The tiered structure (L1, L2, L3) helps balance speed and size, optimizing the processing efficiency while managing physical space and cost.
+
+- Cache Coherency:
+  - In multi-core processors, maintaining consistency across caches (ensuring all caches reflect the most current data) is crucial for system reliability.
+
+*Connections*:
+- Processor caches are a specific application of the broader concept of caching, focusing on data access speed and efficiency within CPUs.
+- The benefits of processor caches (e.g., improved performance) align with the general advantages of caching, such as reduced latency and enhanced user experiences.
+
+*Questions for Exploration*:
+- What technologies are evolving in the realm of cache management and optimization?
+- How do various programming languages and paradigms affect cache performance?
+- What are the implications of cache size on application performance in different computing environments?
+- How does the design of cache eviction policies impact computational efficiency?
+* Operating System Caches
+
+- Definition: Operating system caches are mechanisms within an operating system that temporarily store data or file system metadata to expedite data retrieval and improve overall system performance.
+
+- Types of Operating System Caches:
+  - File System Cache:
+    - Stores frequently accessed files and metadata in memory to reduce disk IO operations.
+  - Page Cache:
+    - Keeps copies of pages from the disk in memory to enhance virtual memory performance and reduce latency from reading disk data.
+  - Block Cache:
+    - Caches blocks of data as they are read from or written to the disk, optimizing disk access speed.
+
+- Purpose:
+  - Increase data access speeds by minimizing direct interactions with slower storage devices (like hard drives or SSDs).
+  - Improve application performance by reducing filesystem overhead.
+
+- Cache Strategies:
+  - Write-Through Cache: Data is written to both the cache and the backing store simultaneously, ensuring reliability.
+  - Write-Back Cache: Data is written only to the cache initially; the cache is updated when necessary, which increases performance but can risk data loss if not managed properly.
+
+- Cache Replacement Policies:
+  - Strategies to manage what data stays in the cache, such as:
+    - Least Recently Used (LRU): Evicts the least recently accessed items first.
+    - First In, First Out (FIFO): Removes the oldest items first.
+    - Most Recently Used (MRU): Evicts the most recently accessed items.
+
+- Impact on Performance:
+  - Reduces latency and increases throughput for IO operations, contributing to overall system efficiency.
+  - Can balance the load on storage devices by decreasing the frequency of access requests.
+
+Connections:
+- Operating system caches are an extension of the general caching principle, emphasizing efficiency between applications and storage mediums.
+- The strategies and policies employed in operating system caches echo those used in processor caches, showing a shared goal of optimizing speed and resource management.
+
+* Web Caches
+
+- Definition: Web caches are temporary storage systems that store copies of web content, such as pages and images, to expedite retrieval when users access those resources again.
+
+- Types of Web Caches:
+  - Browser Cache:
+    - Stores web content locally on users' devices for quicker access on future visits.
+  - Proxy Cache:
+    - Serves as an intermediary between users and servers, caching content for multiple clients to reduce server load.
+  - Content Delivery Network (CDN) Cache:
+    - Distributes copies of web content across multiple geographic locations to minimize latency for end-users.
+
+- Purpose:
+  - Decrease loading times for frequently accessed web pages.
+  - Reduce bandwidth usage by serving cached content instead of retrieving it from the original server repeatedly.
+
+- Cache Control Headers:
+  - HTTP headers (like Cache-Control, ETag, and Expires) dictate how web caches behave, ensuring proper handling of cached data, including expiration and revalidation.
+
+- Benefits:
+  - Improves user experience by providing faster page loads.
+  - Decreases server load and reduces operational costs.
+  - Enhances scaling when serving a large volume of requests.
+
+- Challenges:
+  - Cache Staleness: Cached data can become outdated, leading to users receiving obsolete content.
+  - Cache Invalidation: Mechanisms must be in place to update or remove stale content from caches.
+  - Privacy Concerns: Caching sensitive data must be managed judiciously to prevent unauthorized access.
+
+Connections:
+- Web caches utilize the principles of caching found in operating systems and processor caches but apply them to internet architecture with a focus on delivering content efficiently.
+- The management of cache control headers in web caching reflects the operational strategies found in operating system caches concerning data validity and freshness.
+
+* Distributed Caches
+
+- *Definition*: Distributed caches are systems that store data across multiple servers, providing a shared caching mechanism to improve performance and scalability of applications in distributed computing environments.
+
+- *Characteristics*:
+  - *Scalability*: Easily add or remove nodes (servers) to accommodate varying loads.
+  - *Fault Tolerance*: Redundant copies of cached data enhance availability and reliability.
+  - *Data Consistency*: Mechanisms are needed to ensure that all nodes have a consistent view of the data.
+
+- *Common Types*:
+  - *In-Memory Distributed Cache*: Stores data directly in memory, providing fast access (e.g., Redis, Memcached).
+  - *Persistent Distributed Cache*: Combines in-memory storage with disk storage, ensuring durability (e.g., Apache Ignite, Hazelcast).
+
+- *Use Cases*:
+  - Web applications to accelerate data retrieval.
+  - Microservices architectures where shared state needs to be maintained.
+  - Session management in scalable applications.
+
+- *Cache Mechanisms*:
+  - *Replication*: Keeps copies of cached data on multiple nodes to ensure redundancy.
+  - *Partitioning (Sharding)*: Distributes data across multiple nodes based on defined criteria, allowing parallel access.
+
+- *Cache Invalidation Strategies*:
+  - *Time-Based Expiration*: Cached entries are invalidated after a predefined time.
+  - *Event-Based Invalidations*: Triggers based on data changes in the underlying data source.
+
+- *Challenges*:
+  - *Data Consistency*: Ensuring all cache nodes reflect the most recent updates can be complex.
+  - *Network Partitioning*: In distributed systems, network outages can lead to temporary inconsistencies.
+  - *Complexity in Deployment*: Setting up and managing distributed caches can be more complicated than single-node caches.
+
+- *Connections*:
+  - Distributed caches extend the caching principles found in operating systems and web caches by enabling sharing of cached data across multiple servers, enhancing performance in distributed applications.
+  - The strategies for consistency and fault tolerance in distributed caches resonate with challenges faced by both operating system caches and processor caches, where current data state integrity is critical.
+* Resources
+ - https://www.youtube.com/watch?v=dGAgxozNWFE&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=6&ab_channel=ByteByteGo

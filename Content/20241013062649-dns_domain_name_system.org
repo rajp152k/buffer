@@ -4,5 +4,85 @@
 #+title: DNS (Domain Name System)
 #+filetags: :network:cs:
 
-* Forks
+* Overview
+
+- *Definition*: DNS, or Domain Name System, is a hierarchical and decentralized naming system for computers, services, or any resource connected to the [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]] or a private network.
+
+- *Function*: It translates human-readable domain names (like www.example.com) into [[id:d799bc90-5032-4a69-9806-83145297a335][IP addresses]] (like 192.0.2.1), which are required for locating and identifying computer services and devices.
+
+- *Components*:
+  - *Domain Names*: Structured in levels (e.g., .com, example.com, www.example.com).
+  - *DNS Records*: Various types of records (A, AAAA, CNAME, MX, etc.) that store the mappings between domain names and IP addresses or other information.
+  - *DNS Servers*:
+    - *Recursive Resolvers*: Handle incoming requests from clients.
+    - *Root Name Servers*: The starting point for DNS resolution.
+    - *TLD (Top-Level Domain) Servers*: Manage the last part of the domain name (like .com, .org).
+    - *Authoritative Name Servers*: Provide the actual IP address of the queried domain.
+
+- *Importance*:
+  - *Usability*: Facilitates web browsing by allowing users to access websites using easy-to-remember names.
+  - *Email Delivery*: Helps route emails by translating domain names in email addresses to IP addresses.
+  - *Load Distribution*: DNS can aid in distributing the load among multiple servers through techniques like round-robin DNS.
+
+- *Security Considerations*: Vulnerable to attacks such as DNS spoofing or [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][cache]] poisoning. Mechanisms like DNSSEC (Domain Name System Security Extensions) are implemented to mitigate such risks.
+
+*Connections*   :
+- DNS serves as a crucial infrastructure underpinning the entire internet ecosystem, connecting web addressing (URLs) to machine addressing (IP addresses).
+- The relationship between domain names and IP addresses highlights the need for effective and secure directory services in the networking domain.
+
+* DNS Query Life Cycle
+
+- *DNS Query Initiation*:
+  - User inputs a URL in a web browser (e.g., www.example.com).
+  - The browser checks the local cache for the IP address associated with the domain.
+
+- *Local Cache Check*:
+  - If found, the IP address is used to establish a connection.
+  - If not found, the query proceeds to the next step.
+
+- *DNS Resolver*:
+  - The query is sent to a DNS resolver (typically provided by the user's ISP).
+  - The resolver checks its own cache for the requested domain.
+
+- *Root Name Servers*:
+  - If there’s no cached result, the resolver queries a root name server.
+  - The root server responds with a referral to the appropriate top-level domain (TLD) server (e.g., .com, .org).
+
+- *TLD Name Servers*:
+  - The resolver queries the TLD name server for the domain.
+  - The TLD server responds with a referral to the authoritative name server for the domain.
+
+- *Authoritative Name Servers*:
+  - The resolver queries the authoritative name server.
+  - The authoritative server provides the final answer, returning the IP address for the requested domain.
+
+- *Response to User*:
+  - The resolver caches the IP address for future queries and sends the IP address back to the user’s browser.
+  - The browser uses this IP address to establish a connection to the web server.
+
+- *Connection Establishment*:
+  - The browser initiates a [[id:8bfeed3e-5930-4a61-9ffb-1459b2bcfcdc][TCP connection]] to the server using the retrieved IP address.
+  - It then sends an HTTP request to access the website content.
+
+*** Connections Between Entities:
+
+1. *User Input and Local Cache*: The efficiency of the DNS system starts with the user’s request and heavily relies on caching to reduce latency in accessing frequent domains.
+
+2. *DNS Resolver and DNS Servers*: The resolver acts as an intermediary, bridging the user and various DNS servers, thereby centralizing the querying process.
+
+3. *Root Name Servers and TLD Servers*: Each level of servers represents a hierarchical structure that systematically narrows down requests, ensuring organized distribution of DNS records.
+
+4. *Authoritative Servers and Final Resolution*: The authoritative server is crucial as it holds the definitive answer about the IP address, solidifying its role in the DNS resolution process.
+
+*** Further Inquiry Pathways:
+
+- What are the common security vulnerabilities associated with DNS queries (e.g., DNS spoofing, DDoS)?
+- How do caching mechanisms impact DNS performance and responsiveness?
+- What are the differences in DNS implementations across various Internet Service Providers?
+- How does DNS over HTTPS (DoH) change the way DNS queries are handled?
+- What role does DNS play in website performance and SEO (Search Engine Optimization)?
+
+* Relevant Nodes
 ** [[id:74d7c3e9-bf98-4311-a95c-c9674e61fe97][K8S DNS]]
+* Resources
+ - https://www.youtube.com/watch?v=27r4Bzuj5NQ&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=2&ab_channel=ByteByteGo

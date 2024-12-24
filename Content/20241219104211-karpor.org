@@ -13,7 +13,6 @@
  - local elastic and local etcd
  - MCP server over those
  - MCP client (start with mcp-cli) to interact with those
- -
 *** 0x2326 Dev Setup Build up
  - will checkout the official inspector tomorrow and read up on community recommendations when building with mcp
  - also write some with mcp-go (mcp-golang had some issues)

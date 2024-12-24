@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8bfeed3e-5930-4a61-9ffb-1459b2bcfcdc
+:END:
+#+title: TCP (Transmission Control Protocol)
+#+filetags: :cs:network:

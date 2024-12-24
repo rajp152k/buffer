@@ -6,7 +6,7 @@
 
 * Overview
 ** *Types of Storage*:
-  - Primary Storage: Also known as volatile memory or RAM, it is used by computers to temporarily store data that is actively being used or processed.
+  - Primary Storage: Also known as volatile memory or [[id:734e31f5-746e-47fe-8116-1f2e70120f27][RAM]], it is used by computers to temporarily store data that is actively being used or processed.
   - Secondary Storage: Refers to non-volatile storage like hard drives (HDDs), solid-state drives (SSDs), and optical discs where data is stored for long-term retention.
   - Tertiary Storage: Involves storage systems used for archiving and backup such as tape drives or cloud-based cold storage solutions.
   - Quaternary Storage: Rarely used term, sometimes refers to off-site storage systems or lesser-used forms like microforms.
@@ -14,7 +14,7 @@
 ** *Storage Technologies*:
   - Magnetic Storage: Utilizes magnetic media to store data (e.g., HDDs, magnetic tapes).
   - Optical Storage: Uses lasers to readwrite data (e.g., CDs, DVDs, Blu-rays).
-  - Flash Storage: A form of EEPROM, non-volatile storage technology used in SSDs, USB flash drives.
+  - Flash Storage: A form of EEPROM, non-volatile storage technology used in [[id:38d409d1-d3f3-47d4-9605-35ae3a7dc924][SSDs]], [[id:42b9fab6-2741-47f8-83de-1ed147d7a631][USB flash drives]].
   - Cloud Storage: Allows data to be stored and accessed over the internet, offered by providers like AWS, Google Cloud, Azure.
 
 ** *Key Concepts*:

@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       734e31f5-746e-47fe-8116-1f2e70120f27
+:END:
+#+title: RAM (Random Access Memory)
+#+filetags: :cs:data:
+
+* Overview and Types
+
+*** Overview of RAM (Random Access Memory)
+
+- *Definition*: RAM is a type of computer memory that can be accessed randomly; any byte of memory can be accessed without touching the preceding bytes.
+- *Function*: It temporarily holds data and machine code currently being used, allowing for quick read and write access by the CPU.
+
+*** Types of RAM
+
+1. *DRAM (Dynamic Random Access Memory)*
+   - *Characteristics*: Requires periodic refreshing to maintain data.
+   - *Usage*: Commonly used in main memory for computers and other devices.
+
+2. *SRAM (Static Random Access Memory)*
+   - *Characteristics*: Faster and more reliable than DRAM; doesn't require refreshing.
+   - *Usage*: Used in cache memory for processors due to its speed.
+
+3. *SDRAM (Synchronous Dynamic Random Access Memory)*
+   - *Characteristics*: Synchronized with the system clock to improve performance.
+   - *Usage*: Widely used in modern computers.
+
+4. *DDR SDRAM (Double Data Rate Synchronous DRAM)*
+   - *Characteristics*: Transfers data on both the rising and falling edges of the clock cycle, effectively doubling the data rate.
+   - *Variants*: DDR, DDR2, DDR3, DDR4, and DDR5, each with improvements in speed and efficiency.
+
+5. *Flash Memory*
+   - *Characteristics*: Non-volatile memory, retains data even when powered off.
+   - *Usage*: Often used in solid-state drives (SSDs) and USB drives, although not classified as RAM, it serves a similar purpose in terms of storage.
+
+*** Connections Between Entities
+
+- *Speed vs. Volatility*: SRAM is faster and retains data without needing refresh cycles, unlike DRAM, which is slower and volatile.
+- *Use Cases*: While DRAM is used for main system memory, SRAM's speed makes it suitable for cache memory, pointing to their roles in a computer's architecture.
+- *Evolution of DDR Technologies*: Each iteration of DDR SDRAM offers improvements in speed and energy efficiency, reflecting the industry’s focus on performance enhancement.

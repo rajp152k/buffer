@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       38d409d1-d3f3-47d4-9605-35ae3a7dc924
+:END:
+#+title: Solid State Drive
+#+filetags: :hardware:data:

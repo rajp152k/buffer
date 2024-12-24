@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6e8bfd56-2aa2-4323-9069-a4e73ec1740a
+:END:
+#+title: Internal Developer Platform
+#+filetags: :programming:
+
+* Resources
+ - https://internaldeveloperplatform.org/

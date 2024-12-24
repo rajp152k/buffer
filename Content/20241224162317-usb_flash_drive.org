@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       42b9fab6-2741-47f8-83de-1ed147d7a631
+:END:
+#+title: USB flash drive
+#+filetags: :data:hardware:

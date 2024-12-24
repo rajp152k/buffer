@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       413d5bca-7b49-4607-a66e-cd72cc7b1243
+:END:
+#+title: The Backend Burger
+#+filetags: :programming:cs:
+
+* Resources
+ - https://medium.com/@sudipto2104/the-most-beloved-burger-for-developers-2e77553c4b5c
+ - https://www.youtube.com/watch?v=7swoLEqABhQ&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=7&ab_channel=ByteByteGo

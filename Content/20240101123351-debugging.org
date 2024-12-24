@@ -4,5 +4,17 @@
 #+title: Debugging
 #+filetags: :tool:programming:
 
+* Misc Factors
+** Reproducibility
+ - try replicating your setup for aggressive non-breaking investigations
+ - try minimizing the time required to observe an error at will
+** Logs
+ - build context before you being manipulating code
+ - highly important in a distributed system
+** Mindset
+- Computers are logical, everything can be explained, nothing is magical
+- Sleep, Walk or Deadlift on it.
+- Rubber Ducks.
 * Resources
  - https://jvns.ca/debugging-zine.pdf
+ - https://www.youtube.com/watch?v=J8uAiZJMfzQ&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=9&ab_channel=ByteByteGo

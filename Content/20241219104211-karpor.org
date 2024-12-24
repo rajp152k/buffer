@@ -5,18 +5,34 @@
 #+filetags: :open-source:project:
 
 * Context
+ - https://github.com/KusionStack/karpor/discussions/675
  - https://github.com/KusionStack/karpor/issues/658
 ** Logs
+*** 0x2329 decoupled dev
+ - building in components
+ - local elastic and local etcd
+ - MCP server over those
+ - MCP client (start with mcp-cli) to interact with those
+ -
+*** 0x2326 Dev Setup Build up
+ - will checkout the official inspector tomorrow and read up on community recommendations when building with mcp
+ - also write some with mcp-go (mcp-golang had some issues)
 *** 0x2325 Spec Readup
  - https://spec.modelcontextprotocol.io/specification/
 *** 0x2325 Project Init
  - init chronologically descending logs for karpor contribs
  - [[id:f6f7f087-b7fe-4192-8950-497166f5af0f][model context proctol]] integration into the stack is what I'm going for
+ - Draws parallels to [[id:b06cd83f-e2f6-4573-beda-8ebc26724bd1][Language Server Protocol]]
 * Notes
-** Server Functionalities
+** Server to Client Offerings
  - Context + data (for model and user)
  - Prompts: templated messages and workflows for users
  - Tools: Functions for AI model to execute
+** Client to Server Offerings
+ - Sampling: Server-initiated agentic behaviors and recursive LLM interactions
+** Design Principles
+ - https://spec.modelcontextprotocol.io/specification/architecture/#design-principles
 * Relevance
 * Resources
  - https://github.com/KusionStack/karpor
+ - https://llmindset.co.uk/posts/2024/12/mcp-build-notes/

@@ -4,6 +4,33 @@
 #+title: Eventual Consistency
 #+filetags: :cs:
 
+* Overview
+
+- *Definition*: Eventual consistency is a consistency model used in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed computing]], primarily for [[id:2f67eca9-5076-4895-828f-de3655444ee2][databases]], where updates will eventually propagate to all nodes and all replicas eventually become consistent.
+- *Key Characteristics*:
+  - Allows temporary inconsistencies between nodes.
+  - Guarantees that if no new updates are made, all accesses will return the last updated value.
+  - Often contrasted with strong consistency models.
+- *Use Cases*:
+  - Widely adopted in systems that require high availability such as NoSQL databases, distributed file systems, and cloud storage solutions.
+  - Examples include Amazon DynamoDB, Apache Cassandra, and Riak.
+- *Benefits*:
+  - Higher throughput and availability compared to strict consistency models due to relaxed rules.
+  - Better performance under high-load scenarios where [[id:20240519T152842.050227][partition tolerance]] is crucial.
+- *Challenges*:
+  - Complexity in application design, as developers must handle cases of temporary inconsistency.
+  - Risk of reading stale data during the time inconsistencies exist.
+
+*** Connections
+- Eventual consistency allows for increased scalability and fault tolerance in distributed systems, leading to systems that can better withstand failures, while strong consistency offers predictability at the cost of availability and performance in the event of network partition.
+- The push towards eventual consistency is indicative of a trend in distributed systems prioritizing availability and partition tolerance (as per the [[id:20240519T152842.050227][CAP]] theorem) over immediate consistency.
+
+*** Questions for Further Exploration
+1. What specific applications or systems currently utilize eventual consistency, and how do they implement it?
+2. How do latency and network partitioning impact the behavior of eventually consistent systems?
+3. In what scenarios would eventual consistency be favored over strong consistency, and why?
+4. What design patterns or strategies can developers adopt to handle the complexities introduced by eventual consistency?
+5. How does the implementation of eventual consistency vary across different types of databases (e.g., document stores vs. key-value stores)?
 * Gossip Protocols
 :PROPERTIES:
 :ID:       20240519T222301.158791

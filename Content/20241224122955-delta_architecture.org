@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       2cfa694f-d9ba-41a7-9382-dbc5244848e9
+:END:
+#+title: Delta Architecture
+#+filetags: :data:cs:
+
+* Overview
+
+- *Definition*: Delta Architecture refers to a data management approach designed to efficiently handle and process large volumes of data, particularly in [[id:796b4db7-42dc-4783-bb05-b15524ddf117][data lakes]] and [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][big data]] environments.
+
+- *Key Components*:
+  - *[[id:5cc98814-915c-4e20-a8e5-82ddd6783466][Data Ingestion]]*: Continuous or batch processing to bring data into the system.
+  - *[[id:18491388-2dcc-488f-8f33-00582cf0f77e][Data Storage]]*: Utilizing a combination of storage formats (e.g., [[id:29011444-16f6-4dce-bd25-cb0cc8c9b34d][Delta Lake]] format).
+  - *Data Processing*: Handling both batch and real-time data processing using frameworks like [[id:1978cfeb-5ff8-49d1-a1e1-7306151f9850][Apache Spark]].
+
+- *Core Principles*:
+  - *ACID Transactions*: Ensures data reliability and consistency.
+  - *Schema Evolution*: Allows schemas to adapt without significant disruptions.
+  - *Time Travel*: Provides the ability to query historical versions of data.
+
+- *Use Cases*:
+  - Real-time analytics
+  - [[id:cfa5fba0-eb2d-4e71-b17a-c646149ab27e][Data warehousing]] and BI (Business Intelligence)
+  - [[id:20230713T110006.406161][Machine learning]] model training
+
+- *Benefits*:
+  - Enhanced data reliability and accuracy
+  - Simplified data pipeline management
+  - Support for diverse data formats and sources
+
+- *Connections*:
+        - Delta Architecture aligns with modern data strategies that emphasize scalability, reliability, and flexibility.
+        - It connects with the rise of [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][cloud computing]], as many implementations leverage cloud-native services.
+        - The architecture also supports the growing trend towards real-time data solutions, making it suitable for applications requiring immediate data insights.
+
+- *Pathways for Further Research*:
+- How does Delta Architecture compare to traditional data warehousing solutions?
+- What are the best practices for implementing Delta Architecture in an organization?
+- What are the challenges associated with transitioning to Delta Architecture from a legacy system?

@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       117dfde3-1974-4be8-b6aa-cc991a481be5
+:END:
+#+title: Lambda Architecture
+#+filetags: :cs:arch:
+
+* Overview
+
+- *Definition*: Lambda Architecture is a data processing architecture designed to handle [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][massive quantities of data]] by using both batch-processing and stream-processing methods.
+
+- *Components*:
+  - *Batch Layer*: Responsible for processing and storing all incoming data, producing batch views (aggregated data) periodically.
+  - *Speed Layer*: Processes real-time data streams to provide immediate insights; it updates the most recent data quickly, compensating for the latency of the batch layer.
+  - *Serving Layer*: Merges the outputs of both the batch and speed layers to provide a comprehensive view of the data for users.
+
+- *Process Flow*:
+  1. Data is [[id:5cc98814-915c-4e20-a8e5-82ddd6783466][ingested]] in both real-time and batch modes.
+  2. Batch layer processes large sets of past data and generates views.
+  3. Speed layer analyzes recent data for immediate results.
+  4. Serving layer consolidates results for querying and display.
+
+- *Advantages*:
+  - Combines the best of both worlds: accurate batch processing and low-latency real-time analytics.
+  - Highly scalable and flexible, suitable for big data environments.
+
+- *Disadvantages*:
+  - Complexity due to the inclusion of multiple layers can lead to more challenging maintenance and deployment.
+  - Possible [[id:20240519T221608.054348][eventual consistency]] issues, as data from the batch layer may take longer to reflect new changes compared to the speed layer.
+
+*** Connections:
+- The Lambda Architecture emphasizes the importance of both timely data processing (Speed Layer) and reliability in analytics (Batch Layer), addressing issues in high-velocity data contexts like financial transactions or social media analytics.
+- It contrasts with other architectures, such as the [[id:5bd26273-9682-45b0-a829-70ee99cae655][Kappa Architecture]], which simplifies the processing by focusing solely on the stream layer.
+
+*** Questions for Further Exploration:
+- What specific use cases or industries have successfully implemented Lambda Architecture?
+- How do performance metrics differ between Lambda Architecture and alternatives like Kappa Architecture?
+- What modern tools or platforms best support the components of Lambda Architecture?
+- In what scenarios is it more beneficial to adopt a simpler architecture instead of Lambda?
+* Resources
+ - https://en.wikipedia.org/wiki/Lambda_architecture

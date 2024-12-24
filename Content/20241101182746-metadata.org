@@ -3,3 +3,60 @@
 :END:
 #+title: MetaData
 #+filetags: :data:meta:
+
+
+* Overview
+
+*** Overview of Metadata
+
+- *Definition*: Metadata is data that provides information about other [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]], facilitating its organization, discovery, and understanding.
+
+- *Types of Metadata*:
+  - *Descriptive Metadata*: Information that helps to identify and discover a resource (e.g., title, author, keywords).
+  - *Structural Metadata*: Information about the structure of a resource (e.g., how different components of a digital resource are organized).
+  - *Administrative Metadata*: Details that aid in the management of a resource (e.g., creation date, file type, access rights).
+
+- *Functions of Metadata*:
+  - *Discovery*: Helps users locate resources efficiently.
+  - *Management*: Enables better organization and usage tracking.
+  - *Preservation*: Assists in understanding and maintaining digital resources over time.
+
+- *Standards*: Metadata is often governed by standards, such as:
+  - *Dublin Core*: A set of vocabulary terms for describing resources.
+  - *MARC*: Machine-Readable Cataloging, used for bibliographic records.
+  - *XML*: Extensible Markup Language, which is often used to structure metadata.
+
+- *Applications*:
+  - Used in various domains, including libraries, academia, and digital asset management.
+  - Plays a crucial role in SEO (Search Engine Optimization) for web resources.
+
+*** Connections Between Entities:
+- Metadata’s various types indicate that it can serve multiple purposes concurrently, assisting in discovery while also managing data effectively.
+- Standards ensure interoperability across different systems and platforms, promoting data exchange and usability.
+- The functions of metadata are critical in both digital resource management and content discoverability, affecting how users interact with and benefit from vast data collections.
+
+* Distributed Big Data Metadata
+
+*** Distributed Big Data Metadata
+
+- Definition: Metadata specifically designed to manage and describe the vast, distributed datasets common in big data environments.
+
+- Characteristics:
+  - Scalability: Must efficiently manage large volumes of metadata across distributed systems.
+  - Diversity: Must accommodate various types of data from multiple sources (structured, semi-structured, unstructured).
+  - Real-time Updates: Needs the capability for real-time or near-real-time updates to accurately reflect changes in data.
+
+- Types of Distributed Metadata:
+  - Source Metadata: Information about where and how data was generated.
+  - Data Lineage: Traces the origin and transformation of the data over time.
+  - Quality Metadata: Describes the accuracy, completeness, and reliability of the data.
+
+- Techniques for Managing Distributed Metadata:
+  - Data Catalogs: Centralized repositories that keep track of all available datasets and their metadata.
+  - Graph Databases: Utilize graph structures to represent relationships between data items and their metadata.
+  - Distributed Ledger Technology: Blockchain can provide immutable records of metadata to enhance traceability.
+
+- Challenges:
+  - Integration: Difficulty in integrating metadata from disparate systems or platforms.
+  - Consistency: Maintaining consistency across distributed sources can be hard due to the dynamic nature of big data.
+  - Security: Protecting sensitive metadata in a distributed environment.

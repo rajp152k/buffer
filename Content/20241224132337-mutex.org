@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       efab98ca-07db-4413-ac17-5950c2c999ad
+:END:
+#+title: Mutual Exclusion
+#+filetags: :programming:

@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       5bd26273-9682-45b0-a829-70ee99cae655
+:END:
+#+title: Kappa Architecture
+#+filetags: :arch:cs:
+
+* Overview
+
+- *Definition*: Kappa Architecture is a data processing architecture designed to handle large volumes of data, facilitating real-time data processing and analytics.
+
+- *Components*:
+  - *Data Sources*: Raw data can come from various sources, such as IoT devices, databases, and online transactions.
+  - *Stream Processing Layer*: This layer processes incoming data streams in real-time, using tools like [[id:fa58feb4-25a2-40f1-8533-cafcb0d3886b][Apache Kafka]] or [[id:9b73202d-77a6-4291-8c84-a720f6ad36d9][Apache Flink]].
+  - *Batch Layer*: Unlike [[id:117dfde3-1974-4be8-b6aa-cc991a481be5][Lambda architecture]], Kappa focuses on stream processing and minimizes the use of batch layers, although batching may still occur for historical data processing.
+  - *Serving Layer*: Stores processed data for querying, often employing systems optimized for fast read access.
+
+- *Advantages*:
+  - *Simplicity*: Reduces complexity by removing the need for separate batch and speed layers.
+  - *Real-Time Processing*: Allows for immediate processing of data as it arrives.
+  - *Unified System*: Facilitates easy scaling and management since it operates on a single processing paradigm.
+
+- *Use Cases*:
+  - Real-time analytics and monitoring for business intelligence.
+  - [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event-driven architecture]] for application development.
+  - Online recommendation systems based on user behavior.
+
+*** Connections Between Entities:
+
+- *Comparison with Lambda Architecture*: Kappa Architecture is often contrasted with Lambda Architecture, which incorporates both batch processing and real-time stream processing, making Kappa's approach simpler and more streamlined.
+
+- *Technological Tools*: Kappa Architecture typically utilizes platforms such as Kafka for data pipelines and Flink or Spark Streaming for real-time computation, highlighting the synergy between these technologies for effective data management.
+
+
+*** Pathways for Further Research:
+
+- How do real-time data processing frameworks compare in performance and scalability for Kappa Architecture?
+- What are the trade-offs and challenges faced when implementing a Kappa Architecture in various industries?
+- How does Kappa Architecture handle data reliability and fault tolerance in stream processing?

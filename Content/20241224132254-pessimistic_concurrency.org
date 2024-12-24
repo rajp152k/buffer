@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       42bcbc1e-9ca9-49d9-b86c-3fae24b7b373
+:END:
+#+title: Pessimistic Concurrency
+#+filetags: :programming:cs:
+
+* Overview
+
+*** Pessimistic Concurrency: Overview
+
+- *Definition*: Pessimistic concurrency control is a type of database management approach where transactions are assumed to conflict with each other, leading to increased [[id:efab98ca-07db-4413-ac17-5950c2c999ad][locking mechanisms]] to maintain data integrity.
+
+- *Locking Mechanism*:
+  - *Exclusive Locks*: Prevent other transactions from accessing data until the lock is released.
+  - *Shared Locks*: Allow multiple transactions to read data simultaneously but prevent updates.
+
+- *Advantages*:
+  - Ensures data consistency and integrity by preventing concurrent access issues.
+  - Reduces the likelihood of lost updates and dirty reads.
+
+- *Disadvantages*:
+  - Can lead to increased waiting times and decreased system performance due to locks.
+  - Can result in deadlocks where two or more transactions hold locks that each other needs to proceed.
+
+- *Use Cases*:
+  - Critical systems where data integrity is paramount (e.g., financial applications).
+  - Environments with high conflict among transactions.
+
+*** Connections between Entities
+
+- *Locking Mechanism & Advantages*: The use of exclusive and shared locks directly correlates to the advantage of data [[id:20240519T152842.050227][consistency]], as it minimizes the risk of conflicting transactions.
+
+- *Use Cases & Disadvantages*: Certain environments may prioritize data integrity at the cost of performance, making pessimistic concurrency suitable for specific applications but problematic in highly concurrent environments.
+
+*** Further Exploration Questions
+
+- How do pessimistic concurrency techniques compare to optimistic concurrency approaches in real-world applications?
+
+- What are specific examples of systems or applications that effectively use pessimistic concurrency control?
+
+- How can deadlocks be mitigated in systems that implement pessimistic concurrency?
+
+- What role do transactions and isolation levels play in the implementation of pessimistic concurrency control?
+
+- How does the choice between pessimistic and optimistic concurrency impact overall architectural design in software systems?

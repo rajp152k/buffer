@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       7c307b8a-d220-4651-8f02-5fdfc3cf5b4e
+:END:
+#+title: Optimistic Concurrency
+#+filetags: :cs:programming:
+
+* Overview
+
+*** Overview of Optimistic Concurrency
+
+- *Definition*: Optimistic [[id:618d0535-411d-4c36-b176-84413ec8bfc1][concurrency]] is a method of handling data [[id:20240519T152842.050227][consistency]] in multi-user database systems, where transactions are allowed to proceed without locking resources but are validated before completion.
+
+- *Assumption*: It operates on the assumption that conflicts among transactions will be rare, hence reducing the overhead associated with locking mechanisms.
+
+- *Key Components*:
+  - *Read Phase*: Transactions read data and store the data in a temporary workspace without acquiring locks.
+  - *Validation Phase*: Before committing changes, the system checks if other transactions have modified the data that was read.
+  - *Write Phase*: If validation succeeds, the changes are written to the database; otherwise, the transaction is rolled back.
+
+- *Applications*: Commonly used in applications where read operations are frequent and conflicts are minimal, such as in collaborative document editing (e.g., Google Docs).
+
+- *Advantages*:
+  - Reduces overhead of locking mechanisms leading to performance improvements, especially in read-heavy scenarios.
+  - Allows for greater throughput as transactions are not blocked waiting for locks to be released.
+
+- *Disadvantages*:
+  - Increased complexity in managing transaction rollbacks when validation fails.
+  - Inefficiency in high-contention environments where many transactions are trying to modify the same data simultaneously.
+
+*** Connections and Insights
+
+- *Comparison to [[id:42bcbc1e-9ca9-49d9-b86c-3fae24b7b373][Pessimistic Concurrency]]*: Unlike optimistic concurrency, pessimistic concurrency locks resources before proceeding with any transactions, which can lead to decreased performance in scenarios with high read frequency but might be more reliable under high contention.
+
+- *Use with Conflict Resolution Strategies*: In implementing optimistic concurrency, developers must consider how to handle conflicts when they occur, often incorporating versioning or timestamps to track changes.
+
+- *Frameworks and Languages*: Popular frameworks and programming languages, such as Entity Framework in .NET or Hibernate in Java, have built-in support for optimistic concurrency through features like optimistic locking.
+
+*** Further Research Pathways
+
+1. What are some best practices for implementing optimistic concurrency in high-traffic applications?
+2. How does optimistic concurrency compare to other concurrency control techniques in various database systems?
+3. What role does versioning play in optimistic concurrency and how can it be effectively managed?
+4. Could you provide case studies of successful implementations of optimistic concurrency in real-world applications?
+* Resources
+ - https://en.wikipedia.org/wiki/Optimistic_concurrency_control
+ - https://cult.honeypot.io/reads/optimistic-vs-pessimistic-concurrency/

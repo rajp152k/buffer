@@ -2,7 +2,7 @@
 :ID:       f6f7f087-b7fe-4192-8950-497166f5af0f
 :END:
 #+title: MCP (Model Context Protocol)
-#+filetags: :network:ai:
+#+filetags: :protocol:ai:
 
 * Model Context Protocol
 
@@ -17,3 +17,6 @@
 * Resources
   - https://modelcontextprotocol.io/introduction
   - https://spec.modelcontextprotocol.io/specification/
+  - https://llmindset.co.uk/posts/2024/12/mcp-build-notes/
+  - https://github.com/punkpeye/awesome-mcp-servers/
+  - https://llmindset.co.uk/posts/2024/12/mcp-build-notes/

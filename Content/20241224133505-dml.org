@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       93a62d4d-9567-4f8b-9cd8-ffe7d0e0b937
+:END:
+#+title: DML (Data Modeling Language)
+#+filetags: :data:programming:
+
+* Overview
+
+- *Definition of DML ([[id:d45dae92-5148-4220-b8dd-e4da80674053][Data]] Modeling Language)*:
+  - A formal language used to describe the structure and behavior of data.
+  - Facilitates the creation, modification, and querying of data models.
+
+- *Properties*:
+  - *[[id:20231212T081907.908301][Declarative]] Nature*: Allows users to state what to achieve rather than how to achieve it.
+  - *Representation of Data*: Defines rules and relationships between different data entities.
+  - *Interoperability*: Can be used across various [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] management systems (DBMS).
+  - *Modeling Constructs*: Typically includes types, attributes, domains, keys, and relationships.
+
+- *Common Use Cases*:
+  - Database design and schema generation.
+  - Data integration and migration between systems.
+  - Data analytics and reporting frameworks.
+
+- *Examples of DMLs*:
+  - SQL (Structured Query Language)
+  - ORM (Object-Relational Mapping) languages like Hibernate, Entity Framework.
+  - NoSQL languages like MongoDB's query language.
+
+*** Connections:
+- The *declarative nature* of DML is a significant factor in its use for *database design*, as it promotes clarity in defining what data is needed.
+- The *interoperability* of DML spans across different DBMS, which underscores its importance in *data integration* tasks.
+- The *modeling constructs* mentioned are vital for understanding and structuring data well, which can enhance *data analytics* efforts.
+
+*** Questions for Further Clarity:
+- What specific applications or industries are you interested in regarding DML?
+- Are there particular DML standards or frameworks you're considering exploring?
+

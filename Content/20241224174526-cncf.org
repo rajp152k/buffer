@@ -1,0 +1,79 @@
+:PROPERTIES:
+:ID:       56e931a4-16af-4eba-bcd0-c8f0b9566153
+:END:
+#+title: CNCF
+
+The CNCF is a vendor-neutral open source community that fosters the adoption and advancement of cloud-native technologies. It defines [[id:739d8493-d7a6-4eee-b31a-44d087f4fb42][cloud-native]] as:
+
+- [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][Container]]-packaged: Software is packaged as container images.
+
+- Dynamically orchestrated: Containers are managed by [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][orchestrators]] like [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]].
+
+- [[id:54978664-78a5-4c2c-ae33-c4e6a14d6bb0][Microservices]]-oriented: Applications are composed of loosely coupled, modular services.
+
+- [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][Automated]]: Infrastructures and pipelines are managed declaratively and automated
+
+** Canonical Layers to Cloud-Native
+**** Provisioning
+**** Runtime
+**** Orchestration and Management
+**** App Definition and Development
+** Ancillary Pillars to Cloud-Native
+**** Observability and Analysis
+**** Platform
+** Projects
+*** [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][Devops]]
+|------------+--------------------------|
+| Project    | Utility                  |
+|------------+--------------------------|
+| [[id:3ea6cf40-f57e-4fa8-b451-6ccb0928249b][Argo]]       | CI/CD                    |
+| [[id:60e66e66-d394-42e7-a624-303ddb295395][Flux]]       | CI/CD                    |
+| [[id:28387722-d0ca-4c0b-8436-5c4c2ae4ba13][Helm]]       | App. Def. & Image Builds |
+| [[id:c50c85ac-0b21-486f-99ac-00f325e2c43c][KEDA]]       | AutoScaling              |
+| [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]] | Orchestration            |
+|------------+--------------------------|
+*** Compute
+|------------+-------------------|
+| Project    | Utility           |
+|------------+-------------------|
+| [[id:2e953b92-6b7c-46ce-aa31-f278601ab005][Containerd]] | Container Runtime |
+| [[id:320016f3-53be-4756-b9b8-3a89714ff1d9][cri-o]]      | Container Runtime |
+|------------+-------------------|
+*** Storage
+|---------+---------------------------|
+| Project | Utility                   |
+|---------+---------------------------|
+| [[id:204e8cda-5566-4828-9df8-ac362878ec3c][Rook]]    | Storage                   |
+| [[id:63dbe80a-9503-470f-94f7-af72190f35db][TiKV]]    | distributed key-val store |
+| [[id:731a8c2c-da51-419b-8224-774913c597e6][Vitess]]  | Scalable Relational  DB   |
+|---------+---------------------------|
+*** [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Networking]]
+|---------+----------------------|
+| Project | Utility              |
+|---------+----------------------|
+| [[id:52877388-0a18-497b-afe4-3bea87d3db68][Cilium]]  | Cloud Native Network |
+| [[id:d3f2c59a-602d-4a88-8828-82797f25fbd3][CoreDNS]] | Service Discovery    |
+| [[id:3568f42c-6e48-4d10-8249-c95c080a975c][etcd]]    | Service Discovery    |
+| [[id:97574f3d-86a1-4491-9cdd-5428d658103b][Envoy]]   | Service Proxy        |
+| [[id:2f89e95e-9bfa-4762-a5f1-b1caae1f364b][lstio]]   | Service Mesh         |
+| [[id:bb7b9374-8773-45f5-992d-c969d7cbded2][LinkerD]] | Service Mesh         |
+|---------+----------------------|
+*** Security
+|-------------------+------------------------|
+| Project           | Utility                |
+|-------------------+------------------------|
+| [[id:03338f6b-47ff-4ad2-b666-d981dc062844][Falco]]             | security & compliance  |
+| [[id:13806880-ed30-4b21-8c67-016da5037ce7][Open Policy Agent]] | security & compliance  |
+| [[id:b976e243-b69d-42f2-9ffa-dbd7ac8469c4][Spiffe]]            | Key Management         |
+| [[id:c96bc90b-0f7e-4943-803e-916fcd036c19][Spire]]             | Key Management         |
+| [[id:a1a26817-85fe-481b-b41e-659502094361][TUF]]               | Update System Security |
+|-------------------+------------------------|
+*** Meta
+|------------+---------------------|
+| Project    | Utility             |
+|------------+---------------------|
+| [[id:b656ae66-8364-4803-8262-41aa3cb18061][fluentd]]    | Logging             |
+| [[id:eb789bb7-2fb4-43dc-86a1-6297a7654cee][Harbor]]     | Container Registry  |
+| [[id:0c8ba7f9-e7c8-4c79-89b6-bb0c9992d1bd][Jaeger]]     | Distributed Tracing |
+| [[id:55a62ff7-7160-4e6e-9bb5-0df996bf995e][Prometheus]] | Monitoring & Alerts |
+|------------+---------------------|

@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       283c3a6b-6a8c-4e14-85f4-8f67494629ce
+:END:
+#+title: Redis
+#+filetags: :cs:tool:
+
+* Overview
+*** Overview of Redis
+
+- *Definition*: Redis is an in-memory data structure store used as a [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]], [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][cache]], and [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][message broker]].
+- *Type*: NoSQL database; categorized under key-value stores.
+- *Data Structures*: Supports various data types such as strings, hashes, lists, sets, and sorted sets with range queries.
+- *Performance*: Extremely fast, with data access speed often in microseconds, due to in-memory storage.
+- *Persistence Options*: Offers options for data persistence, including:
+  - Snapshotting (RDB)
+  - Append-only files (AOF)
+- *Replication*: Supports master-slave replication, allowing data redundancy and high availability.
+- *Clustering*: Can be used in a clustered environment to scale horizontally
+
+*** Connections
+
+1. *Performance and Data Structures*: The choice of data structures (e.g., lists and sets) enhances the performance of specific queries, making Redis well-suited for applications requiring real-time data access.
+2. *Persistence and Reliability*: The available persistence methods allow users to balance performance with data durability needs.
+3. *Replication and Clustering*: These features ensure that Redis can maintain high availability and reliability, making it a popular choice for scalable applications.
+
+* Redis Use Cases Overview
+** String
+- Sessions Management: Store user session data as strings to maintain state across user interactions. For example, a user's login token can be stored in Redis with an expiration time, allowing for quick access and secure management of sessions.
+- Caching: Utilize Redis to cache frequently accessed data, reducing latencies and database load. An example would be caching the results of database queries, such as user profiles or product details, to expedite response times for web applications.
+- Distributed Locking: Implement distributed locks using strings to manage access to shared resources across multiple instances. For instance, a Redis string can represent a lock on a resource, ensuring that only one process modifies data at a time.
+
+** Int
+- Counter: Use integer values to maintain counts of various actions, such as the number of views or downloads. For example, a Redis counter can keep track of views on a blog post, incrementing the value each time the post is accessed.
+- Rate Limiter: Implement rate limiting by storing request counts as integers, allowing you to restrict the number of requests from a user within a certain timeframe. For example, you might limit API calls to 100 requests per hour to prevent abuse.
+- Global ID: Manage unique identifiers for entities such as users or transactions by incrementing an integer stored in Redis. This approach can help in generating unique IDs efficiently, for example, incrementing a global ID for each new user registered in the system.
+
+** Hash
+- Shopping Cart: Utilize Redis hashes to represent shopping cart data, allowing you to store multiple fields (like product ID, quantity, and price) in a single key. For example, a shopping cart can be stored as a hash where each product's details are attributes of the cart.
+
+** [[id:761f8877-1087-4953-a802-5e77da2da0a4][BitMap]]
+- User Retention: Leverage bitmap functionality for tracking user actions over time, such as daily active users. For example, each bit in a bitmap can represent whether a user logged in on a specific day, enabling efficient analysis of user retention trends.
+
+** List
+- Message Queue: Use Redis lists to implement a message queue system where messages are enqueued and processed in a FIFO (first-in, first-out) manner. For instance, background job processing can use a Redis list to manage tasks that require delayed execution or asynchronous processing.
+
+** ZSet
+- LeaderBoards: Implement leaderboards for gaming or competitive applications using sorted sets (ZSet). Each user's score can be added to the ZSet with their score as the score value, allowing for efficient ranking and retrieval of the top players. For example, a game can use ZSets to display the top 10 players based on their scores in real-time.
+* Resources
+ - https://blog.logrocket.com/guide-to-fully-understanding-redis/
+ - https://www.youtube.com/watch?v=a4yX7RUgTxI&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=10&ab_channel=ByteByteGo

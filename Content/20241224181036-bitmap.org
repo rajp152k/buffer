@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       761f8877-1087-4953-a802-5e77da2da0a4
+:END:
+#+title: BitMap
+#+filetags: :cs:data:
+
+* Overview
+
+- *Definition*: A Bitmap (bit array or bitmap image) is a data structure that represents a grid of bits, which can be used to store polarities of binary states (0 and 1) or represent images.
+
+- *Types*:
+  - *1D Bitmap*: A single dimension, typically used for flags or status indicators.
+  - *2D Bitmap*: Utilizes a grid for more complex representations, commonly found in images.
+
+- *Formats*: Bitmaps can come in various formats, such as:
+  - *BMP*: Bitmap image file format, primarily for encoding raster graphics.
+  - *GIF*: Graphics Interchange Format, often uses a palette and supports animations.
+  - *PNG*: Portable Network Graphics, allows for lossless compression.
+  - *TIFF*: Tagged Image File Format, often used in professional photography and publishing.
+
+- *Applications*:
+  - *Graphics Rendering*: Bitmaps hold image data in graphics systems (e.g., video games, user interfaces).
+  - *Database Indexing*: Bitmap indexes efficiently represent the presence/absence of values in large datasets.
+  - *Digital Imaging*: Used in digital cameras and scanners to represent pixel-based images.
+
+- *Advantages*:
+  - Simple representation of binary states.
+  - Efficient for certain types of data querying (especially in databases).
+
+- *Disadvantages*:
+  - Can consume large amounts of memory depending on size and color depth.
+  - Not ideal for scalable graphics (vector graphics are preferred in such cases).
+
+*** Connections:
+- Bitmaps are intrinsically linked to binary data representation, making them fundamental in computing for both graphics and data management.
+- The choice of bitmap format can significantly affect the efficiency of data storage and transmission, relating to compression methods and image quality.
+- Bitmap indexes in databases leverage the efficiency of bit-level representation to optimize query performance, showcasing a cross-disciplinary application in computer science.
+* Resources
+ - https://en.wikipedia.org/wiki/Bitmap
+ - https://douglasrumbaugh.com/post/ds-bitmap/

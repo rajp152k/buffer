@@ -3,3 +3,27 @@
 :END:
 #+title: OSI (Open Systems Interconnection) Model
 #+filetags: :network:cs:
+
+* Overview
+
+- *Definition*: The OSI Model is a conceptual framework used to understand and implement [[id:a4e712e1-a233-4173-91fa-4e145bd68769][network]] protocols in seven layers.
+
+- *Layers*:
+  1. *Physical Layer*: Handles the physical connection between devices, including hardware specifications and transmission media.
+  2. *Data Link Layer*: Ensures reliable transmission of data frames between nodes within the same network.
+  3. *Network Layer*: Manages routing and forwarding of data packets across different networks (e.g., [[id:d799bc90-5032-4a69-9806-83145297a335][IP]]).
+  4. *Transport Layer*: Provides end-to-end communication services for applications, including error recovery and flow control (e.g., [[id:8bfeed3e-5930-4a61-9ffb-1459b2bcfcdc][TCP]]/[[id:2363a192-2b44-4a62-bff7-561ff282d1cd][UDP]]).
+  5. *Session Layer*: Manages sessions and controls dialogs between computers.
+  6. *Presentation Layer*: Translates data between the application layer and the network, including data format translation and encryption.
+  7. *Application Layer*: Interfaces directly with applications and provides network services to user applications.
+
+- *Purpose*:
+  - To standardize communication functions of telecommunication and computing systems.
+  - To facilitate interoperability between diverse communication networks.
+
+- *Importance*:
+  - Serves as a guide for networking standards and protocols.
+  - Helps network designers and engineers troubleshoot issues by identifying which layer is relevant to a problem.
+
+* Resources
+ - https://www.youtube.com/watch?v=0y6FtKsg6J4&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=14&ab_channel=ByteByteGo

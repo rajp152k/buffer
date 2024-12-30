@@ -5,3 +5,30 @@
 #+title: Content Delivery Network
 #+filetags: :web:
 
+* Overview
+
+- *Definition*: A Content Delivery Network (CDN) is a [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] network of servers that work together to deliver web content to users more efficiently.
+- *Purpose*: The primary aim of a CDN is to improve website speed and performance by caching content closer to the user’s geographical location.
+
+- *Components*:
+  - *Edge Servers*: These are servers located closer to end-users that cache copies of content.
+  - *Origin Server*: The primary server where the original content is stored.
+  - *Points of Presence (PoPs)*: Data centers located in various regions that host edge servers.
+
+- *Benefits*:
+  - *Reduced Latency*: Decreases the time it takes for content to reach a user.
+  - *Improved Load Times*: Enhances the loading speed of websites.
+  - *Scalability*: Provides resources to handle traffic surges effectively.
+  - *Reliability*: Increases uptime through redundancy and load balancing.
+  - *Security Enhancements*: Offers features such as DDoS protection and HTTPS support.
+
+*Connections*:
+- The relationship between edge servers and origin servers showcases the core functionality of a CDN in optimizing content delivery.
+- Point of Presence (PoP) locations demonstrate how geographical distribution plays a critical role in reducing latency and improving user experience.
+- CDN security features illustrate how performance and security are interlinked, ensuring that faster content delivery does not compromise user safety.
+
+* Relevant Nodes
+** [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][DNS]]
+** [[id:80775b3c-b6f1-47db-8752-8c582d9cba53][AnyCast]]
+* Resources
+ - https://www.youtube.com/watch?v=RI9np1LWzqw&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=15&ab_channel=ByteByteGo

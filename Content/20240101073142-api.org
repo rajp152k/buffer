@@ -7,8 +7,9 @@
 
 Application programming interfaces (APIs) provide machine-readable data transfer and signaling between applications.
 
-* Practical
+* AWESOME
  - https://github.com/public-apis/public-apis
+ - https://github.com/public-api-lists/public-api-lists
 * Resources
  - https://www.fullstackpython.com/application-programming-interfaces.html
  - https://zapier.com/resources/guides/apis

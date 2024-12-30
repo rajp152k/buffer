@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       a8f5b38d-97c0-4d09-a314-42e8b0c75581
+:END:
+#+title: org-roam-mcp
+#+filetags: :project:
+
+* Ideation
+ - sqlite + filesystem servers
+* Context Nodes
+** [[id:f6f7f087-b7fe-4192-8950-497166f5af0f][MCP (Model Context Protocol)]]
+** [[id:3d6be1e0-2489-4200-834b-6a88f1aaebf6][How to take smart Notes?]]

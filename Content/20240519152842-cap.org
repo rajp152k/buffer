@@ -15,7 +15,7 @@ You can only guarantee two out of three properties:
  - Consistency (C): Everyone sees the same data at the same time.
    - also see [[id:20240519T221608.054348][Eventual Consistency]]
 
- - Availability (A): The system is always up and running, even with some failures.
+ - Availability (A): The system is always up and running (responds to users t all times), even with some failures.
 
  - Partition Tolerance (P): The system keeps working even if network problems split it into parts.
 
@@ -23,6 +23,24 @@ Network Problems are unavoidable, so partition tolerance is a must.
    
 * The Choice
 Have to choose between consistency and availability when network problems happen:
- - CP Systems: Prioritize consistency, may become unavailable during problems.
- - AP Systems: Prioritize availability, may show outdated data during problems.
+ - CP Systems: Prioritize consistency: will become unavailable partition issues.
+ - AP Systems: Prioritize availability: may show outdated data during partition issues.
 
+* Post Partition Reconciliation
+*** Post-Partition Reconciliation
+- This refers to the processes that occur after a network partition has been resolved, where the data may have diverged across different nodes.
+- The goal is to restore consistency across the system while maintaining high availability.
+
+*** Key Concepts in Post-Partition Reconciliation
+- *Eventual Consistency*: This model ensures that, given enough time, all updates will propagate through the system and all replicas will become consistent.
+- *Conflict Resolution*: Strategies to handle conflicting updates (e.g., last-write-wins, version vectors, or custom merge strategies).
+- *Data Reconciliation Techniques*:
+  - *Merging*: Combining differing versions of the data.
+  - *Gossip Protocols*: Nodes regularly exchange state information, allowing eventual convergence.
+  - *Quorum Reads/Writes*: Ensuring that reads/writes are acknowledged by a subset of nodes to maintain consistency.
+
+* Latency and Consistency
+- see [[id:3df0c885-d021-4500-9c48-21922be7ff9d][PACELC Theorem]]
+
+* Resources
+- https://www.youtube.com/watch?v=BHqjEjzAicA&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=13&ab_channel=ByteByteGo

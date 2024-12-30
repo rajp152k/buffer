@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       3df0c885-d021-4500-9c48-21922be7ff9d
+:END:
+#+title: PACELC Theorem
+#+filetags: :cs:
+
+* Overview
+- *PACELC Theorem*: An extension of the [[id:20240519T152842.050227][CAP theorem]], which explores trade-offs between availability, consistency, and latency in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]].
+- *Components*:
+  - *P*: [[id:20240519T152842.050227][Partition tolerance]]
+  - *A*: [[id:20240519T152842.050227][Availability]]
+  - *C*: [[id:20240519T152842.050227][Consistency]]
+  - *E*: Else (when there is no partition)
+  - *L*: [[id:aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23][Latency]]
+- *Purpose*: To provide a framework for understanding the impact of design decisions on the available resources in a distributed [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] system, especially during network partitions and the choice between latency and consistency.
+- *Trade-offs*:
+  - In the event of a network partition, one must choose between maintaining availability (A) or consistency (C).
+  - If there is no partition, the decision shifts towards availability and performance (latency) versus consistency.
+
+*** Connections:
+- The PACELC theorem builds on the foundational concepts of the CAP theorem, which focuses on the impossibility of achieving all three guarantees (Consistency, Availability, Partition Tolerance) simultaneously.
+- Both theorems are crucial for the design of distributed systems and databases, aiding architects and engineers in understanding and deciding how to configure system behavior based on specific use cases and requirements.
+
+* Resources
+ - https://en.wikipedia.org/wiki/PACELC_theorem

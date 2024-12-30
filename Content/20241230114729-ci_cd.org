@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       d16357db-fc8a-4b9a-a0b1-0c613d66d6aa
+:END:
+#+title: CI/CD
+#+filetags: :programming:meta:
+
+* Overview
+
+- *CI (Continuous Integration):*
+  - Automated process where code changes are frequently integrated into a shared repository.
+  - Each integration is verified by automated builds and [[id:17d78466-2fcc-47aa-af20-9b74d94c96bb][tests]].
+  - Aims to detect errors quickly, enhance software quality, and reduce the time it takes to release software.
+
+- *CD (Continuous Delivery/Continuous Deployment):*
+  - Continuous Delivery refers to the practice of keeping code in a deployable state.
+    - Code changes automatically prepared for a release to production.
+    - Manual approval required for production deployment.
+  - Continuous Deployment allows for automatic deployment of every change that passes automated tests to production.
+  - Aims to enable frequent updates and quick delivery of new features to end-users.
+
+- *Key Components:*
+  - [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Version Control Systems]] (e.g., Git)
+  - [[id:17d78466-2fcc-47aa-af20-9b74d94c96bb][Automated Testing]] (unit, integration, functional tests)
+  - [[id:c3ed2490-53a8-4726-8a23-a31b780d2464][Build Automation Tools]] (e.g., Jenkins, CircleCI, Travis CI)
+  - [[id:1551a678-31f1-4866-812b-f77dd297a6fd][Deployment Automation]] (e.g., Kubernetes, Docker)
+
+* Relevant Aspects
+** Feature Switches
+** Canary Deployments
+* Resources
+ - https://www.youtube.com/watch?v=42UP1fxi2SY&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=12&ab_channel=ByteByteGo

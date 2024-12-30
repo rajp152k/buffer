@@ -68,3 +68,5 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 ** Practical
  - https://qconuk2019.container.training
  - https://github.com/kubernauts/practical-kubernetes-problems
+** Videos
+    - https://www.youtube.com/watch?v=TlHvYWVUZyc&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=12&ab_channel=ByteByteGo

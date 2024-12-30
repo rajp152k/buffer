@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6777ae16-10dd-419a-b558-faf4015de5e3
+:END:
+#+title: Extreme Programming
+#+filetags: :programming:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Extreme_programming

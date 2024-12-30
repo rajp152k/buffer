@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       b190651e-660b-4e8e-8234-1a9dee44dff9
+:ROAM_ALIASES: "You aren't gonna need it"
+:END:
+#+title: YAGNI
+#+filetags: :programming:meta:
+
+* Relevant Nodes
+** [[id:6777ae16-10dd-419a-b558-faf4015de5e3][Extreme Programming]]
+* Resources
+
+- https://en.wikipedia.org/wiki/You_aren't_gonna_need_it

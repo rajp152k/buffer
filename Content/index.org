@@ -28,6 +28,9 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - a cache for ideas that may never see the light of day again.
    - or they just might...
 ** [[id:3dc89742-51ee-49dc-bb3b-19bd24e50c8a][problems]]
+** AWESOME
+ - any time you see this header for a node, you may treat it as a generic index into things pertaining to that particular domain.
+ - think awesome : https://github.com/emijrp/awesome-awesome
 * Stream
 ** 0x22F1
  - the idea building up an eternal internal discussion that deeply thinks anything around you seems interesting

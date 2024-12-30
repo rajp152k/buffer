@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       171e0954-954a-45a3-97d3-2a858c7009d3
+:ROAM_ALIASES: "Compound Annual Growth Rate"
+:END:
+#+title: CAGR
+#+filetags: :bs:finance:

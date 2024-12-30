@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0499c896-c96f-453f-b0ba-62c509c7adb0
+:END:
+#+title: Taxation
+#+filetags: :finance:bs:econ:

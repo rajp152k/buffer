@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       41f97e79-c470-4ed8-b076-21684f29e1b5
+:END:
+#+title: LTCG (Long Term Captial Gains)
+#+filetags: :finance:bs:

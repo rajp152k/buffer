@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       caa5a4e4-ebe2-42c8-8a00-c57ddb1c618d
+:END:
+#+title: CryptoAssets
+#+filetags: :finance:bs:econ:

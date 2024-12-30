@@ -2,4 +2,4 @@
 :ID:       e6c04f65-fc33-48ba-8c76-75b64bd24939
 :END:
 #+title: Insurance
-#+filetags: :bs:
+#+filetags: :society:bs:

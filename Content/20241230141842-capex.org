@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ada0d92c-b982-4008-9117-cd469640300b
+:END:
+#+title: Capex (Capital Expenditure)
+#+filetags: :finance:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c06a6d4b-213f-48ed-8bd1-bfcc6a6d6e45
+:END:
+#+title: Healthcare
+#+filetags: :econ:

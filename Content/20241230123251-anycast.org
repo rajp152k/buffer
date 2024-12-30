@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       80775b3c-b6f1-47db-8752-8c582d9cba53
+:END:
+#+title: AnyCast
+#+filetags: :web:
+
+* Relevant Nodes
+** [[id:18a012b6-1c94-462a-b2e6-94ef4fab89fe][Network Casts]]
+* Resources
+ - https://www.cloudflare.com/learning/cdn/glossary/anycast-network/

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f532c308-e917-4de5-9c53-d26da1378a3e
+:END:
+#+title: Cyber-Crime
+#+filetags: :meta:society:
+
+* Relevant Nodes
+** [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Cyber-Security]]
+** [[id:68184953-e9ff-456d-acc9-533b522d9743][Cyber-Forensics]]

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8106ae72-ea3d-4343-a8aa-314d59185570
+:END:
+#+title: Market Capitalization
+#+filetags: :finance:bs:econ:

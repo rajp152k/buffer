@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8c505834-2391-496d-9aca-edf59a1dc754
+:END:
+#+title: Debt
+#+filetags: :finance:bs:

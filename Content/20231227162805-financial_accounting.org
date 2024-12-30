@@ -2,5 +2,4 @@
 :ID:       f0351d3e-c550-4c1b-88f2-8aaf0edaf8d0
 :END:
 #+title: Financial Accounting
-#+filetags: :root:
-
+#+filetags: :bs:finance:root:

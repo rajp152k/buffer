@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eefdba33-e655-42e9-9a40-e295ab1277a0
+:END:
+#+title: BFSI (Banking, Financial Services and Insurance)
+#+filetags: :econ:

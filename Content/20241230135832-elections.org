@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1d8c153f-8c2c-4eff-8fae-80a217fdd891
+:END:
+#+title: Elections
+#+filetags: :meta:society:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e0d9aee2-0ffd-4c97-868c-47cc21902300
+:END:
+#+title: Initial-Public-Offering
+#+filetags: :bs:finance:

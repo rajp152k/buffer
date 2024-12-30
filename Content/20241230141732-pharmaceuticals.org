@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       7186ff3d-a4c8-4be1-8fa3-a96757e40df2
+:END:
+#+title: Pharma(ceuticals)
+#+filetags: :econ:

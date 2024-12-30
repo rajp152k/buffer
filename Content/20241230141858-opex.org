@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0b3f9883-47d0-4a3c-8f8f-de04430a7704
+:END:
+#+title: Opex (Operating Expense)
+#+filetags: :finance:

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6f5940b4-bc60-4a9d-8007-8b18fd418af7
+:END:
+#+title: Basis Points (bps)
+#+filetags: :finance:
+
+* Resources
+  - https://www.investopedia.com/terms/b/basispoint.asp

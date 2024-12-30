@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e141adfa-931e-44f8-8949-2e0a325b503b
+:END:
+#+title: ETF (Exchange Traded Fund)
+#+filetags: :finance:

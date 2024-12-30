@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       65f7fdfb-e6b4-4135-bce5-be9efe390549
+:END:
+#+title: AWESOME
+#+filetags: :meta:
+
+An indicator header for nodes to highlight an index pertaining to that domain.
+
+See https://github.com/emijrp/awesome-awesome

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       200093e0-8aef-4b6b-9b29-de47cf689e3e
+:END:
+#+title: Volatility
+#+filetags: :meta:finance:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       11e63933-ea74-4aeb-b7d5-b75b1966db9d
+:END:
+#+title: Interest Rates
+#+filetags: :finance:econ:

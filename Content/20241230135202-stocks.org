@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       f3de5b88-6383-4cee-90fa-bb34560db1a7
+:END:
+#+title: Stocks
+#+filetags: :bs:finance:
+
+* [[id:8106ae72-ea3d-4343-a8aa-314d59185570][Capitalization]] Forks
+** Small
+** Mid
+** Large

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       7cd3ffbe-3e97-4f17-8191-7bd10cc50ffc
+:END:
+#+title: Equity
+#+filetags: :bs:econ:finance:

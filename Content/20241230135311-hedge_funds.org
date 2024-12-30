@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6031b37d-778f-42da-bd29-1a0daa815aec
+:END:
+#+title: Hedge Funds
+#+filetags: :bs:econ:

@@ -2,7 +2,7 @@
 :ID:       6e9b50dc-c5c0-454d-ad99-e6b6968b221a
 :ROAM_ALIASES: Hacking
 :END:
-#+title: Cyber Security
+#+title: Cyber-Security
 #+filetags: :programming:root:
 
 * Abstract

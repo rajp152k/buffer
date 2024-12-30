@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       7382d50f-a0aa-4370-baa9-83bb39ccbe1a
 :END:
-#+title: resonant-with
+#+title: Resonant-with
 #+filetags: :cache:meta:
 
 an index of blogs, books, or ideas that were not originally mine but resonate with and would like to keep within reach for future reference.
@@ -10,6 +10,4 @@ an index of blogs, books, or ideas that were not originally mine but resonate wi
  - 0x2120 : [[https://www.experimental-history.com/p/an-invitation-to-a-secret-society][An invitation to a secret society - by Adam Mastroianni]] 
 
 * Books
-
 * Ideas
-

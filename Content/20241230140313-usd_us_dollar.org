@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       36532ba3-6843-4ee0-ba99-80d37ab19f7b
+:END:
+#+title: USD (US Dollar)
+#+filetags: :finance:bs:

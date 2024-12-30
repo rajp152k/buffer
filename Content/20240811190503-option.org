@@ -1,5 +1,5 @@
 :PROPERTIES:
 :ID:       bdf6cab3-a807-4b04-a28f-98cdcdd7094b
 :END:
-#+title: Option
+#+title: Options (finance)
 #+filetags: :finance:

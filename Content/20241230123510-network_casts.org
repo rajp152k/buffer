@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       18a012b6-1c94-462a-b2e6-94ef4fab89fe
+:END:
+#+title: Network Casts
+#+filetags: :cs:network:web:
+
+* Types
+** UniCast
+** MultiCast
+** BroadCast
+** [[id:80775b3c-b6f1-47db-8752-8c582d9cba53][AnyCast]]
+* Resources
+  - https://www.baeldung.com/cs/multicast-vs-broadcast-anycast-unicast

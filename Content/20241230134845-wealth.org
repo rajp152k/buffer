@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       96d90a89-72f3-4213-be05-69591d24e8b0
+:END:
+#+title: Wealth
+#+filetags: :meta:finance:bs:
+
+* Aspects
+** Creation
+** Protection
+** Augmentation
+* Relevant Nodes
+** [[id:4e73e9cf-df11-4974-8014-607f73cc0e44][Financial Literacy]]

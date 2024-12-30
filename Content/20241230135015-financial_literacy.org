@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4e73e9cf-df11-4974-8014-607f73cc0e44
+:END:
+#+title: Financial Literacy
+#+filetags: :bs:finance:

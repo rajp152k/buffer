@@ -1,5 +1,5 @@
 :PROPERTIES:
 :ID:       b9335a3f-2013-49dc-8d28-a1b2d48d2d23
 :END:
-#+title: Retailers
-#+filetags: :bs:
+#+title: Retail
+#+filetags: :econ:bs:

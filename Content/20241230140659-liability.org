@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bcd6ae2a-66b0-4aaa-8b42-c1c646049739
+:END:
+#+title: Liability
+#+filetags: :bs:

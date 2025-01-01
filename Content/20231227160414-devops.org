@@ -33,5 +33,6 @@ A generic Flow :
 * Relevant Nodes
 ** [[id:92efb858-8a87-40f6-bbcf-d736d0ffd942][GitOps]]
 ** [[id:d16357db-fc8a-4b9a-a0b1-0c613d66d6aa][CI/CD]]
+** [[id:7a8ba981-1bd1-44c4-ab37-848dbf5a1099][Platform Engineering]]
 * Resources
  - https://www.kalzumeus.com/2010/12/12/staging-servers-source-control-deploy-workflows-and-other-stuff-nobody-teaches-you/

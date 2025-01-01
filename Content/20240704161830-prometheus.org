@@ -48,7 +48,7 @@ https://raw.githubusercontent.com/prometheus/prometheus/main/documentation/image
 *** Alertmanager:
  - Role: Receives alerts from Prometheus, handles deduplication, grouping, silencing, and routing to notification channels (email, PagerDuty, Slack, etc.).
  - High Availability: Deploy in a cluster (minimum 3 nodes) for redundancy.
-*** Grafana:
+*** [[id:b5e8675d-00f8-45b3-836a-cd13ac362d52][Grafana]]:
  - Role: Visualization and dashboarding tool, querying data from Prometheus (and potentially other data sources).
  - High Availability: Run multiple Grafana instances behind a load balancer for redundancy.
 ** Data Flow:

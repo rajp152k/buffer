@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       934c4508-ada7-44fa-b0a5-72c9e1670b3b
+:END:
+#+title: Day-N Operations
+#+filetags: :meta:cs:
+
+* Resources
+ - https://www.qovery.com/blog/day-0-day-1-day-2-what-are-the-differences/
+
+ - https://pantheon.tech/data-center-network-operations-day-0-day-1-day-2-config/
+
+ - https://mccricardo.com/from-blueprint-to-business-understanding-day-0-day-1-and-day-2-operations/

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       18a56829-e807-4e56-852f-f45cf6698699
+:END:
+#+title: Software Defined Storage
+#+filetags: :arch:cs:

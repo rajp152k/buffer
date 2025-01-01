@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5fc5cf26-13c5-488d-beb8-d43d89c2a690
+:END:
+#+title: The Editor Wars
+#+filetags: :cs:society:

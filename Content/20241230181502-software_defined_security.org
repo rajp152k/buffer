@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       67247b15-6779-414a-8366-c19745049997
+:END:
+#+title: SDSec (Software-Defined Security)
+#+filetags: :cs:sec:

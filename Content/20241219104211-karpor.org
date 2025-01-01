@@ -7,7 +7,18 @@
 * Context
  - https://github.com/KusionStack/karpor/discussions/675
  - https://github.com/KusionStack/karpor/issues/658
+ - https://github.com/mark3labs/mcphost/issues/4
 ** Logs
+*** 0x2331 etcd - go client
+ - need to find out how and what to expose of etcd
+*** 0x2331 mcp-cli mcp-go
+ - this combo worked and was able to successfully execute my requiremnents.
+ - setting up a local mcp-cli array of servers they are quite useful
+ - instead of npx or uvx, will only have to rely on go run instead
+*** 0x2331 CLI client-host interaction
+ - mcp-cli working with usual servers (tested on sqlite)
+ - now need to build one in golang for etcd and elasticdb
+ - mcp-golang and mcp-go are the two libraries that I'm thinking of working with
 *** 0x2329 decoupled dev
  - building in components
  - local elastic and local etcd

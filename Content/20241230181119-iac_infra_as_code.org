@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       aff6fccb-90dc-480b-bbdb-5b4d00c6675d
+:END:
+#+title: IaC (Infra as Code)
+#+filetags: :arch:cs:

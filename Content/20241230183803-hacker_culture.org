@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c776389b-71f6-45bb-a31c-3ce0b0965806
+:END:
+#+title: Hacker Culture
+#+filetags: :society:cs:
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Hacker_culture

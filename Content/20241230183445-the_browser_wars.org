@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       97879766-a34b-43e7-80cf-912f0f04a5ab
+:END:
+#+title: The Browser Wars
+#+filetags: :society:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Browser_wars

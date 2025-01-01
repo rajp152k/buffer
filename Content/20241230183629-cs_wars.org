@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       9a742e80-3c89-4caf-a79b-e50204bc4492
+:END:
+#+title: CS Wars
+#+filetags: :society:cs:
+
+An Index into the Wars that have played out in the domain of Computer Science
+
+* Index
+** [[id:5fc5cf26-13c5-488d-beb8-d43d89c2a690][The Editor Wars]]
+** [[id:97879766-a34b-43e7-80cf-912f0f04a5ab][The Browser Wars]]
+
+* Resources
+ - https://en.wikipedia.org/wiki/Category:Software_wars

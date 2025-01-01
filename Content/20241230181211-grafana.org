@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b5e8675d-00f8-45b3-836a-cd13ac362d52
+:END:
+#+title: Grafana
+#+filetags: :cs:tool:

@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       7a8ba981-1bd1-44c4-ab37-848dbf5a1099
+:END:
+#+title: Platform Engineering
+#+filetags: :meta:cs:
+
+* Overview
+
+- *Definition*: Platform engineering is the discipline focused on designing, building, and maintaining platforms that facilitate the development, deployment, and management of [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][software]] applications.
+
+- *Key Components*:
+  - *[[id:54b9dd70-6104-4f01-8007-967b16f8e010][Infrastructure]]*: The physical and virtual resources (servers, cloud services) used to support development and runtime environments.
+  - *Developer Experience*: Tools and practices aimed at improving the productivity of software developers (e.g., [[id:d16357db-fc8a-4b9a-a0b1-0c613d66d6aa][CI/CD]] pipelines).
+  - *Automation*: Utilizing scripts and tools to automate infrastructure management and application deployment.
+
+- *Technologies Involved*:
+  - Cloud-native technologies like [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]], [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]], and [[id:4bc32835-23cd-4fff-959f-fdc354cde31b][serverless]] computing.
+  - [[id:aff6fccb-90dc-480b-bbdb-5b4d00c6675d][Infrastructure as Code (IaC)]] tools such as [[id:45434127-d4fa-4108-8e63-a10460142e83][Terraform]] and [[id:20de914b-92ef-4f3e-979c-ad19ffb67137][Ansible]].
+  - Monitoring and logging tools for observability ([[id:55a62ff7-7160-4e6e-9bb5-0df996bf995e][Prometheus]], [[id:b5e8675d-00f8-45b3-836a-cd13ac362d52][Grafana]]).
+
+- *Roles and Responsibilities*:
+  - Collaborating with software development teams to design scalable platforms.
+  - Ensuring system reliability, availability, and performance.
+  - Managing security practices within the platform infrastructure.
+
+- *Importance in Modern [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Development]]*:
+  - Enhances efficiency by enabling consistent and repeatable development environments.
+  - Facilitates [[id:54978664-78a5-4c2c-ae33-c4e6a14d6bb0][microservices]] architecture, allowing teams to work independently and deploy services at differing cadences.
+
+*** Connections Between Entities
+
+- *Infrastructure and Automation*: The effectiveness of infrastructure is often amplified by robust automation practices, leading to quicker deployment cycles.
+
+- *Developer Experience and Technologies*: Modern tools (like cloud services) directly impact the developer experience, as these tools provide necessary abstractions and reduce friction in development.
+
+- *Roles and Responsibilities Impacting Importance*: As platform engineers are responsible for both infrastructure and developer experience, their work is crucial to maintaining the overall efficiency and success of software development teams.
+
+*** Questions for Clarification
+
+1. What specific aspects of platform engineering are you most interested in (e.g. tools, methodologies, best practices)?
+2. Are there particular challenges or issues in platform engineering that you would like to explore?
+3. Do you have an industry context in mind for applying platform engineering concepts (e.g., finance, healthcare, tech startup)?
+
+*** Pathways for Further Research
+
+- How do emerging technologies (e.g., AI, serverless computing) influence the future of platform engineering?
+- What are the best practices for implementing Infrastructure as Code in platform engineering?
+- How do organizations measure the success of their platform engineering initiatives?
+* Resources
+ - https://learn.microsoft.com/en-us/platform-engineering/what-is-platform-engineering
+ - https://learn.microsoft.com/en-us/platform-engineering/about/principles
+ - https://learn.microsoft.com/en-us/platform-engineering/overview/?source=recommendations
+ - https://spacelift.io/blog/what-is-a-platform-engineer

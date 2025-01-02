@@ -31,6 +31,7 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 ** [[id:65f7fdfb-e6b4-4135-bce5-be9efe390549][AWESOME]]
  - any time you see this header for a node, you may treat it as a generic index into things pertaining to that particular domain.
  - think awesome : https://github.com/emijrp/awesome-awesome
+** [[id:5bf59607-5845-417a-8093-7fd971e7ab21][Intriguing Works]]
 * Stream
 ** 0x22F1
  - the idea building up an eternal internal discussion that deeply thinks anything around you seems interesting

@@ -3,3 +3,8 @@
 :END:
 #+title: theBitMage
 #+filetags: :bs:
+
+https://thebitmage.com
+
+* Relevant Nodes
+** [[id:f307ff0f-f7ae-47f0-b39c-c65744019215][TheNatMage]]

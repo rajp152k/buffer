@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5b63fb87-06df-4f52-bcf2-a54eb682c968
+:END:
+#+title: Haskell
+#+filetags: :haskell:
+
+* Resources
+- http://steve-yegge.blogspot.com/2010/12/haskell-researchers-announce-discovery.html

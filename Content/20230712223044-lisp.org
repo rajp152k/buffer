@@ -6,7 +6,7 @@
 #+filetags: :lisp:
 
 * Apply-Eval
-Maxwell's equations of Software (~Alan Kay in some Interview~)
+Maxwell's equations of Software ([[id:01dc61b3-3843-4416-b9bc-4e80d0b694c0][Alan Kay]] in some Interview)
 #+begin_src lisp
   (define (apply fn x a)
       (cond

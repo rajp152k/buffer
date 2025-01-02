@@ -7,7 +7,9 @@
 an index of blogs, books, or ideas that were not originally mine but resonate with and would like to keep within reach for future reference.
 
 * Blogs
- - 0x2120 : [[https://www.experimental-history.com/p/an-invitation-to-a-secret-society][An invitation to a secret society - by Adam Mastroianni]] 
-
+ - 0x2120 : [[https://www.experimental-history.com/p/an-invitation-to-a-secret-society][An invitation to a secret society - by Adam Mastroianni]]
+ - 0x2332 : [[https://www.catb.org/jargon/html/appendixc.html][Helping hacker culture grow]]
+ - 0x2332 : [[https://d.cxcore.net/Eric%20S%20Raymond/How%20To%20Become%20A%20Hacker.pdf][How to become a hacker]]
+ - 0x2332 : [[https://www.norvig.com/21-days.html][Teach yourself programming in 10 years]]
 * Books
 * Ideas

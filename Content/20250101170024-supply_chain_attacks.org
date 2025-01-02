@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8338cb76-6e02-4e7c-9cc3-1f1050a3ae39
+:END:
+#+title: Supply Chain Attacks
+#+filetags: :sec:cs:
+
+* Resources
+ - https://josephg.com/blog/node-sandbox/

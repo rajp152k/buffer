@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       5bf59607-5845-417a-8093-7fd971e7ab21
+:END:
+#+title: Intriguing Works
+#+filetags: :meta:
+
+From time to time, I land up in an interesting corner of the internet and find intellectual mines worth dissecting. Learning domains is one thing and building an amalgamation of skills acquired by building projects is another.
+
+* Blogs
+** Artyom Bologov
+- https://aartaka.me/cv.html
+** Joseph Gentle
+- https://josephg.com/
+** Karthik Chikmagalur
+ - https://karthinks.com/
+** Mark Watson
+ - https://markwatson.com/
+** Paul Graham
+ - https://paulgraham.com/
+** Sacha Chua
+ - https://sachachua.com/
+** Steve Yegge
+ - https://steve-yegge.medium.com/
+ - http://steve-yegge.blogspot.com/

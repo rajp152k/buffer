@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3913909e-2b8d-465c-8303-5c634bd08f57
+:END:
+#+title: Observability
+#+filetags: :eng:cs:

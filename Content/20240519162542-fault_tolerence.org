@@ -1,8 +1,8 @@
 :PROPERTIES:
 :ID:       20240519T162542.805560
 :END:
-#+title: fault tolerence
-#+filetags: :cs:
+#+title: Fault Tolerence
+#+filetags: :eng:cs:
 
 Also see [[id:45753302-58fd-4cb1-bff6-f8843aee5708][Chaos Engineering]]
 

@@ -5,6 +5,8 @@
 #+filetags: :meta:programming:
 
 * Major Index
+** Google best practices
+ - https://google.github.io/eng-practices/
 ** Dependencies
 :PROPERTIES:
 :ID:       4a17f01a-8000-40d0-bf4d-46da6cdacc1d

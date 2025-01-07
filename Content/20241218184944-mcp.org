@@ -20,3 +20,4 @@
   - https://llmindset.co.uk/posts/2024/12/mcp-build-notes/
   - https://github.com/punkpeye/awesome-mcp-servers/
   - https://llmindset.co.uk/posts/2024/12/mcp-build-notes/
+  - https://mcpserver.cloud/

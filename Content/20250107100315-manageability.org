@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2cd51b23-f253-40e2-8c5d-6f2924ca484d
+:END:
+#+title: Manageability
+#+filetags: :eng:cs:

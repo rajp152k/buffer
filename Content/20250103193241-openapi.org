@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       a5fc0eca-58cc-4cde-9ae8-4e22fa7f57f3
+:END:
+#+title: OpenAPI
+#+filetags: :protocol:cs:programming:
+
+* Overview
+
+- *Definition*: OpenAPI is a specification for building [[id:20240101T073142.439145][APIs]] using a standard format which provides a clear structure for describing [[id:88828c6f-87e0-4569-b236-dc6ebb72d282][RESTful]] web services.
+- *Purpose*: It allows both humans and computers to discover and understand the capabilities of a service without requiring access to the source code, enabling easier integration and documentation.
+- *Key Components*:
+  - *Paths*: Defines the endpoints in the API and how they interact.
+  - *Operations*: Specifies the HTTP methods used (GET, POST, PUT, DELETE, etc.).
+  - *Parameters*: Outlines input parameters and their descriptions.
+  - *Responses*: Describes the output returned by the API, including status codes and message content.
+  - *Schemas*: Defines the data structures used in input/output for stronger validation and clarity.
+- *Format*: Typically written in YAML or JSON.
+- *Interoperability*: Facilitates collaboration between diverse teams and different tooling ecosystems by establishing a universal
+* [[id:f6f7f087-b7fe-4192-8950-497166f5af0f][MCP]]
+ - https://www.mcpservers.ai/servers/snaggle-ai/OpenAPI
+* Resources
+ - https://www.openapis.org/what-is-openapi

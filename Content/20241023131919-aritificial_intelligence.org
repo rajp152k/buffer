@@ -1,13 +1,10 @@
 :PROPERTIES:
 :ID:       db649cb6-047e-426e-8cdc-774586ef30a0
+:ROAM_ALIASES: AI
 :END:
 #+title: Artificial Intelligence
 #+filetags: :ai:
 
-* Stream
-** 0x22F4
- - the [[id:3504d497-477f-467c-8d6b-d8096c7528c1][Data Science Hierarchy of Needs]]
-** 0x22EC
- - going for a pragmatic rediscovery of aspects of the field that can be applied to other domains
- - have an academic foundation that could be leveraged into directing miscellaneous research streams
- - this is a generic node for relevant applications could be applied anywhere based on how one frames the domain specific problem.
+
+* Resources
+ - https://ai.openbestof.com/

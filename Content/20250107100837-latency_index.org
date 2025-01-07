@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2dca77bf-c105-407f-8afc-289716ea79d5
+:END:
+#+title: Latency Index
+#+filetags: :eng:cs:
+
+* Resources
+ - https://colin-scott.github.io/personal_website/research/interactive_latency.html
+ - https://www.youtube.com/watch?v=FqR5vESuKe0&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=3&ab_channel=ByteByteGo

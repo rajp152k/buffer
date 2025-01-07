@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       adaf5bfa-48f9-415b-893e-7398b10f383e
+:END:
+#+title: Loose Coupling
+#+filetags: :eng:cs:

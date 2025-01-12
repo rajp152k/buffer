@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       cc418612-7343-4251-a146-042e0cc2b5e1
+:END:
+#+title: Prune
+#+filetags: :meta:
+
+I'm deliberately undisciplined with what I dump in here.
+
+Here are some pruning measures I take from time to time so that I can be more undisciplined later down the line.
+
+This is a work in progress
+
+* Refactoring Sub-Nodes to Nodes
+ - helps depopulate the central node from specific links
+* Building Lists/indexes
+ - helps create a psuedo domain view
+ - the central node is formed by projections of multiple other domains.
+* Shorten what's been said
+ - cut away until what remains is [[id:4fbcb747-0e1c-4fb3-99dd-1e05787b41f2][conceptually exhaustive]].

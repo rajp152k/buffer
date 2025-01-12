@@ -27,6 +27,7 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 ** [[id:20231112T080937.669416][Projects]]
  - a cache for ideas that may never see the light of day again.
    - or they just might...
+** [[id:cc418612-7343-4251-a146-042e0cc2b5e1][Prune]]
 ** [[id:3dc89742-51ee-49dc-bb3b-19bd24e50c8a][problems]]
 ** [[id:65f7fdfb-e6b4-4135-bce5-be9efe390549][AWESOME]]
  - any time you see this header for a node, you may treat it as a generic index into things pertaining to that particular domain.

@@ -1,8 +1,11 @@
 :PROPERTIES:
 :ID:       651512fd-b2f0-4705-bdb9-94e31d6ea8ec
 :END:
-#+title: Tech Conferences
+#+title: Tech Confs & Events
 #+filetags: :cs:travel:
 
+* Indexes
+ - https://conf.researchr.org/
 * European Lisp Symposium
  - https://european-lisp-symposium.org/
+

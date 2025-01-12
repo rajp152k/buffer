@@ -7,17 +7,23 @@
 From time to time, I land up in an interesting corner of the internet and find intellectual mines worth dissecting. Learning domains is one thing and building an amalgamation of skills acquired by building projects is another.
 
 * Blogs
+** Aditya Athalye
+ - https://www.evalapply.org/
 ** Artyom Bologov
 - https://aartaka.me/
+** Derek Sivers
+ - https://sive.rs/
 ** Dimitri Fontaine
  - https://tapoueh.org/
 ** Joseph Gentle
 - https://josephg.com/
+** Julia Evans
+- https://jvns.ca/about/
 ** Karthik Chikmagalur
  - https://karthinks.com/
 ** Mark Watson
  - https://markwatson.com/
-** Paul Graham
+** [[id:fbd38417-13a0-4cda-b256-ee1ab94048f0][Paul Graham]]
  - https://paulgraham.com/
 ** Protesilaos Stavrou
  - https://protesilaos.com/
@@ -26,7 +32,6 @@ From time to time, I land up in an interesting corner of the internet and find i
 ** Steve Yegge
  - https://steve-yegge.medium.com/
  - http://steve-yegge.blogspot.com/
-
 ** Travis Jeffery
  - https://travisjeffery.com/
 * Relevant Nodes

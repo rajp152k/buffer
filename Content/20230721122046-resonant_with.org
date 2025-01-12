@@ -13,3 +13,6 @@ an index of blogs, books, or ideas that were not originally mine but resonate wi
  - 0x2332 : [[https://www.norvig.com/21-days.html][Teach yourself programming in 10 years]]
 * Books
 * Ideas
+* Tribes
+ - https://www.recurse.com/
+ - https://www.hackerparadise.org/

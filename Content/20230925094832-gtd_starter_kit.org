@@ -35,6 +35,7 @@
    - weekly reviews to keep the system healthy
 * Template
 ** Algorithm
+
  [[./images/gtd-workflow.jpg]]
 
 ** Org base 

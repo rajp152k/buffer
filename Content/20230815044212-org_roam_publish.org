@@ -26,7 +26,7 @@ Publishing name : Undecided
  - considering proceeding with python to produce the actual site.
    - https://github.com/plotly/dash-cytoscape
    - with the inbuilt sqlite
- - given that tooling might already exist to plot [[id:96ea3a8e-4288-4c80-9eb9-37a5e449fbed][Neo4j]] databases,
+ - given that tooling might already exist to plot [[id:c4789a63-6dbb-41ac-980d-c6c9cfa67b97][Neo4j]]  databases,
    consider porting the sqlite db to neo4j and using existing utilties.
  - checkout : https://www.fullstackpython.com/neo4j.html
  - I was looking into [[id:20240102T075938.096388][SurrealDB]] the other day and feel like I should consider a complete re-write of the database endpoint of the org-roam package and replace the currently used embedded sqlite db.

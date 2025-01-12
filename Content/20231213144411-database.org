@@ -1,60 +1,15 @@
 :PROPERTIES:
 :ID:       2f67eca9-5076-4895-828f-de3655444ee2
 :END:
-#+title: DataBase
+#+title: Database
 #+filetags: :programming:data:
-Towards managing [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] stores.
 
-Speaking formally, databases represent another layer of abstraction over a computer system's [[id:ea72d66a-8192-4cb2-a7be-b05ee928f814][filesystem]] that intend to provide convenient endpoints for tasks (like templated insertion, deletion, searches, etc) that would be performed with higher frequencies : they facilitate structured storage, pushing for reliability and efficiency.
-
-* Standards: ACID Compliance
- - Atomicity
- - Consistency
- - Isolation
- - Durability
-checkout : https://docs.digitalocean.com/glossary/acid/
 * Types (Need Not be Mutually Exclusive)
 ** [[id:fe29fdde-c87f-4ef7-865b-c997447e435d][Relational Databases]]
-*** Tools
-**** PostGres 
- - RDBMS
- - Open Source with all the bells and whistles 
-   - the recommended choice
-**** MySQL
- - RDBMS
- - open source without all the bells and whistles
-   - batteries included though
-**** SQLite
-:PROPERTIES:
-:ID:       8538c0e3-8173-4eae-a602-2b9198e2251a
-:END:
- - RDBMS : single file
- - open source : spartanish 
- - has its moments : https://www.sqlite.org/whentouse.html
-*** Extensions 
-**** Object Relational Mappers
- - Coms with the database without sql queries : language specific
-   - read up for the [[https://www.fullstackpython.com/object-relational-mappers-orms.html][case of python]]
- - some issues do arise:
-   - [[https://agiledata.org/essays/impedanceMismatch.html][Impedence mismatch]]
-   - performance issues
- - Personally, I'd rather write raw SQL : see [[https://www.w3schools.com/sql/sql_stored_procedures.asp][stored procedures]]
- - still, checkout [[https://www.fullstackpython.com/sqlalchemy.html][sqlAlchemy]]
-** [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][Graph]] Databases
- - three storage aspects
-   - Node
-   - Edge
-   - Property
-*** Tools
-**** Neo4j
-:PROPERTIES:
-:ID:       96ea3a8e-4288-4c80-9eb9-37a5e449fbed
-:END:
-**** Cayley
-**** Titan
-*** Resources
- - https://neo4j.com/blog/graph-search-algorithm-basics/
- - https://go.neo4j.com/rs/710-RRC-335/images/Definitive-Guide-Graph-Databases-for-RDBMS-Developer.pdf
+*** Interfaces
+**** [[id:f960e9a7-6aa0-4c75-a462-05b55a21420d][Object Relational Mappers]]
+**** [[id:8bba90f5-5880-4c5d-b969-3ae17b53dc35][SQL]]
+** [[id:3231e4a2-702d-4fd2-89ed-6efb34e2c3ee][Graph Database]]
 ** [[id:e0b24113-36fd-44dc-9049-2cf493079d1a][Document Stores]]
 *** Tools
  - semi structured representation for nested data (json,bson,etc)

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       ce647f0a-49fb-4176-a919-958a84383602
+:END:
+#+title: Cognitive Biases
+#+filetags: :neuroscience:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Cognitive_bias

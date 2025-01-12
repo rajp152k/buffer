@@ -4,6 +4,13 @@
 #+title: Consulting
 #+filetags: :bs:
 
+
+* Instances
+* Relevant Nodes
+** [[id:d6c3cab1-d7f5-43ac-8f69-96efadfd9e7c][Ownership]]
+** [[id:abf0496e-bd8b-4f71-8217-d6da11dbd666][Cloud Consulting]]
 * Resources
 ** Articles
 - https://www.melisaliberman.com/blog/best-books-for-consultants
+** Videos
+- https://www.youtube.com/watch?v=-c4CNB80SRc

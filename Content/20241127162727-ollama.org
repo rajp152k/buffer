@@ -3,3 +3,6 @@
 :END:
 #+title: Ollama
 #+filetags: :tool:ai:
+
+* Resources
+ - https://github.com/ollama-cloud

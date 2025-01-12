@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       e9426b8f-e4a9-47de-aa52-2b1ea278d88e
+:END:
+#+title: Kernel Languages
+#+filetags: :cs:programming:
+
+From [[id:29b03c3a-837e-4030-98f8-0db80134d3c5][the Book]] Description:
+#+begin_quote
+Teaching the science and the technology of programming as a unified discipline that shows the deep relationships between programming paradigms.This innovative text presents computer programming as a unified discipline in a way that is both practical and scientifically sound. The book focuses on techniques of lasting value and explains them precisely in terms of a simple abstract machine. The book presents all major programming paradigms in a uniform framework that shows their deep relationships and how and where to use them together. After an introduction to programming concepts, the book presents both well-known and lesser-known computation models ("programming paradigms"). Each model has its own set of techniques and each is included on the basis of its usefulness in practice. The general models include declarative programming, declarative concurrency, message-passing concurrency, explicit state, object-oriented programming, shared-state concurrency, and relational programming. Specialized models include graphical user interface programming, distributed programming, and constraint programming. Each model is based on its kernel language—a simple core language that consists of a small number of programmer-significant elements. The kernel languages are introduced progressively, adding concepts one by one, thus showing the deep relationships between different models. The kernel languages are defined precisely in terms of a simple abstract machine. Because a wide variety of languages and programming paradigms can be modeled by a small set of closely related kernel languages, this approach allows programmer and student to grasp the underlying unity of programming. The book has many program fragments and exercises, all of which can be run on the Mozart Programming System, an Open Source software package that features an interactive incremental development environment.
+#+end_quote
+
+* Relevant Nodes
+** [[id:29b03c3a-837e-4030-98f8-0db80134d3c5][CTAMOCP (Concepts, Techniques and Models of Computer Programming)]]

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d6c3cab1-d7f5-43ac-8f69-96efadfd9e7c
+:END:
+#+title: Ownership
+#+filetags: :bs:
+
+* Relevant Nodes
+ - [[id:cbe00a26-19c4-4b85-badf-6189a72fab51][Skin in the Game]]

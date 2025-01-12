@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       e9c2bb46-a5bc-449e-9847-6dc4bce3f30b
+:END:
+#+title: .dotfiles
+#+filetags: :programming:tool:
+
+https://github.com/rajp152k/.dotfiles
+
+* Relevant Nodes
+** [[id:20230712T224009.631876][Emacs]]
+** [[id:afc3d6ba-9d59-4212-a417-71721200e938][NeoVim]]
+** [[id:20230712T223044.319985][lisp]]
+** [[id:ef9c6f74-5eb0-47c0-bc5c-db18eee65003][Tmux]]
+** [[id:f6f7f087-b7fe-4192-8950-497166f5af0f][MCP (Model Context Protocol)]]
+** [[id:b11af479-044b-4262-91b1-67c4cfd64127][PlantUML]]
+** [[id:72fbcfa3-5d68-4cb5-832e-8242d4acb64e][Doom Emacs]]

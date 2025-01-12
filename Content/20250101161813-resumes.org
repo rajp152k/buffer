@@ -8,7 +8,9 @@ From time to time, I land up in an interesting corner of the internet and find i
 
 * Blogs
 ** Artyom Bologov
-- https://aartaka.me/cv.html
+- https://aartaka.me/
+** Dimitri Fontaine
+ - https://tapoueh.org/
 ** Joseph Gentle
 - https://josephg.com/
 ** Karthik Chikmagalur
@@ -17,8 +19,15 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://markwatson.com/
 ** Paul Graham
  - https://paulgraham.com/
+** Protesilaos Stavrou
+ - https://protesilaos.com/
 ** Sacha Chua
  - https://sachachua.com/
 ** Steve Yegge
  - https://steve-yegge.medium.com/
  - http://steve-yegge.blogspot.com/
+
+** Travis Jeffery
+ - https://travisjeffery.com/
+* Relevant Nodes
+ - [[id:20240421T174402.732098][Authors]]

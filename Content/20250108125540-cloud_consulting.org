@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       abf0496e-bd8b-4f71-8217-d6da11dbd666
+:END:
+#+title: Cloud Consulting
+#+filetags: :bs:
+
+* Instances
+ - https://fourtheorem.com/
+
+
+* Resources
+ - https://www.youtube.com/watch?v=IFsX9TGfHDY&ab_channel=AWSBite

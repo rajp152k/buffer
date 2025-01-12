@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       69723c1f-b7bb-4703-8147-7d5df73ce00c
+:END:
+#+title: Passport
+#+filetags: :travel:
+
+* Resources
+ - https://www.passportindex.org/byRank.php

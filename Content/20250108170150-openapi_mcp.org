@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       808d7cf3-71a0-4658-89d0-6b3738af7f53
+:END:
+#+title: OpenAPI-MCP
+#+filetags: :tool:programming:project:
+
+Any [[id:a5fc0eca-58cc-4cde-9ae8-4e22fa7f57f3][Open]][[id:20240101T073142.439145][ API]] compliant programming interface can be leveraged by [[id:affff439-329d-4962-bf5f-def85d75042e][LLMs]] via [[id:f6f7f087-b7fe-4192-8950-497166f5af0f][MCP]]
+
+ * Resources
+  - https://github.com/snaggle-ai/openapi-mcp-server

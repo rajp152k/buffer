@@ -7,17 +7,6 @@
 * Major Aspects
 ** [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]
 - the ability of a system to continue to behave as expected in the face of significant upward or downward changes in demand.
-*** Types
-**** Vertical Scaling
-- altering the hardware resources already allocated to a server.
-- straightforward but limited extensibility
-**** Horizontal Scaling
-- altering the number of servers serving the application
-- more complex but greater flexibility
-*** Enablement
-- have services with their state management decoupled from the act of serving.
-- see [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]] i.e. distributing state between service replicas.
-
 ** [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][Loose Coupling]]
 - the system property and design strategy in which a system's components have minimal knowledge of any other components.
 - internal changes to one don't demand changes in the other
@@ -33,5 +22,11 @@
  - the ease with which a system's behaviour can be modified to keep it secure, running smoothly, and compliant with changing requirements.
 ** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
  - the measure of how well a system's internal states can be inferred from knowledge of its external outputs.
+* Strats
+** Chronologically Numbered Entity Flows
+
+* Engineering Utilities
+** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]
+** [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Database Replication]]
 * Quick Links
 ** [[id:2dca77bf-c105-407f-8afc-289716ea79d5][Latency numbers every programmer should know]]

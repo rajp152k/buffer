@@ -58,6 +58,10 @@
 *** [[id:2f67eca9-5076-4895-828f-de3655444ee2][DataBase]]
 *** [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating System]]
 * Stream
+** 0x2339
+ - generating time stamps for your transcripts using an mcp server integrated with an LLM is great.
+ - using with mcp-cli : using the server ytdlp indexed in my .dotfiles
+
 ** 0x22F2
  - Emacs has been working out for me
  - it seems to be just esoteric enough that people are interested in it without losing confidence in its applicabilities.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       cfc004a1-9bf4-4b6e-89ee-5d6fff4e6fa5
+:END:
+#+title: ICBM (Intellectual Cluster Bootstrap Methodology)
+#+filetags: :polymathy:
+
+* Relevant Nodes
+** [[id:20231111T232750.075460][Polymathy]]
+** [[id:20240331T194014.871204][IKN0Xes]]

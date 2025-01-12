@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       29b03c3a-837e-4030-98f8-0db80134d3c5
+:END:
+#+title: CTAMOCP (Concepts, Techniques and Models of Computer Programming)
+#+filetags: :cs:book:

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       fd14ea30-dcd2-491b-8935-cf6c3234a08e
+:END:
+#+title: LLM-Security
+#+filetags: :sec:ai:ml:
+
+* Resources
+ -  https://doublespeak.chat/#/handbook

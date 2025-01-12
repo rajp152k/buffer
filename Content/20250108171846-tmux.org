@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ef9c6f74-5eb0-47c0-bc5c-db18eee65003
+:END:
+#+title: Tmux
+#+filetags: :programming:tool:

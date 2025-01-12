@@ -2,7 +2,7 @@
 :ID:       e57d90a9-7a2b-4fd4-927c-9b6525411625
 :END:
 #+title: The Jargon File
-#+filetags: :cs:
+#+filetags: :hacker:cs:
 
 * Resources
  - https://www.catb.org/jargon/html/index.html

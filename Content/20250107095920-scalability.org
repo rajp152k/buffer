@@ -3,3 +3,40 @@
 :END:
 #+title: Scalability
 #+filetags: :eng:cs:
+
+
+* Major Forks
+** Vertical Scaling (Scaling Up)
+- *Definition*: Increasing the capacity of a single server or resource by adding more power (CPU, RAM, Disk).
+- *Advantages*:
+  - Simpler architecture—requires no change in application logic.
+  - Immediate resource availability.
+- *Disadvantages*:
+  - Limited by the capacity of the server.
+  - Higher risk of a single point of failure.
+  - Can be costly due to higher-specification hardware.
+
+** Horizontal Scaling (Scaling Out)
+- *Definition*: Adding more servers or resources to distribute the load across multiple machines.
+- *Advantages*:
+  - More resilient and fault-tolerant—failure of a single server does not affect the overall system.
+  - Can continue to add resources as demand grows.
+  - Typically uses commodity hardware, reducing costs.
+- *Disadvantages*:
+  - More complex architecture—requires load balancing and potential application changes.
+  - Data consistency can be more challenging to manage across distributed systems.
+
+** Diff
+
+| Aspect AsAaspect              | Vertical Scaling                       | Horizontal Scaling                             |
+|----------------------+----------------------------------------+------------------------------------------------|
+| Definition           | Increasing capacity of a single server | Adding more servers to distribute load         |
+| Architecture         | Simpler, single-server focus           | More complex, multi-server focus               |
+| Performance          | Immediate performance gains            | Performance improved as more servers are added |
+| Fault Tolerance      | Single point of failure                | More resilient, can handle multiple failures   |
+| Cost                 | Higher cost for high-spec hardware     | Typically cheaper, uses commodity hardware     |
+| Capacity Limitations | Limited by single server capacity      | Can scale indefinitely as needed               |
+| Complexity           | Easier implementation                  | Requires load balancing, synchronization       |
+| Use Cases            | Predictable workloads                  | Unpredictable or growing workloads             |
+| Data Management      | Easier to manage                       | More challenging to ensure consistency         |
+| Incremental Scaling  | Limited; needs complete overhaul       | Easy to add more servers as needed             |

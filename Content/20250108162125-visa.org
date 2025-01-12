@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       678a7f87-0716-4ff3-b662-80206d574cff
+:END:
+#+title: Visa
+#+filetags: :travel:
+
+
+* Resources
+ - https://www.gov.uk/global-talent
+ - https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement
+ - https://www.uscis.gov/working-in-the-united-states/permanent-workers/employment-based-immigration-first-preference-eb-1

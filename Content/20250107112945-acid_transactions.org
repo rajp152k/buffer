@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a88ea3c7-da2b-4e5a-a04c-fb70ee7b2081
+:END:
+#+title: ACID Transactions
+#+filetags: :eng:cs:
+
+* Resources
+ - https://docs.digitalocean.com/glossary/acid/

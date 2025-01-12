@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       e5d0b6eb-ea62-4339-a190-97f4cb4b5678
+:END:
+#+title: GeoDNS
+#+filetags: :eng:cs:
+
+* Relevant Nodes
+ - [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][DNS (Domain Name System)]]
+ - [[id:80775b3c-b6f1-47db-8752-8c582d9cba53][AnyCast]]
+
+
+* Resources
+ - https://www.cloudns.net/blog/what-is-geodns-and-how-does-it-work/

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       cbe00a26-19c4-4b85-badf-6189a72fab51
+:END:
+#+title: Skin in the Game
+#+filetags: :meta:

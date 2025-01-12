@@ -5,6 +5,8 @@
 #+filetags: :emacs:
 
 * Stream
+** 0x2338
+ - accidentaly discovered the speedbar
 ** 0x22E9
  - doom configs : https://github.com/rajp152k/.dotfiles/tree/master/doom/.config/doom
 ** 0x22CA
@@ -150,7 +152,10 @@ The single greatest tool choice I've ever made in terms of editing efficiently (
  - [ ] https://www.masteringemacs.org/
  - [ ] https://www.oreilly.com/library/view/writing-gnu-emacs/9781449395056/
 * Refs
- - my [[id:20230809T095308.040286][init.el]]
+ - my [[id:20230809T095308.040286][init.el]] (vanilla days)
+  - see the new [[id:e9c2bb46-a5bc-449e-9847-6dc4bce3f30b][.dotfiles]] too (doom days)
+
+
 * Utilities
 ** [[id:be1c795a-add6-4122-add5-ead5f45fbab2][Org-mode]]
 ** [[id:72e5e672-da30-4fda-9efb-6258a1712f8f][Tramp]]

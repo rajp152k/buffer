@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       18142c6b-e1d6-4574-b2a3-6041d9704947
+:END:
+#+title: Open Source
+#+filetags: :bs:
+
+* Relevant Nodes
+ - https://www.openlogic.com/services/consulting

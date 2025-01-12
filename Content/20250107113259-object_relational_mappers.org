@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       f960e9a7-6aa0-4c75-a462-05b55a21420d
+:END:
+#+title: Object Relational Mappers
+#+filetags: :database:
+
+* Abstract
+ - Coms with the database without sql queries : language specific
+   - read up for the [[https://www.fullstackpython.com/object-relational-mappers-orms.html][case of python]]
+ - some issues do arise:
+   - [[https://agiledata.org/essays/impedanceMismatch.html][Impedence mismatch]]
+   - performance issues
+ - Personally, I'd rather write raw SQL : see [[https://www.w3schools.com/sql/sql_stored_procedures.asp][stored procedures]]
+ - still, checkout [[https://www.fullstackpython.com/sqlalchemy.html][sqlAlchemy]]

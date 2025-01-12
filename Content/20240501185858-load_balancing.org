@@ -27,14 +27,14 @@
  - can redirect requests to geographically closer servers
  - ensure the reliability of physical and virtual computing resources 
 * OverArching Types
-** Application Load Balancing
- - application level commuincation protocols influence routing decisions
-** Network Load Balancing
+** Application (L7) Load Balancing
+ - application level communication protocols (Layer 7 - HTTP majority) influence routing decisions
+** Network (L4) Load Balancing
  - Layer 4 traffic is examined (TCP/UDP) to influence routing decisions
 ** Global Server Load Balancing
- - Done across geographically distributed servers
+ - Done across [[id:e5d0b6eb-ea62-4339-a190-97f4cb4b5678][geographically distributed servers]]
  - traffic redirected to a geographically closer server
-** DNS Load Balancing
+** DNS (L3) Load Balancing
  - traffic can be distribued across multiple servers (IP addresses, to be specific) for higher availibility and performance
 * Resources
  - https://aws.amazon.com/what-is/load-balancing/

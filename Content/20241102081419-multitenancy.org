@@ -60,3 +60,6 @@ Multitenancy is a software architecture where a single instance of a software ap
 - Dedicated schema and separate databases increase isolation but might introduce higher complexity and costs.
 - Encryption serves as a critical layer of security across all types.
 
+
+* Resources
+ - https://www.ranthebuilder.cloud/videos

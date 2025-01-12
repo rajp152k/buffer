@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       89efca83-ec2b-4223-906f-e59d06131207
+:END:
+#+title: Open Source AI
+#+filetags: :open-source:ai:
+
+
+* Self hosting AI
+ - https://github.com/bentoml/openllm-models
+ - https://bentoml.com/blog/from-ollama-to-openllm-running-llms-in-the-cloud
+
+* Relevant Tools
+ -  https://github.com/ggerganov/llama.cpp
+* Resources
+ - https://en.wikipedia.org/wiki/Open-source_artificial_intelligence

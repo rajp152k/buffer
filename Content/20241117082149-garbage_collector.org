@@ -25,3 +25,6 @@
   - *Reference Counting*: Counts references to each object and collects objects once references reach zero.
   - *Tracing Garbage Collection*: Uses graph traversal techniques (mark-and-sweep, mark-and-compact, generational) to discover unused objects.
   - *Generational GC*: Optimizes for the observation that most objects die young by segregating them into different lifespan generations.
+
+* Relevant Nodes
+- [[id:e696bb7e-7be3-4d46-acd3-f0a8fda9d224][Cycle Detection]]

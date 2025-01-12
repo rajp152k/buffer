@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       651512fd-b2f0-4705-bdb9-94e31d6ea8ec
+:END:
+#+title: Tech Conferences
+#+filetags: :cs:travel:
+
+* European Lisp Symposium
+ - https://european-lisp-symposium.org/

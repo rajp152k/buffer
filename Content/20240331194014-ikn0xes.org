@@ -56,6 +56,8 @@ I plan all releases being concise captures, the format of which I'll converge up
  - I K<now> N<ot> 0X <hex days alive timestamp>
    
 * Stream
+** 0x233D
+- Launching the [[id:cfc004a1-9bf4-4b6e-89ee-5d6fff4e6fa5][ICBM]]
 ** 0x2223
  - I lately have been diving into technical domains with greater depth than usual : that has been carving out time from my philosophical ramblings -> having a new intellectual project to work with is turning out to be just the kind of active mental rest I was in need of. 
  - before I blog about a cached prompt in here, I populate it's audience agnostic notes in the dump and only then collate a meaningful extraction of the same.

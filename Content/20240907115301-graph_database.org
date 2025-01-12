@@ -59,3 +59,7 @@
   - Excel in managing semi-structured or heterogeneous data.
   - Integration
     - Seamlessly incorporate different data types (e.g., structured and unstructured).
+
+* Resources
+ - https://neo4j.com/blog/graph-search-algorithm-basics/
+ - https://go.neo4j.com/rs/710-RRC-335/images/Definitive-Guide-Graph-Databases-for-RDBMS-Developer.pdf

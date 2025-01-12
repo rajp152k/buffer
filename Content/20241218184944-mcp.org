@@ -4,7 +4,8 @@
 #+title: MCP (Model Context Protocol)
 #+filetags: :protocol:ai:
 
-* Model Context Protocol
+* Usage Queue
+ - https://github.com/kaliaboi/mcp-zotero
 
 * Relevant Tooling
 ** CLI testing utilities
@@ -21,3 +22,4 @@
   - https://github.com/punkpeye/awesome-mcp-servers/
   - https://llmindset.co.uk/posts/2024/12/mcp-build-notes/
   - https://mcpserver.cloud/
+  - https://www.mcphub.ai/servers

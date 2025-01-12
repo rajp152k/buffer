@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8538c0e3-8173-4eae-a602-2b9198e2251a
+:END:
+#+title: sqlite
+#+filetags: :database:

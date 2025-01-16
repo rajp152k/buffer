@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       8afb9d29-252b-4f17-ad42-700444fe4464
+:ROAM_ALIASES: Compute
 :END:
 #+title: Processing
 #+filetags: :meta:

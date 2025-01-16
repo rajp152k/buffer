@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fa347a1f-3277-41ff-8643-63e8aecd2869
+:ROAM_ALIASES: "Role Based Access Control"
+:END:
+#+title: RBAC
+#+filetags: :sec:cs:

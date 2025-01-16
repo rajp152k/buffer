@@ -2,7 +2,7 @@
 :ID:       20230718T223411.394444
 :END:
 #+title: flow
-#+filetags: :book:
+#+filetags: :meta:book:
 
 * Key takeaways
 

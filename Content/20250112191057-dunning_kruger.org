@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d543f055-3129-440b-9ff0-85a19b12b101
+:END:
+#+title: Dunning Kruger
+#+filetags: :meta:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Dunning–Kruger_effect

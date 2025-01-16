@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1d52ebeb-5e1f-4069-8c36-99611fa0659b
+:END:
+#+title: K8S Virtual Clusters
+#+filetags: :k8s:

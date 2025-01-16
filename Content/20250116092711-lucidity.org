@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e8c4ec47-e30f-4d02-af22-c450b6e96968
+:END:
+#+title: Lucidity
+#+filetags: :mind:meta:

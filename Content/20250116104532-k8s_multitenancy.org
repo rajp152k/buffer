@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       607feebd-1de7-438e-906a-ddcb29e81ed1
+:END:
+#+title: K8s-MultiTenancy
+#+filetags: :cs:k8s:
+
+See [[id:49b0dd1e-ca9e-46fa-a0b9-db0ec330833d][MultiTenancy]]
+
+* Supplementary Misc Aspects
+** Control and Data
+ - Control Plane (masters)
+ - Data Plane Tenancy
+
+* Mechanisms
+** [[id:92f509f7-5b8f-4beb-a66c-7890e79c84a3][Namespaces]]
+** [[id:1d52ebeb-5e1f-4069-8c36-99611fa0659b][Virtual Clusters]]
+* Resources
+ - https://kubernetes.io/docs/concepts/security/multi-tenancy/
+ -   https://github.com/kubernetes/community/blob/master/sig-multicluster/README.md

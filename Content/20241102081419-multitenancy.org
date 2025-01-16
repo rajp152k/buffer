@@ -8,40 +8,44 @@
 ** *Definition*
 Multitenancy is a software architecture where a single instance of a software application serves multiple customers, referred to as tenants. Each tenant's data is isolated and remains invisible to other tenants.
 
+The strategic choices needed to facilitate the of this isolation is what makes this an interesting engineering exercise
+
 ** *Components*:
   - *Tenant*: An individual user, a group, or an organization that uses the shared software service but experiences it as though it is solely dedicated to their use.
+
   - *Instance*: A single deployment of the software solution that supports multiple tenants.
+
   - *Isolation*: Techniques that keep tenant data and configurations separate from one another to ensure privacy and personalization.
 
-** *Types of Multitenancy*:
+** *Types of Multitenancy(Product Orientation)*:
+
   - *Physical Multitenancy*: Different physical machines host different tenants.
+
   - *Virtual Multitenancy*: Virtualization technology allows multiple tenants to share hardware resources.
+
   - *Application-Level Multitenancy*: A single application serves multiple tenants, typically providing each with a customizable experience.
 
 ** *Benefits*:
+
   - *Cost Efficiency*: Reduced operational costs as resources are shared among tenants.
+
   - *Scalability*: Easier scaling since the architecture is designed to accommodate multiple tenants.
+
   - *Simplified Management*: Centralized management and updates for software applications.
 
 ** *Challenges*:
+
   - *Security Concerns*: Potential risks of data breaches or leaks between tenants.
+
   - *Customization*: Balancing between offering shared resources and the customization needs of different tenants.
+
   - *Performance*: Ensuring that the performance is optimal and equitable across all tenants.
 
 ** *Applications*:
-  - Widely used in SaaS (Software as a Service) products like CRM systems.
-  - Employed in cloud computing platforms to optimize resource utilization.
 
-** Connections and Insights
+  - Widely used in [[id:cbcb26f4-dd24-4f59-8003-25573a7cd034][SaaS]] (Software as a Service)
 
-- Multitenancy aligns with the broader trends in cloud computing and SaaS, providing a practical means of delivering services at scale.
-- Physical, virtual, and application-level multitenancy represents a spectrum of implementation strategies, each with trade-offs in terms of cost, performance, and security.
-
-** Exploring Further
-
-- How do differing implementations of multitenancy impact the scalability and flexibility of a SaaS product?
-- What best practices exist for ensuring data isolation and security in a multitenant architecture?
-- How does multitenancy compare with single-instance architectures in terms of cost and operational efficiency?
+  - Employed in [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][cloud computing]] platforms to optimize resource utilization.
 
 * Data Isolation Mechanisms
 ** Primal Types
@@ -57,9 +61,21 @@ Multitenancy is a software architecture where a single instance of a software ap
 ** Connections and Insights
 
 - Logical isolation balances resource efficiency with data separation, suitable for environments where cost is a concern.
+
 - Dedicated schema and separate databases increase isolation but might introduce higher complexity and costs.
+
 - Encryption serves as a critical layer of security across all types.
 
-
+* Explicit Aspects
+** [[id:11c09e36-bdef-4977-9142-6d8ec0e697ba][QoS]]
+** [[id:7a7aad21-1c48-4d2c-9962-9a39e5bfe554][Data Privacy]]
+** [[id:03f2c24c-ff4f-4ea7-a3b1-fa44ebd81a62][The Noisy Neighbor]]
+** [[id:f2a87da7-b720-487b-87ad-1ff25ce4283a][Network Policies]]
+* Fundamental Aspects
+** [[id:d4f81cb7-e01b-4115-b8a1-9a303a82699d][Principle of Least Privelege]]
+* Relevant Flavours
+** [[id:607feebd-1de7-438e-906a-ddcb29e81ed1][K8s-MultiTenancy]]
 * Resources
  - https://www.ranthebuilder.cloud/videos
+ - https://kubernetes.io/docs/concepts/security/multi-tenancy/
+ - https://www.cloudflare.com/learning/cloud/what-is-multitenancy/

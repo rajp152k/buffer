@@ -23,7 +23,9 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://karthinks.com/
 ** Mark Watson
  - https://markwatson.com/
-** [[id:fbd38417-13a0-4cda-b256-ee1ab94048f0][Paul Graham]]
+** Patrick McKenzie
+ - https://www.kalzumeus.com/
+** Paul Graham
  - https://paulgraham.com/
 ** Protesilaos Stavrou
  - https://protesilaos.com/

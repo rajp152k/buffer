@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       03f2c24c-ff4f-4ea7-a3b1-fa44ebd81a62
+:END:
+#+title: The Noisy Neighbor
+#+filetags: :cs:meta:

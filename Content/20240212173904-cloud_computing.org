@@ -4,13 +4,15 @@
 #+title: Cloud Computing
 #+filetags: :root:cloud:programming:
 
-In the context of [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Engineering]], see [[id:739d8493-d7a6-4eee-b31a-44d087f4fb42][cloud native]]
+In the context of [[id:5c2039f5-0c44-4926-b2d7-a8bf471923ac][Software Engineering]], see [[id:739d8493-d7a6-4eee-b31a-44d087f4fb42][cloud native]].
+In the context of [[id:a9430614-4e6e-41ff-9788-0f51c2867e74][Hardware]], see [[id:fc34b43d-57e6-49a7-a678-8ec9df4d0c55][virtualization]]
 
 * Distilled
 Most of the services a cloud vendor provides can be segregated along the dimensions (via qualitative and quantitative elaborations) of:
  - Compute
  - Storage
  - Networking
+
 * Abstract
 
 This is an epistemological dive into the nature of cloud computing services.

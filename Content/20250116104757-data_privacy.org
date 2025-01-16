@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       7a7aad21-1c48-4d2c-9962-9a39e5bfe554
+:END:
+#+title: Data Isolation
+#+filetags: :cs:sec:

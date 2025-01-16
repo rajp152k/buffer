@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f2a87da7-b720-487b-87ad-1ff25ce4283a
+:END:
+#+title: Network Isolation
+#+filetags: :cs:sec:
+
+* Relevant Nodes
+** [[id:821aa28f-c16d-4982-bfc7-e1c9cf82c987][Service Meshes]]

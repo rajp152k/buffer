@@ -5,6 +5,9 @@
 #+filetags: :mma:
 
 * Stream
+** 0x2342
+ - sports nutrition is going to be different from being your usual gym bro
+ - starting a node for [[id:a2dc2ee4-644f-43ea-a9c0-39d960700fe3][nutrition]]
 ** 0x2341
  - two days ago, I moved my workouts from full-body power-building sessions into kick-boxing lessons.
  - inspired by the [[id:e57d90a9-7a2b-4fd4-927c-9b6525411625][jargon file]]: http://www.catb.org/~esr/jargon/html/physical.html

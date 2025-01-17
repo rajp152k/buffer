@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9a990bd1-e3e9-494e-8baa-fc66cf8854a8
+:END:
+#+title: Fedora
+#+filetags: :linux:cs:

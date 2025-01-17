@@ -4,25 +4,14 @@
 #+title: filesystem
 #+filetags: :programming:
 
-* Generic Spec
- - to be populated
 * Specific FileSystems
 ** Another Union File System (AUFS) 
-:PROPERTIES:
-:ID:       7a7ece14-6c7c-465c-bed7-08745cb081df
-:END:
  - https://chromium.googlesource.com/chromiumos/platform/factory/+/HEAD/devtools/aufs/README.md
  - used for the layering mechanism in [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker/containerization]]
 ** BTree FileSystem (BTRFS)
-:PROPERTIES:
-:ID:       f3146b40-bbd7-44ab-a716-8e6bc8f4a4bc
-:END:
  - https://btrfs.readthedocs.io/en/latest/
  - [[id:61ba02ce-df71-40c8-ac61-0762c4130345][copy-on-write]] on the file system level
 ** OverlayFS
-:PROPERTIES:
-:ID:       ca6c28b7-9b19-4b21-bbcc-ef6005d7c9e4
-:END:
  - https://en.wikipedia.org/wiki/OverlayFS
  - https://docs.docker.com/storage/storagedriver/overlayfs-driver/
  - see [[id:7a7ece14-6c7c-465c-bed7-08745cb081df][Another Union File System (AUFS)]]
@@ -31,9 +20,7 @@
  - see [[id:f3146b40-bbd7-44ab-a716-8e6bc8f4a4bc][BTree FileSystem (BTRFS)]]
 * Misc 
 ** Device Mapper
-:PROPERTIES:
-:ID:       c2fe5182-b79b-44e2-a73e-6c6c02215af7
-:END:
  - https://en.wikipedia.org/wiki/Device_mapper
+** [[id:53b1ca31-b757-48a4-853b-5d7ae44184a8][Fuse: Filesystem in UserSpace]]
 * Resources
  - https://en.wikipedia.org/wiki/File_system

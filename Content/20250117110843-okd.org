@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       c1a2fc28-8488-4335-8f50-2fdc33b04740
+:ROAM_ALIASES: "Open Kubernetes Distribution"
+:END:
+#+title: OKD
+#+filetags: :k8s:
+
+* Relevant Nodes
+** [[id:9a990bd1-e3e9-494e-8baa-fc66cf8854a8][Fedora]]
+ - https://fedoraproject.org/coreos/
+* Resources
+ - https://okd.io/

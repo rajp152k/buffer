@@ -5,6 +5,9 @@
 #+filetags: :emacs:
 
 * Stream
+** 0x2341
+ - starting to chart the internals of emacs
+ - will understand it as a software engineering product
 ** 0x2338
  - accidentaly discovered the speedbar
 ** 0x22E9
@@ -148,6 +151,7 @@ Started using smudge (spotify on emacs) : more time in emacs...
 Thinking of summarizing my init.el in a blog : been around 2-3 years since I last did that 
 ** 0x2118
 The single greatest tool choice I've ever made in terms of editing efficiently (right along side vim : I use Evil GccEmacs 28 as of now)
+
 * Literature
  - [ ] https://www.masteringemacs.org/
  - [ ] https://www.oreilly.com/library/view/writing-gnu-emacs/9781449395056/

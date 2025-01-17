@@ -14,6 +14,6 @@ A root maintaining indices into prominent project roots that I cache for future 
 ** [[id:ce22c37f-7bc7-43db-9ee4-79ae714cbb2d][Input Multiplexer]]
 ** [[id:11094d83-8847-4382-bf8b-d3660d778e88][Multi-Roam]]
 ** [[id:3de72ca1-ceee-4b5e-a1ba-3412a8db3ec1][Home Lab]]
+** [[id:aa5f4a58-867d-4d94-b172-d3634a305b86][Dynamic File Views]]
 * Competitive
 ** [[id:1e88b1d9-e124-4cf7-987e-8d6a857dc3d3][Project-Euler]]
-** [[id:37016af8-9d02-4ddb-b33a-bcfcd6eacb5d][Advent of Code 2023]]

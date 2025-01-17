@@ -4,16 +4,36 @@
 #+title: K8s-MultiTenancy
 #+filetags: :cs:k8s:
 
-See [[id:49b0dd1e-ca9e-46fa-a0b9-db0ec330833d][MultiTenancy]]
-
-* Supplementary Misc Aspects
+* Supplementary Aspects Over Generic [[id:49b0dd1e-ca9e-46fa-a0b9-db0ec330833d][Multitenancy]]
 ** Control and Data
  - Control Plane (masters)
  - Data Plane Tenancy
 
+
+** Kubelet & APIServer
+#+begin_quote
+Although workloads from different tenants are running on different nodes, it is important to be aware that the kubelet and (unless using virtual control planes) the API service are still shared services. A skilled attacker could use the permissions assigned to the kubelet or other pods running on the node to move laterally within the cluster and gain access to tenant workloads running on other nodes. If this is a major concern, consider implementing compensating controls such as seccomp, AppArmor or SELinux or explore using sandboxed containers or creating separate clusters for each tenant.
+#+end_quote
+
+ - from the Node Isolation second paragraph in
+ - https://kubernetes.io/docs/concepts/security/multi-tenancy/
+
+** API Fairness and Priority
+ - https://kubernetes.io/docs/concepts/cluster-administration/flow-control/
+
+** [[id:74d7c3e9-bf98-4311-a95c-c9674e61fe97][K8S DNS]]
+
+** [[id:240c4c11-3782-471b-b855-22e2e123b1af][Operators-K8S]]
+ - https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+ - https://kubernetes.io/docs/concepts/security/multi-tenancy/#operators
+
 * Mechanisms
 ** [[id:92f509f7-5b8f-4beb-a66c-7890e79c84a3][Namespaces]]
 ** [[id:1d52ebeb-5e1f-4069-8c36-99611fa0659b][Virtual Clusters]]
+** Virtual Control plane per tenant
+ - https://kubernetes.io/docs/concepts/security/multi-tenancy/#virtual-control-plane-per-tenant
+* Implementations
+ - https://kubernetes.io/docs/concepts/security/multi-tenancy/#implementations
 * Resources
  - https://kubernetes.io/docs/concepts/security/multi-tenancy/
  -   https://github.com/kubernetes/community/blob/master/sig-multicluster/README.md

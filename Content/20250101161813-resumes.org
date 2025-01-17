@@ -23,6 +23,8 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://karthinks.com/
 ** Mark Watson
  - https://markwatson.com/
+** Sina | Shahriar | Saleh
+ - https://rayanfam.com/
 ** Patrick McKenzie
  - https://www.kalzumeus.com/
 ** Paul Graham
@@ -36,5 +38,6 @@ From time to time, I land up in an interesting corner of the internet and find i
  - http://steve-yegge.blogspot.com/
 ** Travis Jeffery
  - https://travisjeffery.com/
+
 * Relevant Nodes
  - [[id:20240421T174402.732098][Authors]]

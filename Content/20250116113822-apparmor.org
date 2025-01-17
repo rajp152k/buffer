@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0c5f00d0-815a-460b-b567-eda8c6c0ceda
+:END:
+#+title:  AppArmor
+#+filetags: :cs:sec:

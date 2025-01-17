@@ -14,11 +14,9 @@
 ** OverlayFS
  - https://en.wikipedia.org/wiki/OverlayFS
  - https://docs.docker.com/storage/storagedriver/overlayfs-driver/
- - see [[id:7a7ece14-6c7c-465c-bed7-08745cb081df][Another Union File System (AUFS)]]
 ** ZFS
  - https://en.wikipedia.org/wiki/ZFS
- - see [[id:f3146b40-bbd7-44ab-a716-8e6bc8f4a4bc][BTree FileSystem (BTRFS)]]
-* Misc 
+* Misc
 ** Device Mapper
  - https://en.wikipedia.org/wiki/Device_mapper
 ** [[id:53b1ca31-b757-48a4-853b-5d7ae44184a8][Fuse: Filesystem in UserSpace]]

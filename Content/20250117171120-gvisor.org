@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       73320020-99fa-4531-aa3d-a3f9e377e6e7
+:END:
+#+title: Gvisor
+#+filetags: :sec:cs:
+
+* Resources
+ - https://gvisor.dev/

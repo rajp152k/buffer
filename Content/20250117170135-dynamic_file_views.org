@@ -6,6 +6,9 @@
 
 * Stream
 ** 0x2342
+ - check this out https://unix.stackexchange.com/questions/202653/is-it-possible-to-create-dynamic-content-on-file-read-operation
+ - https://stackoverflow.com/questions/5316178/watching-multiple-files-with-inotify-in-perl
+** 0x2342
  - starting to think in terms of how live updates are managed for linux itself : think about the state being handled under /proc for instance
 ** 0x2342
 Everything is a file in [[id:f0f7ed1f-4117-46d1-91be-b921a2e5cab6][Unix]] based [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating Systems]].
@@ -17,7 +20,6 @@ The changes in the constituents are immediately reflected in the corresponding v
 Single file views are simply links but complex combinations (partial line ranges or concats of multiple files) is something that I can't think about, yet
 
 A quick google search led me to [[id:53b1ca31-b757-48a4-853b-5d7ae44184a8][Fuse]], going to investigate a little
-
 
 * Relevant Resources
  - https://unix.stackexchange.com/questions/202653/is-it-possible-to-create-dynamic-content-on-file-read-operation

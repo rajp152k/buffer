@@ -15,6 +15,8 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://sive.rs/
 ** Dimitri Fontaine
  - https://tapoueh.org/
+** Eric Raymond
+ - https://www.catb.org/
 ** Joseph Gentle
 - https://josephg.com/
 ** Julia Evans

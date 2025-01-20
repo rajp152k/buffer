@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       4f6c9fa4-ab8c-48da-a412-27a5a5867a21
+:END:
+#+title: DynamoDB
+#+filetags: :cs:database:
+
+* Resources
+ - https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       de63d29e-73bb-47ce-95ec-4ed5016d20aa
+:END:
+#+title: Compiling GCC
+#+filetags: :linux:project:
+
+* Resources
+  - https://gcc.gnu.org/install/build.html

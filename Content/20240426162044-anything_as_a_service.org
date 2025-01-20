@@ -52,3 +52,6 @@ Try understanding this node in the context of [[id:bc1cc0cf-5e6a-4fee-b9a5-16533
    - Mobile: ran on smartphones (accessed via a web browser is the first category)
    - Enterprise: supports large scale business objectives (ERP (enterprise resource planning), CRM (customer relationship management), etc)
      
+
+* Relevant Nodes
+ - [[id:079db37b-925c-478a-836f-7f6ce8027108][Service Level Agreement]]

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       ed327dc5-5087-4aae-ac8d-9ce0580a1b68
+:END:
+#+title: Principal Engineer
+#+filetags: :corp:role:
+
+
+* Resources
+ - https://engineering-manager.com/2020-03-21/what-is-principal-engineer-role
+ - https://www.noidea.dog/glue

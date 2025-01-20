@@ -11,19 +11,20 @@
 - the system property and design strategy in which a system's components have minimal knowledge of any other components.
 - internal changes to one don't demand changes in the other
 - web servers and web browsers for instance are loosely coupled given both have certain guarantees.
-*** Enablement
+** Enablement
 - Having a [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Protocol]] allows standardizing the input expectations and output assurances of a component.
 - These may be addressed as [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Interfaces]] as well.
 ** [[id:b24fb743-99bb-4e1a-b4a4-3b81c9677360][Resilience]]
 - see also [[id:20240519T162542.805560][fault tolerence]]
 - the measure of how well a system withstands and recovers from errors and faults
-
 ** [[id:2cd51b23-f253-40e2-8c5d-6f2924ca484d][Manageability]]
  - the ease with which a system's behaviour can be modified to keep it secure, running smoothly, and compliant with changing requirements.
 ** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
  - the measure of how well a system's internal states can be inferred from knowledge of its external outputs.
 * Strats
 ** Chronologically Numbered Entity Flows
+ - start with a 0 and chart out data flows for single interaction flows
+ - be creative temporal persistence transfers
 
 * Engineering Utilities
 ** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]

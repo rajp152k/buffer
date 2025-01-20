@@ -7,10 +7,7 @@
  - Hashmap: A [[id:20230715T173535.681936][Data Structure]] that is stores values indexable with hashed keys.
  - Hash Function: the corresponding mapping mechanism yielding values for a hashed key.
 
-* Consistent Hashing
-:PROPERTIES:
-:ID:       20240519T215504.815957
-:END:
+* [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent Hashing]]
 
  - technique used in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]] to distribute data across multiple nodes (servers) efficiently.
  - Unlike traditional hashing, where a change in the number of nodes can disrupt the entire data distribution, consistent hashing minimizes the impact of adding or removing nodes.

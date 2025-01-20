@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       293f3263-e3bf-4ae5-8b03-7da9b2550f3d
+:END:
+#+title: Engineer
+#+filetags: :meta:role:
+
+* Forks, Flavours and Granularities
+** [[id:ed327dc5-5087-4aae-ac8d-9ce0580a1b68][Principal Engineer]]
+
+* Resources
+ - https://lethain.com//staff-plus-eng-resources/

@@ -11,15 +11,15 @@
  - A core component that defines a load balancer's behaviour is the way it balances traffics, i.e. the underlying [[id:7f960631-c727-41b8-80c2-3ccaa4ae4ba2][scheduling algorithm]]
    - it can either be static (uses a predefined strategy) or dynamic (routes traffic based on the current state of the load balancer)
 * Benefits
-** Availibility 
+** [[id:20240519T152842.050227][Availibility]]
  - Regular health checks
  - automatic disaster recovery
  - phased upgrade strategies without downtime
-** Scalability
+** [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]
  - avoids over"load"ing a single server
  - traffic prediction capabilities for auto-scaling
  - redundancy allows scaling confidently
-** Security
+** [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]]
  - monitor traffic and block malicious content : see [[id:49fee858-eb36-4230-8eb0-881df964aec8][Web Application Firewall]]s for an elaboration
  - redirect attack traffic to multiple backend servers to minimize impact
 ** Performance
@@ -29,12 +29,12 @@
 * OverArching Types
 ** Application (L7) Load Balancing
  - application level communication protocols (Layer 7 - HTTP majority) influence routing decisions
-** Network (L4) Load Balancing
- - Layer 4 traffic is examined (TCP/UDP) to influence routing decisions
+** Network (L3) Load Balancing
+ - Layer 3 traffic is examined (TCP/UDP) to influence routing decisions
 ** Global Server Load Balancing
  - Done across [[id:e5d0b6eb-ea62-4339-a190-97f4cb4b5678][geographically distributed servers]]
  - traffic redirected to a geographically closer server
-** DNS (L3) Load Balancing
+** DNS (L4) Load Balancing
  - traffic can be distribued across multiple servers (IP addresses, to be specific) for higher availibility and performance
 * Resources
  - https://aws.amazon.com/what-is/load-balancing/

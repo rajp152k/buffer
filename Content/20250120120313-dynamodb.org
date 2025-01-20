@@ -8,7 +8,7 @@
 ** Partitioning
 *** [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent Hashing]]
 ** High Availability for writes
-*** [[id:20240519T185810.343769][Vector Clocks]]
+*** [[id:2d6c7979-5049-435b-b405-0c685fbe06de][Vector Clocks]]
 ** Handling Temporary Failures
 *** Sloppy [[id:20240519T200217.994784][Quorum]]
 *** [[id:21124361-2f72-4270-9bfe-f12f52155476][Hinted Handoff]]

@@ -4,5 +4,17 @@
 #+title: DynamoDB
 #+filetags: :cs:database:
 
+* Aspect Addressed
+** Partitioning
+*** [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent Hashing]]
+** High Availability for writes
+*** [[id:20240519T185810.343769][Vector Clocks]]
+** Handling Temporary Failures
+*** Sloppy [[id:20240519T200217.994784][Quorum]]
+*** [[id:21124361-2f72-4270-9bfe-f12f52155476][Hinted Handoff]]
+** Recovering from Permanent Failures
+*** Anti Entropy using [[id:20240519T201001.324666][Merkle Trees]]
+** Membership and failure detection
+*** [[id:f82e5b8d-a4a4-4f0b-be4e-49d5fd676dc3][Gossip Protocols]]
 * Resources
  - https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf

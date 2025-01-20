@@ -88,10 +88,7 @@ Imagine two computers, A and B:
  - cannot determine causality between concurrent events.
  - require a mechanism to break ties if events happen at the same time on different computers.
 
-** Vector Clocks
-:PROPERTIES:
-:ID:       20240519T185810.343769
-:END:
+** [[id:2d6c7979-5049-435b-b405-0c685fbe06de][Vector Clocks]]
  - Ensuring Causal Order in Distributed Systems
 
  - powerful tool in distributed systems to track the order of events and detect causality relationships.

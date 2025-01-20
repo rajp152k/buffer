@@ -3,5 +3,10 @@
 :ROAM_ALIASES: peer-to-peer
 :END:
 #+title: P2P Protocol
-#+filetags: :cs:
+#+filetags: :p2p:cs:
 
+* Distributed Filesystems
+** [[id:587d53dd-6feb-4b42-b62d-906a21dfcc38][Ficus]]
+** [[id:dbb1e35c-455c-460b-bf01-ce3e2315e4bc][Coda]]
+* Resources
+ - https://wiki.p2pfoundation.net/

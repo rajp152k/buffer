@@ -31,10 +31,7 @@
 3. In what scenarios would eventual consistency be favored over strong consistency, and why?
 4. What design patterns or strategies can developers adopt to handle the complexities introduced by eventual consistency?
 5. How does the implementation of eventual consistency vary across different types of databases (e.g., document stores vs. key-value stores)?
-* Gossip Protocols
-:PROPERTIES:
-:ID:       20240519T222301.158791
-:END:
+* [[id:f82e5b8d-a4a4-4f0b-be4e-49d5fd676dc3][Gossip Protocols]]
 
  - also known as epidemic protocols,
  - communication mechanisms used in distributed systems where nodes share information with each other in a decentralized manner.
@@ -93,11 +90,8 @@
  - Latency: Can take some time for information to propagate to all nodes.
 
  - Redundant Messages: Can result in redundant messages being sent due to the random nature of peer selection.
-* Hinted Handoff
-:PROPERTIES:
-:ID:       20240519T221942.851343
-:END:
- 
+* [[id:21124361-2f72-4270-9bfe-f12f52155476][Hinted Handoff]]
+
  - helps ensure that data updates eventually reach all replicas, even when some nodes are temporarily unavailable.
 
  - is a key mechanism in [[id:20240519T221905.005300][Cassandra]] that helps to bridge the gap between [[id:20240519T152842.050227][availability and eventual consistency]]

@@ -5,5 +5,4 @@
 #+filetags: :cs:data:
 
  - [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] (Key Value Store)
- - also see [[id:20240519T221942.851343][Hinted Handoffs]] 
-
+ - also see [[id:21124361-2f72-4270-9bfe-f12f52155476][Hinted Handoff]]

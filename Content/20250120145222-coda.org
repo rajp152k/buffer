@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       dbb1e35c-455c-460b-bf01-ce3e2315e4bc
+:END:
+#+title: Coda
+#+filetags: :p2p:cs:data:
+
+* Relevant Nodes
+ - [[id:20240519T201442.376294][P2P Protocol]]
+* Resources
+ - http://www.coda.cs.cmu.edu/

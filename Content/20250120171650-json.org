@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       48581776-0ba5-4d88-ad38-25c0cb90595f
+:ROAM_ALIASES: "Javascript Object Notation"
+:END:
+#+title: JSON
+#+filetags: :data:

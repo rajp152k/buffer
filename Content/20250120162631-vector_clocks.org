@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2d6c7979-5049-435b-b405-0c685fbe06de
+:END:
+#+title: Vector Clocks
+#+filetags: :cs:

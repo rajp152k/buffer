@@ -3,3 +3,7 @@
 :END:
 #+title: Fedora
 #+filetags: :linux:cs:
+
+
+* Core OS
+ - https://fedoraproject.org/coreos/

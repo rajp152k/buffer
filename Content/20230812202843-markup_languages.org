@@ -2,12 +2,5 @@
 :ID:       20230812T202843.907446
 :END:
 #+title: markup-languages
-#+filetags: :tbp:
-
-* Instances
-** YAML
-:PROPERTIES:
-:ID:       7cd81a80-dbc4-4c6e-860a-f05b14798e68
-:END:
- - https://yaml.org/
+#+filetags: :data:
 

@@ -33,6 +33,12 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
  - any time you see this header for a node, you may treat it as a generic index into things pertaining to that particular domain.
  - think awesome : https://github.com/emijrp/awesome-awesome
 ** [[id:5bf59607-5845-417a-8093-7fd971e7ab21][Intriguing Works]]
+* Domain Specific Indices
+** [[id:53f365ac-8ee6-48d9-8847-f56ef3681891][System Design Index]]
+** [[id:1c70d2a6-8296-41aa-9148-08f52f62a5cb][AlgoIndex]]
+** [[id:7d86f493-37aa-4ea9-bc1f-2db159b1f02d][DSIndex]]
+* Domain Specific Glossaries
+** [[id:3aa7ff5b-e9d4-4f19-ba71-bb5e94880708][CS Glossary]]
 * Stream
 ** 0x22F1
  - the idea building up an eternal internal discussion that deeply thinks anything around you seems interesting

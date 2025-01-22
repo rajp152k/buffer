@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       1c70d2a6-8296-41aa-9148-08f52f62a5cb
+:END:
+#+title: AlgoIndex
+#+filetags: :idx:algo:
+
+Index into algorithms with a brief description of what they achieve
+
+* Corp Specific
+
+| Algorithm | Desc                                |
+|-----------+-------------------------------------|
+| [[id:d4fe54f3-65c0-4a8a-9075-242ce475e706][EdgeRank]]  | Facebook's NewsFeed Aggregation     |
+| [[id:514705de-abe8-4781-9c51-03c318bbe077][PageRank]]  | Google's Web Page Ranker for Search |
+
+* Domain Specific
+* Generic Large Scale

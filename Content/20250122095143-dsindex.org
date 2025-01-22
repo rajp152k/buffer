@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7d86f493-37aa-4ea9-bc1f-2db159b1f02d
+:ROAM_ALIASES: "Data Structure Index"
+:END:
+#+title: DSIndex
+#+filetags: :idx:
+
+Index into data structures of varying complexities and brief descriptions about their core aspects

@@ -4,6 +4,8 @@
 #+title: System Design
 #+filetags: :cs:
 
+Checkout the [[id:53f365ac-8ee6-48d9-8847-f56ef3681891][System Design Index]]
+
 * Major Aspects
 ** [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]
 - the ability of a system to continue to behave as expected in the face of significant upward or downward changes in demand.
@@ -21,6 +23,5 @@
  - the ease with which a system's behaviour can be modified to keep it secure, running smoothly, and compliant with changing requirements.
 ** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
  - the measure of how well a system's internal states can be inferred from knowledge of its external outputs.
-** [[id:3aa7ff5b-e9d4-4f19-ba71-bb5e94880708][SDI Glossary]]
 * Quick Links
 ** [[id:2dca77bf-c105-407f-8afc-289716ea79d5][Latency numbers every programmer should know]]

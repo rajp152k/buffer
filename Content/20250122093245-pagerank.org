@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       514705de-abe8-4781-9c51-03c318bbe077
+:END:
+#+title: PageRank
+#+filetags: :cs:algo:
+
+* Resources
+ - https://en.wikipedia.org/wiki/PageRank

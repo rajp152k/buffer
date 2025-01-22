@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d4fe54f3-65c0-4a8a-9075-242ce475e706
+:END:
+#+title: EdgeRank
+#+filetags: :algo:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/EdgeRank

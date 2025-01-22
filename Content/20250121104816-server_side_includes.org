@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       7b93d84e-1733-4163-bf39-d18212e4addc
+:END:
+#+title: Server Side Includes
+#+filetags: :web:cs:
+
+* Resources
+  - https://en.wikipedia.org/wiki/Server_Side_Includes

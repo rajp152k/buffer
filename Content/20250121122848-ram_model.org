@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       8665e785-0f50-4df8-b7f1-a5c95b62333c
+:END:
+#+title: RAM model
+#+filetags: :cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Random-access_machine

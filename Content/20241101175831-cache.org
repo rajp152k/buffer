@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       c8a3e246-0f29-4909-ab48-0d34802451d5
+:ROAM_ALIASES: cache
 :END:
 #+title: Caching
 #+filetags: :data:
@@ -30,7 +31,7 @@
 - *Challenges*:
   - Cache coherence: Ensuring the cached data remains up-to-date with the source data.
   - Cache size management: Limiting the cache size to avoid overwhelming the system.
-  - Eviction policies: Deciding which data to remove when the cache is full (e.g., LRU, FIFO).
+  - [[id:acdca30a-16c9-4f87-85f0-0ed2d06b859f][Eviction policies]]: Deciding which data to remove when the cache is full (e.g., LRU, FIFO).
 
 * Processor Caches
 
@@ -103,10 +104,6 @@
   - Reduces latency and increases throughput for IO operations, contributing to overall system efficiency.
   - Can balance the load on storage devices by decreasing the frequency of access requests.
 
-Connections:
-- Operating system caches are an extension of the general caching principle, emphasizing efficiency between applications and storage mediums.
-- The strategies and policies employed in operating system caches echo those used in processor caches, showing a shared goal of optimizing speed and resource management.
-
 * Web Caches
 
 - Definition: Web caches are temporary storage systems that store copies of web content, such as pages and images, to expedite retrieval when users access those resources again.
@@ -114,16 +111,16 @@ Connections:
 - Types of Web Caches:
   - Browser Cache:
     - Stores web content locally on users' devices for quicker access on future visits.
-  - Proxy Cache:
+  - [[id:659e7518-56e1-4a6b-b24f-4601d66fa449][Proxy]] Cache:
     - Serves as an intermediary between users and servers, caching content for multiple clients to reduce server load.
-  - Content Delivery Network (CDN) Cache:
+  - [[id:20240101T082700.953774][Content Delivery Network]] (CDN) Cache:
     - Distributes copies of web content across multiple geographic locations to minimize latency for end-users.
 
 - Purpose:
   - Decrease loading times for frequently accessed web pages.
   - Reduce bandwidth usage by serving cached content instead of retrieving it from the original server repeatedly.
 
-- Cache Control Headers:
+- [[id:b46ebd9e-ea46-4aa2-86a7-80c42437525d][Cache Control Headers]]:
   - HTTP headers (like Cache-Control, ETag, and Expires) dictate how web caches behave, ensuring proper handling of cached data, including expiration and revalidation.
 
 - Benefits:
@@ -174,5 +171,12 @@ Connections:
 - *Connections*:
   - Distributed caches extend the caching principles found in operating systems and web caches by enabling sharing of cached data across multiple servers, enhancing performance in distributed applications.
   - The strategies for consistency and fault tolerance in distributed caches resonate with challenges faced by both operating system caches and processor caches, where current data state integrity is critical.
+* Dynamic Caching
+ - https://www.cloudflare.com/learning/cdn/caching-static-and-dynamic-content/
+ - [[id:2c9a120c-de8d-4cff-add6-5091d376199a][Edge Side Includes]]
+ - [[id:7b93d84e-1733-4163-bf39-d18212e4addc][Server Side Includes]]
+
 * Resources
  - https://www.youtube.com/watch?v=dGAgxozNWFE&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=6&ab_channel=ByteByteGo
+
+ - https://www.cloudflare.com/learning/cdn/caching-static-and-dynamic-content/

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b1925f7c-1711-4e74-a60f-d7af3231285a
+:END:
+#+title: Sticky Sessions
+#+filetags: :web:cs:
+
+* Resources
+  - https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/welcome.html

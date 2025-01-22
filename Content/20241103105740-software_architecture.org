@@ -3,3 +3,43 @@
 :END:
 #+title: Software Architecture
 #+filetags: :cs:
+
+
+* Layers
+** Second Most Minimal Strat
+*** Presentation Layer
+ - the front
+ - mobile, web, desktop application ...
+*** Application Layer
+ - Generic enablement of the software
+ - neither business nor presentation
+ - orchestrates the rest
+*** Business/Domain Layer
+ - the control flows
+ - the domain specific intellect
+*** Persistence/Data Access Layer
+ - code necessary to access the database layer
+ - SQL, ORMs
+*** Database Layer
+ - Core CRUD ops here
+ - could be a file server/database server
+** Most Minimal Strat
+*** Presentation
+*** Business
+ - ++application from above
+*** Data
+ - ++persistence from above
+** N-tier
+ - usually synonyms for anything non-monolithic
+* Splicables
+** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]
+** [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Database Replication]]
+** [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster Recovery]]
+** [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]
+** [[id:20240101T082700.953774][Content Delivery Network]]
+** [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Message Brokers]]
+** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
+* Resources
+ - https://www.syncloop.com/blogs/software-interactions-api.html
+ - https://www.ibm.com/think/topics/three-tier-architecture
+ - https://www.baeldung.com/cs/n-tier-architecture

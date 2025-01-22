@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       d4439a3c-ee63-479e-943e-5bebc50e32bd
+:END:
+#+title: State
+#+filetags: :cs:
+
+* Relevant Nodes
+ - [[id:89501d1d-e70c-461d-b631-6798949a0e4b][StatelessNess]]
+ - [[id:3bf53551-4c0a-4f16-9e6b-e3020124abc1][StatefulNess]]
+
+* Resources
+- https://www.baeldung.com/cs/stateful-stateless-system
+- https://stackoverflow.com/questions/5329618/stateless-vs-stateful
+- https://www.freecodecamp.org/news/stateful-vs-stateless-architectures-explained/
+- https://www.mygreatlearning.com/blog/stateful-vs-stateless/

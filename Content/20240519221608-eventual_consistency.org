@@ -13,7 +13,7 @@
   - Often contrasted with strong consistency models.
 - *Use Cases*:
   - Widely adopted in systems that require high availability such as NoSQL databases, distributed file systems, and cloud storage solutions.
-  - Examples include Amazon DynamoDB, Apache Cassandra, and Riak.
+  - Examples include Amazon [[id:4f6c9fa4-ab8c-48da-a412-27a5a5867a21][DynamoDB]], Apache [[id:20240519T221905.005300][Cassandra]], and [[id:94f87516-cbee-4386-a583-e33645cbbe9c][Riak]].
 - *Benefits*:
   - Higher throughput and availability compared to strict consistency models due to relaxed rules.
   - Better performance under high-load scenarios where [[id:20240519T152842.050227][partition tolerance]] is crucial.

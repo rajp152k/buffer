@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       965dfd38-4fc5-4893-8dbe-4ac21630aba3
+:ROAM_ALIASES: SPOF
+:END:
+#+title: Single Point of Failure
+#+filetags: :meta:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Single_point_of_failure

@@ -4,10 +4,15 @@
 #+title: Algorithms
 #+filetags: :programming:
 
+* Abstract
+ - a set of instructions to solve a [[id:3dc89742-51ee-49dc-bb3b-19bd24e50c8a][problem]]
+ - proceeding in python (psuedo code)
+** Interfaces
+*** Takes in Input
+*** Yields Output
 
-* Stream
-** 0x21B6
- - initializing the first dedicated population phase
-   - need a stable base for all specializations 
-   - will be proceeding in python
-   - accompanied by a parallel phase for [[id:20230715T173535.681936][Data Structure]]
+* Observability
+** [[id:8e9f6cef-da57-48ed-b86d-029f1b528615][Time Complexity]]
+** [[id:4a1f8e43-8c10-4187-8311-0b8df074b05d][Space Complexity]]
+* Resources
+ - https://www.youtube.com/watch?v=oWgLjhM-6XE&list=PLrS21S1jm43igE57Ye_edwds_iL7ZOAG4&ab_channel=PavelMavrin

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       8e9f6cef-da57-48ed-b86d-029f1b528615
+:END:
+#+title: Time Complexity
+#+filetags: :programming:
+
+
+* Overview
+
+- *Definition of Time Complexity*: A computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input.
+
+- *Big O Notation*: Provides an upper bound on the time complexity, allowing for worst-case scenario analysis. Common notations include:
+  - O(1): Constant time
+  - O(log n): Logarithmic time
+  - O(n): Linear time
+  - O(n log n): Linearithmic time
+  - O(n^2): Quadratic time
+  - O(2^n): Exponential time
+
+- [[id:b9d4742e-ffa3-465a-aba1-2133db03abd3][Complexity Classes]]:
+  - P: Problems that can be solved in polynomial time.
+  - NP: Problems for which solutions can be verified in polynomial time.
+  - NP-complete: Hardest problems in NP, which if solved in polynomial time would imply P = NP.
+
+
+*** Questions for Further Clarification:
+- What specific algorithm or data structure are you focusing on in the context of time complexity?
+- Are there particular properties of time complexity (e.g., average case vs. worst case) you wish to explore further?
+
+*** Pathways for Further Research:
+- How do different data structures (arrays, linked lists, trees) impact time complexity?
+- In what scenarios do average case complexities differ significantly from worst-case analyses?
+- What are the implications of time complexity in real-time systems versus batch processing systems?

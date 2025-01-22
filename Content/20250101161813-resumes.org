@@ -11,6 +11,8 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://www.evalapply.org/
 ** Artyom Bologov
 - https://aartaka.me/
+** Daniel Miessler
+ - https://danielmiessler.com/
 ** Derek Sivers
  - https://sive.rs/
 ** Dimitri Fontaine
@@ -40,7 +42,6 @@ From time to time, I land up in an interesting corner of the internet and find i
  - http://steve-yegge.blogspot.com/
 ** Travis Jeffery
  - https://travisjeffery.com/
-
 ** Varun Upadhyay
  - https://distributed-computing-musings.com/about-me/
 * Relevant Nodes

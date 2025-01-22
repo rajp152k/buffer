@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       7a490e9e-4361-4396-9cac-091e6844ce9d
+:END:
+#+title: Edge Computing
+#+filetags: :cs:

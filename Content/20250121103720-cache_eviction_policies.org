@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       acdca30a-16c9-4f87-85f0-0ed2d06b859f
+:END:
+#+title: Cache Eviction Policies
+#+filetags: :web:cs:
+
+* Overview
+
+- *Definition*: [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Cache]] eviction policies determine how and when data is removed from the cache to make space for new data.
+
+- *Purpose*: The main goal is to optimize cache usage while minimizing latency and maximizing hit rates.
+
+*** Common Cache Eviction Policies
+
+1. *Least Recently Used (LRU)*:
+   - Evicts the least recently accessed data.
+   - Assumes that data accessed recently will likely be needed again soon.
+
+2. *First In, First Out (FIFO)*:
+   - Evicts the oldest data first.
+   - Does not consider the frequency or recency of access.
+
+3. *Least Frequently Used (LFU)*:
+   - Evicts the data that has been accessed the least often.
+   - Keeps the most frequently accessed data in the cache.
+
+4. *Random Replacement*:
+   - Chooses a random entry to evict.
+   - Simple and can be efficient in certain scenarios.
+
+5. *Most Recently Used (MRU)*:
+   - Often used when the most recent data is less needed than older data.
+   - Typically suited for scenarios with certain access patterns.
+
+6. *Adaptive Policies*:
+   - Combine multiple strategies (e.g., LRU, LFU) to adapt based on access patterns.
+   - Can maximize performance based on observed workload distributions.
+
+*** Factors Influencing Eviction Policy Choice
+
+- *Workload Characteristics*: Frequency and pattern of data access play a significant role in the effectiveness of an eviction scheme.
+
+- *Memory Constraints*: Limited cache size impacts how aggressively data is evicted.
+
+- *System Architecture*: Different architectures may favor specific policies depending on overall design.
+
+*** Connections Between Entities
+
+- *Performance versus Complexity*: LRU is often more effective in terms of hit rate but is more complex to implement than FIFO, which may perform poorly in certain workloads.
+
+- *Recency vs. Frequency*: LRU focuses on recency, while LFU emphasizes frequency; both aim to retain relevant data, but they do so with different assumptions.
+
+- *Adaptivity*: Adaptive policies build on the strengths of various methods, allowing systems to respond dynamically to changing access patterns.
+
+
+
+* Resources
+ - https://learningdaily.dev/handling-cache-eviction-when-and-how-to-evict-data-3d4734997e6a

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       9afe7e91-6019-4a37-bc9d-49dbf550bc27
+:END:
+#+title: Web Engineering
+#+filetags: :cs:web:
+
+* Resources
+  - https://en.wikipedia.org/wiki/Web_engineering
+  - https://ieeexplore.ieee.org/document/923949

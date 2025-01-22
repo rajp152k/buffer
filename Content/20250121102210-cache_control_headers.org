@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       b46ebd9e-ea46-4aa2-86a7-80c42437525d
+:END:
+#+title: Cache Control Headers
+#+filetags: :web:cs:
+
+* Overview
+
+- *Definition*: Cache control headers are HTTP headers used to define caching policies for web browsers and intermediary caches.
+
+- *Purpose*:
+  - Optimize loading times by determining how long resources are cached.
+  - Ensure that users see the most recent version of a resource.
+
+- *Common Cache Control Directives*:
+  - =no-cache=: Forces caches to submit a request to the origin server for validation before releasing a cached copy.
+  - =no-store=: Prevents caching of the resource entirely.
+  - =max-age=: Specifies the maximum amount of time a resource is considered fresh, in seconds.
+  - =public=: Indicates that the response may be cached by any cache.
+  - =private=: Indicates that the response is intended for a single user and should not be stored by shared caches.
+
+- *Browser Behavior*:
+  - When a browser receives these headers, it determines how to cache or fetch resource updates, impacting user experience.
+
+- *Impact on Performance*:
+  - Correctly configured caching can significantly reduce server load and latency for returning users.
+
+*Connections between Entities*:
+- Cache control headers interact with web applications, influencing how content is delivered and experienced by end users.
+- They are particularly significant in conjunction with other web optimization strategies, such as [[id:20240101T082700.953774][Content Delivery Networks]] (CDNs) and application-layer caching.
+
+* Relevant nodes
+ - [[id:b46ebd9e-ea46-4aa2-86a7-80c42437525d][Cache Control Headers]]
+ - [[id:0a4948e7-6963-4f00-8e6b-4c9ea1291a3f][Web Dev]]
+ - [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]
+* Resources
+  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control

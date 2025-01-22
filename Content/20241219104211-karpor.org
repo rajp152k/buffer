@@ -42,7 +42,7 @@
  - Sampling: Server-initiated agentic behaviors and recursive LLM interactions
 ** Design Principles
  - https://spec.modelcontextprotocol.io/specification/architecture/#design-principles
-* Relevance
 * Resources
  - https://github.com/KusionStack/karpor
  - https://llmindset.co.uk/posts/2024/12/mcp-build-notes/
+ - https://github.com/mark3labs/mcp-go

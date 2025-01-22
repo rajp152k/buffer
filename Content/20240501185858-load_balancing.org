@@ -36,6 +36,8 @@
  - traffic redirected to a geographically closer server
 ** DNS (L4) Load Balancing
  - traffic can be distribued across multiple servers (IP addresses, to be specific) for higher availibility and performance
+* Relevant Nodes
+** [[id:b1925f7c-1711-4e74-a60f-d7af3231285a][Sticky Sessions]]
 * Resources
  - https://aws.amazon.com/what-is/load-balancing/
  - https://www.cloudflare.com/learning/performance/what-is-dns-load-balancing/

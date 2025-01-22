@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       cf890270-836b-4beb-841d-af3f8ba6e5f3
+:END:
+#+title: Data Center
+#+filetags: :cloud:

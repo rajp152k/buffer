@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       2c9a120c-de8d-4cff-add6-5091d376199a
+:END:
+#+title: Edge Side Includes
+#+filetags: :cs:web:
+
+* Relevant Nodes
+** [[id:7a490e9e-4361-4396-9cac-091e6844ce9d][Edge Computing]]
+** [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]
+** [[id:7b93d84e-1733-4163-bf39-d18212e4addc][Server Side Includes]]
+* Resources
+ - https://en.wikipedia.org/wiki/Edge_Side_Includes

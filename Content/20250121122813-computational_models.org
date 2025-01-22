@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       48763a75-bd8c-41d0-8caa-1d64b35a0cad
+:END:
+#+title: Computational Models
+#+filetags: :cs:
+
+* Relevant Nodes
+** [[id:8665e785-0f50-4df8-b7f1-a5c95b62333c][RAM model]]
+
+* Resources
+ - https://en.wikipedia.org/wiki/Computational_model

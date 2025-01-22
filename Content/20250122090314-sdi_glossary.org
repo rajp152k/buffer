@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       3aa7ff5b-e9d4-4f19-ba71-bb5e94880708
+:END:
+#+title: CS Glossary
+#+filetags: :cs:
+
+A quick index into most common abbreviations
+
+| Abbrev | Expansion                |
+|--------+--------------------------|
+| AU     | Active Users             |
+| CDN    | [[id:20240101T082700.953774][Content Delivery Network]] |
+| DNS    | [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]]       |
+| QPS    | Queries Per Second       |
+| IP     | [[id:d799bc90-5032-4a69-9806-83145297a335][Internet Protocol]]        |
+|        |                          |
+|        |                          |

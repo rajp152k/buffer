@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       873f2b2e-5bc3-480e-bd42-42af349a49af
+:END:
+#+title: Business Continuity Planning
+#+filetags: :bs:

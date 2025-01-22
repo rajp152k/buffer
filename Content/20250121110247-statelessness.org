@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       89501d1d-e70c-461d-b631-6798949a0e4b
+:END:
+#+title: StatelessNess
+#+filetags: :arch:cs:
+
+Also see [[id:3bf53551-4c0a-4f16-9e6b-e3020124abc1][StatefulNess]]

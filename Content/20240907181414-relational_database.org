@@ -3,3 +3,6 @@
 :END:
 #+title: Relational Database
 #+filetags: :database:
+
+* Resources
+ - https://blog.teamtreehouse.com/should-you-go-beyond-relational-databases

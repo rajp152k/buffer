@@ -2,4 +2,27 @@
 :ID:       8cd19397-b5e5-40b6-a172-456c34985a11
 :END:
 #+title: Database Replication
-#+filetags: :eng:cs:database:
+#+filetags: :cs:database:
+
+* Overview
+
+- *Definition*: [[id:2f67eca9-5076-4895-828f-de3655444ee2][Database]] replication refers to the process of sharing or copying data and database objects from one database to another and synchronizing between databases for consistency.
+
+- *Types of Replication*:
+  - *Master-Slave Replication*: One master database handles write operations while one or more slave databases handle read operations.
+  - *Multi-Master Replication*: All nodes can act as both a master and a slave, allowing read and write operations across multiple nodes.
+  - *Snapshot Replication*: Data is copied at specific intervals to capture the state of the database at that time.
+  - *Transactional Replication*: Data changes are replicated in real-time as transactions are committed on the master database.
+
+- *Use Cases*:
+  - [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster recovery]]: Creating backups in different locations to ensure durability.
+  - [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load balancing]]: Distributing read queries across multiple replicas to improve performance.
+  - [[id:e9973a5d-a0bb-49b5-9767-af6df7a459eb][Data localizing]]: Placing data closer to users or applications to reduce latency.
+
+- *Challenges*:
+  - [[id:aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23][Latency]]: Time delay in data synchronization between replicated databases.
+  - [[id:20240519T152842.050227][Conflict Resolution]]: Handling discrepancies in data changes across different replicas, especially in multi-master setups.
+  - Complexity: Increased architectural complexity in managing replication topologies.
+
+* Resources
+  - https://rivery.io/data-learning-center/complete-guide-to-data-replication/

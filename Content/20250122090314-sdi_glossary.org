@@ -4,7 +4,7 @@
 #+title: CS Glossary
 #+filetags: :glossary:cs:
 
-A quick index into most common abbreviations
+A quick index into most common abbreviations in the domain of computer science
 
 | Abbrev | Expansion                         |
 |--------+-----------------------------------|

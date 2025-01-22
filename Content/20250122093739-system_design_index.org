@@ -6,12 +6,16 @@
 
 Index into system design aspects with brief descriptions about their significance
 
-| Component                | Description                    |
-|--------------------------+--------------------------------|
-| [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]                  | Industrial [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][Memoization]]         |
-| [[id:20240101T082700.953774][Content Delivery Network]] | decoupled media delivery       |
-| [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Database Replication]]     | scale databases                |
-| [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster Recovery]]        | [[id:873f2b2e-5bc3-480e-bd42-42af349a49af][BCP]] for CS                     |
-| [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]           | distribute load across servers |
-| [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Message Brokers]]          | Reliable coms for Services     |
-| [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]  stack     | logs, metrics,...              |
+| Component                      | Description                                |
+|--------------------------------+--------------------------------------------|
+| [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]                        | Industrial [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][Memoization]]                     |
+| [[id:20240101T082700.953774][Content Delivery Network]]       | decoupled media delivery                   |
+| [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Database Replication]]           | scale databases                            |
+| [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster Recovery]]              | [[id:873f2b2e-5bc3-480e-bd42-42af349a49af][BCP]] for CS                                 |
+| [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]                 | distribute load across servers             |
+| [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Message Brokers]]                | Reliable coms for Services                 |
+| [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]  stack           | logs, metrics,...                          |
+| [[id:4e1d433c-9f6b-46c7-ad06-4f8bf798785e][Identity and Access Management]] | Roots of Cyber Security                    |
+| [[id:a9f836f0-d43d-4e97-96fc-06f75e982d15][Rate Limiting]]                  | Avoid exploits of your exposures           |
+| [[id:20240519T152842.050227][CAP]]                            | Trade-offs during Network Partition        |
+| [[id:3df0c885-d021-4500-9c48-21922be7ff9d][PACELC]]                         | CAP + Trade-offs without Network Partition |

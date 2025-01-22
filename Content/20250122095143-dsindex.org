@@ -6,3 +6,8 @@
 #+filetags: :idx:
 
 Index into data structures of varying complexities and brief descriptions about their core aspects
+
+| Data Structure | Desc                  |
+|----------------+-----------------------|
+| [[id:3821a4f5-998a-4903-970f-d95bf2ed8cd4][Binary Tree]]    | forkable linked lists |
+|                |                       |

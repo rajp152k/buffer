@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       3df0c885-d021-4500-9c48-21922be7ff9d
 :END:
-#+title: PACELC Theorem
+#+title: PACELC
 #+filetags: :cs:
 
 * Overview

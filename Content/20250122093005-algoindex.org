@@ -4,14 +4,9 @@
 #+title: AlgoIndex
 #+filetags: :idx:algo:
 
-Index into algorithms with a brief description of what they achieve
-
-* Corp Specific
+Index into algorithms of varying complexities with a brief description of what they achieve
 
 | Algorithm | Desc                                |
 |-----------+-------------------------------------|
 | [[id:d4fe54f3-65c0-4a8a-9075-242ce475e706][EdgeRank]]  | Facebook's NewsFeed Aggregation     |
 | [[id:514705de-abe8-4781-9c51-03c318bbe077][PageRank]]  | Google's Web Page Ranker for Search |
-
-* Domain Specific
-* Generic Large Scale

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       be116ea9-5b43-464a-a6fe-5469c4f4ba59
+:ROAM_ALIASES: "API Gateway"
+:END:
+#+title: MiddleWare
+#+filetags: :tool:cs:
+
+* Relevant Nodes
+** [[id:20240101T073142.439145][API]]

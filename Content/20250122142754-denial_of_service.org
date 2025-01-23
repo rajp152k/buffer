@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f0951767-64d7-4f03-8a97-72ba11cc70c6
+:ROAM_ALIASES: DoS
+:END:
+#+title: Denial of Service
+#+filetags: :sec:cs:

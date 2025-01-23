@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       224dc7d4-396f-49cf-8d4f-e106a83b4092
+:END:
+#+title: Token Bucket
+#+filetags: :algo:cs:
+
+* Resources
+- https://en.wikipedia.org/wiki/Token_bucket

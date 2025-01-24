@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       c0126ead-1fa4-4d21-9406-1ecf50211ffe
+:END:
+#+title: Split-Brain Scenario
+#+filetags: :cs:meta:
+
+See Biological origins : [[id:18d5b474-ac34-424b-8838-b6cee0dcedd7][Split Brain Syndrome]]
+
+* Resources
+- https://en.wikipedia.org/wiki/Split-brain_(computing)

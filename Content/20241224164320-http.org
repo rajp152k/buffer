@@ -3,3 +3,62 @@
 :END:
 #+title: HTTP
 #+filetags: :cs:network:
+
+* Headers
+*** Abstract
+- *Definition*: HTTP headers are key-value pairs sent in both request and response messages, providing crucial information about the request or the response.
+- *Types*:
+  - *Request Headers*: Sent by the client to the server. Examples include:
+    - =User-Agent=: Identifies the client software.
+    - =Accept=: Specifies the media types acceptable for the response.
+    - =Authorization=: Contains credentials for authenticating the client.
+  - *Response Headers*: Sent by the server to the client. Examples include:
+    - =Content-Type=: Indicates the media type of the resource.
+    - =Cache-Control=: Provides directives for caching mechanisms.
+    - =Location=: Used with redirections, specifies the URI of the resource.
+- *General Headers*: These can be used in both requests and responses but don't apply to the content itself, such as:
+  - =Date=: The date and time at which the message was sent.
+  - =Connection=: Control options for the current connection.
+
+
+*** Table of Common HTTP Headers with Descriptions
+
+| Header Name       | Description                                                              |
+|-------------------+--------------------------------------------------------------------------|
+| Date              | The date and time the message was sent.                                  |
+| Connection        | Control options for the current connection.                              |
+| Transfer-Encoding | Indicates the form of encoding used to safely transfer the payload body. |
+| Accept            | List of acceptable media types for the response.                         |
+| Accept-Charset    | Character sets that are acceptable.                                      |
+| Accept-Encoding   | Specifies the content encodings that are acceptable.                     |
+| Authorization     | Credentials for authenticating the client with the server.               |
+| Cookie            | Contains stored HTTP cookies.                                            |
+| Host              | The domain name of the server (useful for virtual hosting).              |
+| User-Agent        | Identifies the client software.                                          |
+| Referer           | The URI of the resource from which the request was initiated.            |
+| Content-Type      | The media type of the resource being sent in the response.               |
+| Content-Length    | The length of the response body in octets (8-bit bytes).                 |
+| Cache-Control     | Directives for caching mechanisms in both requests and responses.        |
+| Expires           | The date/time after which the response is considered stale.              |
+| Location          | The URL to redirect the client to.                                       |
+| Server            | Information about the software used by the origin server.                |
+| Set-Cookie        | Used to send cookies from the server to the user agent.                  |
+
+* HTTP Status Codes
+- *Definition*: HTTP Status Codes are standardized responses from a server to a client's request made to the server. They indicate whether a specific HTTP request has been successfully completed.
+- *Categories*:
+  - *1xx*: Informational (e.g., 100 Continue, 101 Switching Protocols)
+  - *2xx*: Success (e.g., 200 OK, 201 Created, 204 No Content)
+  - *3xx*: Redirection (e.g., 301 Moved Permanently, 302 Found, 304 Not Modified)
+  - *4xx*: Client Errors (e.g., 400 Bad Request, 401 Unauthorized, 404 Not Found)
+  - *5xx*: Server Errors (e.g., 500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable)
+- *Structure*: Each code consists of a three-digit number, where the first digit denotes the response type, and the last two digits provide additional context.
+
+*** Elaborations
+- *Informational Codes (1xx)* indicate that the request has been received and is being processed; this is essential for scenarios involving longer operations where client feedback is necessary.
+- *Success Codes (2xx)* confirm satisfactory completion of requests, vital for web applications to operate without interruption.
+- *Redirection Codes (3xx)* guide clients to different resources or locations, supporting URL management and resource routing.
+- *Client Error Codes (4xx)* indicate issues with the client’s request; understanding these effectively can enhance user experience and debugging processes.
+- *Server Error Codes (5xx)* signal problems on the server side, helping developers and administrators pinpoint and resolve internal failures.
+
+* Resources

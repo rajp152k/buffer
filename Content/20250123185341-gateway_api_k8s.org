@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f75d1fff-b3a2-4f36-ad90-7cdfee1fd58b
+:END:
+#+title: Gateway API-K8s
+#+filetags: :k8s:
+
+* Resources
+ - https://kubernetes.io/docs/concepts/services-networking/gateway/

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1bb49dbe-b172-4b84-9333-9f919e6d5d5e
+:END:
+#+title: Leaky Bucket
+#+filetags: :algo:cs:
+
+* Relevant Nodes
+** [[id:224dc7d4-396f-49cf-8d4f-e106a83b4092][Token Bucket]]
+* Resources
+ - https://en.wikipedia.org/wiki/Leaky_bucket

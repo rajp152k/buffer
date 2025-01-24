@@ -6,13 +6,15 @@
 
 A quick index into most common abbreviations in the domain of computer science
 
-| Abbrev | Expansion                         |
-|--------+-----------------------------------|
-| [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]   | Hyper Text Transfer Protocol      |
-| API    | [[id:20240101T073142.439145][Application Programming Interface]] |
-| AU     | Active Users                      |
-| CDN    | [[id:20240101T082700.953774][Content Delivery Network]]          |
-| DNS    | [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]]                |
-| DoS    | [[id:f0951767-64d7-4f03-8a97-72ba11cc70c6][Denial of Service]]                 |
-| IP     | [[id:d799bc90-5032-4a69-9806-83145297a335][Internet Protocol]]                 |
-| QPS    | Queries Per Second                |
+| Abbrev | Expansion                              |
+|--------+----------------------------------------|
+| API    | [[id:20240101T073142.439145][Application Programming Interface]]      |
+| AU     | Active Users                           |
+| CDN    | [[id:20240101T082700.953774][Content Delivery Network]]               |
+| DNS    | [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]]                     |
+| DoS    | [[id:f0951767-64d7-4f03-8a97-72ba11cc70c6][Denial of Service]]                      |
+| [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]   | Hyper Text Transfer Protocol           |
+| IP     | [[id:d799bc90-5032-4a69-9806-83145297a335][Internet Protocol]]                      |
+| QPS    | Queries Per Second                     |
+| SSL    | Secure Sockets Layer: Precursor to [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]] |
+| [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]    | Transport Layer Security               |

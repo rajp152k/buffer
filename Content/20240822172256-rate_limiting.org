@@ -4,8 +4,43 @@
 #+title: Rate Limiting
 #+filetags: :programming:
 
-* Relevant Nodes
-** [[id:be116ea9-5b43-464a-a6fe-5469c4f4ba59][MiddleWare]]
-* Algorithms
+* Algos
 ** [[id:224dc7d4-396f-49cf-8d4f-e106a83b4092][Token Bucket]]
-- https://en.wikipedia.org/wiki/Token_bucket
+** [[id:1bb49dbe-b172-4b84-9333-9f919e6d5d5e][Leaky Bucket]]
+** Fixed Window Counter
+** Sliding window log
+** Sliding window counter
+ - https://www.rdiachenko.com/posts/arch/rate-limiting/sliding-window-algorithm/
+* [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] Rate Limiting
+
+- *Storage Solutions*:
+  - In-memory data stores (e.g., Redis, Memcached) are commonly used for fast access.
+  - [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent hashing]] helps distribute rate limits across multiple nodes.
+
+- *Challenges*:
+  - Synchronization between distributed nodes.
+  - Handling network partitions (e.g., split-brain scenarios).
+  - Maintaining low-latency responses while enforcing limits.
+
+*** Connections:
+- *Distributed Systems*: Rate limiting is vital in microservices architecture to prevent service bottlenecks.
+- *Security*: It plays a crucial role in mitigating the risk of abuse or attacks on web applications and services.
+- *User Experience*: Properly implemented rate limiting can enhance user experience by ensuring system stability, especially during peak loads.
+
+*** Questions for Further Context:
+- Are you interested in specific implementation examples of distributed rate limiting?
+- What kind of distributed system architecture are you working with (e.g., microservices, serverless)?
+- Do you have security concerns or specific use cases in mind for rate limiting?
+
+*** Pathways for Further Research:
+- What are the trade-offs between different rate limiting strategies in terms of simplicity, performance, and fairness?
+- How do rate limiting techniques differ across cloud service providers?
+- What impact does distributed rate limiting have on monitoring and analytics of service performance?* Relevant Nodes
+** [[id:be116ea9-5b43-464a-a6fe-5469c4f4ba59][MiddleWare]]
+* Implementations
+** [[id:97574f3d-86a1-4491-9cdd-5428d658103b][Envoy]]: https://github.com/envoyproxy/ratelimit
+** [[id:283c3a6b-6a8c-4e14-85f4-8f67494629ce][Redis]]: https://redis.io/learn/howtos/ratelimiting
+* Resources
+ - https://dev.to/khaleo/rate-limiter-in-system-design-part-1-concepts-and-
+ - https://dev.to/khaleo/rate-limiter-in-system-design-part-2-commonly-used-algorithms-45bp
+ - https://developers.cloudflare.com/waf/rate-limiting-rules/best-practices/

@@ -1,9 +1,9 @@
 :PROPERTIES:
 :ID:       06fa9da7-4126-4b08-a367-3a751f31de51
-:ROAM_ALIASES: TLS
+:ROAM_ALIASES: SSL TLS
 :END:
 #+title: Transport Layer Security
-#+filetags: :cs:network:
+#+filetags: :sec:cs:network:
 
 * Overview
 - *Definition*: [[id:6c9f9b53-16a8-48dd-bbc5-8f9b5ba18ff5][Cryptographic]] [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][protocol]] for secure communication over a computer [[id:a4e712e1-a233-4173-91fa-4e145bd68769][network]].
@@ -13,58 +13,6 @@
 - *Integrity Check*: Ensures data is not altered.
 - *Authentication*: Confirms the identity of communicating parties.
 
-* TLS (NIL)
-#+begin_src lisp
-(defun initiate-tls-session (server-address client-cert client-key)
-  ;; Create a new TLS context
-  (let ((tls-context (create-tls-context)))
-    ;; Load client certificate and key
-    (load-client-cert tls-context client-cert client-key)
-    ;; Set server address
-    (set-server-address tls-context server-address)
-    ;; Perform TLS handshake
-    (tls-handshake tls-context)
-    ;; Return established context for secure communication
-    tls-context))
 
-(defun create-tls-context ()
-  ;; Initialize a new TLS session context
-  (make-instance 'tls-session-context))
-
-(defun load-client-cert (tls-context client-cert client-key)
-  ;; Load the client's certificate and private key into the context
-  (setf (tls-client-cert tls-context) client-cert)
-  (setf (tls-client-key tls-context) client-key))
-
-(defun set-server-address (tls-context server-address)
-  ;; Configure the server address for the session
-  (setf (tls-server-address tls-context) server-address))
-
-(defun tls-handshake (tls-context)
-  ;; Execute the TLS handshake protocol
-  (send-client-hello tls-context)
-  (receive-server-hello tls-context)
-  (exchange-keys tls-context)
-  (verify-server-certificates tls-context)
-  (finalize-handshake tls-context))
-
-(defun send-client-hello (tls-context)
-  ;; Send initial hello message from client
-  ...
-
-(defun receive-server-hello (tls-context)
-  ;; Handle server's hello response
-  ...
-
-(defun exchange-keys (tls-context)
-  ;; Perform key exchange for session encryption
-  ...
-
-(defun verify-server-certificates (tls-context)
-  ;; Validate the server's SSL certificate
-  ...
-
-(defun finalize-handshake (tls-context)
-  ;; Complete the handshake and establish a secure connection
-  ...
-#+end_src
+* Resources
+ - https://security.stackexchange.com/questions/5126/whats-the-difference-between-ssl-tls-and-https?newreg=bb37d44255d94cd6aea5c05e76ed3ae8

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f5db6ddc-024e-4ed0-99f6-9e09ae19106f
+:END:
+#+title: Design Patterns
+#+filetags: :meta:cs:
+
+Generic Patterns, or their compositions, that can be thrown at problems before you have to start inventing novel ones.
+
+
+* Resources
+ - https://refactoring.guru/design-patterns

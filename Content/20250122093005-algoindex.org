@@ -10,6 +10,5 @@ Index into algorithms of varying complexities with a brief description of what t
 |----------------+-------------------------------------|
 | [[id:d4fe54f3-65c0-4a8a-9075-242ce475e706][EdgeRank]]       | Facebook's NewsFeed Aggregation     |
 | [[id:514705de-abe8-4781-9c51-03c318bbe077][PageRank]]       | Google's Web Page Ranker for Search |
-| [[id:224dc7d4-396f-49cf-8d4f-e106a83b4092][Token Bucket]]   | [[id:a9f836f0-d43d-4e97-96fc-06f75e982d15][Rate Limiting]]                       |
 | [[id:327ebe76-4fd6-47d4-b053-94e380937c6d][Raft Consensus]] | generic distributed peer protocol   |
 |                |                                     |

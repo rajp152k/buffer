@@ -11,32 +11,77 @@
 ** Sliding window log
 ** Sliding window counter
  - https://www.rdiachenko.com/posts/arch/rate-limiting/sliding-window-algorithm/
-* [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] Rate Limiting
+* Rate Limiting at different OSI [[id:2deb95d6-5474-4096-85fc-bd568031cc33][Layers]]
+**  *Layer 1 - Physical Layer*:
+   - Rate limiting is not applicable as this layer deals with the raw bit transmission over physical media.
 
-- *Storage Solutions*:
-  - In-memory data stores (e.g., Redis, Memcached) are commonly used for fast access.
-  - [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent hashing]] helps distribute rate limits across multiple nodes.
+**  *Layer 2 - Data Link Layer*:
+   - Rate limiting can be implemented through traffic shaping protocols (e.g., IEEE 802.1Q for VLAN tagging).
+   - Ethernet frames can be managed for flow control using techniques like pause frames.
 
-- *Challenges*:
-  - Synchronization between distributed nodes.
-  - Handling network partitions (e.g., split-brain scenarios).
-  - Maintaining low-latency responses while enforcing limits.
+**  *Layer 3 - Network Layer*:
+   - Routers can implement rate limiting via Access Control Lists (ACLs) and Quality of Service (QoS) configurations, thereby managing the rate of IP packets sent or received.
+   - Protocols like ICMP can be rate limited to mitigate network attacks.
 
-*** Connections:
-- *Distributed Systems*: Rate limiting is vital in microservices architecture to prevent service bottlenecks.
-- *Security*: It plays a crucial role in mitigating the risk of abuse or attacks on web applications and services.
-- *User Experience*: Properly implemented rate limiting can enhance user experience by ensuring system stability, especially during peak loads.
+**  *Layer 4 - Transport Layer*:
+   - Rate limiting can be enforced using TCP Window Scaling and congestion control mechanisms to regulate flow.
+   - Rate limiting tools such as firewall rules can be applied on protocols like TCP and UDP to limit connection rates.
 
-*** Questions for Further Context:
-- Are you interested in specific implementation examples of distributed rate limiting?
-- What kind of distributed system architecture are you working with (e.g., microservices, serverless)?
-- Do you have security concerns or specific use cases in mind for rate limiting?
+**  *Layer 5 - Session Layer*:
+   - Rate limiting at this layer can be implemented for managing session initiation requests, particularly in VoIP applications.
+   - Techniques such as SIP rate limiting can help to prevent abuse and manage resource allocation.
 
-*** Pathways for Further Research:
-- What are the trade-offs between different rate limiting strategies in terms of simplicity, performance, and fairness?
-- How do rate limiting techniques differ across cloud service providers?
-- What impact does distributed rate limiting have on monitoring and analytics of service performance?* Relevant Nodes
-** [[id:be116ea9-5b43-464a-a6fe-5469c4f4ba59][MiddleWare]]
+**  *Layer 6 - Presentation Layer*:
+   - Not typically associated with direct rate limiting; occasional measures might be taken on data serialization/deserialization performance.
+
+**  *Layer 7 - Application Layer*:
+   - Rate limiting is most commonly applied here, using middleware, API gateways, or web servers.
+   - Common methods include token bucket algorithm, leaky bucket algorithm, and request throttling mechanisms.
+
+* How to avoid hitting rate limits?
+
+
+- *Understand Rate Limits*: Familiarize yourself with the specific rate limits imposed by the API or service you are using, including the number of requests allowed in a given time frame.
+
+- *Implement Backoff Strategies*: Use [[id:b862218a-a89d-4262-a2fe-844de60e6ace][exponential backoff]] strategies to gradually increase the wait time between requests when receiving errors related to rate limits.
+
+- *Optimize Request Frequency*: Reduce the frequency of your requests by batching operations or consolidating data where possible : Client caches and throttles could help
+
+- *Prioritize Requests*: Identify and prioritize the most important requests, postponing less critical ones to a later time.
+
+- *Use Caching*: Implement caching mechanisms to store frequently requested data, thereby reducing the number of requests sent to the server.
+
+- *Monitor Usage*: Keep track of your request counts and usage patterns to avoid unexpected spikes that could lead to rate limiting.
+
+- *Leverage [[id:e621a08a-f73a-4c51-8ad8-8c90fcd01b39][Webhooks]]*: If available, use webhooks to receive data in real-time instead of polling for updates, thus minimizing request volume.
+
+- *Error Handling*: Implement robust error handling to manage rate limit responses gracefully and to retry requests after cooldown periods.
+
+* What to do in case of hitting rate limits?
+
+- *Optimize API Calls*:
+  - Reduce the frequency of requests by merging multiple operations into a single call if possible.
+  - Use batch processing to minimize the number of calls.
+
+- *Cache Responses*:
+  - Store responses temporarily to reduce the need for repeated requests.
+  - Consider using a caching strategy based on certain time intervals or specific query parameters.
+
+- *Monitor Usage*:
+  - Track and log the number of API calls made to stay within the limits.
+  - Use tools or libraries that assist in monitoring API traffic.
+
+- *Request Higher Limits*:
+  - Some services allow users to request an increase in their rate limits.
+  - Be prepared to justify your need for more limits.
+
+- *Distribute Requests*:
+  - If permitted, distribute requests across multiple user accounts or environments.
+  - This method can help spread the load and reduce the likelihood of hitting limits.
+
+- *Use Alternative Endpoints*:
+  - Check if the service provides alternative endpoints which may have different limits or better performance characteristics.
+
 * Implementations
 ** [[id:97574f3d-86a1-4491-9cdd-5428d658103b][Envoy]]: https://github.com/envoyproxy/ratelimit
 ** [[id:283c3a6b-6a8c-4e14-85f4-8f67494629ce][Redis]]: https://redis.io/learn/howtos/ratelimiting

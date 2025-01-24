@@ -23,5 +23,9 @@ Checkout the [[id:53f365ac-8ee6-48d9-8847-f56ef3681891][System Design Index]]
  - the ease with which a system's behaviour can be modified to keep it secure, running smoothly, and compliant with changing requirements.
 ** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
  - the measure of how well a system's internal states can be inferred from knowledge of its external outputs.
+* Performance Improvement Strategies
+** Multi [[id:cf890270-836b-4beb-841d-af3f8ba6e5f3][Data Center]] Setups
+** [[id:e5d0b6eb-ea62-4339-a190-97f4cb4b5678][GeoDNS]]
+** [[id:20240101T082700.953774][CDN]]
 * Quick Links
 ** [[id:2dca77bf-c105-407f-8afc-289716ea79d5][Latency numbers every programmer should know]]

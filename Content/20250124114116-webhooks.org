@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e621a08a-f73a-4c51-8ad8-8c90fcd01b39
+:END:
+#+title: Webhooks
+#+filetags: :web:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Webhook

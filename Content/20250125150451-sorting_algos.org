@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       c83b6ceb-d7d4-4fa4-aa54-97cb9a761a05
+:END:
+#+title: Sorting
+#+filetags: :algo:cs:
+
+* Overview
+- *Definition*: Sorting is the process of arranging data or elements in a particular order, typically in ascending or descending sequence.
+
+- *Types of Sorting Algorithms*:
+  - Comparison-based sorting (e.g., Quick Sort, Merge Sort)
+  - Non-comparison-based sorting (e.g., Counting Sort, Radix Sort)
+
+- *Complexity Classes*:
+  - *[[id:8e9f6cef-da57-48ed-b86d-029f1b528615][Time Complexity]]*: Measures the time taken to sort based on the number of elements.
+    - Best, Average, and Worst case scenarios
+  - *[[id:4a1f8e43-8c10-4187-8311-0b8df074b05d][Space Complexity]]*: Refers to the amount of memory space required by the algorithm.
+
+- *Stability*: Some sorting algorithms maintain the relative order of records with equal keys (e.g., Merge Sort), while others do not (e.g., Quick Sort).
+
+- *In-Place Sorting*: Sorting algorithms that do not require additional storage for a new array (e.g., Heap Sort).
+
+* Types Overview
+**  Comparison-based
+  - *Bubble Sort*: Simple algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+  - *Selection Sort*: Divides the input list into a sorted and an unsorted region and repeatedly selects the smallest (or largest) element from the unsorted region to move it to the sorted region.
+  - *[[id:c70dbfb7-1556-47d6-a590-c438e9662d91][Insertion Sort]]*: Builds a sorted array one element at a time by repeatedly picking the next element from the unsorted region and inserting it into the correct position in the sorted region.
+  - *Merge Sort*: Divides the list into two halves, recursively sorts them, and merges the sorted halves.
+  - *Quick Sort*: Selects a 'pivot' element, partitions the array into elements less than and greater than the pivot, and recursively sorts the partitions.
+**  Non-Comparison-based
+  - *Counting Sort*: Counts the occurrences of each unique element and calculates the position of each element in the output array.
+  - *Radix Sort*: Processes the input numbers digit by digit, starting from the least significant digit to the most significant.
+  - *Bucket Sort*: Distributes elements into a number of buckets and sorts these buckets individually, then concatenates them.

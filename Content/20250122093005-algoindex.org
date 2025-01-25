@@ -6,9 +6,10 @@
 
 Index into algorithms of varying complexities with a brief description of what they achieve
 
-| Algorithm      | Desc                                |
-|----------------+-------------------------------------|
-| [[id:d4fe54f3-65c0-4a8a-9075-242ce475e706][EdgeRank]]       | Facebook's NewsFeed Aggregation     |
-| [[id:514705de-abe8-4781-9c51-03c318bbe077][PageRank]]       | Google's Web Page Ranker for Search |
-| [[id:327ebe76-4fd6-47d4-b053-94e380937c6d][Raft Consensus]] | generic distributed peer protocol   |
-|                |                                     |
+| Algorithm        | Desc                                  |
+|------------------+---------------------------------------|
+| [[id:d4fe54f3-65c0-4a8a-9075-242ce475e706][EdgeRank]]         | Facebook's NewsFeed Aggregation       |
+| [[id:514705de-abe8-4781-9c51-03c318bbe077][PageRank]]         | Google's Web Page Ranker for Search   |
+| [[id:327ebe76-4fd6-47d4-b053-94e380937c6d][Raft Consensus]]   | generic distributed peer protocol     |
+| [[id:c83b6ceb-d7d4-4fa4-aa54-97cb9a761a05][Sorting]]          | Index into Generic Sorting Algorithms |
+| [[id:a266afcb-0813-4a40-8dcb-cfa7b8bd1a8b][Topological Sort]] | Sorting [[id:d07976cd-5194-484e-82ab-8c55e064eeb1][Directed Acyclic Graph]]s       |

@@ -22,7 +22,7 @@ A mathematical protocal used to represent suitable abstractions using nodes and 
  - captures the notion of a collection of components that communicate/relay certain entities via connections with each other.
    - computer networks are an immediate obvious examples.
 ** Schedule Generation for Distributed [[id:8afb9d29-252b-4f17-ad42-700444fe4464][Processes]] 
- - when trying to parallelize computations with dependents from several components, one can model the computation sites and temporal dependency links as a [[id:d07976cd-5194-484e-82ab-8c55e064eeb1][Directed Acyclic Graph]] and apply [[id:78d16b5e-1893-4057-bc22-b2c9a3ca7ed6][Topological Sort]] to generate computation schedules.
+ - when trying to parallelize computations with dependents from several components, one can model the computation sites and temporal dependency links as a [[id:d07976cd-5194-484e-82ab-8c55e064eeb1][Directed Acyclic Graph]] and apply [[id:a266afcb-0813-4a40-8dcb-cfa7b8bd1a8b][Topological Sort]]  to generate computation schedules.
  - checkout [[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]] for a more fundamental treatment of the above.
 
 ** [[id:a96b0e92-16c9-4a8c-863d-f0303efd0fa2][Entity Relation Diagrams]]

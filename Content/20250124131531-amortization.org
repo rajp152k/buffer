@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b91e378d-b17a-43b2-b13e-19c02afe1558
+:END:
+#+title: Amortization
+#+filetags: :algo:cs:

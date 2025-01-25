@@ -3,3 +3,31 @@
 :END:
 #+title: Binary Tree
 #+filetags: :data:programming:
+
+* Overview
+
+- *Definition*: A binary tree is a hierarchical data structure in which each node has at most two children, referred to as the left child and the right child.
+
+- *Types of Binary Trees*:
+  - *Full Binary Tree*: Every node other than the leaves has two children.
+  - *Complete Binary Tree*: All levels are fully filled except possibly for the last level, which is filled from left to right.
+  - *Perfect Binary Tree*: All interior nodes have two children and all leaves are at the same level.
+  - *Balanced Binary Tree*: Height difference between left and right subtrees of any node is at most one.
+  - *Binary Search Tree (BST)*: A binary tree in which the left child contains nodes with values less than the parent node, and the right child contains nodes with values greater than the parent.
+
+- *Key Properties*:
+  - Maximum number of nodes at level \( l \): \( 2^l \)
+  - Maximum number of nodes in a binary tree of height \( h \): \( 2^{(h+1)} - 1 \)
+  - Minimum height of a tree with \( n \) nodes: \( \lfloor \log_2(n) \rfloor \)
+
+- *Traversal Methods*:
+  - *In-order*: Left, Root, Right
+  - *Pre-order*: Root, Left, Right
+  - *Post-order*: Left, Right, Root
+  - *Level-order*: Visiting nodes level by level from top to bottom
+
+- *Common Operations*:
+  - Insertion
+  - Deletion
+  - Searching for a value
+  - Height and Depth calculation

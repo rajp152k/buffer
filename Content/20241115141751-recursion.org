@@ -18,14 +18,6 @@
   - This is the part of the function that includes a call to itself.
   - It reduces the problem at each step, bringing it closer to the base case.
 
-- *Applications*:
-  - Used in algorithms for traversing data structures like trees and graphs (e.g., depth-first search).
-  - Useful in problems that can be divided into similar sub-problems, like divide and conquer algorithms (e.g., mergesort, quicksort).
-
-*Connections*:
-- Recursion is a fundamental concept in computer science closely related to [[id:120cade5-1cf0-4afe-b541-e2b607ae77da][mathematical induction]], as both involve solving problems by breaking them down into base cases and smaller sub-problems.
-- Recursion is frequently compared to [[id:40722d92-1d10-445e-bcd9-f41999ccdf52][iteration]], as both can be used to repeat tasks but have different trade-offs in terms of complexity and efficiency.
-
 * Interconverting Recursion and [[id:40722d92-1d10-445e-bcd9-f41999ccdf52][Iteration]]
 ** Steps for Interconverting Recursion to Iteration:
 
@@ -61,3 +53,6 @@
 * Relevant Nodes
 - [[id:3a717d24-64ef-4d38-936a-6814baaa1e6a][Tail Recursion]]
 - [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][Memoization]]
+
+* [[id:8e9f6cef-da57-48ed-b86d-029f1b528615][Time Complexity]] of a Recursive Function
+ - checkout [[id:97440bc5-79a0-4140-9066-8a95ac747fd9][Master Theorem]]

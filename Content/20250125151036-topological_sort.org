@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a266afcb-0813-4a40-8dcb-cfa7b8bd1a8b
+:END:
+#+title: Topological Sort
+#+filetags: :algo:cs:

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       c70dbfb7-1556-47d6-a590-c438e9662d91
+:END:
+#+title: Insertion Sort
+#+filetags: :algo:cs:
+
+#+begin_src go
+
+func
+
+#+end_src
+
+#+RESULTS:

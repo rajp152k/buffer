@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       97440bc5-79a0-4140-9066-8a95ac747fd9
+:END:
+#+title: Master Theorem
+#+filetags: :cs:algo:
+
+See [[id:8e9f6cef-da57-48ed-b86d-029f1b528615][Time Complexity]]
+
+* Resources
+ - https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)

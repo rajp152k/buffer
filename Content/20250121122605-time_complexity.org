@@ -31,3 +31,16 @@
 - How do different data structures (arrays, linked lists, trees) impact time complexity?
 - In what scenarios do average case complexities differ significantly from worst-case analyses?
 - What are the implications of time complexity in real-time systems versus batch processing systems?
+
+
+* Complexity Bounds
+
+- Upper Bound: This is represented as Big O notation (e.g., O(n)), indicating the maximum amount of time an algorithm may take to complete.
+
+- Lower Bound: Represented as Big Omega notation (e.g., Ω(n)), which indicates the minimum time necessary for a given algorithm for every input size.
+
+- Tight Bound: Denoted as Big Theta notation (e.g., Θ(n)), which describes both the upper and lower bounds of an algorithm, providing an accurate characterization of performance.
+
+- [[id:b91e378d-b17a-43b2-b13e-19c02afe1558][Amortized Complexity]]: Average case over a sequence of operations. It is useful for data structures that may have occasional expensive operations (e.g., dynamic array resizing).
+
+- [[id:95edc4bc-c364-4b18-833a-ba476b3283e8][Recursive Algorithms]]: Time complexities for recursive algorithms often derive from the [[id:97440bc5-79a0-4140-9066-8a95ac747fd9][Master Theorem]] or recurrence relations to determine their performance characteristics.

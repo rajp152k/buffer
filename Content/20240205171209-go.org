@@ -4,6 +4,21 @@
 #+title: Golang
 #+filetags: :golang:
 
+* Org Babel Base
+#+begin_src go
+import (
+	"fmt"
+)
+
+func main(){
+	fmt.Println("org babel base")
+	return
+}
+#+end_src
+
+#+RESULTS:
+: org babel base
+
 * Stream
 ** 0x22B2
 - post theGoPL, will finish of TDD with Go

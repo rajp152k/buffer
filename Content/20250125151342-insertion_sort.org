@@ -4,10 +4,3 @@
 #+title: Insertion Sort
 #+filetags: :algo:cs:
 
-#+begin_src go
-
-func
-
-#+end_src
-
-#+RESULTS:

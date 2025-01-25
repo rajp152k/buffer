@@ -5,7 +5,7 @@
 #+filetags: :golang:
 
 * Org Babel Base
-#+begin_src go
+#+begin_src go :exports both
 import (
 	"fmt"
 )

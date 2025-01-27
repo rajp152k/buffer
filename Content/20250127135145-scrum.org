@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       86bb2c52-b62b-4e00-addb-cace71619dfc
+:END:
+#+title: Scrum
+#+filetags: :meta:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Scrum_(software_development)

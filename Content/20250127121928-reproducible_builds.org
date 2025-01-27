@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       d14581af-3fcf-4697-a8ec-105413e93244
+:END:
+#+title: Reproducible Builds
+#+filetags: :meta:cs:
+
+Also see [[id:d926afe4-675f-4142-99ca-6cbdf35e0f57][Hermetic Builds]]
+
+* Resources
+ - https://reproducible-builds.org/

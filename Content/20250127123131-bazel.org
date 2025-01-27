@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       b62036dc-48b0-43fa-addd-e19ffcd30bb5
+:END:
+#+title: bazel
+#+filetags: :tool:cs:
+
+
+* Resources
+ - https://bazel.build/

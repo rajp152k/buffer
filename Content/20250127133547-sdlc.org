@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       2ca00f18-a0ee-4f5c-8e32-ca908096930d
+:ROAM_ALIASES: "Software Development Life Cycle"
+:END:
+#+title: SDLC
+#+filetags: :meta:cs:
+
+* Overview
+
+- Definition: The SDLC is a systematic process for planning, creating, testing, and deploying software applications.
+
+- Phases:
+  - Requirement Analysis: Gather and analyze business requirements.
+  - Design: Create architecture and design for the software.
+  - Implementation (Coding): Translate design into the actual code.
+  - Testing: Validate that the software functions as intended.
+  - Deployment: Release the finished software to users.
+  - Maintenance: Fix issues and make updates post-deployment.
+
+* Models
+
+- Waterfall Model:
+  - Linear and sequential approach.
+  - Each phase must be completed before the next begins.
+  - Best for projects with well-defined requirements.
+
+- [[id:4dbf6f2a-6e90-45a9-a51a-67d855858665][Agile]] Model:
+  - Iterative and incremental approach.
+  - Encourages adaptability and flexibility throughout development.
+  - Involves continuous feedback and improvements.
+
+- V-Model (Validation and Verification Model):
+  - Extension of the Waterfall model.
+  - Testing phase is planned parallel to each development stage.
+  - Emphasizes the importance of validation and verification.
+
+- Iterative Model:
+  - Development is broken down into smaller parts.
+  - Each iteration uses feedback to refine the product.
+  - Welcomes changes even late in the process.
+
+- Spiral Model:
+  - Combines iterative development with the systematic control of the Waterfall Model.
+  - Focuses on risk assessment and incorporates user feedback.
+  - Repeated cycles (spirals) lead to gradual refinement.
+
+- [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][DevOps]] Model:
+  - Integrates development and operations for streamlined processes.
+  - Focuses on automation and continuous integration/continuous deployment (CICD).
+  - Enhances collaboration and reduces time-to-market.
+
+- RAD (Rapid Application Development):
+  - Emphasizes rapid prototyping over extensive planning.
+  - Users are involved throughout the development process.
+  - Fast-paced, suitable for projects with time constraints.
+

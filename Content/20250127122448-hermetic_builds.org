@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d926afe4-675f-4142-99ca-6cbdf35e0f57
+:ROAM_ALIASES: Hermeticity
+:END:
+#+title: Hermetic Builds
+#+filetags: :meta:cs:
+
+* Relevant Nodes
+** [[id:b62036dc-48b0-43fa-addd-e19ffcd30bb5][bazel]]
+* Resources
+ - https://bazel.build/basics/hermeticity

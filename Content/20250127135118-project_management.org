@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bd97b9a9-b58a-494c-8b69-e17a7735fbd3
+:END:
+#+title: Project Management
+#+filetags: :meta:bs:

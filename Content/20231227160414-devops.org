@@ -6,28 +6,27 @@
 
 A software development practice that promotes collaboration between development and operations, resulting in faster and more reliable software delivery.
 
-Note that these two have somewhat conflicting priorities. Developers measure their progress via amount of patches, feature upgrades and version releases.
-IT Operations, on the other hand, are repsonsible for stability and avoiding changes that break the deployement. The practices that enable the two cooperate are encompassed by the domain of Devops.
+* the CAMS Model
 
-To summarize: Devops is about ..
-#+begin_quote
-... bringing together people, processes and tools that enable business agility.
-#+end_quote
+1. *Culture*
+   - Emphasizes a collaborative environment.
+   - Encourages shared responsibilities and mutual respect among teams.
+   - Promotes continuous learning and experimentation.
 
-A generic Flow :
+2. *Automation*
+   - Focuses on automating repetitive tasks (e.g., testing, deployment).
+   - Reduces human error and accelerates the development process.
+   - Aims for continuous integration and continuous delivery (CI/CD).
 
-#+begin_src mermaid :file images/devops.png :exports results
-  graph LR
-    A[IDEA] --> B
-    B[CODE] --> C
-    C[BUILD] --> D
-    D[DEPLOY] --> E
-    E[MANAGE] --> F[LEARN]
-    F --> A
-#+end_src
+3. *Measurement*
+   - Utilizes metrics to assess performance and efficiency.
+   - Key Performance Indicators (KPIs) track success and areas for improvement.
+   - Supports data-driven decision-making.
 
-#+RESULTS:
-[[file:images/devops.png]]
+4. *Sharing*
+   - Encourages open communication and knowledge sharing.
+   - Fosters a community of practice for collaborative problem-solving.
+   - Utilizes tools for collaboration and version control (e.g., Git).
 
 
 * Relevant Nodes

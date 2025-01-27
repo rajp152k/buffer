@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       4dbf6f2a-6e90-45a9-a51a-67d855858665
+:END:
+#+title: Agile
+#+filetags: :meta:cs:
+
+* Overview
+
+- *Definition*: Agile is a [[id:bd97b9a9-b58a-494c-8b69-e17a7735fbd3][project management]] methodology and mindset that emphasizes iterative development, collaboration, and flexibility.
+- *Core Principles*: Based on the Agile Manifesto which outlines values and principles such as customer collaboration, responsiveness to change, and working software over comprehensive documentation.
+- *Types*: Includes various frameworks like [[id:86bb2c52-b62b-4e00-addb-cace71619dfc][Scrum]], [[id:d3bebb03-6d6a-4905-94b6-c7d84de9eaa0][Kanban]], [[id:2ca00f18-a0ee-4f5c-8e32-ca908096930d][Lean]], and [[id:6777ae16-10dd-419a-b558-faf4015de5e3][Extreme Programming]] (XP).
+- *Key Practices*: Regular iterations (sprints), daily stand-up meetings, continuous feedback, and retrospectives.
+- *Roles*: In Scrum, key roles include Product Owner, Scrum Master, and Development Team.
+- *Benefits*: Enhanced adaptability, increased customer satisfaction, faster time-to-market, and improved team morale.
+- *Challenges*: Requires cultural shift, potential for scope creep, and dependency on committed team members.
+
+* Resources
+ - https://agilemanifesto.org/
+ - https://agilemanifesto.org/principles.html

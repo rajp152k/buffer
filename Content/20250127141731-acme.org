@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       df49ea71-a047-47c1-8a2e-6053395b99b7
+:ROAM_ALIASES: "Not A Company Making Everything"
+:END:
+#+title: ACME
+#+filetags: :meta:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Acme_Corporation

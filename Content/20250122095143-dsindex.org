@@ -9,13 +9,12 @@ Index into data structures of varying complexities and brief descriptions about 
 
 | Data Structure | Desc                               |
 |----------------+------------------------------------|
-| [[id:ce5570cd-e6c4-4dcc-9146-860cbb11a15d][array]]          | static contiguous blocks of memory |
-| [[id:3821a4f5-998a-4903-970f-d95bf2ed8cd4][binary tree]]    | forkable linked lists              |
-| [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][graphs]]         | edges and nodes                    |
-| [[id:9a7e1b83-9160-40a7-821b-0f0ada44e350][linked lists]]   | fundamental data and glue          |
-| [[id:20240519t201001.324666][merkle tree]]    | scalable data verification         |
-| [[id:4054ebe7-812f-4204-be63-bb7379d5b56b][queue]]          | fifo/lilo                          |
-| [[id:e20be945-5df7-4b35-aab5-a9a439b62de8][stack]]          | filo/lifo                          |
+| [[id:ce5570cd-e6c4-4dcc-9146-860cbb11a15d][Array]]          | static contiguous blocks of memory |
+| [[id:3821a4f5-998a-4903-970f-d95bf2ed8cd4][Binary Tree]]    | forkable linked lists              |
+| [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][Graphs]]         | edges and nodes                    |
+| [[id:9a7e1b83-9160-40a7-821b-0f0ada44e350][Linked lists]]   | fundamental data and glue          |
+| [[id:20240519T201001.324666][Merkle Tree]]    | scalable data verification         |
+| [[id:4054ebe7-812f-4204-be63-bb7379d5b56b][Queue]]          | fifo/lilo                          |
+| [[id:e20be945-5df7-4b35-aab5-a9a439b62de8][Stack]]          | filo/lifo                          |
 | [[id:198d0435-df28-4af5-a687-3475ed78eadf][Heap]]           | priority queues                    |
 | [[id:a1958360-5d36-4994-a617-37c040f78812][Fibonacci Heap]] | heaps of trees                     |
-|                |                                    |

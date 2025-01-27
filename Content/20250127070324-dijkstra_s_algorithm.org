@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e31f91e8-25d9-499b-9c55-10afcb086edb
+:END:
+#+title: Dijkstra's Algorithm
+#+filetags: :algo:cs:

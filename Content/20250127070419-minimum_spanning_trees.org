@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eeca3654-8525-4ce3-a135-a51e262094c3
+:END:
+#+title: minimum spanning trees
+#+filetags: :data:cs:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       dd72e849-016c-4065-80fd-656fad075d4a
+:END:
+#+title: Prim's Algorithm
+#+filetags: :algo:cs:

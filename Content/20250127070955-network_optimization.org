@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       dd94cae5-96e2-4a46-9890-41c8c88059bc
+:END:
+#+title: network optimization
+#+filetags: :network:cs:
+
+* Resources
+ - https://networkoptimization.dev/

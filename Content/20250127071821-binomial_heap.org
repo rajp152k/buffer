@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       addc4776-3f73-47a6-94b7-9cd9dd07b996
+:END:
+#+title: Binomial Heap
+#+filetags: :data:cs:

@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       198d0435-df28-4af5-a687-3475ed78eadf
+:ROAM_ALIASES: "Priority Queue"
+:END:
+#+title: Heap
+#+filetags: :data:cs:
+
+* Overview
+
+- *Definition*: A heap is a specialized [[id:3821a4f5-998a-4903-970f-d95bf2ed8cd4][tree]]-based data structure that satisfies the heap property as described below:
+
+- *Types*:
+  - *Max-Heap*: The parent node has a value greater than or equal to its children.
+  - *Min-Heap*: The parent node has a value less than or equal to its children.
+
+- *Common Implementations*:
+  - *[[id:5ed05b89-71e5-423c-b51c-dc53133c3e91][Binary Heap]]*: Most common heap implementation which uses a complete binary tree structure.
+  - *[[id:a1958360-5d36-4994-a617-37c040f78812][Fibonacci Heap]]*: More advanced, allowing for more efficient merge operations.
+  - *[[id:addc4776-3f73-47a6-94b7-9cd9dd07b996][Binomial Heap]]*: Amalgamates multiple [[id:e7006647-efb9-4fce-8b3a-3bf6fabac685][binomial trees]] for optimized operations.
+
+- *Operations*:
+  - *Insertion*: Adding a new element while maintaining the heap property.
+  - *Deletion*: Typically removing the root (max or min), followed by reorganizing to maintain heap integrity.
+  - *Peek*: Accessing the root element without modifying the heap.
+
+- *Applications*:
+  - *Priority Queues*: Heaps are commonly used to implement priority queues.
+  - *Heap Sort*: An efficient sorting algorithm that utilizes a heap.
+  - *Graph Algorithms*: Utilized in algorithms like Dijkstra's shortest path.
+
+- *Time Complexity*:
+  - Insertion: O(log n)
+  - Deletion (removing root): O(log n)
+  - Accessing the root: O(1)
+  - Building a heap: O(n)
+

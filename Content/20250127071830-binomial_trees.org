@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       e7006647-efb9-4fce-8b3a-3bf6fabac685
+:END:
+#+title: binomial trees
+#+filetags: :data:cs:
+
+
+* Overview
+
+- *Definition of Binomial Trees*:
+  - A binomial tree is a data structure that is a recursive combination of binomial trees, each representing a set of potential states or values at each node.
+
+- *Structure*:
+  - A binomial tree of order \( k \) consists of \( 2^k \) nodes.
+  - Each node has \( k \) children, corresponding to the structure of the binomial coefficient.
+
+- *Properties*:
+  - The height of a binomial tree of order \( k \) is \( k \).
+  - There are \( C(k, i) \) ways to choose \( i \) children from \( k \).
+
+- *Operations*:
+  - *Merge*: Merging two binomial trees is efficient, \( O(\log n) \).
+  - *Insert*: Inserting a new element is also \( O(\log n) \).
+  - *Delete*: Deletion can be done in logarithmic time as well.
+
+- *Applications*:
+  - Commonly used in the implementation of priority queues, particularly in [[id:a1958360-5d36-4994-a617-37c040f78812][Fibonacci heaps]].
+  - Useful in algorithms for binomial queues and efficient algorithms in [[id:dd94cae5-96e2-4a46-9890-41c8c88059bc][network design]].
+
+* Resources
+ - https://en.wikipedia.org/wiki/Binomial_heap

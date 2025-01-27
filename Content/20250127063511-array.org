@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ce5570cd-e6c4-4dcc-9146-860cbb11a15d
+:END:
+#+title: Array
+#+filetags: :data:cs:

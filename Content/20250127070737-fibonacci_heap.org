@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       a1958360-5d36-4994-a617-37c040f78812
+:END:
+#+title: Fibonacci Heap
+#+filetags: :data:cs:
+
+* Overview
+- *Definition*:
+  - A Fibonacci [[id:198d0435-df28-4af5-a687-3475ed78eadf][heap]] is a type of data structure that consists of a collection of trees following the properties of a min-heap (or max-heap). It allows for very efficient merging of heaps and is used in [[id:dd94cae5-96e2-4a46-9890-41c8c88059bc][network optimization algorithms]].
+
+- *Structure*:
+  - The Fibonacci heap is composed of a collection of heap-ordered trees, structured in such a way that the minimum element is always accessible.
+  - Nodes within the trees can hold more than one child, forming a Fibonacci-like structure, hence the name.
+
+- *Key Operations*:
+  - *Insertion*: Adds a new element to the heap in constant time, O(1).
+  - *Finding Minimum*: Provides access to the minimum element in O(1) time.
+  - *Union*: Merges two heaps in O(1) time; this is one of the highlights of Fibonacci heaps.
+  - *Decrease Key*: Decreases the key of a node, which takes [[id:b91e378d-b17a-43b2-b13e-19c02afe1558][amortized]] O(1) time.
+  - *Delete*: Removal of the minimum element within O(log n) time.
+
+- *Applications*:
+  - Primarily used in graph algorithms such as [[id:e31f91e8-25d9-499b-9c55-10afcb086edb][Dijkstra's]] and [[id:dd72e849-016c-4065-80fd-656fad075d4a][Prim's]] algorithms, where efficient priority queue operations are paramount.
+  - Useful in scenarios where merge operations are frequent and optimized performance over several operations is needed.
+
+* Operational Breakdown and Explanation
+
+- Amortized Analysis:
+  - Fibonacci heaps leverage amortized analysis to ensure that while individual operations may seem costly, the average time per operation over a sequence of operations is efficient.
+  - This is particularly relevant for operations like decrease key and delete.
+
+- Operational Complexity:
+  - *Insert*: O(1) - This operation simply adds the new element to the list of roots.
+  - *Find Minimum*: O(1) - Constant time access to the minimum element.
+  - *Union*: O(1) - Combining the root lists of two Fibonacci heaps.
+  - *Decrease Key*: O(1) amortized - The node is cut from its parent and added to the root list; potential restructuring happens lazily.
+  - *Delete*: O(log n) - Involves decreasing the key to negative infinity followed by removing the minimum element.
+
+- Heuristic Characteristics:
+  - Lazy Merging: Allows for efficient merging of heaps and defers the restructuring to later operations.
+  - Tree Structure: Each tree is a min-heap, which guarantees that the minimum element is always accessible.
+
+* Resources
+ - https://en.wikipedia.org/wiki/Fibonacci_heap

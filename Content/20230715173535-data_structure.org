@@ -14,7 +14,7 @@
 
 2. *Non-Primitive Data Structures*
    - *Linear Structures*
-     - Arrays: Fixed-size collections of elements.
+     - [[id:ce5570cd-e6c4-4dcc-9146-860cbb11a15d][Arrays]]: Fixed-size collections of elements.
      - Linked Lists: Collections of elements linked via pointers.
      - Stacks: Last-in-first-out (LIFO) storage.
      - Queues: First-in-first-out (FIFO) storage.
@@ -30,21 +30,21 @@
   - Searching: Finding elements (e.g., linear search, binary search).
   - Sorting: Arranging elements (e.g., quicksort, mergesort).
 * [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Cache]] Friendliness: Overview
-- /Definition/: Cache friendliness refers to how well a data structure or algorithm utilizes the CPU cache to minimize latency and improve performance.
+- Definition: Cache friendliness refers to how well a data structure or algorithm utilizes the CPU cache to minimize latency and improve performance.
 
 ** Key Concepts
-1. /Locality of Reference/
-   - /Temporal Locality/: If a data location is accessed, it is likely to be accessed again soon.
-   - /Spatial Locality/: If a data location is accessed, nearby data locations are likely to be accessed soon.
+1. Locality of Reference
+   - Temporal Locality: If a data location is accessed, it is likely to be accessed again soon.
+   - Spatial Locality: If a data location is accessed, nearby data locations are likely to be accessed soon.
 
-2. /Cache Hierarchy/
+2. Cache Hierarchy
    - Modern CPUs have multiple cache levels (L1, L2, L3).
    - Data structures should fit within cache lines to leverage fast memory access.
 
 ** Characteristics of Cache-Friendly Data Structures
-- /Contiguous Memory Allocation/: Arrays are generally more cache-friendly than linked lists as they store elements in contiguous memory locations.
-- /Data Structure Size/: Smaller structures that fit in cache are preferable.
-- /Access Patterns/: Sequential access patterns (e.g., traversing an array) are usually better than random access patterns.
+- Contiguous Memory Allocation: Arrays are generally more cache-friendly than linked lists as they store elements in contiguous memory locations.
+- Data Structure Size: Smaller structures that fit in cache are preferable.
+- Access Patterns: Sequential access patterns (e.g., traversing an array) are usually better than random access patterns.
 
 ** Impact on Performance
 - Efficient cache usage can reduce memory access time significantly, leading to overall faster program execution.

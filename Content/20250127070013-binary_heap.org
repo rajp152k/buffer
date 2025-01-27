@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       5ed05b89-71e5-423c-b51c-dc53133c3e91
+:END:
+#+title: Binary Heap
+#+filetags: :data:cs:
+
+* Key Properties and Characteristics
+
+- *Definition*: A binary heap is a complete [[id:3821a4f5-998a-4903-970f-d95bf2ed8cd4][binary tree]] that satisfies the [[id:198d0435-df28-4af5-a687-3475ed78eadf][heap]] property.
+- *Heap Property*:
+  - *Max-Heap*: The key of each node is greater than or equal to the keys of its children. The maximum key is at the root.
+  - *Min-Heap*: The key of each node is less than or equal to the keys of its children. The minimum key is at the root.
+
+- *Structure*:
+  - Complete binary trees, meaning all levels are fully filled, except possibly for the last level.
+  - Efficiently stored in array format, where for a node at index =i=:
+    - Left child: =2*i + 1=
+    - Right child: =2*i + 2=
+    - Parent: =floor((i - 1) / 2)=
+
+- *Time Complexity*:
+  - Insertion: O(log n)
+  - Deletion: O(log n)
+  - Find-min or Find-max: O(1)
+  - Building a heap: O(n)
+
+- *Applications*:
+  - Priority Queues: Efficiently manage dynamically changing priority data.
+  - [[id:4a362cc7-3fe3-46b5-9038-c0e5d4af2eb5][Heapsort]]: An efficient sorting algorithm using binary heaps.
+  - [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][Graph]] algorithms: Such as [[id:e31f91e8-25d9-499b-9c55-10afcb086edb][Dijkstra]]’s and [[id:dd72e849-016c-4065-80fd-656fad075d4a][Prim]]’s for [[id:eeca3654-8525-4ce3-a135-a51e262094c3][minimum spanning trees]].

@@ -6,6 +6,5 @@
 
 Generic Patterns, or their compositions, that can be thrown at problems before you have to start inventing novel ones.
 
-
 * Resources
  - https://refactoring.guru/design-patterns

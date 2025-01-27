@@ -4,3 +4,65 @@
 #+title: Insertion Sort
 #+filetags: :algo:cs:
 
+
+#+begin_src go :exports both
+package main
+
+import (
+	"fmt"
+)
+
+func insertionSort(arr []int) []int {
+	for i:=1; i < len(arr); i++  {
+		key := arr[i]
+		j := i - 1
+		for j >= 0 && arr[j] > key {
+			arr[j+1] = arr[j]
+			j--
+		}
+		arr[j+1] = key
+	}
+	return arr
+}
+
+
+func main(){
+	arr := []int{4, 2, 5, 1, -3, -2}
+	sortedArr := insertionSort(arr)
+	fmt.Println(sortedArr)
+}
+#+end_src
+
+#+RESULTS:
+: [-3 -2 1 2 4 5]
+
+* Overview
+- *Complexity*:
+  - *Time Complexity*:
+    - Best Case: \( O(n) \) (when the array is already sorted)
+    - Average Case: \( O(n^2) \)
+    - Worst Case: \( O(n^2) \) (when the array is sorted in reverse order)
+  - *Space Complexity*: \( O(1) \) (in-place sorting)
+
+- *Stability*: Insertion Sort is a [[id:00d20a5b-be5e-44a4-a95f-44690883418d][stable sorting]] algorithm.
+
+- *Use Cases*:
+  - Suitable for small datasets.
+  - Efficient for data that is already partially sorted.
+  - Often used in practice for small data sets or as a part of more complex algorithms.
+
+*** Connections and Observations
+
+- *Real-World Application*:
+  - Often used in hybrid sorting algorithms (like [[id:7c0d5d3c-50a3-4ed1-ad97-7b3cde2462bc][Timsort]]) where it is combined with other algorithms for better performance on small subarrays.
+
+*** Further Inquiry
+
+To expand understanding of Insertion Sort and its applications, consider the following questions:
+
+1. What are the advantages and disadvantages of using Insertion Sort compared to algorithms like Merge Sort or Quick Sort in various contexts?
+2. In what specific scenarios or types of datasets would Insertion Sort prove to be the most efficient?
+3. How do variations of Insertion Sort, like Binary Insertion Sort, improve sorting times?
+4. How does the stability of Insertion Sort affect its behavior with complex data structures (e.g., sorting objects based on multiple attributes)?
+
+Exploring these questions could deepen your understanding of sorting algorithms and their appropriate applications.

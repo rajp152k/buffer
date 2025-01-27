@@ -10,4 +10,8 @@ Index into data structures of varying complexities and brief descriptions about 
 | Data Structure | Desc                       |
 |----------------+----------------------------|
 | [[id:3821a4f5-998a-4903-970f-d95bf2ed8cd4][Binary Tree]]    | forkable linked lists      |
+| [[id:1d703f5b-8b5e-4c82-9393-a2c88294c959][Graphs]]         | Edges and Nodes            |
 | [[id:20240519T201001.324666][Merkle Tree]]    | scalable data verification |
+| [[id:4054ebe7-812f-4204-be63-bb7379d5b56b][Queue]]          | FIFO/LILO                  |
+| [[id:e20be945-5df7-4b35-aab5-a9a439b62de8][Stack]]          | FILO/LIFO                  |
+| [[id:9a7e1b83-9160-40a7-821b-0f0ada44e350][Linked lists]]   | Fundamental data and glue  |

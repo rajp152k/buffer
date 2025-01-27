@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b056e747-dee4-4e6d-a7af-d644f842f0b8
+:END:
+#+title: Java
+#+filetags: :java:programming:

@@ -4,7 +4,21 @@
 #+title: Master Theorem
 #+filetags: :cs:algo:
 
-See [[id:8e9f6cef-da57-48ed-b86d-029f1b528615][Time Complexity]]
+
+* Overview
+
+- *Definition*: The Master Theorem provides a method for analyzing the [[id:8e9f6cef-da57-48ed-b86d-029f1b528615][time complexity]] of [[id:95edc4bc-c364-4b18-833a-ba476b3283e8][recursive]] algorithms.
+- *Form*: The theorem applies to recurrences of the form T(n) = aT(n/b) + f(n), where:
+  - T(n) is the time complexity,
+  - a ≥ 1 is the number of subproblems,
+  - b > 1 is the factor by which the problem size is reduced,
+  - f(n) is a function that describes the cost of dividing the problem and combining the results.
+- *Applications*: Often used in the analysis of [[id:60121a6c-9dd8-4a17-8a87-15e8147ab228][divide-and-conquer]] algorithms, such as mergesort and quicksort.
+
+*Cases of the Master Theorem*:
+1. *Case 1*: If f(n) is polynomially smaller than n^(log_b(a)), then T(n) = Θ(n^(log_b(a))).
+2. *Case 2*: If f(n) is asymptotically the same as n^(log_b(a)), then T(n) = Θ(n^(log_b(a)) log(n)).
+3. *Case 3*: If f(n) is polynomially larger than n^(log_b(a)), and the regularity condition holds, then T(n) = Θ(f(n)).
 
 * Resources
  - https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)

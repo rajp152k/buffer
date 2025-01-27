@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       7c0d5d3c-50a3-4ed1-ad97-7b3cde2462bc
+:END:
+#+title: Timsort
+#+filetags: :algo:cs:
+
+* Overview
+
+- *Definition*: Timsort is a hybrid sorting algorithm derived from [[id:fa43a1e8-2bee-47d3-98c6-6037a9b0f8ee][merge sort]] and [[id:c70dbfb7-1556-47d6-a590-c438e9662d91][insertion sort]].
+- *Origin*: Developed by Tim Peters in 2002 for use in the [[id:985a470b-7184-4f9f-8b16-fe7b90bccebe][Python]] programming language.
+- *Stability*: Timsort is a [[id:00d20a5b-be5e-44a4-a95f-44690883418d][stable sort]], meaning it maintains the relative order of items that compare equal.
+- *Complexity*:
+  - Best Case Time Complexity: O(n) when the input list is already sorted.
+  - Average Case Time Complexity: O(n log n).
+  - Worst Case Time Complexity: O(n log n).
+- *Space Complexity*: O(n) due to temporary arrays created during the merge process.
+- *Use Cases*: Suitable for real-world data which often contains ordered sequences (runs), such as sorting large datasets in Python or [[id:b056e747-dee4-4e6d-a7af-d644f842f0b8][Java]].
+- *Adaptivity*: Timsort takes advantage of existing order in data by identifying runs (consecutive ordered sequences).
+
+*** Connections
+- *Hybrid Nature*: Combines strengths of insertion sort (efficient for small datasets or partially sorted data) and merge sort (efficient for larger datasets).
+- *Stability Significance*: Important in applications where the original order of equal elements is needed (e.g., in database records).
+- *Practical Performance*: Despite theoretical complexities, Timsort performs remarkably well on various datasets due to its adaptivity.
+
+* Mechanism of TimSort
+
+- Step 1: Identify Runs:
+  - Timsort begins by partitioning the input array into small segments known as runs, which are either ordered ascending or descending sequences.
+  - It uses a minimum run size, typically between 32 and 64 elements, to ensure efficient processing.
+
+- Step 2: Sort Each Run:
+  - Each run is sorted using insertion sort, which is well-suited for small datasets due to its low overhead.
+
+- Step 3: Merge Runs:
+  - Sorted runs are merged together using a modified merge sort algorithm.
+  - The merging process takes care to maintain the stability of the sorting and uses a [[id:e20be945-5df7-4b35-aab5-a9a439b62de8][stack]] to keep track of runs.
+
+- Step 4: Manage Stack of Runs:
+  - Runs are pushed onto a stack, and based on certain size constraints, Timsort merges those runs to ensure that the overall sorting remains efficient.
+  - The merging strategy uses the principles of maintaining balanced merges, similar to a binary tree structure.
+
+- Step 5: Final Merge:
+  - The process continues until all runs are merged into a final sorted array.
+
+* Resources
+ - https://en.wikipedia.org/wiki/Timsort

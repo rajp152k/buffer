@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e20be945-5df7-4b35-aab5-a9a439b62de8
+:END:
+#+title: Stack
+#+filetags: :data:cs:

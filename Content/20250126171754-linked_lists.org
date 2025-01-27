@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9a7e1b83-9160-40a7-821b-0f0ada44e350
+:END:
+#+title: Linked lists
+#+filetags: :data:cs:

@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       fa43a1e8-2bee-47d3-98c6-6037a9b0f8ee
+:END:
+#+title: Merge Sort
+#+filetags: :algo:cs:
+
+#+begin_src go :exports both
+package main
+
+import (
+	"fmt"
+)
+
+func merge(a1 []int, a2 []int) []int {
+	n, m := len(a1), len(a2)
+	res := make([]int, n+m)
+	i, j, k := 0, 0, 0
+	for i < n || j < m {
+		if j == m || (i < n && a1[i] < a2[j]) {
+			res[k] = a1[i]
+			k++
+			i++
+		} else {
+			res[k] = a2[j]
+			k++
+			j++
+		}
+	}
+	return res
+}
+
+func mergeSort(arr []int) []int {
+	if len(arr) < 2 {
+		return arr
+	}
+	mid := len(arr) / 2
+	return merge(mergeSort(arr[:mid]), mergeSort(arr[mid:]))
+}
+
+func main() {
+	arr := []int{4, 2, 5, 1, -3, -2}
+	sortedArr := mergeSort(arr)
+	fmt.Println(sortedArr)
+}
+#+end_src
+
+#+RESULTS:
+: [-3 -2 1 2 4 5]
+
+* Overview
+
+- *Definition*: Merge sort is a [[id:60121a6c-9dd8-4a17-8a87-15e8147ab228][divide-and-conquer]] algorithm that sorts an array by [[id:95edc4bc-c364-4b18-833a-ba476b3283e8][recursively]] dividing it into two halves, sorting each half, and then merging the sorted halves.
+
+*** Key Features:
+- *Time Complexity*: O(n log n) on average, best, and worst cases.
+- *Space Complexity*: O(n) due to the use of temporary arrays for merging.
+- *Stability*: It is a [[id:00d20a5b-be5e-44a4-a95f-44690883418d][stable sort]]; equal elements maintain their relative order.
+- *Adaptivity*: Not adaptive; it processes the same regardless of input order.
+
+*** Steps of the Algorithm:
+1. *Recursive Division*:
+   - Split the input array into two halves.
+   - Continue splitting until each sub-array has at most one element (base case).
+
+2. *Merging*:
+   - Combine the sorted halves back together in a sorted manner by comparing the elements of both halves.
+
+3. *Base Case*:
+   - An array of length 0 or 1 is already sorted.
+
+*** Misc
+- Merge sort is particularly effective for:
+  - Sorting [[id:9a7e1b83-9160-40a7-821b-0f0ada44e350][linked lists]].
+  - Large datasets that do not fit into memory, as it can be adapted to external sorting.
+
+*** Questions for Clarification:
+- What specific aspects of merge sort do you wish to explore further (e.g., applications, comparisons, optimizations)?
+- Are you interested in examples of merge sort implementations in other programming languages?
+
+*** Pathways for Further Research:
+- How does merge sort compare with non-comparison-based sorting algorithms (e.g., radix sort, counting sort)?
+- What are the practical applications of merge sort in real-world systems and data processing?
+- Explore the theoretical limits of sorting algorithms: What are the proven lower bounds for comparison-based sorting?
+- Investigate optimizations of merge sort, particularly in adaptive contexts or with parallel processing techniques.

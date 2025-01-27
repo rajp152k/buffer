@@ -10,6 +10,7 @@ Index into system design aspects with brief descriptions about their significanc
 |--------------------------------+--------------------------------------------|
 | [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]                        | Industrial [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][Memoization]]                     |
 | [[id:20240519T152842.050227][CAP]]                            | Trade-offs during Network Partition        |
+| [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent Hashing]]             | Resilient Distribution Strategy            |
 | [[id:20240101T082700.953774][Content Delivery Network]]       | decoupled media delivery                   |
 | [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Database Replication]]           | scale databases                            |
 | [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster Recovery]]              | [[id:873f2b2e-5bc3-480e-bd42-42af349a49af][BCP]] for CS                                 |

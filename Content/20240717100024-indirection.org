@@ -2,4 +2,7 @@
 :ID:       501f2afe-e1af-4284-9ac3-3e44f68af7c1
 :END:
 #+title: Indirection
-#+filetags: :meta:
+#+filetags: :cs:meta:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Indirection

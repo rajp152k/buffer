@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3390e37d-0b31-4219-9a52-b919ad61d5d9
+:END:
+#+title: Memcached
+#+filetags: :tool:cs:
+
+* Resources
+ - https://memcached.org/

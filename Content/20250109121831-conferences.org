@@ -9,3 +9,6 @@
 * European Lisp Symposium
  - https://european-lisp-symposium.org/
 
+
+* UseNix
+ - https://www.usenix.org/

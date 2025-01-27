@@ -19,6 +19,9 @@ func main(){
 #+end_src
 
 * Stream
+** 0x234C
+ - hands on SWE with golang
+ - aggressive level up phase
 ** 0x22B2
 - post theGoPL, will finish of TDD with Go
 - have found it to be productive when starting out building a new service

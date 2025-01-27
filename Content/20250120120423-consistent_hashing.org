@@ -68,3 +68,5 @@
 * Resources
  - https://www.toptal.com/big-data/consistent-hashing
  - https://en.wikipedia.org/wiki/Consistent_hashing
+ - http://theory.stanford.edu/~tim/s16/l/l1.pdf
+ - https://tom-e-white.com/2007/11/consistent-hashing.html

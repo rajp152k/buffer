@@ -32,3 +32,5 @@
 ** [[id:80775b3c-b6f1-47db-8752-8c582d9cba53][AnyCast]]
 * Resources
  - https://www.youtube.com/watch?v=RI9np1LWzqw&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=15&ab_channel=ByteByteGo
+ - https://www.akamai.com/resources/reference-architecture/content-delivery
+ - https://www.akamai.com/glossary/what-is-a-cdn

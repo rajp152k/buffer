@@ -7,3 +7,6 @@
 
  - Hashmap: A [[id:20230715T173535.681936][Data Structure]] that is stores values indexable with hashed keys.
  - Hash [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][Function]]: the corresponding mapping mechanism yielding values for a hashed key.
+
+* Relevant Nodes
+** [[id:fe847008-84df-4128-8a72-7b15ac5655cf][SHA]]

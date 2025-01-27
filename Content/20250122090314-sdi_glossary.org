@@ -18,3 +18,5 @@ A quick index into most common abbreviations in the domain of computer science
 | QPS    | Queries Per Second                     |
 | SSL    | Secure Sockets Layer: Precursor to [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]] |
 | [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]    | Transport Layer Security               |
+| [[id:fe847008-84df-4128-8a72-7b15ac5655cf][SHA]]    | [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Secure]] [[id:235113d9-983a-4782-a4e8-d027ba52d82b][Hash]] Algorithms                 |
+|        |                                        |

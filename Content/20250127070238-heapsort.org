@@ -3,3 +3,29 @@
 :END:
 #+title: Heapsort
 #+filetags: :algo:cs:
+
+* Detailed Elaboration
+
+- *Definition*: Heapsort is a comparison-based sorting algorithm utilizing a [[id:5ed05b89-71e5-423c-b51c-dc53133c3e91][binary heap]] data structure. It is an efficient way to sort a collection of items.
+
+- *Complexity*:
+  - Time Complexity:
+    - Worst-case: O(n log n)
+    - Average-case: O(n log n)
+    - Best-case: O(n log n)
+  - Space Complexity: O(1) (in-place sorting)
+
+- *Process*:
+  1. *Heap Construction*: Transform the list into a max-heap (or min-heap).
+  2. *Sorting*:
+     - Remove the maximum (or minimum) element from the heap, placing it in the sorted output.
+     - Re-establish the heap property (heapify).
+     - Repeat until the heap is empty.
+
+- *Stability*: Heapsort is **not a stable sorting** algorithm because it can change the relative order of equal elements.
+
+- *Use Cases*:
+  - Best suited for situations where memory space is limited.
+  - Effective for large datasets and when the complete data is not available at once.
+* Resources
+ - https://www.youtube.com/watch?v=koyuy564TZ8&list=PLrS21S1jm43igE57Ye_edwds_iL7ZOAG4&index=2&ab_channel=PavelMavrin

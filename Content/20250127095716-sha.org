@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fe847008-84df-4128-8a72-7b15ac5655cf
+:ROAM_ALIASES: "Secure Hash Algorithms"
+:END:
+#+title: SHA
+#+filetags: :math:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Secure_Hash_Algorithms

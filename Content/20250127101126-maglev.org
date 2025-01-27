@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       641de843-c1c1-46f4-a994-116e1e5d5abf
+:END:
+#+title: Maglev
+#+filetags: :tool:cs:
+
+* Relevant Nodes
+** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]
+
+* Resources
+ - https://research.google/pubs/maglev-a-fast-and-reliable-software-network-load-balancer/

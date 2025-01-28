@@ -24,7 +24,43 @@
   - [[id:20240519T221608.054348][Eventual consistency]].
   - Strong consistency (depending on implementation).
 
+* [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] Stores
+
+- Definition: Distributed key-value stores are designed to run across multiple nodes, enabling horizontal scalability and [[id:262874ff-9248-485d-91ee-f7ca1dc2c31d][redundancy]].
+
+- Architecture:
+  - Data is partitioned across various nodes to distribute load.
+  - Uses [[id:8cd19397-b5e5-40b6-a172-456c34985a11][replication]] to ensure [[id:20240519T162542.805560][fault tolerance]].
+
+- Characteristics:
+  - *[[id:20240519T152842.050227][Availability]]*: High availability even in the event of node failures.
+  - *Scalability*: Can add nodes easily to handle increasing loads.
+
+- Popular Examples:
+  - *[[id:20240519T221905.005300][Cassandra]]*: Highly available, partitioned row store.
+  - *DynamoDB*: Amazon’s fully managed NoSQL database service.
+
+- Data Consistency Strategies:
+  - Eventual consistency ensuring that, given enough time, all updates will propagate.
+  - Tunable consistency allows users to configure the level of consistency needed.
+
+- Use Cases:
+  - Real-time analytics applications that require rapid access to high volumes of data.
+  - Global applications needing data to be accessible across various geographic locations.
+
+* Design Considerations
+ - Frequency and Priority of reads and writes
+ - Redundancy requirements
+ - value sizes/ability to store big data
+ - high availability
+ - automatic scaling
+ - [[id:cec7319e-717f-41e6-8cb9-d82a3e3aaa1c][tunable consistency]]
+
+
+
+
 * Relevant Nodes
 ** [[id:4f6c9fa4-ab8c-48da-a412-27a5a5867a21][DynamoDB]]
 ** [[id:283c3a6b-6a8c-4e14-85f4-8f67494629ce][Redis]]
 ** [[id:3390e37d-0b31-4219-9a52-b919ad61d5d9][Memcached]]
+** [[id:3568f42c-6e48-4d10-8249-c95c080a975c][etcd]]

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       cec7319e-717f-41e6-8cb9-d82a3e3aaa1c
+:END:
+#+title: Tunable Consistency
+#+filetags: :meta:cs:
+
+* Relevant Nodes
+** [[id:20240519T152842.050227][CAP]]
+** [[id:20240519T221905.005300][Apache Cassandra]]
+* Resources
+** https://www.datastax.com/learn/cassandra-fundamentals/tunable-consistency

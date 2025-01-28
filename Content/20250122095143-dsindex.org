@@ -20,3 +20,4 @@ Index into data structures of varying complexities and brief descriptions about 
 | [[id:e20be945-5df7-4b35-aab5-a9a439b62de8][Stack]]          | filo/lifo                          |
 | [[id:235113d9-983a-4782-a4e8-d027ba52d82b][Hashmap]]        | O(1) [[id:501f2afe-e1af-4284-9ac3-3e44f68af7c1][indirection]]                   |
 | [[id:2d6c7979-5049-435b-b405-0c685fbe06de][Vector Clocks]]  | Distributed [[id:038e3720-0307-41d8-bcb1-e77b75a161df][versioning]]             |
+| [[id:20240519T214118.461723][Bloom Filter]]   | Rapid Membership Testing           |

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       50364263-a201-4b2d-a592-06f728a9be50
+:END:
+#+title: Monkey Patching
+#+filetags: :meta:cs:
+
+* Overview
+
+- *Definition*:
+  - Monkey patching is a programming practice that involves modifying a class or module at runtime, allowing for alterations in behavior without altering the original source code.
+
+- *Use Cases*:
+  - Debugging: Temporarily override methods to print logs or alter behavior for testing.
+  - Feature Enhancement: Add new functionalities to existing classes or libraries without explicit modification.
+  - Fixing Bugs: Provide immediate fixes for bugs within libraries where source access may be limited.
+
+- *Languages Commonly Used In*:
+  - Python, Ruby, JavaScript, and other dynamic languages that support runtime code modification.
+
+- *Implications*:
+  - Pros:
+    - Flexibility: Allows developers to adapt code quickly.
+    - Fast Implementation: Quick fixes or enhancements can be applied without the need for full redeployment.
+  - Cons:
+    - Maintenance Challenge: Makes tracking changes and debugging more complex.
+    - Risk of Compatibility Issues: Changes may cause conflicts when updating underlying libraries or frameworks.
+    - voilation of the "closed" in open/closed principle of [[id:3348ef4f-dba9-43ac-9d3c-ba44e14c7478][SOLID Principles]]
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Monkey_patch

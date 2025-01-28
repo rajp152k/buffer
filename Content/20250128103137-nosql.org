@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       972f53f5-0c08-4136-8214-1b62fba60360
+:END:
+#+title: NoSQL
+#+filetags: :cs:data:

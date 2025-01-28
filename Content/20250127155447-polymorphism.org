@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e2614bc4-bd8f-4cc3-a7e7-b1f98479c5c2
+:END:
+#+title: Polymorphism
+#+filetags: :cs:plt:

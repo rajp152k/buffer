@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1995be49-7430-4b98-aad3-e2cfc8499e2d
+:END:
+#+title: Session storage
+#+filetags: :web:cs:

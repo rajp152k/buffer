@@ -1,6 +1,4 @@
-:PROPERTIES:
-:ID:       3aa7ff5b-e9d4-4f19-ba71-bb5e94880708
-:END:
+:PR
 #+title: CS Glossary
 #+filetags: :glossary:cs:
 

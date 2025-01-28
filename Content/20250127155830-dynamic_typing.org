@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       e7b5a97b-7843-489c-a8ca-5faa857a6755
+:END:
+#+title: Dynamic Typing
+#+filetags: :plt:cs:
+
+* Overview
+
+- *Definition*: Dynamic typing refers to a programming language feature where variable types are determined at runtime rather than at compile-time.
+
+- *Languages*: Common languages that support dynamic typing include Python, JavaScript, Ruby, and PHP.
+
+- *Type Flexibility*: In dynamically typed languages, the same variable can refer to different data types at different points in the execution of a program.
+
+- *Error Handling*: Type-related errors may only surface during execution, potentially leading to runtime exceptions that are not caught during compilation.
+
+- *Development Speed*: Dynamic typing can lead to faster development cycles since programmers don't need to explicitly declare variable types.
+
+- *Advantages*:
+  - Easier to write and modify code in a flexible manner.
+  - Encourages rapid prototyping.
+
+- *Disadvantages*:
+  - Increased risk of runtime errors.
+  - Potentially more difficult debugging and maintenance due to type ambiguity.
+
+*** Connections
+
+- *[[id:2e5ba623-bd64-4fbc-b800-1fa2c9e8adad][Static]] vs. Dynamic Typing*: Unlike static typing, where type checking is done at compile time (e.g., languages like Java and C++), dynamic typing prioritizes flexibility over type safety at runtime.
+
+- *Impact on Performance*: Dynamic typing can introduce overhead because the type of each variable needs to be checked during execution, which might affect performance compared to statically typed languages.
+
+- *Developer Efficiency*: While dynamic typing can speed up initial development, it can also lead to longer-term maintenance challenges, necessitating careful testing strategies.
+
+

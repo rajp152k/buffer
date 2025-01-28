@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       14453e15-5353-4fc2-a565-5bfc3ad95a43
+:ROAM_ALIASES: "Structural Typing"
+:END:
+#+title: Duck Typing
+#+filetags: :plt:cs:
+
+* Overview
+
+- *Definition*: Duck typing is a concept in programming where an object's suitability is determined by the presence of certain methods and properties rather than the actual type of the object itself.
+
+- *Origin*: The term derives from the saying "If it looks like a duck and quacks like a duck, it must be a duck." It emphasizes behavior (methods and attributes) over explicit class definitions.
+
+- *Languages*: Commonly used in dynamically typed languages such as Python, Ruby, and JavaScript, where type checking occurs at runtime.
+
+- *Advantages*:
+  - *Flexibility*: Allows for greater code reusability and polymorphism.
+  - *Simplified Code*: Reduces the need for explicit type declarations and interfaces.
+
+- *Disadvantages*:
+  - *Runtime Errors*: Can lead to runtime errors if an object does not meet the anticipated structure.
+  - *Documentation Challenge*: May obscure the expected interface of objects, making it harder to understand the code.
+
+- *Comparison to [[id:2e5ba623-bd64-4fbc-b800-1fa2c9e8adad][Static Typing]]*:
+  - In static typing, types are checked at compile-time, providing earlier detection of type-related errors but reduced flexibility.
+  - In contrast, duck typing favors runtime evaluation, prioritizing flexibility at the cost of potentially increased errors.
+
+*** Misc
+
+- *[[id:e2614bc4-bd8f-4cc3-a7e7-b1f98479c5c2][Polymorphism]]*: Duck typing facilitates polymorphism, allowing different types of objects to be processed through the same [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][interface]].
+
+- *[[id:f5db6ddc-024e-4ed0-99f6-9e09ae19106f][Design Patterns]]*: Certain design patterns, such as Strategy and Adapter, may benefit from duck typing by allowing different object types to interact seamlessly.

@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       3a07e9f5-9a50-436d-a639-72ce77d5a351
+:END:
+#+title: PL Theory
+#+filetags: :cs:programming:plt:
+
+* Overview
+- *Programming Language Theory (PL Theory)*: The study of formal languages, their structure, and their computational properties.
+- *Key Concepts*:
+  - *Syntax*: The rules that define the structure of valid statements in a programming language.
+  - *Semantics*: The meaning associated with the syntactic constructs; how programs behave.
+  - *Pragmatics*: The context-dependent aspects of language use; user interaction and system behavior.
+- *Type Systems*:
+  - *Static vs. Dynamic Typing*: Static typing checks types at compile time; dynamic typing checks at runtime.
+  - *Strong vs. Weak Typing*: Strong typing prevents operations on mismatched types; weak typing allows more flexibility.
+- *Language Paradigms*:
+  - *Imperative*: Focuses on commands and state changes (e.g., C, Java).
+  - *Functional*: Emphasizes functions and immutability (e.g., Haskell, Lisp).
+  - *Object-oriented*: Uses objects and classes (e.g., Python, Ruby).
+  - *Logic-based*: Employs formal logic to express computations (e.g., Prolog).
+- *Formal Methods*: Techniques for specifying and verifying properties of programs, ensuring correctness.

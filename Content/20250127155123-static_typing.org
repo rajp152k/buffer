@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       2e5ba623-bd64-4fbc-b800-1fa2c9e8adad
+:END:
+#+title: Static Typing
+#+filetags: :plt:cs:
+
+* Overview
+
+- *Definition*: Static typing is a programming language feature where data types are checked at compile time rather than at runtime.
+
+- *Benefits*:
+  - *Type Safety*: Helps identify type-related errors before execution, reducing runtime errors.
+  - *Performance*: Can lead to optimizations as the compiler can make informed decisions about memory management and execution paths.
+  - *Tooling Support*: Enhanced capabilities for IDEs and tools for features like autocompletion and refactoring.
+
+- *Drawbacks*:
+  - *Complexity*: Can make code harder to write due to mandatory type declarations.
+  - *Rigidity*: Less flexible when making quick changes or designing dynamic systems.
+
+- *Examples of Statically Typed Languages*:
+  - Java
+  - C++
+  - C#
+  - Rust
+  - Haskell
+
+- *Comparison with [[id:e7b5a97b-7843-489c-a8ca-5faa857a6755][Dynamic Typing]]*:
+  - *Dynamic Typing*: Checks types at runtime, leading to potentially faster initial development, but with a higher risk of runtime errors.
+  - *Statically Typed*: Requires explicit declaration of variable types, often resulting in fewer logical errors.
+
+*** Connections
+
+- *Type Systems*: Both static and dynamic typing are approaches within type systems that directly influence program reliability and maintainability.
+
+- *Memory Management*: Statically typed languages typically offer more control over memory allocation, which can lead to more efficient performance.
+
+- *Development Tools*: The presence of strong type systems in statically typed languages facilitates advanced tooling, such as type inference and static analysis.
+
+*** Questions for Further Research
+- How do specific statically typed languages implement and enforce their type systems?
+- What are common patterns or practices in statically typed languages that help manage complexity?
+- In what scenarios might a statically typed language be preferred over dynamically typed languages, and why?
+- How do other programming paradigms (such as functional programming) interact with the principles of static typing?

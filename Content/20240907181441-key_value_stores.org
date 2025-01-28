@@ -3,3 +3,28 @@
 :END:
 #+title: Key-Value Stores
 #+filetags: :database:
+
+* Overview
+
+- *Definition*: Key-value stores are a type of [[id:972f53f5-0c08-4136-8214-1b62fba60360][NoSQL]] database that use a simple data model where each data item (value) is stored with a unique identifier (key).
+- *Structure*:
+  - *Key*: A unique identifier used to retrieve a value.
+  - *Value*: The actual data, which can be simple or complex (e.g. string, JSON, binary).
+- *Characteristics*:
+  - *[[id:128acd70-93d7-4ef1-9e17-92b590924a6d][Schema]]-less*: No predefined structure for the data.
+  - *[[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]*: Easily scalable to accommodate large volumes of data.
+  - *Performance*: Optimized for fast retrieval and storage operations.
+
+- *Use Cases*:
+  - [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]] layers (e.g., Redis).
+  - [[id:1995be49-7430-4b98-aad3-e2cfc8499e2d][Session storage]] in web applications.
+  - User profiles in social media applications.
+
+- *Data [[id:20240519T152842.050227][Consistency]] Models*:
+  - [[id:20240519T221608.054348][Eventual consistency]].
+  - Strong consistency (depending on implementation).
+
+* Relevant Nodes
+** [[id:4f6c9fa4-ab8c-48da-a412-27a5a5867a21][DynamoDB]]
+** [[id:283c3a6b-6a8c-4e14-85f4-8f67494629ce][Redis]]
+** [[id:3390e37d-0b31-4219-9a52-b919ad61d5d9][Memcached]]

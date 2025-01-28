@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       3348ef4f-dba9-43ac-9d3c-ba44e14c7478
+:END:
+#+title: SOLID Principles
+#+filetags: :meta:cs:
+
+* Overview
+
+Set of Rules for guiding writing maintainable [[id:20231212T081851.998455][object oriented]] code
+
+1. *Single Responsibility  (SR):*
+   - A class should only have one reason to change.
+   - Enhances code maintainability and reduces complexity.
+
+2. *Open/Closed  (OC):*
+   - Software entities (classes, modules, functions) should be open for extension but closed for modification.
+   - Promotes code reusability and flexibility.
+
+3. *Liskov Substitution  (LS):*
+   - Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.
+   - Ensures that subclass implementations uphold the behavior of the parent class.
+
+4. *Interface Segregation  (IS):*
+   - No client should be forced to depend on methods it does not use.
+   - Aims to reduce the impact of changes by keeping interfaces small and specialized.
+
+5. *Dependency Inversion  (DI):*
+   - High-level modules should not depend on low-level modules. Both should depend on abstractions.
+   - Aims to reduce coupling between different components of a system.

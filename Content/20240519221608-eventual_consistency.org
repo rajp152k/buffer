@@ -65,7 +65,7 @@
 
 ** Use Cases
 
- - [[id:20240519T222806.511836][Failure Detection]]: Nodes can gossip about their health status, allowing the system to detect failures quickly.
+ - [[id:98d1ef69-367d-4f14-b76d-5581a1c39ffc][Failure Detection]]  Nodes can gossip about their health status, allowing the system to detect failures quickly.
 
  - Data Dissemination: Used to spread data updates or events across the network.
 

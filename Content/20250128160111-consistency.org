@@ -7,6 +7,8 @@
 
 See [[id:20240519T152842.050227][CAP]]
 
+* Inconsistency Reconciliation
+** [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Versioning]]
 * Relevant Nodes
 ** [[id:b1cfb7fa-2a53-4433-8cef-6209c454e730][Strong Consistency]]
  - client never sees out of date data

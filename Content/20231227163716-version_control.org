@@ -1,23 +1,55 @@
 :PROPERTIES:
 :ID:       038e3720-0307-41d8-bcb1-e77b75a161df
+:ROAM_ALIASES: "Version Control"
 :END:
-#+title: Version Control
+#+title: Versioning
 #+filetags: :meta:
 
-Is an extremely useful concept that arises upon the application of the notion of a [[id:edbaeabc-cfc7-4761-afce-96effb077282][History]] on the specific domain of software engineering.
 
-This should be the founding initializer of any coding or non-technical project that one starts out with. For the benefits of maintaining records are incomparable.
+* Generic Versioning
 
-* Tools
-** [[id:20240519T201738.321557][Git]]
-** Mercurial
-* Philosophies
+
+*** Key Aspects of Generic Versioning
+
+1. *Definition*: Generic versioning refers to a systematic approach for identifying, tracking, and managing different iterations of a product or system over time.
+
+2. *Version Numbering*:
+   - *Major Versions*: Indicate significant changes or overhauls (e.g., 1.0 to 2.0).
+   - *Minor Versions*: Suggest smaller updates or feature enhancements (e.g., 1.1 to 1.2).
+   - *Patch Versions*: Concern minor fixes or improvements (e.g., 1.0.1).
+
+3. *Semantic Versioning (SemVer)*:
+   - A popular convention used in software development.
+   - Format: MAJOR.MINOR.PATCH (e.g., 2.5.1).
+   - Rules emphasize backward compatibility and ease of understanding for users.
+
+4. *Change Logs*:
+   - Document changes between versions.
+   - Help users understand new features, improvements, or bug fixes.
+
+5. *Benefits*:
+   - Enhances communication among developers and users.
+   - Facilitates software maintenance and dependency management.
+   - Reduces confusion regarding product states or features.
+
+6. *Challenges*:
+   - Complexity may arise in larger projects with multiple dependencies.
+   - Maintaining consistent versioning across different product modules can be difficult.
+
+* File Version Control
+** Tools
+*** [[id:20240519T201738.321557][Git]]
+*** Mercurial
+** Philosophies
  - resources : https://notes.burke.libbey.me/metarepo/
-** Monorepo
+*** Monorepo
  - all code in one repo : monolithic
-** Multirepo
+*** Multirepo
  - the larger application is split into multiple microservices and no single repository stores all the code.
 
+* Object Versioning in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] Systems
+** [[id:13900f1e-27c1-40cf-bbcd-d9032634b835][Lamport Timestamps]]
+** [[id:2d6c7979-5049-435b-b405-0c685fbe06de][Vector Clocks]]
 * Resources
  - https://twobithistory.org/2018/07/07/cvs.html
  - https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control

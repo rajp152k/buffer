@@ -26,7 +26,7 @@ Cloud native refers to designing, developing, and operating applications that op
 ** [[id:b24fb743-99bb-4e1a-b4a4-3b81c9677360][Resilience]]
 ** [[id:2cd51b23-f253-40e2-8c5d-6f2924ca484d][Manageability]]
 ** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
-* [[id:2b29d5fb-58ab-41fe-a8b3-59b9ee675b5f][Fallacies of Distributed Computing]]
+* [[id:30bd9ede-b4fd-47c7-b848-a0d225277d4a][Fallacies of Distributed Computing]]
 * Cloud Native Patterns
 - sourced from chapter 4 of [[id:64bfc13e-1b7c-4cbe-ba0e-9d17ebaacef1][BOOK: Cloud Native Go]]
 ** context.Context

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       30bd9ede-b4fd-47c7-b848-a0d225277d4a
+:END:
+#+title: Fallacies of Distributed Computing
+#+filetags: :cs:
+
+* Fallacies
+** The [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] is reliable
+** [[id:aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23][Latency]] is zero
+** [[id:8d65e292-30f3-41c3-9611-d4a9acc173fb][Bandwidth]] is infinite
+** The Network is [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][secure]]
+** [[id:6bb5e976-0619-4a6e-8c6b-adb39d5dcc8c][Topology]] doesn't change
+** There is one [[id:c3db7676-2f05-4ee9-baee-5276df6d543d][administrator]]
+** Transport cost is zero
+** The network is homogenous
+* Resources
+ - https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing

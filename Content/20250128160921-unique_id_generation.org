@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ac7b233e-52d9-4190-91ca-66dce80c3748
+:END:
+#+title: Unique ID generation
+#+filetags: :cs:

@@ -3,3 +3,6 @@
 :END:
 #+title: Vector Clocks
 #+filetags: :cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Vector_clock

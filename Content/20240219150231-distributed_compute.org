@@ -23,19 +23,7 @@ Theoretical exploration of correctness in distributed compute is actively explor
 
 This is an index of relevant nodes
 
-* Fallacies of Distributed Computing
-:PROPERTIES:
-:ID:       2b29d5fb-58ab-41fe-a8b3-59b9ee675b5f
-:END:
- - checkout https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
-** The [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] is reliable
-** Latency is zero
-** Bandwidth is infinite
-** The Network is [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][secure]]
-** Topology doesn't change
-** There is one administrator
-** Transport cost is zero
-** The network is homogenous
+* [[id:30bd9ede-b4fd-47c7-b848-a0d225277d4a][Fallacies of Distributed Computing]]
 * Versioning
 ** [[id:13900f1e-27c1-40cf-bbcd-d9032634b835][Lamport Timestamps]]
 
@@ -137,23 +125,12 @@ Now, we can determine that the event at N1 happened before the updated event at 
  - Conflict Detection: Helps identify conflicting updates to replicated data.
  Versioning: Used to manage versions of data in distributed systems.
 
-* Distributed Databases
-** Dynamo DB
- - https://aws.amazon.com/dynamodb/resources/
-** [[id:3568f42c-6e48-4d10-8249-c95c080a975c][etcd]]
-** [[id:20240519T221905.005300][Cassandra]]
-* Unique ID generation
+* [[id:ac7b233e-52d9-4190-91ca-66dce80c3748][Unique ID generation]]
 ** Flickr Ticket Server
  - https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/
    
 ** Twitter Snowflake
-:PROPERTIES:
-:ID:       20240520T101047.706923
-:END:
  - https://en.wikipedia.org/wiki/Snowflake_ID
 * Clock [[id:20240520T101029.699685][Synchronization]]
 **  [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] Time Protocol (NTP)
-:PROPERTIES:
-:ID:       20240520T101043.435348
-:END:
  - https://en.wikipedia.org/wiki/Network_Time_Protocol

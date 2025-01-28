@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       7a6c0808-1246-411c-b330-20c60c2e37ac
+:END:
+#+title: Performance Optimization
+#+filetags: :meta:cs:
+
+* Relevant Nodes
+** Compute
+*** [[id:e791c58e-67f2-46ba-80c2-c81f5798ad70][GPU]]
+*** [[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]]
+*** [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]]
+** Network
+*** [[id:dd94cae5-96e2-4a46-9890-41c8c88059bc][Network optimization]]
+*** [[id:b12c5cec-227d-4d9a-8b14-bc99322eaf70][Infiniband]]
+** Storage
+*** [[id:ec72a732-2cc6-4f57-965b-c57f27f96a4e][Data Partitioning]]
+*** [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]
+** Misc
+*** [[id:2942e19b-b977-4cd9-8728-dbb58c5c732f][Hyper Converged Infrastructure]]

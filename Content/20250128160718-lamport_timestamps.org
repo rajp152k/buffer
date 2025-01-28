@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       13900f1e-27c1-40cf-bbcd-d9032634b835
+:END:
+#+title: Lamport Timestamps
+#+filetags: :cs:

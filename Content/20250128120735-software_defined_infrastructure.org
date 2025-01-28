@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       53c60845-ba0d-46e1-9d89-a3ebb399e2f5
+:END:
+#+title: Software Defined Infrastructure
+#+filetags: :hardware:cs:
+
+* Relevant Nodes
+** [[id:52c69951-3bcb-4aa8-9529-f18af61d46ff][Infrastructure as Code]]
+* Resources
+ - https://en.wikipedia.org/wiki/Software-defined_infrastructure

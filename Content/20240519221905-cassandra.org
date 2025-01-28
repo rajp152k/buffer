@@ -4,5 +4,11 @@
 #+title: Apache Cassandra
 #+filetags: :cs:data:
 
- - [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] (Key Value Store)
- - also see [[id:21124361-2f72-4270-9bfe-f12f52155476][Hinted Handoff]]
+[[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] [[id:972f53f5-0c08-4136-8214-1b62fba60360][NoSQL]] Store
+
+* Relevant Nodes
+** [[id:4f6c9fa4-ab8c-48da-a412-27a5a5867a21][DynamoDB]]
+** [[id:21124361-2f72-4270-9bfe-f12f52155476][Hinted Handoff]]
+
+* Resources
+ - https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       52c69951-3bcb-4aa8-9529-f18af61d46ff
+:END:
+#+title: Infrastructure as Code
+#+filetags: :hardware:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Infrastructure_as_code

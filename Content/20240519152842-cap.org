@@ -1,6 +1,5 @@
 :PROPERTIES:
 :ID:       20240519T152842.050227
-:ROAM_ALIASES: "Partition Tolerance(CAP)" Availability(CAP) Consistency(CAP)
 :END:
 #+title: CAP
 #+filetags: :cs:
@@ -12,8 +11,7 @@
 * The Tradeoff
 You can only guarantee two out of three properties:
 
- - Consistency (C): Everyone sees the same data at the same time.
-   - also see [[id:20240519T221608.054348][Eventual Consistency]]
+ - [[id:e833eafc-e622-4631-a1ee-f9c679a4d71d][Consistency]] (C): Everyone sees the same data at the same time.
 
  - Availability (A): The system is always up and running (responds to users t all times), even with some failures.
 

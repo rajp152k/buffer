@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e791c58e-67f2-46ba-80c2-c81f5798ad70
+:ROAM_ALIASES: "Graphical Processing Unit"
+:END:
+#+title: GPU
+#+filetags: :hardware:cs:

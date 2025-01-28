@@ -51,14 +51,12 @@
 * Design Considerations
  - Frequency and Priority of reads and writes
  - Redundancy requirements
- - value sizes/ability to store big data
+ - value sizes/ability to store [[id:710e11f8-780a-4aa5-84fc-c0ab9bb848c0][big data]]
  - high availability
  - automatic scaling
  - [[id:cec7319e-717f-41e6-8cb9-d82a3e3aaa1c][tunable consistency]]
-
-
-
-
+ - [[id:3df0c885-d021-4500-9c48-21922be7ff9d][PACELC]]
+ - [[id:ec72a732-2cc6-4f57-965b-c57f27f96a4e][Data Partitioning]]
 * Relevant Nodes
 ** [[id:4f6c9fa4-ab8c-48da-a412-27a5a5867a21][DynamoDB]]
 ** [[id:283c3a6b-6a8c-4e14-85f4-8f67494629ce][Redis]]

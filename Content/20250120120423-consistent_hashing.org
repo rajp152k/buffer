@@ -61,9 +61,26 @@
  - Hash Function Choice: Choosing a good hash function is crucial for ensuring even data distribution.
 
  - Virtual Nodes: To further improve load balancing, each physical node can be represented by multiple "virtual nodes" on the hash ring.
+   - allows for heterogeneity by alloting virtual nodes proportional to server sizes
 
  - Data [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Replication]]: Consistent hashing can be combined with replication strategies to ensure data availability even if nodes fail.
+* Data [[id:ec72a732-2cc6-4f57-965b-c57f27f96a4e][Partioning]] with [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Replication]]
 
+- *Data Organization*:
+  - Each data item is hashed to determine its position on the consistent hashing ring.
+  - Nodes (servers) are also assigned positions on the same ring.
+  - Data is stored on the node that is closest in the clockwise direction from the hashed position of the data.
+
+- *Replication Strategy*:
+  - Each data item can be replicated to multiple nodes to provide redundancy.
+  - With consistent hashing, replicas can be stored on the next 'k' nodes in the clockwise direction from the original node.
+  - This ensures that even if one node fails, the data can still be accessed from replicas.
+  - see [[id:20240519T200217.994784][Quorum]] for synchronization across replicas
+
+
+- *Handling Node Changes*:
+  - When a new node is added, only a fraction of the data needs to be rehashed and migrated; this is achieved by identifying the keys that fall within the new node's range on the ring.
+  - When a node is removed, its data is reassigned to the next nodes in the clockwise direction, ensuring minimal disruption.
 
 * Resources
  - https://www.toptal.com/big-data/consistent-hashing

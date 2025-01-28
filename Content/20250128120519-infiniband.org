@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b12c5cec-227d-4d9a-8b14-bc99322eaf70
+:END:
+#+title: Infiniband
+#+filetags: :hardware:network:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/InfiniBand

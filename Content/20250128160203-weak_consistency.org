@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3e3b2bcf-499e-4e94-a222-431faf3e724a
+:END:
+#+title: Weak Consistency
+#+filetags: :cs:

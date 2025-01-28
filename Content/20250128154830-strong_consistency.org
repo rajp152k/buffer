@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       b1cfb7fa-2a53-4433-8cef-6209c454e730
+:END:
+#+title: Strong Consistency
+#+filetags: :cs:
+
+* Overview
+
+- *Definition of Strong Consistency*: A [[id:20240519T152842.050227][consistency]] model in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] systems ensuring that all nodes see the same data at the same time.
+- *Key Features*:
+  - Guarantees immediate visibility of updates across all users and nodes.
+  - Prevents anomalies such as reading stale or outdated data.
+- *Use Cases*:
+  - Suitable for applications requiring strict data accuracy (e.g., banking systems, online transactions).
+- *Comparison with Other Models*:
+  - Strong consistency vs. [[id:20240519T221608.054348][eventual consistency]]: Strong consistency prioritizes immediate correctness over availability.
+  - Trade-offs often involve performance cost and potential system throughput reduction.
+
+
+* Variations via [[id:20240519T200217.994784][Quorum]]
+
+with the following:
+ - W : write quorum
+ - R : read quorum
+ - N : total nodes
+
+| Configuration R | Description                       |
+|----------------+-----------------------------------|
+| R = 1, W = N   | fast reads                        |
+| R = N, W = 1   | fast writes                       |
+| W + R > N      | strong consistency guaranteed     |
+| W + R <= N     | strong consistency not guaranteed |

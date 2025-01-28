@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       ec72a732-2cc6-4f57-965b-c57f27f96a4e
+:END:
+#+title: Data Partitioning
+#+filetags: :data:cs:
+
+* Overview
+
+
+- *Definition*: Data partitioning refers to the process of dividing a dataset into distinct subsets or segments for efficient management, analysis, or processing.
+
+- *Purposes*:
+  - Enhance performance by distributing data across nodes in a system.
+  - Improve data management in large datasets by isolating portions of data.
+  - Facilitate parallel processing and [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][load balancing]] in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] systems.
+
+- *Types of Data Partitioning*:
+  - *Horizontal Partitioning*: Divides data into rows, where each partition contains a subset of the total rows.
+    - Example: A database table split into multiple tables based on a range of ID values.
+  - *Vertical Partitioning*: Divides data into columns, where each partition holds a subset of the total columns.
+    - Example: A database where separate tables hold different attributes of an entity.
+  - *Hybrid Partitioning*: Involves a combination of both horizontal and vertical partitioning.
+
+- *Techniques for Partitioning*:
+  - *Range Partitioning*: Splits data based on ranges of values.
+  - *[[id:235113d9-983a-4782-a4e8-d027ba52d82b][Hash]] Partitioning*: Uses a hashing function to determine the partition for each data item.
+    - see [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent Hashing]]
+  - *List Partitioning*: Sets specific values that define which partition a data item belongs to.
+
+- *Challenges*:
+  - Inefficient load balancing can lead to performance bottlenecks.
+  - Complexity in managing data across partitions.
+  - Increased latency in retrieving data that spans multiple partitions.
+
+*** Connections and Insights:
+
+- A fundamental relationship exists between partitioning strategies and *[[id:7a6c0808-1246-411c-b330-20c60c2e37ac][performance optimization]]* in [[id:2f67eca9-5076-4895-828f-de3655444ee2][database]] management systems (DBMS). Properly designed partitions can significantly reduce query response times.
+
+- Partitioning can directly impact the ability to perform *distributed computing* effectively, making it a critical consideration in cloud computing infrastructures.
+
+- Efficient data partitioning strategies can play a vital role in *Big Data* analytics, enhancing the speed and efficiency of data processing by taking advantage of parallel processing capabilities.
+

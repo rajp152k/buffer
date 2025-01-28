@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       2942e19b-b977-4cd9-8728-dbb58c5c732f
+:END:
+#+title: Hyper Converged Infrastructure
+#+filetags: :hardware:cs:
+
+* Relevant Nodes
+** [[id:53c60845-ba0d-46e1-9d89-a3ebb399e2f5][Software Defined Infrastructure]]
+* Resources
+ - https://en.wikipedia.org/wiki/Hyper-converged_infrastructure

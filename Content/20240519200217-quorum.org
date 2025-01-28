@@ -7,7 +7,7 @@
 
  - fundamental concept in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]], serving as a decision-making mechanism to ensure consistency and coordination among multiple nodes (servers or processes).
  - establishes the minimum number of nodes that must participate or agree on a specific action for it to be considered valid or committed.
- - is tunable : providing granularity when trading off between the consistency and availability, also giving the option to prioritize reads and writes 
+ - is [[id:cec7319e-717f-41e6-8cb9-d82a3e3aaa1c][tunable]] : providing granularity when trading off between the consistency and availability, also giving the option to prioritize reads and writes
 
 To proceed with an operation, a designated number of nodes must vote in favor of it. This helps prevent conflicts and maintains data integrity, especially in scenarios where the system is prone to [[id:20240519T162542.805560][failures]] or network partitions.
 
@@ -48,8 +48,6 @@ widely used in various distributed systems, including:
  - Tuning Quorum Size: Setting the right quorum size is crucial. A smaller quorum favors availability, while a larger quorum prioritizes consistency.
 
 Overall, quorum is a powerful tool for managing distributed systems, but it requires careful consideration and configuration to balance consistency, availability, and fault tolerance.
-
-
 
 * Misc
  - see [[id:20240519T201001.324666][Merkle Tree]]

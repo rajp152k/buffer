@@ -37,10 +37,7 @@ This is an index of relevant nodes
 ** Transport cost is zero
 ** The network is homogenous
 * Versioning
-** Lamport Timestamps
-:PROPERTIES:
-:ID:       20240519T185811.832145
-:END:
+** [[id:13900f1e-27c1-40cf-bbcd-d9032634b835][Lamport Timestamps]]
 
  - simple way to track the order of events in a distributed system, where multiple computers work together.
  - help understand which event happened before another, even if the computers' clocks are not perfectly synchronized.
@@ -93,7 +90,7 @@ Imagine two computers, A and B:
 
  - powerful tool in distributed systems to track the order of events and detect causality relationships.
 
- - solve the limitations of [[id:20240519T185811.832145][Lamport timestamps]], which cannot distinguish between concurrent events.
+ - solve the limitations of [[id:13900f1e-27c1-40cf-bbcd-d9032634b835][Lamport Timestamps]]  which cannot distinguish between concurrent events.
 
 *** Working Mechanism
 

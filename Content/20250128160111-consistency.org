@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       e833eafc-e622-4631-a1ee-f9c679a4d71d
+:END:
+#+title: Consistency
+#+filetags: :meta:cs:
+
+
+See [[id:20240519T152842.050227][CAP]]
+
+* Relevant Nodes
+** [[id:b1cfb7fa-2a53-4433-8cef-6209c454e730][Strong Consistency]]
+ - client never sees out of date data
+ - any read always corresponds to the most recent write
+** [[id:20240519T221608.054348][Eventual Consistency]]
+ - given enough time, all updates are propagated and all replicas are consistent
+** [[id:3e3b2bcf-499e-4e94-a222-431faf3e724a][Weak Consistency]]
+ - subsequent read operations may not see the most updated value

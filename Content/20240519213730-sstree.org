@@ -4,7 +4,7 @@
 #+title: SS Table
 #+filetags: :data:cs:
 
- - SSTable, short for Sorted String Table, is a simple yet powerful data structure used in many storage systems, including NoSQL databases like Cassandra and LevelDB. It's a fundamental building block for efficient data storage and retrieval.
+ - SSTable, short for Sorted String Table, is a simple yet powerful data structure used in many storage systems, including [[id:972f53f5-0c08-4136-8214-1b62fba60360][NoSQL]] databases like [[id:20240519T221905.005300][Cassandra]] and LevelDB. It's a fundamental building block for efficient data storage and retrieval.
 
  - versatile and efficient [[id:20230715T173535.681936][data structure]] that plays a crucial role in many storage systems, particularly those that require high performance and scalability.
 
@@ -12,7 +12,7 @@
 
  - Sorted: Data within an SSTable is sorted by keys, making it easy to find specific records using binary search.
 
- - Immutable: Once created, an SSTable cannot be modified. This immutability simplifies concurrency control and allows for efficient merging of multiple SSTables.
+ - [[id:efba8f9b-a5df-4212-94c9-230bef916b5c][Immutable]]: Once created, an SSTable cannot be modified. This immutability simplifies concurrency control and allows for efficient merging of multiple SSTables.
 
  - Persistent: SSTables are typically stored on disk for long-term persistence.
 

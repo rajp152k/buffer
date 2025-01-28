@@ -20,17 +20,21 @@
 
  - Crash Failures: A node stops responding completely.
  - Omission Failures: A node fails to send or receive messages.
- - Byzantine Failures: A node behaves arbitrarily or maliciously.
+ - [[id:7a45b00c-b5fc-4132-a572-db798a5078d2][Byzantine Failures]]: A node behaves arbitrarily or maliciously.
 
 * Failure Detection Mechanisms
 
- - Heartbeating: Nodes periodically send "I'm alive" messages to a central monitor or each other. Absence of heartbeats indicates a potential failure.
+ - Heart-beating: Nodes periodically send "I'm alive" messages to a central monitor or each other. Absence of heartbeats indicates a potential failure.
 
  - Ping/Echo: A node sends a ping message, and the other node replies with an echo. Lack of response suggests a failure.
 
- - Gossip Protocols: Nodes exchange information about the health of other nodes, spreading failure information quickly.
+ - [[id:f82e5b8d-a4a4-4f0b-be4e-49d5fd676dc3][Gossip Protocols]]: Nodes exchange information about the health of other nodes, spreading failure information quickly.
 
  - Timeout-Based Detection: If a node doesn't respond within a certain time, it's assumed to have failed.
+
+ - [[id:2cf696b9-cdd3-473b-8aff-adccc54cccdf][Anti-Entropy Protocols]]
+
+
 
 * Failure Detector Properties
 

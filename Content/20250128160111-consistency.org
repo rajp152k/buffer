@@ -7,6 +7,8 @@
 
 See [[id:20240519T152842.050227][CAP]]
 
+* Inconsistency Detection
+** [[id:20240519T201001.324666][Merkle Tree]]
 * Inconsistency Reconciliation
 ** [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Versioning]]
 * Relevant Nodes

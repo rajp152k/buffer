@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e8f3c721-0dba-4dc7-803f-263e88a47596
+:END:
+#+title: Network Partitioning
+#+filetags: :cs:
+
+* Relevant Nodes
+** [[id:20240519T152842.050227][CAP]]

@@ -27,7 +27,7 @@ To proceed with an operation, a designated number of nodes must vote in favor of
 
  - Availability: improves availability by allowing operations to proceed even when some nodes are unavailable.
 
-* Types of Quorum
+* Reads & Writes
 
  - Read Quorum: The minimum number of nodes that must respond to a read request before the data is considered valid.
 
@@ -49,5 +49,3 @@ widely used in various distributed systems, including:
 
 Overall, quorum is a powerful tool for managing distributed systems, but it requires careful consideration and configuration to balance consistency, availability, and fault tolerance.
 
-* Misc
- - see [[id:20240519T201001.324666][Merkle Tree]]

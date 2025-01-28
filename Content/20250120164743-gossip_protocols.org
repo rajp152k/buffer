@@ -3,3 +3,36 @@
 :END:
 #+title: Gossip Protocols
 #+filetags: :network:cs:
+
+* Overview
+
+- *Definition*: Gossip protocols are decentralized communication protocols used in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] systems to disseminate information in a manner akin to how gossip spreads in social settings.
+
+- *Characteristics*:
+  - *[[id:b4b52e81-fc9e-4c62-89ab-8ea199fe77eb][Decentralization]]*: No single point of failure; all nodes have equal responsibility.
+  - *[[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]*: Efficiently shares information regardless of the number of nodes.
+  - *Robustness*: Resilient to node failures and can adapt to dynamic changes in the network.
+  - *[[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][Asynchronous]]*: Nodes do not need to operate in sync, reducing bottleneck effects.
+
+- *Types of Gossip Protocols*:
+  - *Push-based*: Nodes actively send messages to a selected subset of peers.
+  - *Pull-based*: Nodes request information from other nodes, typically when they feel they need data.
+  - *Hybrid*: Combines aspects of both push and pull methods for optimized dissemination.
+
+- *Use Cases*:
+  - *[[id:8cd19397-b5e5-40b6-a172-456c34985a11][Database replication]]*: Ensuring data consistency across distributed database systems.
+  - *Peer-to-peer networks*: Distributing resources or information among participating nodes.
+  - *Monitoring systems*: Collecting status updates and health checks across nodes in large networks.
+
+- *Advantages*:
+  - *Reduced bandwidth consumption*: By selectively sending updates.
+  - *[[id:20240519T162542.805560][Fault tolerance]]*: Nodes can join or leave without greatly impacting the overall system.
+  - *Fast data dissemination*: Information can spread rapidly even in large networks.
+
+- *Challenges*:
+  - *Inexact state*: Nodes may have outdated or inconsistent views of the data.
+  - *Message overhead*: Inefficiencies can arise during large-scale data transmissions.
+  - *Security*: Susceptible to malicious attacks if not properly designed.
+
+* Resources
+ - https://en.wikipedia.org/wiki/Gossip_protocol

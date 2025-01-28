@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cba21706-d0d4-4044-8cf1-cbafadad899f
+:ROAM_ALIASES: "High Availability" HA
+:END:
+#+title: Availability
+#+filetags: :cs:

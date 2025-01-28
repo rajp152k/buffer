@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       20240519T201001.324666
+:ROAM_ALIASES: "Hash Tree"
 :END:
 #+title: Merkle Tree
 #+filetags: :cs:

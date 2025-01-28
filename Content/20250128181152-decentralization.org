@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b4b52e81-fc9e-4c62-89ab-8ea199fe77eb
+:END:
+#+title: Decentralization
+#+filetags: :meta:

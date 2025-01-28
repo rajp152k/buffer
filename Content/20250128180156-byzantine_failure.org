@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       7a45b00c-b5fc-4132-a572-db798a5078d2
+:ROAM_ALIASES: "Byzantine General's Problem" "Byzantine Fault"
+:END:
+#+title: Byzantine Failure
+#+filetags: :cs:meta:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Byzantine_fault

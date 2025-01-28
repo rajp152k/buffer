@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       12ea2ca7-31e6-4ba7-834f-db7560f8075a
+:END:
+#+title: Sloppy Quorum
+#+filetags: :cs:
+
+* Overview
+
+- *Definition of Sloppy [[id:20240519T200217.994784][Quorum]]*:
+  - A system design pattern commonly used in distributed systems.
+  - It allows for read or write operations to succeed even when some nodes in the cluster are down or unreachable.
+
+- *Key Characteristics*:
+  - Offers high [[id:cba21706-d0d4-4044-8cf1-cbafadad899f][availability]] and [[id:20240519T162542.805560][fault tolerance]].
+  - Data replication across multiple nodes enhances resiliency.
+  - Reduced consistency guarantees in exchange for availability.
+
+- *The Role of Quorum*:
+  - A traditional quorum requires a majority of nodes to respond for an operation to succeed.
+  - Sloppy quorum relaxes this criterion, allowing operations to proceed with responses from fewer nodes or even from nodes that are not part of the intended quorum.
+
+- *Use Cases*:
+  - Often implemented in systems where speed and uptime are prioritized over strict consistency, such as in NoSQL databases.
+  - Can be beneficial in managing transient failures or network partitions.
+
+- *Trade-offs*:
+  - While it improves availability, it may lead to stale reads or temporary inconsistencies in the system.
+  - Use requires careful consideration of the acceptable level of inconsistency for the application in question.
+
+* Relevant Node
+** [[id:21124361-2f72-4270-9bfe-f12f52155476][Hinted Handoff]]
+* Resources
+ - https://distributed-computing-musings.com/2022/05/sloppy-quorum-and-hinted-handoff-quorum-in-the-times-of-failure/
+ - https://scalablehuman.com/2021/11/23/distributed-data-intensive-systems-sloppy-quorums-and-hinted-handoffs/

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       2cf696b9-cdd3-473b-8aff-adccc54cccdf
+:END:
+#+title: Anti-Entropy Protocols
+#+filetags: :cs:
+
+* Overview
+
+- *Definition*:
+  - Anti-entropy protocols are methods used in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] systems to ensure data [[id:e833eafc-e622-4631-a1ee-f9c679a4d71d][consistency]] across nodes.
+
+- *Purpose*:
+  - They help reconcile differences between [[id:8cd19397-b5e5-40b6-a172-456c34985a11][replicas]], particularly in systems where data may diverge due to concurrent writes or network failures.
+
+- *Mechanisms*:
+  - These protocols typically involve periodic checks of data states across nodes, followed by synchronization to resolve discrepancies.
+
+- *Types*:
+  - *Push-based*: One node sends its data state to others.
+  - *Pull-based*: Nodes request updates from one another.
+  - *Hybrid*: Combines both push and pull mechanisms.
+
+- *Application*:
+  - Commonly used in distributed databases (e.g., [[id:4f6c9fa4-ab8c-48da-a412-27a5a5867a21][Dynamo]], [[id:20240519T221905.005300][Cassandra]]) and [[id:20240519T201442.376294][peer-to-peer]] networks.
+
+- *Challenges*:
+  - [[id:aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23][Latency]]: Ensuring prompt updates can be difficult in large networks.
+  - [[id:e8f3c721-0dba-4dc7-803f-263e88a47596][Network Partitioning]]: Handling situations where network splits can lead to divergent state.
+  - Performance: Balancing consistency checks without overloading the system.

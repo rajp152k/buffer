@@ -9,7 +9,7 @@
 
 - *Definition*: NTP is a [[id:a4e712e1-a233-4173-91fa-4e145bd68769][networking]] protocol used for [[id:20240520T101029.699685][synchronizing]] the clocks of computer systems over packet-switched, variable-[[id:aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23][latency]] data networks.
 - *Purpose*: To ensure that the time across all devices in a network is consistent and precise, facilitating coordinated activities and operations.
-- *History*: Developed in the 1980s; first specification was published in RFC 1059. The current version is NTPv4, defined in RFC 5905.
+- *History*: Developed in the 1980s; first specification was published in [[id:ef9b76ba-e4fd-4f57-9cb2-8ffc7daf75a0][RFC]] 1059. The current version is NTPv4, defined in RFC 5905.
 - *Architecture*:
   - *Stratum Levels*: NTP is organized hierarchically; each level is referred to as a "stratum." Stratum 0 is atomic clocks or GPS; Stratum 1 servers are directly connected to Stratum 0; Stratum 2 servers sync with Stratum 1, and so forth.
   - *Clients and Servers*: Devices can act as both NTP clients and servers, allowing for a decentralized timekeeping network.

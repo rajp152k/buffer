@@ -1,5 +1,10 @@
 :PROPERTIES:
 :ID:       ef9b76ba-e4fd-4f57-9cb2-8ffc7daf75a0
+:ROAM_ALIASES: RFC
 :END:
 #+title: Request For Comments
 #+filetags: :meta:cs:
+
+
+* RFC index
+ - https://www.rfc-editor.org/rfc-index.html

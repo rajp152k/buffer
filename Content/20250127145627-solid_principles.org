@@ -26,4 +26,5 @@ Set of Rules for guiding writing maintainable [[id:20231212T081851.998455][objec
 
 5. *Dependency Inversion  (DI):*
    - High-level modules should not depend on low-level modules. Both should depend on abstractions.
+   - abstractions should not depend on details. Details should depend on abstractions.
    - Aims to reduce coupling between different components of a system.

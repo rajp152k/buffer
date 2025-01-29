@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       83fcf7a6-975c-4d87-a1ae-04b02e99d691
+:ROAM_ALIASES: IETF
+:END:
+#+title: Internet Engineering Task Force
+#+filetags: :network:cs:
+
+* Resources
+ - https://www.ietf.org/

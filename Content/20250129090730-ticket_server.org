@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       08e87128-1875-458c-9ffb-b1b2011bd46c
+:END:
+#+title: Ticket Server
+#+filetags: :meta:cs:
+
+* Resources
+ - https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6b4fb8e9-cda1-41fd-99bc-f543a9f9cca3
+:END:
+#+title: UUID
+#+filetags: :meta:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Universally_unique_identifier

@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       83a720e8-9ef7-43e7-bdf0-3e09f5099f12
+:ROAM_ALIASES: NTP
+:END:
+#+title: Network Time Protocol
+#+filetags: :network:cs:
+
+* Overview
+
+- *Definition*: NTP is a [[id:a4e712e1-a233-4173-91fa-4e145bd68769][networking]] protocol used for [[id:20240520T101029.699685][synchronizing]] the clocks of computer systems over packet-switched, variable-[[id:aa3f4461-08f4-4a3d-ae4b-5704d1f3dd23][latency]] data networks.
+- *Purpose*: To ensure that the time across all devices in a network is consistent and precise, facilitating coordinated activities and operations.
+- *History*: Developed in the 1980s; first specification was published in RFC 1059. The current version is NTPv4, defined in RFC 5905.
+- *Architecture*:
+  - *Stratum Levels*: NTP is organized hierarchically; each level is referred to as a "stratum." Stratum 0 is atomic clocks or GPS; Stratum 1 servers are directly connected to Stratum 0; Stratum 2 servers sync with Stratum 1, and so forth.
+  - *Clients and Servers*: Devices can act as both NTP clients and servers, allowing for a decentralized timekeeping network.
+- *Time Synchronization Process*:
+  - Exchange of timestamps to calculate round-trip delays and adjust clock settings accordingly.
+  - Uses algorithms to compensate for network latency fluctuations.
+
+*** Connections Between Entities
+
+- *Precision*: NTP is critical for applications requiring precise timestamps, such as financial transactions, logging events, and scientific computations.
+- *Security Considerations*: NTP is subject to various attacks (e.g., NTP amplification), necessitating the use of security measures, including NTP Authentication (using symmetric keys).
+- *Impact on Services*: Accurate time affects database transactions, certificate validity (TLS/SSL), and many other time-dependent operations in cybersecurity and networking.
+
+*** Questions for Further Context
+
+1. What specific applications or systems are you interested in regarding NTP implementation?
+2. Are you looking for insights related to the security implications of NTP, or do you want more details about the technical specifications?
+3. Would you like to explore comparisons with alternative time synchronization protocols, such as PTP (Precision Time Protocol)?
+
+*** Pathways for Further Research
+
+- What are the latest advancements in NTP security measures, and how are they implemented in modern systems?
+- How does the stability and accuracy of NTP compare with other time synchronization protocols in different network environments?
+- What are some of the real-world case studies highlighting the importance of accurate time synchronization in critical applications?
+* Relevant Nodes
+** [[id:20240520T101029.699685][Synchronization]]
+* Resources
+ - https://en.wikipedia.org/wiki/Network_Time_Protocol

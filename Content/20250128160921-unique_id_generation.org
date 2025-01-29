@@ -3,3 +3,8 @@
 :END:
 #+title: Unique ID generation
 #+filetags: :cs:
+
+* Relevant Nodes
+** [[id:6b4fb8e9-cda1-41fd-99bc-f543a9f9cca3][UUID]]
+** [[id:08e87128-1875-458c-9ffb-b1b2011bd46c][Ticket Server]]
+** [[id:efa64b1b-a93e-47ad-a390-be9eae28ef27][Snowflake ID]]

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       efa64b1b-a93e-47ad-a390-be9eae28ef27
+:END:
+#+title: Snowflake ID
+#+filetags: :cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Snowflake_ID

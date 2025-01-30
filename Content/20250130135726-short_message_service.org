@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       640d4127-b673-4b39-ab5c-1067da4b4170
+:ROAM_ALIASES: SMS
+:END:
+#+title: Short Message Service
+#+filetags: :network:web:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/SMS

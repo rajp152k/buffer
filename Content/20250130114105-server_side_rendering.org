@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       4eb41fa1-86f3-481a-82f4-97f3618e2d0c
+:END:
+#+title: Server Side Scripting
+#+filetags: :web:cs:
+
+* Resource
+- https://duckduckgo.com/?t=ffab&q=server+side+rendering&ia=web

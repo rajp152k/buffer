@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       12e7fd9a-e488-43eb-8b8b-468aa50d9750
+:END:
+#+title: Notification System
+#+filetags: :web:cs:
+
+* Overview
+
+
+Notifications are essential components in modern [[id:24f4040a-7c18-416a-8460-e69280d437bf][web]] and software applications, serving as a primary means of [[id:20240114T210106.876975][communication]] between the system and its users. They inform users about important events, updates, reminders, and actions that may require immediate attention or interaction. Effective notification systems enhance user engagement, improve the overall user experience, and ensure that critical information is conveyed in a timely and unobtrusive manner.
+
+
+** *Types of Notifications:*
+   - *Push Notifications:* Delivered directly to a user's device or browser, even when the user is not actively using the application.
+   - *In-App Notifications:* Appear within the application interface while the user is actively engaged with the app.
+   - *Email Notifications:* Sent to the user's email address, suitable for less urgent or detailed information.
+   - *SMS Notifications:* Text messages sent to a user's mobile device for immediate attention.
+
+** *Delivery Channels:*
+   - *Desktop:* Utilizing operating system capabilities to display notifications on desktop environments.
+   - *Mobile:* Leveraging mobile platforms (iOS, Android) to deliver notifications to smartphones and tablets.
+   - *Web Browsers:* Using browser APIs like the Web Notifications API to display notifications within web applications.
+
+** *User Preferences and Control:*
+   - Allowing users to customize the types of notifications they receive.
+   - Providing options to enable or disable specific notification channels.
+   - Setting preferences for notification sounds, banners, and alert styles.
+
+** *Design and UX Considerations:*
+   - Ensuring notifications are concise, relevant, and actionable.
+   - Avoiding notification fatigue by preventing excessive or redundant alerts.
+   - Maintaining consistency in notification appearance and behavior across platforms.
+
+** *Security and Privacy:*
+   - Safeguarding user data by ensuring notifications do not expose sensitive information.
+   - Complying with privacy regulations and obtaining necessary user permissions before sending notifications.
+
+** *Use Cases:*
+   - *User Engagement:* Informing users about new features, updates, or promotions to enhance engagement.
+   - *Transactional Alerts:* Notifying users about account activities, such as password changes or transaction confirmations.
+   - *Reminders:* Reminding users of upcoming events, deadlines, or tasks.
+   - *Real-Time Updates:* Providing instant updates in applications like messaging, social media, or collaborative tools.
+
+* Types
+** Android Push Notifications
+ - https://en.wikipedia.org/wiki/Firebase_Cloud_Messaging
+** iOS Push Notifications
+ - https://en.wikipedia.org/wiki/Apple_Push_Notification_service
+** SMS Messages
+* Relevant Nodes
+** [[id:03555665-04d5-4fef-b99b-3b71532dc0fe][Real Time Systems]]
+* Resources
+ - https://en.wikipedia.org/wiki/Notification_system

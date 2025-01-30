@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       24f4040a-7c18-416a-8460-e69280d437bf
+:ROAM_ALIASES: Web
 :END:
 #+title: Internet
 #+filetags: :programming:

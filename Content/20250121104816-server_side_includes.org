@@ -4,5 +4,7 @@
 #+title: Server Side Includes
 #+filetags: :web:cs:
 
+* Relevant Nodes
+** [[id:4eb41fa1-86f3-481a-82f4-97f3618e2d0c][Server Side Scripting]]
 * Resources
   - https://en.wikipedia.org/wiki/Server_Side_Includes

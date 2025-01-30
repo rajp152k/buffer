@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       03555665-04d5-4fef-b99b-3b71532dc0fe
+:END:
+#+title: Real Time Computing
+#+filetags: :web:
+
+* Relevant Nodes
+** [[id:12e7fd9a-e488-43eb-8b8b-468aa50d9750][Notification System]]
+** [[id:7710df45-8380-4c5d-a9a8-ad29424ba619][Real Time Operating Systems]]
+* Resources
+  - https://en.wikipedia.org/wiki/Real-time_computing

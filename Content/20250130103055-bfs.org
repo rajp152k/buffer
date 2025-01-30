@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       830c800c-624a-41a1-a74e-067f89e99d0f
+:ROAM_ALIASES: "Breadth First Search"
+:END:
+#+title: BFS
+#+filetags: :math:cs:

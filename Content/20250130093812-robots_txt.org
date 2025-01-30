@@ -3,3 +3,6 @@
 :END:
 #+title: robots.txt
 #+filetags: :web:cs:
+
+* Resources
+ - https://developers.google.com/search/docs/crawling-indexing/robots/intro

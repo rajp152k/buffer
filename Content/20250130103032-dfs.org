@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       28c51a97-d3f8-4a24-867b-f46c33142091
+:ROAM_ALIASES: "Depth First Search"
+:END:
+#+title: DFS
+#+filetags: :math:cs:

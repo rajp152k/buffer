@@ -2,5 +2,8 @@
 :ID:       91b6fb5d-6447-43fe-8412-2054bb79979a
 :END:
 #+title: Probability
-#+filetags: :tbp:root:math:
+#+filetags: :root:math:
 
+* Relevant Nodes
+** [[id:a9d48b64-5190-443d-86c5-90a0542dff7d][Probabilistic Computing]]
+** [[id:230c7de3-42d0-407f-9893-b49275a7055e][Probabilistic Design]]

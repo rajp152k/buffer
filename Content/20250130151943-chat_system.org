@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       7170c13f-c86f-416c-8974-05b8c1d5824b
+:END:
+#+title: Chat System
+#+filetags: :web:cs:
+
+* Relevant Nodes
+** [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]
+** [[id:f631ba6f-8622-4bcf-ae0d-8ed7cd4a0798][Web Sockets]]
+** [[id:f351ecb4-4d63-4be4-9c12-5aa934dcddd5][Polling]]
+** Long Polling
+ - https://stackoverflow.com/questions/11077857/what-are-long-polling-websockets-server-sent-events-sse-and-comet
+** [[id:935d3a14-db38-4127-964d-25f9223f08b2][Server Sent Events]]
+** [[id:92342b8b-1c09-4e1f-9799-66d060678c31][End to End Encryption]]
+ - https://faq.whatsapp.com/820124435853543/?locale=en_US
+* Resources
+ - https://en.wikipedia.org/wiki/Online_chat
+ - http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf

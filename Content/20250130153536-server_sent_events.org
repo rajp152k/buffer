@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       935d3a14-db38-4127-964d-25f9223f08b2
+:END:
+#+title: Server Sent Events
+#+filetags: :network:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Server-sent_events

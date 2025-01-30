@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       28b0fe66-7df3-4680-bf87-388d542eea80
+:END:
+#+title: Internet Relay Chat
+#+filetags: :web:cs:

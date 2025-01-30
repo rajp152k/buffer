@@ -232,3 +232,4 @@ func main() {
 
 * Resources
  - https://github.com/avelino/awesome-go
+ - https://github.com/gostor/awesome-go-storage

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       aeed76af-79df-40c0-a758-04d5bf967a8d
+:ROAM_ALIASES: Auto-Complete
+:END:
+#+title: Incremental Search
+#+filetags: :meta:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Incremental_search

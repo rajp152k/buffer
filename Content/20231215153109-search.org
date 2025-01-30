@@ -3,8 +3,10 @@
 :ROAM_ALIASES: "Information Retrieval"
 :END:
 #+title: Search
-#+filetags: :meta:
+#+filetags: :cs:meta:
 
+* Relevant Nodes
+** [[id:aeed76af-79df-40c0-a758-04d5bf967a8d][Incremental Search]]
 * Tooling
 - https://lunrjs.com/
 - https://xapian.org/

@@ -21,3 +21,6 @@ Index into system design aspects with brief descriptions about their significanc
 | [[id:3df0c885-d021-4500-9c48-21922be7ff9d][PACELC]]                         | CAP + Trade-offs without Network Partition |
 | [[id:659e7518-56e1-4a6b-b24f-4601d66fa449][Proxy Server]]                   | request/response manipulation facilities   |
 | [[id:a9f836f0-d43d-4e97-96fc-06f75e982d15][Rate Limiting]]                  | Avoid exploits of your exposures           |
+| [[id:f9e8ec8f-47d8-4bc5-b03e-7c92131506f0][News Feed]]                      | Social Media BackBone                      |
+| [[id:12e7fd9a-e488-43eb-8b8b-468aa50d9750][Notification System]]            | App Push Notifications, Email, SMS         |
+| [[id:e9973a5d-a0bb-49b5-9767-af6df7a459eb][Geo-Replication]]                | Multi-DC System Design                     |

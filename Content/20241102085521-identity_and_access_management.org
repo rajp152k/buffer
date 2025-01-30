@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       4e1d433c-9f6b-46c7-ad06-4f8bf798785e
+:ROAM_ALIASES: Authorization Authentication
 :END:
 #+title: Identity and Access Management
 #+filetags: :cs:sec:

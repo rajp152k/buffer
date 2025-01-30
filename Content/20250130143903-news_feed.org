@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f9e8ec8f-47d8-4bc5-b03e-7c92131506f0
+:ROAM_ALIASES: "Web Feed"
+:END:
+#+title: News Feed
+#+filetags: :web:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Web_feed
+ - https://en.wikipedia.org/wiki/Feed_(Facebook)
+ - https://www.facebook.com/help/327131014036297/

@@ -5,5 +5,6 @@
 #+filetags: :web:
 
 * Resources
+ - https://en.wikipedia.org/wiki/WebSocket
+ - https://websockets.spec.whatwg.org/
  - https://www.fullstackpython.com/websockets.html
-

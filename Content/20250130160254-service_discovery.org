@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fa881655-d8d5-4030-ac75-b3fd915cb25a
+:END:
+#+title: Service Discovery
+#+filetags: :network:cs:
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Service_discovery

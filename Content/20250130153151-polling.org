@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f351ecb4-4d63-4be4-9c12-5aa934dcddd5
+:END:
+#+title: Polling
+#+filetags: :network:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Polling_(computer_science)

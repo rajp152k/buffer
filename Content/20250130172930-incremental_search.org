@@ -5,5 +5,7 @@
 #+title: Incremental Search
 #+filetags: :meta:cs:
 
+* Relevant Nodes
+** [[id:622ceaa8-2f11-4ae0-917f-348a8e015767][Trie]]
 * Resources
  - https://en.wikipedia.org/wiki/Incremental_search

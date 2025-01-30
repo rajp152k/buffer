@@ -32,3 +32,4 @@ A quick index into most common abbreviations in the domain of computer science
 | [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]    | Transport Layer Security               |
 | [[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]   | Unified Extensible Firmware Interface  |
 | URL    | [[id:1416fc14-1fe4-4d48-8345-af3532f35758][Uniform Resource Locator]]               |
+| [[id:5074cb27-3858-4a66-80f4-73bb5a876926][UTF]]    | [[id:5074cb27-3858-4a66-80f4-73bb5a876926][Unicode Transformation Format]]          |

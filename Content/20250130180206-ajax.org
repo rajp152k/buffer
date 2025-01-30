@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       b7ddde8c-c046-4c15-9281-9425c5843599
+:END:
+#+title: AJAX
+#+filetags: :web:cs:
+
+* Relevant Nodes
+** [[id:20240101T074056.003771][Javascript]]
+** [[id:c29d0cf9-9d79-4b00-9884-150722729ab9][XML]]
+* Resources
+- https://en.wikipedia.org/wiki/Ajax_(programming)

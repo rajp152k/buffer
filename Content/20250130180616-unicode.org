@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5074cb27-3858-4a66-80f4-73bb5a876926
+:ROAM_ALIASES: UTF
+:END:
+#+title: Unicode Transformation Format
+#+filetags: :meta:cs:
+
+* Resources
+ - https://unicode.org/
+ - https://en.wikipedia.org/wiki/Unicode

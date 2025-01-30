@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       622ceaa8-2f11-4ae0-917f-348a8e015767
+:ROAM_ALIASES: "Prefix Tree" "Digital Tree"
+:END:
+#+title: Trie
+#+filetags: :data:cs:
+
+ - from re *trie* val
+ - pronounce "try"
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Trie
+ - https://github.com/cloudflare/trie-hard
+ - https://github.com/dghubble/trie

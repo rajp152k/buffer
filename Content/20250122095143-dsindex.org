@@ -23,3 +23,4 @@ Index into data structures of varying complexities and brief descriptions about 
 | [[id:e20be945-5df7-4b35-aab5-a9a439b62de8][Stack]]            | filo/lifo                          |
 | [[id:2d6c7979-5049-435b-b405-0c685fbe06de][Vector Clocks]]    | Distributed [[id:038e3720-0307-41d8-bcb1-e77b75a161df][versioning]]             |
 | [[id:538c3459-b8c3-4bd0-9217-e2a068c31323][Crawler Frontier]] | priority queues for web crawlers   |
+| [[id:622ceaa8-2f11-4ae0-917f-348a8e015767][Trie]]             | accelerated prefix indexing        |

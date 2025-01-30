@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       a02542b4-23d5-4fa8-9469-45edc4dcee69
+:ROAM_ALIASES: "Simple Mail Transfer Protocol"
+:END:
+#+title: SMTP
+#+filetags: :network:cs:
+
+* Resources
+- https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol

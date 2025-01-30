@@ -46,7 +46,8 @@ Notifications are essential components in modern [[id:24f4040a-7c18-416a-8460-e6
  - https://en.wikipedia.org/wiki/Firebase_Cloud_Messaging
 ** iOS Push Notifications
  - https://en.wikipedia.org/wiki/Apple_Push_Notification_service
-** SMS Messages
+** [[id:640d4127-b673-4b39-ab5c-1067da4b4170][SMS]] Messages
+** [[id:d62399b2-10b5-4d6c-94ed-42daefd459fe][Email]]
 * Relevant Nodes
 ** [[id:03555665-04d5-4fef-b99b-3b71532dc0fe][Real Time Systems]]
 * Resources

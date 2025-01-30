@@ -24,8 +24,10 @@ A quick index into most common abbreviations in the domain of computer science
 | RFC    | [[id:ef9b76ba-e4fd-4f57-9cb2-8ffc7daf75a0][Request For Comments]]                   |
 | [[id:2ca00f18-a0ee-4f5c-8e32-ca908096930d][SDLC]]   | Software Development Life Cycle        |
 | [[id:fe847008-84df-4128-8a72-7b15ac5655cf][SHA]]    | [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Secure]] [[id:235113d9-983a-4782-a4e8-d027ba52d82b][Hash]] Algorithms                 |
+| SMS    | [[id:640d4127-b673-4b39-ab5c-1067da4b4170][Short Message Service]]                  |
 | SSL    | Secure Sockets Layer: Precursor to [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]] |
 | [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]    | Transport Layer Security               |
 | [[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]   | Unified Extensible Firmware Interface  |
 | URL    | [[id:1416fc14-1fe4-4d48-8345-af3532f35758][Uniform Resource Locator]]               |
-| SMS    | [[id:640d4127-b673-4b39-ab5c-1067da4b4170][Short Message Service]]                  |
+| [[id:a02542b4-23d5-4fa8-9469-45edc4dcee69][SMTP]]   | Simple Mail Transfer Protocol          |
+| SPOF   | [[id:965dfd38-4fc5-4893-8dbe-4ac21630aba3][Single Point of Failure]]                |

@@ -53,3 +53,18 @@
 ** *Connections:*
 - The type of analytics used often correlates with business objectives, such as forecasting demand (predictive) or improving operational efficiency (prescriptive).
 - Tools and technologies are selected based on the data complexity, volume, and specific use cases within an organization.
+
+* [[id:d9a3aabe-114b-43c6-81f9-ca6e01ed3f46][Software]] Analytics
+
+1. *Definition*:
+   - Software analytics refers to the process of collecting, measuring, and analyzing software data to gain insights into software development, performance, and user behavior.
+
+2. *Types of Data*:
+   - *Code Metrics*: Measures related to the codebase (e.g., lines of code, complexity).
+   - *Performance Metrics*: Data on how software performs under various conditions (e.g., response times, CPU usage).
+   - *User Analytics*: Insights into user interactions and engagement (e.g., user journeys, feature usage).
+
+3. *Benefits*:
+   - *Improved Decision-Making*: Data-driven insights lead to more informed decisions in software development.
+   - *Enhanced Performance*: Continuous monitoring helps identify bottlenecks and optimize performance.
+   - *User-Centric Development*: Understanding user behavior can inform feature development and UX improvements.

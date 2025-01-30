@@ -10,3 +10,5 @@
 
 * Relevant Nodes
 ** [[id:fe847008-84df-4128-8a72-7b15ac5655cf][SHA]]
+* Resources
+ - https://link.springer.com/content/pdf/10.1007/3-540-58108-1_10.pdf

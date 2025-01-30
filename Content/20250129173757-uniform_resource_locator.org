@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1416fc14-1fe4-4d48-8345-af3532f35758
+:ROAM_ALIASES: URL
+:END:
+#+title: Uniform Resource Locator
+#+filetags: :web:network:cs:

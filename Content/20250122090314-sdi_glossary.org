@@ -24,4 +24,4 @@ A quick index into most common abbreviations in the domain of computer science
 | [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]    | Transport Layer Security               |
 | RFC    | [[id:ef9b76ba-e4fd-4f57-9cb2-8ffc7daf75a0][Request For Comments]]                   |
 | IETF   | [[id:83fcf7a6-975c-4d87-a1ae-04b02e99d691][Internet Engineering Task Force]]        |
-|        |                                        |
+| URL    | [[id:1416fc14-1fe4-4d48-8345-af3532f35758][Uniform Resource Locator]]               |

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       d3d34ec7-b391-4b8b-bb9e-7b8e7b6e2a37
+:ROAM_ALIASES: "web bot" "web spider"
+:END:
+#+title: Web Crawler
+#+filetags: :web:cs:
+
+* Overview
+
+- *Definition*: A [[id:24f4040a-7c18-416a-8460-e69280d437bf][web]] crawler, also known as a web spider or web bot, is a program or automated script that browses the World Wide Web in a methodical, automated manner.
+
+- *Purpose*: The primary purpose of web crawlers is to index content for [[id:656af4b9-648b-41f9-932b-cbf2d2017794][search engines]], allowing them to retrieve web pages and make them searchable.
+
+- *Functionality*:
+  - Starts from a list of [[id:1416fc14-1fe4-4d48-8345-af3532f35758][URL]]s (seed URLs).
+  - Visits each URL and retrieves its content.
+  - Follows hyperlinks on the page to discover new URLs.
+  - Updates the index with new information and pages.
+
+- *Types of Crawlers*:
+  - *Search Engine Crawlers*: Focused on indexing content for search engines (e.g., Googlebot).
+  - *[[id:52303f4f-1e12-4007-b7dd-7f6f6f336d16][Data Scraper]] Crawlers*: Tailored for extracting specific data from web pages.
+  - *Site Auditing Crawlers*: Used for website analysis and SEO auditing.
+
+- *Challenges*:
+  - Handling large volumes of data efficiently.
+  - Complying with [[id:d7d4f1aa-a1a1-48f2-a267-3caef075a87f][robots.txt]] files that dictate crawling permissions.
+  - Managing duplicate content and link structures.
+
+* Resources
+ - https://en.wikipedia.org/wiki/Web_crawler

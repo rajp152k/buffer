@@ -19,6 +19,8 @@ func main(){
 #+end_src
 
 * Stream
+** 0x234E
+ - https://github.com/golangci/golangci-lint
 ** 0x234C
  - hands on SWE with golang
  - aggressive level up phase
@@ -200,24 +202,33 @@ func main() {
  - will also read up a lot about writing efficient software in general along the way (concurrency, hyperscaled infrastructure oriented software, and the likes)
 ** 0x21E7
  - starting out with go to get into cloud native applications and rewriting a product
-* Resources
-** BOOK: Building an orchestrator in golang
+* Books
+** Building an orchestrator in golang
 :PROPERTIES:
 :ID:       3af62b5f-3c13-40c8-a912-18a94b7cb175
 :END:
 
-** BOOK: Cloud Native Go
+** Cloud Native Go
 :PROPERTIES:
 :ID:       64bfc13e-1b7c-4cbe-ba0e-9d17ebaacef1
 :END:
 
-** BOOK: The Go Programming Language
+** The Go Programming Language
 :PROPERTIES:
 :ID:       bb226cbf-fca1-4306-8f79-6bd87262ced6
 :END:
 
-** BOOK: Learn Go with Tests
+** Hands on SWE Golang
+:PROPERTIES:
+:ID:       bdec8c33-9117-4ecf-9f97-c511ee4d0f47
+:END:
+ - https://www.oreilly.com/library/view/hands-on-software-engineering/9781838554491/
+** Learn Go with Tests
 :PROPERTIES:
 :ID:       44bccb93-ebff-4745-baa1-0e85a293c314
 :END:
  - https://quii.gitbook.io/learn-go-with-tests
+
+
+* Resources
+ - https://github.com/avelino/awesome-go

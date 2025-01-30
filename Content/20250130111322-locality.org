@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       89d61a2c-4bf7-407f-89ea-21bdec8788f6
+:END:
+#+title: Locality of Reference
+#+filetags: :cs:meta:
+
+* Relevant Nodes
+** [[id:e9973a5d-a0bb-49b5-9767-af6df7a459eb][Geo-Replication]]
+** [[id:e5d0b6eb-ea62-4339-a190-97f4cb4b5678][GeoDNS]]
+** [[id:a002ec11-1dc8-4769-bdc1-07d331560228][NUMA]]
+** [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]
+* Resources
+ - https://en.wikipedia.org/wiki/Locality_of_reference

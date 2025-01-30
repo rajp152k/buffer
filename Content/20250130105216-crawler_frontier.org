@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       538c3459-b8c3-4bd0-9217-e2a068c31323
+:END:
+#+title: Crawler Frontier
+#+filetags: :web:data:cs:
+
+* Relevant Nodes
+** [[id:d3d34ec7-b391-4b8b-bb9e-7b8e7b6e2a37][Web Crawler]]
+** [[id:1416fc14-1fe4-4d48-8345-af3532f35758][URL]]
+** [[id:198d0435-df28-4af5-a687-3475ed78eadf][Priority Queue]]
+* Resources
+ - https://en.wikipedia.org/wiki/Crawl_frontier

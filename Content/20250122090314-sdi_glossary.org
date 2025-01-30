@@ -25,3 +25,6 @@ A quick index into most common abbreviations in the domain of computer science
 | RFC    | [[id:ef9b76ba-e4fd-4f57-9cb2-8ffc7daf75a0][Request For Comments]]                   |
 | IETF   | [[id:83fcf7a6-975c-4d87-a1ae-04b02e99d691][Internet Engineering Task Force]]        |
 | URL    | [[id:1416fc14-1fe4-4d48-8345-af3532f35758][Uniform Resource Locator]]               |
+| [[id:a002ec11-1dc8-4769-bdc1-07d331560228][NUMA]]   | Non Uniform Memory Access              |
+| [[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]   | Unified Extensible Firmware Interface  |
+| [[id:799e2476-dcab-4cd3-a5c6-a0437de0c051][BIOS]]   | Basic Input/Output System              |

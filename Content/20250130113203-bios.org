@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       799e2476-dcab-4cd3-a5c6-a0437de0c051
+:ROAM_ALIASES: "Basic Input/Output System"
+:END:
+#+title: BIOS
+#+filetags: :hardware:cs:
+
+* Relevant Nodes
+** [[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]
+* Resources
+ - https://en.wikipedia.org/wiki/BIOS

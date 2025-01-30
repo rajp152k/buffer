@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       a002ec11-1dc8-4769-bdc1-07d331560228
+:ROAM_ALIASES: "Non Uniform Memory Access"
+:END:
+#+title: NUMA
+#+filetags: :data:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Non-uniform_memory_access

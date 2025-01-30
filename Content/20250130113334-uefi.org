@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       e38caef0-a550-4576-9122-c849120188d4
+:ROAM_ALIASES: "Unified Extensible Firmware Interface"
+:END:
+#+title: UEFI
+#+filetags: :hardware:cs:
+
+* Relevant Nodes
+** [[id:799e2476-dcab-4cd3-a5c6-a0437de0c051][BIOS]]
+* Resources
+ - https://en.wikipedia.org/wiki/UEFI

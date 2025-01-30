@@ -27,6 +27,9 @@
   - Complying with [[id:d7d4f1aa-a1a1-48f2-a267-3caef075a87f][robots.txt]] files that dictate crawling permissions.
   - Managing duplicate content and link structures.
 
+* Relevant Nodes
+** [[id:514705de-abe8-4781-9c51-03c318bbe077][PageRank]]
+** [[id:538c3459-b8c3-4bd0-9217-e2a068c31323][Crawler Frontier]]
 * Resources
  - https://en.wikipedia.org/wiki/Web_crawler
  - https://developers.google.com/search/docs/crawling-indexing/googlebot

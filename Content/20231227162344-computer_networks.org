@@ -21,7 +21,7 @@ Also initializing a stream for a lot of the other domains that I explore will be
  - speed reading SDN: a system's approach
  - see Resources/books
  - heard about [[id:eefd5f2b-5d3f-450b-875a-016e8db6a023][SDR]] on a podcast by [[id:2d083b92-816a-4389-8475-367177f49eca][OTW]]
-* Sub Domains
+* Relevant Nodes
 ** [[id:24f4040a-7c18-416a-8460-e69280d437bf][Internet]]
 ** [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]]
 ** [[id:821aa28f-c16d-4982-bfc7-e1c9cf82c987][Service Meshes]]
@@ -44,6 +44,8 @@ Also initializing a stream for a lot of the other domains that I explore will be
  - https://datatracker.ietf.org/doc/html/rfc1180
  - https://github.com/saminiir/level-ip
  - https://www.youtube.com/watch?v=6G14NrjekLQ
+ - https://networkencyclopedia.com/
+
 ** Books
 *** SDN: A Systems Approach
  - https://sdn.systemsapproach.org/

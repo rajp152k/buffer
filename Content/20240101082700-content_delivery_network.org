@@ -24,7 +24,7 @@
 
 *Connections*:
 - The relationship between edge servers and origin servers showcases the core functionality of a CDN in optimizing content delivery.
-- Point of Presence (PoP) locations demonstrate how geographical distribution plays a critical role in reducing latency and improving user experience.
+- [[id:4ea4dfa7-04af-418f-a07b-b1162bb0c19c][Point of Presence]] (PoP) locations demonstrate how geographical distribution plays a critical role in reducing latency and improving user experience.
 - CDN security features illustrate how performance and security are interlinked, ensuring that faster content delivery does not compromise user safety.
 
 * Relevant Nodes

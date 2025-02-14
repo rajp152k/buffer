@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c1adf6f3-e7bc-465c-a155-f4fa4860b2dd
+:END:
+#+title: Golang CI Lint
+#+filetags: :golang:
+
+* Resources
+ - https://golangci-lint.run/

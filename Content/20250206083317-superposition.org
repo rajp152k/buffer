@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       41785d22-c559-4c3b-893c-94e678c6b62c
+:END:
+#+title: Superposition
+#+filetags: :quantum:cs:

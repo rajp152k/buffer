@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       e96696e6-6adf-4429-a4dc-f8ae6e1d31f8
+:END:
+#+title: Streaming Protocols
+#+filetags: :data:network:cs:
+
+* MPEG-DASH
+ - Moving Picture Experts Group - Dynamic Adaptive Streaming over [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]
+ - https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP
+
+* Apple HLS
+ - HTTP Live Streaming
+ - https://en.wikipedia.org/wiki/HTTP_Live_Streaming
+
+* Microsoft Smooth Streaming
+ - https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-sstr/8383f27f-7efe-4c60-832a-387274457251
+* Adobe HDS
+ - HTTP Dynamic Streaming
+* Resources
+ - https://restream.io/blog/streaming-protocols/

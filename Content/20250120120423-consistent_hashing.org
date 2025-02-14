@@ -87,3 +87,4 @@
  - https://en.wikipedia.org/wiki/Consistent_hashing
  - http://theory.stanford.edu/~tim/s16/l/l1.pdf
  - https://tom-e-white.com/2007/11/consistent-hashing.html
+ - https://discl.cs.ttu.edu/lib/exe/fetch.php?media=wiki:papers:hierarchical_consistent_hashing_for_heterogeneous_object-based_storage.pdf

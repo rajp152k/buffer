@@ -4,3 +4,31 @@
 #+title: Quantum Information Theory
 #+filetags: :math:physics:root:quantum:
 
+* Overview
+
+*** Quantum Information Theory: Overview
+
+- *Definition*: Quantum Information Theory is a field that merges [[id:c0faedaa-c8c2-4d96-b3b6-4ab4557bb79b][quantum mechanics]] with [[id:6777b4fa-7046-4553-b2e1-3bb60953a498][information theory]], focusing on how quantum systems can be used to process and transmit information.
+
+- *Core Concepts*:
+  - *Quantum Bits ([[id:4d00499e-f125-4819-bd01-1150e76d2688][Qubits]])*: Basic units of quantum information, analogous to classical bits, but can exist in superpositions.
+  - *[[id:41785d22-c559-4c3b-893c-94e678c6b62c][Superposition]]*: The principle that a quantum system can exist in multiple states simultaneously until measured.
+  - *[[id:8054ef2a-2c76-40d4-9cb1-fd096497d2f9][Entanglement]]*: A phenomenon where qubits become interconnected such that the state of one qubit can instantaneously affect the state of another, regardless of distance.
+  - *Quantum Gates*: Operations that change the state of qubits, forming the building blocks of quantum computation.
+
+- *Key Principles*:
+  - *[[id:a165c760-7904-4c22-a50e-80825ae3c329][No-Cloning Theorem]]*: It is impossible to create an identical copy of an arbitrary unknown quantum state.
+  - *[[id:93b655f0-14b4-4514-8a68-5648dabc7b47][Quantum Teleportation]]*: A method of transferring quantum states from one location to another using entanglement and classical communication.
+  - *[[id:057ccbd5-d5bd-491a-8ec6-8545816da0b0][Quantum Cryptography]]*: Utilizes quantum mechanical principles to create secure communication channels, exemplified by [[id:adfe9a55-fa1a-4e21-9e4b-dbfd5117becb][Quantum Key Distribution]] (QKD).
+
+- *Applications*:
+  - *Quantum Computing*: Harnessing quantum phenomena to perform computations at speeds unattainable by classical computers.
+  - *Quantum Communication*: Secure data transmission based on quantum principles, notably leveraging entanglement and superposition.
+  - *Quantum Simulation*: Mimicking the behavior of complex quantum systems, useful in material science and drug development.
+
+*** Connections Between These Entities
+
+- *Qubits and Superposition*: Qubits rely on superposition to represent multiple states simultaneously, improving computational efficiency.
+- *Entanglement and Quantum Teleportation*: Entangled states are fundamental to the mechanism of quantum teleportation, showcasing the non-locality aspect of quantum mechanics.
+- *Quantum Gates and Quantum Computing*: Quantum gates manipulate qubits through superposition and entanglement, propelling advancements in quantum algorithms.
+- *Quantum Cryptography and No-Cloning Theorem*: The no-cloning theorem underpins the security of quantum cryptography systems, ensuring that intercepted quantum information cannot be replicated.

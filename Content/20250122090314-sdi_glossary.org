@@ -33,3 +33,5 @@ A quick index into most common abbreviations in the domain of computer science
 | [[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]   | Unified Extensible Firmware Interface  |
 | URL    | [[id:1416fc14-1fe4-4d48-8345-af3532f35758][Uniform Resource Locator]]               |
 | [[id:5074cb27-3858-4a66-80f4-73bb5a876926][UTF]]    | [[id:5074cb27-3858-4a66-80f4-73bb5a876926][Unicode Transformation Format]]          |
+| PoP    | [[id:4ea4dfa7-04af-418f-a07b-b1162bb0c19c][Point of Presence]]                      |
+| BLOB   | [[id:add20973-54a9-4d96-a938-b27ccbf9c1e6][Binary Large Object]]                    |

@@ -6,3 +6,4 @@
 
 * Resources
  - https://docs.digitalocean.com/glossary/acid/
+ - https://en.wikipedia.org/wiki/ACID

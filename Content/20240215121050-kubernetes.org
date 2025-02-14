@@ -64,6 +64,15 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
      - fluentd is decentralized
  - prometheus : https://qconuk2019.container.training/#357
  - stateful services : https://qconuk2019.container.training/#393
+* Plugins and Ecosystem
+** krew
+ - https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/
+ - https://krew.sigs.k8s.io/
+** kcl ctx
+ - handy namespace and cluster switching when dealing with large collections thereof
+ - https://github.com/ahmetb/kubectx
+** netshoot
+ - https://github.com/nicolaka/netshoot
 * Resources
 ** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
  - https://tanzu.vmware.com/content/ebooks/production-kubernetes
@@ -72,3 +81,6 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
  - https://github.com/kubernauts/practical-kubernetes-problems
 ** Videos
     - https://www.youtube.com/watch?v=TlHvYWVUZyc&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=12&ab_channel=ByteByteGo
+
+** CICD with k8s
+ - https://resources.linuxfoundation.org/LF+Projects/CNCF/TheNewStack_Book3_CICDwithKubernetes_20180615.pdf?__hstc=60185074.90dbd8cfaa5e5d6c6cc88e8c1e66c499.1727779213765.1738764525951.1739163060338.17&__hssc=60185074.1.1739163060338&__hsfp=4117827442

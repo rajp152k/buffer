@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       0ad812c0-94a5-4485-bee8-7dc2a8bf2991
+:ROAM_ALIASES: TRL
+:END:
+#+title: Tech Readiness Level
+#+filetags: :meta:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Technology_readiness_level

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       935b8544-75d6-41e7-af13-62faaa11b28c
+:ROAM_ALIASES: "Open Source Intelligence"
+:END:
+#+title: OSINT
+#+filetags: :cs:sec:
+
+* Resources
+ -  https://github.com/lockfale/osint-framework

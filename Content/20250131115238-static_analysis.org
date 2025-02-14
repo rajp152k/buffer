@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       68f14c18-d854-4acb-81dd-8b0c16936302
+:END:
+#+title: Code Static Analysis
+#+filetags: :cs:programming:

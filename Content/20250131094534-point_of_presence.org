@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       4ea4dfa7-04af-418f-a07b-b1162bb0c19c
+:ROAM_ALIASES: PoP
+:END:
+#+title: Point of Presence
+#+filetags: :network:cs:
+
+* Resources
+- https://networkencyclopedia.com/point-of-presence-pop/

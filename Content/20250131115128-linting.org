@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       739ee37c-d869-4774-8b30-4af3c5638c9e
+:END:
+#+title: Linting
+#+filetags: :programming:cs:
+
+* Overview
+
+- *Definition*: Linting is the process of analyzing code to flag programming errors, bugs, stylistic errors, and suspicious constructs.
+
+- *Purpose*:
+  - Improves code quality.
+  - Ensures adherence to coding standards.
+  - Reduces the likelihood of bugs before execution.
+
+- *Types*:
+  - [[id:68f14c18-d854-4acb-81dd-8b0c16936302][Static Analysis]]: Analyzes code without executing it.
+  - [[id:84f18af5-9e74-4592-aa05-40636ca6c22b][Dynamic Analysis]]: Analyzes code while it's being executed (less common for linting).
+
+* Relevant Nodes
+** [[id:c1adf6f3-e7bc-465c-a155-f4fa4860b2dd][Golang CI Lint]]

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c0faedaa-c8c2-4d96-b3b6-4ab4557bb79b
+:END:
+#+title: quantum mechanics
+#+filetags: :quantum:root:

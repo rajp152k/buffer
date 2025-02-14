@@ -9,6 +9,8 @@ From time to time, I land up in an interesting corner of the internet and find i
 * Blogs
 ** Aditya Athalye
  - https://www.evalapply.org/
+** Arpit Bhayani
+ - https://arpitbhayani.me/
 ** Artyom Bologov
 - https://aartaka.me/
 ** Daniel Miessler
@@ -27,8 +29,8 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://karthinks.com/
 ** Mark Watson
  - https://markwatson.com/
-** Sina | Shahriar | Saleh
- - https://rayanfam.com/
+** Mihalis Tsoukalos
+ - https://www.mtsoukalos.eu/
 ** Patrick McKenzie
  - https://www.kalzumeus.com/
 ** Paul Graham
@@ -37,6 +39,8 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://protesilaos.com/
 ** Sacha Chua
  - https://sachachua.com/
+** Sina | Shahriar | Saleh
+ - https://rayanfam.com/
 ** Steve Yegge
  - https://steve-yegge.medium.com/
  - http://steve-yegge.blogspot.com/

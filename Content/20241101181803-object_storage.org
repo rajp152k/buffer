@@ -1,5 +1,10 @@
 :PROPERTIES:
 :ID:       add20973-54a9-4d96-a938-b27ccbf9c1e6
+:ROAM_ALIASES: "Binary Large Object" "Blob Storage"
 :END:
 #+title: Object Storage
-#+filetags: :data:
+#+filetags: :cs:data:
+
+
+* Relavant Nodes
+** [[id:20240101T082700.953774][CDN]]

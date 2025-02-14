@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       3e20f260-abc8-431c-8003-6ea7fc451247
+:ROAM_ALIASES: "Public Key Infrastructure"
+:END:
+#+title: PKI
+#+filetags: :math:crypto:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Public_key_infrastructure

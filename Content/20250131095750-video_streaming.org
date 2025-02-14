@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       33be14bb-e39b-4205-952f-f7d433e84a97
+:END:
+#+title: Streaming Media
+#+filetags: :data:network:cs:
+
+* [[id:e96696e6-6adf-4429-a4dc-f8ae6e1d31f8][Streaming Protocols]]
+* Resources
+ - https://en.wikipedia.org/wiki/Video_on_demand
+ - https://en.wikipedia.org/wiki/Streaming_media

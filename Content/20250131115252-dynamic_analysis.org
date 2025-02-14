@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       84f18af5-9e74-4592-aa05-40636ca6c22b
+:END:
+#+title: Code Dynamic Analysis
+#+filetags: :programming:cs:

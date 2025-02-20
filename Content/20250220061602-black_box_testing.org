@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       395a8707-a3ea-48c0-81dc-98380d8a39a8
+:ROAM_ALIASES: "I/O testing"
+:END:
+#+title: Black-Box testing
+#+filetags: :sec:cs:
+
+* Strategies
+** [[id:34df7d47-1f78-4acf-8dd7-9c03e04e4a9d][Exception Handling]]
+ - trying inducing all interface oriented errors to throw the program in an undefinable state when a exception handler kicks in and yields control back to the program
+** Leveraging [[id:ca98597a-027f-4eda-bbb2-801b8f74d0a5][Side Effects]]
+ - A lot of testing strategies rely on the fact that some routines may succeed in certain scenarios but not without side effects.
+ - This leads to disturbed behaviours of certain other routines affected by that effect.
+** Stress Testing Resources
+ - testing the boundaries of resources' consumption by forcing them with certain inputs can induce certain architecture specific side effects, helping break the software
+* Resources
+ - https://en.wikipedia.org/wiki/Black-box_testing

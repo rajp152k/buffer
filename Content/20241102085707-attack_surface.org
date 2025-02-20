@@ -3,3 +3,21 @@
 :END:
 #+title: Attack Surface
 #+filetags: :cs:sec:
+
+* Types of Attacks
+** [[id:395a8707-a3ea-48c0-81dc-98380d8a39a8][I/O attacks]]
+- Forcing absolute/objective input values
+- Forcing invalid input combinations
+- Forcing invalid input sequences
+** [[id:d45dae92-5148-4220-b8dd-e4da80674053][Data]] attacks
+ - by variable value
+ - by unexpected access
+ - by volume disagreements
+    - too small/large
+** [[id:a8cbf516-055a-4ef7-9afe-7a780bda52ab][Computation]] attacks
+ - by certain operands
+ - by simultaneous feature interactions
+ - overflows/underflows
+   - [[id:ea557127-190f-4861-aecb-f727fe6e676b][stack/buffer overflows]]
+* Resources
+ - https://research.google/pubs/how-to-break-software/

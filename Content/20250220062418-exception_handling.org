@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       34df7d47-1f78-4acf-8dd7-9c03e04e4a9d
+:END:
+#+title: Exception Handling
+#+filetags: :programming:cs:
+
+During the course of testing software to understand all the ways it can be broken, it pays to induce all the error messages that the software is capable of providing.
+
+Primarily because exception handlers lead to an unexpected change in the instruction pointer of the program without a corresponding relevant change in the underlying [[id:d4439a3c-ee63-479e-943e-5bebc50e32bd][state]] of the program - for instance:
+ - unclosed files
+ - unclosed database connection pools
+
+This could open up a new class of unexpected behaviours when executing an action that might have been handled appropriately/gracefully before hand.

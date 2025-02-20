@@ -38,3 +38,6 @@
 - While SDR allows for rapid software changes, the dependency on high-performance computing resources might not be feasible in energy-constrained or resource-limited environments.
 - Security might be a concern since the ease of reprogramming can potentially allow malicious modifications if proper security measures aren’t implemented.
   - see [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Cyber Security]]
+
+* Resources
+ - https://ieeexplore.ieee.org/abstract/document/5462981

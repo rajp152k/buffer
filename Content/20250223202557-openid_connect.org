@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0ce18247-39ef-480b-98c0-4c6592ecd8cd
+:ROAM_ALIASES: OIDC
+:END:
+#+title: OpenID Connect
+#+filetags: :sec:cs:
+
+
+* Resources
+ - https://curity.io/resources/learn/openid-connect-overview/

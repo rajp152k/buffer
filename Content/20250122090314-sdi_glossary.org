@@ -6,32 +6,41 @@
 
 A quick index into most common abbreviations in the domain of computer science
 
-| Abbrev | Expansion                              |
-|--------+----------------------------------------|
-| [[id:df49ea71-a047-47c1-8a2e-6053395b99b7][ACME]]   | Fictional Corps                        |
-| API    | [[id:20240101T073142.439145][Application Programming Interface]]      |
-| AU     | Active Users                           |
-| [[id:799e2476-dcab-4cd3-a5c6-a0437de0c051][BIOS]]   | Basic Input/Output System              |
-| CDN    | [[id:20240101T082700.953774][Content Delivery Network]]               |
-| DNS    | [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]]                     |
-| DoS    | [[id:f0951767-64d7-4f03-8a97-72ba11cc70c6][Denial of Service]]                      |
-| [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]   | Hyper Text Transfer Protocol           |
-| IETF   | [[id:83fcf7a6-975c-4d87-a1ae-04b02e99d691][Internet Engineering Task Force]]        |
-| IP     | [[id:d799bc90-5032-4a69-9806-83145297a335][Internet Protocol]]                      |
-| IRC    | [[id:28b0fe66-7df3-4680-bf87-388d542eea80][Internet Relay Chat]]                    |
-| NTP    | [[id:83a720e8-9ef7-43e7-bdf0-3e09f5099f12][Network Time Protocol]]                  |
-| [[id:a002ec11-1dc8-4769-bdc1-07d331560228][NUMA]]   | Non Uniform Memory Access              |
-| QPS    | Queries Per Second                     |
-| RFC    | [[id:ef9b76ba-e4fd-4f57-9cb2-8ffc7daf75a0][Request For Comments]]                   |
-| [[id:2ca00f18-a0ee-4f5c-8e32-ca908096930d][SDLC]]   | Software Development Life Cycle        |
-| [[id:fe847008-84df-4128-8a72-7b15ac5655cf][SHA]]    | [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Secure]] [[id:235113d9-983a-4782-a4e8-d027ba52d82b][Hash]] Algorithms                 |
-| SMS    | [[id:640d4127-b673-4b39-ab5c-1067da4b4170][Short Message Service]]                  |
-| [[id:a02542b4-23d5-4fa8-9469-45edc4dcee69][SMTP]]   | Simple Mail Transfer Protocol          |
-| SPOF   | [[id:965dfd38-4fc5-4893-8dbe-4ac21630aba3][Single Point of Failure]]                |
-| SSL    | Secure Sockets Layer: Precursor to [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]] |
-| [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]    | Transport Layer Security               |
-| [[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]   | Unified Extensible Firmware Interface  |
-| URL    | [[id:1416fc14-1fe4-4d48-8345-af3532f35758][Uniform Resource Locator]]               |
-| [[id:5074cb27-3858-4a66-80f4-73bb5a876926][UTF]]    | [[id:5074cb27-3858-4a66-80f4-73bb5a876926][Unicode Transformation Format]]          |
-| PoP    | [[id:4ea4dfa7-04af-418f-a07b-b1162bb0c19c][Point of Presence]]                      |
-| BLOB   | [[id:add20973-54a9-4d96-a938-b27ccbf9c1e6][Binary Large Object]]                    |
+| Abbrev    | Expansion                              |
+| [[id:df49ea71-a047-47c1-8a2e-6053395b99b7][ACME]]      | Not a Company Making Everything        |
+|-----------+----------------------------------------|
+| API       | [[id:20240101T073142.439145][Application Programming Interface]]      |
+| AU        | Active Users                           |
+| [[id:799e2476-dcab-4cd3-a5c6-a0437de0c051][BIOS]]      | Basic Input/Output System              |
+| BLOB      | [[id:add20973-54a9-4d96-a938-b27ccbf9c1e6][Binary Large Object]]                    |
+| CDN       | [[id:20240101T082700.953774][Content Delivery Network]]               |
+| DNS       | [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]]                     |
+| DoS       | [[id:f0951767-64d7-4f03-8a97-72ba11cc70c6][Denial of Service]]                      |
+| [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]      | Hyper Text Transfer Protocol           |
+| IAM       | [[id:4e1d433c-9f6b-46c7-ad06-4f8bf798785e][Identity and Access Management]]         |
+| IETF      | [[id:83fcf7a6-975c-4d87-a1ae-04b02e99d691][Internet Engineering Task Force]]        |
+| IP        | [[id:d799bc90-5032-4a69-9806-83145297a335][Internet Protocol]]                      |
+| IRC       | [[id:28b0fe66-7df3-4680-bf87-388d542eea80][Internet Relay Chat]]                    |
+| [[id:b3e56d43-2af8-419e-b2b5-1740c0f2bf13][LDAP]]      | Lightweight Directory Access Protocol  |
+| Linux PAM | [[id:e1092058-8d36-498d-a8c9-782f92ecb15a][Linux Pluggable Authentication Module]]  |
+| MFA       | [[id:00543934-369a-47d3-9fc1-f9a16a6a227e][Multi-Factor Authentication]]            |
+| NTP       | [[id:83a720e8-9ef7-43e7-bdf0-3e09f5099f12][Network Time Protocol]]                  |
+| [[id:a002ec11-1dc8-4769-bdc1-07d331560228][NUMA]]      | Non Uniform Memory Access              |
+| [[id:0ce18247-39ef-480b-98c0-4c6592ecd8cd][OIDC]]      | OpenID Connect                         |
+| PoP       | [[id:4ea4dfa7-04af-418f-a07b-b1162bb0c19c][Point of Presence]]                      |
+| QPS       | Queries Per Second                     |
+| RFC       | [[id:ef9b76ba-e4fd-4f57-9cb2-8ffc7daf75a0][Request For Comments]]                   |
+| [[id:f86e0e1d-d0cd-4503-873c-30710aa7900d][SAML]]      | Security Assertion Markup Language     |
+| [[id:2ca00f18-a0ee-4f5c-8e32-ca908096930d][SDLC]]      | Software Development Life Cycle        |
+| [[id:fe847008-84df-4128-8a72-7b15ac5655cf][SHA]]       | [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Secure]] [[id:235113d9-983a-4782-a4e8-d027ba52d82b][Hash]] Algorithms                 |
+| SMS       | [[id:640d4127-b673-4b39-ab5c-1067da4b4170][Short Message Service]]                  |
+| [[id:a02542b4-23d5-4fa8-9469-45edc4dcee69][SMTP]]      | Simple Mail Transfer Protocol          |
+| SPOF      | [[id:965dfd38-4fc5-4893-8dbe-4ac21630aba3][Single Point of Failure]]                |
+| SSE       | [[id:935d3a14-db38-4127-964d-25f9223f08b2][Server Sent Events]]                     |
+| SSL       | Secure Sockets Layer: Precursor to [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]] |
+| SSO       | [[id:9a1b861e-ef7a-40b1-9624-d1f8b08dba38][Single Sign-On]]                         |
+| [[id:06fa9da7-4126-4b08-a367-3a751f31de51][TLS]]       | Transport Layer Security               |
+| [[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]      | Unified Extensible Firmware Interface  |
+| URL       | [[id:1416fc14-1fe4-4d48-8345-af3532f35758][Uniform Resource Locator]]               |
+| [[id:5074cb27-3858-4a66-80f4-73bb5a876926][UTF]]       | [[id:5074cb27-3858-4a66-80f4-73bb5a876926][Unicode Transformation Format]]          |
+| JWT       | [[id:624e5e40-e45a-4020-ba1c-1c83d2f7a395][JSON Web Tokens]]                        |

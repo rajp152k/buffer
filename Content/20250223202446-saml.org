@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       f86e0e1d-d0cd-4503-873c-30710aa7900d
+:ROAM_ALIASES: "Security Assertion Markup Language"
+:END:
+#+title: SAML
+#+filetags: :sec:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language

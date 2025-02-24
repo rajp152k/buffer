@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       e1092058-8d36-498d-a8c9-782f92ecb15a
+:ROAM_ALIASES: "Linux Pluggable Authentication Module"
+:END:
+#+title: Linux PAM
+#+filetags: :linux:sec:cs:

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5c8f987f-214c-4ae5-b0f7-154dc21671c1
+:END:
+#+title: OAuth
+#+filetags: :sec:cs:
+
+* Resources
+ - https://curity.io/resources/learn/oauth-overview/

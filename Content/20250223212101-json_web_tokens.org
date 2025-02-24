@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       624e5e40-e45a-4020-ba1c-1c83d2f7a395
+:ROAM_ALIASES: JWT
+:END:
+#+title: JSON Web Tokens
+#+filetags: :sec:cs:

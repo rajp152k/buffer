@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b3e56d43-2af8-419e-b2b5-1740c0f2bf13
+:ROAM_ALIASES: "Lightweight Directory Access Protocol"
+:END:
+#+title: LDAP
+#+filetags: :sec:cs:

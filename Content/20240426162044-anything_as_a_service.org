@@ -1,9 +1,9 @@
 :PROPERTIES:
 :ID:       89784e77-cdd0-460c-a5b9-cb0a18842903
-:ROAM_ALIASES: AAAS
+:ROAM_ALIASES: XaaS AaaS
 :END:
 #+title: Anything as a service
-#+filetags: :cloud:
+#+filetags: :cs:cloud:
 
 * Abstract
 When provisioning any abstraction as a service, there are four important aspects that need to be completely charted out before you proceed.

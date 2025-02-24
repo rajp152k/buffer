@@ -1,6 +1,102 @@
 :PROPERTIES:
 :ID:       4e1d433c-9f6b-46c7-ad06-4f8bf798785e
-:ROAM_ALIASES: Authorization Authentication
+:ROAM_ALIASES: IAM Authorization Authentication
 :END:
 #+title: Identity and Access Management
 #+filetags: :cs:sec:
+
+* Overview of IAM
+
+- *Definition*:
+
+  * IAM is a framework of policies and technologies.
+  * Ensures that the right users (identity) have the appropriate access (authorization) to the right resources.
+
+- *Core Components*:
+
+  * Identification: Uniquely identifying a user or entity.
+  * Authentication: Verifying the identity of that user or entity.
+  * Authorization: Determining what resources the authenticated entity can access and what actions they can perform.
+  * Access Control: Enforcing the authorization policies.
+  * Auditing: Recording and reviewing access events for security and compliance.
+
+- *Key Concepts*:
+
+  * Identity Provider (IdP)*: A system that creates, maintains, and manages identity information for users and provides authentication services.
+  * Principal: An entity (user, application, service) that can be authenticated and authorized to access resources.
+  * Resource: Any entity that a principal might want to access (e.g., files, applications, databases).
+  * Policy: A set of rules that define who has access to what resources and under what conditions.
+  * Role: A collection of permissions that can be assigned to a user or group.
+
+- *Common IAM Practices*:
+
+  * [[id:d4f81cb7-e01b-4115-b8a1-9a303a82699d][Principle of Least Privilege]]: Granting users only the minimum level of access necessary to perform their job functions.
+  * [[id:16d3b9b3-2f2a-47ef-81bf-5e045482a26f][Role-Based Access Control]] (RBAC)*: Assigning permissions based on roles within an organization.
+  * [[id:00543934-369a-47d3-9fc1-f9a16a6a227e][Multi-Factor Authentication]] (MFA)*: Requiring users to provide multiple forms of identification to verify their identity.
+  * [[id:9a1b861e-ef7a-40b1-9624-d1f8b08dba38][Single Sign-On]] (SSO)*: Allowing users to authenticate once and access multiple applications and resources.
+  * [[id:8aee9a07-524c-4735-919e-e5239d896c6b][Identity Federation]]: Trusting identities managed by external identity providers.
+
+- *Benefits of IAM*:
+
+  * Enhanced Security: Reduces the risk of unauthorized access and data breaches.
+  * Improved Compliance: Helps meet regulatory requirements for data protection and privacy.
+  * Increased Efficiency: Streamlines user access management and reduces administrative overhead.
+  * Better User Experience: Simplifies the login process and provides users with easy access to the resources they need.
+
+* Domain Specific IAM
+** [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][Cloud Computing]] IAM
+
+-   *Definition*: Cloud IAM systems manage identities and access to cloud resources and services.
+-   *Key Features*:
+    *   *Identity Management*: Creating, managing, and authenticating user and application identities.
+    *   *Access Control*: Defining and enforcing permissions on cloud resources (e.g., compute instances, storage buckets, databases).
+    *   *Multi-Factor Authentication (MFA)*: Enhancing security by requiring multiple verification factors.
+    *   *Role-Based Access Control (RBAC)*: Assigning permissions based on roles within an organization.
+    *   *Policy Management*: Defining policies that govern access to resources.
+    *   *Auditing and Logging*: Tracking access attempts and resource usage for compliance and security monitoring.
+-   *Examples*:
+    *   *AWS IAM (Identity and Access Management)*: AWS's service for controlling access to AWS resources.
+    *   *Azure Active Directory (Azure AD)*: Microsoft's cloud-based identity and access management service.
+
+** Web Applications IAM
+
+-   *Definition*: IAM for web applications focuses on authenticating users and authorizing access to application resources and APIs.
+-   *Key Features*:
+    *   *Authentication*: Verifying user identities, often through usernamepassword, social logins, or federated identity providers.
+    *   *Authorization*: Determining what resources and actions a user is permitted to access.
+    *   *Single Sign-On (SSO)*: Allowing users to authenticate once and access multiple applications.
+    *   *Delegated Authorization*: Enabling users to grant limited access to their resources to third-party applications.
+-   *Protocols and Standards*:
+    *   *OAuth (Open Authorization)*: A standard for delegated authorization, commonly used to grant third-party applications access to user resources without sharing credentials.
+    *   *[[id:0ce18247-39ef-480b-98c0-4c6592ecd8cd][OpenID Connect]] (OIDC)*: An authentication layer built on top of OAuth 2.0, providing user identity information to applications.
+    *   *[[id:f86e0e1d-d0cd-4503-873c-30710aa7900d][SAML]] (Security Assertion Markup Language)*: An XML-based standard for exchanging authentication and authorization data between security domains.
+
+** [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating Systems]] IAM
+
+-   *Definition*: OS-level IAM manages user authentication and access control for operating system resources.
+-   *Key Features*:
+    *   *User Account Management*: Creating, managing, and authenticating user accounts.
+    *   *Privilege Management*: Assigning and controlling user privileges and permissions.
+    *   *Authentication Mechanisms*: Supporting various authentication methods, such as passwords, keys, and biometrics.
+    *   *Access Control Lists (ACLs)*: Defining permissions on files, directories, and other OS resources.
+    *   *Group-Based Access Control*: Managing access based on user groups.
+-   *Examples*:
+    *   *[[id:e1092058-8d36-498d-a8c9-782f92ecb15a][Linux PAM]] (Pluggable Authentication Modules)*: A framework for flexible authentication in Linux systems.
+    *   *Windows Active Directory (AD)*: Microsoft's directory service for managing users, computers, and other network resources in a Windows domain.
+
+** [[id:2f67eca9-5076-4895-828f-de3655444ee2][Databases]] IAM
+
+- *Definition*: Database IAM controls access to database resources, ensuring that only authorized users and applications can access sensitive data.
+- *Key Features*:
+  * *Authentication*: Verifying the identity of users and applications connecting to the database.
+  * *Authorization*: Controlling access to database objects (e.g., tables, views, stored procedures).
+  * *Role-Based Access Control (RBAC)*: Assigning database privileges based on roles.
+  * *Data Encryption*: Protecting data at rest and in transit.
+  * *Auditing*: Tracking database access and modifications.
+- *Examples*:
+  * *Oracle Database Security*: Using roles, privileges, and profiles to control access to Oracle databases.
+  * *SQL Server Security*: Managing logins, users, and permissions in Microsoft SQL Server.
+  * *MySQLMariaDB Privileges*: Granting and revoking privileges to users for specific database objects.
+
+* Resources
+- https://github.com/kdeldycke/awesome-iam

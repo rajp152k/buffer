@@ -52,3 +52,7 @@ This sub-node intends to document the major points of control when it comes to p
  - [[id:af4d4e9f-3fd3-4718-ba73-e6af4f57c29c][Docker]] 
  - [[id:03cd8062-b3fb-4cd9-97a8-5d60f037f7b6][Open Stack]]
  - [[id:714b029b-d0ac-4842-89f5-5f871d1a22c7][Software Defined Networking]]
+
+* Resources
+ - http://web.stanford.edu/class/cs349d/docs/L01_overview.pdf
+ - http://web.stanford.edu/class/cs349d/

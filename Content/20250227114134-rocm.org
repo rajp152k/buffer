@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       61217480-eaa5-48bc-b8ab-85822546cdf2
+:END:
+#+title: ROCm
+#+filetags: :hardware:cs:
+
+* Relevant Nodes
+** [[id:0eefa15d-d817-4fb1-8235-161025ebddcb][CUDA]]
+* Resources
+ - https://www.amd.com/en/products/software/rocm.html

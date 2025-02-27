@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       0eefa15d-d817-4fb1-8235-161025ebddcb
+:END:
+#+title: CUDA
+#+filetags: :cs:hardware:
+
+
+* Resources
+   - https://developer.nvidia.com/cuda-toolkit

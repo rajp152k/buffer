@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c0dce24b-3d97-46c4-a311-18e5ccdd1fe9
+:END:
+#+title: Keto Flu
+#+filetags: :health:
+
+* Resources
+ - https://www.youtube.com/watch?v=vUIRsQDJP_o&ab_channel=ThomasDeLauer
+ - https://www.healthline.com/nutrition/keto-flu-symptoms#symptoms

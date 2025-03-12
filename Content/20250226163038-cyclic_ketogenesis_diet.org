@@ -4,5 +4,7 @@
 #+title: Cyclic Ketogenic Diet
 #+filetags: :food:
 
+* Relevant Nodes
+** [[id:c0dce24b-3d97-46c4-a311-18e5ccdd1fe9][Keto Flu]]
 * Resources
  - https://web.archive.org/web/20170807102316/http://www.bodybuildingdungeon.com/forums/nutrition/2156-cdk-cyclical.html

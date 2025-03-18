@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       a8fa05f6-f390-4e11-a03a-d339b4af42d2
+:END:
+#+title: Heredoc
+#+filetags: :unix:
+
+* Overview
+
+- *Definition*: Heredoc (here-document) is a feature in Unix and programming languages like Bash, Perl, and Python for defining multiline string literals.
+- *Syntax*: A heredoc starts with =<<= followed by a delimiter (identifier) and ends with the same delimiter on a new line.
+- *Usage*: Commonly used for passing blocks of text to commands, or for creating multi-line strings directly in the script.
+- *Examples*:
+  - Bash:
+
+    #+begin_src bash
+    cat <<EOF
+    This is a heredoc example.
+    It can span multiple lines.
+    EOF
+    #+end_src
+
+  - Python:
+
+    #+begin_src python
+    multiline_string = """This is a heredoc in Python.
+    It can also span multiple lines."""
+    #+end_src
+
+
+* Resources
+ - https://linuxize.com/post/bash-heredoc/

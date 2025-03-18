@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       412c20e2-9de7-423c-9e17-1bf0df83becb
+:END:
+#+title: HTTPS
+#+filetags: :sec:web:cs:
+
+
+* Systems Breakdown
+** 1. Key Components of the HTTPS System
+- *[[id:06fa9da7-4126-4b08-a367-3a751f31de51][Transport Layer Security]] (TLS):* The protocol that provides encryption and secure communication over computer networks.
+- *[[id:3e20f260-abc8-431c-8003-6ea7fc451247][Public Key Infrastructure]] (PKI):* Comprising digital certificates and a certificate authority that verifies the authenticity of entities.
+- *[[id:bf1a5d71-d05c-4948-bf72-7991a1ed676c][Web Servers]]:* Hosts websites and processes requests through HTTPS.
+- *Clients (Web [[id:6b977f65-8bf6-42fe-832d-6e28726fcd7a][Browsers]]):* Applications that request and display web content securely.
+- *[[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]] (DNS):* Translates human-friendly domain names into IP addresses.
+- *[[id:b12b11f9-bfb6-456d-985e-87a8dc4693af][Certificates]]:* Digital certificates that provide authentication for the identity of the website (usually X.509 certificates).
+
+** 2. Analysis of Relationships and Interactions
+- *Encryption Process:* When a user navigates to a website, the client and server initiate a handshake, wherein:
+  - The server sends its certificate to the client.
+  - The client verifies the certificate's authenticity with the PKI.
+  - Once verified, a symmetric session key is generated for encrypting the communication.
+- *Session Persistence:* During this encrypted session, data transferred is protected from eavesdroppers, maintaining integrity and confidentiality.
+- *Trust Model:* The security of HTTPS relies heavily on trust in the certificate authority and PKI. If a CA is compromised, the entire system's security can be at risk.
+- *DNS Interaction:* The client's request for a website goes through the DNS resolver to convert the URL into an IP address, directing the HTTPS request to the correct server.
+
+** 3. Breakdown into Simpler Parts
+- *Handshake Mechanism:*
+  - Initiation of connection
+  - Server sends SSL/TLS certificate
+  - Client verifies certificate
+  - Generation of session keys
+- *Data Transfer Components:*
+  - Request/response structure
+  - Encryption of transmitted data
+- *Authentication Process:*
+  - Certificate authority verification
+  - Domain validation
+- *Closure of Connection:*
+  - Termination of secure session and cleanup of keys.
+
+** 4. Visual or Conceptual Model
+
+#+begin_src
+[Client → Request DNS Resolution]
+          ↓
+[DNS → IP Address]
+          ↓
+[Client → Establishing HTTPS Connection with Server]
+          ↓
+[Server → Sends SSL/TLS Certificate]
+          ↓
+[Client → Verifies Certificate]
+          ↓
+[Client/Server → Generate Local Session Key]
+          ↓
+[Data Encrypted and Sent]
+          ↓
+[Data Received and Decrypted]
+          ↓
+[Client/Server → End of Session]
+#+end_src
+
+** 5. Actionable Insights or Recommendations
+- *Enhanced Security Monitoring:* It is crucial to have monitoring systems in place to detect certificate misconfigurations or potential breaches in the PKI to prevent data leaks.
+- *Regular Updates:* Web servers and applications should be kept updated to the latest versions of TLS and security practices to protect against vulnerabilities.
+- *User Awareness:* Educating users about the importance of HTTPS and how to recognize secure connections can enhance overall cybersecurity posture.
+- *Adoption of [[id:edc4b233-e992-451c-a4aa-6ecab8a96b1b][HSTS]] (HTTP Strict Transport Security):* Encouraging the use of HSTS can help enforce the use of secure connections and mitigate [[id:760c92a1-41f8-4309-8818-ab54d5ee77f6][man-in-the-middle attacks]].
+
+

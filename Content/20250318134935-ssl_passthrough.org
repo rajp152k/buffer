@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       2f861de0-8088-46f2-a922-ec369735e105
+:END:
+#+title:  SSL Passthrough
+#+filetags: :web:sec:cs:
+
+* Overview
+
+- *Definition*: SSL passthrough is a method of handling [[id:06fa9da7-4126-4b08-a367-3a751f31de51][SSL]] traffic by allowing encrypted connections to pass through a [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][load balancer]] directly to the backend server without [[id:b3e9b8d9-52cd-4e30-a148-02fbe76f205a][terminating]] the SSL connection.
+- *Benefits*:
+  - Enhanced security by maintaining end-to-end encryption.
+  - Reduces complexity on load balancer since it doesn’t decrypt the traffic.
+  - Simplified certificate management since certificates are only required on backend servers.
+- *Use Cases*:
+  - Ideal for applications requiring strong encryption.
+  - Suitable for environments with stringent compliance and security requirements.
+- *Challenges*:
+  - Limited traffic management capabilities since the load balancer can't inspect decrypted content.
+  - Potentially increased latency if SSL handshakes occur at backend servers.

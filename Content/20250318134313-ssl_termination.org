@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       b3e9b8d9-52cd-4e30-a148-02fbe76f205a
+:END:
+#+title: SSL termination
+#+filetags: :web:sec:cs:
+
+* Overview
+
+- *Definition of SSL Termination*:
+  - The process where [[id:06fa9da7-4126-4b08-a367-3a751f31de51][SSL]] (Secure Socket Layer) [[id:92342b8b-1c09-4e1f-9799-66d060678c31][encryption]] and [[id:c9af7908-5a60-4ddd-a885-d83c3afbe982][decryption]] occurs at a designated endpoint.
+
+- *Functional Purpose*:
+  - Enhances performance by offloading SSL processing from web servers.
+  - Simplifies certificate management, as only the termination point needs a valid certificate.
+
+- *Common Use Cases*:
+  - [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load balancers]] or [[id:7bff6f16-de9c-4c0d-a9a1-b27e3da6725f][reverse proxies]] handling SSL termination.
+  - Secure communication for web applications.
+
+- *Advantages*:
+  - Improved server performance due to lesser CPU load.
+  - Centralized SSL certificate management reducing operational overhead.
+  - Enhanced monitoring capabilities for incoming traffic.
+
+- *Limitations*:
+  - Potential security concerns if traffic is not re-encrypted after termination.
+  - Additional layer that must be secured.
+
+- *Deployment Considerations*:
+  - Placement of SSL termination within the network architecture.
+  - Balance between security and performance needs.
+
+*** Clarifying Questions
+1. What specific aspect of SSL termination are you interested in (e.g., security, performance, implementation)?
+2. Are you looking to compare SSL termination with another method (e.g., SSL passthrough)?
+
+* Relevant Nodes
+** [[id:2f861de0-8088-46f2-a922-ec369735e105][SSL Passthrough]]

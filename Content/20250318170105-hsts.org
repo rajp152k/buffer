@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       edc4b233-e992-451c-a4aa-6ecab8a96b1b
+:ROAM_ALIASES: "HTTP Strict Transport Security"
+:END:
+#+title: HSTS
+#+filetags: :web:cs:
+
+* Systems Breakdown
+** 1. *Key Components of the HSTS System*:
+   - *Clients (Web Browsers)*: Software that accesses the web and interprets the HSTS policy.
+   - *Servers (Web Servers)*: Hosts that send the HSTS policy via HTTP headers.
+   - *HSTS Header*: The actual HTTP response header (e.g., =Strict-Transport-Security=), which includes directives like =max-age= and =includeSubDomains=.
+   - *Preload List*: A list of domains that browsers preload to ensure they are only accessed via HTTPS.
+   - *Web Traffic*: The data exchanged between clients and servers, which HSTS aims to secure.
+
+** 2. *Analysis of Relationships and Interactions*:
+   - *Client-Server Interaction*: Clients request web resources from servers, and servers respond with secure (HTTPS) or insecure (HTTP) versions. HSTS enforces the secure connection.
+   - *Header Recognition*: When a server with HSTS sends the =Strict-Transport-Security= header, clients recognize it and enforce the policy for the specified duration.
+   - *Preload List Integration*: Browsers reference the preload list upon initialization, only allowing connections to preloaded sites via HTTPS, bypassing the need for initial HTTP requests.
+   - *Parameter Dependencies*: The effectiveness of HSTS relies heavily on parameters set in the header (e.g., =max-age= indicates how long to remember the rule).
+
+** 3. *Breaking Down into Simpler Parts*:
+   - *Client Component*:
+     - Functionality of the web browser regarding security protocols
+     - How the browser processes security headers.
+   - *Server Component*:
+     - The specific configuration of web servers to enable HTTPS and send the HSTS header.
+     - Interaction with TLS (Transport Layer Security) for establishing secure connections.
+   - *HSTS Header Specification*:
+     - Details on required and optional parameters.
+     - Format and syntax of the header's directives.
+   - *Impact of Preloading*:
+     - How sites get added to the preload list.
+     - Effects of incorrect configurations on domain access.
+
+** 4. *Visual or Conceptual Model*:
+
+   *HSTS System Dynamics Model*:
+   #+begin_src
+   +-----------------+
+   |   Web Server    |
+   +-----------------+
+          |   Sends HSTS header (includes directives)
+          |
+          v
+   +----------------+           +-----------------+
+   |   HTTP Request | <-------> | Client (Browser)|
+   +----------------+           +-----------------+
+           |                           |
+           | If HSTS is recognized,    | Enforces secure connection
+           | forces HTTPS connection   |
+           |                           |
+           v                           v
+   +----------------+         +---------------------+
+   | Web Traffic    | <-----> | Secure Communication|
+   +----------------+         +---------------------+
+   #+end_src
+
+** 5. *Actionable Insights/Recommendations*:
+   - *Implement HSTS on All Domains*: Ensure that all your web applications have HSTS enabled to prevent traffic interception.
+   - *Maximize Security with Preload*: Consider submitting your domains to the HSTS preload list to enhance security and user trust.
+   - *Continuous Monitoring*: Regularly audit your HSTS settings, ensuring that the =max-age= is set appropriately and =includeSubDomains= is defined if subdomain security is needed.
+   - *Educate Development Teams*: Promote understanding of HSTS among your development team, so they are aware of the importance and implementation specifics.
+   - *Fallback Strategy*: Plan for any potential misconfigurations, such as setting up a way to access your site with an alternative URL or ensuring proper redirects to HTTPS.

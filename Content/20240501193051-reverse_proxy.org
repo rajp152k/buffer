@@ -2,5 +2,24 @@
 :ID:       7bff6f16-de9c-4c0d-a9a1-b27e3da6725f
 :END:
 #+title: Reverse Proxy
-#+filetags: :web:
+#+filetags: :cs:web:
 
+* Overview
+
+- *Definition*: A reverse proxy is a [[id:659e7518-56e1-4a6b-b24f-4601d66fa449][server]] that sits between client devices and web servers, forward requests from clients to one or more backend servers.
+
+- *Functionality*:
+  - Hides the backend server's [[id:d799bc90-5032-4a69-9806-83145297a335][IP]] address from clients.
+  - Implements [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][load balancing]] by distributing incoming requests across multiple servers.
+  - Enhances security by acting as a [[id:be116ea9-5b43-464a-a6fe-5469c4f4ba59][gateway]] and filtering traffic.
+
+- *Common Use Cases*:
+  - Load balancing to improve performance.
+  - [[id:06fa9da7-4126-4b08-a367-3a751f31de51][SSL]] termination to manage encryption/decryption.
+  - [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]] static content to reduce server load.
+
+- *Popular Software*:
+  - [[id:728c723c-57f3-4b18-beab-a906d931743d][Nginx]]
+  - [[id:4b01f759-a4fa-4d97-bd93-1a3970846601][Apache HTTP Server]] (using mod_proxy)
+  - [[id:31894332-ebcc-41f6-aff5-d4a028d46d08][HAProxy]]
+  - [[id:71e979df-cab5-4432-9d1d-f24c030c3d5c][Caddy]]

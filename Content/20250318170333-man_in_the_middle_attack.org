@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       760c92a1-41f8-4309-8818-ab54d5ee77f6
+:END:
+#+title: man-in-the-middle attack
+#+filetags: :sec:web:cs:

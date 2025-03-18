@@ -2,5 +2,4 @@
 :ID:       659e7518-56e1-4a6b-b24f-4601d66fa449
 :END:
 #+title: Proxy Server
-#+filetags: :computer:
-
+#+filetags: :cs:computer:

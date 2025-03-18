@@ -27,6 +27,8 @@ From time to time, I land up in an interesting corner of the internet and find i
 - https://jvns.ca/about/
 ** Karthik Chikmagalur
  - https://karthinks.com/
+** Kodi Arfer
+ - http://arfer.net/elsewhere
 ** Mark Watson
  - https://markwatson.com/
 ** Mihalis Tsoukalos
@@ -50,5 +52,6 @@ From time to time, I land up in an interesting corner of the internet and find i
  - https://travisjeffery.com/
 ** Varun Upadhyay
  - https://distributed-computing-musings.com/about-me/
+
 * Relevant Nodes
  - [[id:20240421T174402.732098][Authors]]

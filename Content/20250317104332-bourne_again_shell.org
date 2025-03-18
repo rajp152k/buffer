@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       060d790c-e750-46fa-99cf-50ec9a645d56
+:END:
+#+title: Bourne Again Shell
+#+filetags: :unix:

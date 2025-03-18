@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       16da5f72-864f-4515-ae7b-23f3f8abc7e3
+:END:
+#+title: NetBSD
+#+filetags: :cs:

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6c88b73c-04d0-4f82-bb6e-384ab3563397
+:ROAM_ALIASES: "Portable Operating System Interface"
+:END:
+#+title: POSIX
+#+filetags: :cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/POSIX

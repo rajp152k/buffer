@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       444f82ab-fd54-4f0c-a42a-7b529add15d7
+:END:
+#+title: C-shell
+#+filetags: :unix:
+
+
+* Overview
+
+C-shell, often abbreviated as csh, is a Unix shell that provides an interactive command-line interface and scripting capabilities. Originally developed by Bill Joy for the [[id:e8060c95-d251-40f7-981d-9e965d8f007d][BSD]] (Berkeley Software Distribution) Unix, it enhances the user interface with features like a C-like syntax and job control.
+
+- Key Features:
+  - *C-like Syntax*: C-shell incorporates a syntax similar to the C programming language, making it familiar for those accustomed to C.
+  - *Job Control*: It allows users to manage multiple processes concurrently, with commands to put jobs in the background or bring them to the foreground.
+  - *History Mechanism*: C-shell maintains a history of commands, enabling users to recall and reuse previous commands easily.
+  - *Alias and Variable Management*: Users can create aliases for commands and manage variables efficiently.
+  - *Scriptability*: It supports writing shell scripts, which allows automation of tedious tasks.
+
+- Basic Commands:
+  - =alias=: Create shortcuts for commands.
+  - =set=: Assign values to shell variables.
+  - =jobs=: List active jobs in the shell.
+  - =fg=: Bring a background job to the foreground.
+  - =bg=: Send a job to the background.
+
+- File Scripting:
+C-shell scripts are typically saved with a .csh or .tcsh extension. A simple structure of a C-shell script might look like this:
+
+#+begin_src csh
+#!/bin/csh
+echo "Hello, World!"
+set name = "Your Name"
+echo "This script is run by $name"
+#+end_src
+
+- Usage Scenarios:
+C-shell is commonly used in environments where its syntactical advantages and features are beneficial. However, it is less popular than the [[id:060d790c-e750-46fa-99cf-50ec9a645d56][Bourne Again Shell]] (bash) among modern users, largely due to the latter's expanded feature set and widespread adoption.
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/C_shell

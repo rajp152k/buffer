@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       47d1d87a-6973-4469-a2b5-9a54e881a3b0
+:ROAM_ALIASES: sudo
+:END:
+#+title: sudoers
+#+filetags: :sec:linux:
+
+* Overview
+
+The =sudoers= file is a critical component in [[id:f0f7ed1f-4117-46d1-91be-b921a2e5cab6][Unix]]-like operating systems that defines the permissions and privileges granted to users for executing commands with superuser (root) access through the =sudo= command. Proper configuration of the =sudoers= file is essential for system security and user management.
+
+- Purpose of the =sudoers= File
+
+  The =sudoers= file allows for granular control over what commands users can run as the superuser or as other users. Its main purposes include:
+
+  - *Security*: Limiting access to administrative tasks, reducing the risk of accidental or malicious changes to the system.
+  - *Accountability*: Logging actions taken with elevated privileges for auditing and troubleshooting.
+  - *Flexibility*: Allowing specific users or groups to have different levels of access based on their roles.
+
+- Location
+
+  The =sudoers= file is typically located at =/etc/sudoers=. It is crucial that the file is not edited with a regular text editor to avoid syntax errors that can lock out sudo privileges. Instead, use the command =visudo=, which provides syntax checking before saving changes.
+
+- Syntax
+
+  The syntax of the =sudoers= file consists of several key components:
+
+  - *Aliases*: Definitions that allow grouping of hosts, users, commands, and runas specifications for simplicity.
+
+    Example:
+    #+begin_src
+    User_Alias ADMINS = user1, user2
+    Runas_Alias OP = user3, user4
+    Cmnd_Alias RESTART = /sbin/service restart, /etc/init.d/apache2 restart
+    #+end_src
+
+  - *User Privilege Specification*: The general format for granting permissions, specifying which users or groups can run which commands and as whom.
+
+    Example:
+    #+begin_src
+    ADMINS ALL=(OP) NOPASSWD: RESTART
+    #+end_src
+
+  - *Defaults*: Settings that can tweak the behavior of =sudo=, like timeout periods or logging options.
+
+    Example:
+    #+begin_src
+    Defaults    env_reset
+    Defaults    timestamp_timeout=15
+    #+end_src
+
+- Best Practices
+
+  - Always use =visudo= to edit the =sudoers= file.
+  - Limit sudo privileges to only those necessary for users to perform their tasks.
+  - Regularly audit the =sudoers= file for outdated or unnecessary permissions.
+  - Avoid using =NOPASSWD= unless absolutely necessary, as it eliminates password prompts that provide an additional layer of security.
+
+
+* Resources
+ - https://www.sudo.ws/
+ - https://en.wikipedia.org/wiki/Sudo

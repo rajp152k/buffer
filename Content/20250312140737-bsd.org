@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       e8060c95-d251-40f7-981d-9e965d8f007d
+:ROAM_ALIASES: "Berkeley Software Distribution"
+:END:
+#+title: BSD
+#+filetags: :unix:bsd:cs:
+
+* Relevant Nodes
+** [[id:e9684f79-e0bd-4fe1-b287-cc41e8d2b7e2][FreeBSD]]
+** [[id:44d42a95-ca73-4939-841e-902b7a5386dd][OpenBSD]]
+** [[id:4b941d37-1a77-40d5-8e75-31c4b4b3f38a][DragonFlyBSD]]
+** [[id:6ecfee50-8fbd-4a79-b63c-72a8ca7ab0f8][NomadBSD]]
+** [[id:16da5f72-864f-4515-ae7b-23f3f8abc7e3][NetBSD]]

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       44d42a95-ca73-4939-841e-902b7a5386dd
+:END:
+#+title: OpenBSD
+#+filetags: :cs:

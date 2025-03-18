@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6ecfee50-8fbd-4a79-b63c-72a8ca7ab0f8
+:END:
+#+title: NomadBSD
+#+filetags: :cs:

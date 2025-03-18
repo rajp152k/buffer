@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       f00a5f1c-a009-45d6-aff8-be8922668f4a
+:END:
+#+title: FreeBSD Ports
+#+filetags: :bsd:unix:
+
+* Overview
+
+- [[id:e9684f79-e0bd-4fe1-b287-cc41e8d2b7e2][FreeBSD]] is an open-source Unix-like operating system.
+- Ports in FreeBSD refer to a package management system that allows users to easily install and manage software.
+- The FreeBSD Ports collection provides a vast array of software, organized by categories.
+- Each port consists of a directory containing a [[id:8a2ad6eb-42d1-4464-b071-17f3b90d0e54][Makefile]], patches, and additional files required to build and install the software.
+
+- Key Components of FreeBSD Ports
+
+| Component    | Description                                                         |
+|--------------+---------------------------------------------------------------------|
+| Port         | A directory structure for a specific software application.          |
+| Makefile     | Contains instructions for building and installing the port.         |
+| Patches      | Files that modify the source code of the software before building.  |
+| Categories   | Organizational framework for software (e.g., editors, games).       |
+| Dependencies | List of other ports required for the software to function properly. |
+
+- Functional Flow
+
+1. User selects a port from the Ports Collection.
+2. The Makefile is executed.
+3. Software source code may be fetched and compiled.
+4. Dependencies are resolved and built if not already installed.
+5. The software is installed on the system.
+
+Connections:
+- The FreeBSD Ports system simplifies software management comparable to package managers in other [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][operating systems]].
+- Knowledge of Makefiles relates to build systems in other languages, such as [[id:0044d332-cb89-4f9b-8734-343e0da6dbf8][CMake]] in C++ projects, indicating a commonality in software build processes.

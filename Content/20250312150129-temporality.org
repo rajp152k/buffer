@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       62488ae5-9eb2-47ef-a9b4-2108d2ce0d76
+:END:
+#+title: Temporality
+#+filetags: :meta:

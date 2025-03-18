@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0044d332-cb89-4f9b-8734-343e0da6dbf8
+:END:
+#+title:  CMake
+#+filetags: :tool:cs:

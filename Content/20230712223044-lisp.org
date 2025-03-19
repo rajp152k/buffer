@@ -34,6 +34,10 @@ Maxwell's equations of Software ([[id:01dc61b3-3843-4416-b9bc-4e80d0b694c0][Alan
 	(#t       (apply (car e) (evlis (cdr e) a) a))))
 #+end_src
 * Comment-Stream
+** 0x237F
+ - aggresive resurrection
+ - took a break to integrate golang for speed readable cloud native code
+ - Stumpwm + Nyxt to replace KDE and firefox
 ** 0x2303
  - read up on the sharp dot (#.) read macro
  - https://www.lispworks.com/documentation/HyperSpec/Body/02_dhf.htm

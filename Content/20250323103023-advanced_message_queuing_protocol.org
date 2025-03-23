@@ -1,0 +1,78 @@
+:PROPERTIES:
+:ID:       9a1a455f-36c1-4f21-b1f2-7654c21f21da
+:ROAM_ALIASES: AMQP
+:END:
+#+title: Advanced Message Queuing Protocol
+#+filetags: :cs:
+
+
+* Systems Breakdown
+** *1. Key Components of the AMQP System:*
+
+-   *Producers (Publishers):* Applications that create and send messages.
+-   *Exchanges:* Routing agents that receive messages from producers and distribute them to queues based on rules (bindings).
+-   *[[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Queues]]:* Storage units that hold messages until they are consumed by consumers.
+-   *Consumers (Subscribers):* Applications that receive and process messages from queues.
+-   *Bindings:* Rules that define the relationship between an exchange and a queue, determining which messages the exchange should route to the queue.
+-   *AMQP Server ([[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Message Broker]]):* The central component that hosts exchanges and queues, and manages message routing.
+-   *Channels:* Virtual connections within a [[id:8bfeed3e-5930-4a61-9ffb-1459b2bcfcdc][TCP]] connection that allow for multiple concurrent operations.
+-   *Connection:* A TCP connection between the client and the AMQP broker.
+
+** *2. Analysis of Relationships and Interactions:*
+
+1.  *Message Flow:*
+    *   A producer sends a message to an exchange.
+    *   The exchange uses bindings to determine which queue(s) should receive the message.
+    *   The exchange routes a copy of the message to each matching queue.
+    *   Consumers subscribe to queues and receive messages.
+2.  *Exchange Types:* Different exchange types (Direct, Fanout, Topic, Headers) dictate how messages are routed.
+    *   /Direct:* Routes messages to queues with a binding key that exactly matches the routing key of the message.
+    *   /Fanout:* Routes messages to all queues bound to it.
+    *   /Topic:* Routes messages to queues whose binding key matches a pattern in the message's routing key.
+    *   /Headers:* Routes messages based on message header attributes.
+3.  *Quality of Service (QoS):* AMQP provides mechanisms for ensuring message delivery and handling failures. This includes message acknowledgements and persistence.
+4.  *Channels and Concurrency:* Channels enable multiple concurrent operations over a single TCP connection, improving efficiency.
+
+** *3. Breakdown into Simpler Parts:*
+
+-   *Messaging Model:* Focus on the publish-subscribe pattern, decoupling producers and consumers.
+-   *Routing Logic:* Understand how exchanges use bindings and routing keys to direct messages.
+-   *Reliability Features:* Examine message acknowledgements, persistence, and transaction management.
+-   *Concurrency Handling:* Investigate the role of channels in managing concurrent operations.
+
+** *4. Visual/Conceptual Model:*
+
+#+begin_src plantuml :file images/message-queues.png :exports both
+@startuml
+title Message Queue Architecture
+
+component Producer as P
+component Exchange as E
+component "Queue 1" as Q1
+component "Queue 2" as Q2
+component "Consumer 1" as C1
+component "Consumer 2" as C2
+
+P --> E : Sends Message
+E -- Q1 : Binding Key
+E -- Q2 : Binding Key
+Q1 --> C1 : Consumes Message
+Q2 --> C2 : Consumes Message
+
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:images/message-queues.png]]
+
+** *5. Actionable Insights and Recommendations:*
+
+-   *Choose the Right Exchange Type:* Select the exchange type that best matches your routing requirements (Direct, Fanout, Topic, Headers).
+-   *Implement Message Acknowledgements:* Ensure that consumers properly acknowledge messages to prevent data loss in case of failures.
+-   *Use Persistent Messages and Queues:* Configure messages and queues to be persistent to survive broker restarts.
+-   *Optimize Channel Usage:* Use channels to improve concurrency and reduce the overhead of creating new TCP connections.
+-   *Monitor Performance:* Monitor the message broker's performance to identify and address bottlenecks.
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol

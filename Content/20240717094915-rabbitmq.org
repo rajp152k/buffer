@@ -3,3 +3,6 @@
 :END:
 #+title: RabbitMQ
 #+filetags: :data:programming:tool:
+
+* Relevant Nodes
+** [[id:158b95bc-9434-48f2-b932-3be750afa7e6][Erlang]]

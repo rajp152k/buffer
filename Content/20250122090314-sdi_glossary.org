@@ -44,3 +44,4 @@ A quick index into abbreviations I encounter in the domain of computer science
 | JWT       | [[id:624e5e40-e45a-4020-ba1c-1c83d2f7a395][JSON Web Tokens]]                        |
 | FFT       | [[id:16989196-4e02-40b7-b8bb-e30cd3500f6a][Fast Fourier Transform]]                 |
 | [[id:0eefa15d-d817-4fb1-8235-161025ebddcb][CUDA]]      | Compute Unified Device Architecture    |
+| AMQP      | [[id:9a1a455f-36c1-4f21-b1f2-7654c21f21da][Advanced Message Queuing Protocol]]      |

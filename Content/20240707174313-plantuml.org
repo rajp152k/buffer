@@ -4,6 +4,9 @@
 #+title: PlantUML
 #+filetags: :chart:tool:
 
+* Abstract
+ - refer these examples for semantic and syntactic edits to outputs from LLMs
+ - I usually don't write plantuml from scratch
 * Examples
 ** Sequence Diagrams
 

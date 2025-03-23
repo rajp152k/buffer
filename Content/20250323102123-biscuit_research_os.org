@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       31ce923a-a1bb-464c-9e02-e05c0ea21f56
+:END:
+#+title: Biscuit Research OS
+#+filetags: :cs:
+
+* Relevant Nodes
+** [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][Operating System]]
+** [[id:d43f2ef3-6eb4-4f8d-89ed-095fedd7d7f9][Linux]]
+** [[id:e8060c95-d251-40f7-981d-9e965d8f007d][BSD]]
+** [[id:6c88b73c-04d0-4f82-bb6e-384ab3563397][POSIX]]
+* Resources
+ - https://github.com/mit-pdos/biscuit
+ - https://pdos.csail.mit.edu/projects/biscuit.html

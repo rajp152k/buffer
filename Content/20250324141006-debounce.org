@@ -1,0 +1,107 @@
+:PROPERTIES:
+:ID:       d78e2fbe-8c51-489c-b97c-74b01a0abcb6
+:END:
+#+title: Debounce Stability Pattern
+#+filetags: :cloud:cs:
+
+- etymological origins in electronic circuits : https://www.geeksforgeeks.org/switch-debounce-in-digital-circuits/
+- limits the frequency of a function invocation so that only the first or last in a cluster of calls is actually performed.
+- is native to javascript but can port to others as needed, will be proceeding in golang
+- 2 components:
+  - Circuit : the computation to be regulated
+  - Debounce : A closure over Circuit that manages the calls
+- similar logic to [[id:64b6bd2a-de67-4f28-9406-336879845d80][Circuit Breaker]]s in that the closure maintains the rate limiting logic and state
+**** Code
+- on each call of the Debounce returned closure, regardless of the outcome, a time interval is set.
+  - calls before expiry of that duration are ignored, any after the duration are passed along to the inner Circuit function.
+    - this is a "function-first" : i.e cache results and ignore the latter calls
+  - Alternatively, a "funciton-last" implementation will accumulate a series of requests before calling Circuit
+    - This could be useful when the inner circuit needs some kick-starting corpus of inputs (think [[id:e0b818a4-972a-43e7-922f-e3e7a47af4d1][autocompletion]])
+    - can be employed if the response can be delayed a little and increased latency is not an issue.
+- The Core Circuit can be a function as follows
+
+  #+begin_src go
+type Circuit func(context.Context) (string, error)
+  #+end_src
+
+- The Debounce prepped closure can then be structured as follows (function-first)
+
+  #+begin_src go
+func DebounceFirst(circuit Circuit, d time.Duration) Circuit {
+
+	var threshold time.Time
+	var result string // result cache
+	var err error
+	var m sync.Mutex
+
+	return func(ctx context.Context) (string, error) {
+		m.Lock()
+
+		defer func() {
+			threshold = time.Now().Add(d)
+			m.Unlock()
+		}()
+
+		if time.Now().Before(threshold){
+			//return cached result before threshold
+			return result, err
+		}
+
+		// if expired, compute and cache result
+		// in the enclosed variable result
+		result, err = circuit(ctx)
+
+		return result, err
+	}
+}
+
+  #+end_src
+
+  - a function-last implementation needs a little more book-keeping
+
+    #+begin_src go
+func DebounceLast(circuit Circuit, d time.Duration) Circuit {
+        var threshold time.Time = time.Now()
+        var ticker *time.Ticker
+        var result string
+        var err error
+        var once sync.Once
+        var m sync.Mutex
+        return func(ctx context.Context) (string, error) {
+                m.Lock()
+                defer m.Unlock()
+                threshold = time.Now().Add(d)
+                once.Do(func() {
+                        ticker = time.NewTicker(time.Millisecond * 100)
+                        go func() {
+                                defer func() {
+                                        m.Lock()
+                                        ticker.Stop()
+                                        once = sync.Once{}
+                                        m.Unlock()
+                                }()
+                                for {
+                                        select {
+                                        case <-ticker.C:
+                                                m.Lock()
+                                                if time.Now().After(threshold) {
+                                                        result, err = circuit(ctx)
+                                                        m.Unlock()
+                                                        return
+                                                }
+                                                m.Unlock()
+                                        case <-ctx.Done():
+                                                m.Lock()
+                                                result, err = "", ctx.Err()
+                                                m.Unlock()
+                                                return
+                                        }
+                                }
+                        }()
+                })
+                return result, err
+        }
+}
+    #+end_src
+
+    #+RESULTS:

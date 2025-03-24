@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d1884770-97bb-4bbd-973a-d3bea77b68c0
+:END:
+#+title: golang Context
+#+filetags: :programming:golang:cs:

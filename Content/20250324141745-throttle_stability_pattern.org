@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       f437c67e-a680-4400-8640-1fd32cc9e363
+:END:
+#+title: Throttle Stability Pattern
+#+filetags: :cloud:cs:
+
+- limits the frequency of a funciton call to some maximum number of invocations per minute
+- See [[id:a9f836f0-d43d-4e97-96fc-06f75e982d15][Rate Limiting]] Algorithms
+- diff w/ [[id:d78e2fbe-8c51-489c-b97c-74b01a0abcb6][Debounce]]
+  - debounce collates clusters of calls (across flexible durations) into representative boundary calls
+  - throttle limits the amount of calls in a relatively fixed duration
+- 2 components
+  - Effector : the function being regulated
+  - Throttle : the enwrapping closure over Effector : implementing the rate limiting layer
+
+**** Code
+    #+begin_src  go
+type Effector func(context.Context) (string, error)
+    #+end_src
+
+    #+begin_src go
+func Throttle(e Effector, max uint, refill uint, d time.Duration) Effector {
+	var tokens = max
+	var once sync.Once
+
+	return func(ctx context.Context) (string, error) {
+		if ctx.Err() != nil {
+			return "", ctx.Err()
+		}
+	}
+
+	once.Do(func() {
+		ticker := time.NewTicker(d)
+
+		go func() {
+			defer ticker.Stop()
+
+			for {
+				select {
+				case <-ctx.Done():
+					return
+
+				case <- ticker.C:
+					t := tokens + refill
+					if t > max {
+						t = max
+					}
+					tokens = t
+				}
+			}
+		}()
+	})
+
+	if tokens <= 0 {
+		return "", fmt.Errorf("too many calls")
+	}
+
+	tokens--
+
+	return e(ctx)
+}
+    #+end_src

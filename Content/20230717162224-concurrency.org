@@ -8,9 +8,6 @@
 - Important aspect when it comes to optimizing the [[id:314236f7-81ae-48b7-b62b-dc822119180e][design of a system]].
 * Patterns
 ** Fan-In
-:PROPERTIES:
-:ID:       400e0635-f797-4abd-b6b5-d6379634b430
-:END:
 - multiplexes multiple input channels onto one output channel
 - 3 components:
   - Sources : set of one or more input channels with the same type, accepted by funnel
@@ -97,9 +94,6 @@ func main() {
 - Note that the sends were from multiple sources but the Prints are from the destination channel
 
 ** Fan-Out
-:PROPERTIES:
-:ID:       59c59a72-789c-4812-b2e8-18b1731511df
-:END:
 - evenly distributes messages from an input channel to multiple output channels
 - 3 components
   - Source : input channel, accepted by split
@@ -188,9 +182,6 @@ dest chan # 2 intook { 3 from source chan }
 #+end_example
 
 ** Future/Promise/Delays
-:PROPERTIES:
-:ID:       0e346737-3bff-4f35-b08c-9c8c2f163a3d
-:END:
 - provides a placeholder for a value that is not yet known
 - not frequently used in golang, cause one can just return a channel that will receive the output later on
   #+begin_src  go
@@ -308,9 +299,6 @@ func main() {
   #+end_src
 
 ** Sharding
-:PROPERTIES:
-:ID:       f57a745d-8b10-4374-9a5e-a2193f56923d
-:END:
 - splits a large data structure into multiple partitions to localize the effects of read/write locks
   - helps distribute load and provide redundancy
 - Usually employed natively by databases : horizontal sharding
@@ -468,6 +456,5 @@ func main() {
 * Major Flavors
  - [[id:3b44673f-5e7c-4b96-8ef2-1d68f5131173][Actor-Model Computation]]
  - [[id:0458f827-5634-41e0-b261-dfc5cb2d2389][CSP: Communicating Sequential Processes]]
-
 * Resources
 ** [[id:64bfc13e-1b7c-4cbe-ba0e-9d17ebaacef1][BOOK: Cloud Native Go]] : Chapter 4

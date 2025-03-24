@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       24686296-f7cc-416e-829f-b09a65969036
+:END:
+#+title: Suckless
+#+filetags: :tool:cs:
+
+* Resources
+- https://suckless.org/philosophy/

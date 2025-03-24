@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       e5870690-91ef-41f4-adea-eb48c3be2325
+:END:
+#+title: Retry Stability Pattern
+#+filetags: :cloud:cs:
+
+- https://learn.microsoft.com/en-us/azure/architecture/patterns/retry
+- accounts for a possible transient fault in a distributed system by transparently retrying a failed operation
+- 2 components:
+  - Effector : interacts with the service
+  - Retry : accepts the effector, returning a closure over it
+**** Code
+- like the Circuit, the effector will have a function signature as follows
+#+begin_src go
+type Effector func(context.Context) (string, error)
+#+end_src
+
+- the Retry can take in paramters like the number of retries and delay durations, returning a closure of the same signature as the Effector
+
+  #+begin_src go
+func Retry(effector Effector, retries int, delay time.Duration) Effector{
+	return func(ctx context.Context) (string, error) {
+		for r := 0; ; r++ {
+			response, err := effector(ctx)
+			if err == nil || r >= retries {
+				return response, err
+			}
+			log.Printf("Attempt %d failed; retrying in %v", r + 1, delay)
+
+			select {
+			case <- time.After(delay):
+			case <- ctx.Done():
+				return "", ctx.Err()
+			}
+		}
+	}
+}
+  #+end_src
+
+  - emulating an erroneous function to try out retry
+
+    #+begin_src go
+var count int
+
+func EmulateTransientError(ctx context.Context) (string, error) {
+	count++
+
+	if count <= 3 {
+		return "intentional fail", errors.New("error")
+	} else {
+		return "success", nil
+	}
+}
+
+func main() {
+	r := Retry(EmulateTransientError, 5, 2*time.Second)
+
+	res, err := r(context.Background())
+
+	fmt.Println(res,err)
+}
+    #+

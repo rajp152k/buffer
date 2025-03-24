@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       ce3bf6ec-0c36-4fc7-ae3d-3483ff67cfc3
+:END:
+#+title: Timeout Stability Pattern
+#+filetags: :cloud:cs:
+
+- allows a process to stop waiting for an answer once it's clear that an answer may not be coming
+- 3 components:
+  - client : calls a slow function
+  - slowfunction : a long running function
+  - timeout : wrapper over slow function
+- straightforward if a function utilizes context.Context in golang,
+
+**** Code
+  #+begin_src go
+ctx := context.Background()
+ctxt,cancel := context.WithTimeout(ctx, 10*time.Second)
+defer cancel()
+result, err := SomeFunction(ctxt)
+  #+end_src
+- This isn't usually the case though
+  - build a closure that respects the context in such a case, followed by a select over your injected timeout context and the result of a goroutined slow function
+- will need to convert the slow function into a context respecting wrapper  as follows
+
+#+begin_src go
+type SlowFunction func(string) (string, error)
+
+type WithContext func(context.Context, string) (string, error)
+
+func Timeout(f SlowFunction) WithContext {
+	return func(ctx context.Context, arg string) (string error) {
+		chres := make(chan string) //channel for results
+		cherr := make(chan string) //channel for errors
+
+		go func() {
+			res, err := f(arg) //dispatch slow function
+			chres <- res
+			cherr <- err
+		}()
+
+		select {
+		case res := <-chres://if done before timeout
+			return res, <-cherr
+		case <-ctx.Done()://in case of timeout
+			return "",ctx.Err()
+		}
+	}
+}
+#+end_src
+
+- finally, using Timeout will be like
+#+begin_src go
+func main() {
+	ctx := context.Background()
+	ctxt, cancel := context.WithTimeout(ctx, 1*time.Second)
+	defer cancel()
+
+	timeout := Timeout(Slow)
+	res, err := timeout(ctxt, "some input")
+
+	fmt.Println(res, err)
+}
+#+end_src
+
+- an alternative to using context.Context (context.Context is the preferred method btw), is using the time.After function : https://pkg.go.dev/time#After

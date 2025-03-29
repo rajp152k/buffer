@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       7e59cdd8-64f3-46f9-ab43-e94dd4b605a5
+:ROAM_ALIASES: Experimentation
 :END:
 #+title: Experiment
 #+filetags: :meta:

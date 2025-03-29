@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       08cfa478-6a81-4eed-b150-0101573e7056
+:ROAM_ALIASES: Cycling
+:END:
+#+title: Periodization
+#+filetags: :meta:

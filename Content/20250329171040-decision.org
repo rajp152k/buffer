@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2c82dde2-487f-446b-8a83-79a21487c1ba
+:END:
+#+title: Decision
+#+filetags: :meta:

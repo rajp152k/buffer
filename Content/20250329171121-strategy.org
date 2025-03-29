@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1b6848b4-4162-4e85-83e7-2f69caf29a1c
+:END:
+#+title: Strategy
+#+filetags: :strat:meta:

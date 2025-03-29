@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1fbb83f1-93d2-4069-bd9a-d692a4815579
+:END:
+#+title: Noise
+#+filetags: :meta:

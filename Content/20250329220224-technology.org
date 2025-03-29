@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fdf38fd5-69ee-4746-9d67-0beb1c988574
+:END:
+#+title: Technology
+#+filetags: :meta:tech:

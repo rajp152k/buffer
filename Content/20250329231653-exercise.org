@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3ba40816-070f-4017-a22a-cffafbb153ff
+:END:
+#+title: Exercise
+#+filetags: :health:

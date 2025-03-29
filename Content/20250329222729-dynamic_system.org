@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       06614541-0230-495c-be88-b992e0f8c097
+:END:
+#+title: Dynamic System
+#+filetags: :sys:

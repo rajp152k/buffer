@@ -1,0 +1,164 @@
+:PROPERTIES:
+:ID:       b301759d-6ad2-4a40-b948-cbe727f27e2d
+:END:
+#+title: Dopamine
+#+filetags: :neuroscience:chemistry:
+
+This [[id:47529997-36d8-40ff-9910-34009fb3b892][Neurotransmitters]]  is crucial for various brain functions and plays a significant role in many aspects of our behavior and well-being. I'll provide a comprehensive overview of dopamine, covering its chemistry, synthesis, function, and relevance to health and disease.
+
+*What is Dopamine?*
+
+Dopamine is an organic chemical of the [[id:3d5e20c7-a5ab-4318-a07f-8730f8ea45a9][catecholamine]] and [[id:f20d749c-518f-4cb4-a129-ee18df519b69][phenethylamine]] families. In the [[id:a1a6a525-9e69-4eda-9085-2fff9ef5d152][brain]], it functions as a neurotransmitter—a chemical released by nerve cells to send signals to other nerve cells. Dopamine is often associated with pleasure and reward, but its functions are much broader than that. It is involved in motor control, motivation, arousal, reinforcement, and cognitive functions.
+
+*Chemical Structure and Properties*
+
+Dopamine's chemical formula is C8H11NO2, and its [[id:b27040f6-3490-4685-a9e0-942c018b05c6][IUPAC]] name is 4-(2-aminoethyl)benzene-1,2-diol.
+
+#+begin_src verbatim
+      HO
+      |
+      C6H3 - CH2 - CH2 - NH2
+      |
+      HO
+#+end_src
+
+Dopamine is synthesized from [[id:af3800c4-9ee1-4300-9c7e-f2f58bdbe668][L-phenylalanine]] or [[id:8968d51d-b478-42f3-bf6b-eab40efa273b][L-tyrosine]]. It's a relatively small molecule, allowing it to diffuse across [[id:bd2864a5-c010-4336-9e11-7a75069ceb9f][synaptic]] clefts to bind to dopamine receptors. Here are some of its key properties:
+
+-   *Molecular Weight:* 153.18 g/mol
+-   *Appearance:* White solid
+-   *Solubility:* Soluble in water and aqueous solutions of acids
+-   *Stability:* Dopamine is prone to oxidation, especially in alkaline conditions. Antioxidants are often added to dopamine solutions to prevent degradation.
+
+*Synthesis of Dopamine*
+
+Dopamine is synthesized in the brain through a series of [[id:87031708-9230-4105-80fa-b56a8af902ba][enzymatic]] reactions. The primary precursor is the amino acid L-tyrosine. Here's a step-by-step breakdown of the synthesis pathway:
+
+1.  */Tyrosine Hydroxylase (TH)**: L-tyrosine is converted to L-DOPA (L-3,4-dihydroxyphenylalanine). This is the rate-limiting step in dopamine synthesis.
+    #+begin_src text
+    L-Tyrosine --(Tyrosine Hydroxylase)--> L-DOPA
+    #+end_src
+
+2.  */DOPA Decarboxylase (Aromatic L-Amino Acid Decarboxylase, AADC)**: L-DOPA is converted to dopamine.
+    #+begin_src text
+    L-DOPA --(DOPA Decarboxylase)--> Dopamine
+    #+end_src
+
+3.  */Packaging into [[id:dc03094c-2322-42ec-9264-a4ca8eb2089d][Vesicles]]**: Dopamine is then transported into vesicles by the vesicular monoamine transporter 2 (VMAT2) for storage and later release.
+
+#+begin_src mermaid :file images/dopamine-synth.png :exports results
+graph LR
+    A[L-Tyrosine] --> B(L-DOPA)
+    B --> C(Dopamine)
+    C --> D(Vesicle)
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#ccf,stroke:#333,stroke-width:2px
+    style D fill:#ccf,stroke:#333,stroke-width:2px
+    A -- Tyrosine Hydroxylase --> B
+    B -- DOPA Decarboxylase --> C
+    C -- VMAT2 --> D
+#+end_src
+
+#+RESULTS:
+[[file:images/dopamine-synth.png]]
+
+*Dopamine Receptors*
+
+Dopamine exerts its effects by binding to dopamine receptors located on the surface of nerve cells. There are five main types of dopamine receptors, classified into two families:
+
+-   *D1-like Receptors (D1 and D5)*: These receptors are coupled to Gs proteins, which activate adenylyl cyclase, increasing intracellular cAMP levels.
+-   *D2-like Receptors (D2, D3, and D4)*: These receptors are coupled to Gi proteins, which inhibit adenylyl cyclase, decreasing cAMP levels. They also activate potassium channels and inhibit calcium channels.
+
+These receptors are distributed in different regions of the brain and mediate different functions. For example:
+
+-   *D1 Receptors*: Highly expressed in the striatum and involved in motor activity, motivation, and cognition.
+-   *D2 Receptors*: Found in high concentrations in the striatum, substantia nigra, and ventral tegmental area (VTA). They play a crucial role in motor control, reward, and hormone regulation.
+-   *D3 Receptors*: Predominantly found in the limbic areas, including the nucleus accumbens. They are involved in motivation, reward, and emotional regulation.
+-   *D4 Receptors*: Expressed in the frontal cortex, amygdala, and hippocampus, and are implicated in cognition and attention.
+-   *D5 Receptors*: Found in the hippocampus and hypothalamus, and participate in cognitive functions and regulation of hormonal release.
+
+*Functions of Dopamine*
+
+Dopamine is involved in numerous functions within the brain, including:
+
+-   *Reward and Motivation*: Dopamine plays a key role in the reward system. When we experience something pleasurable, dopamine is released in the nucleus accumbens, reinforcing the behavior and motivating us to repeat it.
+    -   /Example:* Eating a delicious meal or achieving a goal triggers dopamine release, making us feel good and encouraging us to seek similar experiences in the future.
+-   *Motor Control*: Dopamine is essential for coordinating movement. The substantia nigra, a brain region rich in dopamine-producing neurons, projects to the striatum. This pathway is critical for initiating and coordinating movement.
+    -   /Example:* In Parkinson's disease, the dopamine-producing neurons in the substantia nigra degenerate, leading to motor deficits such as tremors, rigidity, and slow movement.
+-   *Cognition*: Dopamine influences cognitive functions such as attention, working memory, and decision-making. It modulates neuronal activity in the prefrontal cortex, a brain region involved in higher-order cognitive processes.
+    -   /Example:* Dopamine helps maintain focus and attention, allowing us to concentrate on tasks and make informed decisions.
+-   *Hormone Regulation*: Dopamine acts as a [[id:d379ec04-1e7f-4774-afbc-df33c9f97e76][neurohormone]], inhibiting the release of prolactin from the pituitary gland.
+    -   /Example:* Dopamine is used clinically to treat hyperprolactinemia, a condition characterized by abnormally high levels of prolactin.
+-   *Emotional Regulation*: Dopamine plays a role in regulating mood and emotional responses. Imbalances in dopamine levels have been linked to mood disorders.
+    -   /Example:* Dysregulation of dopamine pathways can contribute to symptoms of depression or mania.
+
+*Dopamine Pathways in the Brain*
+
+Several major dopamine pathways are critical for different functions:
+
+-   *Nigrostriatal Pathway*: Connects the substantia nigra to the dorsal striatum. It is involved in motor control and is affected in Parkinson's disease.
+-   *Mesolimbic Pathway*: Connects the ventral tegmental area (VTA) to the nucleus accumbens. It is involved in reward, motivation, and addiction.
+-   *Mesocortical Pathway*: Connects the VTA to the prefrontal cortex. It is involved in cognition, attention, and decision-making.
+-   *Tuberoinfundibular Pathway*: Connects the hypothalamus to the pituitary gland. It regulates prolactin secretion.
+
+#+begin_src mermaid :file images/dopamine-paths.png :exports results
+graph LR
+    A[Substantia Nigra] --> B(Dorsal Striatum)
+    C[Ventral Tegmental Area ] --> D(Nucleus Accumbens)
+    C --> E(Prefrontal Cortex)
+    F[Hypothalamus] --> G(Pituitary Gland)
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:2px
+    style C fill:#ccf,stroke:#333,stroke-width:2px
+    style D fill:#ccf,stroke:#333,stroke-width:2px
+    style E fill:#ccf,stroke:#333,stroke-width:2px
+    style F fill:#ccf,stroke:#333,stroke-width:2px
+    style G fill:#ccf,stroke:#333,stroke-width:2px
+    A -- Nigrostriatal Pathway --> B
+    C -- Mesolimbic Pathway --> D
+    C -- Mesocortical Pathway --> E
+    F -- Tuberoinfundibular Pathway --> G
+#+end_src
+
+#+RESULTS:
+[[file:images/dopamine-paths.png]]
+
+*Dopamine and Disease*
+
+Dysregulation of dopamine pathways is implicated in several [[id:49168e7e-b7b0-4362-aa63-e39cdf87e95a][neurological and psychiatric disorders]]:
+
+-   *Parkinson's Disease*: Characterized by the loss of dopamine-producing neurons in the substantia nigra, leading to motor deficits. Treatments often involve dopamine replacement therapies like L-DOPA.
+-   *Schizophrenia*: Associated with excessive dopamine activity in the mesolimbic pathway. Antipsychotic medications often target dopamine receptors (especially D2 receptors) to reduce symptoms like hallucinations and delusions.
+-   *Attention-Deficit/Hyperactivity Disorder (ADHD)*: May involve deficits in dopamine signaling in the prefrontal cortex. Stimulant medications used to treat ADHD, such as methylphenidate (Ritalin) and amphetamine (Adderall), increase dopamine levels.
+-   *[[id:f27ef791-18ae-41f9-a225-ec243dcdd1da][Addiction]]*: Drugs of abuse often increase dopamine levels in the nucleus accumbens, leading to reinforcing effects. Chronic drug use can lead to long-term changes in dopamine pathways, contributing to addiction.
+-   *Depression*: Some forms of depression are associated with reduced dopamine activity. Certain antidepressants may increase dopamine levels to alleviate symptoms.
+
+*Clinical Significance and Therapeutic Uses*
+
+Dopamine and its related compounds are used therapeutically in various medical conditions:
+
+-   *L-DOPA*: A precursor to dopamine, used to treat Parkinson's disease by increasing dopamine levels in the brain.
+-   *Dopamine Agonists*: Medications that mimic the effects of dopamine by binding to dopamine receptors. They are used to treat Parkinson's disease and restless legs syndrome.
+-   *Antipsychotics*: Medications that block dopamine receptors (especially D2 receptors) to treat schizophrenia and other psychotic disorders.
+-   *Stimulants*: Medications that increase dopamine levels, used to treat ADHD and narcolepsy.
+-   *Vasopressors*: Dopamine can be used as a vasopressor in critical care settings to increase blood pressure.
+
+*Factors Affecting Dopamine Levels*
+
+Several factors can influence dopamine levels in the brain:
+
+-   *[[id:d867a0d6-2d32-4125-aa7d-643945bdb018][Diet]]*: Nutrients like tyrosine and phenylalanine, precursors to dopamine, can affect dopamine synthesis. A balanced diet supports optimal dopamine production.
+-   *[[id:3ba40816-070f-4017-a22a-cffafbb153ff][Exercise]]*: Physical activity can increase dopamine release and improve mood.
+-   *[[id:2401b5de-b6be-456e-8f1e-8c93550e28f9][Sleep]]*: Adequate sleep is essential for maintaining healthy dopamine levels. Sleep deprivation can disrupt dopamine signaling.
+-   *[[id:ffee795c-3e77-4a55-92b5-52afef7f4a53][Stress]]*: Chronic stress can deplete dopamine levels and impair dopamine function.
+-   *[[id:9e797912-b6bd-4510-82aa-bf891070eb11][Drugs]]*: Many drugs, including both legal and illicit substances, can affect dopamine levels and function.
+
+*Experiment Idea:*
+
+A simple experiment to illustrate the effects of dopamine involves studying the behavior of /C. elegans/, a nematode worm. /C. elegans/ possesses a dopaminergic system and exhibits behavioral responses to dopamine.
+
+1.  *Preparation:* Prepare agar plates seeded with /E. coli/ (the food source for /C. elegans/).
+2.  *Control Group:* Transfer a group of /C. elegans/ to a control plate with no dopamine.
+3.  *Experimental Group:* Transfer another group of /C. elegans/ to a plate containing a known concentration of dopamine.
+4.  *Observation:* Observe the movement and behavior of the worms in both groups under a microscope. Dopamine exposure typically results in increased locomotion and altered feeding behavior.
+5.  *Analysis:* Quantify the differences in movement speed, turning frequency, and feeding rate between the control and dopamine-exposed groups. This provides a simple, observable model of dopamine's behavioral effects.

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f05ff1d5-3846-484d-af54-8874cd3de703
+:END:
+#+title: qualitative
+#+filetags: :meta:

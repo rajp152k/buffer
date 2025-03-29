@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f09ec649-8502-4e84-8312-5b178c9e8411
+:END:
+#+title: situational awareness
+#+filetags: :meta:neuroscience:

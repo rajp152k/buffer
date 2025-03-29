@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ec4241c9-866d-4e53-817e-09fcf9ebb660
+:END:
+#+title: Art
+#+filetags: :art:

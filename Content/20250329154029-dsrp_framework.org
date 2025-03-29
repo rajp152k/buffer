@@ -6,7 +6,7 @@
 
 * Overview
 
-- D: Distinctions - Making distinctions between things and ideas; defining what something /is/ and what it /is not/.
+- D: [[id:d6d7f454-38ea-412c-b0e1-fd09ed627ae7][Distinctions]] - Making distinctions between things and ideas; defining what something /is/ and what it /is not/.
 - S: Systems - Organizing things into systems; identifying parts and wholes, and relationships between them.
 - R: Relationships - Identifying relationships between things and ideas; looking for influences and correlations.
 - P: Perspectives - Recognizing different points of view; understanding how perspectives influence understanding.

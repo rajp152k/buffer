@@ -1,7 +1,6 @@
 :PROPERTIES:
 :ID:       20240218T064307.072009
 :END:
-#+title: society
+#+title: Social Systems
 #+filetags: :meta:
 
-Exploration of the "scale" axes in the context of [[id:20240218T064356.582939][Psychology]]. Checkout [[id:69d908d1-7a4d-46ea-8a01-cb02e67e9a2b][Crowd Psychology]] for an init.

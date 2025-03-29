@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       2401b5de-b6be-456e-8f1e-8c93550e28f9
+:ROAM_ALIASES: Sleep
 :END:
 #+title: sleep
 #+filetags: :biology:

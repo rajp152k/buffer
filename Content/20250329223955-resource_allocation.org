@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8d6bf5bb-7b06-4d6b-836e-81b400f2a225
+:END:
+#+title: resource allocation
+#+filetags: :meta:

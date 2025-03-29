@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       89e058a1-5db4-4cb4-a878-663f167b2ffe
+:END:
+#+title: Painting
+#+filetags: :skills:

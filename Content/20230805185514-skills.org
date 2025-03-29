@@ -9,12 +9,6 @@ Generic skills that I plan on actively improving
 ** [[id:20230712T131112.909632][Writing]]
 ** [[id:20240129T072255.072908][Speaking]]
 ** [[id:20231212T084350.640179][Reading]]
-* Specific Domains
-Larger domains, closer to a hard intangible skill, that I wish to fully explore
-** Creative Monetization
-** Marketing
-** Sales
-** Supply Chain/Distribution
-** Graphic Design
 * Meta
  - [[id:75b97f8f-1c44-4662-a425-7d501ce8cf62][Learning Curves]]
+ - [[id:fbb25479-d330-48fb-a700-9e1b3d46031b][Skill Trees]]

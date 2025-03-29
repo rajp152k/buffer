@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       9585f72e-7b33-406a-ad35-5642a9fc11ef
+:END:
+#+title: Laziness
+#+filetags: :neuroscience:
+
+* Overview
+
+-   *Initial Considerations*:
+    *   Laziness is a [[id:32bcb9f6-5869-4ce7-b57a-a493969a3aed][subjective]] term.
+    *   It can be [[id:9c309d99-9bd7-430c-87a2-00903efc43d4][perceived]] differently based on [[id:27568d26-4509-4af1-bd17-fe940d2a3262][cultural]] and [[id:8c199da1-e091-44dc-8cda-66c7970c947e][individual]] values.
+    *   From a neuroscience perspective, it could relate to [[id:8e69a094-703b-4191-942d-3bec4175b993][motivation]], [[id:e0486d7a-9704-458b-8bb4-fe1decc7197b][reward]] systems, and [[id:b47db89c-fad7-486f-9cac-55a3fd9c6c50][energy]] regulation in the brain.
+
+-   *Potential Aspects to Explore*:
+    *   *[[id:47529997-36d8-40ff-9910-34009fb3b892][Neurotransmitters]]*: The role of [[id:b301759d-6ad2-4a40-b948-cbe727f27e2d][dopamine]], serotonin, and norepinephrine.
+    *   *Brain Regions*: Activity in the prefrontal cortex, amygdala, and basal ganglia.
+    *   *Cognitive Factors*: Procrastination, decision-making, and goal-setting.
+    *   *Physiological Factors*: Sleep patterns, nutrition, and physical activity.
+    *   *Psychological Factors*: Mental health conditions like depression or ADHD, which can manifest as perceived laziness.
+    *   *Evolutionary Perspective*: Energy conservation as an adaptive trait.
+
+-   *Connections*:
+    *   Neurotransmitters influence brain region activity, affecting cognitive functions and behavior.
+    *   Physiological and psychological factors interact with the neurological processes that regulate motivation and energy levels.
+    *   Perceived laziness can be a symptom of underlying neurological or psychological conditions.
+
+-   *Clarifying Questions*:
+    *   What specific aspects of laziness are you interested in? (e.g., causes, consequences, interventions)
+    *   Are you interested in laziness as a general phenomenon, or in a specific context (e.g., academic performance, work productivity)?
+    *   Are you interested in the subjective feeling of laziness, or in objective measures of inactivity?
+
+-   *Research Pathways*:
+    *   How do different motivational theories (e.g., self-determination theory, expectancy-value theory) relate to the neurological underpinnings of laziness?
+    *   What are the ethical implications of interventions aimed at reducing laziness (e.g., pharmacological enhancement of motivation)?
+    *   Can we develop objective measures of "laziness" that are not biased by cultural or individual values?

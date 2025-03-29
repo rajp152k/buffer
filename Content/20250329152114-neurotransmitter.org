@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       7fc0358d-c7a4-4980-be8b-230cb342fc9a
-:END:
-#+title: neurotransmitter
-#+filetags: :chemistry:biology:

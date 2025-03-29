@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       dc03094c-2322-42ec-9264-a4ca8eb2089d
+:END:
+#+title: Vesicles
+#+filetags: :biology:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0c27b7ae-e696-4912-98d8-60b1b9d9b32d
+:END:
+#+title: stimulation
+#+filetags: :neuroscience:meta:

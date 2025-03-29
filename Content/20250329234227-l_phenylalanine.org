@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       af3800c4-9ee1-4300-9c7e-f2f58bdbe668
+:END:
+#+title: L-phenylalanine
+#+filetags: :chemistry:

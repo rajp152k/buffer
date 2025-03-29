@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ae6fdf15-79de-4413-8958-5f732c1db477
+:ROAM_ALIASES: sameness
+:END:
+#+title: Similarity
+#+filetags: :meta:

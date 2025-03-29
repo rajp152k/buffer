@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b0636a79-9bab-4049-a695-cf16c0462827
+:END:
+#+title: Somatic markers
+#+filetags: :biology:neuroscience:

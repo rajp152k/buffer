@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bae838c7-eb56-4eaf-af5c-1a0caacab505
+:END:
+#+title: Sense
+#+filetags: :neuroscience:meta:

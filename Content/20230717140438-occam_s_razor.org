@@ -2,7 +2,7 @@
 :ID:       51c4a1c3-9289-4f09-bb95-1585b750f328
 :END:
 #+title: Occam's Razor
-#+filetags: :idealogy:
+#+filetags: :ideology:
 
 * Abstract
  - recently, I've been embracing the idea that a simple black-box isn't necessarily better than an equally performant transparent utility that exposes hooks into the tools intermediates and allows the user to explore/exploit other aspects of the tooling.

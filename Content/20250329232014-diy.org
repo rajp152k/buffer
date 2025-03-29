@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6cf99947-2639-4794-a2c3-3b8c894ae187
+:END:
+#+title: DIY
+#+filetags: :meta:diy:

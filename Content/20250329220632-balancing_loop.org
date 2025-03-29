@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f7c61b66-e503-40a1-93b8-f6784c49e280
+:END:
+#+title: Balancing Loop
+#+filetags: :sys:

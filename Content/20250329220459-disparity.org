@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c9f439f6-7e26-47cb-85ba-e7241ab62399
+:END:
+#+title: Disparity
+#+filetags: :meta:

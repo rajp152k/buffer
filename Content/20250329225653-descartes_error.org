@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       71e413e4-3d1d-4413-aa92-21b6f9986c6f
+:END:
+#+title: DesCartes Error
+#+filetags: :neuroscience:
+
+* Overview
+
+  *  The "[[id:20240421T185222.955087][Descartes]] Error" (also referred to as "Descartes' Error") is a concept popularized by neuroscientist Antonio Damasio in his book of the same name.
+  *  It refers to the traditional separation of mind (or consciousness, reason) and body (or physical matter, emotions) particularly attributed to René Descartes' philosophy, especially his "[[id:55558539-fc63-40d7-abe2-09bf7ad22d95][Cartesian Dualism]]."
+  *  Damasio argues that this separation is fundamentally flawed, as emotions and the body play a critical role in reason, decision-making, and consciousness.
+  *  Neurological evidence from patients with damage to the prefrontal cortex, which impairs emotional processing, demonstrates that [[id:76c36ff7-9f4c-4f42-a4e0-8fc1c2dc5973][reasoning]] and [[id:2c82dde2-487f-446b-8a83-79a21487c1ba][decision-making]] are also significantly affected. These individuals often struggle to make rational choices in their personal lives, despite maintaining normal intellectual abilities.
+  *  Damasio proposes that emotions are not separate from reason but are integral to it, acting as somatic markers that guide our choices and behaviors. [[id:b0636a79-9bab-4049-a695-cf16c0462827][Somatic markers]] are physiological responses (e.g., gut feelings, heart rate changes) that are associated with past experiences and help us to quickly evaluate the potential outcomes of different options.
+  *  The error, therefore, lies in assuming that the mind can operate independently of the body and emotions.
+  *  Modern neuroscience increasingly emphasizes the embodied and embedded nature of [[id:425d2419-7268-4dfe-9798-e406a5399319][cognition]], supporting Damasio's critique of Cartesian dualism.

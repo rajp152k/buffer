@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a1a774b1-c35c-4e02-b551-958d8a31f94b
+:END:
+#+title: Opportunity
+#+filetags: :meta:

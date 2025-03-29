@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b47db89c-fad7-486f-9cac-55a3fd9c6c50
+:END:
+#+title: Energy
+#+filetags: :psych:meta:physics:

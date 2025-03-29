@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       651634e9-7833-4555-b0a9-0a5c647c01df
+:END:
+#+title: blood
+#+filetags: :biology:

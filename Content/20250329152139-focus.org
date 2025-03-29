@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1902a989-db60-47c7-970a-24359c2d2751
+:END:
+#+title: focus
+#+filetags: :meta:

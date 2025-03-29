@@ -5,6 +5,8 @@
 #+filetags: :mma:
 
 * Stream
+** 0x2389
+ - dislocated shoulder 8 days ago with a bad right hook, working well now
 ** 0x2342
  - sports nutrition is going to be different from being your usual gym bro
  - starting a node for [[id:a2dc2ee4-644f-43ea-a9c0-39d960700fe3][nutrition]]

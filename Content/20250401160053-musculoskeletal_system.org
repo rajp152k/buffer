@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ee9a4188-3baa-4e57-be59-9ab284714568
+:END:
+#+title: MusculoSkeletal System
+#+filetags: :anatomy:

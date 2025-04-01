@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       503cb73b-b5e1-49c0-9d58-70c2d22609b6
+:END:
+#+title: Practicality
+#+filetags: :meta:

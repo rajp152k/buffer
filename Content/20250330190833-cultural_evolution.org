@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       678b5cb4-41ab-46b8-8073-30bf597878a9
+:END:
+#+title: Cultural Evolution
+#+filetags: :culture:

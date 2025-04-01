@@ -2,7 +2,7 @@
 :ID:       347ed26c-bbb4-4d15-a705-6df388f55d02
 :END:
 #+title: Jeet Kune Do
-#+filetags: :mma:
+#+filetags: :combat:
 
 
 * Resources

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       2b219a33-4118-4f1c-a3cf-a164a418698b
+:END:
+#+title: Close Quarters
+#+filetags: :combat:

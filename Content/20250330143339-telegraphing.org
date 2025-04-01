@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eaf56103-19c6-416a-ab84-e28aca61cf98
+:END:
+#+title: Telegraphing
+#+filetags: :combat:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1d67cfc3-e7ae-4140-be8a-ca5e7a31b523
+:END:
+#+title: prosthetics
+#+filetags: :anatomy:

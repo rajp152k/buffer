@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       afe1ea0a-a6c5-4f54-8be6-d1a718deef89
+:END:
+#+title: Finite State Machine
+#+filetags: :tool:cs:
+

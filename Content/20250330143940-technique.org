@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c9e95206-8af8-453c-9424-b9815cf8edf7
+:END:
+#+title: Technique
+#+filetags: :meta:combat:

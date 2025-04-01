@@ -2,7 +2,7 @@
 :ID:       47545184-3ff9-4533-a756-932a9e480cda
 :END:
 #+title: MMA
-#+filetags: :mma:
+#+filetags: :combat:
 
 * Stream
 ** 0x2389

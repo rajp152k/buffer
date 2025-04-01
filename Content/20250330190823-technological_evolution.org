@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3218644c-3d21-4926-9b12-4d02251e7d97
+:END:
+#+title: Technological Evolution
+#+filetags: :tech:

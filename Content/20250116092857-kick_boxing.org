@@ -2,7 +2,7 @@
 :ID:       cd004234-c3dd-4e76-ae77-7b2fd15e0beb
 :END:
 #+title: Kick Boxing
-#+filetags: :mma:
+#+filetags: :combat:
 
 * Resources
  - https://budodragon.com/the-best-kickboxing-books/

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       eb89ce48-818c-44c9-9e41-dcae788a6b31
+:ROAM_ALIASES: BJJ
+:END:
+#+title: Brazilian Jiu-Jitsu
+#+filetags: :combat:

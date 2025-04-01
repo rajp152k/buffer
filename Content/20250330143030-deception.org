@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       044df1e5-c66e-448b-85d5-e6142fe9591c
+:END:
+#+title: Deception
+#+filetags: :meta:combat:

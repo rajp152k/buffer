@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       98e59e8a-bd24-424c-bd4b-00fc6351d22f
+:END:
+#+title: Surgery
+#+filetags: :anatomy:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bc897c74-3dd5-4bb4-b4dd-4ab0da0551a3
+:END:
+#+title: Boxing
+#+filetags: :combat:

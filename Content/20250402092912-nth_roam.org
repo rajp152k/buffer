@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e4c2e713-be21-4b79-871a-34eabe93e09d
+:END:
+#+title: Nth-roam
+#+filetags: :emacs:
+
+Vaults for [[id:11094d83-8847-4382-bf8b-d3660d778e88][Org-roam]]
+

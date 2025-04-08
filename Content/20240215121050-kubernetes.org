@@ -74,7 +74,7 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 ** netshoot
  - https://github.com/nicolaka/netshoot
 * Resources
-** [[id:9ee8a972-bf6a-46ae-a7f5-dda8814a2fcf][Production Kubernetes]]
+** Production Kubernetes
  - https://tanzu.vmware.com/content/ebooks/production-kubernetes
 ** Practical
  - https://qconuk2019.container.training

@@ -40,6 +40,11 @@ I also consider deliberately intellectually [[id:f3347380-f482-4077-a89b-a3ff059
 * Domain Specific Glossaries
 ** [[id:3aa7ff5b-e9d4-4f19-ba71-bb5e94880708][CS Glossary]]
 * Stream
+** 0x2393
+ - initiating the great public prune
+ - I've begun maintaining separate vaults after the advent of [[id:e4c2e713-be21-4b79-871a-34eabe93e09d][Nth-roam]]
+ - the public space would be maintained for technical notes
+ - need to proceed with a strategy as the connection density has grown quite a bit
 ** 0x2347
  - maintaining domain specific indices for improved navigation of the cluster
 ** 0x22F1

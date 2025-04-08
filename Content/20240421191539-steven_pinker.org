@@ -2,5 +2,7 @@
 :ID:       20240421T191539.151135
 :END:
 #+title: Steven Pinker
-#+filetags: :author:
+#+filetags: :linguistics:author:
 
+* Relevant Nodes
+** [[id:e94b1ff3-ee62-417f-8d01-afb23ccd0c3b][linguistics]]

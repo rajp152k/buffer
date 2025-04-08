@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T191413.950896
-:END:
-#+title: Karl Popper
-#+filetags: :author:
-

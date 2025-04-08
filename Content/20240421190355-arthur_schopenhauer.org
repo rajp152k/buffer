@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T190355.002106
-:END:
-#+title: Arthur Schopenhauer
-#+filetags: :author:
-

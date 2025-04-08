@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T185843.919025
-:END:
-#+title: Lucius Annaeus Seneca
-#+filetags: :author:
-

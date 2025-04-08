@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T191101.021271
-:END:
-#+title: Miyamoto Musashi
-#+filetags: :author:
-

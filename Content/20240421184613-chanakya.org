@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T184613.903136
-:END:
-#+title: Chanakya
-#+filetags: :author:
-

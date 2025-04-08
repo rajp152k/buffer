@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T185901.983388
-:END:
-#+title: Marcus Aurelius
-#+filetags: :author:
-

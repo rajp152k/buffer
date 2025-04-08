@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T184259.228938
-:END:
-#+title: Aristotle Stagiritis
-#+filetags: :author:
-

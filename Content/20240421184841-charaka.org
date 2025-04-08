@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T184841.184625
-:END:
-#+title: Charaka
-#+filetags: :author:
-

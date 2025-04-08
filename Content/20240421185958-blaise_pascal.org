@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T185958.167936
-:END:
-#+title: Blaise Pascal
-#+filetags: :author:
-

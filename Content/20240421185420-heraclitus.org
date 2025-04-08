@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T185420.084746
-:END:
-#+title: Heraclitus
-#+filetags: :author:
-

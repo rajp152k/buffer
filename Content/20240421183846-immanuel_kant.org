@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T183846.119756
-:END:
-#+title: Immanuel Kant
-#+filetags: :author:
-

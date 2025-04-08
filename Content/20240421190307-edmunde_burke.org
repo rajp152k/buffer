@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T190307.993234
-:END:
-#+title: Edmunde Burke
-#+filetags: :author:
-

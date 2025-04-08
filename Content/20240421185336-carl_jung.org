@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T185336.284452
-:END:
-#+title: Carl Jung
-#+filetags: :author:
-

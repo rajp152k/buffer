@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T185121.994381
-:END:
-#+title: Nicollo Machiavelli
-#+filetags: :author:
-

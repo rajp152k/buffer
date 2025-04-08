@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T190838.435845
-:END:
-#+title: Adi Shankaracharya
-#+filetags: :author:
-

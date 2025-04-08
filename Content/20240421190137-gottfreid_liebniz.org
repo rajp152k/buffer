@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240421T190137.528820
-:END:
-#+title: Gottfreid Liebniz
-#+filetags: :author:
-

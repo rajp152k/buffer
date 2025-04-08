@@ -2,7 +2,7 @@
 :ID:       01dc61b3-3843-4416-b9bc-4e80d0b694c0
 :END:
 #+title: Alan Kay
-#+filetags: :author:
+#+filetags: :cs:author:
 
 * Resources
  - https://www.youtube.com/watch?v=YyIQKBzIuBY&ab_channel=ColinReckons

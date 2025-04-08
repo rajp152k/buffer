@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       c467c104-0659-46f8-ab5e-ffd1792a225d
-:END:
-#+title: sparring
-#+filetags: :combat:

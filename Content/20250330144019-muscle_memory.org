@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       714cdde5-a660-474c-a43d-50383559d974
-:END:
-#+title: muscle memory
-#+filetags: :training:

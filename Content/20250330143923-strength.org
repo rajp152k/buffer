@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       45123126-215e-4384-a898-61ed8e4524e9
-:END:
-#+title: Strength
-#+filetags: :training:

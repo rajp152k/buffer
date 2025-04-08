@@ -87,7 +87,7 @@ Also starting out writing on medium : will be adapting all blogs to medium to he
    - over time, as my style develops, I could even reiterate over old blogs and compile them into the book, refactored and freshened up a little.
  - inspiration : derek sivers and seth godin
 ** 0x2147
- - writing a book -> [[id:20230827T153308.339339][The Definitive Guide to Books]] 
+ - writing a book -> The Definitive Guide to Books
  - should be a good experience when starting out
  - there has to be a first someday
  - will be completing it in this dump itself and plan on finding out what it takes to actually write a book

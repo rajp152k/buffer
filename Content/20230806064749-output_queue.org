@@ -6,7 +6,6 @@
 A quick index of all the content (books, videos, blogs) that I produce. A parallel to the [[id:20230718T222456.978981][input-queue]] and will be populated as an when nodes are mature enough to be published. 
 
 * Books
-** [[id:20230827T153308.339339][The Definitive Guide to Books]] 
 * Blogs
  - https://thebitmage.com/post/clts/clts-0/
  - https://thebitmage.com/post/rip-bram-moolenar/

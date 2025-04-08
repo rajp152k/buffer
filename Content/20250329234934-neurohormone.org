@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       d379ec04-1e7f-4774-afbc-df33c9f97e76
-:END:
-#+title: neurohormone
-#+filetags: :chemistry:neuroscience:

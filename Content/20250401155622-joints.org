@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       b23ce1ce-845c-4853-a88a-d64d507a3780
-:END:
-#+title: Joints
-#+filetags: :anatomy:biology:

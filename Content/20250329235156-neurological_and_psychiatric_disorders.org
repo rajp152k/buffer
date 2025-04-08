@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       49168e7e-b7b0-4362-aa63-e39cdf87e95a
-:ROAM_ALIASES: "Psychiatric Disorder" "Neurological Disorder"
-:END:
-#+title: Disorders
-#+filetags: :psych:neuroscience:

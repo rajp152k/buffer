@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       30fb975d-2527-4ff4-9e3a-a8ec00137fcd
-:END:
-#+title: Vitamin C
-#+filetags: :health:nutrition:

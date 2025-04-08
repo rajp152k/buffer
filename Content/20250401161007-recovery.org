@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       af3eba4f-dba1-44c0-80df-a2f1bb5f918b
-:ROAM_ALIASES: Rehabilitation
-:END:
-#+title: Recovery
-#+filetags: :anatomy:health:

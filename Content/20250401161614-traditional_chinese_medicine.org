@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       30dbe0ec-6db9-4863-a4db-211f3d3f549f
-:END:
-#+title: Traditional Chinese Medicine
-#+filetags: :biology:anatomy:health:

@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       3ceb4859-edf8-438e-a06a-e9f6948a1dc4
-:END:
-#+title: Dance
-#+filetags: :dance:

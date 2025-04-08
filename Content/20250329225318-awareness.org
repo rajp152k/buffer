@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       54fe7350-24cf-43aa-81ad-38cbedd10d17
-:END:
-#+title: Awareness
-#+filetags: :meta:

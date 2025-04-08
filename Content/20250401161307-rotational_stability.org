@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       20e8d2b0-4aa0-448f-ac55-d1c9917fb01d
-:END:
-#+title: Rotational Stability
-#+filetags: :combat:anatomy:

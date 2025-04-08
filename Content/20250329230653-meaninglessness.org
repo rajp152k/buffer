@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       e10fbf23-84f7-4902-86a2-a641d1a88f87
-:END:
-#+title: meaninglessness
-#+filetags: :ideology:meta:

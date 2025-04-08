@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       5f1e21fd-8d37-4b20-b966-a27f714dd239
-:END:
-#+title: Protein
-#+filetags: :chemistry:health:anatomy:biology:

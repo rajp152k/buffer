@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       7b7f7872-0ef2-4f12-babe-479994053b3d
-:END:
-#+title: Hydration
-#+filetags: :health:nutrition:

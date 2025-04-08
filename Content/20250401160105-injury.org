@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       495f7941-b440-44e7-860c-66583ca9f16e
-:END:
-#+title: injury
-#+filetags: :health:

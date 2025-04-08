@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       d867a0d6-2d32-4125-aa7d-643945bdb018
-:END:
-#+title: Diet
-#+filetags: :nutrition:

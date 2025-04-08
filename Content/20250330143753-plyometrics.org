@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       c6ab3ae5-c95d-4be0-8554-7672f48171fb
-:END:
-#+title: Plyometrics
-#+filetags: :training:

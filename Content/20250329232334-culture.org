@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       27568d26-4509-4af1-bd17-fe940d2a3262
-:END:
-#+title: Culture
-#+filetags: :culture:

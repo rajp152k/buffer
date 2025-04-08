@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       8968d51d-b478-42f3-bf6b-eab40efa273b
-:END:
-#+title: L-tyrosine
-#+filetags: :chemistry:

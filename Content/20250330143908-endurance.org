@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       7ad6f9e5-fe4e-4b69-9d95-33acd314e5f8
-:END:
-#+title: Endurance
-#+filetags: :training:

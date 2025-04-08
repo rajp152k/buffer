@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       c7c1ffa3-36f2-4af9-88cf-c649c9b46424
-:END:
-#+title: Stoicism
-#+filetags: :ideology:

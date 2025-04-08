@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       5b338d17-4917-45de-ba83-0809faef34a8
-:END:
-#+title: Muay Thai
-#+filetags: :combat:

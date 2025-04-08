@@ -4,21 +4,3 @@
 #+title: Pseudo
 #+filetags: :pseudo:meta:root:
 
-This is the Pseudo Node. There are several concepts that aren't that mentally tangible and we don't really experience them as one would slice of pizza or a slap on the face. Now the act of imagining these would fall under the pseudo node.
-
-These aren't veriable due to their inherent nature of being whipped up from thin-air.
-
-I collect all the abstract Pseudos here to see if I can find meaningful patterns
-
-* Pseudo Nodes
-** [[id:ffee795c-3e77-4a55-92b5-52afef7f4a53][Stress]]
-** [[id:ddfb127e-0123-4c3b-8e95-62a152160981][Imagination]]
-** [[id:a1994b43-2d82-4513-9846-1182a21880cc][Boredom]]
-** [[id:679cb313-d38c-40ef-bec8-6624b1cde7cc][Ambition]]
-** [[id:991a6421-13e6-4f1c-9673-449a3650a17f][Gratitude]]
-** [[id:42564322-1093-4d29-9672-46cb4f056cc9][Morality]]
-** [[id:eda4d14e-f7e2-418f-bcb3-d7ee222d2515][Patience]]
-** [[id:20240218T063707.851290][Trust]]
-** [[id:20240218T063718.210991][Fear]]
-** [[id:20240218T063727.994801][Curiosity]]
-** [[id:20240218T063739.306638][Helpfulness]]

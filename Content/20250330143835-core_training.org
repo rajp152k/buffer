@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       bbc8fcc5-4e1b-41ac-a95a-83a43a6b3fd1
-:END:
-#+title: Core Training
-#+filetags: :training:

@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       2c45ce12-5bba-488b-9e80-3b48339f0c21
-:END:
-#+title: self-reflection
-#+filetags: :psych:neuroscience:

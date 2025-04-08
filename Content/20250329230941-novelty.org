@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       b4480ca0-a3cd-4edb-935e-9b391aa2c9d7
-:END:
-#+title: Novelty
-#+filetags: :meta:neuroscience:

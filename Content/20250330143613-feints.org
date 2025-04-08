@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       e1a126e6-25e6-4010-89f8-d453c4f1ee76
-:END:
-#+title: Feints
-#+filetags: :combat:

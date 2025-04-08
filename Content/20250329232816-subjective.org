@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       32bcb9f6-5869-4ce7-b57a-a493969a3aed
-:END:
-#+title: subjective
-#+filetags: :meta:

@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       f20d749c-518f-4cb4-a129-ee18df519b69
-:END:
-#+title: phenethylamine
-#+filetags: :chemistry:

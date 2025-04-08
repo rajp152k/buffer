@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       ecc20b5d-f3dc-46c6-a82f-53ac7c6ad183
-:END:
-#+title: Expression
-#+filetags: :psych:meta:

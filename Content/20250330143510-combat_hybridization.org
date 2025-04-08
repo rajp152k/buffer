@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       4641b744-a88c-4b26-8ed3-3a498f596609
-:END:
-#+title: Combat Hybridization
-#+filetags: :combat:

@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       b32df2fa-8a9a-4923-a492-0f39cb10d31c
-:END:
-#+title: distraction
-#+filetags: :neuroscience:meta:

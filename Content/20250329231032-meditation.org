@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       98543875-64cf-4d56-9d92-260b03706ec0
-:END:
-#+title: Meditation
-#+filetags: :psych:neuroscience:

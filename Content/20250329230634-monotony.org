@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       27530782-c327-4b2d-b742-21783dfd8e01
-:END:
-#+title: monotony
-#+filetags: :meta:

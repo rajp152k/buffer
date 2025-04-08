@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       5adcf37f-0e63-4e69-8943-4518ab63a75a
-:END:
-#+title: Default Mode Network
-#+filetags: :neuroscience:

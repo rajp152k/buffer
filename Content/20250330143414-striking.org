@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       d3a1c9b5-54ff-4bac-af96-a473381f2660
-:END:
-#+title: Striking
-#+filetags: :combat:

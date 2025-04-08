@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       e0486d7a-9704-458b-8bb4-fe1decc7197b
-:END:
-#+title: Reward
-#+filetags: :neuroscience:

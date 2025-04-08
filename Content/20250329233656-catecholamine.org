@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       3d5e20c7-a5ab-4318-a07f-8730f8ea45a9
-:END:
-#+title: catecholamine
-#+filetags: :chemistry:

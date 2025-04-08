@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       3ea32bd4-dcb7-4328-b832-ee7042670cfe
-:END:
-#+title: Weightlifting
-#+filetags: :training:

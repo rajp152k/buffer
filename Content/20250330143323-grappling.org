@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       35c6f54c-a758-4c2a-bfbc-eac98cdaa689
-:END:
-#+title: Grappling
-#+filetags: :combat:

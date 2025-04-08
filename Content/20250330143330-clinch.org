@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       969c2cbb-b5db-4f7d-9c01-8edb20c8d98f
-:END:
-#+title: clinch
-#+filetags: :combat:

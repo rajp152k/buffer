@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       8df06483-0509-4b81-bc7f-45aa107f2b75
-:END:
-#+title: Wrestling
-#+filetags: :combat:

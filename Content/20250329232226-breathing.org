@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       71d7eda9-ad4b-49f3-84b1-e41c0b897c5e
-:END:
-#+title: Breathing
-#+filetags: :neuroscience:health:

@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       f4fffd13-55ce-4a88-a58f-9404725c0124
-:END:
-#+title: Cardiovascular Training
-#+filetags: :training:

@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       ddfb127e-0123-4c3b-8e95-62a152160981
-:END:
-#+title: Imagination
-#+filetags: :meta:pseudo:
-

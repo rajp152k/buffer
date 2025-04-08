@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       a0572354-5834-49e1-9e7f-36f79e7b91bc
-:END:
-#+title: Learning
-#+filetags: :neuroscience:meta:

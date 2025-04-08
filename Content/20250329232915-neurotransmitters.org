@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       47529997-36d8-40ff-9910-34009fb3b892
-:END:
-#+title: Neurotransmitters
-#+filetags: :chemistry:psych:neuroscience:

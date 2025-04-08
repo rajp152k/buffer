@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       4d89ad11-2e68-4d46-93b0-ae0c0a42138c
-:END:
-#+title: High-intensity interval training
-#+filetags: :training:

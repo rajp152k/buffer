@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       8e1b24db-7cd1-452d-83e3-a685d167b2bf
-:END:
-#+title: Training
-#+filetags: :training:

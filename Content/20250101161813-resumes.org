@@ -1,10 +1,9 @@
 :PROPERTIES:
 :ID:       5bf59607-5845-417a-8093-7fd971e7ab21
 :END:
-#+title: Intriguing Works
+#+title: External Indices
 #+filetags: :meta:
 
-From time to time, I land up in an interesting corner of the internet and find intellectual mines worth dissecting. Learning domains is one thing and building an amalgamation of skills acquired by building projects is another.
 
 * Blogs
 ** Aditya Athalye

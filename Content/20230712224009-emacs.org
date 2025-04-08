@@ -5,7 +5,18 @@
 #+filetags: :emacs:
 
 
-* DotFiles
+* Configs
  - https://github.com/rajp152k/.dotfiles
-* Copilot Setup
- - https://github.com/copilot-emacs/copilot.el
+* Editing Interfaces
+* Knowledge Management
+** Manageing Citations
+* PDF Reading
+* Literate Programming
+* Getting things done : Org GTD
+* AI
+* Programming
+** Debugging
+** REPLs
+** terminal
+** Copilots/Agents
+* Hackability : packaging functionality

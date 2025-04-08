@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       73182bb9-3fcc-4eb5-9ab1-b8090d86e26b
+:END:
+#+title: OpenBestOf
+
+https://openbestof.com/

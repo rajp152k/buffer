@@ -1,11 +1,8 @@
 :PROPERTIES:
 :ID:       20231212T083550.544536
-:ROAM_ALIASES: "A Language of the Universe"
 :END:
 #+title: Mathematics
 #+filetags: :root:math:
-
-Reference collator
 
 * Forks/Flavors
  - [[id:d341bdfc-e935-4088-8432-449102e8b9bf][geometry]]
@@ -15,6 +12,3 @@ Reference collator
  - [[id:44a34e4b-98ec-4b7a-ae29-df0b103e792c][Linear Algebra]]
  - [[id:7b9be887-8c39-4a37-8217-f0e21a6cb64e][Optimization]]
  - [[id:91b6fb5d-6447-43fe-8412-2054bb79979a][Probability]]
-
-
- 

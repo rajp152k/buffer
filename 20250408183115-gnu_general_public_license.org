@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8796f2cf-4958-4dd9-a500-b9d028e04cc6
+:END:
+#+title: GNU General Public License
+#+filetags: :programming:

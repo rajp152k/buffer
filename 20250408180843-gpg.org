@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       1f5d5824-9892-415f-b8fb-af521f285065
+:END:
+#+title: GPG - GNU Privacy Guard
+#+filetags: :sec:
+
+* Overview
+
+-   What is GPG?  GNU Privacy Guard (GPG) is a free software implementation of the [[id:585eb09d-e410-4e6a-863f-357c8060bc1e][OpenPGP]] standard (RFC 4880). It's a command-line tool used for encrypting, decrypting, signing, and verifying data. It is also used for secure communication and data storage.  GPG provides cryptographic privacy and authentication.
+
+-   Origins: GPG was created by Werner Koch in 1999 as a free alternative to PGP (Pretty Good Privacy), which was originally proprietary software.
+
+-   Relationship to PGP and OpenPGP: PGP was the first widely available public-key encryption software. Due to licensing issues with PGP, there was a need for a free, open-source alternative.  GPG was developed to fill this need, adhering to the OpenPGP standard, which is an open specification for PGP-compatible systems. OpenPGP defines the data formats and algorithms used for encryption, signatures, and key management. Therefore, GPG can interoperate with other OpenPGP-compliant software.  It is important to note that although GPG and PGP share a common ancestor and are designed for interoperability, they are distinct implementations.
+
+-   Licensing: GPG is released under the [[id:8796f2cf-4958-4dd9-a500-b9d028e04cc6][GNU General Public License]] (GPL), ensuring that it remains free software and can be freely used, modified, and distributed.
+
+- [[id:9543b55b-6bb7-4b54-9d97-9a05cf8c8830][Public-Key Cryptography]] (Asymmetric Cryptography): GPG relies on public-key cryptography.  Each user has a key pair: a public key that can be freely distributed and a private key that must be kept secret.
+  - Encryption: To encrypt a message, the sender uses the recipient's public key. Only the recipient, possessing the corresponding private key, can decrypt the message.
+  - Digital Signatures: To create a digital signature, the sender uses their private key to "sign" the message (or, more accurately, a hash of the message).  Anyone with the sender's public key can verify the signature, confirming that the message originated from the sender and hasn't been altered.
+
+- [[id:b2350364-ebce-4545-ac1d-6cb34b36ed7f][Symmetric-Key Cryptography]]: While GPG uses public-key cryptography for key exchange and signatures, it often uses symmetric-key cryptography (e.g., AES, 3DES, CAST5) for the actual encryption of data.  This is because symmetric encryption is significantly faster than asymmetric encryption. The process involves:
+  1. Generating a random symmetric key (session key).
+  2. Encrypting the data using this session key.
+  3. Encrypting the session key using the recipient's public key.
+  4. Sending both the encrypted data and the encrypted session key to the recipient. The recipient then uses their private key to decrypt the session key and then uses the session key to decrypt the data.
+
+- [[id:235113d9-983a-4782-a4e8-d027ba52d82b][Hashing]]: GPG uses cryptographic hash functions (e.g., SHA-256, SHA-512) to create a fixed-size "fingerprint" (hash) of a message.  This hash is used for digital signatures.  A cryptographic hash function is designed to be collision-resistant (it's computationally infeasible to find two different messages that produce the same hash).
+
+- Key Management:  A crucial aspect of GPG.  It involves generating, storing, distributing, and revoking keys. GPG maintains a keyring, which is a database of public and private keys.  Secure key management is critical for the overall security of GPG.
+
+* Modern Alternatives
+** [[id:1363ea3b-c6cf-4be0-a72e-f5fd03c50874][AGE - Actually Good Encryption]]
+* Resources
+ - https://gnupg.org/

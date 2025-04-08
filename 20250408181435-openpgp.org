@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       585eb09d-e410-4e6a-863f-357c8060bc1e
+:ROAM_ALIASES: RFC4480
+:END:
+#+title: OpenPGP
+#+filetags: :sec:

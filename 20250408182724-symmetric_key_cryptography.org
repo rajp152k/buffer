@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b2350364-ebce-4545-ac1d-6cb34b36ed7f
+:END:
+#+title: Symmetric Key Cryptography
+#+filetags: :crypto:sec:cs:

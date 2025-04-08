@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1363ea3b-c6cf-4be0-a72e-f5fd03c50874
+:END:
+#+title: AGE - Actually Good Encryption
+#+filetags: :crypto:sec:
+
+* Resources
+ - https://github.com/FiloSottile/age

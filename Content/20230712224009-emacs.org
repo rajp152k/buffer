@@ -4,3 +4,8 @@
 #+title: Emacs
 #+filetags: :emacs:
 
+
+* DotFiles
+ - https://github.com/rajp152k/.dotfiles
+* Copilot Setup
+ - https://github.com/copilot-emacs/copilot.el

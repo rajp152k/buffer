@@ -7,7 +7,7 @@
  - Structures a lot of his works around augmenting humans
 
 * Projects
- - [[id:45e5f48a-c7df-4ec8-8730-f9b9a31365ff][Human 3.0]]
+ - Human 3.0
  - https://github.com/danielmiessler/fabric
  - https://github.com/human-substrate/Substrate
  - https://github.com/danielmiessler/Telos

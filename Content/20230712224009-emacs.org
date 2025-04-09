@@ -5,18 +5,21 @@
 #+filetags: :emacs:
 
 
-* Configs
+* Outline
+** Configs
  - https://github.com/rajp152k/.dotfiles
-* Editing Interfaces
-* Knowledge Management
-** Manageing Citations
-* PDF Reading
-* Literate Programming
-* Getting things done : Org GTD
-* AI
-* Programming
-** Debugging
-** REPLs
-** terminal
-** Copilots/Agents
-* Hackability : packaging functionality
+** Editing Interfaces
+** Knowledge Management
+*** Manageing Citations
+** PDF Reading
+** Literate Programming
+** Getting things done : Org GTD
+** AI
+** Programming
+*** Debugging
+*** REPLs
+*** terminal
+*** Copilots/Agents
+** Hackability
+*** ShortDocs
+ - https://www.masteringemacs.org/article/emacs-builtin-elisp-cheat-sheet

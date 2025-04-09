@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       021eabbb-60a7-49f5-9954-5500ea24bab7
+:END:
+#+title: stdio
+#+filetags: :programming:cs:

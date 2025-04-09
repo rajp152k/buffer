@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c26be96d-56ce-45b0-a28d-8b4ec18e9b09
+:END:
+#+title: Self-Portrait
+#+filetags: :observe:

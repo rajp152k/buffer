@@ -57,7 +57,7 @@ An orchestrator's interpretation may be enabled via following generic terminolog
 * Resources
  - https://en.wikipedia.org/wiki/Orchestration_(computing)
 
- - [[id:3af62b5f-3c13-40c8-a912-18a94b7cb175][BOOK: building an orchestrator in golang]]
+ - BOOK: building an orchestrator in golang
 
  - https://ieeexplore.ieee.org/document/4291052
 

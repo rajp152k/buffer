@@ -28,7 +28,6 @@ Cloud native refers to designing, developing, and operating applications that op
 ** [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
 * [[id:30bd9ede-b4fd-47c7-b848-a0d225277d4a][Fallacies of Distributed Computing]]
 * Cloud Native Patterns
-- sourced from chapter 4 of [[id:64bfc13e-1b7c-4cbe-ba0e-9d17ebaacef1][BOOK: Cloud Native Go]]
 ** [[id:d1884770-97bb-4bbd-973a-d3bea77b68c0][context.Context]]
 - read up : https://pkg.go.dev/context
 - used to idiomatically convey, cancellation signals, deadline abstractions (timeouts), etc.
@@ -42,5 +41,3 @@ Cloud native refers to designing, developing, and operating applications that op
 *** [[id:f437c67e-a680-4400-8640-1fd32cc9e363][Throttle Stability Pattern]]
 *** [[id:ce3bf6ec-0c36-4fc7-ae3d-3483ff67cfc3][Timeout]]
 ** [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]] Patterns
-* Misc Resources
- - https://www.youtube.com/watch?v=p-88GN1WVs8&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=8&ab_channel=ByteByteGo

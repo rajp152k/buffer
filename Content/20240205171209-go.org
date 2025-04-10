@@ -18,33 +18,8 @@ func main(){
 }
 #+end_src
 
-* Stream
-* Books
-** Building an orchestrator in golang
-:PROPERTIES:
-:ID:       3af62b5f-3c13-40c8-a912-18a94b7cb175
-:END:
-
-** Cloud Native Go
-:PROPERTIES:
-:ID:       64bfc13e-1b7c-4cbe-ba0e-9d17ebaacef1
-:END:
-
-** The Go Programming Language
-:PROPERTIES:
-:ID:       bb226cbf-fca1-4306-8f79-6bd87262ced6
-:END:
-
-** Hands on SWE Golang
-:PROPERTIES:
-:ID:       bdec8c33-9117-4ecf-9f97-c511ee4d0f47
-:END:
- - https://www.oreilly.com/library/view/hands-on-software-engineering/9781838554491/
-** Learn Go with Tests
-:PROPERTIES:
-:ID:       44bccb93-ebff-4745-baa1-0e85a293c314
-:END:
- - https://quii.gitbook.io/learn-go-with-tests
+#+RESULTS:
+: org babel base
 
 * Resources
  - https://github.com/avelino/awesome-go

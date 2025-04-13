@@ -14,9 +14,6 @@ Having recently begun working on [[id:95dd2f7c-e699-4ff6-9f40-52d573527107][theB
 
 This node-set is going to be a deep practical analysis of the aspects of business applied to my needs.
 
-I am, as of 0x229F, in the dark when it comes to the ground realities of a operating a business. [[id:ab7c582a-9b00-4e4d-a71c-302efdc1f0e7][The iterative Read-Act-Write (RAW) protocol]] is being applied to this one. The contents encompassed can therefore be considered reliable.
-
-Parallely initializing a fundamental read, I'll be conducting experiments on the aspects of this node set.
 
 ** The Etymology
 #+begin_quote

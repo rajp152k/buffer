@@ -2,7 +2,7 @@
 :ID:       20054618-499c-4c0d-b94f-3a308770ffad
 :END:
 #+title: RTFM
-#+filetags: :yt:
+#+filetags: :logs:
 
 * Abstract
  - I like reading manuals
@@ -13,3 +13,7 @@
  - need some inspiration
 
 * Objectives
+ - understand and grasp SWE tooling with depth and what it can help you do
+ - the why of the tool being engineered that way
+ - concise videos rather than rambles
+   - will be outlined but not scripted

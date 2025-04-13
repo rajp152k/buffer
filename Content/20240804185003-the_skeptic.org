@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       0c423c90-ad4a-4b82-9cc3-dfc9e53adc7b
-:END:
-#+title: The Skeptic
-#+filetags: :archetype:
-
-Systematically questioning assumptions, identifying potential flaws and biases, and demanding evidence before accepting information.
-
-Draw upon regularly to not fall prey to the conventional biases that are the doom to several intellectual traps.

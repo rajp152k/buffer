@@ -4,9 +4,12 @@
 #+title: RTFM
 #+filetags: :yt:
 
-* The RFTM
-
-** Abstract
+* Abstract
  - I like reading manuals
  - init a series to explore tooling in a nomadic fashion
  - to really understand what my computer is doing and not rely on trickled down patterns but experience engineering products first hand
+ - content creation wise, wish to feynmannize my learning pursuits
+ - Still going under a nomenclature phase
+ - need some inspiration
+
+* Objectives

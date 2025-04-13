@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       2203b7a1-24e7-4523-ac95-df3d7ade420a
-:END:
-#+title: The Builder
-#+filetags: :archetype:meta:
-
-Being an intellectual athlete can entrap you in a loop of ideation. Running amok without directed results can be a frustrating doom to one's curiosity.
-
-Pacing your findings and commiting your works so far into builds is a discipline that helps not burn out.

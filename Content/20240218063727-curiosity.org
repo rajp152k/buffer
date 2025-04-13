@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       20240218T063727.994801
-:END:
-#+title: Curiosity
-#+filetags: :meta:
-

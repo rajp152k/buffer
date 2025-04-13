@@ -18,9 +18,6 @@ Understanding of your business idea with respect to these fundamentals is a nece
 If you want to improve your value as a businessperson, focus on improving skills directly related to the Five Interdependents mentioned above.
 
 * The Iron Law of the Market
-:PROPERTIES:
-:ID:       9c52cb9c-2852-41df-88c8-d9cf968cd096
-:END:
 #+begin_quote
 The Iron Law of the Market is cold, hard, and unforgiving: if you don't have a large group of people who really want what you have to offer, your chances of building a viable business are very slim.
 #+end_quote
@@ -77,9 +74,6 @@ The Iron Law of the Market is cold, hard, and unforgiving: if you don't have a l
 - Similarly, given all businesses deal out some mixture of money, status, power,love, knowledge, protection, pleasure and excitement..
   - The clear communication of how your [[id:db5e0a19-ffe3-42e1-9751-faef5d28dd5f][service]]/[[id:5f2c9060-b27f-4f19-8c82-b3340a483c71][product]] satisfies the about, will make your offer more attractive.
 * Ten Parameters to Evaluate a Market
-:PROPERTIES:
-:ID:       de8d7ad0-0a9c-4955-9ed0-8fd79e2e3f90
-:END:
 back of the napkin calculation for the following parameters, rate each from 0 to 10, 10 being the most attractive.
 ** The parameters
 *** Urgency
@@ -124,7 +118,7 @@ back of the napkin calculation for the following parameters, rate each from 0 to
 * The Hidden Benefits of Competition
 - when any two markets are equally attractive in other respects, you're better off choosing to enter the one with competition
   - this means you know from the start there's a market of paying customers for this idea, eliminating your biggest risk.
-- The existence of a market implies you're on the right side of [[id:9c52cb9c-2852-41df-88c8-d9cf968cd096][The Iron Law of the Market]]
+- The existence of a market implies you're on the right side of The Iron Law of the Market
 - The existence of several succesful businesses implies you're not investing in a dead end.
 ** Observing your [[id:f3586ba7-e892-4938-a579-d836206df609][competitors]]
 - The best way to observe what your potential competitors are up to is to become their customer.
@@ -152,7 +146,7 @@ back of the napkin calculation for the following parameters, rate each from 0 to
 - thinking objectively is important : there's a huge difference between an interesting idea and  a solid business.
 - learn to differentiate between hobbies, side projects and business.
 - you can casually diversify your pursuits once the financial bases are covered
-- before proceeding with your idea, evaluate it with the [[id:de8d7ad0-0a9c-4955-9ed0-8fd79e2e3f90][Ten Parameters to Evaluate a Market]]
+- before proceeding with your idea, evaluate it with the Ten Parameters to Evaluate a Market
 - Then test it as quickly and inexpensively as you can before fully commiting.
 
 * Twelve Standard Forms of Value
@@ -169,5 +163,3 @@ In order to successfully  provide value to another person, it must take on a for
 10. [[id:bdf6cab3-a807-4b04-a28f-98cdcdd7094b][Option]] : Offer the ability to take a predefined action for a fixed period of time in exchange for a fee.
 11. [[id:e6c04f65-fc33-48ba-8c76-75b64bd24939][Insurance]] : Take on the risk of some specific bad thing happening to the policy holder in exchange for a predefined series of payments, then pay out claims only when the bad thing actually happens.
 12. [[id:07abd3d1-9a68-407b-9bf8-1aed23014f8e][Capital]] : Purchase an ownership stake in a [[id:b5576a88-d12a-4779-958b-03ad4f4c6403][business]], then collect a corresponding portion of the [[id:9d500676-9ae0-48a9-a9c5-f2d87f8ca64c][profit]] as a one-time payout or ongoing [[id:a8ad72c6-207a-4a7d-ac48-9dd2edb1e320][dividend]].
-* Resources
-** [[id:d9166a1b-cca7-4167-939c-2a2256485e5d][Book : The Personal MBA]]

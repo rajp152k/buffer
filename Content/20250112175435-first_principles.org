@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       4d4c2e9c-23b5-4334-9c88-bc847a9d4fa8
-:END:
-#+title: First Principles
-#+filetags: :meta:

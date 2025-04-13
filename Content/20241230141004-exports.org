@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       34cf7f2e-c208-4fea-b2a1-5bccbfc0c932
-:END:
-#+title: Exports
-#+filetags: :finance:bs:

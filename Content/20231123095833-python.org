@@ -4,63 +4,6 @@
 #+title: Python
 #+filetags: :python:
 
-
-* Stream
-** 0x2311
- - Emacs python setup
- - pyright, conda, ipython
- - images and graphs via an external [[id:7e59cdd8-64f3-46f9-ab43-e94dd4b605a5][experiment]] tracker
- - two philosophies.
-   - separate results from code
-   - literate programming
-** 0x21E9
- - starting out diving deeper into [[id:cf9ebc9c-8af7-4f7c-9c3f-e3325ac260e4][Hy]] (Lisp + Python)
- - plan on being able to use the python ecosystem with the fluidity of lisp off of my fingers. 
-** 0x21C4
- - read a little about task queuing, checkout:
-    - https://www.fullstackpython.com/task-queues.html
- - exploring testing in python, first line of defense against bugs should be, in the case of python, using Type hints.
-   - read up : https://realpython.com/python-testing/
-     - also see https://hypothesis.readthedocs.io/en/latest/quickstart.html for test-case generation
- - also, in the case of browser applications, look into [[id:91a97717-c7d8-49d6-a127-64b3dc8833de][Selenium]]
- - read up on creating mock tests : https://realpython.com/python-mock-library/
-** 0x21C3
- - reached the frameworks section and the book seems to be a little out-dated (django or flask)
- - instead, proceeding with FastAPI
- - for the frontend, again rather than react or other similar alternatives, will proceed with htmx.
- - will be strengthening the web development aspect for once.
-** 0x21C0
- - continuing the fullstack python marathon
-   - delving into databases and web frameworks today
-** 0x21BF
- - starting an open source book to  densen the sparsed out knowledge of python I've accumulated over the years.
- - although work in AI, feel like I should have more than a working knowledge of the practical aspects of programming and development in general.
-   - will be completing [[https://www.fullstackpython.com/][full stack]] python over the coming days
- - diff b/w [[https://caremad.io/posts/2013/07/setup-vs-requirement/][setup.py vs requirements.txt]]
- - instead of separately using pip and venv, checkout [[https://pipenv.pypa.io/en/latest/][pipenv]]
-   - conda and mamba are fine, but personally feel like they're a little too slow for my patience levels.
-     - broke micromamba once and then just shifted to using venv, no regrets there: segmentation faults are scarier when dealing with python than when working with C.
-** 0x21B3
-Exploring [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
-** Init
- - some programming languages force the programmer to think like they're building with lego blocks.
- - some enquire (or enforce) enlightenment before one can start coding elegantly
- - some induce mania
- - some are crisp and structured and just ...., yeah, they just are.
- - python can be everything depending on who you are(I'm guessing).
-   - worth mastering.
- - I'm going the careless children way.
-   - here's the parent doing it's job before it was created:
-     - [[id:c9704c39-0c34-40af-b7f7-973cdd03cb05][Async-IO(python)]]
-     - [[id:097b7bdc-1f4f-4738-a45f-c0a959ef2ff3][Python GIL]]
-       
 * Sentinels
-** Plotting
-*** Matplotlib
-:PROPERTIES:
-:ID:       8cb05715-6df5-4a3b-bd09-aaab81869845
-:END:
-
-
 ** Dialects
 *** [[id:cf9ebc9c-8af7-4f7c-9c3f-e3325ac260e4][Hy]]

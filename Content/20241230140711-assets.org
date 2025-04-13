@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       557e0dae-5535-4303-be1e-e045bf283e78
-:END:
-#+title: Assets
-#+filetags: :bs:

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       20054618-499c-4c0d-b94f-3a308770ffad
+:END:
+#+title: RTFM
+#+filetags: :yt:
+
+* The RFTM
+
+** Abstract
+ - I like reading manuals
+ - init a series to explore tooling in a nomadic fashion
+ - to really understand what my computer is doing and not rely on trickled down patterns but experience engineering products first hand

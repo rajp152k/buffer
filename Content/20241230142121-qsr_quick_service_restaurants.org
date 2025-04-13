@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       05db6866-efe1-492d-84f5-52bbc76337ab
-:END:
-#+title: QSR (Quick Service Restaurants)
-#+filetags: :econ:

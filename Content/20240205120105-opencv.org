@@ -25,7 +25,7 @@ It's good practice to explicitly specify the concerned "cmap" (color map) when l
   # - UNCHANGED : enum of -1
 #+end_src
 
-Also keep in mind to provide colormaps when plotting images as using [[id:8cb05715-6df5-4a3b-bd09-aaab81869845][plt]] on a grayscale yields colors that you probably don't expect.
+Also keep in mind to provide colormaps when plotting images as using plt on a grayscale yields colors that you probably don't expect.
 
 #+begin_src python 
   import matplotlib.pyplot as plt

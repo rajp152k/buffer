@@ -1,5 +1,0 @@
-:PROPERTIES:
-:ID:       47fffc02-ce70-4080-924c-3a4f9d293e95
-:END:
-#+title: mood
-#+filetags: :meta:

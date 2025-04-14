@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       d41dc898-8776-47bb-a88d-bc143250799f
+:END:
+#+title: Continuations
+#+filetags: :programming:lisp:
+
+* Resources
+ - https://courses.cs.umbc.edu/331/resources/lisp/onLisp/20continuations.pdf

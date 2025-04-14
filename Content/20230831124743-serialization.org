@@ -2,11 +2,11 @@
 :ID:       86de7485-e9c0-4b7f-9f11-adb8229afdf4
 :END:
 #+title: Serialization
-#+filetags: :tbp:tool:programming:
+#+filetags: :meta:cs:
 
 * Abstract
 
-Backing up objects (models, data structures in memory, etc) is an important aspect of large scale projects. Also relevant in the context of Computer [[id:b3f9cd0d-d403-48ce-918d-2dd0d341c783][Network]]s. [[id:92342b8b-1c09-4e1f-9799-66d060678c31][Encryption]] is another factor to be considered when tramsmitting sensitive data over tappable lines.
+Backing up objects (models, data structures in memory, functions (closures), continuations, etc) is an important aspect of large scale projects: see [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]]. Also relevant in the context of Computer [[id:b3f9cd0d-d403-48ce-918d-2dd0d341c783][Network]]s. [[id:92342b8b-1c09-4e1f-9799-66d060678c31][Encryption]] is another factor to be considered when tramsmitting sensitive data over tappable lines.
 
 Storage and Retreival of a serialized entity usually needs an accompanying
 
@@ -14,5 +14,3 @@ Storage and Retreival of a serialized entity usually needs an accompanying
 ** [[id:48581776-0ba5-4d88-ad38-25c0cb90595f][JSON]]
 ** [[id:c29d0cf9-9d79-4b00-9884-150722729ab9][XML]]
 ** YAML
-* Resources
- - https://realpython.com/python-serialize-data/

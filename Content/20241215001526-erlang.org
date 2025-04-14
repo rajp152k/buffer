@@ -3,3 +3,15 @@
 :END:
 #+title: Erlang
 #+filetags: :erlang:
+
+* Misc
+ - Joe Armstrong -> [[id:a4fd4495-8068-4824-8629-e5b2e5cdb906][Send and Pray]] Semantics
+
+* Relevant Nodes
+** [[id:ca60ecb6-ad21-45fa-b01c-1371bdc6a948][LFE : Lisp Flavoured Erlang]]
+** [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]]
+** [[id:20240519T162542.805560][Fault Tolerence]]
+** [[id:0643a384-27d4-41c3-963b-a8b1d84c8c6b][Termite: Dist. Lisp]]
+* Resources
+ - https://bytegoblin.io/blog/rip-joe-armstrong.mdx
+ - https://www.erlang.org/

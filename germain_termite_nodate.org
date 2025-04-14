@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       0643a384-27d4-41c3-963b-a8b1d84c8c6b
+:ROAM_REFS: @germain_termite_nodate
+:END:
+#+title: Termite: Dist. Lisp
+#+filetags: :lisp:
+
+* Flowing Phrasal Outline
+** Isolated Sequential Processes
+*** Memory Space Isolation
+*** Node and Process Identifiers
+*** Process Spawning
+** Sending and Receiving messages
+*** Process Mailbox
+*** [[id:b2ce2739-98c4-4ff0-931c-3a836686bf55][Async]] Message Sends
+*** Sync Message Recvs
+*** spawn and send sample
+
+#+begin_src lisp
+(let ((me (self)))
+  (spawn
+   (! me "hello, world.")))
+
+(?)
+#+end_src
+
+ - ! : async send mesg
+ - ? : sync (blocking) recv mesg
+
+** Failure
+*** Hardware Unreliability
+ - the "real world" or the "physical"
+*** Sends : Unreliable Operations
+
+** Peripheral Aspects
+*** Serialization
+ - Data
+ - Closures
+ - Continuations
+**** Non-Serializables -> Addressable Proxies
+ - ports -> open files -> processes -> pids
+ - processes as pids
+*** [[id:efba8f9b-a5df-4212-94c9-230bef916b5c][Immutability]]
+*** Suspended Processes as State
+*** [[id:34df7d47-1f78-4acf-8dd7-9c03e04e4a9d][Exception Handling]]
+**** Dyamically scoped handlers
+ - choose : handle or raise again
+ - when raise:
+   - encapsulating handler invoked
+ - Cross Process Exception Transfers upon deaths
+   - "send and pray" applies here as well
+   - cross process exception raises upon receives
+
+
+**** Process relations
+ - supervisor - worker (two way death effects : work doesn't matter if not supervised)
+ - monitor - worker (one way death effect : worker doesn't care if monitor dies)
+
+*** Connecting Nodes
+ - Unique identifiers for each node
+   - (IP#:port)
+   - node references contain these
+     - gen with make-node
+
+*** [[id:19079639-be92-46cf-82c5-3d81c935705c][Remote Procedure Calls]]
+*** [[id:f6111cb3-60df-422e-aca3-c4cb1b5cbb2a][Process Migration]]
+ - Serialize a Continuation
+ - send and pray
+* Relevant Nodes
+** [[id:f10899df-3d45-4290-bc50-b75c85bfb66b][Message Passing Computation]]
+** [[id:d41dc898-8776-47bb-a88d-bc143250799f][Lisp Continuations]]
+** [[id:f6111cb3-60df-422e-aca3-c4cb1b5cbb2a][Transparent Migration of Processes]]
+** [[id:158b95bc-9434-48f2-b932-3be750afa7e6][Erlang]] + [[id:bc1ce0eb-26ce-4261-959f-7bb4b0fa38d4][scheme]]
+** [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]]
+** [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]]
+** [[id:a4fd4495-8068-4824-8629-e5b2e5cdb906][Send and Pray]]
+** [[id:ce3bf6ec-0c36-4fc7-ae3d-3483ff67cfc3][Timeout Stability Pattern]]

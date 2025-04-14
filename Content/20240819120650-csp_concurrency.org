@@ -2,7 +2,7 @@
 :ID:       0458f827-5634-41e0-b261-dfc5cb2d2389
 :ROAM_ALIASES: "Communicating Sequential Processes"
 :END:
-#+title: CSP-Concurrency
+#+title: Communicating Sequential Processes
 #+filetags: :golang:programming:
 
 * Resources

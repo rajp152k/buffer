@@ -23,14 +23,15 @@ Theoretical exploration of correctness in distributed compute is actively explor
 
 This is an index of relevant nodes
 
-* [[id:30bd9ede-b4fd-47c7-b848-a0d225277d4a][Fallacies of Distributed Computing]]
-* Versioning
-** [[id:13900f1e-27c1-40cf-bbcd-d9032634b835][Lamport Timestamps]]
+* Relevant Nodes
+** [[id:30bd9ede-b4fd-47c7-b848-a0d225277d4a][Fallacies of Distributed Computing]]
+** Versioning
+*** [[id:13900f1e-27c1-40cf-bbcd-d9032634b835][Lamport Timestamps]]
 
  - simple way to track the order of events in a distributed system, where multiple computers work together.
  - help understand which event happened before another, even if the computers' clocks are not perfectly synchronized.
 
-*** Working Mechanism
+**** Working Mechanism
 
 1. Initialization: Each computer starts with a timestamp of 0.
 
@@ -44,12 +45,12 @@ This is an index of relevant nodes
     When a computer receives a message, it compares its own timestamp with the timestamp in the message.
     It updates its own timestamp to be the maximum of the two values + 1.
 
-*** Determining Order
+**** Determining Order
 
  - If event A has a lower timestamp than event B, then A happened before B.
  - If event A and B have the same timestamp, then their order is unknown (concurrent events).
 
-*** Example
+**** Example
 
 Imagine two computers, A and B:
 
@@ -60,7 +61,7 @@ Imagine two computers, A and B:
 2. B receives the message and updates its timestamp to max(2, 3) + 1 = 4.
 3. Now, we know that A's event happened before B's event (3 < 4).
 
-*** Key Points
+**** Key Points
 
  - Lamport timestamps provide a partial ordering of events. They can tell you if one event happened before another, but not always if they happened concurrently.
 
@@ -68,19 +69,19 @@ Imagine two computers, A and B:
 
  - They are often used as a building block for more advanced algorithms like vector clocks.
 
-*** Limitations:
+**** Limitations:
 
  - cannot determine causality between concurrent events.
  - require a mechanism to break ties if events happen at the same time on different computers.
 
-** [[id:2d6c7979-5049-435b-b405-0c685fbe06de][Vector Clocks]]
+*** [[id:2d6c7979-5049-435b-b405-0c685fbe06de][Vector Clocks]]
  - Ensuring Causal Order in Distributed Systems
 
  - powerful tool in distributed systems to track the order of events and detect causality relationships.
 
  - solve the limitations of [[id:13900f1e-27c1-40cf-bbcd-d9032634b835][Lamport Timestamps]]  which cannot distinguish between concurrent events.
 
-*** Working Mechanism
+**** Working Mechanism
 
 1. Structure: A vector clock is an array of integers, one for each node in the system. Each node maintains its own vector clock.
 
@@ -98,13 +99,13 @@ Imagine two computers, A and B:
     When a node receives a message, it updates its own vector clock by taking the element-wise maximum of its current vector clock and the received vector clock.
     For example, node 3 receives a message from node 1 with its vector clock. Node 3 updates its own clock by taking the maximum of each element in the two vectors.
 
-*** Determining Causality
+**** Determining Causality
 
  - Causally Related Events: Event A happens before event B (A -> B) if and only if every element in A's vector clock is less than or equal to the corresponding element in B's vector clock, and at least one element is strictly less.
 
  - Concurrent Events: If neither A -> B nor B -> A holds, then events A and B are concurrent.
 
-*** Example:
+**** Example:
 
 Consider a system with three nodes (N1, N2, N3).
 
@@ -118,19 +119,19 @@ N1: [1, 0, 0]   N2: [0, 1, 0]   N3: [0, 0, 1]
 
 Now, we can determine that the event at N1 happened before the updated event at N3 because [1, 0, 0] < [2, 0, 1].
 
-*** Benefits of Vector Clocks
+**** Benefits of Vector Clocks
 
  - Accurate Causality Tracking: Captures the partial ordering of events in a distributed system.
 
  - Conflict Detection: Helps identify conflicting updates to replicated data.
  Versioning: Used to manage versions of data in distributed systems.
 
-* [[id:ac7b233e-52d9-4190-91ca-66dce80c3748][Unique ID generation]]
-** Flickr Ticket Server
+** [[id:ac7b233e-52d9-4190-91ca-66dce80c3748][Unique ID generation]]
+*** Flickr Ticket Server
  - https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/
    
-** Twitter Snowflake
+*** Twitter Snowflake
  - https://en.wikipedia.org/wiki/Snowflake_ID
-* Clock [[id:20240520T101029.699685][Synchronization]]
-**  [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] Time Protocol (NTP)
+** Clock [[id:20240520T101029.699685][Synchronization]]
+***  [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Network]] Time Protocol (NTP)
  - https://en.wikipedia.org/wiki/Network_Time_Protocol

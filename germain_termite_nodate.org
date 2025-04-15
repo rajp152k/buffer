@@ -66,6 +66,44 @@
 *** [[id:f6111cb3-60df-422e-aca3-c4cb1b5cbb2a][Process Migration]]
  - Serialize a Continuation
  - send and pray
+** Language Overview
+*** Making a server
+**** spawn message cond loop
+   #+begin_src lisp
+(define pong-server
+    (spawn
+     (let loop ()
+          (let ((msg (?)))
+            (if (and (list? msg)
+                     (= (length msg) 2)
+                     (pid? (car msg))
+                     (eq? (cadr msg) 'ping))
+                (let ((from (car msg)))
+                  (! from 'pong)
+                  (loop))
+                (loop))))))
+
+(! pong-server (list (self) 'ping))     ;; -> send 'ping
+
+(?) ;; -> 'pong
+   #+end_src
+**** recv pattern matching
+   #+begin_src  lisp
+(define better-pong-server
+  (spawn
+   (let loop ()
+     (recv
+      ((from 'ping)                     ;pattern to match
+       (where (pid? from))              ;additional conditions
+       (! from 'pong)))                 ;action
+     (loop))))
+   #+end_src
+*** timeouts
+ - after in recv pattern matches
+   #+begin_src scheme
+(define )
+   #+end_src
+
 * Relevant Nodes
 ** [[id:f10899df-3d45-4290-bc50-b75c85bfb66b][Message Passing Computation]]
 ** [[id:d41dc898-8776-47bb-a88d-bc143250799f][Lisp Continuations]]

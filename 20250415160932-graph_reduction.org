@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c502569a-c6e6-427d-9090-14f5181fffa5
+:END:
+#+title: Graph Reduction
+#+filetags: :cs:plt:
+
+
+* Relevant Nodes
+** [[id:eba75a47-6e35-4146-a152-b05089bbd8ec][Lazy Evaluation]]

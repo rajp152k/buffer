@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3ebec2ff-9cdd-4c4d-92d8-64f067826d1a
+:END:
+#+title: Serializability
+#+filetags: :cs:
+
+* Relevant Nodes
+** [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]]

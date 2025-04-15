@@ -14,6 +14,7 @@
 
 - *Call-by-Need Optimization:* The crucial optimization within lazy evaluation is to memoize the result of the first evaluation of an expression.
 
+** Positive
 -   *Avoidance of Unnecessary Computations:* Lazy evaluation can dramatically improve efficiency by preventing computations whose results are never actually used.  This is particularly valuable in situations where:
     *   Computation is expensive.
     *   Some branches of code may not always be executed.
@@ -21,32 +22,30 @@
 
 -   *Support for [[id:3331a714-1dfe-4429-ad82-672762568c37][Infinite Data Structures]]:* Lazy evaluation enables the creation and manipulation of infinite data structures.  For instance, you can define an infinite list of prime numbers, and the system will only compute the primes that are actually needed for a specific computation.  This is impossible with eager evaluation.
 
--   *Improved Modularity:*  Lazy evaluation can improve modularity by allowing you to separate the generation of data from its processing.  A module can generate a large dataset (potentially infinite) without needing to know how much of it will be used.  Another module can then consume only the necessary portion of the data.
-  - see [[id:2cc32697-c4ce-41b8-987a-2a44a09f78c3][MapReduce]]
+-   *Improved [[id:aa4f1b85-5896-4990-bfc8-c29cfd59dd60][Modularity]]:*  Lazy evaluation can improve modularity by allowing you to separate the generation of data from its processing.  A module can generate a large dataset (potentially infinite) without needing to know how much of it will be used.  Another module can then consume only the necessary portion of the data.
+  - also see [[id:2cc32697-c4ce-41b8-987a-2a44a09f78c3][MapReduce]] : map thunk generation followed by a decoupled reduction of results
 
 -   *Enhanced Expressiveness:* Lazy evaluation can lead to more concise and expressive code, especially when dealing with complex data transformations and pipelines.  You can define a series of operations to be performed on a dataset without immediately triggering the entire computation.
 
 -   *Potential for [[id:5813a827-8b9a-454d-b3d4-7bb006ae29c2][Compiler Optimizations]]:*  Lazy evaluation can enable certain compiler optimizations that are not possible with eager evaluation.  For example, a compiler can potentially rearrange computations to minimize the amount of work done.
 
-*3.  Drawbacks and Disadvantages:*
+** Negatives
 
--   *Increased Memory Consumption:* Lazy evaluation can lead to increased memory consumption because unevaluated expressions (thunks) must be stored in memory until they are needed. In the worst case, a large number of unevaluated expressions can accumulate, leading to memory exhaustion. This is a common issue known as "space leaks" in lazy languages like Haskell.
+-   *Increased [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Memory]] Consumption:* Lazy evaluation can lead to increased memory consumption because unevaluated expressions (thunks) must be stored in memory until they are needed. In the worst case, a large number of unevaluated expressions can accumulate, leading to memory exhaustion.
 
--   *Unpredictable Evaluation Order:*  The order in which expressions are evaluated in a lazy language can be difficult to predict. This can make debugging more challenging, as it becomes harder to reason about the program's state at any given point in time.
+-   *[[id:3ebec2ff-9cdd-4c4d-92d8-64f067826d1a][Unpredictable Evaluation Order]]:*  The order in which expressions are evaluated in a lazy language can be difficult to predict. This can make debugging more challenging, as it becomes harder to reason about the program's state at any given point in time.
 
--   *Difficulties with Side Effects:*  Lazy evaluation can make it difficult to reason about the order in which side effects (e.g., I/O operations, mutable state updates) occur.  This can lead to unexpected behavior and make it harder to write correct programs, particularly when side effects are important.  Purely functional languages that employ lazy evaluation (like Haskell) address this with monads, but they add complexity.
+-   *Difficulties with [[id:ca98597a-027f-4eda-bbb2-801b8f74d0a5][Side Effects]]:*  Lazy evaluation can make it difficult to reason about the order in which side effects (e.g., I/O operations, mutable state updates) occur.  This can lead to unexpected behavior and make it harder to write correct programs, particularly when side effects are important.  Purely functional languages that employ lazy evaluation (like [[id:5b63fb87-06df-4f52-bcf2-a54eb682c968][Haskell]]) address this with [[id:c2b4e22b-1b8b-4d10-bf95-eb220bdcbced][monads]], but they add complexity.
 
 -   *Performance Overhead:* While lazy evaluation can improve performance by avoiding unnecessary computations, it can also introduce overhead due to the need to create and manage thunks. This overhead can sometimes outweigh the benefits of lazy evaluation, especially for simple computations.
 
--   *Steeper Learning Curve:* Lazy evaluation can be a difficult concept to grasp for programmers who are accustomed to eager evaluation. It requires a different way of thinking about program execution.
-
-*4. Implementation Techniques:*
+** Implementation techniques
 
 -   *Thunks:* The most common implementation technique for lazy evaluation is the use of "thunks." A thunk is essentially a suspended computation – a data structure that contains a pointer to the expression to be evaluated, along with any necessary environment information. When the value of the expression is needed, the thunk is "forced," which means the expression is evaluated, and the result is stored in the thunk. Subsequent accesses to the thunk simply retrieve the stored result.
 
--   *Graph Reduction:* In graph reduction, expressions are represented as graphs, and evaluation involves transforming the graph until it represents the final result.  This is a common implementation technique in functional languages.
+-   *[[id:c502569a-c6e6-427d-9090-14f5181fffa5][Graph Reduction]]:* In graph reduction, expressions are represented as graphs, and evaluation involves transforming the graph until it represents the final result.  This is a common implementation technique in [[id:20231212T081907.908301][functional languages]].
 
--   *Abstract Interpretation:*  This technique can be used to analyze a program and determine which expressions are guaranteed not to be needed, allowing the compiler to avoid generating thunks for those expressions.
+-   *[[id:a51dcb1a-3037-4271-a6bd-8d9c0cd3851e][Abstract Interpretation]]:*  This technique can be used to analyze a program and determine which expressions are guaranteed not to be needed, allowing the compiler to avoid generating thunks for those expressions.
 
 *5. Languages and Systems that Use Lazy Evaluation:*
 

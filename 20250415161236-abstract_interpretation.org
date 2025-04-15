@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       a51dcb1a-3037-4271-a6bd-8d9c0cd3851e
+:END:
+#+title: Abstract Interpretation
+#+filetags: :plt:cs:
+
+* Relevant Nodes
+** [[id:eba75a47-6e35-4146-a152-b05089bbd8ec][Lazy Evaluation]]
+
+* Resources
+ - https://en.wikipedia.org/wiki/Abstract_interpretation

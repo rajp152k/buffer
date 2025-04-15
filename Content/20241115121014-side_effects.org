@@ -3,3 +3,6 @@
 :END:
 #+title: Side Effects
 #+filetags: :programming:
+
+* Relevant Nodes
+** [[id:20230715T180212.260696][Mutability]]

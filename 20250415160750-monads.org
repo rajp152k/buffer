@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c2b4e22b-1b8b-4d10-bf95-eb220bdcbced
+:END:
+#+title: Monads
+#+filetags: :plt:

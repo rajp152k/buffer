@@ -1,0 +1,147 @@
+:PROPERTIES:
+:ID:       cea53266-4a34-4f27-b548-9209541d40f1
+:END:
+#+title: Thunk
+#+filetags: :programming:
+
+* Overview
+
+  A thunk is a [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][subroutine]] (a block of code) used to delay the evaluation or computation of a value until it is needed.  In simpler terms, it's a piece of code that wraps another piece of code, typically to postpone its execution.  It acts as a placeholder for the result of an expression.
+
+- *Purpose & Motivation:*
+
+    *   *[[id:eba75a47-6e35-4146-a152-b05089bbd8ec][Delayed Evaluation]] (Lazy Evaluation):*  The primary purpose of a thunk is to implement lazy evaluation. Instead of evaluating an expression immediately, a thunk encapsulates the expression and its environment.  The expression is evaluated only when its value is explicitly required. This is often referred to as "call-by-need".
+
+    *   *Control Flow:* Thunks can be used to control the order in which code is executed. They allow you to conditionally execute code based on whether its result is actually needed.
+
+    *   *Optimization:*  Lazy evaluation, facilitated by thunks, can lead to performance optimizations. If the result of a computation is never used, the computation is never performed, saving processing time and resources.
+
+    *   *Modularity and Abstraction:* Thunks can improve code modularity by decoupling the computation of a value from its usage.  The code that produces the value doesn't need to know when or how the value will be used, and the code that uses the value doesn't need to know how it's produced.
+
+    *   *Side-Effect Management:* By delaying evaluation, thunks can help manage side effects (e.g., I/O operations).  You can ensure that side effects occur only when necessary, which can be crucial in concurrent or asynchronous environments.
+
+- *How Thunks Work (Typical Implementation):*
+
+    1.  *Creation:*  When an expression is encountered that should be evaluated lazily, a thunk is created. This thunk typically stores:
+        *   A [[id:20230715T174319.700414][pointer]] to the code (function) that will perform the computation.
+        *   The [[id:d4439a3c-ee63-479e-943e-5bebc50e32bd][environment]] (state) (the values of variables) needed by that code.  This is vital; otherwise, the deferred evaluation would happen in the wrong context.
+
+    2.  *Suspension:* The expression is /not/ immediately evaluated.  The thunk simply "holds" the recipe for computing the value.
+
+    3.  *Forcing (Evaluation):*  When the value of the expression is actually needed (e.g., when its result is used in another computation), the thunk is "forced" (or "evaluated"). This means the code within the thunk is executed.
+
+    4.  *Memoization (Optional but Common):*  A crucial optimization is /memoization/.  Once the thunk is forced and the value is computed, the thunk often replaces itself with the computed value.  Subsequent attempts to force the thunk will then simply return the already-computed value. This prevents redundant computations and is a key characteristic of true "call-by-need".
+
+- *Examples (Illustrative):*
+
+    *   *Haskell (Classic Example):* Haskell is a language that uses lazy evaluation by default.  Every expression is essentially wrapped in a thunk.
+
+        #+begin_src haskell
+        -- In Haskell, 'x' is not evaluated until it's needed.
+        let x = 1 + 2
+        print (x * 3)  -- 'x' is evaluated here.
+        #+end_src
+
+    *   *JavaScript (Simulated Thunks):* JavaScript is primarily an eager language but thunks can be emulated with functions.
+
+        #+begin_src javascript
+        function createThunk(expression) {
+          let value;
+          let evaluated = false;
+
+          return function() {
+            if (!evaluated) {
+              value = expression(); // Evaluate the expression only once
+              evaluated = true;
+            }
+            return value;
+          };
+        }
+
+        const myThunk = createThunk(() => {
+          console.log("Calculating...");
+          return 1 + 2;
+        });
+
+        // Nothing is calculated yet.
+
+        console.log("First call:", myThunk()); // "Calculating..." is printed, then 3
+        console.log("Second call:", myThunk()); // 3 (no calculation)
+        #+end_src
+
+    *   *Python (Similar Simulation):*
+
+        #+begin_src python
+        def create_thunk(expression):
+          value = None
+          evaluated = False
+
+          def thunk():
+            nonlocal value, evaluated
+            if not evaluated:
+              value = expression()
+              evaluated = True
+            return value
+          return thunk
+
+        my_thunk = create_thunk(lambda: 1 + 2)
+
+        print(my_thunk())
+        print(my_thunk())
+        #+end_src
+
+- *Advantages of Using Thunks and Lazy Evaluation:*
+
+    *   *Efficiency:*  Avoids unnecessary computations, especially when dealing with large data structures or complex calculations.
+
+    *   *Composability:*  Facilitates the creation of more modular and reusable code.  You can combine functions without worrying about the order in which their arguments are evaluated.
+
+    *   *Infinite Data Structures:*  Lazy evaluation allows the representation of infinite data structures (e.g., infinite lists) because only the parts of the structure that are actually needed are computed.
+
+    *   *Declarative Programming:*  Encourages a more declarative programming style where you specify /what/ you want to compute, rather than /how/ to compute it.
+
+- *Disadvantages and Potential Problems:*
+
+    *   *Increased Complexity:*  Introducing thunks can make code more complex, especially in languages that don't have built-in support for lazy evaluation.  It can be harder to reason about the order of execution.
+
+    *   *Debugging Challenges:*  Debugging lazy-evaluated code can be more difficult because you need to understand when and why expressions are being evaluated.  The evaluation order may not be what you expect.
+
+    *   *Space Leaks (Potential):*  If thunks are not handled carefully, they can lead to space leaks.  A thunk might retain references to large data structures that are no longer needed, preventing them from being garbage collected.  This is particularly important in languages with manual memory management (though less of an issue in garbage-collected environments).
+
+    *   *Overhead:*  Creating and managing thunks introduces some overhead, although this overhead is often outweighed by the benefits of lazy evaluation, especially for complex computations.  The overhead involves the creation of closures and the checking of the 'evaluated' flag.
+
+    *   *Unpredictable Evaluation Order (Side Effects):*  The order of evaluation is no longer explicit and deterministic. This can be a major problem if the expressions being evaluated have side effects. Managing side effects in a lazy evaluation environment requires careful consideration.  This is one reason why purely functional languages like Haskell are often preferred for exploiting the benefits of lazy evaluation.
+
+- *Languages & Contexts Where Thunks are Common:*
+
+    *   *Haskell:* Uses lazy evaluation as its default evaluation strategy.  Thunks are a fundamental part of the language.
+
+    *   *Functional Programming Languages:*  Thunks and lazy evaluation are common features in functional languages like Miranda, Clean, and others.
+
+    *   *Scheme (and other Lisps):*  While not strictly lazy by default, Scheme provides mechanisms for creating thunks (e.g., using =delay= and =force=).
+
+    *   *Compiler Optimization:*  Thunks can be used internally by compilers to optimize code.
+
+    *   *Promises/Futures (Concurrency):*  In concurrent programming, promises or futures are often implemented using thunks.  A promise represents a value that may not be available yet, and the code to compute the value is encapsulated in a thunk.
+
+    *   *Libraries (for Eager Languages):* Libraries in eager languages (like JavaScript or Python) may provide utilities for creating and managing thunks to simulate lazy evaluation.
+
+- *Relationship to Closures:*
+
+  Thunks are often implemented using closures. A closure is a function that captures the environment in which it was defined. In the context of thunks, the closure captures the variables and data needed to evaluate the expression when the thunk is forced.  The ability to capture the surrounding environment is what allows thunks to defer evaluation correctly.
+
+- *Critical Analysis:*
+
+    *   *Trade-offs:* The decision to use thunks and lazy evaluation involves a trade-off between performance, complexity, and predictability.  Lazy evaluation can be beneficial for computationally intensive tasks and for working with infinite data structures, but it can also make code harder to understand and debug.
+
+    *   *Suitability:* Lazy evaluation is best suited for languages that are designed with it in mind, such as Haskell.  Trying to retrofit lazy evaluation into an eager language can lead to code that is more complex and less efficient than equivalent eager code.
+
+    *   *Alternatives:* There are alternatives to lazy evaluation, such as memoization and caching, which can provide some of the same benefits without the same drawbacks.
+
+- *Conclusion:*
+
+Thunks are a powerful mechanism for delaying evaluation and enabling lazy evaluation. They are particularly useful in functional programming languages and in situations where efficiency and modularity are important. However, they also introduce complexity and potential problems, so it's important to understand the trade-offs before using them.  Their successful application hinges on careful consideration of the language environment, the nature of the computations being performed, and the potential for side effects.
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Thunk

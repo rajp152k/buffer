@@ -3,3 +3,6 @@
 :END:
 #+title: Lazy Evaluation
 #+filetags: :programming:
+
+* Relevant Nodes
+**

@@ -1,8 +1,128 @@
 :PROPERTIES:
 :ID:       eba75a47-6e35-4146-a152-b05089bbd8ec
+:ROAM_ALIASES: Call-by-need
 :END:
 #+title: Lazy Evaluation
-#+filetags: :programming:
+#+filetags: :plt:programming:
 
-* Relevant Nodes
-**
+
+* Overview
+
+- Lazy evaluation (also known as call-by-need) is an evaluation strategy which delays the [[id:cea53266-4a34-4f27-b548-9209541d40f1][evaluation of an expression until its value is needed]], and which [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][also avoids re-evaluating the same expression multiple times]].
+
+- *Key Difference from [[id:5165bbab-6ae4-49ea-9b3f-f2572eb8da2b][Eager Evaluation]]:* The opposite of lazy evaluation is eager evaluation (also known as strict evaluation or call-by-value).  Eager evaluation evaluates expressions immediately as they are encountered in the code, regardless of whether their results are immediately needed.  Most [[id:b38da43a-70fe-4594-9bbb-e5ebfb67866e][imperative]] programming languages (like C, Java, Python) use eager evaluation by default.
+
+- *Call-by-Need Optimization:* The crucial optimization within lazy evaluation is to memoize the result of the first evaluation of an expression.
+
+-   *Avoidance of Unnecessary Computations:* Lazy evaluation can dramatically improve efficiency by preventing computations whose results are never actually used.  This is particularly valuable in situations where:
+    *   Computation is expensive.
+    *   Some branches of code may not always be executed.
+    *   Working with infinite data structures.
+
+-   *Support for [[id:3331a714-1dfe-4429-ad82-672762568c37][Infinite Data Structures]]:* Lazy evaluation enables the creation and manipulation of infinite data structures.  For instance, you can define an infinite list of prime numbers, and the system will only compute the primes that are actually needed for a specific computation.  This is impossible with eager evaluation.
+
+-   *Improved Modularity:*  Lazy evaluation can improve modularity by allowing you to separate the generation of data from its processing.  A module can generate a large dataset (potentially infinite) without needing to know how much of it will be used.  Another module can then consume only the necessary portion of the data.
+  - see [[id:2cc32697-c4ce-41b8-987a-2a44a09f78c3][MapReduce]]
+
+-   *Enhanced Expressiveness:* Lazy evaluation can lead to more concise and expressive code, especially when dealing with complex data transformations and pipelines.  You can define a series of operations to be performed on a dataset without immediately triggering the entire computation.
+
+-   *Potential for [[id:5813a827-8b9a-454d-b3d4-7bb006ae29c2][Compiler Optimizations]]:*  Lazy evaluation can enable certain compiler optimizations that are not possible with eager evaluation.  For example, a compiler can potentially rearrange computations to minimize the amount of work done.
+
+*3.  Drawbacks and Disadvantages:*
+
+-   *Increased Memory Consumption:* Lazy evaluation can lead to increased memory consumption because unevaluated expressions (thunks) must be stored in memory until they are needed. In the worst case, a large number of unevaluated expressions can accumulate, leading to memory exhaustion. This is a common issue known as "space leaks" in lazy languages like Haskell.
+
+-   *Unpredictable Evaluation Order:*  The order in which expressions are evaluated in a lazy language can be difficult to predict. This can make debugging more challenging, as it becomes harder to reason about the program's state at any given point in time.
+
+-   *Difficulties with Side Effects:*  Lazy evaluation can make it difficult to reason about the order in which side effects (e.g., I/O operations, mutable state updates) occur.  This can lead to unexpected behavior and make it harder to write correct programs, particularly when side effects are important.  Purely functional languages that employ lazy evaluation (like Haskell) address this with monads, but they add complexity.
+
+-   *Performance Overhead:* While lazy evaluation can improve performance by avoiding unnecessary computations, it can also introduce overhead due to the need to create and manage thunks. This overhead can sometimes outweigh the benefits of lazy evaluation, especially for simple computations.
+
+-   *Steeper Learning Curve:* Lazy evaluation can be a difficult concept to grasp for programmers who are accustomed to eager evaluation. It requires a different way of thinking about program execution.
+
+*4. Implementation Techniques:*
+
+-   *Thunks:* The most common implementation technique for lazy evaluation is the use of "thunks." A thunk is essentially a suspended computation – a data structure that contains a pointer to the expression to be evaluated, along with any necessary environment information. When the value of the expression is needed, the thunk is "forced," which means the expression is evaluated, and the result is stored in the thunk. Subsequent accesses to the thunk simply retrieve the stored result.
+
+-   *Graph Reduction:* In graph reduction, expressions are represented as graphs, and evaluation involves transforming the graph until it represents the final result.  This is a common implementation technique in functional languages.
+
+-   *Abstract Interpretation:*  This technique can be used to analyze a program and determine which expressions are guaranteed not to be needed, allowing the compiler to avoid generating thunks for those expressions.
+
+*5. Languages and Systems that Use Lazy Evaluation:*
+
+-   *Haskell:* Haskell is the most well-known language that uses lazy evaluation by default.  It is a purely functional language, which makes lazy evaluation more manageable.
+
+-   *Miranda:* An earlier functional language that heavily influenced Haskell and also employed lazy evaluation.
+
+-   *Clean:* Another functional language that uses lazy evaluation.
+
+-   *Scheme (with explicit delay/force):* Scheme provides mechanisms for implementing lazy evaluation explicitly, using =delay= and =force= procedures.
+
+-   *Python (with generators):* Python's generators provide a form of lazy evaluation.  They produce values on demand, rather than creating an entire data structure in memory at once.
+
+-   *Scala (with lazy vals):* Scala allows you to declare variables as =lazy=, which means that their values will only be computed when they are first accessed.
+
+-   *Some functional aspects in other languages:*  Many modern languages include features that enable forms of lazy evaluation, often through iterators, streams, or similar mechanisms.
+
+*6. Examples:*
+
+-   *Haskell Example (Infinite List):*
+
+    #+begin_src haskell
+    ones :: [Integer]
+    ones = 1 : ones  -- Creates an infinite list of ones
+
+    take 5 ones  -- Evaluates only the first 5 elements: [1,1,1,1,1]
+    #+end_src
+
+-   *Python Example (Generator):*
+
+    #+begin_src python
+    def fibonacci():
+        a, b = 0, 1
+        while True:
+            yield a
+            a, b = b, a + b
+
+    fib = fibonacci()  # Creates a generator
+
+    import itertools
+    for num in itertools.islice(fib, 10):  # Only computes the first 10 Fibonacci numbers
+        print(num)
+    #+end_src
+
+*7.  When to Use (and Not Use) Lazy Evaluation:*
+
+-   *Use Lazy Evaluation When:*
+    *   You need to work with potentially infinite data structures.
+    *   You want to avoid unnecessary computations.
+    *   You are writing code that involves complex data transformations and pipelines.
+    *   You are using a language that supports lazy evaluation natively and understand its implications.
+
+-   *Avoid Lazy Evaluation When:*
+    *   Performance is critical and the overhead of thunks is unacceptable.
+    *   You need precise control over the order in which side effects occur.
+    *   You are writing code that relies on mutable state.
+    *   You are unfamiliar with the concepts of lazy evaluation and its potential pitfalls.
+
+*8.  Relationship to Other Concepts:*
+
+-   *Functional Programming:* Lazy evaluation is closely associated with functional programming, as it complements the principles of immutability and pure functions.
+
+-   *Memoization:* Lazy evaluation inherently involves memoization, as the results of computations are stored for future use.
+
+-   *Streams:* Lazy evaluation is often used in conjunction with streams, which are sequences of data that are generated on demand.
+
+-   *Dataflow Programming:*  Lazy evaluation aligns with the principles of dataflow programming, where computations are triggered by the availability of data.
+
+*9.  Critical Analysis:*
+
+-   *Trade-offs:* Lazy evaluation is not a silver bullet. It offers significant advantages in certain situations, but it also comes with trade-offs in terms of memory consumption, predictability, and debugging complexity.
+
+-   *Suitability:* The suitability of lazy evaluation depends heavily on the specific application and the programming language being used.
+
+-   *Evolution of Techniques:*  Research continues into techniques for mitigating the drawbacks of lazy evaluation, such as improved memory management strategies and static analysis techniques for predicting evaluation order.
+
+*10. Conclusion:*
+
+Lazy evaluation is a powerful evaluation strategy that can improve efficiency, expressiveness, and modularity in certain contexts. However, it is important to understand its potential drawbacks and to use it judiciously. It's a core concept in functional programming and provides tools to build elegant and efficient solutions, but requires careful consideration and understanding to avoid its pitfalls.  Understanding the trade-offs is crucial for making informed decisions about when and how to use lazy evaluation effectively.

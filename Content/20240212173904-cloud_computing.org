@@ -19,7 +19,7 @@ Another aspect that is elementary to interacting with computer pertains to how t
 
 This is an epistemological dive into the nature of cloud computing services.
 
-On an extremely high level, any sort of cloud computing service one provides to a client can be broken down into differing amalgamations of [[id:6f9a4752-aa66-42cf-9b88-2e4fa2091511][compute]] and [[id:40a85632-284f-44f5-a86d-dc287fac1587][storage]] (extents of persistence, to elaborate).
+On an extremely high level, any sort of cloud computing service one provides to a client can be broken down into differing amalgamations of [[id:6f9a4752-aa66-42cf-9b88-2e4fa2091511][compute]] and [[id:18491388-2dcc-488f-8f33-00582cf0f77e][storage]] (extents of persistence, to elaborate).
 
 For instance, Functions as a service will be compute oriented (RAM level storages are involved, and data persists till the execution life of the relevant function), where as container as a service will be a mixture of both.
 

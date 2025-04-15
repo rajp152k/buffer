@@ -12,6 +12,8 @@
  - https://arpitbhayani.me/
 ** Artyom Bologov
 - https://aartaka.me/
+** Bjarne Stroustrup
+ - https://stroustrup.com/
 ** Daniel Miessler
  - https://danielmiessler.com/
 ** Derek Sivers

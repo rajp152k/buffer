@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5165bbab-6ae4-49ea-9b3f-f2572eb8da2b
+:ROAM_ALIASES: call-by-value
+:END:
+#+title: Eager Evaluation
+#+filetags: :plt:

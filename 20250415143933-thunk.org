@@ -24,7 +24,7 @@
 
     1.  *Creation:*  When an expression is encountered that should be evaluated lazily, a thunk is created. This thunk typically stores:
         *   A [[id:20230715T174319.700414][pointer]] to the code (function) that will perform the computation.
-        *   The [[id:d4439a3c-ee63-479e-943e-5bebc50e32bd][environment]] (state) (the values of variables) needed by that code.  This is vital; otherwise, the deferred evaluation would happen in the wrong context.
+        *   The [[id:d4439a3c-ee63-479e-943e-5bebc50e32bd][environment]] (state)(the values of variables) needed by that code.  This is vital; otherwise, the deferred evaluation would happen in the wrong context.
 
     2.  *Suspension:* The expression is /not/ immediately evaluated.  The thunk simply "holds" the recipe for computing the value.
 

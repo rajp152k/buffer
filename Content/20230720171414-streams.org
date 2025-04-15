@@ -2,6 +2,8 @@
 :ID:       a8f1b278-6dd9-43fc-bef6-e3ed3847da87
 :ROAM_ALIASES: generator
 :END:
-#+title: streams
+#+title: Streams
+#+filetags: :plt:lisp:
 
-most primitive data structure that can be implemented with the use of delay and force.
+* Relevant Nodes
+** [[id:3331a714-1dfe-4429-ad82-672762568c37][Infinite Data Structures]]

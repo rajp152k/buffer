@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3331a714-1dfe-4429-ad82-672762568c37
+:END:
+#+title: Infinite Data Structures
+#+filetags: :plt:data:
+
+* Relevant Nodes
+** [[id:a8f1b278-6dd9-43fc-bef6-e3ed3847da87][Streams]]

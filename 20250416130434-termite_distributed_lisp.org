@@ -1,9 +1,8 @@
 :PROPERTIES:
-:ID:       0643a384-27d4-41c3-963b-a8b1d84c8c6b
-:ROAM_REFS: @germain_termite_nodate
+:ID:       6a681e2c-eaa5-46a6-a362-e6f8a77758e4
 :END:
-#+title: Termite: Dist. Lisp
-#+filetags: :lisp:
+#+title: Termite: Distributed Lisp
+#+filetags: :paper:lisp:
 
 * Outline
 ** Isolated Sequential Processes
@@ -416,3 +415,6 @@
 
 * Implementation
 - over Gambit-scheme (gambit c): https://www.gambitscheme.org/4.3.0/manual/
+
+* Paper
+ -  http://www.european-lisp-workshop.org/archives/05.germain.pdf

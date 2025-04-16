@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5344927b-c263-48d0-bb1e-c234af8fe694
+:END:
+#+title: closure
+#+filetags: :cs:plt:

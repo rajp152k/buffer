@@ -5,7 +5,7 @@
 #+filetags: :meta:
 
 
-* Blogs
+* Individual Blogs
 ** Aditya Athalye
  - https://www.evalapply.org/
 ** Arpit Bhayani
@@ -55,5 +55,11 @@
  - https://travisjeffery.com/
 ** Varun Upadhyay
  - https://distributed-computing-musings.com/about-me/
+* Newsletters
+** Lambda: The Ultimate
+ - http://lambda-the-ultimate.org/
+* Wikis
+** c2
+ - https://wiki.c2.com/
 * Relevant Nodes
  - [[id:20240421T174402.732098][Authors]]

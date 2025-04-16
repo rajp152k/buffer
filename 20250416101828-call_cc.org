@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       037b595b-ff6a-44ff-8b31-6e643ab23524
+:END:
+#+title: call/cc

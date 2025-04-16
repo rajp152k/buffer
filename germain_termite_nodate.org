@@ -5,7 +5,7 @@
 #+title: Termite: Dist. Lisp
 #+filetags: :lisp:
 
-* Flowing Phrasal Outline
+* Outline
 ** Isolated Sequential Processes
 *** Memory Space Isolation
 *** Node and Process Identifiers
@@ -30,13 +30,15 @@
 ** Failure
 *** Hardware Unreliability
  - the "real world" or the "physical"
+ - [[id:a4fd4495-8068-4824-8629-e5b2e5cdb906][send and pray]]
+
 *** Sends : Unreliable Operations
 
 ** Peripheral Aspects
 *** Serialization
- - Data
- - Closures
- - Continuations
+ - [[id:d45dae92-5148-4220-b8dd-e4da80674053][Data]]
+ - [[id:5344927b-c263-48d0-bb1e-c234af8fe694][Closures]]
+ - [[id:d41dc898-8776-47bb-a88d-bc143250799f][Continuations]]
 **** Non-Serializables -> Addressable Proxies
  - ports -> open files -> processes -> pids
  - processes as pids
@@ -50,7 +52,6 @@
  - Cross Process Exception Transfers upon deaths
    - "send and pray" applies here as well
    - cross process exception raises upon receives
-
 
 **** Process relations
  - supervisor - worker (two way death effects : work doesn't matter if not supervised)
@@ -192,8 +193,6 @@
 
 
 
-
-
 *** Process Migration
  - node references as IP:ports needed
    #+begin_src scheme
@@ -228,10 +227,192 @@
 (?)                                     ; recv `(from ,node)
    #+end_src
 
-***
-* Relevant Nodes
-** [[id:f10899df-3d45-4290-bc50-b75c85bfb66b][Message Passing Computation]]
-** [[id:d41dc898-8776-47bb-a88d-bc143250799f][Lisp Continuations]]
-** [[id:f6111cb3-60df-422e-aca3-c4cb1b5cbb2a][Transparent Migration of Processes]]
-** [[id:158b95bc-9434-48f2-b932-3be750afa7e6][Erlang]] + [[id:bc1ce0eb-26ce-4261-959f-7bb4b0fa38d4][scheme]]
-** [[id:a4fd4495-8068-4824-8629-e5b2e5cdb906][Send and Pray]]
+*** [[id:d41dc898-8776-47bb-a88d-bc143250799f][Continuations]]
+**** [[id:7922a2b7-534f-454f-8c11-59b4322a1b00][process cloning]]
+
+   #+begin_src scheme
+(define original
+  (spawn
+   (let loop ()
+     (recv
+      ((from tag 'clone)
+       (call/cc
+        (lambda (clone)
+          (! from (list tag (lambda ()
+                              (clone #t))))))))
+     (loop))))
+
+(define clone (spawn ((!? original 'clone))))
+   #+end_src
+
+**** Dynamic code updates
+
+ - need an update message handler in the server
+
+#+begin_src scheme
+(define server
+  (spawn
+   (let loop ()
+     (recv
+      (('update k)
+       (k #t))
+      ((from tag 'ping)
+       (! from (list tag 'not-pong))))  ;;bug
+     (loop))))
+
+(define new-server
+  (spawn
+   (let loop ()
+     (recv
+      (('update k)
+       (k #t))
+
+      ((from tag 'clone)
+       (call/cc
+        (lambda s (k)
+                (! from (list tag k)))))
+
+      ((from tag 'ping)
+       ( from (list tag 'pong))))
+     (loop))))
+
+(!? server 'ping)                       ;; not-pong
+
+(let ((replacement (!? new-server 'clone)))
+  (! server (list 'update replacement)))
+
+(!? server 'ping)                       ;; pong
+#+end_src
+
+* Application Instances
+** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]
+ - meters for per node load
+ - supervisor to collate metrics from meters
+
+   #+begin_src scheme(define (start-meter supervisor)
+  (let loop ()
+    (! supervisor
+       (list 'load-report
+             self
+             (local-loadavg)))          ;; send avg load
+    (recv (after 1 'ok))                ;; sleep for a sec
+    (loop)))
+   #+end_src
+
+ - supervisor maintains a node load map and responds with lowest load node when requested
+
+   #+begin_src scheme
+(define (meter-supervisor meter-list)
+  (let loop ((meters (make-dict)))
+    (recv
+
+     (('load-report from load)
+      (loop (dict-set meters from load)))
+
+     ((from tag 'average-load)
+      (let ((avg-load (find-avg (dict->list meters))))
+        (! from (list tag avg-load)))
+      (loop dict))
+
+     ((from tag 'minimum-load)
+      (let ((min (find-min (dict->list meters))))
+        (! from (list tag (pid-node (car min)))))
+      (loop dict)))))
+
+
+(define (min-load-node supervisor)
+  (!? supervisor 'minimum-load))
+
+(define (avg-load supervisor)
+  (!? supervisor 'average-load))
+
+(define (start-meter-supervisor)
+  (spawn
+   (let ((supervisor (self)))
+     (meter-supervisor
+      (map (lambda (node)
+              (spawn
+               (migrate node)
+               (start-meter supervisor)))
+            ,*node-list*)))))
+
+
+(define (start-work-dispatcher load-server)
+  (spawn
+   (let loop ()
+     (recv
+      ((from tag ('dispatch thunk))
+       (let ((min-loaded-node
+              (minimum-load load-server)))
+         (spawn
+          (migrate min-loaded-node)
+          (! from (list tag (thunk))))))
+      (loop)))))
+
+()
+(define (dispatch dispatcher thunk)
+  (?! dispatcher (list 'dispatch thunk)))
+   #+end_src
+
+** Abstracting [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]]
+ - modifying a generic server with classes of functionalities
+ - plugins to management, core compute and other needs
+
+#+begin_src scheme
+(define key/value-generic-server-plugin
+  (make-generic-server-plugin
+   (lambda ()                           ;INIT
+     (print "Key-Value server starting")
+     (make-dict))
+
+   (lambda (term from state)            ;CALL
+     (match term
+       (('store key val)
+        (dict-set! state key val)
+        (list 'reply 'ok state))
+
+       (('lookup key)
+        (list 'reply (dict-ref state key) state))))
+
+   (lambda (term state)                 ;CAST (state shifts)
+     (match term
+       (('stop (list 'stop 'normal state)))))
+
+   (lambda (reason state)               ;TERMINATE
+     (print "Key Value Server Terminating"))))
+
+(define (kv:start)
+  (generic-server-start-link
+   key/value-generic-server-plugin))
+
+(define (kv:stop server)
+  (generic-server-cast server 'stop))
+
+(define (kv:store server key val)
+  (generic-server-call server (list 'store key val)))
+
+(define (kv:lookup server key )
+  (generic-server-call server (list 'lookup key)))
+
+#+end_src
+
+** [[id:20240519T162542.805560][Fault Tolerence]]
+ - restarts by a supervisor when needed
+
+   #+begin_src scheme
+(define (start-pong-server)
+  (let loop ()
+    (recv
+     ((from tag 'crash)
+      (! from (list tag (/ 1 0))))
+     ((from tag 'ping)
+      (! from (list tag 'pong))))
+    (loop)))
+
+(define robust-pong-server
+  (spawn-thunk-supervised start-pong-server))
+
+   #+end_src
+
+* Implementation
+- over Gambit-scheme (gambit c): https://www.gambitscheme.org/4.3.0/manual/

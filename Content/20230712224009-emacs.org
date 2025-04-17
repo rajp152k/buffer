@@ -15,6 +15,10 @@
 ** Literate Programming
 ** Getting things done : Org GTD
 ** AI
+ - aidermacs
+   - https://aider.chat/
+   - https://github.com/MatthewZMD/aidermacs
+
 ** Programming
 *** Debugging
 *** REPLs

@@ -9,6 +9,9 @@
  - TLDR : Cgroups and kernel namespaces
  - https://container.training/intro-selfpaced.yml.html#679
 
+* Hacks/Bugs
+ - why avoid single file mounts:
+   - https://medium.com/@jonsbun/why-need-to-be-careful-when-mounting-single-files-into-a-docker-container-4f929340834
 * Misc QuickRefs
  - to avoid uneccessary duplication, docker employs the [[id:61ba02ce-df71-40c8-ac61-0762c4130345][copy-on-write]]
  - diff between docker build, import, commit
@@ -34,9 +37,8 @@
  - docker engine : https://container.training/intro-selfpaced.yml.html#773
  - quick overview of the docker ecosystem: https://container.training/intro-selfpaced.yml.html#795   
  - shipping images to a registry: https://qconuk2019.container.training/#195
-   
+
 * Resources
  - https://container.training/intro-selfpaced.yml.html
  - https://www.codementor.io/blog/docker-technology-5x1kilcbow
- 
-   
+ -

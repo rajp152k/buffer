@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       6a681e2c-eaa5-46a6-a362-e6f8a77758e4
 :END:
-#+title: Termite: Distributed Lisp
+#+title: Termite: Lisp for Distributed Computing
 #+filetags: :paper:lisp:
 
 * Outline

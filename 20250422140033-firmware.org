@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8affe383-8b2f-413b-87a6-f7048b3712fb
+:END:
+#+title: Firmware
+#+filetags: :hardware:cs:

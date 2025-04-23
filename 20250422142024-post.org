@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       dc9caf2d-3127-40cc-b784-bd8b06dd7412
+:ROAM_ALIASES: "Power On Self Test"
+:END:
+#+title: POST
+#+filetags: :hardware:os:

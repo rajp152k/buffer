@@ -41,3 +41,6 @@ Cloud native refers to designing, developing, and operating applications that op
 *** [[id:f437c67e-a680-4400-8640-1fd32cc9e363][Throttle Stability Pattern]]
 *** [[id:ce3bf6ec-0c36-4fc7-ae3d-3483ff67cfc3][Timeout]]
 ** [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]] Patterns
+
+* Resources
+ -  https://github.com/rootsongjc/awesome-cloud-native

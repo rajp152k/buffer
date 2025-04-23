@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c4794065-548a-44ca-8ccf-3b5ddfa63a2d
+:ROAM_ALIASES: "Linux Loader"
+:END:
+#+title: LiLo
+#+filetags: :linux:

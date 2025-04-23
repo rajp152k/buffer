@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       447f9fb3-1d21-4dff-8c38-bfd15b3e7767
-:END:
-#+title: Memory
-#+filetags: :meta:
-

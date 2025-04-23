@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6494a991-a924-445b-bd23-72bf0a1957d1
+:END:
+#+title: OS Dev
+#+filetags: :programming:os:
+
+* Resources
+ - https://wiki.osdev.org

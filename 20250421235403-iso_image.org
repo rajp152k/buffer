@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a06131e6-105c-4fd9-9ec9-b0e18a563a55
+:END:
+#+title: ISO image
+#+filetags: :virtualization:

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       708a4268-a8f1-4faf-81d0-ef71f2388cf3
+:ROAM_ALIASES: "Read Only Memory"
+:END:
+#+title: ROM
+#+filetags: :cs:hardware:

@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       7180d5a4-7a4a-4095-8ba2-5aedbd396383
+:END:
+#+title: ddrescue
+#+filetags: :cmd:linux:
+
+
+* Overview
+
+=ddrescue= is a data recovery tool used to copy data from a failing or damaged storage device to a safe location. It is designed to rescue data from storage devices that are experiencing hardware failure or other issues that cause data to become inaccessible.
+
+*** Key Features
+
+1. *Data Recovery*: =ddrescue= is primarily used to recover data from failing hard drives, SSDs, or other storage media. It reads data from the source device and writes it to a target device or file, attempting to rescue as much data as possible.
+
+2. *Error Handling*: Unlike =dd=, =ddrescue= is designed to handle read errors gracefully. When it encounters a read error, it does not stop but instead continues to the next readable portion of the data, minimizing data loss.
+
+3. *Log File*: One of the powerful features of =ddrescue= is its ability to use a log file to track the areas of the source device that have been successfully read. This log file allows =ddrescue= to be interrupted and resumed without losing its place or having to re-read data that has already been successfully rescued.
+
+4. *Algorithm*: =ddrescue= employs an algorithm that tries to rescue the good parts of the data first, skipping over the bad parts and coming back to them later. This approach minimizes the time spent on damaged areas and maximizes the amount of data that can be recovered early in the process.
+
+5. *Flexibility*: =ddrescue= can be used in various scenarios, including recovering data from damaged partitions, corrupted filesystems, or physically failing disks.
+
+*** Basic Usage
+
+The basic syntax of =ddrescue= is as follows:
+
+#+begin_src bash
+ddrescue [options] source destination [logfile]
+#+end_src
+
+- *source*: The source device or file from which to recover data.
+- *destination*: The target file or device where the rescued data will be written.
+- *logfile*: An optional log file that tracks the rescue process.
+
+Example:
+
+#+begin_src bash
+ddrescue -f -n /dev/sda1 rescue_image.img rescue_log.log
+#+end_src
+
+This command attempts to rescue data from =/dev/sda1= to =rescue_image.img=, using =rescue_log.log= to log the process.
+
+
+* Creating bootables with ddrescue
+
+
+**Creating Bootables with ddrescue*
+=====================================
+
+While =ddrescue= is primarily used for data recovery, its functionality can also be leveraged to create bootable media. This is achieved by using =ddrescue= to copy an [[id:a06131e6-105c-4fd9-9ec9-b0e18a563a55][ISO image]] to a USB drive or other storage device, making it [[id:3411e9fc-f495-4420-9b9a-2133534fe20c][bootable]].
+
+*Why Use ddrescue for Creating Bootables?*
+-------------------------------------------
+
+1. *Reliability*: =ddrescue= is designed to handle read errors, which makes it a good choice for creating bootables from potentially corrupted ISO images or when using a source media that might have issues.
+
+2. *Flexibility*: It can be used with various types of images and devices.
+
+*Basic Steps*
+----------------
+
+1. *Identify the [[id:42b9fab6-2741-47f8-83de-1ed147d7a631][USB Drive]]*: Before proceeding, identify the device name of your USB drive. You can do this by using the [[id:326c72b0-f0fb-45c3-a94a-21468056c9e6][lsblk]] or [[id:aaf13bb8-ca4d-4004-ac41-efede2ff4da2][fdisk -l]] command. Be cautious as selecting the wrong device can result in data loss.
+
+2. *Unmount the USB Drive*: Ensure the USB drive is unmounted. You can unmount it using [[id:861159f9-52e1-4d40-acfe-dfb0d3bf616c][umount]] /dev/sdX* (replace =/dev/sdX*= with your device name).
+
+3. *Use ddrescue to Create a Bootable USB*: The basic syntax to create a bootable USB using =ddrescue= is similar to its data recovery usage, focusing on copying the ISO image to the USB drive.
+
+   #+begin_src bash
+   ddrescue -f -D --force input.iso /dev/sdX rescue_log.log
+   #+end_src
+
+   - =-f= forces =ddrescue= to write to a non-regular file (e.g., a device file like =/dev/sdX=).
+   - =-D= (or =--direct=) tells =ddrescue= to use direct disc access to read the input file, which can improve performance.
+   - =--force= is used along with =-f= to ensure that =ddrescue= overwrites the destination without prompting for confirmation.
+   - =input.iso= is the ISO file you want to write to the USB drive.
+   - =/dev/sdX= is the device name of your USB drive (e.g., =/dev/sdb=, =/dev/sdc=, etc.). *Be extremely careful here* to avoid overwriting the wrong device.
+   - =rescue_log.log= is the log file. While not strictly necessary for simply creating a bootable USB, it can be useful if you're dealing with a problematic ISO or source.
+
+*Considerations*
+-------------------
+
+- *Data Loss*: Writing to a USB drive with =ddrescue= (or any similar tool like =dd=) will erase all data on that device. Ensure you have backed up any important data before proceeding.
+
+- *Verification*: After creating the bootable USB, you might want to verify that it works as expected by booting from it.
+
+- *Alternatives*: Tools like =dd=, =balenaEtcher=, or =Rufus= (on Windows) are more commonly used for creating bootable USB drives and might be more straightforward for this specific task.
+
+In summary, while =ddrescue= can be used to create bootable media, its primary strength lies in data recovery. For creating bootables, other tools might be more suitable unless you're dealing with a specific scenario where =ddrescue='s capabilities are advantageous.

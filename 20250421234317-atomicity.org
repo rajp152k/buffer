@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       185e1e46-8103-46a2-b02c-221692984187
+:END:
+#+title: Atomicity
+#+filetags: :cs:plt:

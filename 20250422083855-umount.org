@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       861159f9-52e1-4d40-acfe-dfb0d3bf616c
+:END:
+#+title: umount
+#+filetags: :cmd:unix:

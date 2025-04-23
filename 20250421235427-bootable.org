@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3411e9fc-f495-4420-9b9a-2133534fe20c
+:END:
+#+title: bootable
+#+filetags: :os:cs:

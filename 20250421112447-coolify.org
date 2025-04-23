@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       e171de4c-1257-42cc-b449-9e2660f6ee06
+:END:
+#+title: Coolify
+#+filetags: :tool:cs:
+
+* Relevant Nodes
+** [[id:25c67b28-ba91-4a39-b96c-2b9421273ac0][Platform as a Service]]
+** [[id:8b582ef5-ee32-4635-b1d0-04d126ce65ee][Immutable Operating Systems]]

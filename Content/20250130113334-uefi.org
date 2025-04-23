@@ -3,8 +3,42 @@
 :ROAM_ALIASES: "Unified Extensible Firmware Interface"
 :END:
 #+title: UEFI
-#+filetags: :hardware:cs:
+#+filetags: :firmware:cs:
 
+* UEFI Shell
+  - Command-line interface for UEFI firmware interaction
+  - Essential for UEFI-based system management
+
+* Key Features
+  - Command-Line Interface
+  - Scripting Support
+  - [[id:1b2ca622-6fc1-4dfa-9b4a-f5b286e49397][File System]] Access
+  - Device Management
+  - Debugging
+  - UEFI Variable Management
+
+* UEFI Shell Commands
+  - help
+  - ls
+  - cd
+  - cp
+  - mv
+  - rm
+  - mkdir
+  - dmpstore
+  - ifconfig
+  - ping
+
+* Use Cases
+  - Troubleshooting [[id:e89a46c4-c405-48cd-a979-dd1e6b5f40c9][Boot]] Issues
+  - [[id:8affe383-8b2f-413b-87a6-f7048b3712fb][Firmware]] Updates
+  - Configuration
+  - [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Recovery]]
+
+* Limitations
+  - UEFI Implementation Variability
+  - Security Risks
+  - Compatibility Issues
 * Relevant Nodes
 ** [[id:799e2476-dcab-4cd3-a5c6-a0437de0c051][BIOS]]
 * Resources

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       aaf13bb8-ca4d-4004-ac41-efede2ff4da2
+:END:
+#+title: fdisk
+#+filetags: :cmd:unix:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       71590aa0-e0a7-41c1-9259-09d02c0a64ba
+:END:
+#+title: Linux Kernel
+#+filetags: :cs:linux:

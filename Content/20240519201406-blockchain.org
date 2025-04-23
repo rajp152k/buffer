@@ -2,5 +2,8 @@
 :ID:       20240519T201406.029955
 :END:
 #+title: Blockchain
-#+filetags: :cs:
+#+filetags: :data:crypto:cs:
 
+
+* Resources
+ - https://github.com/yjjnls/awesome-blockchain

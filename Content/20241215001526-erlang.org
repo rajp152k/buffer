@@ -12,6 +12,7 @@
 ** [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed Compute]]
 ** [[id:20240519T162542.805560][Fault Tolerence]]
 ** [[id:6a681e2c-eaa5-46a6-a362-e6f8a77758e4][Termite: Distributed Lisp]]
+** [[id:80713b83-f0f0-4f2e-89e2-2f990f2d7687][Gleam]]
 * Resources
  - https://bytegoblin.io/blog/rip-joe-armstrong.mdx
  - https://www.erlang.org/

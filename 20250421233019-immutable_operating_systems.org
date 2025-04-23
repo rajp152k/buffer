@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       8b582ef5-ee32-4635-b1d0-04d126ce65ee
+:END:
+#+title: Immutable Operating Systems
+#+filetags: :os:plt:tool:cs:
+
+
+* Overview
+
+[[id:efba8f9b-a5df-4212-94c9-230bef916b5c][Immutable]] operating systems are designed with a core principle: once installed and configured, the operating system's core components remain unchanged. This immutability is achieved through various design and implementation strategies that ensure the system's integrity and enhance its security, reliability, and maintainability.
+
+*** Key Characteristics
+
+1. *Immutable Core*: The operating system's core components, including the [[id:71590aa0-e0a7-41c1-9259-09d02c0a64ba][kernel]], system libraries, and essential services, are mounted as read-only. This prevents any modifications to these critical components.
+
+2. *Transactional Updates*: Updates are applied transactionally, meaning that the update process is treated as a single, [[id:185e1e46-8103-46a2-b02c-221692984187][atomic]] operation. If an update fails, the system rolls back to its previous state, ensuring that it remains in a consistent and known good state.
+
+3. *[[id:89501d1d-e70c-461d-b631-6798949a0e4b][Stateless]] or State-Managed Configuration*: In some immutable OS designs, the system configuration and state are separated from the immutable core. This can involve storing configuration and state in a separate, writable partition or using external configuration management tools.
+
+4. *[[id:3586cec4-d474-404e-87af-6e3520049494][Ephemeral]] [[id:ea72d66a-8192-4cb2-a7be-b05ee928f814][Filesystems]]*: Some immutable OSes use [[id:8cda6926-9ad2-4da6-bada-dd0727745886][overlay filesystems]] or similar technologies where changes are written to a temporary overlay. When the system reboots, these changes are discarded, returning the system to its original state.
+
+*** Advantages
+
+1. *Enhanced Security*: By preventing unauthorized or unintended changes to the system's core, immutable OSes reduce the risk of malware persistence and other security threats.
+
+2. *Reliability and Consistency*: The system's state is predictable and consistent across reboots, simplifying debugging and ensuring that the system behaves as expected.
+
+3. *Simplified Maintenance and Updates*: Transactional updates and the ability to roll back to a previous state simplify the update process and reduce the risk associated with applying updates.
+
+4. *Improved Compliance*: Immutable systems can be more easily audited and compliant with security standards, as their state is consistent and known.
+
+*** Examples and Implementations
+
+1. *Container-Oriented OSes*: Many container-oriented operating systems, like CoreOS (and its derivatives like Fedora CoreOS), are designed with immutability in mind. They are optimized for running containerized applications and often feature automatic updates and a read-only root filesystem.
+
+2. *NixOS*: NixOS is a Linux distribution built around the Nix package manager, which manages packages in isolation from each other. NixOS configurations are declarative and can be rolled back, making it a form of immutable infrastructure.
+
+3. *Fedora Silverblue*: Fedora Silverblue is an immutable variant of Fedora Workstation. It uses rpm-ostree for transactional updates and has a read-only root filesystem, making it a practical example of an immutable OS for end-users.
+
+*** Challenges and Considerations
+
+1. *User Adaptation*: Users and administrators may need to adapt their workflows and expectations, especially regarding how system updates and configurations are managed.
+
+2. *Application Compatibility*: Some applications may not be designed with an immutable OS in mind, potentially leading to compatibility issues, especially if they require direct access to system files or expect to be able to modify the system's state freely.
+
+3. *State Management*: Managing state (e.g., user data, configurations) in an immutable OS requires careful design. Solutions often involve separating state from the immutable core or using specific mechanisms to persist necessary changes.
+
+4. *Learning Curve*: The paradigm shift towards an immutable OS can involve a learning curve, particularly for those accustomed to traditional, mutable operating systems.
+
+*** Conclusion
+
+Immutable operating systems represent a significant shift in how operating systems are designed, focusing on security, reliability, and maintainability. While they present several advantages, their adoption also involves addressing challenges related to user adaptation, application compatibility, and state management. As the landscape of computing continues to evolve, immutable OSes are likely to play a crucial role in shaping the future of secure, reliable, and efficient computing environments.
+
+

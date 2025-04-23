@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4bebbb8f-c94f-4385-86d0-63275c8b3c3c
+:END:
+#+title: Bootloader
+#+filetags: :os:cs:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c88d905a-98cc-42eb-a68a-da6245e3b94f
+:END:
+#+title: OS Kernel
+#+filetags: :cs:os:

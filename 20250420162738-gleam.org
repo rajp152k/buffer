@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       80713b83-f0f0-4f2e-89e2-2f990f2d7687
+:END:
+#+title: Gleam
+#+filetags: :erlang:cs:
+
+* Resources
+ - https://gleam.run/

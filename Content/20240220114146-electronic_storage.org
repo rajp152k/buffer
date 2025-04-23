@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       18491388-2dcc-488f-8f33-00582cf0f77e
+:ROAM_ALIASES: Memory
 :END:
 #+title:  Storage
 #+filetags: :data:cs:

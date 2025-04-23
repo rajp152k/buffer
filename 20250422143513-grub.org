@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       78ae9265-85f8-44b1-822c-725cad62fb73
+:ROAM_ALIASES: "Grand Unified Bootloader"
+:END:
+#+title: GRUB
+#+filetags: :os:

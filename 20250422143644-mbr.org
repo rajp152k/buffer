@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       88c9db69-873a-462f-8e92-69779bb069da
+:ROAM_ALIASES: "Master Boot Record"
+:END:
+#+title: MBR
+#+filetags: :os:

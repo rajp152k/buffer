@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       326c72b0-f0fb-45c3-a94a-21468056c9e6
+:END:
+#+title: lsblk
+#+filetags: :cmd:unix:

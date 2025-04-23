@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       e89a46c4-c405-48cd-a979-dd1e6b5f40c9
+:END:
+#+title: Boot Process
+#+filetags: :cs:os:
+
+* Boot Process
+The boot process is a series of steps that load the [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][operating system]] into memory and prepare the computer for use.
+
+* Steps in the Boot Process
+Initialization: The [[id:5b3673b7-744f-41b6-aafb-73a24c8da09d][CPU]] starts executing instructions from [[id:708a4268-a8f1-4faf-81d0-ef71f2388cf3][ROM]], and [[id:8affe383-8b2f-413b-87a6-f7048b3712fb][firmware]] ([[id:799e2476-dcab-4cd3-a5c6-a0437de0c051][BIOS]]/[[id:e38caef0-a550-4576-9122-c849120188d4][UEFI]]) is activated.
+Hardware Testing and Initialization: The BIOS/UEFI tests and initializes hardware components.
+Boot Device Detection: The system searches for boot devices and looks for a valid bootloader.
+[[id:4bebbb8f-c94f-4385-86d0-63275c8b3c3c][Bootloader]] Loading and Execution: The bootloader is loaded into memory, providing a menu for selecting the operating system.
+Operating System Loading: The [[id:c88d905a-98cc-42eb-a68a-da6245e3b94f][kernel]] is loaded into memory, and kernel execution is initialized.
+Kernel Initialization and Execution: Kernel execution begins, setting up [[id:bb936c2a-dd8a-4bab-b8f9-783c3fb54f94][memory management]] and detecting hardware devices.
+System Services Initialization: System services and user space applications are started, proceeding to a specific run level or system target.
+
+* Key Components
+Firmware (BIOS/UEFI): Initializes hardware and provides a layer for the operating system to interact with hardware.
+Bootloader: Loads the operating system kernel into memory (e.g., GRUB, LILO).
+Operating System Kernel: Manages hardware resources and provides services for user space.
+
+* Boot Process Variations
+** Types of Boots
+Cold Boot: The system starts from power off.
+Warm Boot (or Soft Boot): Assumes the system has already performed hardware initialization.
+Ensures only authorized EFI binaries are executed.
+Enhances security by preventing unauthorized code execution.
+
+* Troubleshooting Boot Issues
+** Common Issues
+Hardware Failure: Issues during [[id:dc9caf2d-3127-40cc-b784-bd8b06dd7412][POST]] prevent the system from booting.
+Boot Device Not Found: Occurs when no valid boot device is detected.
+Bootloader Problems: Incorrect configuration or corruption can prevent OS loading.
+Operating System Issues: Problems with OS installation, configuration, or updates can lead to boot failures.
+
+* Conclusion
+Understanding the boot process aids in diagnosing and [[id:155f01c1-68e6-43ee-95e2-7a5bb6a70368][troubleshooting]] issues during system startup, configuring [[id:a3c738d1-d406-4c5f-aed8-ed369c78515d][dual-boot systems]], and [[id:6494a991-a924-445b-bd23-72bf0a1957d1][developing operating systems]].

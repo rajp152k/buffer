@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5b3673b7-744f-41b6-aafb-73a24c8da09d
+:END:
+#+title: CPU
+#+filetags: :hardware:

@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       155f01c1-68e6-43ee-95e2-7a5bb6a70368
+:ROAM_ALIASES: Troubleshooting
 :END:
 #+title: Debugging
 #+filetags: :tool:programming:

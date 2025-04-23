@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a3c738d1-d406-4c5f-aed8-ed369c78515d
+:END:
+#+title: dual-boot systems
+#+filetags: :os:

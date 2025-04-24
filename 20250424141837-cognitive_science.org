@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8df0187e-2b4d-4aaf-83b7-026602f506b0
+:END:
+#+title: Cognitive Science
+#+filetags: :neuroscience:

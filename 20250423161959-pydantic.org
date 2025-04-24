@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3466b48f-d72e-4fc8-97e3-f8b6f6f0f303
+:END:
+#+title: Pydantic
+#+filetags: :data:python:
+
+* Relevant Nodes
+** [[id:c7ff5cb6-aae4-4abe-bc6c-bac1aa9a873a][Data Validation]]

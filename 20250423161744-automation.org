@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e17187d2-042a-42c5-a708-43abe5c9f109
+:END:
+#+title: Automation
+#+filetags: :sys:

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c2e58765-7574-4bd5-90b9-692ca177b722
+:ROAM_ALIASES: "Agent Swarms" "Multi-Agent Workflows"
+:END:
+#+title: Agent Teams
+#+filetags: :agent:ai:cs:
+

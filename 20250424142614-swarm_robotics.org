@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4fc7f612-1a74-4881-9461-7f2a45928222
+:END:
+#+title: swarm robotics
+#+filetags: :sys:ai:robotics:

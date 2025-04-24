@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c997f1b4-d76e-408c-9291-a0c05199f43b
+:END:
+#+title: swarm intelligence
+#+filetags: :meta:sys:ai:

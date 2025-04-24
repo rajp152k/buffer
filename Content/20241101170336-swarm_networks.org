@@ -25,3 +25,6 @@
 ** *Challenges:*
   - Coordination and communication overhead in large-scale networks.
   - Security threats due to the decentralized nature and potential for malicious entities to disrupt operations.
+
+* Relevant Nodes
+** [[id:4ae3db13-81ad-48f4-a7a0-ff787990f6cc][Swarm Pattern]]

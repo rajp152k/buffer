@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d86a07e3-9572-4364-8a00-1a81deb9490c
+:END:
+#+title: Information Spread
+#+filetags: :sys:society:

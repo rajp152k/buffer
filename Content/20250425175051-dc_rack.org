@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4aaf7379-6b72-4c2e-b51c-7e8ac0cff2b8
+:END:
+#+title: DC Rack
+#+filetags: :hardware:dc:

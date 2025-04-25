@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3bf19ddb-2fc2-44e6-966c-47508a914a31
+:END:
+#+title: UPS
+#+filetags: :energy:

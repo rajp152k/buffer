@@ -22,5 +22,6 @@
 
 * Relevant Nodes
 ** [[id:9c31ddef-2087-4b95-892e-006df1dca1f3][Langchain]]
+** [[id:44c303eb-3d94-401f-8a38-3b840991e3f1][AgentOS]]
 * Resources
  - https://github.com/kyrolabs/awesome-agents

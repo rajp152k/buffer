@@ -1,0 +1,98 @@
+:PROPERTIES:
+:ID:       f8d48437-3bdc-4aa6-9459-435f96825076
+:END:
+#+title: Fat tree topology
+#+filetags: :cs:network:
+
+* Overview
+	+ Hierarchical structure
+	+ [[id:dd94cae5-96e2-4a46-9890-41c8c88059bc][High-performance computing networks]]
+	+ Closely related to [[id:6a903aa5-0ec0-4b1a-a980-c42bd5e36643][Clos networks]]
+* Architecture
+	+ Multiple layers of [[id:98620269-a141-4006-8b8b-473941843bc0][switches]]
+	+ Core, aggregation, edge, and [[id:112a4fc7-5998-4a80-bb41-def87c302863][TOR]] layers
+	+ Multiple paths between nodes
+* Characteristics
+	+ Non-blocking, low latency
+	+ High bisection bandwidth
+	+ Scalable and fault-tolerant
+* Components
+	+ Switches (core, aggregation, edge)
+	+ Links (Ethernet, InfiniBand)
+	+ Servers and storage nodes
+* Advantages
+	+ High throughput
+	+ Low latency
+	+ Redundancy and fault tolerance
+* Applications
+	+ High-performance computing (HPC)
+	+ Data centers
+	+ Cloud computing infrastructure
+
+
+
+
+
+#+begin_src mermaid :file images/fattree.png :exports both
+graph LR
+    subgraph Overview
+        A[Hierarchical Structure] --> B[High-Performance Computing Networks]
+        B --> C[Closely related to Clos Networks]
+    end
+
+    subgraph Architecture
+        D[Multiple Layers of Switches] --> E[Core Layer]
+        D --> F[Aggregation Layer]
+        D --> G[Edge Layer]
+        D --> H[TOR Layer]
+        E --> I[Multiple Paths between Nodes]
+        F --> I
+        G --> I
+        H --> I
+    end
+
+    subgraph Characteristics
+        J[Non-Blocking] --> K[Low Latency]
+        J --> L[High Bisection Bandwidth]
+        M[Scalable] --> N[Fault-Tolerant]
+    end
+
+    subgraph Components
+        O[Switches] --> P[Core Switches]
+        O --> Q[Aggregation Switches]
+        O --> R[Edge Switches]
+        S[Links] --> T[Ethernet]
+        S --> U[InfiniBand]
+        V[Servers and Storage Nodes]
+    end
+
+    subgraph Advantages
+        W[High Throughput] --> X[Low Latency]
+        Y[Redundancy] --> Z[Fault Tolerance]
+    end
+
+    subgraph Applications
+        AA[High-Performance Computing (HPC)] --> AB[Data Centers]
+        AA --> AC[Cloud Computing Infrastructure]
+    end
+
+    Overview --> Architecture
+    Architecture --> Characteristics
+    Characteristics --> Components
+    Components --> Advantages
+    Advantages --> Applications
+#+end_src
+
+#+RESULTS:
+
+VISUAL EXPLANATION
+- Hierarchical structure is the foundation of fat tree topology.
+- Multiple layers of switches enable high-performance computing.
+- Core, aggregation, edge, and TOR layers are distinct components.
+- Multiple paths between nodes ensure non-blocking and low latency.
+- High bisection bandwidth and scalability are key characteristics.
+- Switches, links, and servers are primary components of topology.
+- High throughput and low latency are significant advantages gained.
+- Redundancy and fault tolerance ensure reliable network operation.
+- Fat tree topology is used in HPC, data centers, and cloud.
+- Closely related to Clos networks in design and functionality.

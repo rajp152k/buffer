@@ -3,7 +3,5 @@
 :ROAM_ALIASES: "Data Center Operations"
 :END:
 #+title: DCOps
-#+filetags: :cloud:
+#+filetags: :dc:cloud:
 
-* Relevant Nodes
-** [[id:7c7329f5-9582-4e5c-a41b-7f51ef0ca3ba][Keyboard-Video-Mouse Switch]]

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b57ac559-153b-4971-a312-1bc4c143404c
+:ROAM_ALIASES: Modelling
+:END:
+#+title: Simulation
+#+filetags: :meta:cs:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       6a903aa5-0ec0-4b1a-a980-c42bd5e36643
+:END:
+#+title: Clos networks
+#+filetags: :cs:network:

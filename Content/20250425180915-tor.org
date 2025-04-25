@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       112a4fc7-5998-4a80-bb41-def87c302863
+:END:
+#+title: ToR : Top of the Rack
+#+filetags: :hardware:dc:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a7bc8ee0-84b7-465f-a61a-4090d5108fb3
+:END:
+#+title: Energy Management
+#+filetags: :physics:energy:

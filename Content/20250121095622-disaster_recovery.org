@@ -2,7 +2,7 @@
 :ID:       4734b127-65f4-4da5-939c-7886e2aa3c7e
 :END:
 #+title: Disaster Recovery
-#+filetags: :arch:cs:
+#+filetags: :dc:arch:cs:
 
 Also see [[id:873f2b2e-5bc3-480e-bd42-42af349a49af][Business Continuity Planning]]
 

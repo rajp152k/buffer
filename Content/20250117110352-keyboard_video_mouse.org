@@ -2,7 +2,7 @@
 :ID:       7c7329f5-9582-4e5c-a41b-7f51ef0ca3ba
 :END:
 #+title: Keyboard-Video-Mouse Switch
-#+filetags: :hardware:cs:
+#+filetags: :dc:hardware:cs:
 
 * Resources
   - https://en.wikipedia.org/wiki/KVM_switch

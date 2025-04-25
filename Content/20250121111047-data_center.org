@@ -2,4 +2,58 @@
 :ID:       cf890270-836b-4beb-841d-af3f8ba6e5f3
 :END:
 #+title: Data Center
-#+filetags: :cloud:
+#+filetags: :dc:cloud:
+
+
+
+* Infrastructure
+** [[id:4aaf7379-6b72-4c2e-b51c-7e8ac0cff2b8][Rack]] Layout
+	- Row orientation
+	- Rack density
+** [[id:eb6f15f3-376a-493c-9977-51eaf20c8927][Cooling Systems]]
+	- Airside and waterside economization
+** CRAC/HVAC Systems
+  * Overview
+    + Cooling, Heating, and Air Quality Control
+    + Mission-Critical Facilities (Data Centers)
+  * Components
+    + [[id:eb6f15f3-376a-493c-9977-51eaf20c8927][Cooling Systems]] (Chillers, CRAC Units)
+    + [[id:fb0868dd-fc3a-48e8-89b0-8ea8b4a22554][Heating Systems]] (Boilers, Heat Exchangers)
+    + [[id:a8eae441-1fc3-4079-91fa-4d464a2daeee][Air Handling Units]] (AHUs)
+    + Distribution Systems (Ductwork, Piping)
+  * Control and Monitoring
+    + [[id:b6c99bd4-a10f-41f1-91e5-ab1c0e5eb498][Temperature]] and [[id:df8c7290-c1b0-4057-9949-44e12599f180][Humidity]] Control
+    + [[id:c120f2fc-fbb9-4857-afe0-ecb70b02629a][Air Quality Monitoring]] (Particulates, Gases)
+    + System Alarms and [[id:12e7fd9a-e488-43eb-8b8b-468aa50d9750][Notifications]]
+  * Design Considerations
+    + [[id:262874ff-9248-485d-91ee-f7ca1dc2c31d][Redundancy]] and Backup Systems (N+1, 2N)
+    + [[id:57bf4839-5f12-4e5c-93c4-bfed9ed3bbb0][Energy Efficiency]] and Sustainability
+    + [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]] and Flexibility
+  * [[id:744acfd8-f1eb-4b5b-a8b5-043b9cd36ca4][Operational Strategies]]
+    + [[id:52484be6-2b11-4fc4-9834-82ca890e4d4b][Preventive Maintenance (PM) Schedules]]
+    + [[id:e46adabb-08e9-449f-8d03-be34a8cd77a4][Real-time]] Monitoring and Performance Optimization
+    + [[id:a7bc8ee0-84b7-465f-a61a-4090d5108fb3][Energy Management]] and Demand Response
+	+ [[id:39b702f3-69b2-48e6-9372-560cb4401f9a][Power Distribution]]
+		- PDUs
+		- [[id:3bf19ddb-2fc2-44e6-966c-47508a914a31][UPS]] systems
+* [[id:b3f9cd0d-d403-48ce-918d-2dd0d341c783][Networking]]
+	+ Topology
+		- [[id:077fcee8-8014-4e4f-8af7-4ec0f49be60e][Spine-leaf]] architecture
+		- [[id:f8d48437-3bdc-4aa6-9459-435f96825076][Fat tree]] topology
+	+ Switching and Routing
+		- Layer 2/3 switching
+		- Routing protocols (BGP, OSPF)
+* Security
+	+ Physical Security
+		- Access control
+		- Surveillance
+	+ Network Security
+		- Firewalls
+		- Intrusion detection/prevention
+* Management
+	+ Monitoring
+		- Metrics collection (power, temperature, etc.)
+		- Alerting and notification
+	+ Automation
+		- Infrastructure as code (IaC)
+		- Orchestration tools (Ansible, etc.)

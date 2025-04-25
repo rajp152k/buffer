@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       ef5013a4-af95-40f6-8e12-3b22f4856b9c
+:ROAM_ALIASES: Viability
+:END:
+#+title: Feasibility
+#+filetags: :physics:meta:
+
+* Laws of Physics:
+  - Constraints: Governing the behavior of physical systems
+    + Thermodynamic laws: Regulating energy and its interactions
+    + Conservation laws: Describing quantities that remain unchanged
+    + Relativity: Explaining space and time relationships
+    + Quantum mechanics: Governing behavior at the atomic and subatomic level
+  - Physical Limits: Defining the boundaries of physical phenomena
+    + Speed of light: Maximum speed at which information can travel
+    + Planck units: Fundamental units of measurement
+    + Carnot efficiency: Maximum efficiency of heat engines
+    + Heisenberg uncertainty principle: Limiting precision of certain measurements
+  - Material Properties: Characterizing the attributes of materials
+    + Strength-to-weight ratio: Measure of a material's efficiency
+    + Thermal conductivity: Ability of a material to conduct heat
+    + Electrical conductivity: Ability of a material to conduct electricity
+    + Optical properties: Describing how a material interacts with light

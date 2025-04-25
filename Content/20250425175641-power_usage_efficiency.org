@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       57bf4839-5f12-4e5c-93c4-bfed9ed3bbb0
+:ROAM_ALIASES: PUE
+:END:
+#+title: Power Usage Efficiency
+#+filetags: :energy:dc:

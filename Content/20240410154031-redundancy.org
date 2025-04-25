@@ -4,3 +4,6 @@
 #+title: Redundancy
 #+filetags: :meta:
 
+* Relevant Nodes
+** [[id:23ab0400-38d2-433d-9978-772075e6dee0][Failure]]
+** [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster Recovery]]

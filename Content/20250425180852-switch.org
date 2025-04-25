@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       98620269-a141-4006-8b8b-473941843bc0
+:END:
+#+title: Switch
+#+filetags: :network:hardware:dc:

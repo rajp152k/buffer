@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       39b702f3-69b2-48e6-9372-560cb4401f9a
+:ROAM_ALIASES: PDU
+:END:
+#+title: Power Distribution Units
+#+filetags: :energy:dc:

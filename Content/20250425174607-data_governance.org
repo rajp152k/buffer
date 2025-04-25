@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       06b53ca5-57c0-4b34-8382-2ae9d669441d
+:END:
+#+title: Data Governance
+#+filetags: :society:data:

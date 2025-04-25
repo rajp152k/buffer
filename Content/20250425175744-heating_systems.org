@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fb0868dd-fc3a-48e8-89b0-8ea8b4a22554
+:END:
+#+title: Heating Systems
+#+filetags: :physics:energy:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       45677ffa-2615-46b8-a508-a35e22af5c2b
+:END:
+#+title: Predictability
+#+filetags: :ai:meta:

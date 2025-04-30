@@ -3,3 +3,20 @@
 :END:
 #+title: Clos networks
 #+filetags: :cs:network:
+
+
+* Overview
+	+ Definition
+		- Multistage interconnection network topology
+		- Non-blocking, rearrangeable design
+	+ Structure
+		- Three-stage Clos network: ingress, middle, egress
+		- Recursive construction: smaller Clos networks within stages
+	+ Properties
+		- Strict-sense non-blocking (SSNB) conditions
+		- Rearrangeably non-blocking (RNB) conditions
+		- Scalability, fault tolerance
+	+ Applications
+		- Telecommunications, data centers, HPC networks
+		- Switch fabrics, network-on-chip (NoC) designs
+k

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       0e884604-c77f-4215-ace1-fadab6934d1b
+:END:
+#+title: Shared Memory
+#+filetags: :data:cs:
+
+
+* Detailed Outline
+** Definition
+*** Region of memory accessible by [[id:f48bfe92-dd4d-4ea4-910a-d1adc44ec183][multiple processes]]
+** Characteristics
+*** Fast data exchange between processes
+*** No [[id:c88d905a-98cc-42eb-a68a-da6245e3b94f][kernel]] intervention required for access
+*** [[id:20240520T101029.699685][Synchronization primitives]] necessary for [[id:a88ea3c7-da2b-4e5a-a04c-fb70ee7b2081][data consistency]]
+*** [[id:d2d0f670-9bdf-437a-a639-fbdf7ba7d6c7][Data persistence]] until explicitly removed or overwritten
+** Types
+*** Anonymous shared memory
+*** Named shared memory (via file-backed or POSIX shm)
+** Implementation
+*** Memory mapping (mmap)
+*** Shared memory APIs (e.g., shm_open, shm_unlink)
+*** Synchronization mechanisms (e.g., mutexes, semaphores)
+** Use Cases
+*** Inter-process communication (IPC)
+*** Parallel processing and data sharing
+*** Efficient data exchange in multi-process environments

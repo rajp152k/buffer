@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       041083b9-d26b-48f2-9cf2-8c174c6747b8
+:END:
+#+title: Cloud Computing Infrastructure
+#+filetags: :hardware:cloud:

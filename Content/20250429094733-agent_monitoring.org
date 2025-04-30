@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8cda6e51-4693-452e-81aa-c34d8cadab03
+:END:
+#+title: Agent monitoring
+#+filetags: :agent:ai:cs:

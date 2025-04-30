@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       25d13f78-a10d-4434-ac18-550a04bc6e6c
+:END:
+#+title: Agent Interaction
+#+filetags: :ai:cs:agent:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       b195c45b-0950-4b6f-ae2d-f0681118dce2
+:END:
+#+title: Negotiation protocols
+#+filetags: :ai:cs:

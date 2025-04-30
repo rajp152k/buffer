@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5da3569d-54b5-4d31-bdfe-e3ed2628027a
+:END:
+#+title: Task allocation algorithms
+#+filetags: :cs:ai:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0c3559b7-98d6-4311-9dbd-786983459229
+:END:
+#+title: Failover mechanisms
+#+filetags: :cs:

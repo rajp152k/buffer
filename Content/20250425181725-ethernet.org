@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       50701fbb-3fe2-4c98-9627-e6ec4743c750
+:END:
+#+title: Ethernet
+#+filetags: :hardware:network:

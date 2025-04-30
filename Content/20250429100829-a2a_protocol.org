@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       61e9bb61-7d4a-433b-a7ec-8494155bf3d9
+:END:
+#+title: A2A protocol
+#+filetags: :cs:agent:

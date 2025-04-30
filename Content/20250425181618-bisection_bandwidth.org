@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       85d5f4b8-1ce8-4fed-bbdc-6b8d6be63330
+:END:
+#+title: bisection bandwidth
+#+filetags: :metric:network:

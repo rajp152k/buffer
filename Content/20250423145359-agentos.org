@@ -9,10 +9,21 @@
 ** Desc
   - Core building blocks for [[id:c2e58765-7574-4bd5-90b9-692ca177b722][multi-agent AI systems]]
 ** [[id:affff439-329d-4962-bf5f-def85d75042e][LLM]] Configuration
-    - Defines intelligence powering agents
-    - Connection/authentication with model providers
-    - Model selection, param tuning
-    - Controls agent reasoning and response generation
+   *** Overview
+     - Configure LLM access for agents. See [[https://docs.ag2.ai/0.9/docs/user-guide/advanced-concepts/llm-configuration-deep-dive/#introduction-to-config_list][LLM Configuration Deep Dive]] for detailed information.
+   *** Config List
+     - List of dictionaries with model configurations
+     - Supports OpenAI, Azure OpenAI, and other compatible endpoints
+     - Can be loaded from JSON file or environment variable
+   *** Config List Filtering
+     - Filter by model name, tags, or other criteria
+     - Use `where` method to apply filters
+   *** Tips and Tricks
+     - Use `OAI_CONFIG_LIST` pattern for flexible configuration
+     - Implement `__deepcopy__` for custom http clients
+     - Use Azure Active Directory (AAD) authentication for Azure OpenAI
+     - Pass extra model client parameters like `temperature` and `timeout`
+     - Use `config_list_openai_aoai` and other utility functions for loading configurations
 ** ConversableAgent
     - Smart, interactive agent using configured LLM
     - Communication with agents/humans
@@ -29,11 +40,14 @@
       - Group collaborations
       - Nested workflows
     - Enables rich, collaborative workflows
-** Tools
+    - [[id:61e9bb61-7d4a-433b-a7ec-8494155bf3d9][A2A protocol]]
+
+** [[id:abce49f2-2c5a-4560-8c38-fa158f2b5f45][Tools]]
     - Extend agent capabilities beyond text
     - [[id:20240101T073142.439145][API]] & external service integration
     - Calculations, data processing
     - File/database/system access
+    - [[id:f6f7f087-b7fe-4192-8950-497166f5af0f][MCP (Model Context Protocol)]]
 ** Structured Outputs
     - Uses [[id:3466b48f-d72e-4fc8-97e3-f8b6f6f0f303][Pydantic]] models for response validation
     - Guarantees consistent, reliable responses

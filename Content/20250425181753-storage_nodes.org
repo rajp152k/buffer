@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       815ccefd-a230-4e54-a730-a5228a88ae9a
+:END:
+#+title: Storage nodes
+#+filetags: :hardware:dc:

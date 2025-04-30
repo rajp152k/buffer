@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       55fbac1c-dc3f-4613-b1f3-20d29048784d
+:END:
+#+title: Auction-based mechanisms
+#+filetags: :ai:cs:

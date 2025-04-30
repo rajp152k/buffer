@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bc15c4ed-d1f8-4cd6-852f-1e573b309384
+:END:
+#+title: Smart grids
+#+filetags: :energy:

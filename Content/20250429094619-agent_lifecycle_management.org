@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fbd99417-95cf-42f2-9f6b-6b3aae9fce61
+:END:
+#+title: Agent lifecycle management
+#+filetags: :cs:ai:agent:

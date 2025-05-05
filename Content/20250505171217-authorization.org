@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       6c206bcd-84bb-4f06-aa52-09fb1dfdde5e
+:END:
+#+title: Authorization
+#+filetags: :sec:cs:
+
+* Authorization Code Flow
+ - https://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth

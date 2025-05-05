@@ -70,7 +70,7 @@
 
 2. *DNS Resolver and DNS Servers*: The resolver acts as an intermediary, bridging the user and various DNS servers, thereby centralizing the querying process.
 
-3. *Root Name Servers and TLD Servers*: Each level of servers represents a hierarchical structure that systematically narrows down requests, ensuring organized distribution of DNS records.
+3. *Root Name Servers and TLD Servers*: Each level of servers represents a hierarchical structure that systematically narrows down requests, ensuring organized distribution of [[id:2e03b5e6-6fdb-49d9-ae49-e86ea8b68338][DNS records]].
 
 4. *Authoritative Servers and Final Resolution*: The authoritative server is crucial as it holds the definitive answer about the IP address, solidifying its role in the DNS resolution process.
 

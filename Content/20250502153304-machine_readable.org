@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       221dcec9-bbf1-4dc3-b03c-d8cf98d74b34
+:END:
+#+title: Machine-readable
+#+filetags: :cs:

@@ -1,6 +1,6 @@
-:PROPERTIES:
+ :PROPERTIES:
 :ID:       20231212T081907.908301
+:ROAM_ALIASES: declarative
 :END:
 #+title: Functional Programming
-#+filetags: :programming:
-
+#+filetags: :plt:programming:

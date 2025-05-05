@@ -4,3 +4,22 @@
 :END:
 #+title: JSON Web Tokens
 #+filetags: :sec:cs:
+
+* Components
+** Header
+ - signing algo + token  type
+** Payload
+ - claims:
+   - registered
+   - public
+   - private
+** Signature
+- hashee  = base64(header) + "." + base64(payload)
+- sign = signing_algo(hashee, secret)
+- yield JWT = hashee + "." + sign
+* Misc
+** Auth0 Fine Grained Authorization
+ - when JWTs get too large (trying to pack more privilege info)
+ - https://fga.dev/
+* Resources
+ - https://jwt.io/introduction

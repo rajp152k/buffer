@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       aff71ac3-6d88-4d36-a0df-7569fe86608d
+:END:
+#+title: SupaBase
+#+filetags: :cs:
+
+* Backend as a Service
+- Features
+  + [[id:4e1d433c-9f6b-46c7-ad06-4f8bf798785e][Authentication]]
+    - OAuth
+    - JWT
+  + [[id:2f67eca9-5076-4895-828f-de3655444ee2][Database]]
+    - PostgreSQL
+    - Real-time subscriptions
+  + [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Storage]]
+    - Object storage
+  + [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][Functions]]
+    - Serverless
+- Architecture
+  + [[id:be116ea9-5b43-464a-a6fe-5469c4f4ba59][API Gateway]]
+  + [[id:821aa28f-c16d-4982-bfc7-e1c9cf82c987][Service mesh]]
+  + Database cluster
+- Use cases
+  + Web development
+  + Mobile app development
+  + IoT data processing
+
+* Components
+** Auth
+ - GoTrue
+ - https://github.com/supabase/gotrue
+ - supabase native
+** DataBase
+ - [[id:d053cf42-f70c-488f-8712-196e6a60c958][Postgres]]
+** State Change Triggers
+ - Realtime
+ - Elixir server for postgres triggers
+ - https://github.com/supabase/realtime
+ - change broadcasting over websockets post postgres polling
+** Storage
+ - ReST exposure for [[id:add20973-54a9-4d96-a938-b27ccbf9c1e6][S3]] compatible object stores
+** ReST
+ - DB exposure via a ReSTful api
+ - http://postgrest.org/
+** GraphQL
+ - DB exposure via a GraphQL api
+ - http://github.com/supabase/pg_graphql/
+** PG Management
+ - ReSTFul PostGres Operationalization
+ - https://github.com/supabase/postgres-meta
+** API Gateway
+ - Kong
+ - https://github.com/Kong/kong
+* Architectural Decisions
+ - All MIT/Apache Open source or native open sourced
+ - modular clients for each separate components.
+* Resources
+ - https://supabase.com/
+ - https://github.com/supabase/supabase

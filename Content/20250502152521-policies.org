@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       3285ef29-dbb8-4f18-8656-4ef91b5b13a6
+:END:
+#+title: Policy as Code
+#+filetags: :meta:cs:web:
+
+* Overview
+
+- Definition
+  + Formalized representation of policies in code
+  + Enables automated policy enforcement and validation
+- Key characteristics
+  + [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Version-controlled]]
+  + [[id:221dcec9-bbf1-4dc3-b03c-d8cf98d74b34][Machine-readable]]
+  + Integrated with [[id:d16357db-fc8a-4b9a-a0b1-0c613d66d6aa][CI/CD]] pipelines
+- Use cases
+  + Compliance and regulatory requirements
+  + Security and access control
+  + [[id:52c69951-3bcb-4aa8-9529-f18af61d46ff][Infrastructure as Code]] (IaC) validation
+- Tools and technologies
+  + [[id:13806880-ed30-4b21-8c67-016da5037ce7][Open Policy Agent]] (OPA)
+  + AWS IAM policies
+  + Terraform and policy-as-code integrations
+
+* Relevant Nodes
+** [[id:38d7a0a6-3546-4584-8b38-1b8a316dfd1a][Software Supply Chain]]

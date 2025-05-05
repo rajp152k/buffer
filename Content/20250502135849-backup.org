@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       528a1f9e-b4f4-47db-adb6-b7965886cd84
+:END:
+#+title: Backup
+#+filetags: :data:
+
+
+* 3-2-1
+** Three Copies
+*** Primary data
+*** Backup 1
+*** Backup 2
+** Two Different Storage Types
+*** Disk (e.g., local RAID or external hard drives)
+*** Tape or cloud storage (e.g., object storage or cold storage)
+** One Offsite Copy
+*** Geographic redundancy (e.g., cloud storage or tape archive in different location)

@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       2e03b5e6-6fdb-49d9-ae49-e86ea8b68338
+:END:
+#+title: DNS Records
+#+filetags: :web:
+
+
+* Types
+** A: IPv4 address mapping
+** AAAA: IPv6 address mapping
+** CNAME: Canonical name aliasing
+** MX: Mail server designation
+** NS: Name server delegation
+** PTR: Reverse DNS lookup
+** SOA: Start of authority
+** TXT: Text record
+** SRV: Service location
+** CERT: Certificate record
+** DNAME: Delegation name
+** DNSKEY: DNSSEC key
+** DS: Delegation signer
+** NSEC: Next secure record
+** RRSIG: Resource record signature
+* Record Structure
+** Owner name
+** TTL: Time to live
+** Class: Record class (IN, CH, HS)
+** Type: Record type (A, AAAA, etc.)
+** RDATA: Record data
+* DNSSEC
+** DNSKEY: Zone signing key
+** RRSIG: Resource record signature
+** NSEC/NSEC3: Authenticated denial of existence
+** DS: Delegation signer
+* Record Management
+** Zone file: DNS record storage
+** DNS server: Authoritative or recursive
+** Record update: Dynamic DNS (DDNS) or manual

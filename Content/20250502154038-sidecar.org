@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0ecdbfe0-651b-4a71-8c66-e049f955d9ed
+:END:
+#+title: SideCar
+#+filetags: :arch:cs:

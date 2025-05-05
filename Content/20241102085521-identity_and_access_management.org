@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4e1d433c-9f6b-46c7-ad06-4f8bf798785e
-:ROAM_ALIASES: IAM Authorization Authentication
+:ROAM_ALIASES: IAM
 :END:
 #+title: Identity and Access Management
 #+filetags: :cs:sec:
@@ -98,5 +98,9 @@
   * *SQL Server Security*: Managing logins, users, and permissions in Microsoft SQL Server.
   * *MySQLMariaDB Privileges*: Granting and revoking privileges to users for specific database objects.
 
+* Relevant Nodes
+** [[id:fd7f5ef9-7f31-42bb-8152-d1cca7d06699][Authentication]]
+** [[id:6c206bcd-84bb-4f06-aa52-09fb1dfdde5e][Authorization]]
+** [[id:624e5e40-e45a-4020-ba1c-1c83d2f7a395][JWT]]
 * Resources
 - https://github.com/kdeldycke/awesome-iam

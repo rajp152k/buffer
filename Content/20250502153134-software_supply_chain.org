@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       38d7a0a6-3546-4584-8b38-1b8a316dfd1a
+:END:
+#+title: Software Supply Chain
+#+filetags: :cs:

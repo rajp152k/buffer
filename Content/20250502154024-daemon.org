@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       18f70f06-3c6c-455b-aa5e-4fe7a6d2ec6a
+:END:
+#+title: Daemon
+#+filetags: :os:cs:

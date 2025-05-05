@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       264b72dd-c26c-45ff-bbdf-0add0e3a8a52
+:END:
+#+title: Nucleoid.ai
+#+filetags: :cs:ai:
+
+* Resources
+ - https://nucleoid.ai/

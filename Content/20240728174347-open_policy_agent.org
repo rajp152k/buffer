@@ -3,3 +3,15 @@
 :END:
 #+title: Open Policy Agent
 #+filetags: :cncf:cloud-native:sec:
+
+* Overview
+Open Policy Agent (OPA) is an open-source, general-purpose policy engine designed to decouple policy decisions from your application code or infrastructure components.
+
+- [[id:56e931a4-16af-4eba-bcd0-c8f0b9566153][CNCF-hosted]], cloud-native friendly
+- [[id:20231212T081907.908301][Declarative]] policy language (Rego)
+- Runtime as a [[id:18f70f06-3c6c-455b-aa5e-4fe7a6d2ec6a][daemon]], [[id:0ecdbfe0-651b-4a71-8c66-e049f955d9ed][sidecar]] or [[id:485413a4-1357-4c1f-9924-08b1f2de7f9c][embeddable]] library
+- Policy bundles & data management
+- Common use cases: [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]] admission control, [[id:4e1d433c-9f6b-46c7-ad06-4f8bf798785e][API authorization]], CI/CD [[id:d273303c-9ee6-45a2-abed-f0d2bd2a90aa][guardrails]]
+
+* Resources
+ - https://www.openpolicyagent.org/

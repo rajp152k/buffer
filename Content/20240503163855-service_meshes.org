@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       821aa28f-c16d-4982-bfc7-e1c9cf82c987
 :END:
-#+title: Service Meshes
+#+title: Service Mesh
 #+filetags: :cloud:cs:
 
 * Resources

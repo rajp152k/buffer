@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       33c779df-7225-46d4-85b1-200bae219861
+:END:
+#+title: Inter-process communication (IPC)
+#+filetags: :cs:

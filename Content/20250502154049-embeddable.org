@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       485413a4-1357-4c1f-9924-08b1f2de7f9c
+:END:
+#+title: embeddable
+#+filetags: :meta:cs:

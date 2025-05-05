@@ -5,7 +5,7 @@
 #+filetags: :data:cs:
 
 
-* Detailed Outline
+* Outline
 ** Definition
 *** Region of memory accessible by [[id:f48bfe92-dd4d-4ea4-910a-d1adc44ec183][multiple processes]]
 ** Characteristics
@@ -19,8 +19,9 @@
 ** Implementation
 *** Memory mapping (mmap)
 *** Shared memory APIs (e.g., shm_open, shm_unlink)
-*** Synchronization mechanisms (e.g., mutexes, semaphores)
+*** [[id:20240520T101029.699685][Synchronization]] mechanisms (e.g., mutexes, semaphores)
 ** Use Cases
-*** Inter-process communication (IPC)
+*** [[id:33c779df-7225-46d4-85b1-200bae219861][Inter-process communication (IPC)]]
 *** Parallel processing and data sharing
 *** Efficient data exchange in multi-process environments
+

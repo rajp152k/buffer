@@ -4,16 +4,17 @@
 #+title: homoiconicity
 #+filetags: :plt:programming:
 
-Code, is Data, is Code.
+* Overview
+  - Code, is Data, is Code.
+* Historical Context and Examples
+  - Lisp as a classic example
+  - S-expressions for code and data
+  - [[id:20231212T082000.168442][Metaprogramming]] and code generation
+* Implications and Benefits
+  1. Metaprogramming
+  2. [[id:e480facb-18a5-4d1a-b533-ec666f0f2183][Domain-Specific Languages]] (DSLs)
+  3. Code Generation and [[id:a3b1d729-06c4-41e6-8cbd-6359c22515e3][Reflection]]
 
-Speaking on a more wholistic scale:
-[[id:20230715T173535.681936][Data structures]] and [[id:f9c89977-5a4b-4c21-b340-56b204cfb35d][Algorithms]] can be interpreted as varying representations of a similar source practicality.
-
-* [[id:b00834e3-eae6-474f-98ab-01c0533533e8][towards Macros]]
-For a more practical projection of the concept, trying to understand [[id:37961b23-d768-4a4a-bba6-0bd1199478b6][CRUD]] with homoiconicity as the seeding context: proceeding with [[id:20230712T223044.319985][Lisp]] as the base language for the disbussion.
- - Creating would translate to constructing new data structures to represent state.
- - Reading larger objects in the state would translate to navigating those structures by traversing the memory via the glue that the language provide ([[id:20230715T174319.700414][pointers]]/conses)
- - Updating the state would involve manipulating the datastructures either by redirecting the pointers or rewriting the underlying bits being interpreted as data.
- - Deletion involves marking those regions of memory to be free for use by other processes.
-
-This is the usual interpretation for most langauges. However, when talking about homo-iconic languages such as lisp where the code is representable as data and vice versa (abstract syntax trees are "trees" and gluing/yielding objects via lambdas), the concept of mutation on data can be extended to manipulating the abstract syntax sub-tree (s-expressions are a convenient representation of this) therefore yielding code that treats code as data, inturn yielding unconstrained code that is just as free as something you'd write from scratch.
+* Modern Perspectives
+  - [[id:e3348084-4943-4d15-914a-28210baf078f][Julia]] as a modern example
+  - Relevance in [[id:c789989c-ec50-4183-87f7-79c796cb5ac0][modern software development]]

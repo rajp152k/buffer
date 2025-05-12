@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1f4f640c-096a-496d-9904-235ab2ad9131
+:END:
+#+title: operating system architecture
+#+filetags: :arch:os:

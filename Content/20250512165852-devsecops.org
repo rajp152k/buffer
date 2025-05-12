@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       52f2c8ab-9bb4-4f29-96c1-37965f3f8105
+:END:
+#+title: DevSecOps
+#+filetags: :cs:sec:

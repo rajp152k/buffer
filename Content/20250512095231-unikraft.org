@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       4942895c-b0d4-4d66-ae96-e912533cbfc9
+:END:
+#+title: Unikraft
+#+filetags: :os:
+
+
+* Overview
+
+- Overview:
+    * Unikraft is a [[id:f38537d0-7b71-4965-aa03-2ec55b56f144][unikernel]] development kit.
+    * It focuses on efficiency and specialization for [[id:bc1cc0cf-5e6a-4fee-b9a5-16533730020a][cloud]] and [[id:7a490e9e-4361-4396-9cac-091e6844ce9d][edge]] environments.
+    * It provides a [[id:aa4f1b85-5896-4990-bfc8-c29cfd59dd60][modular]] approach to building custom [[id:c88d905a-98cc-42eb-a68a-da6245e3b94f][kernels]].
+    * Users select only necessary components for their application.
+    * Supports various architectures and platforms.
+
+- Connections:
+    * Unikernels are a type of [[id:1f4f640c-096a-496d-9904-235ab2ad9131][operating system architecture]].
+    * Unikraft provides the tools and libraries to build these specialized unikernels.
+    * The modular design of Unikraft is key to the efficiency and specialization inherent in the unikernel concept.
+    * This efficiency makes Unikraft suitable for resource-constrained environments like edge devices and demanding cloud workloads.
+
+
+- Precision:
+    * Unikraft: Unikernel Development Kit.
+    * Focus: Efficiency, specialization.
+    * Method: Modular build.
+    * Outcome: Custom kernels.
+
+- Formatting:
+
+   | Concept    | Description                               | Benefit                                  |
+   |------------+-------------------------------------------+------------------------------------------|
+   | Unikraft   | Development kit for creating unikernels   | Simplifies unikernel build               |
+   | Unikernel  | Specialized kernel for single application | Efficiency, small size                   |
+   | Modularity | Ability to select specific components     | Reduced attack surface, tailored kernels |
+
+- Curiosity:
+    * How can the modularity principles of Unikraft be applied to other software development domains?
+    * Could Unikraft's approach be beneficial for developing [[id:8affe383-8b2f-413b-87a6-f7048b3712fb][firmware]] or [[id:eca6f3d5-e318-49c9-8040-ae6b297ff5d5][embedded systems]]?
+
+- Cognitive Constructs:
+    * *Abstraction:* Unikraft provides abstractions over underlying hardware and operating system components.
+    * *Causality:* Choosing specific components in Unikraft directly causes a smaller, more efficient kernel.
+    * *Systems Thinking:* Understanding Unikraft requires considering the interaction between the application, the unikernel, and the underlying hardware/platform.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       bcad4510-298f-48cc-a6dd-fce3f3d18f7f
+:END:
+#+title: CDAC Shakti
+#+filetags: :arch:
+
+* Resources
+ - https://shakti.org.in/

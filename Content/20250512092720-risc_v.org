@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       aa29d379-e113-4cca-9e05-e76035a0a3dc
+:END:
+#+title: RISC-V
+#+filetags: :programming:hardware:
+
+* Overview
+
+- Key aspects of RISC-V:
+  • Open-source [[id:6f3e9314-96ab-4d13-a0cf-aea11f6a2cd9][instruction set architecture]] (ISA)
+  • Designed for a wide range of applications, from small embedded systems to high-performance computing
+  • RISC (Reduced Instruction Set Computing) architecture, focusing on simplicity and pipelining
+  • Modular design, allowing for customization and extension
+  • Supports both 32-bit and 64-bit address spaces
+
+- Connections:
+RISC-V's [[id:18142c6b-e1d6-4574-b2a3-6041d9704947][open-source]] nature and modular design enable a community-driven development process, fostering innovation and customization. Its RISC architecture and pipelining capabilities contribute to its performance and efficiency.
+
+- Clarifying Questions:
+To better understand the context, I would like to know: What specific aspect of RISC-V are you interested in (e.g., its application in embedded systems, its comparison to other ISAs, or its development ecosystem)?
+
+- Research Pathways:
+Some potential areas for further exploration include:
+  • How does RISC-V's open-source nature impact its adoption and development?
+  • What are the key differences between RISC-V and other ISAs, such as ARM and x86?
+  • How can RISC-V's modular design be leveraged for specific applications, such as AI or IoT?
+
+Here is a simple comparison of RISC-V with other ISAs in a table format:
+
+| ISA      | Open-source | RISC Architecture | Bit-width Support |
+|----------|-------------|-------------------|-------------------|
+| RISC-V   | Yes         | Yes               | 32, 64            |
+| ARM      | No          | Yes               | 32, 64            |
+| x86      | No          | CISC              | 32, 64            |
+
+To visualize the RISC-V ecosystem, a simple ASCII diagram can be used:
+
+#+begin_src
+ Processor Core
+       |
+       |
+       v
+Instruction Set (RISC-V ISA)
+       |
+       |
+       v
+  Custom Extensions
+       |
+       |
+       v
+  Software Ecosystem
+#+end_src
+
+
+* Resources
+ - https://riscv.org/
+ - https://lf-riscv.atlassian.net/wiki/spaces/HOME/pages/16154769/RISC-V+Technical+Specifications

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3245de60-6a88-4d79-9d6e-90cd423e5406
+:END:
+#+title: CDAC Vega
+#+filetags: :arch:
+
+* Resources
+ - https://vegaprocessors.in/

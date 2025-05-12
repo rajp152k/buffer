@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eca6f3d5-e318-49c9-8040-ae6b297ff5d5
+:END:
+#+title: Embedded Systems
+#+filetags: :arch:sys:

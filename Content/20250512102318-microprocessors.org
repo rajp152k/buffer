@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       cec46874-072d-4969-b1c1-b046cf8f25a6
+:END:
+#+title: Microprocessors
+#+filetags: :arch:
+
+* Relevant Nodes
+** [[id:aa29d379-e113-4cca-9e05-e76035a0a3dc][RISC-V]]
+** [[id:3245de60-6a88-4d79-9d6e-90cd423e5406][CDAC Vega]]
+** [[id:bcad4510-298f-48cc-a6dd-fce3f3d18f7f][CDAC Shakti]]

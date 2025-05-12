@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       cb578449-b5e0-4d79-bce4-ed26252cd3e9
+:END:
+#+title: Resource Flow
+#+filetags: :sys:meta:

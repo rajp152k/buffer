@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       ea4b0667-7b00-4d75-8baf-b0f769120a09
+:ROAM_ALIASES: LibOS
+:END:
+#+title: Library Operating Systems
+#+filetags: :os:
+
+
+* Overview
+
+- Key characteristics:
+  • Runs as a library on top of a host [[id:aba08b45-c41d-4bb4-9053-bc6dd8704444][operating system]]
+  • Provides a [[id:de90a15d-96e9-4b67-839e-14ccea28b00c][sandboxed]] environment for applications
+  • Offers a customized operating system interface for specific use cases
+  • Can be used for improving [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][security]], [[id:a39d974b-3aaf-4065-b6f7-6361a97880a9][portability]], and [[id:7a6c0808-1246-411c-b330-20c60c2e37ac][performance]]
+
+- Examples of LibOS:
+  • Drawbridge (Microsoft)
+  • Graphene (MIT)
+  • LKL (Linux Kernel Library)
+  • MirageOS ([[id:f38537d0-7b71-4965-aa03-2ec55b56f144][Unikernel]])
+
+- Connections:
+  The listed LibOS examples share commonalities in providing a layer of abstraction between applications and the host operating system. They enable developers to create customized environments for their applications, improving security, and portability.
+
+- Clarifying Questions:
+  What specific aspects of Library Operating Systems would you like to explore further? Are you interested in their applications, security features, or performance optimizations?
+
+- Research Pathways:
+  Investigating the trade-offs between LibOS and traditional operating systems could provide valuable insights. Some potential questions to explore:
+  • How do LibOS solutions impact application performance?
+  • What are the security implications of using a LibOS?
+  • How do LibOS solutions compare to containerization technologies?
+
+To further illustrate the concept, here's a simple comparison table between LibOS and Traditional OS:
+
+| *Feature*     | *LibOS*                        | *Traditional OS*                           |
+| ---           | ---                            | ---                                        |
+| Deployment    | Runs as a library              | Runs on bare metal or virtualized hardware |
+| Isolation     | Provides sandboxed environment | Provides process isolation                 |
+| Customization | Highly customizable            | Limited customization options              |
+
+* Relevant Nodes
+** [[id:4942895c-b0d4-4d66-ae96-e912533cbfc9][Unikraft]]

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       608f4b28-b407-4148-992b-24bc3cc418d9
+:ROAM_ALIASES: HCL
+:END:
+#+title: HashiCorp Configuration Language
+#+filetags: :infra:arch:

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       710c7a03-6148-437c-b70a-0c0635522a19
+:END:
+#+title: CloudFormation
+#+filetags: :tool:cs:infra:
+
+
+* Overview
+
+
+-   CloudFormation is an [[id:52c69951-3bcb-4aa8-9529-f18af61d46ff][Infrastructure as Code]] (IaC) service offered by AWS.
+-   It allows users to define AWS resources using templates.
+-   Templates are written in either [[id:7cd81a80-dbc4-4c6e-860a-f05b14798e68][YAML]] or [[id:48581776-0ba5-4d88-ad38-25c0cb90595f][JSON]].
+-   CloudFormation manages the provisioning and updating of these resources.
+-   It can create, update, and delete entire stacks of resources.
+-   Change sets enable previewing proposed changes before execution.
+-   [[id:5cb84cfd-1cc2-4470-bfae-7c7cf758a998][Drift detection]] helps identify manual changes made outside of CloudFormation.
+
+/Connections/
+
+CloudFormation serves as a central mechanism (the /tool/) to manage infrastructure (the /resources/) in the AWS ecosystem (the /platform/). The /templates/ are the specification of the desired state, and CloudFormation is the engine that translates this specification into actual resources. /Change sets/ and /drift detection/ are mechanisms for managing and verifying the desired state against the actual state.
+
+/Clarifying Questions/
+
+-   What specific type of infrastructure management are you interested in understanding (e.g., deployment, configuration management, testing)?
+-   What is your current level of familiarity with AWS and IaC concepts?
+
+/Research Pathways/
+
+-   How does CloudFormation compare to other AWS IaC services like CDK or SAM?
+-   What are the best practices for structuring large CloudFormation templates and stacks?
+-   How can CloudFormation be integrated into CI/CD pipelines for automated infrastructure provisioning?
+-   What are the security considerations when using CloudFormation and how can they be mitigated?

@@ -5,8 +5,6 @@
 #+filetags: :protocol:ai:
 
 * Usage Queue
- - https://github.com/kaliaboi/mcp-zotero
-
 * Relevant Tooling
 ** CLI testing utilities
  - https://github.com/mark3labs/mcphost
@@ -16,7 +14,6 @@
  - JSON-[[id:19079639-be92-46cf-82c5-3d81c935705c][RPC]]
  - [[id:935d3a14-db38-4127-964d-25f9223f08b2][Server Sent Events]]
  - [[id:021eabbb-60a7-49f5-9954-5500ea24bab7][stdio]]
-
 * Resources
   - https://modelcontextprotocol.io/introduction
   - https://spec.modelcontextprotocol.io/specification/

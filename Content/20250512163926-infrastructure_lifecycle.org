@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       dd7186ec-db75-4b78-84ed-b958ecc17c6f
+:END:
+#+title: Infrastructure Lifecycle
+#+filetags: :infra:cs:
+
+* Overview
+*** Key Components
+
+1. *Planning*: Identifying the need for infrastructure, defining its scope, and outlining the requirements.
+2. *Design*: Creating detailed designs and architectures for the infrastructure.
+3. *Procurement*: Acquiring the necessary hardware, software, and services.
+4. *Implementation*: Deploying and configuring the infrastructure components.
+5. *Operations*: Managing and maintaining the infrastructure to ensure it operates as intended.
+6. *Maintenance*: Performing routine updates, repairs, and replacements to keep the infrastructure functional and up-to-date.
+7. *[[id:8f401b28-efb8-49e3-b1c6-02f101341669][Monitoring]]*: Continuously observing the infrastructure's performance and health.
+8. *Decommissioning*: Retiring infrastructure that is no longer needed or has reached the end of its life.
+
+*** Analysis of Relationships and Interactions
+
+- *Planning* influences *Design* by providing the initial requirements and scope.
+- *Design* guides *Procurement* and *Implementation* by detailing what needs to be acquired and how it should be deployed.
+- *Procurement* affects *Implementation* by delivering the necessary components.
+- *Implementation* feeds into *Operations* and *Maintenance* as the infrastructure is handed over for management and upkeep.
+- *Operations* and *Maintenance* are interlinked; operations require maintenance to continue functioning, and maintenance is guided by operational feedback.
+- *Monitoring* informs *Operations* and *Maintenance* by providing real-time data on the infrastructure's state, allowing for swift responses to issues.
+- *Decommissioning* is influenced by *Monitoring* and *Maintenance*, as the decision to decommission is often based on performance, cost, and the availability of newer, better alternatives.
+
+*** Breaking Down into Simpler Parts
+
+1. *[[id:653e2ab1-7711-4cef-9bf7-9bf94fe81756][Lifecycle]] Phases*: The infrastructure lifecycle can be seen as a series of phases (Planning through Decommissioning) that are interconnected.
+2. *[[id:88a94ee1-76d1-4e2a-8b3d-36a49345ace6][Feedback Loops]]*: Critical for the system's efficiency, feedback from later stages (like Monitoring) informs earlier stages (like Planning and Design) to improve the lifecycle process.
+3. *[[id:cb578449-b5e0-4d79-bce4-ed26252cd3e9][Resource Flow]]*: Resources (financial, human, material) flow through these phases, being allocated and reallocated as necessary.
+
+
+* Modern Engineering Practices
++ Key aspects
+	- Design for maintainability
+	- Modular construction
+	- Integration of emerging technologies
+	- Continuous monitoring and feedback loops
++ Benefits
+	- Reduced maintenance costs
+	- Improved resilience
+	- Enhanced performance
+
+** 1. Infrastructure as Code (IaC)
+	+ Managing infrastructure via code
+	+ Tools:
+		- [[id:45434127-d4fa-4108-8e63-a10460142e83][Terraform]]
+		- [[id:710c7a03-6148-437c-b70a-0c0635522a19][CloudFormation]]
+	+ Benefits:
+		- [[id:038e3720-0307-41d8-bcb1-e77b75a161df][Version control]]
+		- Repeatability
+		- Easier infrastructure [[id:abbce407-072f-4c39-9580-a8d6256dbe69][configuration management]]
+
+** [[id:8f401b28-efb8-49e3-b1c6-02f101341669][Monitoring]] and [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]
+	+ Implementing comprehensive monitoring tools
+	+ Providing insights into infrastructure performance and health
+	+ Identifying issues before criticality
+	+ Informing future infrastructure decisions
+** [[id:4dbf6f2a-6e90-45a9-a51a-67d855858665][Agile Methodologies]]
+    * Iterative Improvements
+    * Flexibility
+    * Changing Requirements
+      * Adaptive Response
+
+** [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][DevOps]] and [[id:52f2c8ab-9bb4-4f29-96c1-37965f3f8105][DevSecOps]]
+*** [[id:d16357db-fc8a-4b9a-a0b1-0c613d66d6aa][Continuous Integration/Continuous Deployment]] (CI/CD)
+   + Automates testing and deployment processes
+   + Enhances infrastructure reliability and reduces manual errors
+   + Tools: [[id:fd2acf10-3682-497d-b2cb-c29f3676797d][Jenkins]], GitLab CI/CD
+*** [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Security]] Integration
+   + Incorporates security practices into CI/CD pipelines
+   + Utilizes tools for vulnerability scanning and compliance checks
+   + Tools: OWASP ZAP, SonarQube
+** [[id:739d8493-d7a6-4eee-b31a-44d087f4fb42][Cloud-Native]] Designs
+  * Scalability via [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] architecture
+  * Resilience through [[id:20240519T162542.805560][fault-tolerant]] design
+  * Leveraging cloud services for enhanced functionality
+  * [[id:d4627a77-fafc-4c76-91a2-59a84e42de71][Containerization]] using Docker
+  * [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]] with [[id:c2072565-787a-4cea-9894-60fad254f61d][Kubernetes]]
+  * [[id:821aa28f-c16d-4982-bfc7-e1c9cf82c987][Service mesh]] implementation for traffic management
+  * [[id:52c69951-3bcb-4aa8-9529-f18af61d46ff][Immutable infrastructure]] for consistency and reliability

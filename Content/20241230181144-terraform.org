@@ -2,4 +2,17 @@
 :ID:       45434127-d4fa-4108-8e63-a10460142e83
 :END:
 #+title: Terraform
-#+filetags: :arch:cs:tool:
+#+filetags: :infra:cs:tool:
+
+* Overview
+
+-   [[id:52c69951-3bcb-4aa8-9529-f18af61d46ff][Infrastructure as Code]] (IaC) tool.
+-   Manages infrastructure using [[id:6a2f52ce-07c6-4689-ac9b-2052af17d548][configuration]] files.
+-   Supports multiple providers (AWS, Azure, GCP, etc.).
+-   Uses [[id:608f4b28-b407-4148-992b-24bc3cc418d9][HashiCorp Configuration Language]] (HCL).
+-   Enables [[id:d14581af-3fcf-4697-a8ec-105413e93244][reproducible]] infrastructure deployments.
+-   Provides state management to track desired vs. actual state.
+-   Supports module creation for reusability.
+
+* Resources
+ - https://developer.hashicorp.com/terraform

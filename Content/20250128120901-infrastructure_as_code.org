@@ -1,8 +1,11 @@
 :PROPERTIES:
 :ID:       52c69951-3bcb-4aa8-9529-f18af61d46ff
+:ROAM_ALIASES: "Immutable Infrastructure"
 :END:
 #+title: Infrastructure as Code
 #+filetags: :hardware:cs:
 
+* Relevant Nodes
+** [[id:dd7186ec-db75-4b78-84ed-b958ecc17c6f][Infrastructure Lifecycle]]
 * Resources
  - https://en.wikipedia.org/wiki/Infrastructure_as_code

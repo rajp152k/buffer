@@ -5,65 +5,7 @@
 #+title: Kubernetes
 #+filetags: :k8s:cs:tool:
 
-see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 
-* Stream
-** 0x2342
- - checkout [[id:c1a2fc28-8488-4335-8f50-2fdc33b04740][OKD]]
-** 0x2324
- - see [[id:dd91e448-4e13-471f-aa2a-3137b420db91][kubeconfig]]
-** 0x22E3
- - reading up on [[id:7cb8489b-2b84-4224-b3f9-9f5bf0f38cfe][autoscaling]]
- - see [[id:7f960631-c727-41b8-80c2-3ccaa4ae4ba2][Scheduling Algorithms]] & [[id:59305648-ed10-4298-be07-cd67f277f612][Scheduling-K8S]]
- - building [[id:6693363c-a939-47bb-8900-5b1a6dc56c0c][Storage-K8S]]
- - getting into [[id:73c378eb-6593-4479-bb6f-5d731ce203f2][Custom Resources-K8S]]
-
-** 0x22E2
-- reading https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/
-- reading up on [[id:2244b835-3c8a-496e-b4bd-5ab0951c7d29][ConfigMap]]s
-- reading up on [[id:691a68cd-bef5-47c3-be5a-030cfffca5c5][Secret]]s
-- reading up on [[id:31fe99cb-2739-45cd-9a8b-755ffc018917][Resource Management]]
-- see https://github.com/OpenObservability/OpenMetrics.git
-- building up a [[id:68d08457-9ce7-4b48-8cef-c52134a99c40][Security]] node for K8s
-- tried [[id:042860a7-ee83-4baa-b31f-8f5d4ceab2bf][K8SGPT]] : has potential
-
-** 0x22E1
- - the <git vc host>/kubernetes/hack/ is useful
- - charting the kubernetes source code
-** 0x22DF
-*** Netshoot
- - for debugging purposes:
-   - definitely checkout netshoot
-   - recommend using as a plugin with krew
-   - am locally using on my minikube dev setup via krew as of now
-   - https://github.com/nicolaka/netshoot
-** 0x22D6
-*** Open Container Initiative
-- https://opencontainers.org/
-- https://github.com/opencontainers
-*** Kubernetes Interfaces
-**** [[id:3f197124-a252-4019-a821-332eb1e833fa][Container Runtime Interface]]
-- https://kubernetes.io/docs/concepts/architecture/cri/
-**** [[id:6ca98606-217b-4741-97f8-d8f9f70a7d46][Container Network Interface]]
-**** [[id:ce56c5a9-b31d-46db-b2b0-6c83fa6abf02][Container Storage Interface]]
-** 0x22D5
- - some quick indexes from container.training
- - internal dynamic dns:  https://qconuk2019.container.training/#46
- - how the master node avoids running workloads: https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/
- - the CRI to allow multiple (compliant) container runtimes  : https://kubernetes.io/docs/concepts/architecture/cri/
- - a good overview of the com protocols used in a typical kubernetes setup : https://qconuk2019.container.training/#104
- - The declarative aspect of kubernetes: https://qconuk2019.container.training/#107
- - Networking model of kubernetes: https://qconuk2019.container.training/#119
- - container exposure : https://qconuk2019.container.training/#180
- - basic service types : https://qconuk2019.container.training/#181
- - security issues with ~apply~ : https://qconuk2019.container.training/#245
- - labels and selectors : https://qconuk2019.container.training/#288
- - stern (following multiple logs): https://qconuk2019.container.training/#340
- - EFK centralized logging : https://qconuk2019.container.training/#346
-   - compare with ELK stack : https://logz.io/blog/fluentd-logstash/
-     - fluentd is decentralized
- - prometheus : https://qconuk2019.container.training/#357
- - stateful services : https://qconuk2019.container.training/#393
 * Plugins and Ecosystem
 ** krew
  - https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/
@@ -79,8 +21,3 @@ see [[id:f822f8f6-89eb-4aa8-ac8f-fdcff3f06fb9][Orchestration]]
 ** Practical
  - https://qconuk2019.container.training
  - https://github.com/kubernauts/practical-kubernetes-problems
-** Videos
-    - https://www.youtube.com/watch?v=TlHvYWVUZyc&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=12&ab_channel=ByteByteGo
-
-** CICD with k8s
- - https://resources.linuxfoundation.org/LF+Projects/CNCF/TheNewStack_Book3_CICDwithKubernetes_20180615.pdf?__hstc=60185074.90dbd8cfaa5e5d6c6cc88e8c1e66c499.1727779213765.1738764525951.1739163060338.17&__hssc=60185074.1.1739163060338&__hsfp=4117827442

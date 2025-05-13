@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0238f77f-f51c-421b-b5ed-fd36740eafb3
+:END:
+#+title: Automated Testing
+#+filetags: :eng:cs:

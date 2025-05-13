@@ -3,3 +3,50 @@
 :END:
 #+title: Monolith
 #+filetags: :cs:
+
+* Overview
+** Key Components of the Monolith System
+
+1. *Single Unified Unit*: The monolith is a self-contained system where all components are part of a single application or codebase.
+2. *[[id:9e12733c-0b6e-4ceb-8440-7b3a75b07cf9][Tightly Coupled]] Components*: Components within the monolith are highly interdependent, making it challenging to modify or scale individual parts without affecting the entire system.
+3. *Shared Resources*: The monolith typically shares resources such as databases, libraries, and frameworks across its components.
+4. *Single Deployment Unit*: The entire monolith is deployed as a single unit, which can make deployment and rollback processes complex and risky.
+
+** Analysis of Relationships and Interactions
+
+- *Inter-component Dependencies*: The tight coupling between components means that changes in one part of the system can have unforeseen effects on other parts.
+- *Resource Sharing*: While sharing resources can simplify development, it can also lead to bottlenecks and contention between components.
+- *Scalability Limitations*: Because the monolith is deployed as a single unit, scaling the system often requires scaling the entire application, even if only one component needs more resources.
+
+** Breaking Down into Simpler Parts
+
+1. *Identify Components*: List out the major functional components within the monolith.
+2. *Analyze Dependencies*: Map out the dependencies between these components to understand the coupling.
+3. *Assess Resource Utilization*: Evaluate how resources are shared and utilized across the components.
+
+** Actionable Insights and Recommendations
+
+1. *Modularize*: Begin to modularize the monolith by identifying natural boundaries between components and reducing inter-component dependencies.
+2. *Extract Services*: Consider extracting components into separate services that can be developed, deployed, and scaled independently.
+3. *Implement API-Based Integration*: Use APIs to integrate the extracted services, reducing direct dependencies between them.
+4. *Adopt a Microservices Architecture*: Gradually move towards a microservices architecture to improve scalability, resilience, and development velocity.
+5. *[[id:8f401b28-efb8-49e3-b1c6-02f101341669][Monitor]] and Measure*: Continuously monitor the system and measure the impact of changes to ensure that the transition is improving the system's overall health and performance.
+
+
+* [[id:aa4f1b85-5896-4990-bfc8-c29cfd59dd60][Modular]] Monolith
+
+ - seeks to balance the simplicity of a monolithic architecture with the modularity and maintainability typically associated with microservices.
+ - composed of distinct, [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][loosely coupled]] modules.
+
+** Key Characteristics
+
+1. Modular Structure: The application is divided into modules based on functional or domain boundaries.
+2. Loose Coupling: Modules are designed to be as independent as possible, minimizing direct dependencies between them.
+3. Standardized Interfaces: Modules interact through well-defined interfaces or APIs, facilitating communication and reducing coupling.
+4. Shared Infrastructure: While modules are independent, they may still share certain infrastructure components, such as databases or utility libraries.
+
+** Benefits
+
+1. Easier [[id:b591cca1-139c-4497-b146-eb71d4f40f41][Maintenance]]: With a clear modular structure, it becomes easier to understand, modify, and test individual parts of the system.
+2. Improved [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]: Although still a monolith, a modular design can make it easier to identify bottlenecks and scale specific modules or components as needed.
+3. Simplified Development: Developers can work on different modules relatively independently, reducing conflicts and improving overall development velocity.

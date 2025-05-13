@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9e12733c-0b6e-4ceb-8440-7b3a75b07cf9
+:END:
+#+title: Tight Coupling
+#+filetags: :eng:cs:

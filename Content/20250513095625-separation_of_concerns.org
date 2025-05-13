@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       4d05e7ae-8d1d-49cc-a404-d1d437f7fbe3
+:END:
+#+title: Separation of Concerns
+#+filetags: :cloud-native:
+
+* Overview
+
+- Key aspects of SoC:
+  • [[id:aa4f1b85-5896-4990-bfc8-c29cfd59dd60][Modularization]] of code and functionality
+  • Separation of responsibilities among components
+  • Reduced [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][coupling]] between components
+  • Improved maintainability and scalability
+  • Enhanced flexibility and reusability
+
+| Aspect          | Monolithic Architecture | Microservices Architecture |
+|-----------------+-------------------------+----------------------------|
+| Modularity      | Limited modularity      | Highly modular             |
+| Scalability     | Vertical scaling        | Horizontal scaling         |
+| Maintainability | Challenging to maintain | Easier to maintain         |
+
+* Systems Breakdown
+*** Key Components of the System
+1. *[[id:5be3075a-d718-4f44-b031-4df5547423a2][Monolithic]] Architecture*
+   - A self-contained, tightly integrated system where all components are part of a single unit.
+   - Components are interconnected and interdependent.
+
+2. *[[id:54978664-78a5-4c2c-ae33-c4e6a14d6bb0][Microservices]] Architecture*
+   - A system composed of multiple, independent services.
+   - Each service is responsible for a specific business capability and can be developed, tested, and deployed independently.
+
+*** Analysis of Relationships and Interactions
+- *[[id:9e12733c-0b6e-4ceb-8440-7b3a75b07cf9][Tight Coupling]] in Monolithic Architecture:*
+  - Changes in one component can affect the entire system.
+  - Scaling requires scaling the entire application, not just the components that need it.
+
+- *[[id:adaf5bfa-48f9-415b-893e-7398b10f383e][Loose Coupling]] in Microservices Architecture:*
+  - Services are designed to be independent, allowing for changes and scaling without affecting the entire system.
+  - Communication between services is typically through [[id:20240101T073142.439145][APIs]] or [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][message queues]].
+
+*** Breaking Down into Simpler Parts
+1. *Components/Modules:*
+   - In a monolithic system, components are part of the same codebase and are often tightly coupled.
+   - In microservices, each service is a separate module with its own codebase, potentially using different technologies.
+
+2. *Interactions/Communication:*
+   - Monolithic systems rely on intra-process communication.
+   - Microservices rely on inter-process communication mechanisms like [[id:88828c6f-87e0-4569-b236-dc6ebb72d282][REST]] APIs, [[id:19079639-be92-46cf-82c5-3d81c935705c][gRPC]], or message queues.
+
+*** Actionable Insights and Recommendations
+1. *Adopt Microservices for Complex Systems:*
+   - When the system is complex and requires frequent updates or has diverse scaling needs, microservices can offer greater flexibility and scalability.
+
+2. *Consider Monolithic for Simple Applications:*
+   - For simpler applications with less expected change or growth, a monolithic architecture might be sufficient and simpler to manage.
+
+3. *Evaluate Organizational Readiness:*
+   - Microservices require more sophisticated [[id:58ea31e4-95ae-4c25-b475-c8686fe23817][DevOps]] practices, including [[id:0238f77f-f51c-421b-b5ed-fd36740eafb3][automated testing]], [[id:d16357db-fc8a-4b9a-a0b1-0c613d66d6aa][CI/CD]] pipelines, and [[id:8f401b28-efb8-49e3-b1c6-02f101341669][monitoring]]. Assess whether your team is ready for this level of complexity.
+
+4. *Start with a Modular Monolith:*
+   - If you're unsure, starting with a well-modularized monolith can be a good intermediate step. It allows for easier transition to microservices later if needed.

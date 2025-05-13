@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       06dceb19-d9d7-4a36-96bd-859e012aa328
+:END:
+#+title: K8s Node
+#+filetags: :k8s:

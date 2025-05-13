@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       804e9410-c341-4cae-acb4-5ac62a49f819
+:END:
+#+title: Deployment Elasticity
+#+filetags: :k8s:

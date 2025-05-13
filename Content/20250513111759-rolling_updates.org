@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       78b3c9bd-d2c4-44c8-b690-3e425f75ef08
+:END:
+#+title: Rolling Updates
+#+filetags: :k8s:

@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       739d28f8-def8-4508-9392-5ec77ecae756
+:END:
+#+title: Pod
+#+filetags: :k8s:
+
+* Overview
+
+** Pods
+	+ Composition
+		- One or more containers
+	+ Representation
+		- Logical host for containers
+	+ Properties
+		- Smallest deployable unit
+		- Scalable
+		- Manageable within Kubernetes cluster
+
+** Key Characteristics
+1. Container Grouping
+   1.1 Pods [[id:eabe10e8-cd2d-4f2f-a21b-c3ab14feaa51][encapsulate]] one or more containers
+   1.2 Single-container Pods are common; multi-container Pods used for tightly coupled containers
+2. [[id:c37896a6-da8b-4ceb-a660-803ce5843ce5][Shared Resources]]
+   2.1 [[id:a4e712e1-a233-4173-91fa-4e145bd68769][Networking]]: shared [[id:d799bc90-5032-4a69-9806-83145297a335][IP]], network [[id:92f509f7-5b8f-4beb-a66c-7890e79c84a3][namespace]]; containers communicate via [[id:4a599715-d3ad-4038-9ac6-bf858428dd1b][localhost]]
+   2.2 [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Storage]]: shared [[id:60916676-5582-4438-b24e-902d51cbd8e0][volumes]] for data exchange between containers
+3. [[id:3586cec4-d474-404e-87af-6e3520049494][Ephemeral]] Nature
+   3.1 Pods are created, scaled, deleted as needed
+   3.2 Not designed for [[id:d2d0f670-9bdf-437a-a639-fbdf7ba7d6c7][persistence]] or long-lived existence
+4. Management
+   4.1 Managed by higher-level [[id:778aa08b-4375-489c-a491-f75beb9247a7][controllers]] ([[id:8162548b-d9d7-4e30-bd78-c1811936e6f9][Deployments]], [[id:162c0fa5-bb57-4ae7-8900-1062cb655356][ReplicaSets]], [[id:e94aa95b-691d-4511-9d5d-83a9efdb036a][DaemonSets]])
+   4.2 [[id:778aa08b-4375-489c-a491-f75beb9247a7][Controllers]] maintain desired state (replica count, application version)
+
+** Pod Lifecycle
+** Pod Statuses:
+  - *Pending*: Pod accepted but not running
+  - *Running*: Pod bound to a [[id:06dceb19-d9d7-4a36-96bd-859e012aa328][node]] with at least one running container
+  - *Succeeded*: All containers terminated successfully
+  - *Failed*: At least one container terminated in failure
+  - *Unknown*: Pod state cannot be determined
+**  Best Practices for Pods
+  * Use Higher-Level [[id:778aa08b-4375-489c-a491-f75beb9247a7][Controllers]]
+     - Manage Pods through higher-level controllers like [[id:8162548b-d9d7-4e30-bd78-c1811936e6f9][Deployments]] rather than creating Pods directly
+     - Ensures features like rolling updates and self-healing are available
+  * Configure [[id:82b55d76-6741-4c0e-9d66-5dafb7f4b339][Resource Requests and Limits]]
+    - Specify resource requests and limits for containers
+    - Helps Kubernetes schedule Pods appropriately and prevent resource contention
+  *  Utilize Probes
+    - Implement readiness and liveness probes
+    - Helps Kubernetes understand when a container is ready to receive traffic and when it needs to be restarted
+* Resources
+ - https://kubernetes.io/docs/concepts/workloads/pods/

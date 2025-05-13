@@ -1,8 +1,8 @@
 :PROPERTIES:
 :ID:       60916676-5582-4438-b24e-902d51cbd8e0
 :END:
-#+title: Ephemeral Volumes-K8S
-#+filetags: :k8s:
+#+title: Storage Volumes
+#+filetags: :storage:k8s:
 
-* Resources
+* Ephemeral Volumes
 - https://kubernetes.io/docs/concepts/storage/ephemeral-volumes/

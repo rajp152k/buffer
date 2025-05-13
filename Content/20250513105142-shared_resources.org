@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c37896a6-da8b-4ceb-a660-803ce5843ce5
+:END:
+#+title: Shared Resources
+#+filetags: :infra:cs:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       82b55d76-6741-4c0e-9d66-5dafb7f4b339
+:END:
+#+title: Resource Policies
+#+filetags: :k8s:

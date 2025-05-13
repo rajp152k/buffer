@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       8162548b-d9d7-4e30-bd78-c1811936e6f9
+:END:
+#+title: Deployments
+#+filetags: :k8s:
+
+
+* Overview
+	+ Manage application rollout [[id:20231212T081907.908301][declaratively]]
+	+ Ensure desired state [[id:b591cca1-139c-4497-b146-eb71d4f40f41][maintenance]]
+          - Handle failures
+          - Mitigate disruptions
+          - Scoped, predefined [[id:778aa08b-4375-489c-a491-f75beb9247a7][controller]]
+	+ feature overview
+          - [[id:162c0fa5-bb57-4ae7-8900-1062cb655356][ReplicaSets]] management
+          - [[id:32f6fe50-8a39-45cf-a9e2-95a1bef05b59][Rollbacks]] and [[id:7cfff9c3-83d1-44ad-88d3-1a88188cc862][rollouts]]
+          - [[id:7cb8489b-2b84-4224-b3f9-9f5bf0f38cfe][Scaling]] and [[id:4d51162b-4875-4163-86c9-e73d2c545c1f][self-healing]]
+* Key Features
+  + Declarative Configuration
+    - Define desired application state in [[id:7cd81a80-dbc4-4c6e-860a-f05b14798e68][YAML]]/[[id:48581776-0ba5-4d88-ad38-25c0cb90595f][JSON]]
+    - Kubernetes [[id:778aa08b-4375-489c-a491-f75beb9247a7][ensures actual state matches desired state]]
+  + [[id:78b3c9bd-d2c4-44c8-b690-3e425f75ef08][Rolling Updates]]
+    - Gradual replacement of old replicas with new ones
+    - Minimizes downtime during updates
+  + [[id:32f6fe50-8a39-45cf-a9e2-95a1bef05b59][Rollback]]
+    - Reversion to previous application version
+    - Mitigates update failures
+  + [[id:7cb8489b-2b84-4224-b3f9-9f5bf0f38cfe][Scaling]]
+    - Adjust replica count based on demand fluctuations
+    - Supports [[id:804e9410-c341-4cae-acb4-5ac62a49f819][elasticity]] in application deployment
+
+* Best Practices
+** Use a consistent naming convention
+Use a consistent naming convention for your Deployments and other Kubernetes resources.
+** Use labels and selectors
+Use labels and selectors to manage and filter your Deployments and pods.
+** [[id:8f401b28-efb8-49e3-b1c6-02f101341669][Monitor]] and [[id:665e997a-5628-4481-902c-47af4ba30336][log]] your Deployments
+Monitor and log your Deployments to detect issues and improve debugging.
+
+* Resources
+ - https://kubernetes.io/docs/concepts/workloads/controllers/deployment/

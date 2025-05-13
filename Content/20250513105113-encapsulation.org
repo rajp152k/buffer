@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       eabe10e8-cd2d-4f2f-a21b-c3ab14feaa51
+:END:
+#+title: Encapsulation
+#+filetags: :plt:cs:

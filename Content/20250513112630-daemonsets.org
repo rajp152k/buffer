@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e94aa95b-691d-4511-9d5d-83a9efdb036a
+:END:
+#+title: DaemonSets
+#+filetags: :k8s:

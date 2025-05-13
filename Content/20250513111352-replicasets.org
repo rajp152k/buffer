@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       162c0fa5-bb57-4ae7-8900-1062cb655356
+:END:
+#+title: ReplicaSets
+#+filetags: :k8s:

@@ -1,0 +1,90 @@
+:PROPERTIES:
+:ID:       aeb0d87f-d3d3-4250-a2d0-96e343f2b8c1
+:END:
+#+title: Dependency Injection
+#+filetags: :eng:cs:
+
+* Dependency Injection (DI) Index
+  + Definition
+    - [[id:f5db6ddc-024e-4ed0-99f6-9e09ae19106f][Design pattern]]
+    - [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][Loose coupling]]
+    - Injection of dependencies
+  + Benefits
+    - Decoupling
+      - Easier modification
+      - Replacement of dependencies
+    - Testability
+      - [[id:bc1bbe68-bd60-4ca3-9c5c-8a6440c34c13][Isolation]]
+      - [[id:58d56f0b-c6a0-4d0d-b4f2-e0c5a8615b3a][Mock]] dependencies
+    - Reusability
+      - Components
+    - Flexibility
+      - Changing dependencies
+  + Types of DI
+    - Constructor Injection
+    - Setter Injection
+    - Interface Injection
+  + DI Frameworks
+    - Benefits
+    - Trade-offs
+  + Pitfalls
+    - Over-injection
+    - Tight coupling to framework
+  + Implementation
+    - Best practices
+    - Common patterns
+
+* Elaboration
+
+*** Definition
+- Design pattern that allows components to be [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][loosely coupled]], making it easier to [[id:17d78466-2fcc-47aa-af20-9b74d94c96bb][test]], [[id:b591cca1-139c-4497-b146-eb71d4f40f41][maintain]], and [[id:1a2e2496-c53f-4beb-b815-a7351fa291d8][extend]] the system.
+- Achieves loose coupling through the injection of dependencies, rather than having components create their own dependencies.
+
+*** Benefits
+- Decoupling:
+  + Easier modification of components without affecting other parts of the system.
+  + Replacement of dependencies with minimal impact on the system.
+- Testability:
+  + Isolation of components for unit testing.
+  + Use of [[id:58d56f0b-c6a0-4d0d-b4f2-e0c5a8615b3a][mock dependencies]] to simulate real-world scenarios.
+- Reusability:
+  + Components can be reused in different contexts with different dependencies.
+- Flexibility:
+  + Changing dependencies without modifying the component.
+
+*** Types of DI
+- Constructor Injection: Dependencies are injected through a component's constructor.
+- Setter Injection: Dependencies are injected through setter methods.
+- Interface Injection: Dependencies are injected through an interface that the component implements.
+
+*** DI Frameworks
+- Benefits:
+  + Simplify the process of implementing DI.
+  + Provide features such as dependency resolution and lifecycle management.
+- Trade-offs:
+  + Added complexity and overhead.
+  + Potential for tight coupling to the framework.
+
+*** Pitfalls
+- Over-injection: Injecting too many dependencies, making the component difficult to understand and maintain.
+- Tight coupling to framework: Over-reliance on the DI framework, making it difficult to switch to a different framework or implement DI manually.
+
+*** Implementation
+- Best practices:
+  + Keep the number of dependencies minimal.
+  + Use a consistent injection style throughout the system.
+- Common patterns:
+  + Use of factories and providers to manage dependencies.
+  + Use of scopes to manage the lifecycle of dependencies.
+
+** Connections
+
+The benefits of DI, such as decoupling and testability, are closely related to the definition of DI and the types of DI. The use of DI frameworks can simplify the implementation of DI, but also introduces potential pitfalls such as over-injection and tight coupling to the framework.
+
+** Cognitive Constructs
+
+- Systems thinking: DI can be seen as a way to manage the dependencies between components in a system, making it easier to understand and maintain the system as a whole.
+- Abstraction: DI abstracts away the details of how dependencies are created and managed, allowing components to focus on their core functionality.
+- Causality: The use of DI can have a causal impact on the testability and maintainability of a system, making it easier to identify and fix issues.
+
+Here is a simple ASCII diagram illustrating the concept of Dependency Injection:

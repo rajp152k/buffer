@@ -2,36 +2,24 @@
 :ID:       477c67c1-b742-4b54-886f-a06ad47f231f
 :END:
 #+title: Software Architecture
-#+filetags: :cs:
+#+filetags: :design:swarch:
 
-
-* Layers
-** Second Most Minimal Strat
-*** Presentation Layer
- - the front
- - mobile, web, desktop application ...
-*** Application Layer
- - Generic enablement of the software
- - neither business nor presentation
- - orchestrates the rest
-*** Business/Domain Layer
- - the control flows
- - the domain specific intellect
-*** Persistence/Data Access Layer
- - code necessary to access the database layer
- - SQL, ORMs
-*** Database Layer
- - Core CRUD ops here
- - could be a file server/database server
-** Most Minimal Strat
-*** Presentation
-*** Business
- - ++application from above
-*** Data
- - ++persistence from above
-** N-tier
- - usually synonyms for anything non-monolithic
-* Resources
- - https://www.syncloop.com/blogs/software-interactions-api.html
- - https://www.ibm.com/think/topics/three-tier-architecture
- - https://www.baeldung.com/cs/n-tier-architecture
+* Outline
+** How to Write Clean Code (General Guidelines)
+*** [[id:89c21be7-03da-4d89-9dea-ce89c226d169][Meaningful Names]]
+*** Small, Focused Functions/Classes
+*** [[id:eabe10e8-cd2d-4f2f-a21b-c3ab14feaa51][Encapsulation]]
+*** Code Structure and Readability
+*** [[id:47836349-cda7-49c2-95eb-85744f19d96f][Comments]]
+*** [[id:17d78466-2fcc-47aa-af20-9b74d94c96bb][Tests]]
+** [[id:3348ef4f-dba9-43ac-9d3c-ba44e14c7478][SOLID]] Design Principles
+** Misc Design Principles
+*** [[id:374ec732-6132-4b1e-909f-a13952fb2304][DRY]] (Don't Repeat Yourself)
+*** [[id:3192373e-dd7d-413f-8ca4-da163bda22c0][KISS]] (Keep It Simple, Stupid)
+*** [[id:20240218T061653.528745][Abstraction]] (Hide Implementation Details)
+*** [[id:1a2e2496-c53f-4beb-b815-a7351fa291d8][Extensibility]]
+*** [[id:4d05e7ae-8d1d-49cc-a404-d1d437f7fbe3][Separation of Concerns]]
+*** Curly's Law ([[id:29193aae-9acf-4943-901f-38110fb9b2fd][Single Responsibility for Modules]])
+*** [[id:b190651e-660b-4e8e-8234-1a9dee44dff9][YAGNI]] (You Aren't Gonna Need It) & Avoid [[id:01da20e9-4257-4d7e-8ed2-79540781c4ef][Preoptimization]]
+*** [[id:30ed4743-c2d5-422e-b021-9fe624267ee0][Principle of Least Astonishment]]
+*** [[id:ab58c433-a024-4bb6-a418-2061923cc380][Boy-Scout Rule]] (Leave Code Better)

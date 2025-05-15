@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ab58c433-a024-4bb6-a418-2061923cc380
+:ROAM_ALIASES: "Leave Code Better"
+:END:
+#+title: Boy-Scout Rule
+#+filetags: :design:swarch:

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       374ec732-6132-4b1e-909f-a13952fb2304
+:ROAM_ALIASES: DRY
+:END:
+#+title: Don't Repeat Yourself
+#+filetags: :design:swarch:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       30ed4743-c2d5-422e-b021-9fe624267ee0
+:END:
+#+title: Principle of Least Astonishment
+#+filetags: :swarch:design:

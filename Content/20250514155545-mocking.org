@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       58d56f0b-c6a0-4d0d-b4f2-e0c5a8615b3a
+:END:
+#+title: Mocking
+#+filetags: :tool:eng:cs:

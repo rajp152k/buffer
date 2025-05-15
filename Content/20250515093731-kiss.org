@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3192373e-dd7d-413f-8ca4-da163bda22c0
+:ROAM_ALIASES: "Keep it simple, stupid"
+:END:
+#+title: KISS
+#+filetags: :design:swarch:

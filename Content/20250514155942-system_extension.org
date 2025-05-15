@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1a2e2496-c53f-4beb-b815-a7351fa291d8
+:ROAM_ALIASES: Extensibility
+:END:
+#+title: System Extension
+#+filetags: :swarch:sys:meta:

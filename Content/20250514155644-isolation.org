@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bc1bbe68-bd60-4ca3-9c5c-8a6440c34c13
+:END:
+#+title: Isolation
+#+filetags: :meta:cs:

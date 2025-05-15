@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       89c21be7-03da-4d89-9dea-ce89c226d169
+:END:
+#+title: Meaningful Names
+#+filetags: :sys:design:

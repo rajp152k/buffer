@@ -30,7 +30,7 @@ This document outlines the roles and responsibilities for our pair-studying work
 
 * Modes of Operation
 
-We will operate in distinct modes depending on the current goal, shifting focus between acquiring new knowledge and applying existing knowledge.
+We will operate in distinct modes depending on the current goal, shifting focus between acquiring new knowledge and applying existing knowledge. The process for selecting which topic or problem to focus on will be determined by Raj, potentially guided by identified knowledge gaps or project needs.
 
 **Exploration Mode**
 - **Goal:** To acquire new knowledge, understand novel concepts, and document them within the graph.
@@ -40,7 +40,7 @@ We will operate in distinct modes depending on the current goal, shifting focus 
 **Exploitation Mode**
 - **Goal:** To leverage existing knowledge within the graph to solve problems, generate insights, or apply concepts to new contexts.
 - **Aider's Focus:** Recalling and summarizing relevant documented knowledge, suggesting connections based on existing notes, providing examples of application.
-- **Raj's Focus:** Formulating specific problems or contexts, querying the graph for relevant information, analyzing connections to find solutions or insights, refining existing notes based on application experience, identifying gaps in knowledge.
+-   **Raj's Focus:** Formulating specific problems or contexts, querying the graph for relevant information, analyzing connections to find solutions or insights, refining existing notes based on application experience, identifying gaps in knowledge.
 
 * Knowledge Collaboration DSL Specification
 
@@ -59,6 +59,32 @@ This section defines the natural language terms and patterns we will use to comm
 -   **Content:** Refers to the text and structure within a note (headings, paragraphs, lists, code blocks, etc.).
     -   *Example Usage:* "Expand on the section '[Heading Name]' in the '[Note Title]' note." "Refine the explanation of [Concept] in this note."
 
+**Meta-Domain Tooling and Frameworks:**
+
+We will use specific terminology and request patterns when incorporating or discussing knowledge using these tools and frameworks.
+
+-   **Mermaid Diagram:** Used for generating diagrams (flowcharts, sequence diagrams, etc.) from text.
+    -   *Usage:* We can request Aider to "Draft a Mermaid diagram showing [process/structure]" or "Interpret this Mermaid diagram: [code block]". Raj can request diagrams to visualize relationships or processes documented in notes.
+-   **PlantUML Diagram:** Used for generating diagrams (UML, network, etc.) from text.
+    -   *Usage:* Similar to Mermaid, used for more complex or specific diagram types. "Draft a PlantUML diagram for [system/relationship]" or "Add this PlantUML diagram to the note: [code block]".
+-   **Systems Thinking (e.g., DSRP):** Frameworks for analyzing systems by identifying Distinctions, Systems, Relationships, and Perspectives.
+    -   *Usage:* We can explicitly refer to applying these concepts. "Let's analyze [Topic] using the DSRP framework." "Identify the key distinctions in [Concept]." "Map the relationships between [elements]." "Consider the different perspectives on [issue]." Aider can help identify elements for DSRP analysis, and Raj can guide the application of the framework.
+-   **Piece Terminology:** Refers to specific vocabulary or jargon within a particular domain of knowledge being documented.
+    -   *Usage:* When discussing a specific field, we will use its standard terminology. Aider should use correct terminology when providing information, and Raj should ensure consistency and define terms where necessary within the notes.
+
+**Generating Concept and Discussion DSLs:**
+
+Beyond the general DSL for collaboration, we may define specific, lightweight DSLs within individual notes or discussions to structure information or arguments about a particular concept or problem.
+
+-   **Purpose:** To provide a clear, consistent structure for capturing specific types of information or relationships relevant to a narrow topic or ongoing discussion. This helps in parsing, querying, and understanding the nuances of a concept.
+-   **Process:**
+    -   Raj identifies the need for a specific structure or pattern of communication for a concept or discussion.
+    -   Raj proposes the elements and syntax for the mini-DSL (e.g., using specific Org mode properties, list structures, or keywords).
+    -   Aider can assist in refining the proposed DSL, suggesting alternative structures, or explaining how it might be implemented in Org mode.
+    -   Once defined, the mini-DSL is documented within the relevant note or a linked guideline note.
+    -   Both Raj and Aider will adhere to this mini-DSL when adding content related to that specific concept or discussion.
+-   *Example Usage:* For a note on "Problem Solving Frameworks," we might define a mini-DSL using properties like `:Problem:` `:Solution:` `:Constraints:` `:Evaluation:`. When discussing a specific problem, we would use these properties consistently.
+
 **Standard Communication Patterns/Requests:**
 
 -   **Initiating Exploration:** "Let's explore [New Topic]." "Explain the concept of [Concept Name]."
@@ -69,6 +95,8 @@ This section defines the natural language terms and patterns we will use to comm
 -   **Tagging:** "Tag '[Note Title]' with :[tag1]: and :[tag2]:." "What tags would be appropriate for this note?"
 -   **Querying (Raj's primary tool, but Aider can assist):** "Summarize the key points from notes tagged :[tag_name]:." "List notes linked to '[Specific Note]'."
 -   **External Resource Integration:** See the protocol below.
+-   **Applying Meta-Tools:** "Draft a Mermaid diagram for [process]." "Analyze [topic] using DSRP." "Define the key piece terminology for [domain]."
+-   **Defining Concept DSL:** "Let's define a mini-DSL for discussing [Concept/Problem]." "Propose a structure for capturing [type of information] in this note."
 -   **Review/Verification (Raj's primary tool):** "Review the draft for '[Note Title]' for accuracy and style."
 
 * External Resource Integration Protocol
@@ -86,19 +114,20 @@ This protocol describes the steps for incorporating information from external UR
 3.  **Aider Drafts:** Based on the proposed strategy, Aider will draft the initial Org mode content.
     -   This draft will include the extracted information, formatted according to our Documentation Style.
     -   A link to the original external URL will always be included in the note (e.g., `[[URL][Source]]`).
-4.  **Raj Reviews and Refines:** Raj reviews the drafted content provided by Aider.
+    -   *Note:* We will use `org-citar` and Zotero for managing and citing references from external resources where appropriate.
+4.  **Raj Reviews and Refines:** Raj reviews the drafted content provided by Aider. A clear process for Raj to provide specific feedback and for Aider to incorporate it will be followed.
     -   Raj verifies the accuracy and relevance of the extracted information.
     -   Raj refines the text for clarity, conciseness, and integration with existing knowledge.
     -   Raj adds internal links (`[[roam:ID]]`) to connect the new content to other relevant notes in the graph.
     -   Raj adds appropriate tags (`:tag:`) to the note or section.
-    -   Raj finalizes the placement and structure of the content within the graph.
+    -   Raj finalized the placement and structure of the content within the graph.
 
 * Documentation Style
 
 This section defines the preferred style for documenting knowledge within the org-roam graph to ensure consistency and readability.
 
 - Use clear and concise language.
-- Structure notes logically using Org mode headings and lists.
+- Structure notes logically using Org mode headings and lists. Consider the appropriate granularity for notes – should a concept be a single note or broken into smaller, linked notes?
 - Employ Org mode formatting (bold, italics, code blocks) where appropriate.
 - Ensure links (`[[link]]`) are used to connect related notes.
 - Use tags (`:tag:`) consistently for categorization and filtering.
@@ -109,10 +138,11 @@ This section defines the preferred style for documenting knowledge within the or
 
 This section outlines principles and practices to ensure effective and safe collaboration and knowledge building.
 
-- **Focus:** Stay focused on the defined scope of building the knowledge graph and exploring its application.
-- **Verification:** Raj is responsible for verifying the accuracy of information provided by Aider, especially for critical knowledge.
-- **Clarity:** Raj should provide clear and specific requests to Aider. Aider should ask for clarification if a request is ambiguous.
-- **Iteration:** Knowledge building is iterative. We will refine notes and connections over time.
-- **Ethical Considerations:** Avoid documenting or discussing sensitive, private, or harmful information.
-- **Tooling:** Leverage Org mode and org-roam features effectively for linking, tagging, and querying.
-- **Version Control:** Commit changes frequently with clear commit messages.
+-   **Focus:** Stay focused on the defined scope of building the knowledge graph and exploring its application.
+-   **Verification:** Raj is responsible for verifying the accuracy of information provided by Aider, especially for critical knowledge.
+-   **Clarity:** Raj should provide clear and specific requests to Aider. Aider should ask for clarification if a request is ambiguous.
+-   **Iteration:** Knowledge building is iterative. We will refine notes and connections over time. We will also establish methods for handling and documenting ambiguous, uncertain, or contested information (e.g., specific tags or properties).
+-   **Ethical Considerations:** Avoid documenting or discussing sensitive, private, or harmful information.
+-   **Tooling:** Leverage Org mode and org-roam features effectively for linking, tagging, and querying.
+-   **Version Control:** Commit changes frequently with clear commit messages.
+-   **Learning and Adaptation:** The guidelines themselves are living documents. We will periodically review and adapt these guidelines based on our collaborative experience to improve the process.

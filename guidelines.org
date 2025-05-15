@@ -1,0 +1,118 @@
+#+title: Curation Guidelines
+
+* Roles and Responsibilities
+
+This document outlines the roles and responsibilities for our pair-studying workflow aimed at building and leveraging an org-roam knowledge graph.
+
+**Aider (AI Assistant)**
+- **Primary Responsibility:** Providing and documenting "lower level hard knowledge, wisdom, and documentation".
+- **Specific Tasks:**
+    - Fetching and presenting factual information on requested topics.
+    - Explaining concepts clearly and concisely.
+    - Drafting initial documentation in org-mode format based on the information.
+    - Suggesting relevant details or information points for inclusion.
+    - Ensuring the accuracy and clarity of the documented knowledge.
+
+**Raj (Human Curator)**
+- **Primary Responsibility:** Analyzing, connecting, and leveraging the knowledge from an epistemological perspective.
+- **Specific Tasks:**
+    - Analyzing connections between different pieces of knowledge.
+    - Identifying how knowledge can be applied to current contexts and leveraged.
+    - Adding links (`[[link]]`) between relevant notes.
+    - Assigning appropriate tags (`:tag:`) to notes.
+    - Reviewing and refining the documented knowledge for structure and clarity.
+    - Identifying novel problems and how to assimilate new information better.
+
+**Shared Responsibilities**
+- Both participants will contribute to tasks primarily assigned to the other role as needed.
+- All knowledge and guidelines will be documented in org-mode files.
+- All changes will be version controlled using Git.
+
+* Modes of Operation
+
+We will operate in distinct modes depending on the current goal, shifting focus between acquiring new knowledge and applying existing knowledge.
+
+**Exploration Mode**
+- **Goal:** To acquire new knowledge, understand novel concepts, and document them within the graph.
+- **Aider's Focus:** Providing detailed explanations, definitions, historical context, and foundational principles related to the topic. Drafting initial notes.
+- **Raj's Focus:** Asking clarifying questions, identifying key concepts, structuring the new notes, adding initial links and tags to place the new knowledge within the existing graph.
+
+**Exploitation Mode**
+- **Goal:** To leverage existing knowledge within the graph to solve problems, generate insights, or apply concepts to new contexts.
+- **Aider's Focus:** Recalling and summarizing relevant documented knowledge, suggesting connections based on existing notes, providing examples of application.
+- **Raj's Focus:** Formulating specific problems or contexts, querying the graph for relevant information, analyzing connections to find solutions or insights, refining existing notes based on application experience, identifying gaps in knowledge.
+
+* Knowledge Collaboration DSL Specification
+
+This section defines the natural language terms and patterns we will use to communicate about building and interacting with the knowledge graph. This serves as our domain-specific language for collaboration.
+
+**Core Components:**
+
+-   **Note/Concept:** Refers to an individual piece of knowledge, typically corresponding to an org-roam file or a significant heading within a file. We will refer to these primarily by their title or filename.
+    -   *Example Usage:* "Let's create a note about [Topic Name]." "Referencing the note '[Existing Note Title]'..."
+-   **Link/Connection:** Refers to the relationship between two notes, typically represented by an org-roam link (`[[roam:ID]]`) or a standard Org mode link (`[[file:filename][Description]]`).
+    -   *Example Usage:* "Create a link from the '[Source Note]' to the '[Target Note]'." "Identify potential connections between [Concept A] and [Concept B]."
+-   **Tag:** Refers to an Org mode tag (`:tag_name:`) used for categorization and filtering notes.
+    -   *Example Usage:* "Add the tag :[tag_name]: to the '[Note Title]' note." "Find notes with the tag :[tag_name]:."
+-   **Property:** Refers to Org mode properties (`:PROPERTY: value`) used to store metadata about a note.
+    -   *Example Usage:* "Set the property :[PROPERTY_NAME]: with value '[value]' on the '[Note Title]' note."
+-   **Content:** Refers to the text and structure within a note (headings, paragraphs, lists, code blocks, etc.).
+    -   *Example Usage:* "Expand on the section '[Heading Name]' in the '[Note Title]' note." "Refine the explanation of [Concept] in this note."
+
+**Standard Communication Patterns/Requests:**
+
+-   **Initiating Exploration:** "Let's explore [New Topic]." "Explain the concept of [Concept Name]."
+-   **Initiating Exploitation:** "How can we apply [Concept] to [Problem/Context]?" "Find connections between [Note A] and [Note B] regarding [Specific Aspect]."
+-   **Note Creation:** "Create a new note titled '[Note Title]' about [Brief Description]."
+-   **Content Addition/Refinement:** "Add the following information to the '[Note Title]' note: [Information]." "Improve the clarity of the [Section Name] section in '[Note Title]'."
+-   **Linking:** "Link '[Note A]' to '[Note B]' because [Reason]." "Suggest notes that could be linked to '[Current Note]'."
+-   **Tagging:** "Tag '[Note Title]' with :[tag1]: and :[tag2]:." "What tags would be appropriate for this note?"
+-   **Querying (Raj's primary tool, but Aider can assist):** "Summarize the key points from notes tagged :[tag_name]:." "List notes linked to '[Specific Note]'."
+-   **External Resource Integration:** See the protocol below.
+-   **Review/Verification (Raj's primary tool):** "Review the draft for '[Note Title]' for accuracy and style."
+
+* External Resource Integration Protocol
+
+This protocol describes the steps for incorporating information from external URLs (websites, articles, etc.) into the knowledge graph.
+
+1.  **Raj Initiates:** Raj provides a URL and specifies the primary topic or purpose for integrating the resource.
+    -   *Example Request:* "Please integrate information from this URL: [URL] about [Topic]." or "Summarize the key arguments from [URL] and add them to the '[Related Note Title]' note."
+2.  **Aider Processes:** Aider will attempt to access and process the content of the provided URL.
+    -   Aider will extract key information relevant to the specified topic or purpose (e.g., main points, definitions, examples, arguments).
+    -   Aider will propose an integration strategy:
+        -   Create a new note summarizing the resource.
+        -   Add the information as a section or points within an existing relevant note.
+        -   Suggest relevant existing notes to link to.
+3.  **Aider Drafts:** Based on the proposed strategy, Aider will draft the initial Org mode content.
+    -   This draft will include the extracted information, formatted according to our Documentation Style.
+    -   A link to the original external URL will always be included in the note (e.g., `[[URL][Source]]`).
+4.  **Raj Reviews and Refines:** Raj reviews the drafted content provided by Aider.
+    -   Raj verifies the accuracy and relevance of the extracted information.
+    -   Raj refines the text for clarity, conciseness, and integration with existing knowledge.
+    -   Raj adds internal links (`[[roam:ID]]`) to connect the new content to other relevant notes in the graph.
+    -   Raj adds appropriate tags (`:tag:`) to the note or section.
+    -   Raj finalizes the placement and structure of the content within the graph.
+
+* Documentation Style
+
+This section defines the preferred style for documenting knowledge within the org-roam graph to ensure consistency and readability.
+
+- Use clear and concise language.
+- Structure notes logically using Org mode headings and lists.
+- Employ Org mode formatting (bold, italics, code blocks) where appropriate.
+- Ensure links (`[[link]]`) are used to connect related notes.
+- Use tags (`:tag:`) consistently for categorization and filtering.
+- Include source information or references where applicable.
+- Keep paragraphs relatively short.
+
+* Guardrails and Optimal Usage
+
+This section outlines principles and practices to ensure effective and safe collaboration and knowledge building.
+
+- **Focus:** Stay focused on the defined scope of building the knowledge graph and exploring its application.
+- **Verification:** Raj is responsible for verifying the accuracy of information provided by Aider, especially for critical knowledge.
+- **Clarity:** Raj should provide clear and specific requests to Aider. Aider should ask for clarification if a request is ambiguous.
+- **Iteration:** Knowledge building is iterative. We will refine notes and connections over time.
+- **Ethical Considerations:** Avoid documenting or discussing sensitive, private, or harmful information.
+- **Tooling:** Leverage Org mode and org-roam features effectively for linking, tagging, and querying.
+- **Version Control:** Commit changes frequently with clear commit messages.

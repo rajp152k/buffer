@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       507d9789-e0fe-4c9d-ad61-fceed2816a5c
+:END:
+#+title: Stakeholder
+#+filetags: :sys:meta:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       9df22b18-ec04-4477-acdf-6bc7364da926
+:END:
+#+title: Architectural Pattern
+#+filetags: :sys:meta:

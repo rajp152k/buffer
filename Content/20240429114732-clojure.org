@@ -4,3 +4,8 @@
 #+title: Clojure
 #+filetags: :clojure:lisp:
 
+* Resouces
+ - https://clojure.org/
+ - https://clojurepatterns.com/
+ - https://github.com/razum2um/awesome-clojure
+ - https://gist.github.com/ssrihari/0bf159afb781eef7cc552a1a0b17786f

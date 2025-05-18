@@ -19,4 +19,3 @@ The fundamental components of software architecture are the building blocks and 
 **  Design Decisions: Choices made about the structure, organization, and properties of the system.
 **  [[id:48a09714-f857-4d35-a138-e28e8d13f5a4][Constraints]]: Limitations or restrictions that influence design decisions .
 **  [[id:507d9789-e0fe-4c9d-ad61-fceed2816a5c][Stakeholders]]: Individuals or groups with an interest in the software system (e.g., users, developers, project managers, clients, operations teams). Their concerns significantly shape the architecture.
-

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       3b428137-b6c1-4018-8eb0-6cd23deed78c
+:ROAM_ALIASES: "Java Virtual Machine"
+:END:
+#+title: JVM
+#+filetags: :clojure:java:

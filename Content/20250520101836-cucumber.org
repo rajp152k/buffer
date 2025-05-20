@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       ffb6c1cc-3d15-4784-bd30-4c1c45ef6347
+:END:
+#+title: Cucumber
+#+filetags: :swe:
+
+* Resources
+ - https://cucumber.io/

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       820c7584-ef79-479a-b02e-dd7aa57d8a12
+:END:
+#+title: Gherkin
+#+filetags: :swe:
+
+* Relevant Nodes
+** [[id:b1a330a3-45e6-49f3-adbd-2898dab8cb45][BDD]]
+* Resources
+ - https://cucumber.io/docs/gherkin/reference/

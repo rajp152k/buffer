@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b1a330a3-45e6-49f3-adbd-2898dab8cb45
+:ROAM_ALIASES: "Behaviour Driven Development"
+:END:
+#+title: BDD
+#+filetags: :swe:

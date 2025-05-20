@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a09de1c3-7c7b-46f1-860f-91ce376c2c67
+:ROAM_ALIASES: "Test Driven Development"
+:END:
+#+title: TDD
+#+filetags: :swe:

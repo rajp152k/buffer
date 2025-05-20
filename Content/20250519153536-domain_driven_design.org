@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e30fae04-0172-40a8-b8b9-bd40b4f6388a
+:END:
+#+title: Domain Driven Design
+#+filetags: :swarch:swe:

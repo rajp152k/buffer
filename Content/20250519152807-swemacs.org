@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       cf0282ff-96c7-4577-b504-53bdf1ceee7d
+:END:
+#+title: SWEMacs.el
+#+filetags: :emacs:project:
+
+* Abstract
+ - helpful utilities for executing software engineering projects in emacs
+* Some Top Level Abstractions
+** [[id:a09de1c3-7c7b-46f1-860f-91ce376c2c67][TDD]]
+** [[id:b1a330a3-45e6-49f3-adbd-2898dab8cb45][BDD]]
+** [[id:e30fae04-0172-40a8-b8b9-bd40b4f6388a][Domain Driven Design]]
+* Relevant Abstractions
+** [[id:afe1ea0a-a6c5-4f54-8be6-d1a718deef89][State Machines]]

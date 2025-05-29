@@ -2,4 +2,23 @@
 :ID:       58d56f0b-c6a0-4d0d-b4f2-e0c5a8615b3a
 :END:
 #+title: Mocking
-#+filetags: :tool:eng:cs:
+#+filetags: :swe:
+
+
+* Overview
+** Definition : [[id:bc1bbe68-bd60-4ca3-9c5c-8a6440c34c13][Isolation]] Technique, [[id:0d5a15de-6a94-474c-948b-bc22341f8da1][Unit Testing]], Test Double
+*** Purpose - Decouple dependencies, Enable isolation, Facilitate testing
+
+** Types of Mocks
+*** Dummy Object - Minimal implementation, No behavior
+*** Stub - Predefined behavior, Return values
+*** Spy - Track interactions, Verify calls
+*** Mock - Dynamic behavior, Expectation-based
+** Dependency Injection - Loose Coupling, Testability
+*** Constructor Injection, Setter Injection
+** Mocking Frameworks
+*** Mockito, Jest, Pytest
+** Keep Mocks Simple - Avoid complexity, Focus on behavior
+*** Use Mocks Sparingly, Verify interactions
+** Over-Mocking - Tight Coupling, Fragile Tests
+*** Under-Mocking - Insufficient isolation

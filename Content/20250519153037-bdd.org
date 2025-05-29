@@ -5,10 +5,11 @@
 #+title: BDD
 #+filetags: :swe:
 
-* Intermediates
-** Discover
-** Formulation
-** Automation
+
+* Overview
+** Behavior-Driven Development : [[id:a09de1c3-7c7b-46f1-860f-91ce376c2c67][Test-Driven Development]], [[id:e30fae04-0172-40a8-b8b9-bd40b4f6388a][Domain-Driven Design]]
+*** TDD : [[id:0d5a15de-6a94-474c-948b-bc22341f8da1][Unit Testing]], [[id:ce9b1ac9-c1ec-42bf-a954-aad4c118d633][Refactoring]], [[id:d16357db-fc8a-4b9a-a0b1-0c613d66d6aa][Continuous Integration]]
+*** DDD : Ubiquitous Language, Bounded Context, Entities, Value Objects
 * Tooling
 ** [[id:ffb6c1cc-3d15-4784-bd30-4c1c45ef6347][Cucumber]]
 * Resources

@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       665e997a-5628-4481-902c-47af4ba30336
+:ROAM_ALIASES: Logging
 :END:
 #+title: Logs
-#+filetags: :data:
+#+filetags: :swe:data:
 
 * Abstract
 - track how the state of an entity changes over time

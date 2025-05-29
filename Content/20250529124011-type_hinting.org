@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       3e13493b-f115-40f6-8592-3507d4e5f9aa
+:END:
+#+title: Type Hinting
+#+filetags: :swe:

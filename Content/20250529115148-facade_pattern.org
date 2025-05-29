@@ -3,3 +3,31 @@
 :END:
 #+title: Facade Pattern
 #+filetags: :swarch:swe:
+
+
+* Overview
+** Structural Design Pattern : Facade provides unified [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][interface]] to complex subsystem
+*** Simplifies client-subsystem interaction : [[id:20240218T061653.528745][hides subsystem complexity]]
+*** Promotes [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][loose coupling]] : clients interact with facade, not subsystem components
+
+** Facade Pattern Structure
+*** Facade : provides unified interface to subsystem
+*** Subsystem : complex components interacting with each other
+
+** Benefits and Use Cases
+*** Improves readability : simplifies client code
+*** Enhances maintainability : changes to subsystem don't affect clients
+*** Useful for legacy system integration : wraps existing subsystem
+
+** Implementation Considerations
+*** Facade doesn't control subsystem : only provides interface
+*** Subsystem can have multiple facades : different interfaces for different clients
+* vs [[id:e62ff0e4-34a6-499e-b9cc-00682ca68fca][Adapter]]
+*** Facade : provides unified interface to subsystem
+*** Adapter : converts interface of existing class to match client
+** Similarities
+*** Both provide abstraction : hide complexity
+*** Both improve interoperability : facilitate interaction between components
+** Use Case Distinctions
+*** Facade : new subsystem with unified interface
+*** Adapter : existing class with incompatible interface

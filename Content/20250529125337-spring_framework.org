@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       c5b5e545-1674-4fbe-8326-fc06f8af1ed8
+:END:
+#+title: Spring Framework
+#+filetags: :java:

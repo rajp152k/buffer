@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8a480500-21fc-4da7-a677-88b071f024b5
+:END:
+#+title: Dagger
+#+filetags: :java:android:

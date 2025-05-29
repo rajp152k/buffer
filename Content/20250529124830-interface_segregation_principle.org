@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4160f4dd-443b-4c41-8bc0-5d966bed8092
+:END:
+#+title: Interface Segregation Principle
+#+filetags: :swarch:swe:

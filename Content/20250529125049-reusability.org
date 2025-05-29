@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       e7e8df63-f06f-4b34-bd38-29f30d4ce01b
+:END:
+#+title: Reusability
+#+filetags: :swe:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8763d3c3-93bd-4c25-81fd-c1e7a6d22d68
+:END:
+#+title: Dependency Inversion Principle
+#+filetags: :swarch:swe:

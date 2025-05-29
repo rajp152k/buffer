@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0db4219a-d38d-407b-aff0-55a1515fe974
+:END:
+#+title: Guice
+#+filetags: :java:

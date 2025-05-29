@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       7318f91c-0b46-4bc2-9fa1-48141d2d06bd
+:ROAM_ALIASES: DTO
+:END:
+#+title: Data Transfer Object
+#+filetags: :swarch:design:
+
+
+* Overview
+
+- DTO is a design pattern used to transfer [[id:d45dae92-5148-4220-b8dd-e4da80674053][data]] between layers or tiers of an application.
+- It [[id:eabe10e8-cd2d-4f2f-a21b-c3ab14feaa51][encapsulates]] data and can be used to reduce the number of calls to a remote [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][interface]].
+- DTOs are often used in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]] or when working with external [[id:20240101T073142.439145][APIs]].
+
+** Key Characteristics of DTOs
+
+I. Definition of DTOs
+  A. Characteristics
+    1. Simple objects
+    2. No business logic
+  B. Purpose
+    1. Data exchange
+      a. Intra-system : [[id:54978664-78a5-4c2c-ae33-c4e6a14d6bb0][Microservices]]
+      b. Inter-system : [[id:20240101T073142.439145][API]]
+    2. Data abstraction
+      a. Internal representation
+      b. External representation
+
+** Connections Among DTOs and Other Components
+
+A. System Components
+   1. [[id:2373713b-0780-4f22-a855-d0e0cc094512][Business Logic]]
+      a. Decoupling data representation
+      b. Data transfer to/from business logic layers
+   2. [[id:65af292f-3ebd-426b-a106-c80ba49114e5][Data Access Layer]]
+      a. Data mapping from database
+      b. Format transformation for data transfer
+   3. External APIs
+      a. Standardized data exchange structure
+      b. API data [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][serialization]]/deserialization
+
+** Simple Representation of DTO Flow
+
+#+begin_src
+          +---------------+
+          |  Business     |
+          |  Logic Layer  |
+          +---------------+
+                  ^
+                  |  (Data Transfer)
+                  v
+          +---------------+
+          |  Data Transfer|
+          |  Object (DTO) |
+          +---------------+
+                  ^
+                  |  (Data Exchange)
+                  v
+          +---------------+
+          | External API  |
+          | or Other Layer|
+          +---------------+
+#+end_src
+

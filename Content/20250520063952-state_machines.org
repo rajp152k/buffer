@@ -2,3 +2,48 @@
 :ID:       0e462f40-9cab-483d-9523-a17f0692a6f9
 :END:
 #+title: State Machines
+#+filetags: :math:
+
+* Overview
+
+** State Machines Overview
+
+*** Key Components
+- States: distinct statuses or situations in a system
+- Transitions: changes from one state to another
+- Events: triggers that cause transitions
+- Initial State: the starting state of the system
+- Final State(s): the ending state(s) of the system
+
+*** Connections
+The components of a state machine are interconnected:
+- States are connected through transitions.
+- Events trigger transitions between states.
+- The initial state is the starting point, and final states are the endpoints.
+
+*** Clarifying Questions
+To further understand the context, consider the following questions:
+- What type of system is being modeled by the state machine?
+- Are there any specific events or transitions that need to be highlighted?
+
+*** Research Pathways
+Exploring state machines further could involve:
+- Investigating applications of state machines in different domains (e.g., software development, control systems, or modeling complex behaviors).
+- Examining various types of state machines (e.g., deterministic vs. non-deterministic, Mealy vs. Moore machines).
+
+** Simple State Machine Example
+
+Consider a basic turnstile state machine:
+
+| Current State | Event      | Next State | Description          |
+|---------------|------------|------------|----------------------|
+| Locked        | Coin       | Unlocked   | Unlocks on coin      |
+| Unlocked      | Push       | Locked     | Locks on push        |
+| Locked        | Push       | Locked     | Remains locked       |
+| Unlocked      | Coin       | Unlocked   | Remains unlocked     |
+
+This table illustrates the states (Locked, Unlocked), events (Coin, Push), and transitions between them.
+
+To further explore state machines, we could ask:
+- How can state machines be used to model more complex systems?
+- What are the advantages and limitations of using state machines for system design?

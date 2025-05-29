@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       e62ff0e4-34a6-499e-b9cc-00682ca68fca
+:END:
+#+title: Adapter Pattern
+#+filetags: :swe:swarch:
+
+
+* Adapter Pattern
+** Definition
+*** Structural design pattern
+*** Enables [[id:b79f4afe-38af-4ed1-a0d7-0d8081492925][incompatible]] interface objects to collaborate
+** Functionality
+*** [[id:11d303f1-d337-4f51-b211-db435a9f2cd0][Interface]] conversion
+*** Intermediary between classes

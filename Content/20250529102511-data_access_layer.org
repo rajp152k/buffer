@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       65af292f-3ebd-426b-a106-c80ba49114e5
+:END:
+#+title: Data Access Layer
+#+filetags: :swarch:

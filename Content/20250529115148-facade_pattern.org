@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1a49bf67-e86f-4aee-bd4f-21d0da0b3c64
+:END:
+#+title: Facade Pattern
+#+filetags: :swarch:swe:

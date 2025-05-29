@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ee1d125e-b858-4694-8255-80df361088ce
+:END:
+#+title: Unit of Work
+#+filetags: :swe:

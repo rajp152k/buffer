@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       8cb9f639-98dc-467b-9304-213dec74d16c
+:END:
+#+title: Data Mapping
+#+filetags: :database:data:swe:

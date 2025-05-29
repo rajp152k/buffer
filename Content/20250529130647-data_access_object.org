@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       0ee45830-1130-47f5-bd2c-92ed50535ba9
+:END:
+#+title: Data Access Object
+#+filetags: :swe:

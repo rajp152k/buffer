@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       bb2db2d4-1429-4ae8-aa86-727126b5162c
+:END:
+#+title: try-except blocks
+#+filetags: :swe:debug:

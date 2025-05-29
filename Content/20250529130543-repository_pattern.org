@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       f0935284-93f6-4f89-befe-3b3cc09322e7
+:END:
+#+title: Repository Pattern
+#+filetags: :swe:
+
+
+* Definition : [[id:0ee45830-1130-47f5-bd2c-92ed50535ba9][Data Access Object]] (DAO) abstraction, decoupling business logic from data storage
+** Key Components - Repository interface, Concrete Repository implementation, Data Mapping, and [[id:ee1d125e-b858-4694-8255-80df361088ce][Unit of Work]]
+** Primary Goals - [[id:4d05e7ae-8d1d-49cc-a404-d1d437f7fbe3][Separation of Concerns]] (SoC), [[id:29193aae-9acf-4943-901f-38110fb9b2fd][Single Responsibility Principle]] (SRP), [[id:a606fb1a-1c11-4f3e-88b1-63fed57b772a][Testability]]
+
+* Benefits
+** Improved Maintainability - [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][reduced coupling]], easier modification of data access logic
+** Enhanced Testability - mocking repository interfaces for unit testing
+** Increased Flexibility - switching between different data storage technologies
+
+* Implementation
+** Repository Interface - defines data access methods, e.g., [[id:37961b23-d768-4a4a-bba6-0bd1199478b6][CRUD]] operations
+** Concrete Repository - implements repository interface, interacts with data storage
+** [[id:8cb9f639-98dc-467b-9304-213dec74d16c][Data Mapping]] - mapping between business objects and data storage entities
+
+* Variations
+** Generic Repository - reusable implementation for common data access operations
+** Typed Repository - specialized implementation for specific business objects

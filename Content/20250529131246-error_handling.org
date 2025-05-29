@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       9ce54236-bc52-43d2-9a9b-f319e2045ea5
+:END:
+#+title: Error Handling
+#+filetags: :debug:swe:
+
+
+* Types of Errors : anticipated vs unanticipated [[id:34df7d47-1f78-4acf-8dd7-9c03e04e4a9d][exceptions]], syntax vs runtime errors
+** anticipated exceptions - [[id:bb2db2d4-1429-4ae8-aa86-727126b5162c][try-except blocks]], [[id:26524966-a5b7-4f76-96ca-fff63a204835][error types]]
+** unanticipated exceptions - crash dumps, post-mortem analysis
+
+* Error Handling Strategies : fail-fast, fail-safe, degrade-gracefully
+** fail-fast - immediate termination, debugging ease
+** fail-safe - default values, continued execution
+
+* Best Practices : logging, testing, code reviews
+** [[id:665e997a-5628-4481-902c-47af4ba30336][logging]] - verbosity levels, log rotation
+** [[id:17d78466-2fcc-47aa-af20-9b74d94c96bb][testing]] - unit tests, integration tests, test-driven development

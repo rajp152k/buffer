@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       26524966-a5b7-4f76-96ca-fff63a204835
+:END:
+#+title: Error Types
+#+filetags: :debug:swe:

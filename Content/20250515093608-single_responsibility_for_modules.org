@@ -2,5 +2,5 @@
 :ID:       29193aae-9acf-4943-901f-38110fb9b2fd
 :ROAM_ALIASES: "Curly's Law"
 :END:
-#+title: Single Responsibility for Modules
+#+title: Single Responsibility Principle
 #+filetags: :design:swarch:

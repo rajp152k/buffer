@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       54479242-4b2b-409e-8238-523ee0d212cc
+:END:
+#+title: Fixed-point combinators
+#+filetags: :plt:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Fixed-point_combinator

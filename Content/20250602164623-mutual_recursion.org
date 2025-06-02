@@ -12,10 +12,10 @@
 *** Consequence - Evaluation depends on resolving inter-function calls
 ** Examples : Co-recursive functions in type definitions
 *** Instances - [[id:20230715T173535.681936][Data structures]] like trees and graphs
-*** Usage - Compiler design, parser implementations
-** Resolution : Fixed-point combinators or trampolining
+*** Usage - [[id:9c76498b-d358-4a8c-9e52-24c6f1668f8f][Compiler design]], parser implementations
+** Resolution : [[id:54479242-4b2b-409e-8238-523ee0d212cc][Fixed-point combinators]] or [[id:ffdeda32-c601-415e-b28f-cab5b6c8ac22][trampolining]]
 *** Technique - Converting to tail calls for optimization
-*** Tools - Memoization to avoid redundant computations
+*** Tools - [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][Memoization]] to avoid redundant computations
 ** Applications : Compiler design, data structure traversals
 *** Domains - Programming language semantics, type theory
 *** Benefits - Handling complex recursive definitions elegantly

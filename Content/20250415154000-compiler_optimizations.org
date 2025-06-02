@@ -2,4 +2,19 @@
 :ID:       5813a827-8b9a-454d-b3d4-7bb006ae29c2
 :END:
 #+title: Compiler Optimizations
-#+filetags: :cs:plt:
+#+filetags: :optim:cs:plt:
+
+
+* Outline
+** Intermediate Representation : Three-Address Code, SSA Form
+*** Static Single Assignment Form - φ-functions, dominance frontier
+** Optimization Techniques : [[id:623e2cd9-695a-4b5f-8143-204db8dda4fe][Dead Code Elimination]], Constant Folding
+*** Constant Propagation - lattice-based analysis, meet operation
+*** Copy Elision - copy propagation, variable renaming
+** Loop Optimizations : Loop Unrolling, Loop Fusion
+*** Loop Invariant Code Motion - [[id:afe93c1f-f07f-4698-95c4-e295d5acc0c4][LICM]], hoisting
+*** Induction Variable Analysis - strength reduction, linear function test replacement
+** [[id:b4e50113-e5c6-4a1b-804a-8a84f2478214][Register Allocation]] : [[id:0607300d-06b3-4025-a976-1a75a1d9a73a][Graph Coloring]], Spilling
+*** Interference Graph - graph coloring problem, chordal graph
+*** Spill Code Generation - spill cost, rematerialization
+

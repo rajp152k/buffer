@@ -2,23 +2,20 @@
 :ID:       a819cd68-91f9-4d67-b40f-fc37324f708b
 :END:
 #+title: Agentic AI
-#+filetags: :agent:ai:
+#+filetags: :swe:agent:ai:
 
-* Overview
 
-- *Definition of Agentic AI*:
-  - An AI system designed to make decisions and take actions autonomously.
-  - Operates with a level of [[id:17d0736c-1967-4c36-93dc-82a2ffa2f397][agency]] that allows it to pursue specified goals.
+* Outline
+** Autonomous [[id:2c82dde2-487f-446b-8a83-79a21487c1ba][Decision]] Making : [[id:cb39320d-a2db-41d2-b938-73898ae2f8a9][MDP]], Partially Observable MDP
+*** State Representation - Markov Property
+*** Action Selection - Policy Gradient
+** Agent [[id:20240114T203953.456605][Environment]] Interaction : Feedback Loop
+*** Reward Function - [[id:1b126a27-252b-43e3-8060-91f0e74d8c72][Utility]] Maximization
+*** [[id:8a8ef56a-8f0a-4bb0-a522-f7b081ace1c2][Exploration-Exploitation]] Tradeoff - Regret Minimization
+** [[id:92cb46f4-5ea0-48c2-aba9-3cdccf448749][Multi-Agent Systems]] : [[id:576ec3aa-6779-4b99-8dac-918ba6ce357f][Game Theory]]
+*** Cooperative Behavior - [[id:822aec82-925e-4b5e-a8fc-5ba13bbf012a][Nash Equilibrium]]
+*** Competitive Behavior - [[id:786ac11e-3c6d-4d7c-8a7e-ddb3cd752132][Minimax Theorem]]
 
-- *Characteristics*:
-  - [[id:0dec81d8-87ed-40e9-8fe4-16f17b23386f][Autonomy]]: The ability to operate without human intervention.
-  - Goal-Oriented: Designed to achieve specific objectives.
-  - Adaptivity: Capable of learning and adjusting strategies based on new information.
-
-- *Applications*:
-  - [[id:f1ec552e-a7c4-47ae-9dd2-a23733d1da92][Robotics]]: Autonomous robots that perform tasks such as exploration or maintenance.
-  - Virtual Assistants: Systems like Siri or Alexa that can act based on user inputs.
-  - [[id:8b520a97-f859-4a2a-a7cf-463608051040][Autonomous Vehicles]]: Self-driving cars with decision-making capabilities.
 
 * Relevant Nodes
 ** [[id:9c31ddef-2087-4b95-892e-006df1dca1f3][Langchain]]

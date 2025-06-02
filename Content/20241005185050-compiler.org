@@ -11,16 +11,16 @@
   - *[[id:700dff70-2a6d-40d4-8e81-996b3be39b47][Lexical Analysis]]*
     - Converts a sequence of characters into a sequence of tokens.
   - *[[id:5b9cb73a-3b58-4055-b762-ab9cbcebe044][Syntax Analysis]] (Parsing)*
-    - Checks the source code for correct syntax and generates an abstract syntax tree (AST).
+    - Checks the source code for correct syntax and generates an [[id:16a9db73-2942-4608-9552-03afdff70357][abstract syntax tree]] (AST).
   - *[[id:3f4d2288-6690-4d72-8134-689c76c8e46b][Semantic Analysis]]*
     - Ensures the code adheres to semantic rules.
 
 ** Ancillary functions
-  - *Optimization*
+  - *[[id:5813a827-8b9a-454d-b3d4-7bb006ae29c2][Optimization]]*
     - Improves performance through code transformation while preserving functionality.
-  - *Code Generation*
+  - *[[id:20231212T082000.168442][Code Generation]]*
     - Produces machine code or intermediate code from the optimized AST.
-  - *Code Linking (Sometimes)*
+  - *[[id:26a821aa-df5e-48f4-9efa-babd02f8aa99][Code Linking]] (Sometimes)*
     - Combines various code modules into a single runnable program.
 
 * Types
@@ -28,15 +28,12 @@
     - Processes the input code in one pass.
   - *Multi-pass Compiler*
     - Processes the input code multiple times for better optimization and error checking.
-  - *Just-In-Time (JIT) Compiler*
-    - Compiles code at runtime, commonly used in managed runtime environments like Java and .NET.
-  - *Cross Compiler*
+  - *[[id:c60cfa9e-2733-49bd-b94b-c1bb640d7a7a][Just-In-Time (JIT) Compiler]]*
+    - Compiles code at runtime, commonly used in managed runtime environments like [[id:b056e747-dee4-4e6d-a7af-d644f842f0b8][Java]] and .NET.
+  - *[[id:46961a3c-8679-47b3-b8f7-d7011a7f9c79][Cross Compiler]]*
     - Generates executable code for a platform different from the one on which the compiler is running.
 * Connections
   - *[[id:eda24e82-a549-4cc6-96e6-a5330368811d][Interpreters]]*
-    - Unlike compilers, interpreters execute high-level code without translating it to machine code. Offers flexibility with a trade-off in performance.
-  - *Virtual Machines*
-    - Some compilers generate intermediate code that runs on virtual machines, enabling platform independence (e.g., Java Bytecode for JVM).
-
-* Relevancies
-** [[id:2dfa41e9-07ba-4deb-a466-af409fa8b465][Writing a lisp]]
+    - Unlike compilers, interpreters execute high-level code without translating it to [[id:2d0575ba-9418-46bd-845b-36e040111516][machine code]]. Offers flexibility with a trade-off in performance.
+  - *[[id:31fb2676-25e3-4a66-ba81-e6d007ed2722][Virtual Machines]]*
+    - Some compilers generate intermediate code that runs on virtual machines, enabling platform independence (e.g., [[id:076f1836-720a-4bfb-8478-6dd76a532286][Java Bytecode]] for [[id:3b428137-b6c1-4018-8eb0-6cd23deed78c][JVM]]).

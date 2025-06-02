@@ -4,5 +4,20 @@
 #+title: PLT (Programming Language Theory)
 #+filetags: :cs:plt:
 
+
+* Outline
+** [[id:8741997e-8c99-4c52-8a50-dc3df162a060][Syntax]] : Formal Language Theory, [[id:276aa32a-17f5-489c-ab78-585acceda448][Context-Free Grammars]]
+*** [[id:37fce203-f8d1-4fc3-8b38-869e308221c2][Lexical Analysis]] - Tokenization via [[id:e7781a1c-012a-4746-90ef-987ef3623474][Regular Expressions]]
+*** [[id:5b9cb73a-3b58-4055-b762-ab9cbcebe044][Parsing]] - [[id:bc64d438-241f-4245-8bac-e08106aec9b8][Derivation Trees]], [[id:5c2a6d09-5992-404a-a0dd-5a3cce848335][Pushdown Automata]]
+** [[id:3f4d2288-6690-4d72-8134-689c76c8e46b][Semantics]] : Denotational Semantics, Operational Semantics
+*** Static Semantics - [[id:82a94057-de32-43b4-be18-3a7fabc801fe][Type Systems]], [[id:b9d3f3be-ccf4-477e-82b9-ac1eafd13712][Type Inference]]
+*** Dynamic Semantics - Evaluation Strategies, [[id:43b651d2-672a-4b81-8c03-0f315fea38a8][Lambda Calculus]]
+** [[id:287a65a1-5d6d-4442-abc8-e017dca6529a][Type Theory]] : [[id:51650453-deaf-4449-8d4e-e6cc3c98c9de][Type Safety]], [[id:e2614bc4-bd8f-4cc3-a7e7-b1f98479c5c2][Polymorphism]]
+*** Type Checking - Soundness, Completeness
+*** Type Inference - Hindley-Milner Type Inference Algorithm
+** Pragmatics : Programming Paradigms, Language Design
+*** Functional Programming - Lambda Calculus, Closures
+*** Object-Oriented Programming - Encapsulation, Inheritance
+
 * Resources
  - https://steshaw.org/plt/

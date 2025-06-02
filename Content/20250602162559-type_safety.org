@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       51650453-deaf-4449-8d4e-e6cc3c98c9de
+:END:
+#+title: Type Safety
+#+filetags: :plt:

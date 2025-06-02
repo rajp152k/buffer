@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       3f4d2288-6690-4d72-8134-689c76c8e46b
+:ROAM_ALIASES: Semantics
 :END:
 #+title: Semantic Analysis
-#+filetags: :cs:compiler:
+#+filetags: :plt:cs:

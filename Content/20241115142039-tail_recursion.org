@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       3a717d24-64ef-4d38-936a-6814baaa1e6a
+:ROAM_ALIASES: "Tail Call Optimization"
 :END:
 #+title: Tail Recursion
-#+filetags: :programming:
+#+filetags: :plt:programming:

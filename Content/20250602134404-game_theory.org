@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       576ec3aa-6779-4b99-8dac-918ba6ce357f
+:END:
+#+title: Game Theory
+#+filetags: :math:econ:

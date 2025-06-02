@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       786ac11e-3c6d-4d7c-8a7e-ddb3cd752132
+:END:
+#+title: Minimax Theorem
+#+filetags: :cs:math:

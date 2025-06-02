@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       822aec82-925e-4b5e-a8fc-5ba13bbf012a
+:END:
+#+title: Nash Equilibrium
+#+filetags: :math:

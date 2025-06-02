@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       46961a3c-8679-47b3-b8f7-d7011a7f9c79
+:ROAM_ALIASES: Transpilation
+:END:
+#+title: Cross Compilation
+#+filetags: :plt:

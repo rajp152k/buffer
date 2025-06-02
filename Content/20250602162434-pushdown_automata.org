@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5c2a6d09-5992-404a-a0dd-5a3cce848335
+:END:
+#+title: Pushdown Automata
+#+filetags: :cs:

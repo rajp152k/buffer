@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       16a9db73-2942-4608-9552-03afdff70357
+:ROAM_ALIASES: AST
+:END:
+#+title: Abstract Syntax Tree
+#+filetags: :plt:

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       076f1836-720a-4bfb-8478-6dd76a532286
+:END:
+#+title: Java Bytecode
+#+filetags: :low:java:

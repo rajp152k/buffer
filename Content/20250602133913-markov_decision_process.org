@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       cb39320d-a2db-41d2-b938-73898ae2f8a9
+:ROAM_ALIASES: MDP
+:END:
+#+title: Markov Decision Process
+#+filetags: :math:

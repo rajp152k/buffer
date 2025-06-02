@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       43b651d2-672a-4b81-8c03-0f315fea38a8
+:END:
+#+title: Lambda Calculus
+#+filetags: :plt:

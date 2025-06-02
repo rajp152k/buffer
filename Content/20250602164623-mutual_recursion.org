@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       4b5dd160-6ceb-4fa3-9c66-9d3cc511cb4f
+:ROAM_ALIASES: CoRecursion
+:END:
+#+title: Mutual Recursion
+#+filetags: :plt:
+
+
+* Outline
+** Definition : [[id:a31671c6-12ea-4fc9-93cb-73d29fd508a6][Function]] calls forming cyclic dependency
+*** Basis - Recursive functions invoking each other indirectly
+*** Consequence - Evaluation depends on resolving inter-function calls
+** Examples : Co-recursive functions in type definitions
+*** Instances - [[id:20230715T173535.681936][Data structures]] like trees and graphs
+*** Usage - Compiler design, parser implementations
+** Resolution : Fixed-point combinators or trampolining
+*** Technique - Converting to tail calls for optimization
+*** Tools - Memoization to avoid redundant computations
+** Applications : Compiler design, data structure traversals
+*** Domains - Programming language semantics, type theory
+*** Benefits - Handling complex recursive definitions elegantly

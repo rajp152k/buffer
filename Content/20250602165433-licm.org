@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       afe93c1f-f07f-4698-95c4-e295d5acc0c4
+:ROAM_ALIASES: "Loop Invariant Code Motion"
+:END:
+#+title: LICM

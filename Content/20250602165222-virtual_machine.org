@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       31fb2676-25e3-4a66-ba81-e6d007ed2722
+:END:
+#+title: Virtual Machine
+#+filetags: :cs:

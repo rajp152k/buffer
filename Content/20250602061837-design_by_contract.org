@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       9cb4cf00-a412-460d-b743-d9987fecd47f
+:END:
+#+title: Design by Contract
+#+filetags: :swe:
+
+* Relevant Nodes
+** [[id:bc924902-3552-4ff3-8139-defc92c841be][Program Correctness]]
+
+* Resources
+ - https://en.wikipedia.org/wiki/Design_by_contract

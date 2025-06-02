@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       509d3bf9-99d8-4dbb-b0bd-0a35639e9440
+:END:
+#+title: Composability
+#+filetags: :swarch:plt:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Composability

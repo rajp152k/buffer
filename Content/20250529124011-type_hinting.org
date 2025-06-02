@@ -3,3 +3,6 @@
 :END:
 #+title: Type Hinting
 #+filetags: :swe:
+
+* Relevant Nodes
+** [[id:128acd70-93d7-4ef1-9e17-92b590924a6d][Schema]]

@@ -2,7 +2,7 @@
 :ID:       c6ef7bd2-dd62-44bf-90d5-a7520b873fcd
 :END:
 #+title: Referential Transparency
-#+filetags: :programming:
+#+filetags: :plt:programming:
 
 * Overview
 - *Definition*:
@@ -13,6 +13,9 @@
   - *Improved Readability and Understandability*: Because expressions can be replaced consistently with their values, it simplifies reasoning about code.
   - *Easier Debugging and Testing*: With referentially transparent code, testing becomes easier as expressions yield the same result every time they are evaluated with the same inputs.
   - *Facilitates Optimization*: Compilers and interpreters can more easily optimize code through techniques like [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][memoization]] or [[id:eba75a47-6e35-4146-a152-b05089bbd8ec][lazy evaluation]].
+  - *[[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]]*: given a functionally pure take, convenient approaches towards parallelism arise
+
+
 
 - *Key Concepts*:
   - *Pure Functions*: Functions that are deterministic (same inputs lead to the same outputs) and do not produce [[id:ca98597a-027f-4eda-bbb2-801b8f74d0a5][side effects]], a critical component for achieving referential transparency.

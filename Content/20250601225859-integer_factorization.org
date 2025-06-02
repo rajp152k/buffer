@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       690af50c-508f-4749-8b85-1f1ff5a6038a
+:END:
+#+title: Integer Factorization
+#+filetags: :math:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Integer_factorization

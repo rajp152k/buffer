@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       f15a5eb3-9415-4f8b-9ede-01d708bb57ed
+:END:
+#+title: Cryogen
+#+filetags: :web:
+
+[[id:20240101T082526.905943][Static Site Generators]] via [[id:03317d23-408b-4fd9-8336-d0597b7cd36c][Clojure]]
+
+
+* Resources
+ - http://cryogenweb.org/

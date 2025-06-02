@@ -21,5 +21,5 @@
 
 ** Common Implementations
 *** Spring Framework : Java-based dependency injection container
-*** Guice : Java-based dependency injection framework
-*** Dagger : Android-based dependency injection framework
+*** [[id:0db4219a-d38d-407b-aff0-55a1515fe974][Guice]] : Java-based dependency injection framework
+*** [[id:8a480500-21fc-4da7-a677-88b071f024b5][Dagger]] : Android-based dependency injection framework

@@ -14,11 +14,11 @@
 *** Stub - Predefined behavior, Return values
 *** Spy - Track interactions, Verify calls
 *** Mock - Dynamic behavior, Expectation-based
-** Dependency Injection - Loose Coupling, Testability
+** [[id:aeb0d87f-d3d3-4250-a2d0-96e343f2b8c1][Dependency Injection]] - [[id:adaf5bfa-48f9-415b-893e-7398b10f383e][Loose Coupling]], [[id:a606fb1a-1c11-4f3e-88b1-63fed57b772a][Testability]]
 *** Constructor Injection, Setter Injection
 ** Mocking Frameworks
 *** Mockito, Jest, Pytest
-** Keep Mocks Simple - Avoid complexity, Focus on behavior
+** Keep Mocks Simple - Avoid complexity, Focus on [[id:b1a330a3-45e6-49f3-adbd-2898dab8cb45][behavior]]
 *** Use Mocks Sparingly, Verify interactions
 ** Over-Mocking - Tight Coupling, Fragile Tests
 *** Under-Mocking - Insufficient isolation

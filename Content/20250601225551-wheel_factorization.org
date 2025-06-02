@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       4419b629-770a-47b4-bf58-e5bdeaa4d577
+:END:
+#+title: wheel factorization
+#+filetags: :math:algo:
+
+* Relevant Nodes
+** [[id:690af50c-508f-4749-8b85-1f1ff5a6038a][Integer Factorization]]
+* Resources
+  - https://en.wikipedia.org/wiki/Wheel_factorization

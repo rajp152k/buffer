@@ -4,14 +4,5 @@
 #+title: Domain Specific Languages
 #+filetags: :programming:
 
-* Abstract
-
-Generic Languages miss out on more frequent usages of a particular kind of problem domain.
-
-The Verbs and Nouns of a domain specific language are closely related to objects and behaviours in the concerned problem domain.
-
-In the longer run, the overhead of designing and adapting a specialized language to the domain is more than compensated by the efficiency gains due to the underlying complexity being abstracted away.
-
-It simplifies the process of extending an application, relevant to the domain under discussion.
-
- 
+* Resources
+ - https://dsls.dev/

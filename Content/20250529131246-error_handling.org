@@ -8,7 +8,6 @@
 * Types of Errors : anticipated vs unanticipated [[id:34df7d47-1f78-4acf-8dd7-9c03e04e4a9d][exceptions]], syntax vs runtime errors
 ** anticipated exceptions - [[id:bb2db2d4-1429-4ae8-aa86-727126b5162c][try-except blocks]], [[id:26524966-a5b7-4f76-96ca-fff63a204835][error types]]
 ** unanticipated exceptions - crash dumps, post-mortem analysis
-
 * Error Handling Strategies : fail-fast, fail-safe, degrade-gracefully
 ** fail-fast - immediate termination, debugging ease
 ** fail-safe - default values, continued execution

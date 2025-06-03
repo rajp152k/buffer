@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       36fc37f2-c8e2-4289-bb75-a5c0c8262b52
+:END:
+#+title: API design
+#+filetags: :swe:
+
+
+* Outline
+** [[id:88828c6f-87e0-4569-b236-dc6ebb72d282][RESTful]] Principles : Resource-Based Interactions, Client-Server Architecture, Statelessness
+*** Resource Identification - URI Syntax, Semantic URL Structure
+*** [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]] Methods : [[id:37961b23-d768-4a4a-bba6-0bd1199478b6][CRUD]] Operations, [[id:d508997a-359b-4581-b781-b3e87e41fb23][Idempotent]] Requests
+** API Endpoints : URI Paths, Query Parameters, Request/Response Bodies
+*** Request/Response Payloads - [[id:48581776-0ba5-4d88-ad38-25c0cb90595f][JSON]]/[[id:c29d0cf9-9d79-4b00-9884-150722729ab9][XML]] [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]], Data [[id:c7ff5cb6-aae4-4abe-bc6c-bac1aa9a873a][Validation]]
+*** [[id:9ce54236-bc52-43d2-9a9b-f319e2045ea5][Error Handling]] - HTTP Status Codes, Error Response Formats
+** API Security : Authentication, Authorization, Input Validation
+*** [[id:fd7f5ef9-7f31-42bb-8152-d1cca7d06699][Authentication]] Mechanisms - [[id:5c8f987f-214c-4ae5-b0f7-154dc21671c1][OAuth]], [[id:624e5e40-e45a-4020-ba1c-1c83d2f7a395][JWT]], Basic Auth
+*** [[id:6c206bcd-84bb-4f06-aa52-09fb1dfdde5e][Authorization]] Schemes - [[id:16d3b9b3-2f2a-47ef-81bf-5e045482a26f][Role-Based Access Control]], Attribute-Based Access Control
+** API Documentation : OpenAPI Specification, API Description Languages
+*** [[id:0e558402-9a1e-4f04-bb44-e667a4a58be2][Documentation Tools]] - Swagger, API Blueprint, Dox
+** [[id:038e3720-0307-41d8-bcb1-e77b75a161df][API Versioning]] : URI Versioning, Header Versioning, Media Type Versioning
+*** [[id:9746d180-9f28-416a-94b8-8383dfa4284e][Backward Compatibility]] - [[id:ea3b4c84-3fd4-43b5-9eb3-d95c293d9aeb][Breaking Changes]], [[id:ecba191b-c3c0-46b9-95db-1deba5556a68][Deprecation Strategies]]

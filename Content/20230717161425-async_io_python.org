@@ -9,11 +9,9 @@ Exploring [[id:46f09529-c273-49ed-9bf7-7e0a6d97d65c][Event Driven Programming]] 
 For relevant concepts, see:
  - [[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]]
  - [[id:618d0535-411d-4c36-b176-84413ec8bfc1][Concurrency]] (does not imply parallelism)
-    - [[id:f48bfe92-dd4d-4ea4-910a-d1adc44ec183][multiprocessing]]
-    - [[id:bdb5a576-3516-42c6-a543-2f2144a4d249][threading]]
- 
+   - [[id:f48bfe92-dd4d-4ea4-910a-d1adc44ec183][multiprocessing]]
+   - [[id:bdb5a576-3516-42c6-a543-2f2144a4d249][threading]]
  - [[id:097b7bdc-1f4f-4738-a45f-c0a959ef2ff3][Python GIL]]
-
 * Literature
 ** articles
  - https://realpython.com/async-io-python/

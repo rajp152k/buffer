@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       ecba191b-c3c0-46b9-95db-1deba5556a68
+:END:
+#+title: Deprecation Strategies
+#+filetags: :swe:

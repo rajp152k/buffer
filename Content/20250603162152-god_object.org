@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       2d849543-e079-4774-a14f-e2faaf7e1e01
+:END:
+#+title: God Object
+#+filetags: :swe:
+
+
+* Outline
+** Definition : Unified Interface, [[id:36be5e32-45c1-4d41-ad13-f96ae338da26][Singleton]] Pattern, Global Access
+*** Criticisms - [[id:9e12733c-0b6e-4ceb-8440-7b3a75b07cf9][Tight Coupling]], [[id:29193aae-9acf-4943-901f-38110fb9b2fd][Single Responsibility Principle Violation]]
+*** Alternatives - [[id:1a49bf67-e86f-4aee-bd4f-21d0da0b3c64][Facade Pattern]], [[id:64fb7dfc-6963-4465-a884-1762f7d4268b][Mediator Pattern]]
+
+** Characteristics : High Cohesion, Low Coupling, Information Hiding
+*** Consequences - [[id:adf288e7-1cbb-4991-8140-34e5866c2241][Maintainability]], [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]], [[id:a606fb1a-1c11-4f3e-88b1-63fed57b772a][Testability]]
+
+** Design Considerations : [[id:4d05e7ae-8d1d-49cc-a404-d1d437f7fbe3][Separation of Concerns]], [[id:20240218T061653.528745][Abstraction]], [[id:eabe10e8-cd2d-4f2f-a21b-c3ab14feaa51][Encapsulation]]
+*** Refactoring Strategies - [[id:aeb0d87f-d3d3-4250-a2d0-96e343f2b8c1][Dependency Injection]], [[id:4160f4dd-443b-4c41-8bc0-5d966bed8092][Interface Segregation]]
+
+** Examples : [[id:2f67eca9-5076-4895-828f-de3655444ee2][Database]] Abstractions, File Systems, [[id:122695b7-ac24-4c07-a9ee-e0528d8d2a7c][GUI]] Frameworks

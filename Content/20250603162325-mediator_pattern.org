@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       64fb7dfc-6963-4465-a884-1762f7d4268b
+:END:
+#+title: Mediator Pattern
+#+filetags: :swe:

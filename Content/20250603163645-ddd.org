@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a33dc160-71a2-484c-b1a8-8a74ffabba11
+:ROAM_ALIASES: "Domain Driven Design"
+:END:
+#+title: DDD
+#+filetags: :swarch:swe:

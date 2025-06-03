@@ -7,6 +7,8 @@
 
 Application programming interfaces (APIs) provide machine-readable data transfer and signaling between applications.
 
+* Relevant Nodes
+** [[id:36fc37f2-c8e2-4289-bb75-a5c0c8262b52][API design]]
 * OpenAPI-MCP
 * [[id:65f7fdfb-e6b4-4135-bce5-be9efe390549][AWESOME]]
  - https://github.com/public-apis/public-apis

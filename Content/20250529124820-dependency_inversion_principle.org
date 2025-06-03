@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       8763d3c3-93bd-4c25-81fd-c1e7a6d22d68
+:ROAM_ALIASES: IoC "Inversion of Control"
 :END:
 #+title: Dependency Inversion Principle
 #+filetags: :swarch:swe:

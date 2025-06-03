@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       122695b7-ac24-4c07-a9ee-e0528d8d2a7c
+:ROAM_ALIASES: "Graphic User Interface"
+:END:
+#+title: GUI
+#+filetags: :cs:swe:

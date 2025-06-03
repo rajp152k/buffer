@@ -8,7 +8,7 @@
 
 - *Definition*: Representational State Transfer (ReST) is an architectural style for designing [[id:a4e712e1-a233-4173-91fa-4e145bd68769][networked]] applications, primarily used in web services.
 - *Principles*:
-  - Statelessness: Each request from client to server must contain all necessary information, and the server does not store the session state.
+  - [[id:89501d1d-e70c-461d-b631-6798949a0e4b][Statelessness]]: Each request from client to server must contain all necessary information, and the server does not store the session state.
   - [[id:e944d11b-ba53-4dc1-aee9-3793f59be8ac][Client-Server]] Architecture: Separation of client and server concerns enhances the scalability and flexibility of the application.
   - Cacheability: Responses must be explicitly marked as cacheable or non-cacheable to improve performance.
   - Layered System: A client should not be able to tell whether it is connected directly to the end server or an intermediary (proxy or gateway).

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       611a14ff-1a7b-431e-91e4-c1e5b29acb53
+:END:
+#+title: Service Locator Pattern
+#+filetags: :swarch:swe:
+
+* Outline
+** Definition : [[id:aeb0d87f-d3d3-4250-a2d0-96e343f2b8c1][Dependency Injection]], [[id:8763d3c3-93bd-4c25-81fd-c1e7a6d22d68][Inversion of Control]]
+*** Key Components - Registry, Locator, Service
+*** Primary Function - Decoupling, Service Resolution
+
+** Implementation
+*** Registry-based : Hash Table, Service Registration
+*** Client-driven : Locator, Service Request
+
+** Benefits
+*** Loose Coupling : Reduced Dependencies
+*** Testability : Mock Services, Isolation
+
+** Drawbacks
+*** Complexity : Registry Management
+*** Performance : Service Resolution Overhead

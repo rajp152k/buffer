@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       bffec0bf-f4f6-4a63-b0ad-98d2fe88f804
+:ROAM_ALIASES: "Ports and Adapters"
+:END:
+#+title: Hexagonal Architecture
+#+filetags: :swarch:swe:
+
+
+* Outline
+** Application Core : Domain logic orchestration
+*** Business Rules : Policy enforcement
+*** Use Cases : Interaction command handling
+** Ports : Explicit boundary interfaces
+*** Driving Ports : Inbound system contract
+*** Driven Ports : Outbound system contract
+** Adapters : Boundary technology implementations
+*** Driving Adapters : Actor technology integration
+*** Driven Adapters : Infrastructure technology integration
+** Dependency Inversion : Directional coupling control
+*** Core Depends on Ports : Abstraction inversion
+*** Adapters Depend on Ports : Implementation conformance
+** Outcome Properties : Architectural goals achieved
+*** Decoupling : Reduced external dependencies coupling
+*** Testability : Core logic isolation validation
+*** Substitutability : Infrastructure interchangeability
+
+* Resources
+ - https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)

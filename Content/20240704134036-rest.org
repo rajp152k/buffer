@@ -58,5 +58,4 @@
 * Relevant Nodes
 ** [[id:d508997a-359b-4581-b781-b3e87e41fb23][Idempotence]]
 ** [[id:c724b622-32a7-46c4-81bc-b7570080c9ee][GraphQL]]
-* Resources
- - https://www.youtube.com/watch?v=-mN3VyJuCjM&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf&index=4&ab_channel=ByteByteGo
+** [[id:19079639-be92-46cf-82c5-3d81c935705c][RPC]]

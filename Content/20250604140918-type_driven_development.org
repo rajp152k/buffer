@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       bcf8dc85-0219-400a-bb16-ad70f0ec61dc
+:END:
+#+title: Type Driven Development
+#+filetags: :plt:
+
+* Resources
+ - https://tydeworkshop.org/

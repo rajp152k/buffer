@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       bf3e720a-ede9-4cd1-b886-f71a2603cb4c
+:END:
+#+title: PyProver
+#+filetags: :python:math:
+
+* Resources
+  - https://github.com/evhub/pyprover

@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d7633d69-9893-4ccc-b40d-a40d877bc494
+:END:
+#+title: First-Order Logic
+#+filetags: :math:

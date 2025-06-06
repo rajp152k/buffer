@@ -5,3 +5,20 @@
 #+title: Meta-Programming
 #+filetags: :programming:
 
+* Outline
+** Template Metaprogramming
+*** C++ Templates
+*** Compile-time computation
+*** Type manipulation
+** Reflective Metaprogramming
+*** Runtime introspection
+*** Code alteration/generation
+*** Dynamic dispatch
+** Macro Metaprogramming
+*** Lisp Macros
+*** Code transformation
+*** Syntactic abstraction
+** Generative Programming
+*** Domain-specific languages
+*** Code synthesis
+*** Feature modeling

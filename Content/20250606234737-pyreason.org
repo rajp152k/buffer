@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       4b0e6737-2281-434d-905c-fa87f6636e0b
+:END:
+#+title: PyReason
+#+filetags: :math:sym:ai:python:
+
+* Resources
+  - https://neurosymbolic.asu.edu/pyreason/
+  - https://github.com/lab-v2/pyreason-gym
+  - https://github.com/lab-v2/pyreason-rl-sim
+  - https://arxiv.org/abs/2310.06835

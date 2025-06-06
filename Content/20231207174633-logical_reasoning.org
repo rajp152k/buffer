@@ -25,3 +25,12 @@ Exploring this in the context of [[id:66e2d59a-8c72-4fed-b6e9-3b1aea8394b0][Onto
 * Pragmatic
  - This is something that can and should be developed
    - checkout [[id:a55de908-bb7c-4727-b711-3cca55aff0fd][Rhetoric]]
+
+
+
+* Relevant Nodes
+** [[id:27462c06-996c-4846-baa1-5e8fac47fc42][Propositional Logic]]
+** [[id:d7633d69-9893-4ccc-b40d-a40d877bc494][First-Order Logic]]
+** [[id:4503bcd7-3437-4ab6-a985-88caf32d1205][Higher-Order Logic]]
+** [[id:9f2cf376-1db4-4de9-a38e-dbc559a4a62f][Provability]]
+** [[id:4b0e6737-2281-434d-905c-fa87f6636e0b][PyReason]]

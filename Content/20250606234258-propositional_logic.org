@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       27462c06-996c-4846-baa1-5e8fac47fc42
+:END:
+#+title: Propositional Logic
+#+filetags: :math:

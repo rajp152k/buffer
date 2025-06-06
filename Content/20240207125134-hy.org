@@ -6,5 +6,6 @@
 
 A [[id:20230712T223044.319985][Lisp]] dialect for [[id:985a470b-7184-4f9f-8b16-fe7b90bccebe][Python]].
 
+* [[id:20231212T082000.168442][Meta-Programming]]
 * Resources
 ** https://leanpub.com/hy-lisp-python

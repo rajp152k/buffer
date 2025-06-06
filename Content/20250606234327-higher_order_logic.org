@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       4503bcd7-3437-4ab6-a985-88caf32d1205
+:END:
+#+title: Higher-Order Logic
+#+filetags: :math:

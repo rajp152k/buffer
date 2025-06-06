@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f516412b-5b19-459b-a39b-29a9cc5bdc57
+:END:
+#+title: whitespace
+#+filetags: :programming:cs:
+
+* Abstract
+ - good for obfuscation code contests

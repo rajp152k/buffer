@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       53d1a7a1-28b0-4fda-b508-f2f8f09d2ae5
+:END:
+#+title: Hy-Ground
+#+filetags: :project:python:hy:
+
+* Abstract
+ - need good env for emacs
+ - all existing tooling is old
+ - writing a language server sounds cool
+* Architecture
+** Phase 0
+ - lsp-mode interacts with the lsp server
+ - the lsp-server (could write in python /clojure) needs something like jedhy
+ - thinking of going with clojure
+   - https://github.com/clojure-lsp/lsp4clj
+   - the python alternative is pygls
+ - so separation of concerns leaves me with three things
+   - lsp-mode for generic client interop (could do dap stuff)
+   - the lsp-server using clojure lsp4clj
+   - jedhy like autocompletion(and more) api
+ - All three kinds of lisps : Hy, Clojure, Elisp  - definitely ambitious
+   - that get's me thinking -> is there a lisp to quickly switch between all lisps out there with a flag, racket does come to mind but need to investigate after I experience the anticipated pain a little
+ - quite some studying needed : jedhy seems natural starting point followed by learning clojure with good depth
+ - gonna stick through this : meanwhile, need to level up my core swe skills while I'm at it
+
+
+
+
+
+
+
+
+
+
+* Github
+ - https://github.com/rajp152k/HyGround
+* Resources
+ - https://github.com/ekaschalk/jedhy
+ - https://github.com/hylang/hy-mode
+ - https://emacs-lsp.github.io/lsp-mode/

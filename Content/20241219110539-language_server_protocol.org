@@ -2,4 +2,7 @@
 :ID:       b06cd83f-e2f6-4573-beda-8ebc26724bd1
 :END:
 #+title: Language Server Protocol
-#+filetags: :protocol:programming:
+#+filetags: :project:swe:protocol:programming:
+
+* Relevant Nodes
+** [[id:53d1a7a1-28b0-4fda-b508-f2f8f09d2ae5][HyGround]]

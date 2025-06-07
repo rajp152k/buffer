@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       42a8fa8a-69b2-4620-97be-0ab398279bac
+:END:
+#+title: LLVM
+#+filetags: :mlir:compiler:cs:
+
+* Relevant Nodes
+** [[id:11fcbe98-7a3b-46f8-bf26-4f8026a121be][MLIR]]
+
+* Resources
+ - https://llvm.org/

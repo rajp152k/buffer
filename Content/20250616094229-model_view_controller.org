@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b28af48d-1a63-4787-9a93-99af23d62907
+:END:
+#+title: Model View Controller
+#+filetags: :swarch:swe:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Model–view–controller

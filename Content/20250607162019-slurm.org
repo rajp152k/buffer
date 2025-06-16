@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b0d0de06-a66a-45ea-b8c2-c0a46ed9cf5b
+:END:
+#+title: slurm
+#+filetags: :hpc:
+
+* Resources
+ - https://slurm.schedmd.com/overview.html

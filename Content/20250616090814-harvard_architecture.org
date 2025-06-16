@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       24ce59f7-bc12-449b-84d5-ea0995953bba
+:END:
+#+title: Harvard Architecture
+#+filetags: :arch:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Harvard_architecture

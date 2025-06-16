@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5e881bec-22f5-40db-8d49-307b213e7503
+:END:
+#+title: picolisp
+#+filetags: :lisp:
+
+* Resources
+ - https://picolisp.com/

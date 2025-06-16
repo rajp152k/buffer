@@ -3,7 +3,7 @@
 :ROAM_ALIASES: "Field Programmable Gate Arrays"
 :END:
 #+title: FPGA
-#+filetags: :arch:
+#+filetags: :programming:cs:arch:
 
 
 * Overview

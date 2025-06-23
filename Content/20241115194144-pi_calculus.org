@@ -29,4 +29,6 @@
 
   - *Related Concepts:*
     - *Calculus of Communicating Systems (CCS)*: An earlier model of concurrency developed by Milner.
-    - *Mobile processes*: A shift from static to dynamic process structures, where the communication links between processes can change, a concept captured by Pi Calculus.
+    - *Mobile processes*: A shift from static to dynamic process structures, where the communication links between processes can change, a concept captured by Pi
+* Resources
+ - https://en.wikipedia.org/wiki/Π-calculus

@@ -1,6 +1,11 @@
 :PROPERTIES:
 :ID:       2898bf49-d0a9-478f-b6e0-b5e8583612f3
-:ROAM_ALIASES: "Online Analytical Processing"
+:ROAM_ALIASES: "Online Analytical Processing Database"
 :END:
-#+title: OLAP
-#+filetags: :cs:bs:
+#+title: OLAP Database
+#+filetags: :data:cs:bs:
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Online_analytical_processing
+ - https://en.wikipedia.org/wiki/OLAP_cube

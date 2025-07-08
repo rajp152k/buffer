@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1a1f9b00-93ab-4f0a-8512-fd89ed502aea
+:END:
+#+title: Ninja
+#+filetags: :swe:cs:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Ninja_(build_system)

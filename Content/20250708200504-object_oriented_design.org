@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a1c819af-a30c-4699-a013-a058077c3ef0
+:END:
+#+title: Object Oriented Design
+#+filetags: :swe:design:cs:

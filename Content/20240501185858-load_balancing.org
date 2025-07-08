@@ -29,14 +29,14 @@
 * OverArching Types
 ** Application (L7) Load Balancing
  - application level communication protocols (Layer 7 - HTTP majority) influence routing decisions
-** Network (L3) Load Balancing
- - Layer 3 traffic is examined (TCP/UDP) to influence routing decisions
+** Network (L4) Load Balancing
+ - Layer 4 traffic is examined (TCP/UDP) to influence routing decisions
  - checkout [[id:641de843-c1c1-46f4-a994-116e1e5d5abf][Maglev]]
 
 ** Global Server Load Balancing
  - Done across [[id:e5d0b6eb-ea62-4339-a190-97f4cb4b5678][geographically distributed servers]]
  - traffic redirected to a geographically closer server
-** DNS (L4) Load Balancing
+** DNS (L3) Load Balancing
  - traffic can be distribued across multiple servers (IP addresses, to be specific) for higher availibility and performance
 * Relevant Nodes
 ** [[id:b1925f7c-1711-4e74-a60f-d7af3231285a][Sticky Sessions]]

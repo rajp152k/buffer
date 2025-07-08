@@ -2,7 +2,7 @@
 :ID:       314236f7-81ae-48b7-b62b-dc822119180e
 :END:
 #+title: System Design
-#+filetags: :cs:
+#+filetags: :design:cs:
 
 Checkout the [[id:53f365ac-8ee6-48d9-8847-f56ef3681891][System Design Index]]
 

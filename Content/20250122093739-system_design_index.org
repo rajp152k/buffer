@@ -8,19 +8,28 @@ Index into system design aspects with brief descriptions about their significanc
 
 | Component                      | Description                                |
 |--------------------------------+--------------------------------------------|
+| [[id:cba21706-d0d4-4044-8cf1-cbafadad899f][Availability]]                   |                                            |
 | [[id:c8a3e246-0f29-4909-ab48-0d34802451d5][Caching]]                        | Industrial [[id:1bdc93aa-b564-4520-8590-c1ffcb026f55][Memoization]]                     |
 | [[id:20240519T152842.050227][CAP]]                            | Trade-offs during Network Partition        |
-| [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent Hashing]]             | Resilient Distribution Strategy            |
+| [[id:e833eafc-e622-4631-a1ee-f9c679a4d71d][Consistency]]                    |                                            |
+| [[id:6aac0b02-43a7-4ea0-a03a-34f54fe0e204][Consistent Hashing]]             | esilient Distribution Strategy             |
 | [[id:20240101T082700.953774][Content Delivery Network]]       | decoupled media delivery                   |
 | [[id:8cd19397-b5e5-40b6-a172-456c34985a11][Database Replication]]           | scale databases                            |
 | [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster Recovery]]              | [[id:873f2b2e-5bc3-480e-bd42-42af349a49af][BCP]] for CS                                 |
+| [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]]             |                                            |
+| [[id:0c3559b7-98d6-4311-9dbd-786983459229][Failover]]                       |                                            |
+| [[id:e9973a5d-a0bb-49b5-9767-af6df7a459eb][Geo-Replication]]                | Multi-DC System Design                     |
 | [[id:4e1d433c-9f6b-46c7-ad06-4f8bf798785e][Identity and Access Management]] | Roots of [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Cyber Security]]                    |
 | [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]                 | distribute load across servers             |
 | [[id:1073cfed-a09d-48b6-bd52-ba09708699bf][Message Brokers]]                | Reliable coms for Services                 |
-| [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]]  stack           | logs, metrics,...                          |
-| [[id:3df0c885-d021-4500-9c48-21922be7ff9d][PACELC]]                         | CAP + Trade-offs without Network Partition |
-| [[id:659e7518-56e1-4a6b-b24f-4601d66fa449][Proxy Server]]                   | request/response manipulation facilities   |
-| [[id:a9f836f0-d43d-4e97-96fc-06f75e982d15][Rate Limiting]]                  | Avoid exploits of your exposures           |
 | [[id:f9e8ec8f-47d8-4bc5-b03e-7c92131506f0][News Feed]]                      | Social Media BackBone                      |
 | [[id:12e7fd9a-e488-43eb-8b8b-468aa50d9750][Notification System]]            | App Push Notifications, Email, SMS         |
-| [[id:e9973a5d-a0bb-49b5-9767-af6df7a459eb][Geo-Replication]]                | Multi-DC System Design                     |
+| [[id:a1c819af-a30c-4699-a013-a058077c3ef0][Object Oriented Design]]         |                                            |
+| [[id:3913909e-2b8d-465c-8303-5c634bd08f57][Observability]] stack            | logs, metrics,...                          |
+| [[id:3df0c885-d021-4500-9c48-21922be7ff9d][PACELC]]                         | CAP + Trade-offs without Network Partition |
+| [[id:54d16ab3-2352-4441-88fc-b28af4f52722][Performance]]                    |                                            |
+| [[id:659e7518-56e1-4a6b-b24f-4601d66fa449][Proxy Server]]                   | request/response manipulation facilities   |
+| [[id:a9f836f0-d43d-4e97-96fc-06f75e982d15][Rate Limiting]]                  | Avoid exploits of your exposures           |
+| [[id:081f220e-e28c-4a96-80b0-c5df308f3c88][Replication]]                    |                                            |
+| [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]                    |                                            |
+| [[id:894b500f-50b9-42b7-901a-3591e4d7614f][Throughput]]                     |                                            |

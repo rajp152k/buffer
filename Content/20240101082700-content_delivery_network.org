@@ -27,6 +27,9 @@
 - [[id:4ea4dfa7-04af-418f-a07b-b1162bb0c19c][Point of Presence]] (PoP) locations demonstrate how geographical distribution plays a critical role in reducing latency and improving user experience.
 - CDN security features illustrate how performance and security are interlinked, ensuring that faster content delivery does not compromise user safety.
 
+* Overarching Design Types
+** Pull CDN
+** Push CDN
 * Relevant Nodes
 ** [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][DNS]]
 ** [[id:80775b3c-b6f1-47db-8752-8c582d9cba53][AnyCast]]

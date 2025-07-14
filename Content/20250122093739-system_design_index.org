@@ -18,6 +18,7 @@ Index into system design aspects with brief descriptions about their significanc
 | [[id:4734b127-65f4-4da5-939c-7886e2aa3c7e][Disaster Recovery]]              | [[id:873f2b2e-5bc3-480e-bd42-42af349a49af][BCP]] for CS                                 |
 | [[id:c1875db1-be4d-43fe-9c88-bf5fc7a95df3][Domain Name System]]             |                                            |
 | [[id:0c3559b7-98d6-4311-9dbd-786983459229][Failover]]                       |                                            |
+| [[id:c85dd65d-36bd-4f91-9a02-90323ccaf07b][Forward Proxy]]                  |                                            |
 | [[id:e9973a5d-a0bb-49b5-9767-af6df7a459eb][Geo-Replication]]                | Multi-DC System Design                     |
 | [[id:4e1d433c-9f6b-46c7-ad06-4f8bf798785e][Identity and Access Management]] | Roots of [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][Cyber Security]]                    |
 | [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]                 | distribute load across servers             |
@@ -30,6 +31,11 @@ Index into system design aspects with brief descriptions about their significanc
 | [[id:54d16ab3-2352-4441-88fc-b28af4f52722][Performance]]                    |                                            |
 | [[id:659e7518-56e1-4a6b-b24f-4601d66fa449][Proxy Server]]                   | request/response manipulation facilities   |
 | [[id:a9f836f0-d43d-4e97-96fc-06f75e982d15][Rate Limiting]]                  | Avoid exploits of your exposures           |
+| [[id:be116ea9-5b43-464a-a6fe-5469c4f4ba59][API Gateway]]                    |                                            |
+| [[id:54978664-78a5-4c2c-ae33-c4e6a14d6bb0][Microservices]]                  |                                            |
+| [[id:5be3075a-d718-4f44-b031-4df5547423a2][Monolith]]                       |                                            |
 | [[id:081f220e-e28c-4a96-80b0-c5df308f3c88][Replication]]                    |                                            |
+| [[id:7bff6f16-de9c-4c0d-a9a1-b27e3da6725f][Reverse Proxy]]                  |                                            |
 | [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]                    |                                            |
+| [[id:a88ea3c7-da2b-4e5a-a04c-fb70ee7b2081][ACID Transactions]]              |                                            |
 | [[id:894b500f-50b9-42b7-901a-3591e4d7614f][Throughput]]                     |                                            |

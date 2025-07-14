@@ -38,8 +38,12 @@
  - traffic redirected to a geographically closer server
 ** DNS (L3) Load Balancing
  - traffic can be distribued across multiple servers (IP addresses, to be specific) for higher availibility and performance
+** By Nature
+*** Active Active
+*** Active Passive
 * Relevant Nodes
 ** [[id:b1925f7c-1711-4e74-a60f-d7af3231285a][Sticky Sessions]]
+** [[id:5c015fca-c8a3-4e6e-8894-0bc92f838918][Horizontal Scaling]]
 * Resources
  - https://aws.amazon.com/what-is/load-balancing/
  - https://www.cloudflare.com/learning/performance/what-is-dns-load-balancing/

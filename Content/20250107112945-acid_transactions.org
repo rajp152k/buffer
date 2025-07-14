@@ -2,8 +2,26 @@
 :ID:       a88ea3c7-da2b-4e5a-a04c-fb70ee7b2081
 :END:
 #+title: ACID Transactions
-#+filetags: :eng:cs:
+#+filetags: :database:swe:cs:
 
+* Outline
+Database Transaction Reliability Framework Ensuring Consistency
+
+- [[id:185e1e46-8103-46a2-b02c-221692984187][Atomicity]] : All-or-Nothing Transactional Behavior
+  - [[id:f942c53a-01a2-41c2-b6ad-0580ba4cf40d][Transaction Rollback]] - Compensation-based Error Handling
+  - Commit/Uncommitted States - Transaction State Management
+
+- [[id:e833eafc-e622-4631-a1ee-f9c679a4d71d][Consistency]] : Data Integrity and [[id:128acd70-93d7-4ef1-9e17-92b590924a6d][Schema]] Adherence
+  - Data Validation - Domain and Type Checking
+  - Schema Constraints - Referential Integrity Enforcement
+
+- Isolation : Concurrent Transaction Interference Prevention
+  - Locking Mechanisms - Mutual Exclusion for Resource Safety
+  - Transaction Serialization - Ordered Execution for Consistency
+
+- Durability : Persistent Transactional State
+  - Write-Ahead Logging - Journaling for Recovery Purposes
+  - Non-Volatile Storage - Persistent Data Storage Mechanisms
 * Resources
  - https://docs.digitalocean.com/glossary/acid/
  - https://en.wikipedia.org/wiki/ACID

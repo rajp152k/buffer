@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       5c015fca-c8a3-4e6e-8894-0bc92f838918
+:END:
+#+title: Horizontal Scaling
+#+filetags: :design:swe:cs:

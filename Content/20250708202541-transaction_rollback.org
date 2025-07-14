@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       f942c53a-01a2-41c2-b6ad-0580ba4cf40d
+:END:
+#+title: Transaction Rollback
+#+filetags: :tactic:swe:

@@ -19,4 +19,4 @@
 ** Challenges :
 *** Distributed system complexity - [[id:20240519T152842.050227][CAP]] theorem constraints
 *** Data consistency - [[id:20240519T221608.054348][Eventual consistency]] models
-*** Load balancing - Request distribution strategies
+*** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load balancing]] - Request distribution strategies

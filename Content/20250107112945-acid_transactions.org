@@ -17,7 +17,7 @@ Database Transaction Reliability Framework Ensuring Consistency
 
 - Isolation : Concurrent Transaction Interference Prevention
   - Locking Mechanisms - Mutual Exclusion for Resource Safety
-  - Transaction Serialization - Ordered Execution for Consistency
+  - Transaction [[id:86de7485-e9c0-4b7f-9f11-adb8229afdf4][Serialization]] - Ordered Execution for Consistency
 
 - Durability : Persistent Transactional State
   - Write-Ahead Logging - Journaling for Recovery Purposes

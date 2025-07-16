@@ -7,7 +7,7 @@
 
 * Outline
 ** Definition : Linearizability, sequential consistency
-*** Linearizability : Real-time ordering, atomic operations
+*** Linearizability : Real-time ordering, [[id:185e1e46-8103-46a2-b02c-221692984187][atomic]] operations
 *** Sequential Consistency : Program order, total order on operations
 ** Properties :
 *** Safety : No partial updates, all-or-nothing

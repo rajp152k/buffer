@@ -43,9 +43,3 @@
    - introduces delays for maintenance of data consistency
 ** Monitoring
  - Profiling processes, analysing frequency of certain queries, etc, help with better structuring the templates (index, schema, etc) to push for performance
-* Sentinels
-** Entity Relation Diagrams
-:PROPERTIES:
-:ID:       a96b0e92-16c9-4a8c-863d-f0303efd0fa2
-:END:
-

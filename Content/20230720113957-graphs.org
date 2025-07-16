@@ -25,4 +25,3 @@ A mathematical protocal used to represent suitable abstractions using nodes and 
  - when trying to parallelize computations with dependents from several components, one can model the computation sites and temporal dependency links as a [[id:d07976cd-5194-484e-82ab-8c55e064eeb1][Directed Acyclic Graph]] and apply [[id:a266afcb-0813-4a40-8dcb-cfa7b8bd1a8b][Topological Sort]]  to generate computation schedules.
  - checkout [[id:c307ed4a-77d8-4f69-8995-94c9da4c0768][Parallelism]] for a more fundamental treatment of the above.
 
-** [[id:a96b0e92-16c9-4a8c-863d-f0303efd0fa2][Entity Relation Diagrams]]

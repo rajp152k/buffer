@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       387a345c-c7ff-4648-aeb1-1eef4ce0e1fa
+:END:
+#+title: Google Spanner
+#+filetags: :database:swe:
+
+
+* Resources
+ - https://en.wikipedia.org/wiki/Spanner_(database)

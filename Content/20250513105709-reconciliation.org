@@ -3,3 +3,8 @@
 :END:
 #+title: Reconciliation
 #+filetags: :meta:cs:
+
+* Relevant Nodes
+** [[id:20231212T081907.908301][declarative]]
+* Resources
+ - https://declarative.dev/article/The_Role_of_Declarative_Languages_in_Reconciled_Deployment.html

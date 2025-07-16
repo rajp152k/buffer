@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       fce31544-3179-403c-8242-eb577bfb739c
+:ROAM_ALIASES: DTO
+:END:
+#+title: Digital Twin for Orgs

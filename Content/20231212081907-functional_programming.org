@@ -1,6 +1,10 @@
  :PROPERTIES:
 :ID:       20231212T081907.908301
-:ROAM_ALIASES: declarative
 :END:
-#+title: Functional Programming
+#+title: Declarative
 #+filetags: :plt:programming:
+
+* Principles of Declarative Programming
+**
+* Resources
+ - https://declarative.dev/

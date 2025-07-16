@@ -4,6 +4,26 @@
 #+title: Eventual Consistency
 #+filetags: :cs:
 
+
+* Outline
+** Definition : Convergence to a consistent state in distributed systems
+*** Lacks [[id:b1cfb7fa-2a53-4433-8cef-6209c454e730][strong consistency]] : sacrificed for [[id:cba21706-d0d4-4044-8cf1-cbafadad899f][availability]] and [[id:e8f3c721-0dba-4dc7-803f-263e88a47596][partition tolerance]]
+*** Allows temporary inconsistencies : resolved through updates propagation
+** Characteristics :
+*** Non-blocking : updates are not delayed due to network partitions
+*** Flexible : can be implemented in various [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed systems]]
+** Protocols and Models
+*** Last Writer Wins (LWW) : conflict resolution based on timestamp
+*** Multi-Version Concurrency Control (MVCC) : maintaining multiple versions
+*** Conflict-free Replicated Data Types (CRDTs) : data structures designed for eventual consistency
+** Challenges and Limitations
+*** Inconsistent data : temporary inconsistencies can lead to issues
+*** Conflict resolution : requires careful design to avoid data loss
+*** System complexity : increased complexity due to handling inconsistencies
+** Use Cases
+*** Distributed databases : e.g., [[id:20240519T221905.005300][Cassandra]], Riak
+*** Distributed caches : e.g., [[id:283c3a6b-6a8c-4e14-85f4-8f67494629ce][Redis]]
+*** Cloud storage systems : e.g., [[id:add20973-54a9-4d96-a938-b27ccbf9c1e6][Amazon S3]]
 * Overview
 
 - *Definition*: Eventual consistency is a consistency model used in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed computing]], primarily for [[id:2f67eca9-5076-4895-828f-de3655444ee2][databases]], where updates will eventually propagate to all nodes and all replicas eventually become consistent.

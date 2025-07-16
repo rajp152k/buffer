@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a45234d0-5a6a-41c3-9354-cb4e7cabee2f
+:END:
+#+title: SaltStack
+#+filetags: :swe:infra:

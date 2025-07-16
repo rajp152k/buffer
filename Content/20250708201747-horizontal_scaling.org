@@ -1,5 +1,22 @@
 :PROPERTIES:
 :ID:       5c015fca-c8a3-4e6e-8894-0bc92f838918
+:ROAM_ALIASES: Scale-Out
 :END:
 #+title: Horizontal Scaling
 #+filetags: :design:swe:cs:
+
+
+* Outline
+** Definition : [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][Distributed]] system paradigm
+** Characteristics :
+*** Scale-out architecture
+*** Commodity hardware utilization
+*** Service [[id:262874ff-9248-485d-91ee-f7ca1dc2c31d][redundancy]]
+** Advantages :
+*** [[id:cba21706-d0d4-4044-8cf1-cbafadad899f][High availability]] - [[id:20240519T162542.805560][Fault tolerance]] enabled
+*** Improved performance - Increased [[id:894b500f-50b9-42b7-901a-3591e4d7614f][throughput]]
+*** Flexible capacity - On-demand scaling
+** Challenges :
+*** Distributed system complexity - [[id:20240519T152842.050227][CAP]] theorem constraints
+*** Data consistency - [[id:20240519T221608.054348][Eventual consistency]] models
+*** Load balancing - Request distribution strategies

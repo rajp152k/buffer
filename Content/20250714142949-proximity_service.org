@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       8cd23763-86ba-403d-9738-a1e6775f0cb4
+:END:
+#+title: Proximity Service
+#+filetags: :design:swe:
+
+
+
+
+* Outline
+** Architecture
+*** Distributed Microservices: RPC-centric, Stateless Workers
+*** Geo-partitioning: Hashing, Quadtrees, S2 Cells
+*** Real-time Indexing: LSM-trees, In-memory Caching
+** Core Functionality
+*** Location Ingestion: Stream Processing, Deduplication, Rate Limiting
+*** Proximity Query: Index Lookups, Bounding Box/Sphere Spatial Search
+*** K-Nearest Neighbors: Voronoi Tessellation, R-trees
+*** Geo-fencing: Polygon Intersection, Event Triggers
+*** Proximity Events: Pub/Sub, Webhooks, Push Notifications
+** Data Model
+*** Entity Representation: UUID, Coordinate (Lat/Lon), Timestamp, Metadata Blob
+*** Index Structures: Geohashes, Quadtree Nodes, S2 Cell IDs
+*** Persistence Layer: NoSQL (Cassandra/DynamoDB), Time-series DB (InfluxDB)
+** Performance & Scalability
+*** Low-latency Reads: Cache-coherency, CDN for Static Proxies
+*** High-throughput Writes: Asynchronous Ingestion, Batching, Backpressure
+*** Horizontal Scaling: Sharding, Dynamic Resource Allocation
+*** Fault Tolerance: Replication, Leader Election, Circuit Breakers
+** Use Cases
+*** Location-based Advertising: Hyperlocal Targeting, Impression Triggers
+*** Ride-sharing/Delivery: Driver-matching, ETA Calculation
+*** Social Networking: Friend Discovery, Local Events
+*** Asset Tracking: Fleet Management, Supply Chain Visibility

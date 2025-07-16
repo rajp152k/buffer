@@ -4,6 +4,20 @@
 #+title: Strong Consistency
 #+filetags: :cs:
 
+
+* Outline
+** Definition : Linearizability, sequential consistency
+*** Linearizability : Real-time ordering, atomic operations
+*** Sequential Consistency : Program order, total order on operations
+** Properties :
+*** Safety : No partial updates, all-or-nothing
+*** Liveness : Guaranteed response, no livelocks
+** Examples :
+*** Google's Bigtable : Atomicity, row-level transactions
+*** Amazon's Dynamo : Vector clocks, conflict resolution
+** Enforcement Mechanisms :
+*** Locking : Exclusive access, mutual exclusion
+*** Versioning : Multi-version concurrency control, snapshot isolation
 * Overview
 
 - *Definition of Strong Consistency*: A [[id:20240519T152842.050227][consistency]] model in [[id:a3d0278d-d7b7-47d8-956d-838b79396da7][distributed]] systems ensuring that all nodes see the same data at the same time.

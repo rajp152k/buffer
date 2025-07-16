@@ -39,3 +39,4 @@ Index into system design aspects with brief descriptions about their significanc
 | [[id:56dbce77-b258-4fde-a6c7-f865e476c879][Scalability]]                    |                                            |
 | [[id:a88ea3c7-da2b-4e5a-a04c-fb70ee7b2081][ACID Transactions]]              |                                            |
 | [[id:894b500f-50b9-42b7-901a-3591e4d7614f][Throughput]]                     |                                            |
+| [[id:8cd23763-86ba-403d-9738-a1e6775f0cb4][Proximity Service]]              |                                            |

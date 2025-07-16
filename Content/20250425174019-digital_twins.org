@@ -31,3 +31,4 @@
 	+ Standardization and [[id:d15e8194-4780-4340-a7c2-20c407567943][interoperability]]
 * Relevant Nodes
 ** [[id:cf890270-836b-4beb-841d-af3f8ba6e5f3][Data Center]]
+** [[id:fce31544-3179-403c-8242-eb577bfb739c][Digital Twins for Orgs]]

@@ -20,3 +20,6 @@
 *** Distributed system complexity - [[id:20240519T152842.050227][CAP]] theorem constraints
 *** Data consistency - [[id:20240519T221608.054348][Eventual consistency]] models
 *** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load balancing]] - Request distribution strategies
+
+* Relevant Nodes
+** [[id:65411a79-0036-445d-ad93-1b43f072add9][Vertical Scaling]]

@@ -5,5 +5,63 @@
 #+title: SAML
 #+filetags: :sec:cs:
 
+* Outline
+** Definition : Security Assertion Markup Language, XML-based SSO standard
+*** Key components : assertions, protocols, bindings
+*** Assertions : statements about identity, attributes, authentication
+
+** Architecture : Identity Provider (IdP), Service Provider (SP), User Agent
+*** Roles : authentication, authorization, attribute exchange
+
+** Protocols : SAML 2.0, SAML 1.1
+*** Bindings : HTTP Redirect, HTTP POST, SOAP
+
+** Use Cases : Single Sign-On (SSO), Single Sign-Out (SLO), Attribute-based Access Control (ABAC)
+*** Applications : enterprise software, cloud services, web applications
+* Conceptual Models
+** Systems Theory & Cybernetics
+*** State: Identity assertions, authentication status
+*** Inputs: User credentials, authentication requests
+*** Processes: Authentication, authorization, attribute exchange
+*** Outputs: Security assertions, access grants
+*** Feedback Loop: Identity validation, session management
+
+** Mathematical Modeling
+*** Graph Theory: Identity graph
+*** Nodes: Users, identity providers, service providers
+*** Edges: Authentication, authorization, attribute sharing
+*** Category Theory: Identity morphisms
+*** Objects: Identity assertions, users
+*** Arrows: Authentication, attribute exchange
+
+** Computer Science & Algorithmic Structures
+*** Data Structure: XML documents
+*** Elements: Assertions, protocols, bindings
+*** Algorithm: Digital signature generation
+*** Hash functions: SHA-1, SHA-256
+*** Encryption: Asymmetric cryptography (RSA, ECC)
+
+** Information Theory
+*** Channel: Communication channels (HTTP, SOAP)
+*** Signal: Security assertions, authentication requests
+*** Noise: Replay attacks, tampering
+*** Capacity: Authentication throughput, assertion freshness
+
+** Control Theory
+*** Controller: Identity provider (IdP)
+*** Observer: User agent
+*** Setpoint: Authentication status
+*** Stability: Session management, revocation
+
+** Economic Modeling
+*** Game Theory: Authentication games
+*** Players: User, IdP, SP
+*** Strategies: Authentication, authorization
+*** Mechanism Design: Incentive-compatible authentication
+
+** Physics & Thermodynamics
+*** Analogy: Physical identity (passport)
+*** Energy: Authentication effort
+*** Entropy: Identity uncertainty, assertion freshness
 * Resources
  - https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language

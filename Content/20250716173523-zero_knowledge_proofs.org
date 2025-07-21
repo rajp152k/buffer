@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       96d4969c-2868-4f35-803b-a2e8a29bd787
+:END:
+#+title: Zero Knowledge Proofs
+#+filetags: :cs:crypto:
+
+
+* Outline
+** Interactive Proofs : Prover-Verifier Paradigm
+*** Witness-Hiding - Hiding NP Witness
+** Zero-Knowledge Property : Simulator-Based Indistinguishability
+*** Perfect ZK - Statistical Closeness
+*** Computational ZK - Indistinguishability by PPT Machines
+** Applications : Cryptographic Protocols and Secure Computation
+*** zk-SNARKs - Quadratic Arithmetic Programs and Homomorphic Encryption
+*** zk-STARKs - Transparent Setup and Scalable Proofs

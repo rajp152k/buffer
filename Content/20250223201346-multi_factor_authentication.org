@@ -3,3 +3,23 @@
 :END:
 #+title: Multi-Factor Authentication
 #+filetags: :sec:cs:
+
+
+* Outline
+** Definition : layered [[id:6e9b50dc-c5c0-454d-ad99-e6b6968b221a][security]] paradigm enforcing multiple verification methods
+*** Factors - something you know, have, are, somewhere you are, or something you do
+** Types : knowledge, possession, inherence, location, and behavioral factors
+*** Knowledge Factor : passwords, PINs, or security questions
+*** Possession Factor : one-time password generators, smart cards, or mobile devices
+*** Inherence Factor : biometric authentication, such as fingerprints or facial recognition
+*** Location Factor : IP address, GPS, or device profiling
+*** Behavioral Factor : patterns of user behavior, such as typing rhythms or browsing habits
+** Implementation : layered authentication, MFA protocols, and adaptive authentication
+*** MFA Protocols - OATH, U2F, or SAML
+*** Adaptive Authentication - risk-based authentication and step-up authentication
+** Benefits : enhanced security, reduced phishing, and regulatory compliance
+*** Risk Reduction - mitigates password-only vulnerabilities
+*** Audit and Compliance - meets security standards and regulations
+** Challenges : complexity, user friction, and integration with existing infrastructure
+*** Interoperability - integration with diverse systems and protocols
+*** User Experience - balancing security with usability and minimal friction

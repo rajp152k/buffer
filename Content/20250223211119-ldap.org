@@ -4,3 +4,26 @@
 :END:
 #+title: LDAP
 #+filetags: :sec:cs:
+
+
+* Outline
+** Protocol Overview : Directory Access Protocol, X.500, ASN.1
+*** Core Functions : Authentication, Authorization, Directory Services
+*** Key Components : DAP, LDAPv3, SASL
+
+** LDAP Architecture
+*** Data Model : Directory Information Tree, Object Classes, Attributes
+*** Directory Service : DIT, Naming Context, Referral
+
+** LDAP Operations
+*** Bind : Simple, SASL, SSL/TLS, Authentication Methods
+*** Search : Filter, Scope, Deref Aliases, Size Limit
+*** Modify : Add, Delete, Modify DN, Modify Entry
+
+** LDAP Security
+*** Authentication : Bind, SASL, TLS, Certificate-based
+*** Authorization : Access Control, ACL, Group-based
+
+** LDAP Use Cases
+*** Identity Management : Single Sign-On, User Directories
+*** Data Integration : Directory Services, Data Synchronization

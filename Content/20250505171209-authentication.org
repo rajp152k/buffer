@@ -3,3 +3,15 @@
 :END:
 #+title: Authentication
 #+filetags: :cs:sec:
+
+
+* Outline
+** Identity Verification : [[id:96d4969c-2868-4f35-803b-a2e8a29bd787][Zero-Knowledge Proofs]], Challenge-Response Protocols
+*** Credential Management - Hashed Password Storage, Salted Hashing
+*** Authentication Factors - [[id:00543934-369a-47d3-9fc1-f9a16a6a227e][MFA]], 2FA, [[id:f9308a2b-3fb4-46f4-9b3f-b1e60526cca5][OTP]]
+** Session Management : Cookie-Based, Token-Based Authentication
+*** Session Hijacking Prevention - Secure Cookie Flags, Token Blacklisting
+*** Session Expiration - Absolute Timeout, Sliding Window Expiration
+** Schema for Authentication : Constraint Composition, Predicate Logic
+*** Constraints for Authentication - Password Policies, Rate Limiting
+*** Constraint Composition - Conjunctive Normal Form (CNF), Disjunctive Normal Form (DNF)

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       65411a79-0036-445d-ad93-1b43f072add9
+:END:
+#+title: Vertical Scaling
+#+filetags: :cs:swe:design:
+
+
+* Outline
+** Resource Augmentation : [[id:a9430614-4e6e-41ff-9788-0f51c2867e74][hardware]] upgrades, increased capacity
+*** [[id:5b3673b7-744f-41b6-aafb-73a24c8da09d][CPU]] Upgrade - clock speed, core count, architecture advancements
+*** [[id:18491388-2dcc-488f-8f33-00582cf0f77e][Memory]] Expansion - [[id:734e31f5-746e-47fe-8116-1f2e70120f27][RAM]] increase, latency reduction
+*** Storage Enhancement - disk upgrades, SSD adoption, caching
+** Design Optimization : efficient utilization of resources
+*** Algorithmic Improvements - reduced complexity, caching, parallelization
+*** Data Structure Optimization - cache-friendly, reduced memory allocation
+*** Resource Contention Mitigation - lock-free data structures, fine-grained locking
+** Limitations and Trade-offs : scalability bottlenecks, cost considerations
+*** Diminishing Returns - law of diminishing returns, resource saturation
+*** Cost Inefficiencies - high upgrade costs, resource underutilization
+*** Complexity Ceiling - design complexity, maintainability concerns

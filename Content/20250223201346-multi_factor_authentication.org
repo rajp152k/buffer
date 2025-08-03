@@ -15,7 +15,7 @@
 *** Location Factor : IP address, GPS, or device profiling
 *** Behavioral Factor : patterns of user behavior, such as typing rhythms or browsing habits
 ** Implementation : layered authentication, MFA protocols, and adaptive authentication
-*** MFA Protocols - OATH, U2F, or SAML
+*** MFA Protocols - OATH, U2F, or [[id:f86e0e1d-d0cd-4503-873c-30710aa7900d][SAML]]
 *** Adaptive Authentication - risk-based authentication and step-up authentication
 ** Benefits : enhanced security, reduced phishing, and regulatory compliance
 *** Risk Reduction - mitigates password-only vulnerabilities

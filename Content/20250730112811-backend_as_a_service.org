@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       e25c3b70-0268-412c-8d8d-024f537c8455
+:END:
+#+title: Backend as a Service
+#+filetags: :arch:swe:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Backend_as_a_service

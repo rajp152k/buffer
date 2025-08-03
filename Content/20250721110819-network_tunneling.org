@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       8b930e63-76a8-441a-a378-e3e0c9ee9400
+:END:
+#+title: Network Tunneling
+#+filetags: :network:cs:
+
+
+* Outline
+
+** Encapsulation : packet encapsulation, protocol wrapping
+*** Encapsulating protocols - IP in IP, GRE, PPTP
+*** Tunnel endpoint identification - tunnel IDs, session IDs
+** Tunneling protocols : PPTP, L2TP, IPSec, SSH, SSL/TLS
+*** Layer 2 tunneling - PPP, L2TP
+*** Layer 3 tunneling - IPSec, GRE
+** Use cases : VPNs, secure remote access, network extension
+*** Site-to-site VPNs - secure multi-site connectivity
+*** Remote access VPNs - secure client-to-site connectivity
+** Tunneling overhead : packet overhead, MTU issues, performance impact
+*** Path MTU discovery - fragmentation, reassembly
+*** Tunnel fragmentation - inner packet fragmentation
+
+
+* Relevant Nodes
+** [[id:714b029b-d0ac-4842-89f5-5f871d1a22c7][Software Defined Networking]]

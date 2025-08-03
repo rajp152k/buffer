@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       0f4dcd1b-85c7-4ac7-94d9-0778759215e9
+:END:
+#+title: Direct Server Return
+#+filetags: :network:cs:
+
+
+* Outline
+** Concept Overview : Layer 3/4 [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][load balancing]] technique
+** Key Components : Real servers, Load balancer, Client
+*** Real Servers : Directly respond to client requests
+*** Load Balancer : Forwards client requests to real servers
+** How DSR Works : [[id:d799bc90-5032-4a69-9806-83145297a335][IP]] packet forwarding, [[id:5e03fb6e-9a4d-408e-9612-0c22ce4e294a][MAC]] address rewriting
+*** Client Request : Sent to load balancer's VIP
+*** Load Balancer : Rewrites packet, forwards to real server
+*** Real Server : Processes request, responds directly to client
+** Advantages : Reduced load balancer overhead, Improved scalability
+*** Reduced Load Balancer Overhead : No need to process response packets
+*** Improved Scalability : More clients can be handled
+** Use Cases : High-traffic websites, Real-time applications
+*** High-Traffic Websites : E-commerce, news sites
+*** Real-Time Applications : Video streaming, online gaming

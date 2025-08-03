@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f1f88053-55e7-4148-9c09-e8ac21f7441d
+:END:
+#+title: Business Process Model and Notation
+#+filetags: :sys:meta:
+
+* Resources
+ - https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation

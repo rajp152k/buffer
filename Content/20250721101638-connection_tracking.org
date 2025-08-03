@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       0a886acd-92d7-453e-a599-2a3251c0ae36
+:ROAM_ALIASES: Conntrack
+:END:
+#+title: Connection Tracking
+#+filetags: :network:arch:swe:
+
+
+
+* Outline
+** Netfilter Framework : stateful packet inspection
+*** Conntrack Module : tracks connection states
+*** Protocols Supported - TCP, UDP, ICMP, etc.
+** Connection States : NEW, ESTABLISHED, RELATED, INVALID
+*** NEW : initial packet of a connection
+*** ESTABLISHED : ongoing connection
+*** RELATED : related to an existing connection
+*** INVALID : unknown or invalid connection
+** Conntrack Table : stores connection information
+*** Tuple : source IP, destination IP, source port, destination port, protocol
+** Conntrack Helpers : assist in tracking complex protocols
+*** FTP, SIP, etc. : protocol-specific helpers

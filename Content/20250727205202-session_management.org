@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       ca2587a2-e2d3-4571-a166-e73c691be47e
+:END:
+#+title: Session Management
+#+filetags: :network:swe:
+
+
+* Outline
+** Definition : transient [[id:d4439a3c-ee63-479e-943e-5bebc50e32bd][state]] preservation across requests
+** Core principles : confidentiality, integrity, availability
+** Protocols : [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]] [[id:54b57f27-f631-411e-bb58-359811a7a003][cookies]], tokens, session identifiers
+** Storage mechanisms : server-side, client-side, hybrid
+** Security concerns : session fixation, hijacking, expiration
+** Lifecycle stages : creation, maintenance, renewal, termination
+** Implementation patterns : centralized, distributed, federated
+** Best practices : secure flags, HttpOnly, SameSite attributes
+** Advanced topics : token refresh, multi-factor session validation
+** Related standards : OAuth, OpenID Connect

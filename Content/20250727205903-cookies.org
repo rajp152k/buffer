@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       54b57f27-f631-411e-bb58-359811a7a003
+:END:
+#+title: Cookies
+#+filetags: :data:network:
+
+* Outline
+** Types of Cookies
+*** [[id:ca2587a2-e2d3-4571-a166-e73c691be47e][Session]] Cookies : ephemeral data, HTTP-only flag
+*** Persistent Cookies : expiry date, stored on client-side
+
+** Cookie Attributes
+*** Secure Attribute : [[id:412c20e2-9de7-423c-9e17-1bf0df83becb][HTTPS]] transmission
+*** HttpOnly Attribute : prevents JavaScript access
+
+** Cookie Use Cases
+*** Authentication : user identification, session management
+*** Tracking : [[id:5f3eafe0-1d79-43c1-b458-7bde2645d0bd][user behavior]], analytics
+
+** Security Concerns
+*** Cookie Tampering : [[id:d6eeed2f-0415-4628-a849-553ccc8808b7][data integrity]], [[id:92342b8b-1c09-4e1f-9799-66d060678c31][encryption]]
+*** Cookie Theft : [[id:de54bfd9-b412-4673-9d8d-6ce0ac056a33][session hijacking]], phishing

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       504d18c8-9d04-46c5-974e-8f6ccbb62241
+:END:
+#+title: Camunda
+#+filetags: :meta:swe:cs:
+
+* Outline
+** [[id:f1f88053-55e7-4148-9c09-e8ac21f7441d][BPMN]] 2.0 Integration : Workflow Automation, [[id:603e8813-9325-437b-8c67-50c8af20f7eb][Process Modeling]]
+*** Process Definition : XML-based, Graph-theoretic Representation
+*** Task Management : Service Task, User Task, Business Rule Task
+*** Gateways : Exclusive, Parallel, Event-based
+*** Events : Start, Intermediate, End
+
+** DMN 1.1 Integration : Decision Table, Business Knowledge Model
+*** Decision Table : Input, Output, Rule
+*** Business Knowledge Model : Encapsulated Logic, Knowledge
+*** Decision Service : REST, Java API
+
+** Workflow Engine : Java-based, Microservices Architecture
+*** Process Instance : Runtime, Context
+*** Transaction Management : ACID Compliance
+*** Scalability : Clustering, Load Balancing
+
+** Modeler : UI, BPMN, DMN
+*** Graphical Interface : Drag-and-Drop, Canvas
+*** Collaboration : Real-time, Multi-user
+
+** Camunda Platform : Open-source, Cloud, On-premise
+*** Community Support : Forum, Documentation
+*** Enterprise Features : Security, Auditing
+
+* Resources
+ - https://camunda.com/

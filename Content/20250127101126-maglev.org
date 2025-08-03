@@ -7,5 +7,7 @@
 * Relevant Nodes
 ** [[id:0d7c2dea-a250-4380-b826-ad4d2547d8d6][Load Balancing]]
 
+** [[id:da013333-6224-466d-acbf-ad16d0c26104][Generic Routing Encapsulation]]
+** [[id:0f4dcd1b-85c7-4ac7-94d9-0778759215e9][Direct Server Return]]
 * Resources
  - https://research.google/pubs/maglev-a-fast-and-reliable-software-network-load-balancer/

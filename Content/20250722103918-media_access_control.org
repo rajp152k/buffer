@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       5e03fb6e-9a4d-408e-9612-0c22ce4e294a
+:END:
+#+title: Media Access Control
+#+filetags: :network:cs:
+
+
+* Outline
+
+** Frame Structure : Ethernet frame components
+*** MAC addresses - 48-bit or 64-bit identifiers
+*** Frame Check Sequence - CRC error detection
+** Access Techniques : CSMA/CD, CSMA/CA, Token Passing
+*** Collision Detection - backoff algorithms
+*** Collision Avoidance - RTS/CTS handshakes
+** Network Interface Controllers : MAC-PHY separation
+*** MAC-PHY interface - MII, RGMII, SMI
+*** Flow control - pause frames, priority queuing

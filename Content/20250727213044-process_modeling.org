@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       603e8813-9325-437b-8c67-50c8af20f7eb
+:END:
+#+title: Process Modeling
+#+filetags: :meta:sys:
+
+
+* Outline
+** Definition and Scope : Business Process Model, [[id:f1f88053-55e7-4148-9c09-e8ac21f7441d][BPMN]], [[id:b11af479-044b-4262-91b1-67c4cfd64127][UML]]
+*** Key Concepts - Workflow, Activities, Control Flow
+*** Modeling Objectives - Analysis, Design, Simulation
+
+** Modeling Techniques
+*** Graphical Modeling - Swimlanes, Flowcharts
+*** Mathematical Modeling - Petri Nets, Queueing Theory
+
+** Process Modeling Languages
+*** BPMN (Business Process Model and Notation)
+*** UML (Unified Modeling Language) - Activity Diagrams
+*** Petri Nets - Formal Methods
+
+** Applications and Tools
+*** Software - ARIS, Bizagi, IBM Blueworks Live
+*** Industry Use Cases - Supply Chain, Healthcare, Finance
+* Relevant Nodes
+ - [[id:b2efd76b-740b-486d-b307-7ea4bed72b5d][Pi Calculus]]
+* Resources
+ - https://www.ibm.com/think/topics/process-modeling

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       de54bfd9-b412-4673-9d8d-6ce0ac056a33
+:END:
+#+title: session hijacking
+#+filetags: :sec:cs:
+
+
+* Outline
+
+** Definition and Context : Network Security, TCP/IP Session Management
+*** TCP Session Establishment : Three-Way Handshake, SYN, SYN-ACK, ACK
+*** Session Identification : Source IP, Source Port, Destination IP, Destination Port
+
+** Types of Session Hijacking : Active, Passive, TCP, UDP, ICMP
+*** Active Session Hijacking : Injection, Impersonation, Man-in-the-Middle
+*** Passive Session Hijacking : Eavesdropping, Session Replay
+
+** Attack Vectors : Network Exploits, Malware, Social Engineering
+*** Network-Based Attacks : Spoofing, Sniffing, Session Fixation
+*** Host-Based Attacks : Malware, Keyloggers, Session Cookie Theft
+
+** Countermeasures : Secure Communication Protocols, Session Encryption
+*** Secure Socket Layer/Transport Layer Security : SSL/TLS, HTTPS
+*** Secure Shell : SSH, SFTP
+
+** Detection and Prevention : Anomaly Detection, Firewall Rules
+*** Intrusion Detection Systems : IDS, IPS
+*** Session Monitoring : Logging, Traffic Analysis

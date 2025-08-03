@@ -10,16 +10,7 @@ Building on the internet will be explored under the subgraph around [[id:0a4948e
 
 This node covers the what more than the whys and the hows.
 
-Communication is what the internet was made for, [[id:d62399b2-10b5-4d6c-94ed-42daefd459fe][E-mail]] is another set of tooling and infrastructure that is worth studying for the pedagogical value of such an exercise : this allows to read up on [[id:a02542b4-23d5-4fa8-9469-45edc4dcee69][SMTP]]  as a useful instance of the application layer protocol (An even more ubiquitous practical instance would be [[id:20231230T070822.637998][HTTP]]).
+Communication is what the internet was made for, [[id:d62399b2-10b5-4d6c-94ed-42daefd459fe][E-mail]] is another set of tooling and infrastructure that is worth studying for the pedagogical value of such an exercise : this allows to read up on [[id:a02542b4-23d5-4fa8-9469-45edc4dcee69][SMTP]]  as a useful instance of the application layer protocol (An even more ubiquitous practical instance would be [[id:a452b284-9ed0-4aed-a0d2-9bdb303a459c][HTTP]]).
 
-* Sentinel Refs
-** HTTP
-:PROPERTIES:
-:ID:       20231230T070822.637998
-:END:
-** Cookie
-:PROPERTIES:
-:ID:       20231230T071226.720237
-:END:
 * Resources
  - https://thesquareplanet.com/blog/how-the-internet-works/

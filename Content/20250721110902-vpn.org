@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       9e7daba0-017c-41ae-acfd-1f2f843091e1
+:ROAM_ALIASES: "Virtual Private Network"
+:END:
+#+title: VPN
+#+filetags: :network:cs:

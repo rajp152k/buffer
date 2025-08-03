@@ -4,9 +4,6 @@
 #+title: PlantUML
 #+filetags: :chart:tool:
 
-* Abstract
- - refer these examples for semantic and syntactic edits to outputs from LLMs
- - I usually don't write plantuml from scratch
 * Examples
 ** Sequence Diagrams
 
@@ -78,3 +75,4 @@ Review --> Publish: Share
 
 * Relevent Nodes
 ** [[id:939c16c5-9e25-4861-a5d4-6a47b3e55b16][DITAA]]
+** [[id:a20018d4-8956-4359-b970-0daa53f2f924][Unified Modeling Lanugage]]

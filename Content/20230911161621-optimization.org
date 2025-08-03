@@ -2,8 +2,18 @@
 :ID:       7b9be887-8c39-4a37-8217-f0e21a6cb64e
 :END:
 #+title: Optimization
-#+filetags: :tbp:math:
+#+filetags: :swe:cs:math:
 
-
-A branch of math dealing with optimizing a certain criterion (see [[id:d99d5a5f-93fc-4f3b-b72e-ea59037956f9][loss]]) by choosing corresponding optimal parameters.
-The most generic and popular optimization algorithm might be (Stochastic) [[id:a4761c32-806d-4a7f-ba18-27136a3de1fc][Gradient Descent]]
+* Outline
+** Problem Formulation : feasibility, optimality, constraints
+*** Objective Function : cost, loss, utility
+*** Constraints : equality, inequality, domain
+** Types of Optimization : convex, non-convex, linear, nonlinear
+*** Convex Optimization : convex objective, convex constraints
+*** Linear Programming : linear objective, linear constraints
+*** Quadratic Programming : quadratic objective, linear constraints
+*** Non-Convex Optimization : non-convex objective or constraints
+** Algorithms : gradient-based, derivative-free, metaheuristics
+*** Gradient Descent : gradient descent, stochastic gradient descent
+*** Newton's Method : Hessian, convergence rate
+*** Metaheuristics : simulated annealing, genetic algorithms
